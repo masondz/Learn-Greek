@@ -7958,6 +7958,8 @@ export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ 
 66022020 Λέγει ὁ μαρτυρῶν ταῦτα, “Ναί, ἔρχομαι ταχύ. Ἀμήν!” Ἔρχου, ˚Κύριε ˚Ἰησοῦ!
 66022021 Ἡ χάρις τοῦ ˚Κυρίου ˚Ἰησοῦ μετὰ τῶν ἁγίων. Ἀμήν!`;
 
-const attribution = `# Witness SR
+/*
+`# Witness SR
 # Produced by the Center for New Testament Restoration (CNTR) 11/30/22
 # Copyright © 2022 by Alan Bunning released under Creative Commons Attribution 4.0 International License (CC BY-SA 4.0)`;
+*/

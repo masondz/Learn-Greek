@@ -1,33 +1,31 @@
 import "./App.css";
 import { greekText } from "./greek_text/greekText";
-import React, { useEffect } from "react";
-
-const testText = "40001001 Βίβλος γενέσεως";
+import React from "react";
 
 const organizeText = (text) => {
   let verses = {};
   let key = "";
   let value = "";
 
-  for (let i = 0; i < testText.length; i++) {
-    if (isNaN(text[i]) === false) {
-      for (let j = 0; j < 8; j++) {
-        key += text[i + j];
-      }
-      console.log(key);
-      i += 8;
-    }
+  const textArray = text.split("\n");
+
+  for (let i = 0; i < textArray.length; i++) {
+    key = textArray[i].slice(0, 8);
+    value = textArray[i].slice(9);
+    verses[key] = value;
   }
+
+  return verses;
 };
 
-function App() {
-  useEffect(() => {
-    organizeText(greekText);
-  }, []);
+const theText = organizeText(greekText);
 
+function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <header className="App-header">
+        <p>{theText[40001006]}</p>
+      </header>
     </div>
   );
 }
