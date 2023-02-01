@@ -13,24 +13,21 @@ const organizeText = (text) => {
   for (let i = 0; i < textArray.length; i++) {
     key = textArray[i].slice(0, 8);
     value = textArray[i].slice(9);
-    verses.push({index: i, reference: key, verse: value});
+    verses.push({ index: i, reference: key, verse: value });
   }
   return verses;
 };
 
 const theText = organizeText(greekText);
 
-
 const getRandomVerse = () => {
   let randomIndex = Math.floor(Math.random() * theText.length + 1);
-  return theText[randomIndex].verse
-}
+  return theText[randomIndex].verse;
+};
 
 let verse = getRandomVerse();
 
 function App() {
-
-
   return (
     <div className="App">
       <header className="App-header">

@@ -7943,9 +7943,7 @@ export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ 
 66022007 “Καὶ ἰδοὺ, ἔρχομαι ταχύ. Μακάριος ὁ τηρῶν τοὺς λόγους τῆς προφητείας τοῦ βιβλίου τούτου.”
 66022008 Κἀγὼ Ἰωάννης ὁ ἀκούων καὶ βλέπων ταῦτα. Καὶ ὅτε ἤκουσα καὶ ἔβλεψα, ἔπεσα προσκυνῆσαι ἔμπροσθεν τῶν ποδῶν τοῦ ἀγγέλου τοῦ δεικνύοντός μοι ταῦτα.
 66022009 Καὶ λέγει μοι, “Ὅρα μή· σύνδουλός σού εἰμι καὶ τῶν ἀδελφῶν σου, τῶν προφητῶν, καὶ τῶν τηρούντων τοὺς λόγους τοῦ βιβλίου τούτου. Τῷ ˚Θεῷ προσκύνησον!”
-66022010 Καὶ λέγει μοι, “Μὴ σφραγίσῃς τοὺς λόγους τῆς προφητείας τοῦ βιβλίου τούτου, ὁ καιρὸς γὰρ ἐγγύς ἐστιν.# Witness SR
-# Produced by the Center for New Testament Restoration (CNTR) 11/30/22
-# Copyright © 2022 by Alan Bunning released under Creative Commons Attribution 4.0 International License (CC BY-SA 4.0)
+66022010 Καὶ λέγει μοι, “Μὴ σφραγίσῃς τοὺς λόγους τῆς προφητείας τοῦ βιβλίου τούτου, ὁ καιρὸς γὰρ ἐγγύς ἐστιν.
 66022011 Ὁ ἀδικῶν, ἀδικησάτω ἔτι, καὶ ὁ ῥυπαρὸς, ῥυπανθήτω ἔτι, καὶ ὁ δίκαιος, δικαιοσύνην ποιησάτω ἔτι, καὶ ὁ ἅγιος, ἁγιασθήτω ἔτι.”
 66022012 “Ἰδοὺ, ἔρχομαι ταχύ, καὶ ὁ μισθός μου μετʼ ἐμοῦ, ἀποδοῦναι ἑκάστῳ ὡς τὸ ἔργον ἐστὶν αὐτοῦ.
 66022013 Ἐγὼ τὸ Ἄλφα καὶ τὸ Ὦ, ὁ πρῶτος καὶ ὁ ἔσχατος, ἡ ἀρχὴ καὶ τὸ τέλος.
@@ -7959,6 +7957,9 @@ export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ 
 66022021 Ἡ χάρις τοῦ ˚Κυρίου ˚Ἰησοῦ μετὰ τῶν ἁγίων. Ἀμήν!`;
 
 /*
+# Witness SR
+# Produced by the Center for New Testament Restoration (CNTR) 11/30/22
+# Copyright © 2022 by Alan Bunning released under Creative Commons Attribution 4.0 International License (CC BY-SA 4.0)
 `# Witness SR
 # Produced by the Center for New Testament Restoration (CNTR) 11/30/22
 # Copyright © 2022 by Alan Bunning released under Creative Commons Attribution 4.0 International License (CC BY-SA 4.0)`;
