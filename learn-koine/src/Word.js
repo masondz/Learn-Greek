@@ -3,19 +3,10 @@ import { greekArticles } from "./greek_text/greekArticles";
 import { useDispatch } from "react-redux";
 import { randomVerse } from "./features/verseSlice";
 
-// const checkIfArticle = (word) => {
-//   if (greekArticles.includes(word.word)) {
-//     console.log("it's an article!");
-//     return true;
-//   } else {
-//     console.log("it is not an article :(");
-//     return false;
-//   }
-// };
-
 const checkIfArticle = (word) => {
   if (word.word in greekArticles) {
     console.log("it's an article!");
+    console.log(greekArticles[word.word]);
     return true;
   } else {
     console.log("it is not an article :(");
@@ -33,7 +24,7 @@ const Word = (word) => {
   return (
     <div>
       <p>{theWord ? theWord : " "}</p>
-      <p></p>
+      <p>{word.word in greekArticles ? greekArticles[word.word].case : ""}</p>
       <button
         onClick={() => {
           dispatch(randomVerse());
