@@ -1,27 +1,23 @@
 import "./App.css";
 import { greekText } from "./greek_text/greekText";
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Verse from "./Verse";
-import { checkVerseSlice, randomVerse, selectVerseSlice } from "./features/verseSlice";
+import { randomVerse, selectVerseSlice } from "./features/verseSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-
 function App() {
-
   const dispatch = useDispatch();
-  
-    
+
   useEffect(() => {
-    dispatch(randomVerse())
-  }, [])
+    dispatch(randomVerse());
+  }, [dispatch]);
 
   const verse = useSelector(selectVerseSlice);
-  
+
   return (
     <div className="App">
       <header className="App-header">
         <Verse verse={verse} />
-        
       </header>
     </div>
   );
