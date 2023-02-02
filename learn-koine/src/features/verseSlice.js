@@ -28,24 +28,24 @@ const organizeText = (text) => {
 
 const verseSlice = createSlice({
     name: "verse",
-    initialState: [],
+    initialState: {verse: "Selecting..."},
     reducers: {
         checkVerseSlice: (state, action) => {
             console.log("check verse slice")
         },
         
         randomVerse: (state, action) => {
-            state = getRandomVerse(organizeText(greekText));
-            console.log(`randomVerse: ${state}`)
+            state.verse = getRandomVerse(organizeText(greekText));
+            console.log(typeof state)
         }
     },
 
 
 })
 
-export const { checkVerseSlice } = verseSlice.actions;
+export const { checkVerseSlice, randomVerse } = verseSlice.actions;
 
-export const selectVerseSlice = state => state.verse;
+export const selectVerseSlice = state => state.verse.verse;
 
 
 export default verseSlice.reducer;
