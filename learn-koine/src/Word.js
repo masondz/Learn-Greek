@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { randomVerse } from "./features/verseSlice";
 
 const checkIfArticle = (word) => {
-  if (word.word in greekArticles) {
+  if (word in greekArticles) {
     console.log("it's an article!");
     console.log(greekArticles[word.word]);
     return true;
@@ -15,16 +15,22 @@ const checkIfArticle = (word) => {
 };
 
 const Word = (word) => {
-  let theWord = checkIfArticle(word)
-    ? `${word.word} - It's an article!`
-    : `${word.word} - It's not an article :(`;
+  let [theWord, setTheWord] = useState(word.word);
+  let [isArticle, setIsArticle] = useState(false);
+  let [wordParsed, setWordParsed] = useState({});
+
+  if (checkIfArticle(theWord)) {
+    console.log("does if statement work?");
+    setIsArticle(true);
+    setWordParsed(greekArticles[theWord]);
+  }
 
   const dispatch = useDispatch();
 
   return (
     <div>
       <p>{theWord ? theWord : " "}</p>
-      <p>{word.word in greekArticles ? greekArticles[word.word].case : ""}</p>
+      <p>{isArticle ? greekArticles[theWord].case : ""}</p>
       <button
         onClick={() => {
           dispatch(randomVerse());
