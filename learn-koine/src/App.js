@@ -32,6 +32,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Verse verse={verse} />
+        <button>New Verse</button>
       </header>
     </div>
   );
