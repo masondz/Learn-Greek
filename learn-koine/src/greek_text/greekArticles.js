@@ -31,3 +31,48 @@ export const greekArticles = [
   "τὰς",
   "τοὺς",
 ];
+
+/*
+const greekArticles = {
+"ὁ": {case: ["nominative"], number: "singular", gender: ["masculine"]},
+  "ἡ": {case: ["nominative"], number: "singular", gender: ["feminine"] },
+  "τό": {case: ["nominative"], number: "singular", gender: ["neuter"]},
+  “Τὸ”: {case: ["nominative"], number: "singular", gender: ["neuter"]},
+  “Τό”: {case: ["nominative"], number: "singular", gender: ["neuter"]},
+  "τόν": {case: ["accusative"], number: "singular", gender: ["masculine"]},
+  “Τὸν”: {case: ["accusative"], number: "singular", gender: ["masculine"]},
+  “Τόν”: {case: ["accusative"], number: "singular", gender: ["masculine"]},
+  "τοῦ": {case: ["genitive"], number: "singular", gender: ["masculine", "neuter"]},
+  "Τοῦ": {case: ["genitive"], number: "singular", gender: ["masculine", "neuter"]},
+  "τῆς": {case: ["genitive"], number: "singular", gender: ["feminine"] },
+  "τῷ": {case: ["dative"], number: "singular" , gender: ["masculine", "neuter"] },
+  "Ὁ": {case: ["nominative"], number: "singular", gender: ["masculine"]},
+  "οἱ": {case: ["nominative"], number: "plural" , gender: ["masculine"]},
+  "τούς": {case: ["accusative"], number: "plural" , gender: ["masculine"] },
+  "Τούς": {case: ["accusative"], number: "plural" , gender: ["masculine"] },
+  "τῶν": {case: ["genitive"], number: "plural", gender: ["masculine", "feminine", "neuter"]},
+  "τοῖς": {case: ["dative"], number: "plural", gender: ["masculine", "neuter"]},
+  "τοὺς": {case: ["accusative"], number: "plural" , gender: ["masculine"] },
+  "Τοὺς": {case: ["accusative"], number: "plural" , gender: ["masculine"] },
+  "τήν": {case: ["accusative"], number: "singular", gender: ["feminine"]},
+  "τῇ": {case: ["dative"], number: "singular", gender: ["feminine"]},
+  "αἱ": {case: ["nominative"], number: "plural", gender: ["feminine"]},
+  “Αἱ”: {case: ["nominative"], number: "plural", gender: ["feminine"]},
+  "τάς": {case: [“accusative”], number: “plural”, gender: [“feminine”]},
+  "τῶν": {case: [“genitive”] , number: ‘plural”, gender: [“masculine”, “neuter”, “feminine”]},
+  "ταῖς": {case: [“dative”], number: “plural” , gender: [“feminine”]},
+  "τά": {case: [“nominative”, “accusative”], number: “plural”, gender: [“neuter”]},
+  "Ή": {case: ["nominative"], number: "singular", gender: ["feminine"] },
+  "Οἱ": {case: ["nominative"], number: "plural" , gender: ["masculine"]},
+  "τὴν": {case: ["accusative"], number: "singular", gender: ["feminine"]},
+  "τὸ": {case: ["nominative"], number: "singular", gender: ["neuter"]},
+  "τὸν": {case: ["accusative"], number: "singular", gender: ["masculine"]},
+  "Τῷ": {case: ["dative"], number: "singular" , gender: ["masculine", "neuter"]},
+  "Τοῖς": {case: ["dative"], number: "plural", gender: ["masculine", "neuter"]},
+  "τὰ": {case: [“nominative”, “accusative”], number: “plural”, gender: [“neuter”]},
+  "Τῇ": {case: ["dative"], number: "singular", gender: ["feminine"]},
+  "τὰς": {case: [“accusative”], number: “plural”, gender: [“feminine”]},
+
+
+}
+*/
