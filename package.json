@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "react-redux": "^8.0.5"
   }
 }
