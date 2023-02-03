@@ -39,6 +39,7 @@ export const greekArticles = {
   Οἱ: { case: ["nominative"], number: "plural", gender: ["masculine"] },
   ἡ: { case: ["nominative"], number: "singular", gender: ["feminine"] },
   Ή: { case: ["nominative"], number: "singular", gender: ["feminine"] },
+  Ἡ: { case: ["nominative"], number: "singular", gender: ["feminine"] },
   τό: { case: ["nominative"], number: "singular", gender: ["neuter"] },
   Τὸ: { case: ["nominative"], number: "singular", gender: ["neuter"] },
   Τό: { case: ["nominative"], number: "singular", gender: ["neuter"] },
@@ -95,9 +96,7 @@ export const greekArticles = {
   τὴν: { case: ["accusative"], number: "singular", gender: ["feminine"] },
   Τὴν: { case: ["accusative"], number: "singular", gender: ["feminine"] },
   τὸ: { case: ["nominative"], number: "singular", gender: ["neuter"] },
-  Τὸ: { case: ["nominative"], number: "singular", gender: ["neuter"] },
   τὸν: { case: ["accusative"], number: "singular", gender: ["masculine"] },
-  Τὸν: { case: ["accusative"], number: "singular", gender: ["masculine"] },
   τὰ: {
     case: ["nominative", "accusative"],
     number: "plural",

@@ -1,36 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { greekArticles } from "./greek_text/greekArticles";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { randomVerse } from "./features/verseSlice";
+import { selectWordSlice } from "./features/wordSlice";
+import { checkWordSlice } from "./features/wordSlice";
 
-const checkIfArticle = (word) => {
-  if (word in greekArticles) {
-    console.log("it's an article!");
-    console.log(greekArticles[word.word]);
-    return true;
-  } else {
-    console.log("it is not an article :(");
-    return false;
-  }
-};
-
-const Word = (word) => {
-  let [theWord, setTheWord] = useState(word.word);
-  let [isArticle, setIsArticle] = useState(false);
-  let [wordParsed, setWordParsed] = useState({});
-
-  if (checkIfArticle(theWord)) {
-    console.log("does if statement work?");
-    setIsArticle(true);
-    setWordParsed(greekArticles[theWord]);
-  }
+const Word = () => {
+  const { word, partOfSpeech, parse } = useSelector(selectWordSlice);
+  console.log(word);
+  console.log(partOfSpeech);
+  console.log(parse);
 
   const dispatch = useDispatch();
 
+  // checkWordSlice();
+
   return (
     <div>
-      <p>{theWord ? theWord : " "}</p>
-      <p>{isArticle ? greekArticles[theWord].case : ""}</p>
+      <p>{word ? word : " "}</p>
+      <p>
+        {partOfSpeech === "article"
+          ? `${parse.case} - ${parse.number} - ${parse.gender}`
+          : "No article selected"}
+      </p>
       <button
         onClick={() => {
           dispatch(randomVerse());
