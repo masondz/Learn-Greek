@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Verse.css";
 import Word from "./Word";
 import { useSelector, useDispatch } from "react-redux";
@@ -17,15 +17,10 @@ const arrayIffy = (verse) => {
   return sentenceWords;
 };
 
-const onClick = (e) => {
-  e.preventDefault();
-  return e.target.innerHTML;
-};
-
 console.log(isArticle);
 
 const Verse = () => {
-  let [word, setWord] = useState("");
+  let [word] = useState("");
   const dispatch = useDispatch();
 
   const verse = useSelector(selectVerseSlice);

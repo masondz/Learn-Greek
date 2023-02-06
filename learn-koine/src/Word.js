@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { greekArticles } from "./greek_text/greekArticles";
 import { useDispatch, useSelector } from "react-redux";
 import { randomVerse } from "./features/verseSlice";
 import { selectWordSlice } from "./features/wordSlice";
-import { checkWordSlice } from "./features/wordSlice";
 
 const Word = () => {
   const { word, partOfSpeech, parse } = useSelector(selectWordSlice);

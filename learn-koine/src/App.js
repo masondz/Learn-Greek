@@ -1,5 +1,4 @@
 import "./App.css";
-import { greekText } from "./greek_text/greekText";
 import React, { useEffect } from "react";
 import Verse from "./Verse";
 import { randomVerse, selectVerseSlice } from "./features/verseSlice";
