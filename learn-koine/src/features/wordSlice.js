@@ -35,10 +35,15 @@ const wordSlice = createSlice({
     checkWordSlice: (state, action) => {
       console.log(state.word.word);
     },
+    clearWord: (state, action) => {
+      state.word = null;
+      state.partOfSpeech = null;
+      state.parse = { case: [], number: "", gender: [] };
+    },
   },
 });
 
-export const { isArticle, checkWordSlice } = wordSlice.actions;
+export const { isArticle, checkWordSlice, clearWord } = wordSlice.actions;
 
 export const selectWordSlice = (state) => state.word; //returns an object {word: της, partOfSpeech: "article"}
 

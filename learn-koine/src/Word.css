@@ -1,46 +1,60 @@
 .categories {
-    display: flex;
-    justify-content: space-around;
-    width: 45%;
-    margin: auto;
-    align-items: stretch;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: stretch;
 }
 
 .categories li {
-    list-style-type: none;
-    margin: 10px;
-    padding: 3px;
-    text-align: center;
-    border-color: aqua;
-    align-content: center;
+  list-style-type: none;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border-color: aqua;
+  align-content: center;
 }
 
-.categories ul {
-    border-color: aquamarine;
-    display: inline-flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: stretch;
-
-    border: 2px solid white;
+.cases {
+  border-color: aquamarine;
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0px;
+  padding: 20px;
 }
 
 .categories li:hover {
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.case-option-clear {
+  font-weight: bold;
 }
 
 .case-option-correct {
-    background-color: rgb(5, 204, 5);
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
-    font-weight: bold;
+  background-color: rgb(5, 204, 5);
+  font-weight: bold;
 }
 
 .case-option-wrong {
-    background-color: red;
-    -webkit-text-stroke-color: black;
-    font-weight: bold;
+  background-color: red;
+  -webkit-text-stroke-color: black;
+  font-weight: bold;
+}
+
+.cases div {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.cases div:hover {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }

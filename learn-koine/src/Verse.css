@@ -1,18 +1,18 @@
 .verse-sentence {
-
+  width: 100%;
 }
 
 .verse-word {
-    display: inline-block;
-    margin: 1px;
-    padding: 4px;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  display: inline-block;
+  margin: 1px;
+  padding: 4px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .verse-word:hover {
-    cursor: pointer;
-    background-color: green;
-    border-radius: 5%;
-} 
+  cursor: pointer;
+  background-color: green;
+  border-radius: 5%;
+}

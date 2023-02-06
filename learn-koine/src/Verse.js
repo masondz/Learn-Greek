@@ -4,6 +4,7 @@ import Word from "./Word";
 import { useSelector, useDispatch } from "react-redux";
 import { selectVerseSlice } from "./features/verseSlice";
 import { isArticle } from "./features/wordSlice";
+import { ArticleGrid } from "./ArticleGrid";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -21,6 +22,30 @@ console.log(isArticle);
 
 const Verse = () => {
   let [word] = useState("");
+  const [articleGrid, setArticleGrid] = useState({
+    nominative: "-clear",
+    genitive: "-clear",
+    dative: "-clear",
+    accusative: "-clear",
+    singular: "-clear",
+    plural: "-clear",
+    masculine: "-clear",
+    feminine: "-clear",
+    neuter: "-clear",
+  });
+
+  const blankGrid = {
+    nominative: "-clear",
+    genitive: "-clear",
+    dative: "-clear",
+    accusative: "-clear",
+    singular: "-clear",
+    plural: "-clear",
+    masculine: "-clear",
+    feminine: "-clear",
+    neuter: "-clear",
+  };
+
   const dispatch = useDispatch();
 
   const verse = useSelector(selectVerseSlice);
@@ -35,8 +60,10 @@ const Verse = () => {
           <p
             className="verse-word"
             name={word.word}
-            // onClick={(e) => setWord(onClick(e))}
-            onClick={(e) => dispatch(isArticle(e.target.innerHTML))}
+            onClick={(e) => {
+              dispatch(isArticle(e.target.innerHTML));
+              setArticleGrid(blankGrid);
+            }}
             key={word.word + i}
           >
             {word.word}
@@ -45,8 +72,14 @@ const Verse = () => {
       })}
       <br></br>
       <div>
-        <Word word={word} />
+        <Word word={word} setArticleGrid={setArticleGrid} blankGrid={blankGrid}>
+          <ArticleGrid
+            articleGrid={articleGrid}
+            setArticleGrid={setArticleGrid}
+          />
+        </Word>
       </div>
+      <button onClick={() => setArticleGrid(blankGrid)}>clear</button>
     </div>
   );
 };
