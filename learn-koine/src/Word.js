@@ -10,15 +10,28 @@ const Word = () => {
 
   const dispatch = useDispatch();
 
-  // checkWordSlice();
+  let selectedWord = "";
+  let describeWord = "";
+
+  if (word) {
+    selectedWord = word;
+  } else {
+    selectedWord = " ";
+  }
+
+  if (partOfSpeech !== "article" && word) {
+    describeWord = "Not an artcle :("
+  } else if (partOfSpeech !== "article" && !word) {
+    describeWord = "Select an article"
+  } else if (partOfSpeech === "article") {
+    describeWord = `${parse.case} - ${parse.number} - ${parse.gender}`
+  }
 
   return (
     <div>
-      <p>{word ? word : " "}</p>
+      <p>{selectedWord}</p>
       <p>
-        {partOfSpeech === "article"
-          ? `${parse.case} - ${parse.number} - ${parse.gender}`
-          : "No article selected"}
+        {describeWord}
       </p>
       <button
         onClick={() => {

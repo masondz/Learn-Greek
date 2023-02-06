@@ -4,8 +4,15 @@
 
 .verse-word {
     display: inline-block;
-    margin: 5px;
+    margin: 1px;
+    padding: 4px;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
+
+.verse-word:hover {
+    cursor: pointer;
+    background-color: green;
+    border-radius: 5%;
+} 
