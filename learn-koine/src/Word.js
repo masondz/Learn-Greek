@@ -2,6 +2,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { randomVerse } from "./features/verseSlice";
 import { selectWordSlice } from "./features/wordSlice";
 
+
+
+
+
 const Word = () => {
   const { word, partOfSpeech, parse } = useSelector(selectWordSlice);
   console.log(word);
@@ -33,6 +37,23 @@ const Word = () => {
       <p>
         {describeWord}
       </p>
+      <div className="categories">
+        <ul className="cases">
+          <li>Nominative</li>
+          <li>Genative</li>
+          <li>Dative</li>
+          <li>Accusative</li>
+        </ul>
+        <ul className="number">
+          <li>Singular</li>
+          <li>Plural</li>
+        </ul>
+        <ul className="Gender">
+          <li>Masculine</li>
+          <li>Feminine</li>
+          <li>Neuter</li>
+        </ul>
+      </div>
       <button
         onClick={() => {
           dispatch(randomVerse());
