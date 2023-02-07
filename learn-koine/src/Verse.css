@@ -16,3 +16,9 @@
   background-color: green;
   border-radius: 5%;
 }
+
+@media only screen and (max-width: 475px) {
+  .verse-word {
+    font-size: larger;
+  }
+}
