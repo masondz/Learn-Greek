@@ -26,11 +26,13 @@ const Word = ({ children, setArticleGrid, blankGrid }) => {
     describeWord = "Select an article";
   }
 
+  console.log(children);
+
   return (
     <div>
       <p>{selectedWord}</p>
       <p>{describeWord}</p>
-      {children}
+      {partOfSpeech === "article" ? children : <div></div>}
       <button
         className="button"
         onClick={() => {
