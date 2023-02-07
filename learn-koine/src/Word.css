@@ -5,6 +5,14 @@
   align-items: stretch;
 }
 
+.categories-hidden {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: stretch;
+  visibility: hidden;
+}
+
 .cases {
   border-color: aquamarine;
   display: inline-flex;

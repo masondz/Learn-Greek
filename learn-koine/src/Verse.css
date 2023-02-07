@@ -1,5 +1,6 @@
 .verse-sentence {
-  width: 100%;
+  width: 90%;
+  
 }
 
 .verse-word {
@@ -21,4 +22,13 @@
   .verse-word {
     font-size: larger;
   }
+}
+
+.passage {
+  text-align: end;
+  font-size: .7em;
+  opacity: .75;
+  margin-left: 15px;
+  max-width: 75%;
+  font-style: italic;
 }

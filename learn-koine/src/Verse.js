@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectVerseSlice } from "./features/verseSlice";
 import { isArticle } from "./features/wordSlice";
 import { ArticleGrid } from "./ArticleGrid";
+import { PassageNumber } from "./PassageNumber";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -21,7 +22,9 @@ const arrayIffy = (verse) => {
 console.log(isArticle);
 
 const Verse = () => {
+
   let [word] = useState("");
+
   const [articleGrid, setArticleGrid] = useState({
     nominative: "-clear",
     genitive: "-clear",
@@ -58,18 +61,20 @@ const Verse = () => {
       {verseArray.map((word, i) => {
         return (
           <p
-            className="verse-word"
-            name={word.word}
-            onClick={(e) => {
-              dispatch(isArticle(e.target.innerHTML));
-              setArticleGrid(blankGrid);
-            }}
-            key={word.word + i}
+          className="verse-word"
+          name={word.word}
+          onClick={(e) => {
+            dispatch(isArticle(e.target.innerHTML));
+            setArticleGrid(blankGrid);
+          }}
+          key={word.word + i}
           >
             {word.word}
           </p>
         );
-      })}
+      })
+    }
+      <PassageNumber />
       <br></br>
       <div>
         <Word word={word} setArticleGrid={setArticleGrid} blankGrid={blankGrid}>
@@ -78,6 +83,8 @@ const Verse = () => {
             setArticleGrid={setArticleGrid}
           />
         </Word>
+      </div>
+      <div>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import "./Word.css";
 
 const Word = ({ children, setArticleGrid, blankGrid }) => {
   const { word, partOfSpeech } = useSelector(selectWordSlice);
+
   console.log(word);
   console.log(partOfSpeech);
 
@@ -32,7 +33,7 @@ const Word = ({ children, setArticleGrid, blankGrid }) => {
     <div>
       <p>{selectedWord}</p>
       <p>{describeWord}</p>
-      {partOfSpeech === "article" ? children : <div></div>}
+      {children}
       <button
         className="button"
         onClick={() => {
