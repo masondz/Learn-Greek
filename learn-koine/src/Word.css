@@ -5,15 +5,6 @@
   align-items: stretch;
 }
 
-.categories li {
-  list-style-type: none;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  border-color: aqua;
-  align-content: center;
-}
-
 .cases {
   border-color: aquamarine;
   display: inline-flex;
@@ -22,13 +13,6 @@
   align-items: stretch;
   margin: 0px;
   padding: 20px;
-}
-
-.categories li:hover {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
 }
 
 .case-option-clear {
@@ -73,5 +57,11 @@
   .button:hover {
     background-color: rgb(142, 255, 127);
     color: #282c34;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .cases {
+    padding: 5px;
   }
 }
