@@ -69,7 +69,9 @@
   font-weight: bold;
 }
 
-.button:hover {
-  background-color: rgb(142, 255, 127);
-  color: #282c34;
+@media (hover: hover) {
+  .button:hover {
+    background-color: rgb(142, 255, 127);
+    color: #282c34;
+  }
 }
