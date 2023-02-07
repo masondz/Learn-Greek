@@ -58,3 +58,18 @@
   user-select: none;
   cursor: pointer;
 }
+
+.button {
+  background-color: #282c34;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 0.5px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: rgb(142, 255, 127);
+  color: #282c34;
+}

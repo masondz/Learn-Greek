@@ -32,6 +32,7 @@ const Word = ({ children, setArticleGrid, blankGrid }) => {
       <p>{describeWord}</p>
       {children}
       <button
+        className="button"
         onClick={() => {
           dispatch(randomVerse());
           setArticleGrid(blankGrid);
