@@ -79,7 +79,6 @@ const Verse = () => {
           />
         </Word>
       </div>
-      <button onClick={() => setArticleGrid(blankGrid)}>clear</button>
     </div>
   );
 };
