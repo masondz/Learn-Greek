@@ -4,7 +4,7 @@ import { randomVerse } from "./features/verseSlice";
 import { clearWord, selectWordSlice } from "./features/wordSlice";
 import "./Word.css";
 
-const Word = ({ children, setArticleGrid, blankGrid }) => {
+const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   const { word, partOfSpeech } = useSelector(selectWordSlice);
 
   console.log(word);
@@ -48,4 +48,4 @@ const Word = ({ children, setArticleGrid, blankGrid }) => {
   );
 };
 
-export default Word;
+export default CheckWord;

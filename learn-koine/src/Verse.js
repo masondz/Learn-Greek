@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Verse.css";
-import Word from "./Word";
+import CheckWord from "./CheckWord";
 import { useSelector, useDispatch } from "react-redux";
 import { selectVerseSlice } from "./features/verseSlice";
 import { isArticle } from "./features/wordSlice";
@@ -18,6 +18,7 @@ const arrayIffy = (verse) => {
   console.log(sentenceWords);
   return sentenceWords;
 };
+
 
 console.log(isArticle);
 
@@ -77,12 +78,12 @@ const Verse = () => {
       <PassageNumber />
       <br></br>
       <div>
-        <Word word={word} setArticleGrid={setArticleGrid} blankGrid={blankGrid}>
+        <CheckWord word={word} setArticleGrid={setArticleGrid} blankGrid={blankGrid}>
           <ArticleGrid
             articleGrid={articleGrid}
             setArticleGrid={setArticleGrid}
           />
-        </Word>
+        </CheckWord>
       </div>
       <div>
       </div>
