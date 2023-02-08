@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Verse.css";
 import CheckWord from "./CheckWord";
-import { useSelector, useDispatch } from "react-redux";
+import Word from "./Word";
+import { useSelector } from "react-redux";
 import { selectVerseSlice } from "./features/verseSlice";
 import { isArticle } from "./features/wordSlice";
 import { ArticleGrid } from "./ArticleGrid";
@@ -50,8 +51,6 @@ const Verse = () => {
     neuter: "-clear",
   };
 
-  const dispatch = useDispatch();
-
   const verse = useSelector(selectVerseSlice);
   console.log("checking selector in Verse: " + verse);
 
@@ -61,17 +60,7 @@ const Verse = () => {
     <div className="verse-sentence">
       {verseArray.map((word, i) => {
         return (
-          <p
-          className="verse-word"
-          name={word.word}
-          onClick={(e) => {
-            dispatch(isArticle(e.target.innerHTML));
-            setArticleGrid(blankGrid);
-          }}
-          key={word.word + i}
-          >
-            {word.word}
-          </p>
+          <Word key={word.word + i} word={word.word}  setArticleGrid={setArticleGrid} blankGrid={blankGrid}/>
         );
       })
     }
