@@ -8,6 +8,7 @@ export const greekArticles = {
   Ή: { case: ["nominative"], number: "singular", gender: ["feminine"] },
   Ἡ: { case: ["nominative"], number: "singular", gender: ["feminine"] },
   τό: { case: ["nominative", "accusative"], number: "singular", gender: ["neuter"] },
+  τὸ: { case: ["nominative", "accusative"], number: "singular", gender: ["neuter"] },
   Τὸ: { case: ["nominative", "accusative"], number: "singular", gender: ["neuter"] },
   Τό: { case: ["nominative", "accusative"], number: "singular", gender: ["neuter"] },
   τόν: { case: ["accusative"], number: "singular", gender: ["masculine"] },
