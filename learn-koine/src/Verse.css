@@ -12,10 +12,22 @@
   user-select: none;
 }
 
-.verse-word:hover {
-  cursor: pointer;
+.verse-word-highlight-correct {
+  display: inline-block;
+  margin: 1px;
+  padding: 4px;
   background-color: green;
   border-radius: 5%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.verse-word:hover {
+  cursor: pointer;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 @media only screen and (max-width: 475px) {

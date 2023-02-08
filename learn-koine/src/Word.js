@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { isArticle } from "./features/wordSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Word = (props) => {
     const [highlight, setHighlight] = useState("")
@@ -9,7 +9,7 @@ const Word = (props) => {
     const { blankGrid, setArticleGrid } = props;
 
     const handleClick = () => {
-        setHighlight("")
+        setHighlight("-highlight-correct")
         dispatch(isArticle(props.word))
         setArticleGrid(blankGrid)
     }
