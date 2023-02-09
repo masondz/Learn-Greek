@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { greekArticles } from "../greek_text/greekArticles";
 
-const checkIfArticle = (word) => {
+export const checkIfArticle = (word) => {
   if (word in greekArticles) {
     console.log("it's an article!");
     console.log(greekArticles[word.word]);

@@ -4,9 +4,10 @@ import CheckWord from "./CheckWord";
 import Word from "./Word";
 import { useSelector } from "react-redux";
 import { selectVerseSlice } from "./features/verseSlice";
-import { isArticle } from "./features/wordSlice";
 import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
+import { checkIfArticle } from "./features/wordSlice";
+import { greekArticles } from "./greek_text/greekArticles";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -20,8 +21,6 @@ const arrayIffy = (verse) => {
   return sentenceWords;
 };
 
-
-console.log(isArticle);
 
 const Verse = () => {
 
@@ -55,6 +54,17 @@ const Verse = () => {
   console.log("checking selector in Verse: " + verse);
 
   let verseArray = arrayIffy(verse);
+  for (let i=0; i < verseArray.length; i++) {
+    if (checkIfArticle(verseArray[i].word)) {
+      verseArray[i].partOfSpeech = "article";
+      verseArray[i].parse = greekArticles[verseArray[i].word]
+    } else {
+      verseArray[i].partOfSpeech = "";
+      verseArray[i].parse = { case: [], number: "", gender: [] };
+    }
+  }
+  
+
 
   return (
     <div className="verse-sentence">
