@@ -62,14 +62,14 @@ const Verse = () => {
       verseArray[i].parse = { case: [], number: "", gender: [] };
     }
   }
-  
+  console.log(verseArray);
 
 
   return (
     <div className="verse-sentence">
       {verseArray.map((word, i) => {
         return (
-          <Word key={word.word + i} word={word.word}  setArticleGrid={setArticleGrid} blankGrid={blankGrid}/>
+          <Word key={word.word + i} word={word}  setArticleGrid={setArticleGrid} blankGrid={blankGrid}/>
         );
       })
     }

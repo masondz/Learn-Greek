@@ -5,8 +5,8 @@
 
 .verse-word {
   display: inline-block;
-  margin: 1px;
-  padding: 4px;
+  margin-right: 2px;
+  padding-right: 5px;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -14,8 +14,11 @@
 
 .verse-word-highlight-correct {
   display: inline-block;
-  margin: 1px;
-  padding: 4px;
+  position: relative;
+  top: 30px;
+  height: 55px;
+  margin-right: 2px;
+  padding: 0px 2.5px;
   background-color: green;
   border-radius: 5%;
   -webkit-user-select: none;
@@ -23,18 +26,100 @@
   user-select: none;
 }
 
-.verse-word:hover {
-  cursor: pointer;
-  border: solid 1px white;
-  border-radius: 5px;
-  padding: 3px;
+.verse-word-highlight-correct p {
+  position: relative;
+  bottom: 30px;
 }
 
-@media only screen and (max-width: 475px) {
+.verse-word-highlight-correct .indicator {
+  position: relative;
+  bottom: 15px;
+}
+.verse-word-highlight-wrong p {
+  position: relative;
+  bottom: 30px;
+}
+
+.verse-word-highlight-wrong .indicator {
+  position: relative;
+  bottom: 15px;
+}
+
+.verse-word-highlight-wrong {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  height: 55px;
+  margin-right: 2px;
+  padding: 0px 2.5px;
+  background-color: rgb(231, 77, 77);
+  border-radius: 5%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.verse-word:hover {
+  cursor: pointer;
+  height: 45px;
+  position: relative;
+  top: 25px;
+  border: solid 1px white;
+  border-radius: 5px;
+  margin-right: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 2.5px;
+}
+
+.verse-word:hover p {
+  position: relative;
+  bottom: 25px;
+}
+
+.indicator {
+  font-size: small;
+  position: relative;
+  bottom: 15px;
+  height: 0px;
+  color: white;
+}
+
+.inner-word {
+  
+}
+
+@media only screen and (max-width: 540px) {
   .verse-word {
     font-size: larger;
   }
+
+
+  .verse-word-highlight-correct {
+    height: 45px;
+    padding: 0px 2.5px;
+  }
+  
+  .verse-word-highlight-correct .indicator {
+    bottom: 0px;
+    top: 14px;
+  }
+  .verse-word-highlight-wrong {
+    height: 45px;
+    padding: 0px 2.5px;
+  }
+  
+  .verse-word-highlight-wrong .indicator {
+    bottom: 0px;
+    top: 14px;
+  }
+
+  
+  
 }
+
+
 
 .passage {
   text-align: end;
