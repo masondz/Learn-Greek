@@ -73,6 +73,8 @@ const Verse = () => {
         );
       })
     }
+    <br></br>
+    <br></br>
       <PassageNumber />
       <br></br>
       <div>
