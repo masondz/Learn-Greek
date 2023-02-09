@@ -59,6 +59,15 @@
   padding: 10px;
   color: white;
   font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.chosen-word {
+  display: inline-flex;
+}
+
+.chosen-word:first-child p {
+  margin-right: 0.5em;
 }
 
 @media (hover: hover) {

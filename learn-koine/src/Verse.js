@@ -21,9 +21,7 @@ const arrayIffy = (verse) => {
   return sentenceWords;
 };
 
-
 const Verse = () => {
-
   let [word] = useState("");
 
   const [articleGrid, setArticleGrid] = useState({
@@ -53,40 +51,45 @@ const Verse = () => {
   const verse = useSelector(selectVerseSlice);
 
   let verseArray = arrayIffy(verse);
-  for (let i=0; i < verseArray.length; i++) {
+  for (let i = 0; i < verseArray.length; i++) {
     if (checkIfArticle(verseArray[i].word)) {
       verseArray[i].partOfSpeech = "article";
-      verseArray[i].parse = greekArticles[verseArray[i].word]
+      verseArray[i].parse = greekArticles[verseArray[i].word];
     } else {
       verseArray[i].partOfSpeech = "";
       verseArray[i].parse = { case: [], number: "", gender: [] };
     }
   }
-  console.log(verseArray);
-
 
   return (
     <div className="verse-sentence">
       {verseArray.map((word, i) => {
         return (
-          <Word key={word.word + i} word={word}  setArticleGrid={setArticleGrid} blankGrid={blankGrid}/>
+          <Word
+            key={word.word + i}
+            word={word}
+            setArticleGrid={setArticleGrid}
+            blankGrid={blankGrid}
+          />
         );
-      })
-    }
-    <br></br>
-    <br></br>
+      })}
+      <br></br>
+      <br></br>
       <PassageNumber />
       <br></br>
       <div>
-        <CheckWord word={word} setArticleGrid={setArticleGrid} blankGrid={blankGrid}>
+        <CheckWord
+          word={word}
+          setArticleGrid={setArticleGrid}
+          blankGrid={blankGrid}
+        >
           <ArticleGrid
             articleGrid={articleGrid}
             setArticleGrid={setArticleGrid}
           />
         </CheckWord>
       </div>
-      <div>
-      </div>
+      <div></div>
     </div>
   );
 };

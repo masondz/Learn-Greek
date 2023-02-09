@@ -1,6 +1,5 @@
 .verse-sentence {
   width: 90%;
-  
 }
 
 .verse-word {
@@ -81,12 +80,9 @@
   user-select: none;
 }
 
-
 .verse-word:hover {
   cursor: pointer;
 }
-
-
 
 .indicator {
   font-size: small;
@@ -116,7 +112,6 @@
 }
 
 .inner-word {
-  
 }
 
 @media only screen and (max-width: 540px) {
@@ -126,14 +121,12 @@
     font-size: larger;
   }
 
-
   .verse-word-highlight-correct {
     height: 48px;
     padding: 0px 2.5px;
     font-size: larger;
-
   }
-  
+
   .verse-word-highlight-correct .indicator {
     bottom: 0px;
     top: 18px;
@@ -147,33 +140,26 @@
     height: 48px;
     padding: 0px 2.5px;
     font-size: larger;
-
   }
-  
+
   .verse-word-highlight-wrong .indicator {
     bottom: 0px;
     top: 18px;
   }
- 
+
   .verse-word-highlight-wrong .indicator-highlight-wrong {
     bottom: 0px;
     top: 18px;
   }
-
-  
-  
-  
 }
-
-
 
 .passage {
   text-align: end;
-  font-size: .7em;
+  font-size: 0.7em;
   padding-right: 4px;
   margin-top: 5px;
   margin-bottom: 0px;
-  opacity: .75;
+  opacity: 0.75;
   margin-left: 15px;
   font-style: italic;
 }

@@ -7,8 +7,6 @@ import "./Word.css";
 const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   const { word, partOfSpeech } = useSelector(selectWordSlice);
 
-
-
   const dispatch = useDispatch();
 
   let selectedWord = "";
@@ -21,16 +19,17 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   }
 
   if (partOfSpeech !== "article" && word) {
-    describeWord = "Not an artcle :(";
+    describeWord = " - Not an artcle :(";
   } else if (partOfSpeech !== "article" && !word) {
     describeWord = "Select an article";
   }
 
-
   return (
     <div>
-      <p>{selectedWord}</p>
-      <p>{describeWord}</p>
+      <div className="chosen-word">
+        <p>{selectedWord}</p>
+        <p>{describeWord}</p>
+      </div>
       {children}
       <button
         className="button"
