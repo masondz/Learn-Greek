@@ -8,7 +8,7 @@ const correctPick = "\u2713";
 
 
 const Word = (props) => {
-    const [indicator, setIndicator] = useState("")
+    const [indicator, setIndicator] = useState("o")
     const [highlight, setHighlight] = useState("")
     const dispatch = useDispatch()
     

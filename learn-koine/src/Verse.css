@@ -84,9 +84,9 @@
 
 .verse-word:hover {
   cursor: pointer;
-  height: 45px;
+  height: 30px;
   position: relative;
-  top: 25px;
+  top: 45px;
   border: solid 1px white;
   border-radius: 5px;
   margin-right: 1px;
@@ -97,7 +97,7 @@
 
 .verse-word:hover p {
   position: relative;
-  bottom: 25px;
+  bottom: 45px;
 }
 
 .indicator {
@@ -140,7 +140,7 @@
 
 
   .verse-word-highlight-correct {
-    height: 45px;
+    height: 48px;
     padding: 0px 2.5px;
     font-size: larger;
 
@@ -148,15 +148,15 @@
   
   .verse-word-highlight-correct .indicator {
     bottom: 0px;
-    top: 14px;
+    top: 18px;
   }
   .verse-word-highlight-correct .indicator-highlight-correct {
     bottom: 0px;
-    top: 14px;
+    top: 18px;
   }
 
   .verse-word-highlight-wrong {
-    height: 45px;
+    height: 48px;
     padding: 0px 2.5px;
     font-size: larger;
 
@@ -164,14 +164,26 @@
   
   .verse-word-highlight-wrong .indicator {
     bottom: 0px;
-    top: 14px;
+    top: 18px;
   }
  
   .verse-word-highlight-wrong .indicator-highlight-wrong {
     bottom: 0px;
-    top: 14px;
+    top: 18px;
   }
 
+  
+  .verse-word:hover {
+    height: 30px;
+    position: relative;
+    top: 35px;
+    padding: 0px 2.5px;
+  }
+  
+  .verse-word:hover p {
+    position: relative;
+    bottom: 35px;
+  }
   
   
 }
