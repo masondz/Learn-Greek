@@ -4,6 +4,8 @@ import Verse from "./Verse";
 import { randomVerse, selectVerseSlice } from "./features/verseSlice";
 import { useDispatch, useSelector } from "react-redux";
 
+
+
 function App() {
   const dispatch = useDispatch();
 
@@ -15,9 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <body className="App-header">
         <Verse verse={verse} />
-      </header>
+      </body>
     </div>
   );
 }
