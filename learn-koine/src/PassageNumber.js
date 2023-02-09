@@ -43,7 +43,6 @@ const books = [
         }
         //verse
         let verseNumber = ref.slice(6, 9);
-        console.log(verseNumber)
         return {bookIndex: bookIndex, chapterNumber: chapterNumber, verseNumber: verseNumber};
     }
 

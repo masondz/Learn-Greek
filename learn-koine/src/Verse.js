@@ -51,7 +51,6 @@ const Verse = () => {
   };
 
   const verse = useSelector(selectVerseSlice);
-  console.log("checking selector in Verse: " + verse);
 
   let verseArray = arrayIffy(verse);
   for (let i=0; i < verseArray.length; i++) {

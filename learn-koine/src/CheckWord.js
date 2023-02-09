@@ -7,8 +7,7 @@ import "./Word.css";
 const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   const { word, partOfSpeech } = useSelector(selectWordSlice);
 
-  console.log(word);
-  console.log(partOfSpeech);
+
 
   const dispatch = useDispatch();
 
@@ -27,7 +26,6 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
     describeWord = "Select an article";
   }
 
-  console.log(children);
 
   return (
     <div>

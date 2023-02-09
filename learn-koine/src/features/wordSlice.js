@@ -4,7 +4,6 @@ import { greekArticles } from "../greek_text/greekArticles";
 export const checkIfArticle = (word) => {
   if (word in greekArticles) {
     console.log("it's an article!");
-    console.log(greekArticles[word.word]);
     return true;
   } else {
     console.log("it is not an article :(");
