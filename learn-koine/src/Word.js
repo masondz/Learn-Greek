@@ -28,7 +28,7 @@ const Word = (props) => {
 
     return (
         <div className={"verse-word" + highlight}>
-            <p className="indicator">{indicator}</p>
+            <p className={"indicator" + highlight}>{indicator}</p>
             <p className="inner-word" name={word.word} onClick={handleClick}>{word.word}</p>
         </div>
     )
