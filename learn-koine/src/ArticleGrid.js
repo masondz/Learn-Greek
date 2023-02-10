@@ -6,12 +6,8 @@ import { selectWordSlice } from "./features/wordSlice";
 export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   const { parse } = useSelector(selectWordSlice);
 
-
-  console.log(articleGrid);
-
   const checkCase = (e) => {
     e.preventDefault();
-    console.log(e);
     const wordCase = parse.case;
     const wordNumber = parse.number;
     const wordGender = parse.gender;

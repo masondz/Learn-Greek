@@ -2,11 +2,15 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { randomVerse } from "./features/verseSlice";
 import { clearWord, selectWordSlice } from "./features/wordSlice";
+import { clearArticleCount, selectAllArticlesFound, selectArticleCount } from "./features/countSlice";
 import "./Word.css";
 
 const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
+  console.log("CheckWord renders")
   const { word, partOfSpeech } = useSelector(selectWordSlice);
-
+  const allArticlesFound = useSelector(selectAllArticlesFound);
+  const articleCount = useSelector(selectArticleCount)
+  
   const dispatch = useDispatch();
 
   let selectedWord = "";
@@ -31,16 +35,19 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
         <p>{describeWord}</p>
       </div>
       {children}
-      <button
-        className="button"
-        onClick={() => {
-          dispatch(randomVerse());
-          setArticleGrid(blankGrid);
-          dispatch(clearWord());
-        }}
-      >
-        New Verse
-      </button>
+      { allArticlesFound || articleCount === 0 ?
+           <button
+              className="button"
+              onClick={() => {
+                dispatch(clearArticleCount());
+                dispatch(randomVerse());
+                setArticleGrid(blankGrid);
+                dispatch(clearWord());
+              }}
+            >
+              New Verse
+            </button>
+        : <button className="button" disabled>Find articles first!</button>}
     </div>
   );
 };

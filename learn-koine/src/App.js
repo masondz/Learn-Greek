@@ -17,9 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <body className="App-header">
+      <div className="App-header">
         <Verse verse={verse} />
-      </body>
+      </div>
     </div>
   );
 }

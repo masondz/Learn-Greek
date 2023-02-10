@@ -3,10 +3,8 @@ import { greekArticles } from "../greek_text/greekArticles";
 
 export const checkIfArticle = (word) => {
   if (word in greekArticles) {
-    console.log("it's an article!");
     return true;
   } else {
-    console.log("it is not an article :(");
     return false;
   }
 };
@@ -28,7 +26,6 @@ const wordSlice = createSlice({
         state.word = action.payload;
         state.partOfSpeech = "";
         state.parse = { case: [], number: "", gender: [] };
-        console.log("partOfSpeech changed to blank");
       }
     },
     checkWordSlice: (state, action) => {

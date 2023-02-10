@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./Verse.css";
 import CheckWord from "./CheckWord";
 import Word from "./Word";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { selectVerseSlice } from "./features/verseSlice";
+import { setArticleCount } from "./features/countSlice";
 import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
 import { checkIfArticle } from "./features/wordSlice";
@@ -17,12 +18,13 @@ const arrayIffy = (verse) => {
       word: word,
     };
   });
-  console.log(sentenceWords);
   return sentenceWords;
 };
 
 const Verse = () => {
+  console.log("Verse Renders")
   let [word] = useState("");
+  const dispatch = useDispatch();
 
   const [articleGrid, setArticleGrid] = useState({
     nominative: "-clear",
@@ -50,16 +52,21 @@ const Verse = () => {
 
   const verse = useSelector(selectVerseSlice);
 
+  let articleCount = 0;
+
   let verseArray = arrayIffy(verse);
   for (let i = 0; i < verseArray.length; i++) {
     if (checkIfArticle(verseArray[i].word)) {
       verseArray[i].partOfSpeech = "article";
       verseArray[i].parse = greekArticles[verseArray[i].word];
+      articleCount++;
     } else {
       verseArray[i].partOfSpeech = "";
       verseArray[i].parse = { case: [], number: "", gender: [] };
     }
   }
+
+  dispatch(setArticleCount(articleCount))
 
   return (
     <div className="verse-sentence">

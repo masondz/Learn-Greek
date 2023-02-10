@@ -15,16 +15,13 @@ const organizeText = (text) => {
     }
     return verses;
   };
-  
-//   const theText = organizeText(greekText);
-  
+    
   const getRandomVerse = (theText) => {
     let randomIndex = Math.floor(Math.random() * theText.length + 1);
+
     return [theText[randomIndex].reference, theText[randomIndex].verse];
   };
   
-//   let verse = getRandomVerse();
-
 
 const verseSlice = createSlice({
     name: "verse",
@@ -38,7 +35,6 @@ const verseSlice = createSlice({
             let randomVerse = getRandomVerse(organizeText(greekText)) 
             state.verse = randomVerse[1];
             state.reference = randomVerse[0];
-            console.log(typeof state)
         }
     },
 
