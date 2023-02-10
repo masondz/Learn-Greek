@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { isArticle } from "./features/wordSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { selectArticleCount, selectFoundArticles } from "./features/countSlice";
-import { setAllArticlesFound, incrementFoundArticles } from "./features/countSlice";
+import { useDispatch } from "react-redux";
+import { incrementFoundArticles } from "./features/countSlice";
 
 
 
@@ -15,8 +14,6 @@ const Word = (props) => {
     // console.log("Word renders");
     const [indicator, setIndicator] = useState("o")
     const [highlight, setHighlight] = useState("")
-    const articleCount = useSelector(selectArticleCount)
-    const foundArticles = useSelector(selectFoundArticles)
     const dispatch = useDispatch()
 
 

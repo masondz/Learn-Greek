@@ -17,7 +17,7 @@ const countSlice = createSlice({
     },
     incrementFoundArticles: (state, action) => {
       state.foundArticles += 1;
-      if(state.articles == state.foundArticles) {
+      if(state.articles === state.foundArticles) {
         state.allArticlesFound = true;
       }
     },
