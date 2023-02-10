@@ -23,6 +23,9 @@ const Word = (props) => {
     const { blankGrid, setArticleGrid, word } = props;
 
     const handleClick = () => {
+        if (highlight === "-highlight-correct") {
+            return;
+        }
         if(word.partOfSpeech === "article") {
             setIndicator(correctPick);
             setHighlight("-highlight-correct");
