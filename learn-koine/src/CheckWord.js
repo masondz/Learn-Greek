@@ -56,9 +56,10 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
         <p>{describeWord}</p>
       </div>
       {children}
+      <br></br>
+      <div className="button-group">
       <button className="button" onClick={handleClick}>{checkComplete}</button>
-      <br></br>
-      <br></br>
+
       <button className="button" onClick={() => {
         setCheckComplete("Check")
         setTimeout(() => {
@@ -68,6 +69,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
             dispatch(clearWord());
           }, 1)
       }}>Skip</button>
+      </div>
     </div>
   );
 };

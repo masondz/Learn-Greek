@@ -19,7 +19,7 @@
   flex-flow: column;
   justify-content: center;
   align-items: stretch;
-  margin: 0px;
+  margin-bottom: 1em;
   padding: 20px;
 }
 
@@ -51,6 +51,10 @@
   cursor: pointer;
 }
 
+.button-group {
+  
+}
+
 .button {
   background-color: #282c34;
   border-radius: 10px;
@@ -60,6 +64,7 @@
   color: white;
   font-weight: bold;
   margin-bottom: 1.5em;
+  margin-left: 2em;
 }
 
 .chosen-word {
@@ -80,5 +85,9 @@
 @media only screen and (max-width: 475px) {
   .cases {
     padding: 5px;
+  }
+
+  .button {
+    width: 15em;
   }
 }
