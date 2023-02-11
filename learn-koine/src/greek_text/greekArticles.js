@@ -3,6 +3,7 @@ export const greekArticles = {
   ὁ: { case: ["nominative"], number: "singular", gender: ["masculine"] },
   Ὁ: { case: ["nominative"], number: "singular", gender: ["masculine"] },
   οἱ: { case: ["nominative"], number: "plural", gender: ["masculine"] },
+  οἳ: { case: ["nominative"], number: "plural", gender: ["masculine"] },
   Οἱ: { case: ["nominative"], number: "plural", gender: ["masculine"] },
   ἡ: { case: ["nominative"], number: "singular", gender: ["feminine"] },
   Ή: { case: ["nominative"], number: "singular", gender: ["feminine"] },
