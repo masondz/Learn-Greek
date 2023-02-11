@@ -7,10 +7,13 @@ const parsingSlice = createSlice({
     checkParsingSlice: () => {
       alert("checking parsing slice");
     },
+    setParsingArticle: (state, action) => {
+      state.parsingArticle = action.payload;
+    },
   },
 });
 
-export const { checkParsingSlice } = parsingSlice.actions;
+export const { checkParsingSlice, setParsingArticle } = parsingSlice.actions;
 
 export const selectParsingArticle = (state) => state.parsing.parsingArticle;
 
