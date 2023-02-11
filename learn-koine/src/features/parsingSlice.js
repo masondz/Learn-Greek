@@ -17,4 +17,4 @@ export const { checkParsingSlice, setParsingArticle } = parsingSlice.actions;
 
 export const selectParsingArticle = (state) => state.parsing.parsingArticle;
 
-export default parsingSlice;
+export default parsingSlice.reducer;
