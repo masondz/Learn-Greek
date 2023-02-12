@@ -22,7 +22,6 @@ const arrayIffy = (verse) => {
 };
 
 const Verse = () => {
-  console.log("Verse Renders")
   let [word] = useState("");
   const dispatch = useDispatch();
 
@@ -66,7 +65,7 @@ const Verse = () => {
     }
   }
 
-  dispatch(setArticleCount(articleCount))
+  dispatch(setArticleCount(articleCount));
 
   return (
     <div className="verse-sentence">

@@ -31,15 +31,18 @@ const verseSlice = createSlice({
     },
 
     randomVerse: (state, action) => {
-      state.verse = { verse: "Getting verse...", reference: "" };
       let randomVerse = getRandomVerse(organizeText(greekText));
       state.verse = randomVerse[1];
       state.reference = randomVerse[0];
     },
+    clearVerse: (state, action) => {
+      state.verse = "";
+      state.reference = "";
+    },
   },
 });
 
-export const { checkVerseSlice, randomVerse } = verseSlice.actions;
+export const { checkVerseSlice, randomVerse, clearVerse } = verseSlice.actions;
 
 export const selectVerseSlice = (state) => state.verse.verse;
 

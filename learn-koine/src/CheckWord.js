@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { randomVerse } from "./features/verseSlice";
+import { randomVerse, clearVerse } from "./features/verseSlice";
 import { clearWord, selectWordSlice } from "./features/wordSlice";
 import {
   clearArticleCount,
@@ -24,6 +24,9 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
     if (allArticlesFound || articleCount === 0) {
       setCheckComplete("Good Job!");
       setTimeout(() => {
+        dispatch(clearVerse());
+      }, 500);
+      setTimeout(() => {
         setCheckComplete("Check");
         setTimeout(() => {
           dispatch(clearArticleCount());
@@ -31,7 +34,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
           setArticleGrid(blankGrid);
           dispatch(clearWord());
         }, 1);
-      }, 500);
+      }, 501);
     } else {
       setParsingArticle(false);
       setCheckComplete("Find More Articles!");
@@ -72,6 +75,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
         <button
           className="button"
           onClick={() => {
+            dispatch(clearVerse());
             setCheckComplete("Check");
             setTimeout(() => {
               dispatch(clearArticleCount());
