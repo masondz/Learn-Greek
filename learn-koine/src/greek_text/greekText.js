@@ -1,4 +1,7 @@
-export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ ˚Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ:
+// "ἡλικίαν" or ἡλικίαν
+const gText =  "ὁδηγήσει"
+const gLex = "ὁδηγήσει"
+ const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ ˚Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ:
 40001002 Ἀβραὰμ ἐγέννησεν τὸν Ἰσαάκ, Ἰσαὰκ δὲ ἐγέννησεν τὸν Ἰακώβ, Ἰακὼβ δὲ ἐγέννησεν τὸν Ἰούδαν καὶ τοὺς ἀδελφοὺς αὐτοῦ,
 40001003 Ἰούδας δὲ ἐγέννησεν τὸν Φαρὲς καὶ τὸν Ζάρα ἐκ τῆς Θαμάρ, Φαρὲς δὲ ἐγέννησεν τὸν Ἑσρώμ, Ἑσρὼμ δὲ ἐγέννησεν τὸν Ἀράμ,
 40001004 Ἀρὰμ δὲ ἐγέννησεν τὸν Ἀμιναδάβ, Ἀμιναδὰβ δὲ ἐγέννησεν τὸν Ναασσών, Ναασσὼν δὲ ἐγέννησεν τὸν Σαλμών,
@@ -7942,7 +7945,7 @@ export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ 
 66022006 Καὶ εἶπέν μοι, “Οὗτοι οἱ λόγοι πιστοὶ καὶ ἀληθινοί, καὶ ὁ ˚Κύριος, ὁ ˚Θεὸς τῶν πνευμάτων τῶν προφητῶν, ἀπέστειλεν τὸν ἄγγελον αὐτοῦ, δεῖξαι τοῖς δούλοις αὐτοῦ ἃ δεῖ γενέσθαι ἐν τάχει.”
 66022007 “Καὶ ἰδοὺ, ἔρχομαι ταχύ. Μακάριος ὁ τηρῶν τοὺς λόγους τῆς προφητείας τοῦ βιβλίου τούτου.”
 66022008 Κἀγὼ Ἰωάννης ὁ ἀκούων καὶ βλέπων ταῦτα. Καὶ ὅτε ἤκουσα καὶ ἔβλεψα, ἔπεσα προσκυνῆσαι ἔμπροσθεν τῶν ποδῶν τοῦ ἀγγέλου τοῦ δεικνύοντός μοι ταῦτα.
-66022009 Καὶ λέγει μοι, “Ὅρα μή· σύνδουλός σού εἰμι καὶ τῶν ἀδελφῶν σου, τῶν προφητῶν, καὶ τῶν τηρούντων τοὺς λόγους τοῦ βιβλίου τούτου. Τῷ ˚Θεῷ προσκύνησον!”
+66022009 Καὶ λέγει μοι, “Ὅρα μή· σύνδουλός σού εἰμι καὶ τῶν ἀδελφῶν σου, τῶν προφητῶν, καὶ τῶἡλικίανν τηρούντων τοὺς λόγους τοῦ βιβλίου τούτου. Τῷ ˚Θεῷ προσκύνησον!”
 66022010 Καὶ λέγει μοι, “Μὴ σφραγίσῃς τοὺς λόγους τῆς προφητείας τοῦ βιβλίου τούτου, ὁ καιρὸς γὰρ ἐγγύς ἐστιν.
 66022011 Ὁ ἀδικῶν, ἀδικησάτω ἔτι, καὶ ὁ ῥυπαρὸς, ῥυπανθήτω ἔτι, καὶ ὁ δίκαιος, δικαιοσύνην ποιησάτω ἔτι, καὶ ὁ ἅγιος, ἁγιασθήτω ἔτι.”
 66022012 “Ἰδοὺ, ἔρχομαι ταχύ, καὶ ὁ μισθός μου μετʼ ἐμοῦ, ἀποδοῦναι ἑκάστῳ ὡς τὸ ἔργον ἐστὶν αὐτοῦ.
@@ -7964,3 +7967,43 @@ export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ 
 # Produced by the Center for New Testament Restoration ( CNTR ) 11/30/22
 # Copyright © 2022 by Alan Bunning released under Creative Commons Attribution 4.0 International License ( CC BY-SA 4.0 )`;
 */
+
+// console.log(gText === gLex )
+
+// for (let i=0; i < gText.length; i++) {
+//     if (gText[i] === gLex[i]) {
+//         console.log("true")
+//     } else {
+//         console.log("false")
+//     }
+// };
+
+const fs = require('fs');
+
+const consonancesRaw = "ςρτθπσδφγξκλμνβψχζΡΓΤΥΔΖΘΚΛΜΝΧΠΣΞΛΨΒ"
+const numbersRaw = "0123456789"
+const specRaw = ";,.\"\'~"
+const numbers = numbersRaw.split("")
+const spec = specRaw.split("")
+const consonances = consonancesRaw.split("");
+let vowels = []
+for (let i =0; i < greekText.length; i++) {
+    if (!consonances.includes(greekText[i]) && !numbers.includes(greekText[i]) && !spec.includes(greekText[i])) {
+        if (!vowels.includes(greekText[i])) {
+            vowels.push(greekText[i])
+        }
+    }
+}
+console.log(vowels);
+
+const yourObject = {
+ vowels: vowels
+}
+
+fs.writeFile("C:/Users/zmason/Documents/GreekStuff/learn-koine/src/greek_text/greekVowelsAndMore.txt", JSON.stringify(yourObject), 'utf8', function (err) {
+    if (err) {
+        return console.log(err);
+    }
+
+    console.log("The file was saved!");
+}); 
