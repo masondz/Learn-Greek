@@ -1,5 +1,3 @@
-
-
 const lexicon = `G1	Ἄλφα｜N-NSN-T｜Noun, Nominative, Singular, Neuter, Title
 G2	Ἀαρών｜N-DSM-P｜Noun, Dative, Singular, Masculine, Person<br>Ἀαρών｜N-GSM-P｜Noun, Genitive, Singular, Masculine, Person<br>Ἀαρὼν｜N-GSM-P｜Noun, Genitive, Singular, Masculine, Person<br>Ἀαρών｜N-NSM-P｜Noun, Nominative, Singular, Masculine, Person
 G3	Ἀβαδδών｜N-NSM-T｜Noun, Nominative, Singular, Masculine, Title
@@ -96,7 +94,7 @@ G96	ἀδόκιμοι｜A-NPM｜Adjective, Nominative, Plural, Masculine<br>ἀ�
 G97	ἄδολον｜A-ASN｜Adjective, Accusative, Singular, Neuter
 G98	Ἀδραμυττηνῷ｜A-DSN-LG｜Adjective, Dative, Singular, Neuter, Location Gentilic
 G99	Ἀδρίᾳ｜N-DSM-L｜Noun, Dative, Singular, Masculine, Location
-G100	ἁδρότητι｜N-DSF｜Noun, Dative, Singular, Feminine
+G100 ἁδρότητι｜N-DSF｜Noun, Dative, Singular, Feminine
 G101	ἀδυνατήσει｜V-FAI-3S｜Verb, Future, Active, Indicative, third, Singular
 G102	ἀδύνατα｜A-NPN｜Adjective, Nominative, Plural, Neuter<br>ἀδύνατον｜A-ASN｜Adjective, Accusative, Singular, Neuter<br>ἀδύνατον｜A-NSN｜Adjective, Nominative, Singular, Neuter<br>Ἀδύνατον｜A-NSN｜Adjective, Nominative, Singular, Neuter<br>ἀδύνατόν｜A-NSN｜Adjective, Nominative, Singular, Neuter<br>ἀδύνατος｜A-NSM｜Adjective, Nominative, Singular, Masculine<br>ἀδυνάτων｜A-GPM｜Adjective, Genitive, Plural, Masculine
 G103	ᾄδοντες｜V-PAP-NPM｜Verb, Present, Active, Participle, Nominative, Plural, Masculine<br>ᾄδουσιν｜V-PAI-3P｜Verb, Present, Active, Indicative, third, Plural
@@ -5404,26 +5402,18 @@ G9992	τυπικῶς｜ADV｜ADVerb or adverb and particle combined`
 
 const gTextVowelsPlus = ["%","ί","ο","ε","έ","ω","Ἰ","η","ῦ","ι","υ","ἱ","α","ὶ","Ἀ","ά","ὰ","ἐ","ὸ","ὲ","ώ","ὼ","ύ","ὺ","ἀ","ὐ","ῆ","Ἑ","ό","ὴ","ῶ","Ο","Ὀ","ή","Ἐ","ἄ","ἧ","ὁ","ᾶ","ὖ","ἕ","ἡ","ὕ","ἦ","ῷ","ἢ","ῖ","ὑ","ἔ","Ἁ","ὢ","ᾳ","ἰ","ʼ","ὄ","“","ῇ","ἁ","”","ὅ","ἵ","ῥ","ὡ","ὗ","·","Ἡ","ῴ","Ἱ","Ε","ἴ","ἤ","ἶ","ἠ","ὃ","Α","ἂ","Ὁ","ὀ","ῳ","Ἠ","ΐ","‘","’","ῃ","ἑ","Ἤ","ἅ","Ἄ","ᾧ","Ἔ","Ὕ","ᾷ","Ὑ","ἓ","Ὃ","Ἴ","ὒ","ὔ","ἥ","Ὅ","ὥ","ᾖ","ὧ","!","ῄ","Ἢ","ᾠ","ϋ","ἷ","Ἕ","Ἦ","Ἵ","ἆ","ἣ","ἃ","ὦ","Η","ὠ","ϊ","Ἅ","Ι","ΰ","Ὥ","ᾑ","Ὡ","Ὦ","ὤ","ῒ","Ἆ","Ὄ","ῢ","ὓ","Ὧ","ᾔ","ᾗ","Ἥ","ᾐ","ἳ","ὂ","Ὤ","Ἓ","Ὠ","Ἃ","ᾴ","ᾄ"]
 
-let missingLetters = []
+let testLine = `G85	ἀδημονεῖν｜V-PAN｜Verb, Present, Active, infinitive<br>ἀδημονῶν｜V-PAP-NSM｜Verb, Present, Active, Participle, Nominative, Singular, Masculine
+G7530	Εὖγε｜PRT｜PaRTicle, disjunctive particle
+G9577	ὑπόλειμμα｜N-NSN｜Noun, Nominative, Singular, Neuter`
 
-for (let i=0; i < gTextVowelsPlus.length; i++)  {
-    if (!lexicon.includes(gTextVowelsPlus[i])) {
-        missingLetters.push(gTextVowelsPlus[i])
-    }
-}
+let separateLines = testLine.split("\n");
 
-const fs = require('fs');
+// let wordOptions = []
+// let lexiconEntries = {}
 
-const yourObject = {
-    missing: missingLetters
-   }
-   
-   fs.writeFile("C:/Users/zmason/Documents/GreekStuff/learn-koine/src/greek_text/greekVowelsAndMore.txt", JSON.stringify(yourObject), 'utf8', function (err) {
-       if (err) {
-           return console.log(err);
-       }
-   
-       console.log("The file was saved!");
-   }); 
-   
+// secondSplit.forEach((spot) => {
+//     let option = spot.split('｜');
+//     wordOptions.push(option)
+// })
 
+console.log(firstSplit);
