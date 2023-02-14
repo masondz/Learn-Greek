@@ -1,7 +1,7 @@
 // "ἡλικίαν" or ἡλικίαν
-const gText =  "ὁδηγήσει"
-const gLex = "ὁδηγήσει"
- const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ ˚Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ:
+// const gText =  "ὁδηγήσει"
+// const gLex = "ὁδηγήσει"
+export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ ˚Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ:
 40001002 Ἀβραὰμ ἐγέννησεν τὸν Ἰσαάκ, Ἰσαὰκ δὲ ἐγέννησεν τὸν Ἰακώβ, Ἰακὼβ δὲ ἐγέννησεν τὸν Ἰούδαν καὶ τοὺς ἀδελφοὺς αὐτοῦ,
 40001003 Ἰούδας δὲ ἐγέννησεν τὸν Φαρὲς καὶ τὸν Ζάρα ἐκ τῆς Θαμάρ, Φαρὲς δὲ ἐγέννησεν τὸν Ἑσρώμ, Ἑσρὼμ δὲ ἐγέννησεν τὸν Ἀράμ,
 40001004 Ἀρὰμ δὲ ἐγέννησεν τὸν Ἀμιναδάβ, Ἀμιναδὰβ δὲ ἐγέννησεν τὸν Ναασσών, Ναασσὼν δὲ ἐγέννησεν τὸν Σαλμών,
@@ -7978,32 +7978,31 @@ const gLex = "ὁδηγήσει"
 //     }
 // };
 
-const fs = require('fs');
 
-const consonancesRaw = "ςρτθπσδφγξκλμνβψχζΡΓΤΥΔΖΘΚΛΜΝΧΠΣΞΛΨΒ"
-const numbersRaw = "0123456789"
-const specRaw = ";,.\"\'~"
-const numbers = numbersRaw.split("")
-const spec = specRaw.split("")
-const consonances = consonancesRaw.split("");
-let vowels = []
-for (let i =0; i < greekText.length; i++) {
-    if (!consonances.includes(greekText[i]) && !numbers.includes(greekText[i]) && !spec.includes(greekText[i])) {
-        if (!vowels.includes(greekText[i])) {
-            vowels.push(greekText[i])
-        }
-    }
-}
-console.log(vowels);
+// const consonancesRaw = "ςρτθπσδφγξκλμνβψχζΡΓΤΥΔΖΘΚΛΜΝΧΠΣΞΛΨΒ"
+// const numbersRaw = "0123456789"
+// const specRaw = ";,.\"\'~"
+// const numbers = numbersRaw.split("")
+// const spec = specRaw.split("")
+// const consonances = consonancesRaw.split("");
+// let vowels = []
+// for (let i =0; i < greekText.length; i++) {
+//     if (!consonances.includes(greekText[i]) && !numbers.includes(greekText[i]) && !spec.includes(greekText[i])) {
+//         if (!vowels.includes(greekText[i])) {
+//             vowels.push(greekText[i])
+//         }
+//     }
+// }
+// console.log(vowels);
 
-const yourObject = {
- vowels: vowels
-}
+// const yourObject = {
+//  vowels: vowels
+// }
 
-fs.writeFile("C:/Users/zmason/Documents/GreekStuff/learn-koine/src/greek_text/greekVowelsAndMore.txt", JSON.stringify(yourObject), 'utf8', function (err) {
-    if (err) {
-        return console.log(err);
-    }
+// fs.writeFile("C:/Users/zmason/Documents/GreekStuff/learn-koine/src/greek_text/greekVowelsAndMore.txt", JSON.stringify(yourObject), 'utf8', function (err) {
+//     if (err) {
+//         return console.log(err);
+//     }
 
-    console.log("The file was saved!");
-}); 
+//     console.log("The file was saved!");
+// }); 
