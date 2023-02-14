@@ -5405,21 +5405,26 @@ G9992	τυπικῶς｜ADV｜ADVerb or adverb and particle combined`
 // let testLine = `G85	ἀδημονεῖν｜V-PAN｜Verb, Present, Active, Infinitive<br>ἀδημονῶν｜V-PAP-NSM｜Verb, Present, Active, Participle, Nominative, Singular, Masculine
 // G7530	Εὖγε｜PRT｜Particle, disjunctive particle
 // G9577	ὑπόλειμμα｜N-NSN｜Noun, Nominative, Singular, Neuter`
-let gNumbers = {};
-let separateLines = lexicon.split("\n");
+
+//Turning the raw lexicon string into an object
+//each word will be its own key for fast lookup
+//each word will point to an object for its parse and Strong Number
+
+let separateLines = lexicon.split("\n");  //split on new lines
 let separateGNumber = []
-let separateWordUsages = []
 for (let i=0; i < separateLines.length; i++) {
-    separateGNumber.push(separateLines[i].split("\t"));
+    separateGNumber.push(separateLines[i].split("\t")); //split on tab. This seperates the G# from the rest of the line.
 }
 
 
 let gnumObject = {};
 separateGNumber.forEach((line) => {
     let gnum = line[0];
-    let splitOnbr = line[1].split("<br>");
-    gnumObject[gnum] = splitOnbr;
+    let splitOnbr = line[1].split("<br>"); //each words usage is seperate by a <br> tag.
+    gnumObject[gnum] = splitOnbr; //key a temporary object with the G#
 })
+
+//now we can make a new object that is keyed by each word usages
 
 let wordUsages = {};
 
@@ -5427,7 +5432,7 @@ for (lines in gnumObject) {
     let gnum = lines
     gnumObject[lines].forEach((line) => {
         let i = 0;
-        while (line[i] !== "｜") {
+        while (line[i] !== "｜") { //each word spelling is seperated from the parse definition by a " | "
             i++
         };
         let theWord = line.slice(0 , i);
