@@ -94,7 +94,7 @@ G96	ἀδόκιμοι｜A-NPM｜Adjective, Nominative, Plural, Masculine<br>ἀ�
 G97	ἄδολον｜A-ASN｜Adjective, Accusative, Singular, Neuter
 G98	Ἀδραμυττηνῷ｜A-DSN-LG｜Adjective, Dative, Singular, Neuter, Location Gentilic
 G99	Ἀδρίᾳ｜N-DSM-L｜Noun, Dative, Singular, Masculine, Location
-G100 ἁδρότητι｜N-DSF｜Noun, Dative, Singular, Feminine
+G100	ἁδρότητι｜N-DSF｜Noun, Dative, Singular, Feminine
 G101	ἀδυνατήσει｜V-FAI-3S｜Verb, Future, Active, Indicative, third, Singular
 G102	ἀδύνατα｜A-NPN｜Adjective, Nominative, Plural, Neuter<br>ἀδύνατον｜A-ASN｜Adjective, Accusative, Singular, Neuter<br>ἀδύνατον｜A-NSN｜Adjective, Nominative, Singular, Neuter<br>Ἀδύνατον｜A-NSN｜Adjective, Nominative, Singular, Neuter<br>ἀδύνατόν｜A-NSN｜Adjective, Nominative, Singular, Neuter<br>ἀδύνατος｜A-NSM｜Adjective, Nominative, Singular, Masculine<br>ἀδυνάτων｜A-GPM｜Adjective, Genitive, Plural, Masculine
 G103	ᾄδοντες｜V-PAP-NPM｜Verb, Present, Active, Participle, Nominative, Plural, Masculine<br>ᾄδουσιν｜V-PAI-3P｜Verb, Present, Active, Indicative, third, Plural
@@ -5400,20 +5400,39 @@ G7530	Εὖγε｜PRT｜PaRTicle, disjunctive particle
 G9577	ὑπόλειμμα｜N-NSN｜Noun, Nominative, Singular, Neuter
 G9992	τυπικῶς｜ADV｜ADVerb or adverb and particle combined`
 
-const gTextVowelsPlus = ["%","ί","ο","ε","έ","ω","Ἰ","η","ῦ","ι","υ","ἱ","α","ὶ","Ἀ","ά","ὰ","ἐ","ὸ","ὲ","ώ","ὼ","ύ","ὺ","ἀ","ὐ","ῆ","Ἑ","ό","ὴ","ῶ","Ο","Ὀ","ή","Ἐ","ἄ","ἧ","ὁ","ᾶ","ὖ","ἕ","ἡ","ὕ","ἦ","ῷ","ἢ","ῖ","ὑ","ἔ","Ἁ","ὢ","ᾳ","ἰ","ʼ","ὄ","“","ῇ","ἁ","”","ὅ","ἵ","ῥ","ὡ","ὗ","·","Ἡ","ῴ","Ἱ","Ε","ἴ","ἤ","ἶ","ἠ","ὃ","Α","ἂ","Ὁ","ὀ","ῳ","Ἠ","ΐ","‘","’","ῃ","ἑ","Ἤ","ἅ","Ἄ","ᾧ","Ἔ","Ὕ","ᾷ","Ὑ","ἓ","Ὃ","Ἴ","ὒ","ὔ","ἥ","Ὅ","ὥ","ᾖ","ὧ","!","ῄ","Ἢ","ᾠ","ϋ","ἷ","Ἕ","Ἦ","Ἵ","ἆ","ἣ","ἃ","ὦ","Η","ὠ","ϊ","Ἅ","Ι","ΰ","Ὥ","ᾑ","Ὡ","Ὦ","ὤ","ῒ","Ἆ","Ὄ","ῢ","ὓ","Ὧ","ᾔ","ᾗ","Ἥ","ᾐ","ἳ","ὂ","Ὤ","Ἓ","Ὠ","Ἃ","ᾴ","ᾄ"]
+// const gTextVowelsPlus = ["%","ί","ο","ε","έ","ω","Ἰ","η","ῦ","ι","υ","ἱ","α","ὶ","Ἀ","ά","ὰ","ἐ","ὸ","ὲ","ώ","ὼ","ύ","ὺ","ἀ","ὐ","ῆ","Ἑ","ό","ὴ","ῶ","Ο","Ὀ","ή","Ἐ","ἄ","ἧ","ὁ","ᾶ","ὖ","ἕ","ἡ","ὕ","ἦ","ῷ","ἢ","ῖ","ὑ","ἔ","Ἁ","ὢ","ᾳ","ἰ","ʼ","ὄ","“","ῇ","ἁ","”","ὅ","ἵ","ῥ","ὡ","ὗ","·","Ἡ","ῴ","Ἱ","Ε","ἴ","ἤ","ἶ","ἠ","ὃ","Α","ἂ","Ὁ","ὀ","ῳ","Ἠ","ΐ","‘","’","ῃ","ἑ","Ἤ","ἅ","Ἄ","ᾧ","Ἔ","Ὕ","ᾷ","Ὑ","ἓ","Ὃ","Ἴ","ὒ","ὔ","ἥ","Ὅ","ὥ","ᾖ","ὧ","!","ῄ","Ἢ","ᾠ","ϋ","ἷ","Ἕ","Ἦ","Ἵ","ἆ","ἣ","ἃ","ὦ","Η","ὠ","ϊ","Ἅ","Ι","ΰ","Ὥ","ᾑ","Ὡ","Ὦ","ὤ","ῒ","Ἆ","Ὄ","ῢ","ὓ","Ὧ","ᾔ","ᾗ","Ἥ","ᾐ","ἳ","ὂ","Ὤ","Ἓ","Ὠ","Ἃ","ᾴ","ᾄ"]
 
-let testLine = `G85	ἀδημονεῖν｜V-PAN｜Verb, Present, Active, infinitive<br>ἀδημονῶν｜V-PAP-NSM｜Verb, Present, Active, Participle, Nominative, Singular, Masculine
-G7530	Εὖγε｜PRT｜PaRTicle, disjunctive particle
-G9577	ὑπόλειμμα｜N-NSN｜Noun, Nominative, Singular, Neuter`
+// let testLine = `G85	ἀδημονεῖν｜V-PAN｜Verb, Present, Active, Infinitive<br>ἀδημονῶν｜V-PAP-NSM｜Verb, Present, Active, Participle, Nominative, Singular, Masculine
+// G7530	Εὖγε｜PRT｜Particle, disjunctive particle
+// G9577	ὑπόλειμμα｜N-NSN｜Noun, Nominative, Singular, Neuter`
+let gNumbers = {};
+let separateLines = lexicon.split("\n");
+let separateGNumber = []
+let separateWordUsages = []
+for (let i=0; i < separateLines.length; i++) {
+    separateGNumber.push(separateLines[i].split("\t"));
+}
 
-let separateLines = testLine.split("\n");
 
-// let wordOptions = []
-// let lexiconEntries = {}
+let gnumObject = {};
+separateGNumber.forEach((line) => {
+    let gnum = line[0];
+    let splitOnbr = line[1].split("<br>");
+    gnumObject[gnum] = splitOnbr;
+})
 
-// secondSplit.forEach((spot) => {
-//     let option = spot.split('｜');
-//     wordOptions.push(option)
-// })
+let wordUsages = {};
 
-console.log(firstSplit);
+for (lines in gnumObject) {
+    let gnum = lines
+    gnumObject[lines].forEach((line) => {
+        let i = 0;
+        while (line[i] !== "｜") {
+            i++
+        };
+        let theWord = line.slice(0 , i);
+        wordUsages[theWord] = {parse: line.slice(i + 1), GN: gnum};
+    })
+}
+
+export default wordUsages;
