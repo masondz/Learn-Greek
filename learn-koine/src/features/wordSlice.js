@@ -62,11 +62,7 @@ const wordSlice = createSlice({
         state.word = action.payload;
         state.partOfSpeech = "definite article";
         state.parse = greekArticles[action.payload];
-      } else {
-        state.word = action.payload;
-        state.partOfSpeech = "";
-        state.parse = { case: [], number: "", gender: [] };
-      }
+      } 
     },
     checkWordSlice: (state, action) => {
       console.log(state.word.word);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { setWord } from "./features/wordSlice";
+import { setWord, isArticle } from "./features/wordSlice";
 import { useDispatch } from "react-redux";
 import { incrementFoundArticles } from "./features/countSlice";
 import { setParsingArticle } from "./features/parsingSlice";
@@ -45,9 +45,9 @@ const Word = (props) => {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");
     }
-    // dispatch(isArticle(word.word));
     setArticleGrid(blankGrid);
     dispatch(setWord(removePunctuation(word.word)))
+    dispatch(isArticle(word.word));
   };
 
   return (
