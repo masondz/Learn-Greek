@@ -5439,5 +5439,13 @@ for (lines in gnumObject) {
         wordUsages[theWord] = {parse: line.slice(i + 1), GN: gnum};
     })
 }
+// console.log(wordUsages)
+const wordUsagesJSON = JSON.stringify(wordUsages)
+const fs = require('fs')
 
-export default wordUsages;
+fs.writeFile("C:/Users/zmason/Documents/GreekStuff/learn-koine/src/greek_text/greekLexiconObject.js", wordUsagesJSON, err => {
+    if (err) {
+        console.log(err);
+    }
+})
+// export default wordUsages;

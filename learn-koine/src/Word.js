@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { isArticle } from "./features/wordSlice";
+import { setWord } from "./features/wordSlice";
 import { useDispatch } from "react-redux";
 import { incrementFoundArticles } from "./features/countSlice";
 import { setParsingArticle } from "./features/parsingSlice";
@@ -7,6 +7,18 @@ import { setParsingArticle } from "./features/parsingSlice";
 
 const wrongPick = "\u2716";
 const correctPick = "\u2713";
+
+function removePunctuation(str) {  //this is from ChatpGPT
+  const punctuationRegex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·ʼ]/g;
+  // const diacriticsRegex = /[\u0300-\u036f]/g;
+  // const greekLettersRegex = /[α-ωΑ-Ω]/g;
+
+  const punctuationRemoved = str.replace(punctuationRegex, '');
+  // const diacriticsKept = punctuationRemoved.replace(diacriticsRegex, (match) => match);
+  // const greekLettersKept = diacriticsKept.replace(greekLettersRegex, (match) => match);
+
+  return punctuationRemoved;
+}
 
 const Word = (props) => {
   const [indicator, setIndicator] = useState("o");
@@ -17,10 +29,14 @@ const Word = (props) => {
   const { blankGrid, setArticleGrid, word } = props;
 
   const handleClick = () => {
+    // let parsing = wordUsages[word.word];
+    // setParseInfo(parsing);
+    // printThing();
+    console.log(word.partOfSpeech)
     if (highlight === "-highlight-correct") {
       return;
     }
-    if (word.partOfSpeech === "article") {
+    if (word.partOfSpeech === "definite article") {
       setIndicator(correctPick);
       setHighlight("-highlight-correct");
       dispatch(incrementFoundArticles());
@@ -29,8 +45,9 @@ const Word = (props) => {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");
     }
-    dispatch(isArticle(word.word));
+    // dispatch(isArticle(word.word));
     setArticleGrid(blankGrid);
+    dispatch(setWord(removePunctuation(word.word)))
   };
 
   return (

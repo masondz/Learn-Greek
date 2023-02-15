@@ -56,7 +56,7 @@ const Verse = () => {
   let verseArray = arrayIffy(verse);
   for (let i = 0; i < verseArray.length; i++) {
     if (checkIfArticle(verseArray[i].word)) {
-      verseArray[i].partOfSpeech = "article";
+      verseArray[i].partOfSpeech = "definite article";
       verseArray[i].parse = greekArticles[verseArray[i].word];
       articleCount++;
     } else {
