@@ -19,7 +19,7 @@ h1 {
 
 .links {
   display: grid;
-  grid-row: auto;
+  row-gap: 5px;
 }
 
 a {
