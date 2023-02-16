@@ -20,14 +20,18 @@ const wordSlice = createSlice({
   reducers: {
     setWord: (state, action) => {
       state.word = action.payload;
-      console.log(`Setting word action... ${action.payload}`)
-      if (wordUsages[action.payload] === undefined) {
-        console.log(`${action.payload} is not in lexicon...`)
+      let chosenWord = action.payload;
+      console.log(`Setting word action... ${chosenWord}`)
+      if (wordUsages[chosenWord] === undefined && wordUsages[chosenWord.toLowerCase() === undefined]) { 
+        console.log(`${chosenWord} is not in lexicon...`)
         state.partOfSpeech = "Sorry, word isn't in our lexicon "
-        state.parse = { case: [null], number: null, gender: null}
-      } else {
-        console.log(`${action.payload}: ${wordUsages[action.payload].parse}`)
-        let splitParseOnOR = wordUsages[action.payload].parse.split('｜');
+        state.parse = { case: [null], number: null, gender: null};
+        return;
+      } else if (wordUsages[chosenWord] === undefined && wordUsages[chosenWord.toLowerCase()] !== undefined) {
+        chosenWord = chosenWord.toLowerCase(); //the lexicon has some words with and without capitalized letters.
+      }
+        console.log(`${chosenWord}: ${wordUsages[chosenWord].parse}`)
+        let splitParseOnOR = wordUsages[chosenWord].parse.split('｜');
         let splitOnComma = splitParseOnOR[1].split(', ')
         state.partOfSpeech = splitOnComma[0];
         if(state.partOfSpeech !== "Verb") {
@@ -54,7 +58,6 @@ const wordSlice = createSlice({
               state.parse.number = splitOnComma[5];
             }
           }
-        }
       }
     },
     isArticle: (state, action) => {

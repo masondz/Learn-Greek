@@ -12,4 +12,4 @@ function removePunctuation(str) {
 
   const myString = "Γεια σου, πώς είσαι;"
   const noPunctString = removePunctuation(myString)
-  console.log(noPunctString) // "Hello world Hows it going"
+  console.log(noPunctString.toLowerCase()) // "Hello world Hows it going"
