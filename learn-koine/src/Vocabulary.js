@@ -5,7 +5,16 @@ export default function Vocabulary() {
 
     return (
         <div className="body">
-            <h1>Coming soon!</h1>
+            <div className="flip-card">
+                <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                        <p>Coming Soon!</p>
+                    </div>
+                    <div className="flip-card-back">
+                        <p>Soon</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 };
