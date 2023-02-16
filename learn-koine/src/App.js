@@ -1,23 +1,26 @@
 import "./App.css";
-import React, { useEffect } from "react";
-import Verse from "./Verse";
-import { randomVerse, selectVerseSlice } from "./features/verseSlice";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { Link } from "react-router-dom";
 
 
 function App() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   
-  useEffect(() => {
-    dispatch(randomVerse());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(randomVerse());
+  // }, [dispatch]);
 
-  const verse = useSelector(selectVerseSlice);
+  // const verse = useSelector(selectVerseSlice);
 
   return (
     <div className="App">
       <div className="App-header">
-        <Verse verse={verse} />
+        <h1>Practice Koine Greek</h1>
+        <h3>Choose a Subject:</h3>
+        <div className="links">
+        <Link to={'vocabulary'}>Vocabulary</Link>
+        <Link to={'articles'}>Articles</Link>
+        </div>
       </div>
     </div>
   );

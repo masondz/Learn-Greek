@@ -6,20 +6,33 @@ import reportWebVitals from './reportWebVitals';
 import store from './store';
 import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ErrorPage from './error-page';
+import Verse from './Verse';
+import Vocabulary from './Vocabulary';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Provider store={store}>
-              <App />
-            </Provider>,
+    element: <App />,
+    errorElement: <ErrorPage/>,
   },
+  {
+    path: "articles",
+    element: <Verse />,
+  },
+  {
+    path: "vocabulary",
+    element: <Vocabulary />
+  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 

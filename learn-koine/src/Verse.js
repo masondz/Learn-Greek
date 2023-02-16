@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Verse.css";
 import CheckWord from "./CheckWord";
 import Word from "./Word";
 import { useSelector, useDispatch } from "react-redux";
-import { selectVerseSlice } from "./features/verseSlice";
+import { selectVerseSlice, randomVerse } from "./features/verseSlice";
 import { setArticleCount } from "./features/countSlice";
 import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
 import { checkIfArticle } from "./features/wordSlice";
 import { greekArticles } from "./greek_text/greekArticles";
+
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -24,6 +25,10 @@ const arrayIffy = (verse) => {
 const Verse = () => {
   let [word] = useState("");
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(randomVerse());
+  }, [dispatch]);
 
   const [articleGrid, setArticleGrid] = useState({
     nominative: "-clear",
@@ -68,6 +73,7 @@ const Verse = () => {
   dispatch(setArticleCount(articleCount));
 
   return (
+    <div className="body">
     <div className="verse-sentence">
       {verseArray.map((word, i) => {
         return (
@@ -96,6 +102,7 @@ const Verse = () => {
         </CheckWord>
       </div>
       <div></div>
+    </div>
     </div>
   );
 };

@@ -8,17 +8,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* padding: 1em; */
 }
 
-.App-header .verse-sentence {
-  margin-top: 1em;
+h1 {
+  
+}
+
+.links {
+  display: grid;
+  grid-row: auto;
+}
+
+a {
+  border: white solid 1px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  padding: .5em;
+  /* max-width: 150px; */
+  min-width: 200px;
 }
 
 @media only screen and (max-width: 540px) {
-  .App-header .verse-sentence {
-    margin-top: 0em;
-  }
 }
