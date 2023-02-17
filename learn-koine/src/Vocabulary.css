@@ -8,6 +8,7 @@
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    cursor: pointer;
   }
   
   .flip-card-inner {
@@ -22,6 +23,10 @@
   
   .flip-card:active .flip-card-inner {
     transform: rotateY(180deg);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
   }
   
   .flip-card-front, .flip-card-back {
