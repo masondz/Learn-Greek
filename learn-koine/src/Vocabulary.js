@@ -43,6 +43,8 @@ export default function Vocabulary() {
 
     return ( 
         <div className="body">
+    <div className="cardline">
+        <button className="button-vocabulary" onClick={handlePrev}>{'<'}</button>
             <div className="flip-card">
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
@@ -53,11 +55,11 @@ export default function Vocabulary() {
                     </div>
                 </div>
             </div>
+                <button className="button-vocabulary" onClick={handleNext}>{'>'}</button>
+    </div>
             <div>
-                <button onClick={handlePrev}>{'<'}</button>
-                <button onClick={handleNext}>{'>'}</button>
-                <button onClick={addToLearnt}>Learnt</button>
-                <button onClick={retryVocab}>Retry</button>
+                <button className="button-vocabulary" onClick={addToLearnt}>Learnt</button>
+                <button className="button-vocabulary" onClick={retryVocab}>Retry</button>
             </div>
         </div>
     )
