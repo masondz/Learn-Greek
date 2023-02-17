@@ -33,6 +33,11 @@ export default function Vocabulary() {
         console.log(deck)
     }
 
+    const retryVocab = () => {
+        setDeck(mostCKeys);
+        setDeckIndex(0);
+    }
+
     console.log(mostCommonObj)
     console.log(deck)
 
@@ -52,7 +57,7 @@ export default function Vocabulary() {
                 <button onClick={handlePrev}>{'<'}</button>
                 <button onClick={handleNext}>{'>'}</button>
                 <button onClick={addToLearnt}>Learnt</button>
-                <button>Retry</button>
+                <button onClick={retryVocab}>Retry</button>
             </div>
         </div>
     )
