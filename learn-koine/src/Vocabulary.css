@@ -1,82 +1,52 @@
 .body {
-    background-color: #282c34;
-    color: white;
-    justify-content: center;
-    align-content: center;
-}
-
-.cardline {
+  background-color: #282c34;
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
+  color: white;
+  justify-content: flex-start;
+  padding: 4em;
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    cursor: pointer;
-    margin-bottom: .7em;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.3s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:active .flip-card-inner {
-    transform: rotateY(180deg);
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color:transparent;
-    cursor: pointer;
-  }
+.card-back {
+  background-color: #bbb;
+  color: black;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color:transparent;
-    cursor: pointer;
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-  }
+.card-front {
+  background-color: #2980b9;
+  color: white;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .button-vocabulary {
-    background-color: #282c34;
-    border-radius: 10px;
-    border-color: white;
-    border-width: 0.5px;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    margin-right: 10px;
-    margin-left: 10px;
-    max-height: 3em;
-    min-width: 4em;
-  }
+.button-vocabulary {
+  background-color: #282c34;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 0.5px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 3em;
+  max-height: 3em;
+  min-width: 4em;
+}
