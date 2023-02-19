@@ -12,7 +12,12 @@ export default function Vocabulary() {
   // const [learnedWords, setLearnedWords] = useState([])
   const [deckIndex, setDeckIndex] = useState(0);
 
+  const onClick = () => {
+    isFlipped ? setIsFlipped(false) : setIsFlipped(true);
+  };
+
   const handleNext = () => {
+    onClick();
     if (deckIndex + 1 > deck.length - 1) {
       setDeckIndex(0);
     } else {
@@ -37,10 +42,6 @@ export default function Vocabulary() {
   const retryVocab = () => {
     setDeck(mostCKeys);
     setDeckIndex(0);
-  };
-
-  const onClick = () => {
-    isFlipped ? setIsFlipped(false) : setIsFlipped(true);
   };
 
   console.log(mostCommonObj);
