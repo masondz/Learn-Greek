@@ -17,7 +17,9 @@ export default function Vocabulary() {
   };
 
   const handleNext = () => {
-    onClick();
+    if (isFlipped) {
+      setIsFlipped(false);
+    };
     if (deckIndex + 1 > deck.length - 1) {
       setDeckIndex(0);
     } else {
@@ -26,6 +28,9 @@ export default function Vocabulary() {
   };
 
   const handlePrev = () => {
+    if (isFlipped) {
+      setIsFlipped(false);
+    };
     if (deckIndex - 1 < 0) {
       setDeckIndex(deck.length - 1);
     } else {
