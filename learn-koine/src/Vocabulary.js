@@ -26,7 +26,7 @@ export default function Vocabulary() {
      } else {
       setDeckIndex(deckIndex + 1);
      }
-    }, 650)   
+    }, 301)   
   };
 
   const handlePrev = () => {
@@ -39,13 +39,18 @@ export default function Vocabulary() {
      } else {
       setDeckIndex(deckIndex - 1);
      }
-    }, 650);   
+    }, 301);   
   };
 
   const addToLearnt = () => {
     //the word goes into learnt array
-    setDeck(deck.filter((word) => word !== deck[deckIndex]));
+    if (isFlipped) {
+      setIsFlipped(false);
+    };
+    setTimeout(() => {
+     setDeck(deck.filter((word) => word !== deck[deckIndex]));
     console.log(deck);
+    }, 301)  
   };
 
   const retryVocab = () => {
