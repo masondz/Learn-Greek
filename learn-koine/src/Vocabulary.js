@@ -20,22 +20,26 @@ export default function Vocabulary() {
     if (isFlipped) {
       setIsFlipped(false);
     };
-    if (deckIndex + 1 > deck.length - 1) {
+    setTimeout (() => {
+     if (deckIndex + 1 > deck.length - 1) {
       setDeckIndex(0);
-    } else {
+     } else {
       setDeckIndex(deckIndex + 1);
-    }
+     }
+    }, 650)   
   };
 
   const handlePrev = () => {
     if (isFlipped) {
       setIsFlipped(false);
     };
-    if (deckIndex - 1 < 0) {
+    setTimeout(()) => {
+     if (deckIndex - 1 < 0) {
       setDeckIndex(deck.length - 1);
-    } else {
+     } else {
       setDeckIndex(deckIndex - 1);
-    }
+     }
+    }, 650);   
   };
 
   const addToLearnt = () => {
