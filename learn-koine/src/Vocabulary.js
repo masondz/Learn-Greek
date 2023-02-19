@@ -33,7 +33,7 @@ export default function Vocabulary() {
     if (isFlipped) {
       setIsFlipped(false);
     };
-    setTimeout(()) => {
+    setTimeout(() => {
      if (deckIndex - 1 < 0) {
       setDeckIndex(deck.length - 1);
      } else {
