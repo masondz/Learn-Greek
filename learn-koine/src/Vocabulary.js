@@ -48,7 +48,11 @@ export default function Vocabulary() {
 
   return (
     <div className="body">
-      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+      <ReactCardFlip
+        isFlipped={isFlipped}
+        flipDirection="horizontal"
+        className="card-container"
+      >
         <div key="front" onClick={onClick} className="card-front">
           {deck[deckIndex]}
         </div>
@@ -56,7 +60,7 @@ export default function Vocabulary() {
           {mostCommonObj[deck[deckIndex]]}
         </div>
       </ReactCardFlip>
-      <div>
+      <div className="card-buttons">
         <button className="button-vocabulary" onClick={handlePrev}>
           {"<"}
         </button>
