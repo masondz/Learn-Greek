@@ -1,16 +1,34 @@
 import React, { useState } from "react";
 import "./Vocabulary.css";
-import { mostCommonObj } from "./greek_text/vocabularyWords";
+import { mostCommonObj, vocabListObj} from "./greek_text/vocabularyWords";
 import ReactCardFlip from "react-card-flip";
 
 let mostCKeys = Object.keys(mostCommonObj);
 
+
 export default function Vocabulary() {
-  const [deck, setDeck] = useState(mostCKeys);
+  console.log(vocabListObj)
+  const [vocabList, setVocabList] = useState(["Pick Vocab List"]);
+  const [deck, setDeck] = useState([]);
   const [isFlipped, setIsFlipped] = useState(false);
   // const [mode, setMode] = useState("");
   // const [learnedWords, setLearnedWords] = useState([])
   const [deckIndex, setDeckIndex] = useState(0);
+
+
+  const handleSetList = (option) => {
+    let list = {}
+    if (option === "Most Common") {
+      for( let key in vocabListObj) {
+        if(Number(vocabListObj[key].frequency) > 500) {
+          list[key] = vocabListObj[key]
+        }
+      }
+      console.log(list)
+
+      return list;
+    }
+  }
 
   const onClick = () => {
     isFlipped ? setIsFlipped(false) : setIsFlipped(true);
@@ -63,16 +81,17 @@ export default function Vocabulary() {
 
   return (
     <div className="body">
+      <p onClick={() => handleSetList("Most Common")}>Most Common</p>
       <ReactCardFlip
         isFlipped={isFlipped}
         flipDirection="horizontal"
         className="card-container"
       >
         <div key="front" onClick={onClick} className="card-front">
-          {deck[deckIndex]}
+          The Front
         </div>
         <div onClick={onClick} key="back" className="card-back">
-          {mostCommonObj[deck[deckIndex]]}
+          The Back
         </div>
       </ReactCardFlip>
       <div className="card-buttons">
