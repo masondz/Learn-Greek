@@ -4,7 +4,6 @@
   color: white;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  padding-top: 4em;
   text-align: center;
 }
 
@@ -53,6 +52,40 @@
   margin-top: 3em;
   max-height: 3em;
   min-width: 4em;
+}
+
+.vocab-options {
+  background-color: rgb(18, 117, 5);
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 4em;
+  width: 100%;
+}
+
+
+.vocab-button {
+  cursor: pointer;
+  border-style: none;
+  background-color: rgb(18, 117, 5);
+  color: white;
+  font-size: medium;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.highlighted-option {
+  background-color: rgb(43, 255, 15);
+  color: #282c34;
+  border: none;
+  font-size: medium;
+  padding-left: 2em;
+  padding-right: 2em
+}
+
+.vocab-options button p {
+
 }
 
 @media only screen and (max-width: 475px) {
