@@ -54,7 +54,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   }
 
   if (partOfSpeech !== "definite article" && word) {
-    describeWord = ` - ${partOfSpeech} :(`;
+    describeWord = ` - ${partOfSpeech}`;
   } else if (partOfSpeech !== "definite article" && !word) {
     describeWord = "Select an article";
   }

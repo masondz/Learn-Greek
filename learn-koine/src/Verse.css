@@ -175,3 +175,34 @@
   margin-left: 15px;
   font-style: italic;
 }
+
+.nav-bar {
+  background-color:  rgb(18, 117, 5);
+  width: 100%;
+}
+
+.nav-options {
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 65px;
+}
+
+.option-nav {
+  cursor: pointer;
+  border-style: none;
+  background-color: rgb(18, 117, 5);
+  color: white;
+  font-size: medium;
+  height: 65px;
+}
+
+.option-nav-highlighted {
+  background-color: rgb(43, 255, 15);
+  color: #282c34;
+  border: none;
+  font-size: medium;
+  height: 65px;
+}

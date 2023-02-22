@@ -9,7 +9,7 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   const checkCase = (e) => {
     e.preventDefault();
     const wordCase = parse.case;
-    const wordNumber = parse.number;
+    const wordNumber = parse.number.toLowerCase();
     const wordGender = parse.gender;
 
     let target = e.target.innerHTML;
