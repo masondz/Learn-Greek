@@ -45,7 +45,7 @@ const wordSlice = createSlice({
               state.parse.person = splitOnComma[1];
               state.parse.case = splitOnComma[2];
               state.parse.number = splitOnComma[3];
-              state.parse.gender = null;
+              state.parse.gender = [];
             } else {
               state.parse.case = splitOnComma[1];           
               state.parse.number = splitOnComma[2];         
@@ -57,10 +57,10 @@ const wordSlice = createSlice({
             state.parse.tense = splitOnComma[1];         //"ἀγαλλιῶμεν":{"parse":"V-PAS-1P｜Verb, Present, Active, Subjunctive, first, Plural","GN":"G21"},
             state.parse.voice = splitOnComma[2];         //"ἀγαπάτω":{"parse":"V-PAM-3S｜Verb, Present, Active, iMperative, third, Singular","GN":"G25"}
             state.parse.mood = splitOnComma[3];
-            state.parse.case = [null];
-            state.parse.person = null;
-            state.parse.number = null;
-            state.parse.gender = [null];
+            state.parse.case = [];
+            state.parse.person = "";
+            state.parse.number = "";
+            state.parse.gender = [];
           } else {
             state.parse = {tense: splitOnComma[1], voice: splitOnComma[2], mood: splitOnComma[3], }
             if(state.parse.mood === "Participle") {
