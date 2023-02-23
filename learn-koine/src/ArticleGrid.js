@@ -1,13 +1,10 @@
 import React from "react";
 import "./Word.css";
-import {useState} from "react";
 import { useSelector } from "react-redux";
 import { selectWordSlice } from "./features/wordSlice";
 
 export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
-  // const [masculineOrFirst, setMasculineOrFirst] = useState(articleGrid.masculine);
-  // const [feminineOrSecond, setFeminineOrSecond] = useState(articleGrid.feminine);
-  // const [neutereOrThird, setNeuterOrThird] = useState(articleGrid.neutere);
+
   const { parse } = useSelector(selectWordSlice);
 
   let masculineOrFirst = articleGrid.masculine;
