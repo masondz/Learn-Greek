@@ -30,7 +30,6 @@ const Word = (props) => {
 
   const handleClick = () => {
     let wordData = parseWord(word.word)
-    console.log(wordData)
     if(!wordData) {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong")
@@ -40,7 +39,7 @@ const Word = (props) => {
     if (highlight === "-highlight-correct") {
       return;
     }
-    if (wordData.partOfSpeech === verseMode) {
+    if (wordData.partOfSpeech.toLowerCase() === verseMode || wordData.partOfSpeech.includes(verseMode)) {
       setIndicator(correctPick);
       setHighlight("-highlight-correct");
       dispatch(incrementFoundArticles());

@@ -97,10 +97,10 @@ const Verse = () => {
       dispatch(setMode("definite article"));
     } else if (option === "noun") {
       setNounsStyle("option-nav-highlighted");
-      dispatch(setMode("Noun"));
+      dispatch(setMode("noun"));
     } else {
       setAdjStyle("option-nav-highlighted");
-      dispatch(setMode("Adjective"));
+      dispatch(setMode("adjective"));
     }
   }
 
