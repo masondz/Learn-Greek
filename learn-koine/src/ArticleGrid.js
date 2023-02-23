@@ -1,10 +1,24 @@
 import React from "react";
 import "./Word.css";
+import {useState} from "react";
 import { useSelector } from "react-redux";
 import { selectWordSlice } from "./features/wordSlice";
 
 export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
+  // const [masculineOrFirst, setMasculineOrFirst] = useState(articleGrid.masculine);
+  // const [feminineOrSecond, setFeminineOrSecond] = useState(articleGrid.feminine);
+  // const [neutereOrThird, setNeuterOrThird] = useState(articleGrid.neutere);
   const { parse } = useSelector(selectWordSlice);
+
+  let masculineOrFirst = articleGrid.masculine;
+  let feminineOrSecond = articleGrid.femine;
+  let neutereOrThird = articleGrid.neuter;
+
+  if(parse.person !== "") {
+    masculineOrFirst = articleGrid.first;
+    feminineOrSecond = articleGrid.second;
+    neutereOrThird = articleGrid.third;
+  }
 
 
   const checkCase = (e) => {
@@ -15,15 +29,17 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
     const wordPerson = parse.person;
 
     let target = e.target.innerHTML;
-    console.log(`testing person: ${wordPerson} - innerHTML: ${target}`)
+    console.log(`${wordPerson} - ${target}: ${wordPerson === target}`)
     if (
       wordCase.includes(target) ||
       wordNumber === target ||
       wordGender.includes(target) ||
       wordPerson === target
     ) {
+      console.log("there's a match")
       setArticleGrid({ ...articleGrid, [target]: "-correct" });
     } else {
+      console.log("there's NOT a match")
       setArticleGrid({ ...articleGrid, [target]: "-wrong" });
     }
   };
@@ -73,21 +89,21 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
       <div className="cases">
         <div
           id="masculine"
-          className={"case-option" + articleGrid.masculine}
+          className={"case-option" + masculineOrFirst}
           onClick={(e) => checkCase(e)}
         >
           {parse.person ? "first" : "masculine"}
         </div>
         <div
           id="feminine"
-          className={"case-option" + articleGrid.feminine}
+          className={"case-option" + feminineOrSecond}
           onClick={(e) => checkCase(e)}
         >
           {parse.person ? "second" : "feminine"}
         </div>
         <div
           id="neuter"
-          className={"case-option" + articleGrid.neuter}
+          className={"case-option" + neutereOrThird}
           onClick={(e) => checkCase(e)}
         >
           {parse.person ? "third" : "neuter"}

@@ -58,6 +58,9 @@ const Verse = () => {
     masculine: "-clear",
     feminine: "-clear",
     neuter: "-clear",
+    first: "-clear",
+    second: "-clear",
+    third: "-clear",
   });
 
   const blankGrid = {
@@ -70,6 +73,9 @@ const Verse = () => {
     masculine: "-clear",
     feminine: "-clear",
     neuter: "-clear",
+    first: "-clear",
+    second: "-clear",
+    third: "-clear",
   };
 
   const verse = useSelector(selectVerseSlice);
