@@ -6,18 +6,21 @@ import { selectWordSlice } from "./features/wordSlice";
 export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   const { parse } = useSelector(selectWordSlice);
 
+
   const checkCase = (e) => {
     e.preventDefault();
     const wordCase = parse.case;
     const wordNumber = parse.number.toLowerCase();
     const wordGender = parse.gender;
+    const wordPerson = parse.person;
 
     let target = e.target.innerHTML;
-
+    console.log(`testing person: ${wordPerson} - innerHTML: ${target}`)
     if (
       wordCase.includes(target) ||
       wordNumber === target ||
-      wordGender.includes(target)
+      wordGender.includes(target) ||
+      wordPerson === target
     ) {
       setArticleGrid({ ...articleGrid, [target]: "-correct" });
     } else {
@@ -69,22 +72,25 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
       </div>
       <div className="cases">
         <div
+          id="masculine"
           className={"case-option" + articleGrid.masculine}
           onClick={(e) => checkCase(e)}
         >
-          masculine
+          {parse.person ? "first" : "masculine"}
         </div>
         <div
+          id="feminine"
           className={"case-option" + articleGrid.feminine}
           onClick={(e) => checkCase(e)}
         >
-          feminine
+          {parse.person ? "second" : "feminine"}
         </div>
         <div
+          id="neuter"
           className={"case-option" + articleGrid.neuter}
           onClick={(e) => checkCase(e)}
         >
-          neuter
+          {parse.person ? "third" : "neuter"}
         </div>
       </div>
     </div>

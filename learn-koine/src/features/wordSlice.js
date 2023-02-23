@@ -39,6 +39,7 @@ const wordSlice = createSlice({
           state.parse.case = splitOnComma[1];           //"ἐγώ":{"parse":"P-1NS｜Personal pronoun, first, nominative, singular","GN":"G1473"}
           state.parse.number = splitOnComma[2];         //"ὑμῖν":{"parse":"P-2DP｜Personal pronoun, second, dative, plural","GN":"G4771"}
           state.parse.gender = splitOnComma[3];
+          state.parse.person = "";
           } else if (state.partOfSpeech === "Personal pronoun") {
             if(splitOnComma.includes("first") || splitOnComma.includes("second") || splitOnComma.includes("third")) {
               state.parse.person = splitOnComma[1];
