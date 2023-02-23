@@ -15,7 +15,7 @@ const wordSlice = createSlice({
   initialState: {
     word: null,
     partOfSpeech: null,
-    parse: { case: [], number: "", gender: [] },
+    parse: { case: [], number: "", gender: [], person: "" },
   },
   reducers: {
     setWord: (state, action) => {
@@ -34,10 +34,23 @@ const wordSlice = createSlice({
         let splitParseOnOR = wordUsages[chosenWord].parse.split('｜');
         let splitOnComma = splitParseOnOR[1].split(', ')
         state.partOfSpeech = splitOnComma[0];
-        if(state.partOfSpeech !== "Verb") {
-          state.parse.case = splitOnComma[1];
-          state.parse.number = splitOnComma[2];
+        if(state.partOfSpeech !== "Verb") {  
+          if (state.partOfSpeech !== "Personal pronoun") {    //"Αὐτῶν":{"parse":"P-GPM｜Personal pronoun, genitive, plural, masculine","GN":"G846"}
+          state.parse.case = splitOnComma[1];           //"ἐγώ":{"parse":"P-1NS｜Personal pronoun, first, nominative, singular","GN":"G1473"}
+          state.parse.number = splitOnComma[2];         //"ὑμῖν":{"parse":"P-2DP｜Personal pronoun, second, dative, plural","GN":"G4771"}
           state.parse.gender = splitOnComma[3];
+          } else if (state.partOfSpeech === "Personal pronoun") {
+            if(splitOnComma.includes("first") || splitOnComma.includes("second") || splitOnComma.includes("third")) {
+              state.parse.person = splitOnComma[1];
+              state.parse.case = splitOnComma[2];
+              state.parse.number = splitOnComma[3];
+              state.parse.gender = null;
+            } else {
+              state.parse.case = splitOnComma[1];           
+              state.parse.number = splitOnComma[2];         
+              state.parse.gender = splitOnComma[3];
+            }
+          } 
         } else if (state.partOfSpeech === "Verb") {
           if (splitOnComma[1].includes("iNfinitive")) {  //"ἀγαθοποιοῦντες":{"parse":"V-PAP-NPM｜Verb, Present, Active, Participle, Nominative, Plural, Masculine","GN":"G15"}
             state.parse.tense = splitOnComma[1];         //"ἀγαλλιῶμεν":{"parse":"V-PAS-1P｜Verb, Present, Active, Subjunctive, first, Plural","GN":"G21"},
@@ -65,7 +78,7 @@ const wordSlice = createSlice({
         state.word = action.payload;
         state.partOfSpeech = "definite article";
         state.parse = greekArticles[action.payload];
-      } 
+      }
     },
     checkWordSlice: (state, action) => {
       console.log(state.word.word);
@@ -73,7 +86,7 @@ const wordSlice = createSlice({
     clearWord: (state, action) => {
       state.word = null;
       state.partOfSpeech = null;
-      state.parse = { case: [], number: "", gender: [] };
+      state.parse = { case: [], number: "", gender: [], person: "", tense: "", voice: "", };
     },
   },
 });
