@@ -8,7 +8,7 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   const { parse } = useSelector(selectWordSlice);
 
   let masculineOrFirst = articleGrid.masculine;
-  let feminineOrSecond = articleGrid.femine;
+  let feminineOrSecond = articleGrid.feminine;
   let neutereOrThird = articleGrid.neuter;
 
   if(parse.person !== "") {

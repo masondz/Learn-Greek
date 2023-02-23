@@ -50,6 +50,7 @@ const wordSlice = createSlice({
               state.parse.case = splitOnComma[1];           
               state.parse.number = splitOnComma[2];         
               state.parse.gender = splitOnComma[3];
+              state.parse.person = ""
             }
           } 
         } else if (state.partOfSpeech === "Verb") {
@@ -79,6 +80,7 @@ const wordSlice = createSlice({
         state.word = action.payload;
         state.partOfSpeech = "definite article";
         state.parse = greekArticles[action.payload];
+        state.parse.person = "";
       }
     },
     checkWordSlice: (state, action) => {
