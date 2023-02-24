@@ -45,7 +45,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   };
 
   let selectedWord = "";
-  let describeWord = "";
+  let describeWord = ` - ${partOfSpeech}`;
 
   if (word) {
     selectedWord = word;
@@ -53,11 +53,11 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
     selectedWord = " ";
   }
 
-  if (partOfSpeech !== "definite article" && word) {
-    describeWord = ` - ${partOfSpeech}`;
-  } else if (partOfSpeech !== "definite article" && !word) {
-    describeWord = "Select an article";
-  }
+  // if (partOfSpeech !== "definite article" && word) {
+  //   describeWord = ` - ${partOfSpeech}`;
+  // } else if (partOfSpeech !== "definite article" && !word) {
+  //   describeWord = "Select an article";
+  // }
 
   return (
     <div>

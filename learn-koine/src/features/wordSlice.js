@@ -37,9 +37,9 @@ const wordSlice = createSlice({
       //   chosenWord = chosenWord.toLowerCase(); //the lexicon has some words with and without capitalized letters.
       // }
       //   console.log(`${chosenWord}: ${wordUsages[chosenWord].parse}`)
-      //   let splitParseOnOR = wordUsages[chosenWord].parse.split('｜');
-      //   let splitOnComma = splitParseOnOR[1].split(', ')
-      //   state.partOfSpeech = splitOnComma[0];
+        let splitParseOnOR = wordUsages[word].parse.split('｜');
+        let splitOnComma = splitParseOnOR[1].split(', ')
+        state.partOfSpeech = splitOnComma[0];
       //   if(state.partOfSpeech !== "Verb") {  
       //     if (state.partOfSpeech !== "Personal pronoun") {    //"Αὐτῶν":{"parse":"P-GPM｜Personal pronoun, genitive, plural, masculine","GN":"G846"}
       //     state.parse.case = splitOnComma[1];           //"ἐγώ":{"parse":"P-1NS｜Personal pronoun, first, nominative, singular","GN":"G1473"}

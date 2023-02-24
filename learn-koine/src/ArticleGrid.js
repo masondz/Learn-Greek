@@ -23,19 +23,11 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
 
   const checkCase = (e) => {
     e.preventDefault();
-    const wordCase = parse.case;
-    const wordNumber = parse.number.toLowerCase();
-    const wordGender = parse.gender;
-    const wordPerson = parse.person;
+    const wordCase = parse;
 
     let target = e.target.innerHTML;
-    console.log(`${wordPerson} - ${target}: ${wordPerson === target}`)
-    if (
-      wordCase.includes(target) ||
-      wordNumber === target ||
-      wordGender.includes(target) ||
-      wordPerson === target
-    ) {
+    
+    if (wordCase.includes(target)) {
       console.log("there's a match")
       setArticleGrid({ ...articleGrid, [target]: "-correct" });
     } else {
