@@ -3,7 +3,7 @@ import "./Verse.css";
 import CheckWord from "./CheckWord";
 import Word from "./Word";
 import { useSelector, useDispatch } from "react-redux";
-import { selectVerseSlice, randomVerse, setMode, selectVerseMode } from "./features/verseSlice";
+import { selectVerseSlice, randomVerse, setMode} from "./features/verseSlice";
 import { setArticleCount } from "./features/countSlice";
 import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
@@ -79,7 +79,6 @@ const Verse = () => {
   };
 
   const verse = useSelector(selectVerseSlice);
-  const verseMode = useSelector(selectVerseMode);
 
   let articleCount = 0;
 

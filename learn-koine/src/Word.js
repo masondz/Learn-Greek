@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { setWord, isArticle } from "./features/wordSlice";
+import { setWord } from "./features/wordSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { incrementFoundArticles } from "./features/countSlice";
 import { setParsingArticle } from "./features/parsingSlice";
