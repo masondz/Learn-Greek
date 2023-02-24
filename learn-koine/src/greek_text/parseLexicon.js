@@ -1,4 +1,5 @@
 import { wordUsages } from "./greekLexiconObject";
+import { greekArticles } from "./greekArticles";
 
 
 function removePunctuation(str) {  //this is from ChatpGPT
@@ -11,17 +12,30 @@ function removePunctuation(str) {  //this is from ChatpGPT
 export const parseWord = (inputWord) => {
   let chosenWord = removePunctuation(inputWord);
   let wordState = {};
-  if (wordUsages[chosenWord] === undefined) {
+  console.log(chosenWord);
+  console.log(chosenWord.toLowerCase());
+  if (wordUsages[chosenWord] === undefined && wordUsages[chosenWord.toLowerCase()] === undefined) {
+    console.log("cant' find lower case")
     wordState.word = "Word not in Lexicon";
     wordState.parse = "";
     wordState.gNum = "";
     return wordState;
-  } else if (wordUsages[chosenWord] === undefined && wordUsages[chosenWord.toLowerCase()] === undefined) {
+  } else if (wordUsages[chosenWord] === undefined && wordUsages[chosenWord.toLowerCase()] !== undefined) {
     chosenWord = chosenWord.toLowerCase();
   }
+
+  //definite articles have their own lexicon, so we have to direct the logic to that one, make it compatible.
+  if (wordUsages[chosenWord].parse.includes("definite article")) {
+    wordState.word = chosenWord;
+    wordState.parse = JSON.stringify(greekArticles[chosenWord]) + " definite article";
+    wordState.gNum = wordUsages[chosenWord].GN;
+    return wordState;
+  }
+  //
+
   wordState.word = chosenWord;
   wordState.parse = wordUsages[chosenWord].parse;
-  wordState.gNum = object[chosenWord].GN;
+  wordState.gNum = wordUsages[chosenWord].GN;
   return wordState;
 }
 
