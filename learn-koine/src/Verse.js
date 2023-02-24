@@ -146,7 +146,6 @@ const Verse = () => {
           />
         </CheckWord>
       </div>
-      <div>{verseMode}</div>
     </div>
     </div>
   );

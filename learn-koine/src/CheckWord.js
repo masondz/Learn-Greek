@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { randomVerse, clearVerse } from "./features/verseSlice";
+import { randomVerse, clearVerse, selectVerseMode } from "./features/verseSlice";
 import { clearWord, selectWordSlice } from "./features/wordSlice";
 import {
   clearArticleCount,
@@ -16,7 +16,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   const [checkComplete, setCheckComplete] = useState("Check");
   const allArticlesFound = useSelector(selectAllArticlesFound);
   const articleCount = useSelector(selectArticleCount);
-
+  const verseMode = useSelector(selectVerseMode);
   const dispatch = useDispatch();
 
   const handleClick = () => {
@@ -53,11 +53,9 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
     selectedWord = " ";
   }
 
-  // if (partOfSpeech !== "definite article" && word) {
-  //   describeWord = ` - ${partOfSpeech}`;
-  // } else if (partOfSpeech !== "definite article" && !word) {
-  //   describeWord = "Select an article";
-  // }
+  if (!word) {
+    describeWord = `Select ${verseMode}s`
+  }
 
   return (
     <div>
