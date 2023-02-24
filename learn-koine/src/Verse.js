@@ -3,13 +3,14 @@ import "./Verse.css";
 import CheckWord from "./CheckWord";
 import Word from "./Word";
 import { useSelector, useDispatch } from "react-redux";
-import { selectVerseSlice, randomVerse, setMode} from "./features/verseSlice";
-import { setArticleCount } from "./features/countSlice";
+import { selectVerseSlice, randomVerse, setMode, selectVerseMode} from "./features/verseSlice";
+import { setArticleCount, clearArticleCount } from "./features/countSlice";
 import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
-import { checkIfArticle } from "./features/wordSlice";
-import { greekArticles } from "./greek_text/greekArticles";
+import { parseWord } from "./greek_text/parseLexicon";
+// import { greekArticles } from "./greek_text/greekArticles";
 // import { wordUsages } from "../greek_text/greekLexiconObject";
+
 
 
 
@@ -79,14 +80,16 @@ const Verse = () => {
   };
 
   const verse = useSelector(selectVerseSlice);
+  const verseMode = useSelector(selectVerseMode);
 
   let articleCount = 0;
 
   let verseArray = arrayIffy(verse);
   for (let i = 0; i < verseArray.length; i++) {
-    if (checkIfArticle(verseArray[i].word)) {
-      verseArray[i].partOfSpeech = "definite article";
-      verseArray[i].parse = greekArticles[verseArray[i].word];
+    let parsedWord = parseWord(verseArray[i].word)
+    if (parsedWord.parse.includes(verseMode)) {
+      // verseArray[i].partOfSpeech = "definite article";
+      // verseArray[i].parse = greekArticles[verseArray[i].word];
       articleCount++;
     } else if (verseArray[i].partOfSpeech === "Noun") {
       verseArray[i].partOfSpeech = "Noun";
@@ -97,6 +100,8 @@ const Verse = () => {
 
   const handleChangeMode = (option) => {
     resetStyles();
+    setArticleGrid(blankGrid)
+    dispatch(clearArticleCount());
     if (option === "definite article") {
       setDefArticleStyle("option-nav-highlighted");
       dispatch(setMode("definite article"));

@@ -37,7 +37,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
       }, 501);
     } else {
       setParsingArticle(false);
-      setCheckComplete("Find More Articles!");
+      setCheckComplete("Find More Words!");
       setTimeout(() => {
         setCheckComplete("Check");
       }, 500);

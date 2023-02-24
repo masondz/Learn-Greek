@@ -2,23 +2,23 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const countSlice = createSlice({
   name: "count",
-  initialState: { articles: 0 , allArticlesFound: false, foundArticles: 0},
+  initialState: { targetWords: 0 , allTargetsFound: false, foundTargetWord: 0},
   reducers: {
     clearArticleCount: (state, action) => {
-      state.articles = 0;
-      state.foundArticles = 0;
-      state.allArticlesFound = false;
+      state.targetWords = 0;
+      state.foundTargetWord = 0;
+      state.allTargetsFound = false;
     },
     setArticleCount: (state, action) => {
-      state.articles = action.payload;
+      state.targetWords = action.payload;
     },
     setAllArticlesFound: (state, action) => {
-      state.allArticlesFound = action.payload
+      state.allTargetsFound = action.payload
     },
     incrementFoundArticles: (state, action) => {
-      state.foundArticles += 1;
-      if(state.articles === state.foundArticles) {
-        state.allArticlesFound = true;
+      state.foundTargetWord += 1;
+      if(state.targetWords === state.foundTargetWord) {
+        state.allTargetsFound = true;
       }
     },
   },
@@ -26,10 +26,10 @@ const countSlice = createSlice({
 
 export const { clearArticleCount, setArticleCount, setAllArticlesFound, incrementFoundArticles } = countSlice.actions;
 
-export const selectArticleCount = (state) => state.count.articles;
+export const selectArticleCount = (state) => state.count.targetWords;
 
-export const selectFoundArticles = state => state.count.foundArticles;
+export const selectFoundArticles = state => state.count.foundTargetWord;
 
-export const selectAllArticlesFound = state => state.count.allArticlesFound;
+export const selectAllArticlesFound = state => state.count.allTargetsFound;
 
 export default countSlice.reducer;
