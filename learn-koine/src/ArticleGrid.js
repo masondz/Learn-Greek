@@ -10,11 +10,14 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   let masculineOrFirst = articleGrid.masculine;
   let feminineOrSecond = articleGrid.feminine;
   let neutereOrThird = articleGrid.neuter;
+  let hasPersonAttribute = false;
 
-  if(parse.person !== "") {
+  if(parse.includes("first") || parse.includes("second") || parse.includes("third")) {
+    console.log("has first second or thrid")
     masculineOrFirst = articleGrid.first;
     feminineOrSecond = articleGrid.second;
     neutereOrThird = articleGrid.third;
+    hasPersonAttribute = true;
   }
 
 
@@ -89,21 +92,21 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
           className={"case-option" + masculineOrFirst}
           onClick={(e) => checkCase(e)}
         >
-          {parse.person ? "first" : "masculine"}
+          {hasPersonAttribute ? "first" : "masculine"}
         </div>
         <div
           id="feminine"
           className={"case-option" + feminineOrSecond}
           onClick={(e) => checkCase(e)}
         >
-          {parse.person ? "second" : "feminine"}
+          {hasPersonAttribute ? "second" : "feminine"}
         </div>
         <div
           id="neuter"
           className={"case-option" + neutereOrThird}
           onClick={(e) => checkCase(e)}
         >
-          {parse.person ? "third" : "neuter"}
+          {hasPersonAttribute ? "third" : "neuter"}
         </div>
       </div>
     </div>
