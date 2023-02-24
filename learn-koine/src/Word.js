@@ -29,6 +29,32 @@ const Word = (props) => {
   // const checkWord = parseWord(word.word)
 
   const handleClick = () => {
+    let wordData = parseWord(word.word);
+    console.log(wordData);
+    if(!wordData) {
+      setIndicator(wrongPick);
+      setHighlight("-highlight-wrong")
+      dispatch(setWord(removePunctuation(word.word)))
+      return;
+    } 
+    if (highlight === "-highlight-correct") {
+      return;
+    }
+    if (wordData.parse.includes(verseMode)) {
+      setIndicator(correctPick);
+      setHighlight("-highlight-correct");
+      dispatch(incrementFoundArticles());
+      dispatch(setParsingArticle(true));
+    } else {
+      // console.log(`checking versmode in Word: ${verseMode}`)
+      // console.log(`checking word.partOfSpeech in Word: ${word.partOfSpeech}`)
+      // console.log(`Are they Equal: ${word.partOfSpeech === verseMode}`)
+      setIndicator(wrongPick);
+      setHighlight("-highlight-wrong");
+    }
+    setArticleGrid(blankGrid);
+    dispatch(setWord(wordData))
+    /*
     let wordData = parseWord(word.word)
     if(!wordData) {
       setIndicator(wrongPick);
@@ -54,6 +80,7 @@ const Word = (props) => {
     setArticleGrid(blankGrid);
     dispatch(setWord(removePunctuation(word.word)))
     dispatch(isArticle(word.word));
+    */
   };
 
   return (
