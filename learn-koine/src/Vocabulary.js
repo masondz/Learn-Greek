@@ -22,8 +22,10 @@ export default function Vocabulary() {
     setCommonStyle("vocab-button");
   }
 
+
   const handleSetList = (option) => {
     let list = {}
+    setDeckIndex(0);
     switch (option) {
       case "Most Common":
         for( let key in vocabListObj) {
@@ -144,6 +146,7 @@ export default function Vocabulary() {
           {">"}
         </button>
       </div>
+      <div><p>{deck[0] !== "Pick Vocab List" ? `Cards in deck: ${deck.length}` : ""}</p></div>
     </div>
   );
 }
