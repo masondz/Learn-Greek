@@ -7,6 +7,25 @@ function removePunctuation(str) {  //this is from ChatpGPT
     return punctuationRemoved;
   }
 
+
+export const parseWord = (inputWord) => {
+  let chosenWord = removePunctuation(inputWord);
+  let wordState = {};
+  if (wordUsages[chosenWord] === undefined) {
+    wordState.word = "Word not in Lexicon";
+    wordState.parse = "";
+    wordState.gNum = "";
+    return wordState;
+  } else if (wordUsages[chosenWord] === undefined && wordUsages[chosenWord.toLowerCase()] === undefined) {
+    chosenWord = chosenWord.toLowerCase();
+  }
+  wordState.word = chosenWord;
+  wordState.parse = wordUsages[chosenWord].parse;
+  wordState.gNum = object[chosenWord].GN;
+  return wordState;
+}
+
+/*
 export const parseWord = (inputWord) => {
       let state = {partOfSpeech: null, parse: {case: [null], number: null, gender: [null]}};
       let chosenWord = removePunctuation(inputWord)
@@ -50,4 +69,4 @@ export const parseWord = (inputWord) => {
           }
       }
       return state;
-}
+}*/
