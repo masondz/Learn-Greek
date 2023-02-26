@@ -34,7 +34,8 @@ const Verse = () => {
     "option-nav-highlighted"
   );
   const [nounsStyle, setNounsStyle] = useState("option-nav");
-  const [adjStyle, setAdjStyle] = useState("option-nav");
+  const [conjStyle, setConjStyle] = useState("option-nav");
+  const [prepStyle, setPrepStyle] = useState("option-nav");
 
   useEffect(() => {
     dispatch(randomVerse());
@@ -44,7 +45,8 @@ const Verse = () => {
   const resetStyles = () => {
     setDefArticleStyle("option-nav");
     setNounsStyle("option-nav");
-    setAdjStyle("option-nav");
+    setConjStyle("option-nav");
+    setPrepStyle("option-nav");
   };
 
   // resetStyles(0)
@@ -108,9 +110,14 @@ const Verse = () => {
     } else if (option === "Noun and Adjective") {
       setNounsStyle("option-nav-highlighted");
       dispatch(setMode("Noun and Adjective"));
+    } else if (option === "Conjunction") {
+      setConjStyle("option-nav-highlighted");
+      dispatch(setMode("Conjunction"));
+    } else if (option === "Preposition") {
+      setPrepStyle("option-nav-highlighted");
+      dispatch(setMode("Preposition"));
     } else {
-      setAdjStyle("option-nav-highlighted");
-      dispatch(setMode("Adjective"));
+      console.log("missed styling");
     }
   };
 
@@ -129,6 +136,18 @@ const Verse = () => {
             onClick={() => handleChangeMode("Noun and Adjective")}
           >
             Nouns and Adjectives
+          </button>
+          <button
+            className={conjStyle}
+            onClick={() => handleChangeMode("Conjunction")}
+          >
+            Conjunctions
+          </button>
+          <button
+            className={prepStyle}
+            onClick={() => handleChangeMode("Preposition")}
+          >
+            Prepositions
           </button>
         </div>
       </nav>
