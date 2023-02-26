@@ -12,9 +12,10 @@ import { parseWord } from "./greek_text/parseLexicon";
 const wrongPick = "\u2716";
 const correctPick = "\u2713";
 
-function removePunctuation(str) {  //this is from ChatpGPT
+function removePunctuation(str) {
+  //this is from ChatpGPT
   const punctuationRegex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·ʼ]/g;
-  const punctuationRemoved = str.replace(punctuationRegex, '');
+  const punctuationRemoved = str.replace(punctuationRegex, "");
   return punctuationRemoved;
 }
 
@@ -23,20 +24,20 @@ const Word = (props) => {
   const [highlight, setHighlight] = useState("");
   // const [parsingMode, setParsingMode] = useState("definite article")
   const dispatch = useDispatch();
-  const verseMode = useSelector(selectVerseMode)
-  
+  const verseMode = useSelector(selectVerseMode);
+
   const { blankGrid, setArticleGrid, word } = props;
   // const checkWord = parseWord(word.word)
 
   const handleClick = () => {
     let wordData = parseWord(word.word);
     console.log(wordData);
-    if(!wordData) {
+    if (!wordData) {
       setIndicator(wrongPick);
-      setHighlight("-highlight-wrong")
-      dispatch(setWord(removePunctuation(word.word)))
+      setHighlight("-highlight-wrong");
+      dispatch(setWord(removePunctuation(word.word)));
       return;
-    } 
+    }
     if (highlight === "-highlight-correct") {
       return;
     }
@@ -53,7 +54,7 @@ const Word = (props) => {
       setHighlight("-highlight-wrong");
     }
     setArticleGrid(blankGrid);
-    dispatch(setWord(wordData))
+    dispatch(setWord(wordData));
     /*
     let wordData = parseWord(word.word)
     if(!wordData) {

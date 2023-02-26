@@ -20,7 +20,7 @@ const wordSlice = createSlice({
   },
   reducers: {
     setWord: (state, action) => {
-      const {word, parse, gNum} = action.payload;
+      const { word, parse, gNum } = action.payload;
       console.log(action.payload);
       state.word = word;
       state.parse = parse;
@@ -28,7 +28,7 @@ const wordSlice = createSlice({
       // state.word = action.payload;
       // let chosenWord = action.payload;
       // console.log(`Setting word action... ${chosenWord}`)
-      // if (wordUsages[chosenWord] === undefined && wordUsages[chosenWord.toLowerCase() === undefined]) { 
+      // if (wordUsages[chosenWord] === undefined && wordUsages[chosenWord.toLowerCase() === undefined]) {
       //   console.log(`${chosenWord} is not in lexicon...`)
       //   state.partOfSpeech = "Sorry, word isn't in our lexicon "
       //   state.parse = { case: [null], number: null, gender: null};
@@ -37,10 +37,10 @@ const wordSlice = createSlice({
       //   chosenWord = chosenWord.toLowerCase(); //the lexicon has some words with and without capitalized letters.
       // }
       //   console.log(`${chosenWord}: ${wordUsages[chosenWord].parse}`)
-        let splitParseOnOR = wordUsages[word].parse.split('｜');
-        let splitOnComma = splitParseOnOR[1].split(', ')
-        state.partOfSpeech = splitOnComma[0];
-      //   if(state.partOfSpeech !== "Verb") {  
+      let splitParseOnOR = wordUsages[word].parse.split("｜");
+      let splitOnComma = splitParseOnOR[1].split(", ");
+      state.partOfSpeech = splitOnComma[0];
+      //   if(state.partOfSpeech !== "Verb") {
       //     if (state.partOfSpeech !== "Personal pronoun") {    //"Αὐτῶν":{"parse":"P-GPM｜Personal pronoun, genitive, plural, masculine","GN":"G846"}
       //     state.parse.case = splitOnComma[1];           //"ἐγώ":{"parse":"P-1NS｜Personal pronoun, first, nominative, singular","GN":"G1473"}
       //     state.parse.number = splitOnComma[2];         //"ὑμῖν":{"parse":"P-2DP｜Personal pronoun, second, dative, plural","GN":"G4771"}
@@ -53,12 +53,12 @@ const wordSlice = createSlice({
       //         state.parse.number = splitOnComma[3];
       //         state.parse.gender = [];
       //       } else {
-      //         state.parse.case = splitOnComma[1];           
-      //         state.parse.number = splitOnComma[2];         
+      //         state.parse.case = splitOnComma[1];
+      //         state.parse.number = splitOnComma[2];
       //         state.parse.gender = splitOnComma[3];
       //         state.parse.person = ""
       //       }
-      //     } 
+      //     }
       //   } else if (state.partOfSpeech === "Verb") {
       //     if (splitOnComma[1].includes("iNfinitive")) {  //"ἀγαθοποιοῦντες":{"parse":"V-PAP-NPM｜Verb, Present, Active, Participle, Nominative, Plural, Masculine","GN":"G15"}
       //       state.parse.tense = splitOnComma[1];         //"ἀγαλλιῶμεν":{"parse":"V-PAS-1P｜Verb, Present, Active, Subjunctive, first, Plural","GN":"G21"},
@@ -101,7 +101,8 @@ const wordSlice = createSlice({
   },
 });
 
-export const { isArticle, checkWordSlice, clearWord, setWord } = wordSlice.actions;
+export const { isArticle, checkWordSlice, clearWord, setWord } =
+  wordSlice.actions;
 
 export const selectWordSlice = (state) => state.word; //returns an object {word: της, partOfSpeech: "article"}
 

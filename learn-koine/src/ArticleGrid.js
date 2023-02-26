@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { selectWordSlice } from "./features/wordSlice";
 
 export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
-
   const { parse } = useSelector(selectWordSlice);
 
   let masculineOrFirst = articleGrid.masculine;
@@ -12,26 +11,29 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   let neutereOrThird = articleGrid.neuter;
   let hasPersonAttribute = false;
 
-  if(parse.includes("first") || parse.includes("second") || parse.includes("third")) {
-    console.log("has first second or thrid")
+  if (
+    parse.includes("first") ||
+    parse.includes("second") ||
+    parse.includes("third")
+  ) {
+    console.log("has first second or thrid");
     masculineOrFirst = articleGrid.first;
     feminineOrSecond = articleGrid.second;
     neutereOrThird = articleGrid.third;
     hasPersonAttribute = true;
   }
 
-
   const checkCase = (e) => {
     e.preventDefault();
     const wordCase = parse;
 
     let target = e.target.innerHTML;
-    
+
     if (wordCase.includes(target)) {
-      console.log("there's a match")
+      console.log("there's a match");
       setArticleGrid({ ...articleGrid, [target]: "-correct" });
     } else {
-      console.log("there's NOT a match")
+      console.log("there's NOT a match");
       setArticleGrid({ ...articleGrid, [target]: "-wrong" });
     }
   };

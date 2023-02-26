@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { randomVerse, clearVerse, selectVerseMode } from "./features/verseSlice";
+import {
+  randomVerse,
+  clearVerse,
+  selectVerseMode,
+} from "./features/verseSlice";
 import { clearWord, selectWordSlice } from "./features/wordSlice";
 import {
   clearArticleCount,
@@ -54,7 +58,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   }
 
   if (!word) {
-    describeWord = `Select ${verseMode}s`
+    describeWord = `Select ${verseMode}s`;
   }
 
   return (

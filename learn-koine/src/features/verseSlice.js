@@ -24,7 +24,11 @@ const getRandomVerse = (theText) => {
 
 const verseSlice = createSlice({
   name: "verse",
-  initialState: { verse: "Selecting...", reference: "", mode: "definite articles" },
+  initialState: {
+    verse: "Selecting...",
+    reference: "",
+    mode: "definite articles",
+  },
   reducers: {
     checkVerseSlice: (state, action) => {
       console.log("check verse slice");
@@ -41,16 +45,17 @@ const verseSlice = createSlice({
     },
     setMode: (state, action) => {
       state.mode = action.payload;
-    }
+    },
   },
 });
 
-export const { checkVerseSlice, randomVerse, clearVerse, setMode } = verseSlice.actions;
+export const { checkVerseSlice, randomVerse, clearVerse, setMode } =
+  verseSlice.actions;
 
 export const selectVerseSlice = (state) => state.verse.verse;
 
 export const selectVerseReference = (state) => state.verse.reference;
 
-export const selectVerseMode = (state) => state.verse.mode
+export const selectVerseMode = (state) => state.verse.mode;
 
 export default verseSlice.reducer;

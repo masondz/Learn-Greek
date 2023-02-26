@@ -64,7 +64,6 @@
   width: 100%;
 }
 
-
 .vocab-button {
   cursor: pointer;
   border-style: none;
@@ -81,9 +80,8 @@
   border: none;
   font-size: medium;
   padding-left: 2em;
-  padding-right: 2em
+  padding-right: 2em;
 }
-
 
 @media only screen and (max-width: 475px) {
   .card-back {
