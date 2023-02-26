@@ -105,9 +105,9 @@ const Verse = () => {
     if (option === "definite article") {
       setDefArticleStyle("option-nav-highlighted");
       dispatch(setMode("definite article"));
-    } else if (option === "Noun") {
+    } else if (option === "Noun and Adjective") {
       setNounsStyle("option-nav-highlighted");
-      dispatch(setMode("Noun"));
+      dispatch(setMode("Noun and Adjective"));
     } else {
       setAdjStyle("option-nav-highlighted");
       dispatch(setMode("Adjective"));
@@ -126,15 +126,9 @@ const Verse = () => {
           </button>
           <button
             className={nounsStyle}
-            onClick={() => handleChangeMode("Noun")}
+            onClick={() => handleChangeMode("Noun and Adjective")}
           >
-            Nouns
-          </button>
-          <button
-            className={adjStyle}
-            onClick={() => handleChangeMode("Adjective")}
-          >
-            Adjectives
+            Nouns and Adjectives
           </button>
         </div>
       </nav>

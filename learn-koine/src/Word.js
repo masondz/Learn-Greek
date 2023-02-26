@@ -41,12 +41,25 @@ const Word = (props) => {
     if (highlight === "-highlight-correct") {
       return;
     }
-    if (wordData.parse.includes(verseMode)) {
+    if (verseMode === "Noun and Adjective") {
+      if (
+        wordData.parse.includes("Noun") ||
+        wordData.parse.includes("Adjective")
+      ) {
+        setIndicator(correctPick);
+        setHighlight("-highlight-correct");
+        dispatch(incrementFoundArticles());
+        dispatch(setParsingArticle(true));
+      } else {
+        setIndicator(wrongPick);
+        setHighlight("-highlight-wrong");
+      }
+    } else if (wordData.parse.includes(verseMode)) {
       setIndicator(correctPick);
       setHighlight("-highlight-correct");
       dispatch(incrementFoundArticles());
       dispatch(setParsingArticle(true));
-    } else {
+    } else if (!wordData.parse.includes(verseMode)) {
       // console.log(`checking versmode in Word: ${verseMode}`)
       // console.log(`checking word.partOfSpeech in Word: ${word.partOfSpeech}`)
       // console.log(`Are they Equal: ${word.partOfSpeech === verseMode}`)
