@@ -1,4 +1,4 @@
-import { wordUsages } from "./greekLexiconObject";
+// import { wordUsages } from "./greekLexiconObject";
 
 let vocabListRaw =`ὁ, ἡ, τό	the 	19889
 καί	and, even, also	9158
@@ -7,7 +7,7 @@ let vocabListRaw =`ὁ, ἡ, τό	the 	19889
 δέ	but, and	2792
 ἐν	in (dat)	2752
 ἐγὼ	I	2584
-εἰμί	I am	2462
+εἰμί, ἐσμεν, εἰσιν, ἐστε	I am	2462
 λέγω	to say, speak	2357
 εἰς	into (acc)	1767
 οὐ	not, no	1623
@@ -5400,19 +5400,19 @@ let vocabListObj = {}
 vocabListRaw = vocabListRaw.split('\n')
 
 let vocabListSplitAgain = vocabListRaw.map((line) => line.split('\t'));
-let limitCount = 0
+// let limitCount = 0
 for (let i=0; i < vocabListSplitAgain.length; i++) {
-   let vocabWord = vocabListSplitAgain[i][0];
+//    let vocabWord = vocabListSplitAgain[i][0];
    vocabListObj[vocabListSplitAgain[i][0]] = {english: vocabListSplitAgain[i][1], frequency: vocabListSplitAgain[i][2]}
-   if (limitCount < 5) {
-    if(wordUsages[vocabWord] === undefined) {
-        console.log(vocabWord)
-        continue;
-    }
-    if (wordUsages[vocabWord].parse.includes("Verb") && vocabListObj[vocabWord].frequency > 499){
-    console.log(vocabWord);
-    limitCount++;}
-   }
+//    if (limitCount < 5) {
+//     if(wordUsages[vocabWord] === undefined) {
+//         console.log(vocabWord)
+//         continue;
+//     }
+//     if (wordUsages[vocabWord].parse.includes("Verb") && vocabListObj[vocabWord].frequency > 499){
+//     console.log(vocabWord);
+//     limitCount++;}
+//    }
 }
 
 export { vocabListObj };
