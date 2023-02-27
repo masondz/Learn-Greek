@@ -2,7 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const countSlice = createSlice({
   name: "count",
-  initialState: { targetWords: 0 , allTargetsFound: false, foundTargetWord: 0},
+  initialState: { targetWords: 0 , allTargetsFound: false, foundTargetWord: 0, 
+    articles: 0, allArticlesFound: false, foundArticle: 0,
+    nounsAdj: 0, allNounsAdjFound: false, foundNounAdj: 0,
+    conjuctions: 0, allConjFound: false, foundConj: 0,
+    prepositions: 0, allPrepFoud: false, foundPrep: 0},
   reducers: {
     clearArticleCount: (state, action) => {
       state.targetWords = 0;
