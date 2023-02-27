@@ -7948,5 +7948,3 @@ for (let i = 0; i < greekTextArray.length; i++) {
         wordCount[word] += 1;
     }
 }
-
-console.log(Object.keys(wordCount).length);

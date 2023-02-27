@@ -4,7 +4,6 @@ import { vocabListObj } from "./greek_text/vocabularyWords";
 import ReactCardFlip from "react-card-flip";
 
 export default function Vocabulary() {
-  console.log(vocabListObj);
   const [vocabList, setVocabList] = useState({});
   const [deck, setDeck] = useState(["Pick Vocab List"]);
   const [isFlipped, setIsFlipped] = useState(false);
