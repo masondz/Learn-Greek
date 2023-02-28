@@ -125,7 +125,7 @@ const Verse = () => {
 
   return (
     <div className="body">
-      <Menu />
+     <Menu setArticleGrid={setArticleGrid} blankGrid={blankGrid}/>
       {/* <nav className="nav-bar">
         <div className="nav-options">
           <button

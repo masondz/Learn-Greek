@@ -1,23 +1,27 @@
 .menu-button-container {
-    border: 1px solid red;
-
+    background-color: rgb(20, 250, 59);
+    padding: 5px;
 }
 
 .menu-options {
-    border: 1px solid yellow;
+    padding-left: 5px;
+}
+
+.menu-options button {
+    padding-left: 5px;
+    margin-top: 20px;
 }
 
 .menu-links {
-    border: 1px solid purple
+    padding-left: 5px;
 }
 
 .menu-container {
-    border: 1px solid orange;
     /* height: 50px; */
     position: absolute;
     /* display: flex; */
     left: 5px; 
-    background-color: rgb(215, 255, 222);
+    background-color: white;
     color: black;
     text-align: left;
     z-index: 3;
@@ -27,8 +31,13 @@ a {
     color: black;
     font-size: smaller;
     border: none;
+    margin-bottom: 20px;
 }
 
 button {
     border: none;
+    color: #282c34;
+    background: none;
+    font-size: large;
+    cursor: pointer;
 }

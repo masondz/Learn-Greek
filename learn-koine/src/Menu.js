@@ -1,15 +1,27 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { motion, useCycle, AnimatePresence } from "framer-motion";
+import { useSelector, useDispatch } from "react-redux";
+import { selectVerseMode, setMode } from './features/verseSlice';
+import { clearWord } from './features/wordSlice';
 import "./Menu.css"
 
-const Menu = () => {
+/*
+    word: null,
+    partOfSpeech: null,
+    parse: "",
+    gNum: "",
+*/
+
+const Menu = ({setArticleGrid, blankGrid}) => {
+    const verseMode = useSelector(selectVerseMode);
     const [open, cycleOpen] = useCycle(false, true);
+    const dispatch = useDispatch();
 
     const sideVariants = {
         closed: {
             transition: {
-                staggerChildren: 0.1,
+                staggerChildren: 0.01,
                 staggerDiretion: -1
             }
         },
@@ -28,22 +40,40 @@ const Menu = () => {
         open: { opacity: 1}
     };
 
+    const handleClick =(option)=> {
+        setArticleGrid(blankGrid)
+        dispatch(clearWord())
+        if (option === "definite article") {
+            dispatch(setMode("definite article"));
+          } else if (option === "Noun and Adjective") {
+            dispatch(setMode("Noun and Adjective"));
+          } else if (option === "Conjunction") {
+            dispatch(setMode("Conjunction"));
+          } else if (option === "Preposition") {
+            dispatch(setMode("Preposition"));
+          } else {
+              console.log("missed styling");
+          }
+          setTimeout(() => {
+            cycleOpen();
+          }, 10)
+    }
 
     return (
         <div className="menu-container">
             <div className="menu-button-container">
-                <button onClick={cycleOpen}>{open ? "X" : "Menu"}</button>
+                <button onClick={cycleOpen}>{open ? "X" : "="}</button>
             </div>
          <AnimatePresence>
 
           {open &&
             <motion.div
-            initial={{ width: 0, height: 50, position: "absolute"}}
-            animate={{ width: 300, minHeight: "110vh", position: "relative"}}
+            initial={{ width: 0, position: "absolute", backgound: "none"}}
+            animate={{ width: 300, minHeight: "110vh", position: "relative", backgoundColor: "white"}}
             exit={{
+                height: 10,
                 width: 0, 
-                height: 50,
-                transition: { delay: 0.7, duration: 0.2}
+                transition: { delay: 0.2, duration: 0.1}
             }}>
                 <div>
                 </div>
@@ -52,11 +82,16 @@ const Menu = () => {
                 animate="open"
                 exit="closed"
                 variants={sideVariants}>
-                    <motion.h3 variants={itemVariants}>Menu</motion.h3>
-                    <motion.button variants={itemVariants}>option 1</motion.button>
-                    <motion.button variants={itemVariants}>option 2</motion.button>
-                    <motion.button variants={itemVariants}>option 3</motion.button>
+                    <motion.h3 variants={itemVariants}>{verseMode}</motion.h3>
+                    <motion.button variants={itemVariants} onClick={()=> handleClick("definite article")}>Definite Articles</motion.button>
+                    <br></br>
+                    <motion.button variants={itemVariants} onClick={()=> handleClick("Conjunction")}>Conjunctions</motion.button>
+                    <br></br>
+                    <motion.button variants={itemVariants} onClick={()=> handleClick("Preposition")}>Prepositions</motion.button>
+                    <br></br>
+                    <motion.button variants={itemVariants} onClick={()=> handleClick("Noun and Adjective")}>Nouns and Adjectives</motion.button>
                 </motion.div>
+                <br></br>
                 <motion.div className="menu-links"
                 initial="closed"
                 animate="open"
@@ -64,6 +99,7 @@ const Menu = () => {
                
                 variants={itemVariants}>
                     <Link to={"vocabulary"}>Vocabulary</Link>
+                    <br></br>
                     <Link to={"/"}>Home</Link>
                 </motion.div>
             </motion.div>}
