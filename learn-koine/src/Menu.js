@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Menu = () => {
     return (
-        <div>
+        <motion.div initial={{ width: 0}}>
             <div>
                 <h3>Menu</h3>
             </div>
@@ -16,7 +17,7 @@ const Menu = () => {
                 <Link to={"vocabulary"}>Vocabulary</Link>
                 <Link to={"/"}>Home</Link>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
