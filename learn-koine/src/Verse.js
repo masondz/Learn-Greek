@@ -9,7 +9,7 @@ import {
   setMode,
   selectVerseMode,
 } from "./features/verseSlice";
-import { setArticleCount, clearArticleCount } from "./features/countSlice";
+import { setArticleCount } from "./features/countSlice";
 import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
 import Menu from "./Menu";
@@ -32,24 +32,24 @@ const arrayIffy = (verse) => {
 const Verse = () => {
   let [word] = useState("");
   const dispatch = useDispatch();
-  const [defArticlStyle, setDefArticleStyle] = useState(
-    "option-nav-highlighted"
-  );
-  const [nounsStyle, setNounsStyle] = useState("option-nav");
-  const [conjStyle, setConjStyle] = useState("option-nav");
-  const [prepStyle, setPrepStyle] = useState("option-nav");
+  // const [defArticlStyle, setDefArticleStyle] = useState(
+  //   "option-nav-highlighted"
+  // );
+  // const [nounsStyle, setNounsStyle] = useState("option-nav");
+  // const [conjStyle, setConjStyle] = useState("option-nav");
+  // const [prepStyle, setPrepStyle] = useState("option-nav");
 
   useEffect(() => {
     dispatch(randomVerse());
     dispatch(setMode("definite article"));
   }, [dispatch]);
 
-  const resetStyles = () => {
-    setDefArticleStyle("option-nav");
-    setNounsStyle("option-nav");
-    setConjStyle("option-nav");
-    setPrepStyle("option-nav");
-  };
+  // const resetStyles = () => {
+  //   setDefArticleStyle("option-nav");
+  //   setNounsStyle("option-nav");
+  //   setConjStyle("option-nav");
+  //   setPrepStyle("option-nav");
+  // };
 
   // resetStyles(0)
 
@@ -102,26 +102,26 @@ const Verse = () => {
 
   dispatch(setArticleCount(articleCount));
 
-  const handleChangeMode = (option) => {
-    resetStyles();
-    setArticleGrid(blankGrid);
-    dispatch(clearArticleCount());
-    if (option === "definite article") {
-      setDefArticleStyle("option-nav-highlighted");
-      dispatch(setMode("definite article"));
-    } else if (option === "Noun and Adjective") {
-      setNounsStyle("option-nav-highlighted");
-      dispatch(setMode("Noun and Adjective"));
-    } else if (option === "Conjunction") {
-      setConjStyle("option-nav-highlighted");
-      dispatch(setMode("Conjunction"));
-    } else if (option === "Preposition") {
-      setPrepStyle("option-nav-highlighted");
-      dispatch(setMode("Preposition"));
-    } else {
-      console.log("missed styling");
-    }
-  };
+  // const handleChangeMode = (option) => {
+  //   resetStyles();
+  //   setArticleGrid(blankGrid);
+  //   dispatch(clearArticleCount());
+  //   if (option === "definite article") {
+  //     setDefArticleStyle("option-nav-highlighted");
+  //     dispatch(setMode("definite article"));
+  //   } else if (option === "Noun and Adjective") {
+  //     setNounsStyle("option-nav-highlighted");
+  //     dispatch(setMode("Noun and Adjective"));
+  //   } else if (option === "Conjunction") {
+  //     setConjStyle("option-nav-highlighted");
+  //     dispatch(setMode("Conjunction"));
+  //   } else if (option === "Preposition") {
+  //     setPrepStyle("option-nav-highlighted");
+  //     dispatch(setMode("Preposition"));
+  //   } else {
+  //     console.log("missed styling");
+  //   }
+  // };
 
   return (
     <div className="body">
