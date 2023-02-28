@@ -1,0 +1,34 @@
+.menu-button-container {
+    border: 1px solid red;
+
+}
+
+.menu-options {
+    border: 1px solid yellow;
+}
+
+.menu-links {
+    border: 1px solid purple
+}
+
+.menu-container {
+    border: 1px solid orange;
+    /* height: 50px; */
+    position: absolute;
+    /* display: flex; */
+    left: 5px; 
+    background-color: rgb(215, 255, 222);
+    color: black;
+    text-align: left;
+    z-index: 3;
+}
+
+a {
+    color: black;
+    font-size: smaller;
+    border: none;
+}
+
+button {
+    border: none;
+}

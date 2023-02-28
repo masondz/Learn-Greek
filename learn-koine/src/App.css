@@ -32,5 +32,9 @@ a {
   min-width: 200px;
 }
 
+.sidebar-menu {
+  border-color: red;
+}
+
 @media only screen and (max-width: 540px) {
 }

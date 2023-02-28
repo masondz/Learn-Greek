@@ -12,7 +12,9 @@ import {
 import { setArticleCount, clearArticleCount } from "./features/countSlice";
 import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
+import Menu from "./Menu";
 import { parseWord } from "./greek_text/parseLexicon";
+import './Menu.css'
 // import { greekArticles } from "./greek_text/greekArticles";
 // import { wordUsages } from "../greek_text/greekLexiconObject";
 
@@ -123,7 +125,8 @@ const Verse = () => {
 
   return (
     <div className="body">
-      <nav className="nav-bar">
+      <Menu />
+      {/* <nav className="nav-bar">
         <div className="nav-options">
           <button
             className={defArticlStyle}
@@ -149,8 +152,8 @@ const Verse = () => {
           >
             Prepositions
           </button>
-        </div>
       </nav>
+        </div> */}
       <div className="verse-sentence">
         {verseArray.map((word, i) => {
           return (
