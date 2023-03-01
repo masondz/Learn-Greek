@@ -55,7 +55,7 @@ const Menu = ({setArticleGrid, blankGrid}) => {
     return (
         <div className="menu-container">
             <div className="menu-button-container">
-                <button className="menu-toggle-button" onClick={cycleOpen}>{open ? "X" : "="}</button>
+                <button className="menu-toggle-button" onClick={cycleOpen}>{open ? "X Parsing Practice" : "="}</button>
             </div>
          <AnimatePresence>
 
@@ -75,7 +75,7 @@ const Menu = ({setArticleGrid, blankGrid}) => {
                 animate="open"
                 exit="closed"
                 variants={sideVariants}>
-                    <motion.h3 variants={itemVariants}>{verseMode}</motion.h3>
+                    <motion.h3 variants={itemVariants}>{verseMode === "definite article" ? "Definite Article" : verseMode}</motion.h3>
                     <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("definite article")}>Definite Articles</motion.button>
                     <br></br>
                     <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Conjunction")}>Conjunctions</motion.button>
