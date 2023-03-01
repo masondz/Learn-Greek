@@ -6,13 +6,6 @@ import { selectVerseMode, setMode } from './features/verseSlice';
 import { clearWord } from './features/wordSlice';
 import "./Menu.css"
 
-/*
-    word: null,
-    partOfSpeech: null,
-    parse: "",
-    gNum: "",
-*/
-
 const Menu = ({setArticleGrid, blankGrid}) => {
     const verseMode = useSelector(selectVerseMode);
     const [open, cycleOpen] = useCycle(false, true);

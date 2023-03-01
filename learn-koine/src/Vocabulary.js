@@ -9,67 +9,7 @@ export default function Vocabulary() {
   const [deck, setDeck] = useState(["Pick Vocab List"]);
   const [isFlipped, setIsFlipped] = useState(false);
   const [deckIndex, setDeckIndex] = useState(0);
-  const [mostCommonStyle, setMostCommonStyle] = useState("vocab-button");
-  const [moreCommonStyle, setMoreCommonStyle] = useState("vocab-button");
-  const [commonStyle, setCommonStyle] = useState("vocab-button");
 
-  const highlightStyle = "highlighted-option";
-
-  const resetStyles = () => {
-    setMostCommonStyle("vocab-button");
-    setMoreCommonStyle("vocab-button");
-    setCommonStyle("vocab-button");
-  };
-
-  const handleSetList = (option) => {
-    let list = {};
-    setDeckIndex(0);
-    switch (option) {
-      case "Most Common":
-        for (let key in vocabListObj) {
-          if (Number(vocabListObj[key].frequency) > 500) {
-            list[key] = vocabListObj[key];
-          }
-        }
-        setDeck(Object.keys(list));
-        setVocabList(Object.keys(list));
-        resetStyles();
-        setMostCommonStyle(highlightStyle);
-        break;
-      case "More Common":
-        for (let key in vocabListObj) {
-          if (
-            Number(vocabListObj[key].frequency) < 500 &&
-            Number(vocabListObj[key].frequency > 250)
-          ) {
-            list[key] = vocabListObj[key];
-          }
-        }
-        resetStyles();
-        setMoreCommonStyle(highlightStyle);
-        setDeck(Object.keys(list));
-        setVocabList(Object.keys(list));
-        break;
-      case "Common":
-        for (let key in vocabListObj) {
-          if (
-            Number(vocabListObj[key].frequency) < 250 &&
-            Number(vocabListObj[key].frequency > 49)
-          ) {
-            list[key] = vocabListObj[key];
-          }
-        }
-        resetStyles();
-        setCommonStyle(highlightStyle);
-        setDeck(Object.keys(list));
-        setVocabList(Object.keys(list));
-        break;
-      default:
-        setDeck(["Pick Vocabulary List"]);
-        setVocabList({});
-        break;
-    }
-  };
 
   const onClick = () => {
     isFlipped ? setIsFlipped(false) : setIsFlipped(true);
@@ -119,27 +59,10 @@ export default function Vocabulary() {
 
   return (
     <div className="body">
+      
       <MenuVocabulary setDeck={setDeck} setDeckIndex={setDeckIndex} setVocabList={setVocabList} setIsFlipped={setIsFlipped}/>
-      {/* 
-      <div className={"vocab-options"}>
-        <button
-          className={mostCommonStyle}
-          onClick={() => handleSetList("Most Common")}
-        >
-          <p>Most Common</p>
-        </button>
-        <button
-          className={moreCommonStyle}
-          onClick={() => handleSetList("More Common")}
-        >
-          <p>More Common</p>
-        </button>
-        <button className={commonStyle} onClick={() => handleSetList("Common")}>
-          <p>Common</p>
-        </button>
-      </div> */}
+      
       <div className="vocab-container">
-
       <ReactCardFlip
         isFlipped={isFlipped}
         flipDirection="horizontal"

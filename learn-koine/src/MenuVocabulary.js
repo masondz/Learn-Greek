@@ -1,22 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { motion, useCycle, AnimatePresence } from "framer-motion";
-import { useSelector, useDispatch } from "react-redux";
 import { vocabListObj } from "./greek_text/vocabularyWords";
 
 import "./Menu.css"
 
-/*
-    word: null,
-    partOfSpeech: null,
-    parse: "",
-    gNum: "",
-*/
 
 const MenuVocabulary = ({setDeck, setDeckIndex, setVocabList, setIsFlipped}) => {
     const [open, cycleOpen] = useCycle(false, true);
     const [category, setCategory] = useState("Pick a Category")
-    const dispatch = useDispatch();
 
     const sideVariants = {
         closed: {
