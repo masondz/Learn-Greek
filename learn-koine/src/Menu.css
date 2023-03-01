@@ -1,16 +1,16 @@
 .menu-button-container {
     background-color: rgb(20, 250, 59);
     padding: 5px;
+    height: 25px;
+    display: flex;
+    /* justify-content: center; */
+    border: 2px solid rgb(7, 99, 4);
 }
 
 .menu-options {
     padding-left: 5px;
 }
 
-.menu-options button {
-    padding-left: 5px;
-    margin-top: 20px;
-}
 
 .menu-links {
     padding-left: 5px;
@@ -25,19 +25,27 @@
     color: black;
     text-align: left;
     z-index: 3;
+    border: 2px solid rgb(119, 119, 118)
 }
 
-a {
+.menu-link {
     color: black;
     font-size: smaller;
     border: none;
     margin-bottom: 20px;
 }
 
-button {
+.menu-button {
     border: none;
     color: #282c34;
     background: none;
+    font-size: large;
+    cursor: pointer; 
+}
+
+.menu-toggle-button {
+    background: none;
+    border: none;
     font-size: large;
     cursor: pointer;
 }

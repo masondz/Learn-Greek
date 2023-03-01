@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Vocabulary.css";
 import { vocabListObj } from "./greek_text/vocabularyWords";
 import ReactCardFlip from "react-card-flip";
+import MenuVocabulary from "./MenuVocabulary";
 
 export default function Vocabulary() {
   const [vocabList, setVocabList] = useState({});
@@ -118,6 +119,8 @@ export default function Vocabulary() {
 
   return (
     <div className="body">
+      <MenuVocabulary setDeck={setDeck} setDeckIndex={setDeckIndex} setVocabList={setVocabList} setIsFlipped={setIsFlipped}/>
+      {/* 
       <div className={"vocab-options"}>
         <button
           className={mostCommonStyle}
@@ -134,12 +137,14 @@ export default function Vocabulary() {
         <button className={commonStyle} onClick={() => handleSetList("Common")}>
           <p>Common</p>
         </button>
-      </div>
+      </div> */}
+      <div className="vocab-container">
+
       <ReactCardFlip
         isFlipped={isFlipped}
         flipDirection="horizontal"
         className="card-container"
-      >
+        >
         <div key="front" onClick={onClick} className="card-front">
           {deck[deckIndex]}
         </div>
@@ -167,6 +172,7 @@ export default function Vocabulary() {
         <p>
           {deck[0] !== "Pick Vocab List" ? `Cards in deck: ${deck.length}` : ""}
         </p>
+      </div>
       </div>
     </div>
   );

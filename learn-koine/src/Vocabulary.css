@@ -2,10 +2,11 @@
   background-color: #282c34;
   display: flex;
   color: white;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   flex-wrap: nowrap;
   text-align: center;
 }
+
 
 .card-back {
   background-color: #bbb;
@@ -44,7 +45,7 @@
   border-radius: 10px;
   border-color: white;
   border-width: 0.5px;
-  padding: 10px;
+  padding: 7px;
   color: white;
   font-weight: bold;
   margin-right: 10px;
@@ -81,6 +82,13 @@
   font-size: medium;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.vocab-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 475px) {

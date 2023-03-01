@@ -21,13 +21,13 @@ const Menu = ({setArticleGrid, blankGrid}) => {
     const sideVariants = {
         closed: {
             transition: {
-                staggerChildren: 0.01,
+                // staggerChildren: 0.01,
                 staggerDiretion: -1
             }
         },
         open: {
             transition: {
-                staggerChildren: 0.1,
+                // staggerChildren: 0.1,
                 staggerDirection: 1,
             }
         },
@@ -62,7 +62,7 @@ const Menu = ({setArticleGrid, blankGrid}) => {
     return (
         <div className="menu-container">
             <div className="menu-button-container">
-                <button onClick={cycleOpen}>{open ? "X" : "="}</button>
+                <button className="menu-toggle-button" onClick={cycleOpen}>{open ? "X" : "="}</button>
             </div>
          <AnimatePresence>
 
@@ -73,7 +73,7 @@ const Menu = ({setArticleGrid, blankGrid}) => {
             exit={{
                 height: 10,
                 width: 0, 
-                transition: { delay: 0.2, duration: 0.1}
+                transition: { delay: 0.29, duration: 0.1}
             }}>
                 <div>
                 </div>
@@ -83,13 +83,13 @@ const Menu = ({setArticleGrid, blankGrid}) => {
                 exit="closed"
                 variants={sideVariants}>
                     <motion.h3 variants={itemVariants}>{verseMode}</motion.h3>
-                    <motion.button variants={itemVariants} onClick={()=> handleClick("definite article")}>Definite Articles</motion.button>
+                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("definite article")}>Definite Articles</motion.button>
                     <br></br>
-                    <motion.button variants={itemVariants} onClick={()=> handleClick("Conjunction")}>Conjunctions</motion.button>
+                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Conjunction")}>Conjunctions</motion.button>
                     <br></br>
-                    <motion.button variants={itemVariants} onClick={()=> handleClick("Preposition")}>Prepositions</motion.button>
+                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Preposition")}>Prepositions</motion.button>
                     <br></br>
-                    <motion.button variants={itemVariants} onClick={()=> handleClick("Noun and Adjective")}>Nouns and Adjectives</motion.button>
+                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Noun and Adjective")}>Nouns and Adjectives</motion.button>
                 </motion.div>
                 <br></br>
                 <motion.div className="menu-links"
@@ -98,9 +98,9 @@ const Menu = ({setArticleGrid, blankGrid}) => {
                 exit="closed"
                
                 variants={itemVariants}>
-                    <Link to={"vocabulary"}>Vocabulary</Link>
+                    <Link to={"/vocabulary"} className="menu-link">Vocabulary</Link>
                     <br></br>
-                    <Link to={"/"}>Home</Link>
+                    <Link to={"/"} className="menu-link">Home</Link>
                 </motion.div>
             </motion.div>}
           </AnimatePresence>
