@@ -7,8 +7,9 @@ import "./Menu.css"
 
 
 const MenuVocabulary = ({setDeck, setDeckIndex, setVocabList, setIsFlipped}) => {
-    const [open, cycleOpen] = useCycle(false, true);
+    const [open, cycleOpen] = useCycle(true, false);
     const [category, setCategory] = useState("Pick a Category")
+
 
     const sideVariants = {
         closed: {
@@ -88,14 +89,14 @@ const MenuVocabulary = ({setDeck, setDeckIndex, setVocabList, setIsFlipped}) => 
     return (
         <div className="menu-container">
             <div className="menu-button-container">
-                <button className="menu-toggle-button" onClick={cycleOpen}>{open ? "X" : "="}</button>
+                <button className="menu-toggle-button" onClick={cycleOpen}>{open ? `X   Vocabulary Practice` : "="}</button>
             </div>
          <AnimatePresence>
 
           {open &&
             <motion.div
             initial={{ width: 0, position: "absolute", backgound: "none"}}
-            animate={{ width: 300, minHeight: "110vh", position: "relative", backgoundColor: "white"}}
+            animate={{ width: 200, minHeight: "110vh", position: "relative", backgoundColor: "white"}}
             exit={{
                 height: 10,
                 width: 0, 

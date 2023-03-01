@@ -87,8 +87,9 @@
 .vocab-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  margin-top: 7em;
 }
 
 @media only screen and (max-width: 475px) {
