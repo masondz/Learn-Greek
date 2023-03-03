@@ -7,8 +7,18 @@ let vocabListRaw =`ὁ, ἡ, τό	the 	19889
 δέ	but, and	2792
 ἐν	in (dat)	2752
 ἐγὼ	I	2584
-εἰμί, ἐσμεν, εἰσιν, ἐστε	I am	2462
-λέγω	to say, speak	2357
+εἰμί	I am	2462
+ἐσμεν	We are	2462
+ἐστίν	she/he/it is	2462
+εἰσιν	they are	2462
+εἶ	you are (singular)	2462
+ἐστε	you are (plural)	2462
+λέγω	I say, speak	2357
+λέγετε	you say, speak	2357
+λέγει	he/she/it says, speaks	2357
+λέγεις	you say, speak (singular)	2357
+λέγομεν	we say, speak	2357
+λέγουσιν	they say, speak	2357
 εἰς	into (acc)	1767
 οὐ	not, no	1623
 ὅς, ἥ, ὅ	who, which	1435
@@ -22,7 +32,12 @@ let vocabListRaw =`ὁ, ἡ, τό	the 	19889
 ἐκ, ἐξ	out of, from (gen)	914
 ἐπί	over, on, at the time of (gen); on the basis of, at (dat); on, to, against (acc)	890
 κύριος, -ου, ὁ	a lord, the Lord	717
-ἔχω	to have, hold	708
+ἔχω	I have, hold	708
+ἔχει	he/she/it has, holds	708
+ἔχομεν	we have, hold	708
+ἔχεις	you have, hold (singular)	708
+ἔχουσιν	they have, hold 708
+ἔχετέ	you have, hold (plural)	708
 πρός	to, towards, with (acc)	700
 γίνομαι	to become, be	669
 διά	through (gen); on account of (acc)	667
@@ -32,6 +47,9 @@ let vocabListRaw =`ὁ, ἡ, τό	the 	19889
 ἔρχομαι	to come, go	634
 τίς, τί	who? which? what? why?	579
 ποιέω	to do, make	572
+ποιεῖ	he/she/it does, makes	572
+ποιοῦμεν	we do, make	572
+ποιεῖς	you do, make	572
 ἄνθρωπος, -ου, ὁ	a man	550
 τὶς, τὶ	someone, something, a certain one, a certain thing, anyone, anything 	538
 Χριστός, -οῦ, ὁ	Christ, Messiah, Anointed One	529
