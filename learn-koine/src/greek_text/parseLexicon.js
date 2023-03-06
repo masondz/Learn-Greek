@@ -56,7 +56,7 @@ export const randomWord = (obj, arr) => {
   let isEveryCharInParse = arr.every(characteristic => obj[checkKey].parse.includes(characteristic))
   if(isEveryCharInParse) {
     console.log(checkKey + " " + obj[checkKey].parse);
-    return checkKey;
+    return {word: checkKey, parse: obj[checkKey].parse};
   } else {
     return randomWord(obj, arr)
   }

@@ -1,10 +1,18 @@
+import "./Word.css"
 
+const VerbGrid = ({ verse }) => {
 
-const VerbGrid = () => {
+    const onClick = (e) => {
+        if (verse.parse.includes(e.target.innerHTML)) {
+            console.log("correct!")
+        } else {
+            console.log('wrong!')
+        }
+    }
     
     return (
       <div>
-        <div className="categories">
+        <div className="cases">
             <div className={"verb-option"}>
                 first
             </div>
@@ -15,7 +23,7 @@ const VerbGrid = () => {
                 third
             </div>
         </div>
-        <div className="categories">
+        <div className="cases">
             <div className={"verb-option"}>
                 singular
             </div>
