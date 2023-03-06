@@ -9,7 +9,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './error-page';
 import Verse from './Verse';
 import Vocabulary from './Vocabulary';
-
+import Verb from './Verb';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "vocabulary",
     element: <Vocabulary />
+  },
+  {
+    path: "verb",
+    element: <Verb />
   }
 ])
 

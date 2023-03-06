@@ -50,6 +50,18 @@ export const parseWord = (inputWord) => {
   return wordState;
 };
 
+export const randomWord = (obj, arr) => {
+  const keys = Object.keys(obj);
+  const checkKey = keys[Math.floor(Math.random() * keys.length)];
+  let isEveryCharInParse = arr.every(characteristic => obj[checkKey].parse.includes(characteristic))
+  if(isEveryCharInParse) {
+    console.log(checkKey + " " + obj[checkKey].parse);
+    return checkKey;
+  } else {
+    return randomWord(obj, arr)
+  }
+};
+
 /*
 export const parseWord = (inputWord) => {
       let state = {partOfSpeech: null, parse: {case: [null], number: null, gender: [null]}};
