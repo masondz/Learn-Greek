@@ -6,10 +6,12 @@ import { selectVerseMode, setMode } from './features/verseSlice';
 import { clearWord } from './features/wordSlice';
 import "./Menu.css"
 
-const Menu = ({setArticleGrid, blankGrid}) => {
+const Menu = ({setArticleGrid, blankGrid, menuOptions, menuLinks}) => {
     const verseMode = useSelector(selectVerseMode);
     const [open, cycleOpen] = useCycle(false, true);
     const dispatch = useDispatch();
+
+    console.log(menuOptions)
 
     const sideVariants = {
         closed: {
@@ -33,20 +35,21 @@ const Menu = ({setArticleGrid, blankGrid}) => {
         open: { opacity: 1}
     };
 
-    const handleClick =(option)=> {
-        setArticleGrid(blankGrid)
+    const handleClick =({option})=> {
+        console.log(option, "definite article")
         dispatch(clearWord())
         if (option === "definite article") {
             dispatch(setMode("definite article"));
-          } else if (option === "Noun and Adjective") {
+        } else if (option === "Noun and Adjective") {
             dispatch(setMode("Noun and Adjective"));
-          } else if (option === "Conjunction") {
+        } else if (option === "Conjunction") {
             dispatch(setMode("Conjunction"));
-          } else if (option === "Preposition") {
+        } else if (option === "Preposition") {
             dispatch(setMode("Preposition"));
-          } else {
-              console.log("missed styling");
-          }
+        } else {
+           return console.log("missed styling");
+        }
+        setArticleGrid(blankGrid)
           setTimeout(() => {
             cycleOpen();
           }, 10)
@@ -55,7 +58,7 @@ const Menu = ({setArticleGrid, blankGrid}) => {
     return (
         <div className="menu-container">
             <div className="menu-button-container">
-                <button className="menu-toggle-button" onClick={cycleOpen}>{open ? "X Parsing Practice" : "="}</button>
+                <button className="menu-toggle-button" onClick={cycleOpen}>{open ? "X Choose an Option" : "="}</button>
             </div>
          <AnimatePresence>
 
@@ -76,13 +79,21 @@ const Menu = ({setArticleGrid, blankGrid}) => {
                 exit="closed"
                 variants={sideVariants}>
                     <motion.h3 variants={itemVariants}>{verseMode === "definite article" ? "Definite Article" : verseMode}</motion.h3>
+                    {menuOptions.map((option) => {
+                        return (<>
+                                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick({option})}>{option}</motion.button>
+                                    <br></br>
+                                </>)
+                        
+                    })}
+                    {/* <motion.h3 variants={itemVariants}>{verseMode === "definite article" ? "Definite Article" : verseMode}</motion.h3>
                     <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("definite article")}>Definite Articles</motion.button>
                     <br></br>
                     <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Conjunction")}>Conjunctions</motion.button>
                     <br></br>
                     <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Preposition")}>Prepositions</motion.button>
                     <br></br>
-                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Noun and Adjective")}>Nouns and Adjectives</motion.button>
+                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Noun and Adjective")}>Nouns and Adjectives</motion.button> */}
                 </motion.div>
                 <br></br>
                 <motion.div className="menu-links"
@@ -91,9 +102,20 @@ const Menu = ({setArticleGrid, blankGrid}) => {
                 exit="closed"
                
                 variants={itemVariants}>
-                    <Link to={"/vocabulary"} className="menu-link">Vocabulary</Link>
+                    <motion.h3>Links</motion.h3>
+                    {menuLinks.map((link) => {
+                        return(
+                                <>
+                                    <Link to={"/" + link} className="menu-link" onClick={() => dispatch(clearWord())}>{link}</Link>
+                                    <br></br>
+                                </>
+                            )
+                    })}
                     <br></br>
-                    <Link to={"/"} className="menu-link">Home</Link>
+                        <Link to={"/"} className="menu-link">Home</Link>
+                    {/* <Link to={"/vocabulary"} className="menu-link">Vocabulary</Link>
+                    <br></br>
+                    <Link to={"/"} className="menu-link">Home</Link> */}
                 </motion.div>
             </motion.div>}
           </AnimatePresence>

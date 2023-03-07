@@ -93,8 +93,8 @@ const Verse = () => {
   ];
 
   const menuLinks = [
-    "Vocabulary",
-    "Verb Practice"
+    "vocabulary",
+    "verb"
   ]
 
   return (

@@ -18,8 +18,8 @@ const Verb = () => {
     ]
 
     const menuLinks = [
-        "Vocabulary",
-        "Parse Practice"
+        "vocabulary",
+        "articles"
     ]
 
     useEffect(() => {
