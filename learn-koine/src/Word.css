@@ -27,6 +27,21 @@
   font-weight: bold;
 }
 
+.case-option {
+  font-weight: bold;
+}
+
+.case-option.correct {
+  background-color: rgb(5, 204, 5);
+  font-weight: bold;
+}
+
+.case-option.wrong {
+  background-color: red;
+  -webkit-text-stroke-color: black;
+  font-weight: bold;
+}
+
 .case-option-correct {
   background-color: rgb(5, 204, 5);
   font-weight: bold;
