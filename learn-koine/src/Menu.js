@@ -86,14 +86,6 @@ const Menu = ({setArticleGrid, blankGrid, menuOptions, menuLinks}) => {
                                 </>)
                         
                     })}
-                    {/* <motion.h3 variants={itemVariants}>{verseMode === "definite article" ? "Definite Article" : verseMode}</motion.h3>
-                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("definite article")}>Definite Articles</motion.button>
-                    <br></br>
-                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Conjunction")}>Conjunctions</motion.button>
-                    <br></br>
-                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Preposition")}>Prepositions</motion.button>
-                    <br></br>
-                    <motion.button className="menu-button" variants={itemVariants} onClick={()=> handleClick("Noun and Adjective")}>Nouns and Adjectives</motion.button> */}
                 </motion.div>
                 <br></br>
                 <motion.div className="menu-links"
@@ -113,9 +105,6 @@ const Menu = ({setArticleGrid, blankGrid, menuOptions, menuLinks}) => {
                     })}
                     <br></br>
                         <Link to={"/"} className="menu-link">Home</Link>
-                    {/* <Link to={"/vocabulary"} className="menu-link">Vocabulary</Link>
-                    <br></br>
-                    <Link to={"/"} className="menu-link">Home</Link> */}
                 </motion.div>
             </motion.div>}
           </AnimatePresence>

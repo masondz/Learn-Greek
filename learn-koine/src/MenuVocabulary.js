@@ -122,9 +122,13 @@ const MenuVocabulary = ({setDeck, setDeckIndex, setVocabList, setIsFlipped}) => 
                 initial="closed"
                 animate="open"
                 exit="closed"
-               
+                
                 variants={itemVariants}>
+                    <motion.h3>Links</motion.h3>
                     <Link className="menu-link" to={"/articles"}>Parse Practice</Link>
+                    <br></br>
+                    <Link className="menu-link" to={"/verb"}>Verbs</Link>
+                    <br></br>
                     <br></br>
                     <Link className="menu-link" to={"/"}>Home</Link>
                 </motion.div>
