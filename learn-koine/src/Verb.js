@@ -6,6 +6,7 @@ import "./Verb.css";
 import { setWord, selectWordSlice } from "./features/wordSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Menu from "./Menu";
+import CheckWord from "./CheckWord";
 
 
 
