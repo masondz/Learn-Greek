@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
   },
   {
-    path: "articles",
+    path: "parsing-verse",
     element: <Verse />,
   },
   {

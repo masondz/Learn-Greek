@@ -6,7 +6,7 @@ import "./Verb.css";
 import { setWord, selectWordSlice } from "./features/wordSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Menu from "./Menu";
-import CheckWord from "./CheckWord";
+import { setMode } from "./features/verseSlice";
 
 
 
@@ -20,20 +20,21 @@ const Verb = () => {
 
     const menuLinks = [
         "vocabulary",
-        "articles"
+        "parsing-verse"
     ]
 
     useEffect(() => {
         let newVerb = randomWord(wordUsages, ["Present","Active","Indicative"])
         dispatch(setWord(newVerb));
+        dispatch(setMode("Parse Verbs"))
     }, [dispatch])
 
     return (
         <div className="body">
             <Menu menuOptions={menuOptions} menuLinks={menuLinks}/>
             <br></br>
-            <div>Present Active Indicative Verbs</div>
-            <h1 style={{margin: "100px"}}>{verb.word}</h1>
+            <div style={{ margin: "100"}}>Present Active Indicative Verbs</div>
+            <h1 style={{ margin: "100px"}}>{verb.word}</h1>
             <VerbGrid verb={verb} dispatch={dispatch} setWord={setWord} randomWord={randomWord}/>
         </div>
     )

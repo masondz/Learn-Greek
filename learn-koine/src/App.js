@@ -18,7 +18,7 @@ function App() {
         <h3>Choose a Subject:</h3>
         <div className="links">
           <Link to={"vocabulary"}>Vocabulary</Link>
-          <Link to={"articles"}>Parsing Practice</Link>
+          <Link to={"parsing-verse"}>Parsing Practice</Link>
           <Link to={"verb"}>Verbs</Link>
         </div>
       </div>

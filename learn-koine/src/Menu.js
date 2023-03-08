@@ -98,7 +98,7 @@ const Menu = ({setArticleGrid, blankGrid, menuOptions, menuLinks}) => {
                     {menuLinks.map((link) => {
                         return(
                                 <>
-                                    <Link to={"/" + link} className="menu-link" onClick={() => dispatch(clearWord())}>{link}</Link>
+                                    <Link to={"/" + link} className="menu-link" onClick={() => dispatch(clearWord())}>{link === "parsing-verse" ? "parsing practice" : link}</Link>
                                     <br></br>
                                 </>
                             )
