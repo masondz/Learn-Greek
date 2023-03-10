@@ -2,7 +2,7 @@ import { useState } from "react";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import "./Word.css"
 
-const VerbGrid = ({ verb, dispatch, setWord, randomWord }) => {
+const VerbGrid = ({ verb, dispatch, setWord, randomWord, verbMode }) => {
     const [checkParse, setCheckParse] = useState("Pick correct person and number");
 
      const handleNext = () => {
@@ -11,7 +11,7 @@ const VerbGrid = ({ verb, dispatch, setWord, randomWord }) => {
         for (let i = 0; i <caseOptions.length; i++) {
             caseOptions[i].className = "case-option";
         }
-        let nextVerb = randomWord(wordUsages, ["Present", "Active", "Indicative"])
+        let nextVerb = randomWord(wordUsages, verbMode.split(" "))
         dispatch(setWord(nextVerb))
     }
 
