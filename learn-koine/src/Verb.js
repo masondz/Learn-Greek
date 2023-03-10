@@ -33,8 +33,8 @@ const Verb = () => {
         <div className="body">
             <Menu menuOptions={menuOptions} menuLinks={menuLinks}/>
             <br></br>
-            <div style={{ margin: "100"}}>Present Active Indicative Verbs</div>
-            <h1 style={{ margin: "100px"}}>{verb.word}</h1>
+            <div style={{ marginTop: "70px"}}>Present Active Indicative Verbs</div>
+            <h1 >{verb.word}</h1>
             <VerbGrid verb={verb} dispatch={dispatch} setWord={setWord} randomWord={randomWord}/>
         </div>
     )
