@@ -18,6 +18,13 @@
 .env.test.local
 .env.production.local
 
+# unneeded files
+/src/greek_text/gloss.js
+/src/greek_text/greekDefinitions.js
+/src/greek_text/greekLexicon.js
+/src/greek_text/greekVowelsAndMore.txt
+/src/greek_text/greekVowelsAndMore.txt
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

@@ -10,7 +10,6 @@ function App() {
   // }, [dispatch]);
 
   // const verse = useSelector(selectVerseSlice);
-
   return (
     <div className="App">
       <div className="App-header">
