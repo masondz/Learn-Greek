@@ -65,7 +65,7 @@ export const randomWord = (obj, arr) => {
   }
 };
 
-export const randomConjuctionSelection = () => {
-  let randomArray = [];
-  return;
-};
+// export const randomConjuctionSelection = () => {
+//   let randomArray = [];
+//   return;
+// };
