@@ -17,14 +17,16 @@ const wordSlice = createSlice({
     partOfSpeech: null,
     parse: "",
     gNum: "",
+    gloss: "",
   },
   reducers: {
     setWord: (state, action) => {
-      const { word, parse, gNum } = action.payload;
+      const { word, parse, gNum, gloss } = action.payload;
       console.log(action.payload);
       state.word = word;
       state.parse = parse;
       state.gNum = gNum;
+      state.gloss = gloss;
       let splitParseOnOR = wordUsages[word].parse.split("｜");
       let splitOnComma = splitParseOnOR[1].split(", ");
       state.partOfSpeech = splitOnComma[0];
@@ -45,6 +47,7 @@ const wordSlice = createSlice({
       state.partOfSpeech = null;
       state.parse = "";
       state.gNum = "";
+      state.gloss = "";
     },
   },
 });
