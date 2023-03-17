@@ -4,10 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { incrementFoundArticles } from "./features/countSlice";
 import { setParsingArticle } from "./features/parsingSlice";
 import { selectVerseMode } from "./features/verseSlice";
-// import { selectWordSlice } from "./features/wordSlice";
 import { parseWord } from "./greek_text/parseLexicon";
-// import { wordUsages } from "./greek_text/greekLexiconObject";
-// import { selectParsingArticle } from "./features/parsingSlice";
 
 const wrongPick = "\u2716";
 const correctPick = "\u2713";
@@ -22,12 +19,10 @@ function removePunctuation(str) {
 const Word = (props) => {
   const [indicator, setIndicator] = useState("o");
   const [highlight, setHighlight] = useState("");
-  // const [parsingMode, setParsingMode] = useState("definite article")
   const dispatch = useDispatch();
   const verseMode = useSelector(selectVerseMode);
 
   const { blankGrid, setArticleGrid, word } = props;
-  // const checkWord = parseWord(word.word)
 
   const handleClick = () => {
     let wordData = parseWord(word.word);
@@ -60,41 +55,11 @@ const Word = (props) => {
       dispatch(incrementFoundArticles());
       dispatch(setParsingArticle(true));
     } else if (!wordData.parse.includes(verseMode)) {
-      // console.log(`checking versmode in Word: ${verseMode}`)
-      // console.log(`checking word.partOfSpeech in Word: ${word.partOfSpeech}`)
-      // console.log(`Are they Equal: ${word.partOfSpeech === verseMode}`)
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");
     }
     setArticleGrid(blankGrid);
     dispatch(setWord(wordData));
-    /*
-    let wordData = parseWord(word.word)
-    if(!wordData) {
-      setIndicator(wrongPick);
-      setHighlight("-highlight-wrong")
-      dispatch(setWord(removePunctuation(word.word)))
-      return;
-    }
-    if (highlight === "-highlight-correct") {
-      return;
-    }
-    if (wordData.partOfSpeech.toLowerCase() === verseMode || wordData.partOfSpeech.includes(verseMode)) {
-      setIndicator(correctPick);
-      setHighlight("-highlight-correct");
-      dispatch(incrementFoundArticles());
-      dispatch(setParsingArticle(true));
-    } else {
-      console.log(`checking versmode in Word: ${verseMode}`)
-      console.log(`checking word.partOfSpeech in Word: ${word.partOfSpeech}`)
-      console.log(`Are they Equal: ${word.partOfSpeech === verseMode}`)
-      setIndicator(wrongPick);
-      setHighlight("-highlight-wrong");
-    }
-    setArticleGrid(blankGrid);
-    dispatch(setWord(removePunctuation(word.word)))
-    dispatch(isArticle(word.word));
-    */
   };
 
   return (
