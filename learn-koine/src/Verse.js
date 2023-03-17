@@ -14,8 +14,8 @@ import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
 import Menu from "./Menu";
 import { parseWord } from "./greek_text/parseLexicon";
-import './Menu.css'
-
+import "./Menu.css";
+import ConjuctionGrid from "./ConjuctionGrid";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -36,7 +36,6 @@ const Verse = () => {
     dispatch(randomVerse());
     dispatch(setMode("definite article"));
   }, [dispatch]);
-
 
   const [articleGrid, setArticleGrid] = useState({
     nominative: "-clear",
@@ -71,6 +70,20 @@ const Verse = () => {
   const verse = useSelector(selectVerseSlice);
   const verseMode = useSelector(selectVerseMode);
 
+  let practiceGrid;
+  switch (verseMode) {
+    case "Conjunction":
+      practiceGrid = <ConjuctionGrid />;
+      break;
+    default:
+      practiceGrid = (
+        <ArticleGrid
+          articleGrid={articleGrid}
+          setArticleGrid={setArticleGrid}
+        />
+      );
+  }
+
   let articleCount = 0;
 
   let verseArray = arrayIffy(verse);
@@ -89,17 +102,19 @@ const Verse = () => {
     "definite article",
     "Conjunction",
     "Preposition",
-    "Noun and Adjective"
+    "Noun and Adjective",
   ];
 
-  const menuLinks = [
-    "vocabulary",
-    "verb"
-  ]
+  const menuLinks = ["vocabulary", "verb"];
 
   return (
     <div className="body">
-     <Menu setArticleGrid={setArticleGrid} blankGrid={blankGrid} menuOptions={menuOptions} menuLinks={menuLinks}/>
+      <Menu
+        setArticleGrid={setArticleGrid}
+        blankGrid={blankGrid}
+        menuOptions={menuOptions}
+        menuLinks={menuLinks}
+      />
       <div className="verse-sentence">
         {verseArray.map((word, i) => {
           return (
@@ -121,10 +136,11 @@ const Verse = () => {
             setArticleGrid={setArticleGrid}
             blankGrid={blankGrid}
           >
-            <ArticleGrid
+            {practiceGrid}
+            {/* <ArticleGrid
               articleGrid={articleGrid}
               setArticleGrid={setArticleGrid}
-            />
+            /> */}
           </CheckWord>
         </div>
       </div>

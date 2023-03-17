@@ -41,6 +41,7 @@ export const parseWord = (inputWord) => {
     wordState.parse =
       JSON.stringify(greekArticles[chosenWord]) + " definite article";
     wordState.gNum = wordUsages[chosenWord].GN;
+    wordState.gloss = wordUsages[chosenWord].gloss;
     return wordState;
   }
   //
@@ -48,6 +49,7 @@ export const parseWord = (inputWord) => {
   wordState.word = chosenWord;
   wordState.parse = wordUsages[chosenWord].parse;
   wordState.gNum = wordUsages[chosenWord].GN;
+  wordState.gloss = wordUsages[chosenWord].gloss;
   return wordState;
 };
 
@@ -65,7 +67,10 @@ export const randomWord = (obj, arr) => {
   }
 };
 
-// export const randomConjuctionSelection = () => {
-//   let randomArray = [];
-//   return;
-// };
+export const randomConjuctionSelection = (conjunctionGloss) => {
+  let randomArray = [conjunctionGloss];
+  let randomConjunctionGloss =
+    wordUsages[randomWord(wordUsages, ["Conjunction"])];
+  console.log(randomConjunctionGloss);
+  return randomArray;
+};
