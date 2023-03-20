@@ -26,7 +26,6 @@ const Word = (props) => {
 
   const handleClick = () => {
     let wordData = parseWord(word.word);
-    console.log(wordData);
     if (!wordData) {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");

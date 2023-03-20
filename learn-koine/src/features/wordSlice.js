@@ -22,7 +22,6 @@ const wordSlice = createSlice({
   reducers: {
     setWord: (state, action) => {
       const { word, parse, gNum, gloss } = action.payload;
-      console.log(action.payload);
       state.word = word;
       state.parse = parse;
       state.gNum = gNum;
