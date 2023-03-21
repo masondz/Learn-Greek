@@ -31,6 +31,7 @@ const arrayIffy = (verse) => {
 const Verse = () => {
   let [word] = useState("");
   const dispatch = useDispatch();
+  const [reset, setReset] = useState(true);
 
   useEffect(() => {
     dispatch(randomVerse());
@@ -73,7 +74,7 @@ const Verse = () => {
   let practiceGrid;
   switch (verseMode) {
     case "Conjunction":
-      practiceGrid = <ConjuctionGrid />;
+      practiceGrid = <ConjuctionGrid reset={reset} />;
       break;
     default:
       practiceGrid = (
@@ -122,6 +123,8 @@ const Verse = () => {
               key={word.word + i}
               word={word}
               setArticleGrid={setArticleGrid}
+              setReset={setReset}
+              reset={reset}
               blankGrid={blankGrid}
             />
           );

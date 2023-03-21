@@ -1,34 +1,53 @@
-import React, { useState } from "react";
 import "./Word.css";
 import { randomConjuctionSelection } from "./greek_text/parseLexicon";
 import { selectWordSlice } from "./features/wordSlice";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { greekConjunctions } from "./greek_text/greekConjunctions";
 
-const checkCase = (e) => {
-  e.preventDefault();
-  console.log(e.target.innerHTML);
-};
-
-const ConjuctionGrid = () => {
+const ConjuctionGrid = ({ reset }) => {
   const word = useSelector(selectWordSlice);
-  const [guessArray] = useState([]);
-  console.log(word);
-  let someArray = [];
-  if (word.partOfSpeech !== null) {
-    if (word.partOfSpeech.includes("Conjunction")) {
-      let gloss = word.gloss;
-      someArray = randomConjuctionSelection(gloss);
-      console.log(someArray);
-    }
+  let guessArray = [];
+
+  if (word.parse.includes("Conjunction")) {
+    guessArray = randomConjuctionSelection(greekConjunctions[word.word]);
+    console.log(guessArray);
   }
+
+  useEffect(() => {
+    let caseOptions = document.getElementsByClassName("case-option");
+    if (caseOptions) {
+      for (let i = 0; i < caseOptions.length; i++) {
+        caseOptions[i].className = "case-option";
+      }
+    }
+  }, [word, reset]);
+
+  const checkCase = (e) => {
+    let choice = e.target.innerHTML;
+    if (choice === greekConjunctions[word.word]) {
+      console.log("correct!");
+      e.target.className = e.target.className + " correct";
+    } else {
+      console.log("wrong");
+      e.target.className = e.target.className + " wrong";
+    }
+  };
+
   return (
     <div className="categories">
       <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
-          {guessArray.length > 0
-            ? "Testing Coming Soon"
-            : "Testing Coming Soon!"}
-        </div>
+        {word.parse.includes("Conjunction") ? (
+          guessArray.map((guess) => {
+            return (
+              <div className={"case-option"} onClick={(e) => checkCase(e)}>
+                {guess}
+              </div>
+            );
+          })
+        ) : (
+          <div className={"case-option"}>"Pick a conjunction"</div>
+        )}
       </div>
     </div>
   );

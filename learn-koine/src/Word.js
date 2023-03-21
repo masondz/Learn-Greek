@@ -22,7 +22,7 @@ const Word = (props) => {
   const dispatch = useDispatch();
   const verseMode = useSelector(selectVerseMode);
 
-  const { blankGrid, setArticleGrid, word } = props;
+  const { blankGrid, setArticleGrid, word, reset, setReset } = props;
 
   const handleClick = () => {
     let wordData = parseWord(word.word);
@@ -58,6 +58,11 @@ const Word = (props) => {
       setHighlight("-highlight-wrong");
     }
     setArticleGrid(blankGrid);
+    if (reset) {
+      setReset(false);
+    } else {
+      setReset(true);
+    }
     dispatch(setWord(wordData));
   };
 

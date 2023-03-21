@@ -54,6 +54,6 @@ const wordSlice = createSlice({
 export const { isArticle, checkWordSlice, clearWord, setWord } =
   wordSlice.actions;
 
-export const selectWordSlice = (state) => state.word; //returns an object {word: της, partOfSpeech: "article"}
+export const selectWordSlice = (state) => state.word; //returns an object {word: της, partOfSpeech: "article", gloss: "the"}
 
 export default wordSlice.reducer;

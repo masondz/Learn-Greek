@@ -1,5 +1,6 @@
 import { wordUsages } from "./greekLexiconObject";
 import { greekArticles } from "./greekArticles";
+import { greekConjunctions } from "./greekConjunctions";
 
 function removePunctuation(str) {
   //this is from ChatpGPT
@@ -53,24 +54,40 @@ export const parseWord = (inputWord) => {
   return wordState;
 };
 
-export const randomWord = (obj, arr) => {
+export const randomWord = (obj, attribute, arr) => {
   const keys = Object.keys(obj);
   const checkKey = keys[Math.floor(Math.random() * keys.length)];
-  let isEveryCharInParse = arr.every((characteristic) =>
-    obj[checkKey].parse.includes(characteristic)
+  let isEveryCharInAttribute = arr.every((characteristic) =>
+    obj[checkKey][attribute].includes(characteristic)
   );
-  if (isEveryCharInParse) {
-    console.log(checkKey + " " + obj[checkKey].parse);
-    return { word: checkKey, parse: obj[checkKey].parse };
+  if (isEveryCharInAttribute) {
+    console.log(checkKey + " " + obj[checkKey][attribute]);
+    return { word: checkKey, parse: obj[checkKey][attribute] };
   } else {
-    return randomWord(obj, arr);
+    return randomWord(obj, attribute, arr);
   }
 };
 
 export const randomConjuctionSelection = (conjunctionGloss) => {
-  let randomArray = [conjunctionGloss];
-  let randomConjunctionGloss =
-    wordUsages[randomWord(wordUsages, ["Conjunction"])];
-  console.log(randomConjunctionGloss);
-  return randomArray;
+  try {
+    let initialArray = [conjunctionGloss];
+    while (initialArray.length < 4) {
+      const keys = Object.keys(greekConjunctions);
+      let randomGloss =
+        greekConjunctions[keys[Math.floor(Math.random() * keys.length)]];
+      if (!initialArray.includes(randomGloss)) {
+        initialArray.push(randomGloss);
+      }
+    }
+
+    //randomize the array
+    let randomArray = initialArray.slice();
+    for (let i = randomArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [randomArray[i], randomArray[j]] = [randomArray[j], randomArray[i]];
+    }
+    return randomArray;
+  } catch (error) {
+    console.log(`Problem with randomConjuctionSelection: ${error}`);
+  }
 };
