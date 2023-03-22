@@ -16,6 +16,8 @@ import Menu from "./Menu";
 import { parseWord } from "./greek_text/parseLexicon";
 import "./Menu.css";
 import ConjuctionGrid from "./ConjuctionGrid";
+import PrepositionGrid from "./PrepositionGrid";
+import { prepositions } from "./greek_text/greekLexiconObject";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -27,6 +29,8 @@ const arrayIffy = (verse) => {
   });
   return sentenceWords;
 };
+
+console.log(prepositions);
 
 const Verse = () => {
   let [word] = useState("");
@@ -75,6 +79,9 @@ const Verse = () => {
   switch (verseMode) {
     case "Conjunction":
       practiceGrid = <ConjuctionGrid reset={reset} />;
+      break;
+    case "Preposition":
+      practiceGrid = <PrepositionGrid reset={reset} />;
       break;
     default:
       practiceGrid = (
