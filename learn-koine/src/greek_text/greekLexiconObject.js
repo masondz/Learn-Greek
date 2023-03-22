@@ -1,3 +1,5 @@
+// const fs = require("fs");
+
 export const wordUsages = {
   Ἄλφα: {
     parse: "N-NSN-T｜Noun, nominative, singular, neuter, Title",
@@ -21364,12 +21366,12 @@ export const wordUsages = {
   δέ: {
     parse: "CONJ｜Conjunction or conjunctive particle",
     GN: "G1161",
-    gloss: "then",
+    gloss: "but, and, then",
   },
   δὲ: {
     parse: "CONJ｜Conjunction or conjunctive particle",
     GN: "G1161",
-    gloss: "then",
+    gloss: "but, and, then",
   },
   δεήσει: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
@@ -100274,3 +100276,19 @@ export const wordUsages = {
     gloss: "figuratively",
   },
 };
+
+// χωρίς: { parse: "PREP｜Preposition", GN: "G5565", gloss: "without" },
+
+// export let prepositions = {};
+
+// for (let word in wordUsages) {
+//   if (wordUsages[word].parse.includes("Preposition")) {
+//     prepositions[word] = wordUsages[word].gloss;
+//   }
+// }
+
+// let prepString = JSON.stringify(prepositions);
+
+// fs.writeFile("./src/greek_text/greekPrepositions.js", prepString, (err) => {
+//   if (err) throw err;
+// });
