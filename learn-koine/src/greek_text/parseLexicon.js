@@ -1,6 +1,5 @@
 import { wordUsages } from "./greekLexiconObject";
 import { greekArticles } from "./greekArticles";
-import { greekConjunctions } from "./greekConjunctions";
 
 function removePunctuation(str) {
   //this is from ChatpGPT
