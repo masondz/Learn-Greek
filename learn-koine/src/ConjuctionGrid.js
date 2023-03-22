@@ -36,7 +36,7 @@ const ConjuctionGrid = ({ reset }) => {
 
   return (
     <div className="categories">
-      <div className="cases">
+      <div className="cases-grid">
         {word.parse.includes("Conjunction") ? (
           guessArray.map((guess) => {
             return (
@@ -46,7 +46,12 @@ const ConjuctionGrid = ({ reset }) => {
             );
           })
         ) : (
-          <div className={"case-option"}>"Pick a conjunction"</div>
+          <>
+            <div className={"case-option"}>Pick</div>
+            <div className={"case-option"}>A</div>
+            <div className={"case-option"}>Conjunction</div>
+            <div className={"case-option"}>☺</div>
+          </>
         )}
       </div>
     </div>

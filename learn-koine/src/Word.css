@@ -14,7 +14,6 @@
 }
 
 .cases {
-  border-color: aquamarine;
   display: inline-flex;
   flex-flow: column;
   justify-content: center;
@@ -59,14 +58,37 @@
   border: 2px solid white;
 }
 
-.cases div:hover {
+.cases-grid {
+  display: grid;
+  grid-template-columns: 8.7em 8.7em;
+  grid-template-rows: 1.2em 1.2em;
+  column-gap: 0.8em;
+  row-gap: 2em;
+  place-items: stretch;
+  margin-bottom: 1em;
+  padding: 20px;
+  place-content: space-around;
+}
+
+.cases-grid div {
+  /* margin: 10px; */
+  align-self: center;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.cases-grid div:hover {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
 }
-
-.button-group {
+.cases div:hover {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 .button {
@@ -78,7 +100,15 @@
   color: white;
   font-weight: bold;
   margin-bottom: 1.5em;
-  margin-left: 2em;
+  /* margin-left: 2em; */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  border: 1px red solid;
+  margin: auto;
+  width: 50%;
 }
 
 .chosen-word {
