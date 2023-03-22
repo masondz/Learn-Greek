@@ -68,13 +68,12 @@ export const randomWord = (obj, attribute, arr) => {
   }
 };
 
-export const randomConjuctionSelection = (conjunctionGloss) => {
+export const randomChoicesSelection = (obj, conjunctionGloss) => {
   try {
     let initialArray = [conjunctionGloss];
     while (initialArray.length < 4) {
-      const keys = Object.keys(greekConjunctions);
-      let randomGloss =
-        greekConjunctions[keys[Math.floor(Math.random() * keys.length)]];
+      const keys = Object.keys(obj);
+      let randomGloss = obj[keys[Math.floor(Math.random() * keys.length)]];
       if (!initialArray.includes(randomGloss)) {
         initialArray.push(randomGloss);
       }
@@ -88,6 +87,6 @@ export const randomConjuctionSelection = (conjunctionGloss) => {
     }
     return randomArray;
   } catch (error) {
-    console.log(`Problem with randomConjuctionSelection: ${error}`);
+    console.log(`Problem with randomChoicesSelection: ${error}`);
   }
 };

@@ -1,5 +1,5 @@
 import "./Word.css";
-import { randomConjuctionSelection } from "./greek_text/parseLexicon";
+import { randomChoicesSelection } from "./greek_text/parseLexicon";
 import { selectWordSlice } from "./features/wordSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
@@ -10,7 +10,10 @@ const ConjuctionGrid = ({ reset }) => {
   let guessArray = [];
 
   if (word.parse.includes("Conjunction")) {
-    guessArray = randomConjuctionSelection(greekConjunctions[word.word]);
+    guessArray = randomChoicesSelection(
+      greekConjunctions,
+      greekConjunctions[word.word]
+    );
     console.log(guessArray);
   }
 
