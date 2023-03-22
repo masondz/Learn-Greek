@@ -60,7 +60,7 @@
 
 .cases-grid {
   display: grid;
-  grid-template-columns: 8.7em 8.7em;
+  grid-template-columns: 8.9em 8.9em;
   grid-template-rows: 1.2em 1.2em;
   column-gap: 0.8em;
   row-gap: 2em;
