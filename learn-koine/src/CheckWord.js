@@ -11,7 +11,7 @@ import "./Word.css";
 
 const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   console.log("CheckWord renders");
-  const { word, partOfSpeech } = useSelector(selectWordSlice);
+  const { word, partOfSpeech, gloss } = useSelector(selectWordSlice);
   const verseMode = useSelector(selectVerseMode);
   const dispatch = useDispatch();
 
@@ -26,6 +26,12 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
 
   if (!word) {
     describeWord = `Select ${verseMode}s`;
+  } else if (
+    partOfSpeech.includes("Noun") ||
+    partOfSpeech.includes("Adjective") ||
+    partOfSpeech.includes("Verb")
+  ) {
+    describeWord = ` - ${partOfSpeech} - "${gloss}"`;
   }
 
   return (

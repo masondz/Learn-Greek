@@ -925,117 +925,117 @@ export const wordUsages = {
   ἅγια: {
     parse: "A-APN｜Adjective, accusative, plural, neuter",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίᾳ: {
     parse: "A-DSF｜Adjective, dative, singular, feminine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   Ἅγια: {
     parse: "A-NPN｜Adjective, nominative, plural, neuter",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἅγιά: {
     parse: "A-NPN｜Adjective, nominative, plural, neuter",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγία: {
     parse: "A-NSF｜Adjective, nominative, singular, feminine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἅγιαι: {
     parse: "A-NPF｜Adjective, nominative, plural, feminine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίαις: {
     parse: "A-DPF｜Adjective, dative, plural, feminine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίαν: {
     parse: "A-ASF｜Adjective, accusative, singular, feminine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίας: {
     parse: "A-GSF｜Adjective, genitive, singular, feminine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἅγιε: {
     parse: "A-VSM｜Adjective, Vocative, singular, masculine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἅγιοι: {
     parse: "A-VPM｜Adjective, Vocative, plural, masculine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   Ἅγιοι: {
     parse: "A-NPM｜Adjective, nominative, plural, masculine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίοις: {
     parse: "A-DPM｜Adjective, dative, plural, masculine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἅγιον: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἅγιος: {
     parse: "A-VSM｜Adjective, Vocative, singular, masculine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   Ἅγιος: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἅγιός: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίου: {
     parse: "A-GSN｜Adjective, genitive, singular, neuter",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίους: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίῳ: {
     parse: "A-DSN｜Adjective, dative, singular, neuter",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγίων: {
     parse: "A-GPN｜Adjective, genitive, plural, neuter",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   Ἁγίων: {
     parse: "A-GPN｜Adjective, genitive, plural, neuter",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγιωτάτῃ: {
     parse: "A-DSF-S｜Adjective, dative, singular, feminine, Superlative",
     GN: "G40",
-    gloss: ": saint",
+    gloss: "saint",
   },
   ἁγιότητος: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
@@ -14902,107 +14902,107 @@ export const wordUsages = {
   αὐτά: {
     parse: "P-APN｜Personal pronoun, accusative, plural, neuter",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτὰ: {
     parse: "P-NPN｜Personal pronoun, nominative, plural, neuter",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐταῖς: {
     parse: "P-DPF｜Personal pronoun, dative, plural, feminine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτάς: {
     parse: "P-APF｜Personal pronoun, accusative, plural, feminine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτὰς: {
     parse: "P-APF｜Personal pronoun, accusative, plural, feminine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτῇ: {
     parse: "P-DSF｜Personal pronoun, dative, singular, feminine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτὴ: {
     parse: "P-NSF｜Personal pronoun, nominative, singular, feminine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτήν: {
     parse: "P-ASF｜Personal pronoun, accusative, singular, feminine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτὴν: {
     parse: "P-ASF｜Personal pronoun, accusative, singular, feminine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτῆς: {
     parse: "P-GSF｜Personal pronoun, genitive, singular, feminine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτό: {
     parse: "P-ASN｜Personal pronoun, accusative, singular, neuter",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτὸ: {
     parse: "P-NSN｜Personal pronoun, nominative, singular, neuter",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτοί: {
     parse: "P-NPM｜Personal pronoun, nominative, plural, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτοὶ: {
     parse: "P-NPM｜Personal pronoun, nominative, plural, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   Αὐτοὶ: {
     parse: "P-NPM｜Personal pronoun, nominative, plural, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτοῖς: {
     parse: "P-DPN｜Personal pronoun, dative, plural, neuter",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτόν: {
     parse: "P-ASM｜Personal pronoun, accusative, singular, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτὸν: {
     parse: "P-ASM｜Personal pronoun, accusative, singular, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτός: {
     parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτὸς: {
     parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   Αὐτὸς: {
     parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτοῦ: {
     parse: "P-ASM｜Personal pronoun, genitive, singular, masculine or neuter",
@@ -15012,27 +15012,27 @@ export const wordUsages = {
   αὐτούς: {
     parse: "P-APM｜Personal pronoun, accusative, plural, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτοὺς: {
     parse: "P-APM｜Personal pronoun, accusative, plural, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτῷ: {
     parse: "P-DSN｜Personal pronoun, dative, singular, neuter",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτῶν: {
     parse: "P-GPN｜Personal pronoun, genitive, plural, neuter",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   Αὐτῶν: {
     parse: "P-GPM｜Personal pronoun, genitive, plural, masculine",
     GN: "G846",
-    gloss: "it/s/he",
+    gloss: "it/she/he",
   },
   αὐτόχειρες: {
     parse: "A-NPM｜Adjective, nominative, plural, masculine",
@@ -100279,16 +100279,19 @@ export const wordUsages = {
 
 // χωρίς: { parse: "PREP｜Preposition", GN: "G5565", gloss: "without" },
 
-// export let prepositions = {};
+// let pronouns = {};
 
 // for (let word in wordUsages) {
-//   if (wordUsages[word].parse.includes("Preposition")) {
-//     prepositions[word] = wordUsages[word].gloss;
+//   if (wordUsages[word].parse.includes("pronoun")) {
+//     pronouns[word] = {
+//       parse: wordUsages[word].parse,
+//       gloss: wordUsages[word].gloss,
+//     };
 //   }
 // }
 
-// let prepString = JSON.stringify(prepositions);
+// let prepString = JSON.stringify(pronouns);
 
-// fs.writeFile("./src/greek_text/greekPrepositions.js", prepString, (err) => {
+// fs.writeFile("./src/greek_text/greekPronouns.js", prepString, (err) => {
 //   if (err) throw err;
 // });
