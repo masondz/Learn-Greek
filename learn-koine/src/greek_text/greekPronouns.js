@@ -1,4 +1,4 @@
-const pronouns = {
+export const greekPronouns = {
   ἀλλήλοις: {
     parse: "C-DPN｜reCiprocal pronoun, dative, plural, neuter",
     gloss: "one another",
@@ -103,10 +103,6 @@ const pronouns = {
     parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
     gloss: "it/she/he",
   },
-  αὐτοῦ: {
-    parse: "P-ASM｜Personal pronoun, genitive, singular, masculine or neuter",
-    gloss: "there",
-  },
   αὐτούς: {
     parse: "P-APM｜Personal pronoun, accusative, plural, masculine",
     gloss: "it/she/he",
@@ -128,83 +124,87 @@ const pronouns = {
     gloss: "it/she/he",
   },
   αὑτὴν: {
-    parse: "F-3ASF｜reFlexive pronoun, third, accusative, singular, feminine",
+    parse: "F-3ASF｜Reflexive pronoun, third, accusative, singular, feminine",
     gloss: "themself",
   },
   αὑτοῦ: {
-    parse: "F-3GSM｜reFlexive pronoun, third, genitive, singular, masculine",
+    parse: "F-3GSM｜Reflexive pronoun, third, genitive, singular, masculine",
     gloss: "themself",
   },
+  αὐτοῦ: {
+    parse: "P-GSM｜Personal pronoun, genitive, singular, masculine or neuter",
+    gloss: "is/she/he",
+  },
   αὑτῷ: {
-    parse: "F-3DSM｜reFlexive pronoun, third, dative, singular, masculine",
+    parse: "F-3DSM｜Reflexive pronoun, third, dative, singular, masculine",
     gloss: "themself",
   },
   ἑαυτὰ: {
-    parse: "F-2APN｜reFlexive pronoun, second, accusative, plural, neuter",
+    parse: "F-2APN｜Reflexive pronoun, second, accusative, plural, neuter",
     gloss: "themself",
   },
   ἑαυταῖς: {
-    parse: "F-2DPF｜reFlexive pronoun, second, dative, plural, feminine",
+    parse: "F-2DPF｜Reflexive pronoun, second, dative, plural, feminine",
     gloss: "themself",
   },
   ἑαυτὰς: {
-    parse: "F-2APF｜reFlexive pronoun, second, accusative, plural, feminine",
+    parse: "F-2APF｜Reflexive pronoun, second, accusative, plural, feminine",
     gloss: "themself",
   },
   ἑαυτάς: {
-    parse: "F-3APF｜reFlexive pronoun, third, accusative, plural, feminine",
+    parse: "F-3APF｜Reflexive pronoun, third, accusative, plural, feminine",
     gloss: "themself",
   },
   ἑαυτῇ: {
-    parse: "F-3DSF｜reFlexive pronoun, third, dative, singular, feminine",
+    parse: "F-3DSF｜Reflexive pronoun, third, dative, singular, feminine",
     gloss: "themself",
   },
   ἑαυτήν: {
-    parse: "F-3ASF｜reFlexive pronoun, third, accusative, singular, feminine",
+    parse: "F-3ASF｜Reflexive pronoun, third, accusative, singular, feminine",
     gloss: "themself",
   },
   ἑαυτὴν: {
-    parse: "F-3ASF｜reFlexive pronoun, third, accusative, singular, feminine",
+    parse: "F-3ASF｜Reflexive pronoun, third, accusative, singular, feminine",
     gloss: "themself",
   },
   ἑαυτῆς: {
-    parse: "F-3GSF｜reFlexive pronoun, third, genitive, singular, feminine",
+    parse: "F-3GSF｜Reflexive pronoun, third, genitive, singular, feminine",
     gloss: "themself",
   },
   ἑαυτοῖς: {
-    parse: "F-3DPM｜reFlexive pronoun, third, dative, plural, masculine",
+    parse: "F-3DPM｜Reflexive pronoun, third, dative, plural, masculine",
     gloss: "themself",
   },
   ἑαυτόν: {
-    parse: "F-3ASM｜reFlexive pronoun, third, accusative, singular, masculine",
+    parse: "F-3ASM｜Reflexive pronoun, third, accusative, singular, masculine",
     gloss: "themself",
   },
   ἑαυτὸν: {
-    parse: "F-3ASM｜reFlexive pronoun, third, accusative, singular, masculine",
+    parse: "F-3ASM｜Reflexive pronoun, third, accusative, singular, masculine",
     gloss: "themself",
   },
   ἑαυτοῦ: {
-    parse: "F-3GSN｜reFlexive pronoun, third, genitive, singular, neuter",
+    parse: "F-3GSN｜Reflexive pronoun, third, genitive, singular, neuter",
     gloss: "themself",
   },
   ἑαυτούς: {
-    parse: "F-3APM｜reFlexive pronoun, third, accusative, plural, masculine",
+    parse: "F-3APM｜Reflexive pronoun, third, accusative, plural, masculine",
     gloss: "themself",
   },
   ἑαυτοὺς: {
-    parse: "F-3APM｜reFlexive pronoun, third, accusative, plural, masculine",
+    parse: "F-3APM｜Reflexive pronoun, third, accusative, plural, masculine",
     gloss: "themself",
   },
   Ἑαυτοὺς: {
-    parse: "F-2APM｜reFlexive pronoun, second, accusative, plural, masculine",
+    parse: "F-2APM｜Reflexive pronoun, second, accusative, plural, masculine",
     gloss: "themself",
   },
   ἑαυτῷ: {
-    parse: "F-3DSM｜reFlexive pronoun, third, dative, singular, masculine",
+    parse: "F-3DSM｜Reflexive pronoun, third, dative, singular, masculine",
     gloss: "themself",
   },
   ἑαυτῶν: {
-    parse: "F-3GPN｜reFlexive pronoun, third, genitive, plural, neuter",
+    parse: "F-3GPN｜Reflexive pronoun, third, genitive, plural, neuter",
     gloss: "themself",
   },
   ἐγώ: {
@@ -382,19 +382,19 @@ const pronouns = {
     gloss: "that",
   },
   ἐμαυτόν: {
-    parse: "F-1ASM｜reFlexive pronoun, first, accusative, singular, masculine",
+    parse: "F-1ASM｜Reflexive pronoun, first, accusative, singular, masculine",
     gloss: "myself",
   },
   ἐμαυτὸν: {
-    parse: "F-1ASM｜reFlexive pronoun, first, accusative, singular, masculine",
+    parse: "F-1ASM｜Reflexive pronoun, first, accusative, singular, masculine",
     gloss: "myself",
   },
   ἐμαυτοῦ: {
-    parse: "F-1GSM｜reFlexive pronoun, first, genitive, singular, masculine",
+    parse: "F-1GSM｜Reflexive pronoun, first, genitive, singular, masculine",
     gloss: "myself",
   },
   ἐμαυτῷ: {
-    parse: "F-1DSM｜reFlexive pronoun, first, dative, singular, masculine",
+    parse: "F-1DSM｜Reflexive pronoun, first, dative, singular, masculine",
     gloss: "myself",
   },
   ἐμὰ: {
@@ -1118,19 +1118,19 @@ const pronouns = {
     gloss: "of what kind?",
   },
   σεαυτόν: {
-    parse: "F-2ASM｜reFlexive pronoun, second, accusative, singular, masculine",
+    parse: "F-2ASM｜Reflexive pronoun, second, accusative, singular, masculine",
     gloss: "yourself",
   },
   σεαυτὸν: {
-    parse: "F-2ASM｜reFlexive pronoun, second, accusative, singular, masculine",
+    parse: "F-2ASM｜Reflexive pronoun, second, accusative, singular, masculine",
     gloss: "yourself",
   },
   σεαυτοῦ: {
-    parse: "F-2GSM｜reFlexive pronoun, second, genitive, singular, masculine",
+    parse: "F-2GSM｜Reflexive pronoun, second, genitive, singular, masculine",
     gloss: "yourself",
   },
   σεαυτῷ: {
-    parse: "F-2DSM｜reFlexive pronoun, second, dative, singular, masculine",
+    parse: "F-2DSM｜Reflexive pronoun, second, dative, singular, masculine",
     gloss: "yourself",
   },
   σὰ: {
@@ -1543,8 +1543,8 @@ const pronouns = {
 
 let checkPronouns = {};
 
-for (let pronoun in pronouns) {
-  let splitProOnLine = pronouns[pronoun].parse.split("｜");
+for (let pronoun in greekPronouns) {
+  let splitProOnLine = greekPronouns[pronoun].parse.split("｜");
   let splitOnSpace = splitProOnLine[1].split(" ");
   let typeOfPronoun = splitOnSpace[0];
   if (checkPronouns[typeOfPronoun] === undefined) {
@@ -1558,7 +1558,7 @@ for (let pronoun in pronouns) {
   reCiprocal: 3,  ἀλλήλοις, "one another", parse: "C-DPN｜reCiprocal pronoun, dative, plural, neuter" : dative-accusative-genitive
   ->
   Personal: 78,   αὐτό, "it/she/he", parse: "P-ASN｜Personal pronoun, accusative, singular, neuter" : has all cases
-  reFlexive: 28,    αὑτοῦ, "themself", parse: "F-3GSM｜reFlexive pronoun, third, genitive, singular, masculine"
+  Reflexive: 28,    αὑτοῦ, "themself", parse: "F-3GSM｜Reflexive pronoun, third, genitive, singular, masculine"
   poSsessive: 36,     ἐμὰ, "mine", "S-1SNPN｜poSsessive pronoun, first, singular, nominative, plural, neuter"
   Demonstrative: 99,  ἐκεῖνα, "that",  parse: "D-APN｜Demonstrative pronoun, accusative, plural, neuter"
   Interrogative: 40,  ὁποίαν, "what sort",   parse: "I-ASF｜Interrogative pronoun, accusative, singular, feminine"

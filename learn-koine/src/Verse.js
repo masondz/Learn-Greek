@@ -17,6 +17,7 @@ import { parseWord } from "./greek_text/parseLexicon";
 import "./Menu.css";
 import ConjuctionGrid from "./ConjuctionGrid";
 import PrepositionGrid from "./PrepositionGrid";
+import PronounGrid from "./PronounGrid";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -80,6 +81,9 @@ const Verse = () => {
     case "Preposition":
       practiceGrid = <PrepositionGrid reset={reset} />;
       break;
+    case "Pronoun":
+      practiceGrid = <PronounGrid reset={reset} />;
+      break;
     default:
       practiceGrid = (
         <ArticleGrid
@@ -108,6 +112,7 @@ const Verse = () => {
     "Conjunction",
     "Preposition",
     "Noun and Adjective",
+    "Pronoun",
   ];
 
   const menuLinks = ["vocabulary", "verb"];
@@ -144,10 +149,6 @@ const Verse = () => {
             blankGrid={blankGrid}
           >
             {practiceGrid}
-            {/* <ArticleGrid
-              articleGrid={articleGrid}
-              setArticleGrid={setArticleGrid}
-            /> */}
           </CheckWord>
         </div>
       </div>

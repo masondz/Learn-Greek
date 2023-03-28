@@ -43,6 +43,8 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
       dispatch(setMode("Conjunction"));
     } else if (option === "Preposition") {
       dispatch(setMode("Preposition"));
+    } else if (option === "Pronoun") {
+      dispatch(setMode("Pronoun"));
     } else {
       return console.log("missed styling");
     }

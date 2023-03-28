@@ -48,6 +48,14 @@ const Word = (props) => {
         setIndicator(wrongPick);
         setHighlight("-highlight-wrong");
       }
+    } else if (verseMode === "Pronoun") {
+      if (wordData.parse.includes("pronoun")) {
+        setIndicator(correctPick);
+        setHighlight("-highlight-correct");
+      } else {
+        setIndicator(wrongPick);
+        setHighlight("-highlight-wrong");
+      }
     } else if (wordData.parse.includes(verseMode)) {
       setIndicator(correctPick);
       setHighlight("-highlight-correct");
