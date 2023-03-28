@@ -15005,8 +15005,9 @@ export const wordUsages = {
     gloss: "it/she/he",
   },
   αὐτοῦ: {
+    //ADV｜ADVerb or adverb and particle combined this word can have two different uses. going for the most common
     parse: "P-ASM｜Personal pronoun, genitive, singular, masculine or neuter",
-    GN: "G847",
+    GN: "G846", //G847
     gloss: "there",
   },
   αὐτούς: {

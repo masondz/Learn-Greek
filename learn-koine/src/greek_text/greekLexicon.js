@@ -823,7 +823,7 @@ G843	αὐτοκατάκριτος｜A-NSM｜Adjective, Nominative, Singular, Ma
 G844	αὐτομάτη｜A-NSF｜Adjective, Nominative, Singular, Feminine
 G845	αὐτόπται｜N-NPM｜Noun, Nominative, Plural, Masculine
 G846	αὐτά｜P-APN｜Personal pronoun, Accusative, Plural, Neuter<br>αὐτὰ｜P-APN｜Personal pronoun, Accusative, Plural, Neuter<br>αὐτὰ｜P-NPN｜Personal pronoun, Nominative, Plural, Neuter<br>αὐταῖς｜P-DPF｜Personal pronoun, Dative, Plural, Feminine<br>αὐτάς｜P-APF｜Personal pronoun, Accusative, Plural, Feminine<br>αὐτὰς｜P-APF｜Personal pronoun, Accusative, Plural, Feminine<br>αὐτῇ｜P-DSF｜Personal pronoun, Dative, Singular, Feminine<br>αὐτὴ｜P-NSF｜Personal pronoun, Nominative, Singular, Feminine<br>αὐτήν｜P-ASF｜Personal pronoun, Accusative, Singular, Feminine<br>αὐτὴν｜P-ASF｜Personal pronoun, Accusative, Singular, Feminine<br>αὐτῆς｜P-GSF｜Personal pronoun, Genitive, Singular, Feminine<br>αὐτό｜P-ASN｜Personal pronoun, Accusative, Singular, Neuter<br>αὐτὸ｜P-ASN｜Personal pronoun, Accusative, Singular, Neuter<br>αὐτὸ｜P-NSN｜Personal pronoun, Nominative, Singular, Neuter<br>αὐτοί｜P-NPM｜Personal pronoun, Nominative, Plural, Masculine<br>αὐτοὶ｜P-NPM｜Personal pronoun, Nominative, Plural, Masculine<br>Αὐτοὶ｜P-NPM｜Personal pronoun, Nominative, Plural, Masculine<br>αὐτοῖς｜P-DPM｜Personal pronoun, Dative, Plural, Masculine<br>αὐτοῖς｜P-DPN｜Personal pronoun, Dative, Plural, Neuter<br>αὐτόν｜P-ASM｜Personal pronoun, Accusative, Singular, Masculine<br>αὐτὸν｜P-ASM｜Personal pronoun, Accusative, Singular, Masculine<br>αὐτός｜P-NSM｜Personal pronoun, Nominative, Singular, Masculine<br>αὐτὸς｜P-NSM｜Personal pronoun, Nominative, Singular, Masculine<br>Αὐτὸς｜P-NSM｜Personal pronoun, Nominative, Singular, Masculine<br>αὐτοῦ｜P-GSM｜Personal pronoun, Genitive, Singular, Masculine<br>αὐτοῦ｜P-GSN｜Personal pronoun, Genitive, Singular, Neuter<br>αὐτούς｜P-APM｜Personal pronoun, Accusative, Plural, Masculine<br>αὐτοὺς｜P-APM｜Personal pronoun, Accusative, Plural, Masculine<br>αὐτῷ｜P-DSM｜Personal pronoun, Dative, Singular, Masculine<br>αὐτῷ｜P-DSN｜Personal pronoun, Dative, Singular, Neuter<br>αὐτῶν｜P-GPF｜Personal pronoun, Genitive, Plural, Feminine<br>αὐτῶν｜P-GPM｜Personal pronoun, Genitive, Plural, Masculine<br>Αὐτῶν｜P-GPM｜Personal pronoun, Genitive, Plural, Masculine<br>αὐτῶν｜P-GPN｜Personal pronoun, Genitive, Plural, Neuter
-G847	αὐτοῦ｜ADV｜ADVerb or adverb and particle combined
+G847	αὐτοῦ｜ADV｜ADVerb or adverb and particle combined  
 G849	αὐτόχειρες｜A-NPM｜Adjective, Nominative, Plural, Masculine
 G850	αὐχμηρῷ｜A-DSM｜Adjective, Dative, Singular, Masculine
 G851	ἀφαιρεθήσεται｜V-FPI-3S｜Verb, Future, Passive, Indicative, third, Singular<br>ἀφαιρεῖν｜V-PAN｜Verb, Present, Active, iNfinitive<br>ἀφαιρεῖται｜V-PMI-3S｜Verb, Present, Middle, Indicative, third, Singular<br>ἀφεῖλεν｜V-2AAI-3S｜Verb, second Aorist, Active, Indicative, third, Singular<br>ἀφελεῖ｜V-2FAI-3S｜Verb, second Future, Active, Indicative, third, Singular<br>ἀφελεῖν｜V-2AAN｜Verb, second Aorist, Active, iNfinitive<br>ἀφέλῃ｜V-2AAS-3S｜Verb, second Aorist, Active, Subjunctive, third, Singular<br>ἀφέλωμαι｜V-2AMS-1S｜Verb, second Aorist, Middle, Subjunctive, first, Singular
@@ -5398,7 +5398,7 @@ G6986	ἐάνπερ｜CONJ｜CONJunction or conjunctive particle
 G7013	ἐγκαυχᾶσθαι｜V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive
 G7530	Εὖγε｜PRT｜PaRTicle, disjunctive particle
 G9577	ὑπόλειμμα｜N-NSN｜Noun, Nominative, Singular, Neuter
-G9992	τυπικῶς｜ADV｜ADVerb or adverb and particle combined`
+G9992	τυπικῶς｜ADV｜ADVerb or adverb and particle combined`;
 
 // const gTextVowelsPlus = ["%","ί","ο","ε","έ","ω","Ἰ","η","ῦ","ι","υ","ἱ","α","ὶ","Ἀ","ά","ὰ","ἐ","ὸ","ὲ","ώ","ὼ","ύ","ὺ","ἀ","ὐ","ῆ","Ἑ","ό","ὴ","ῶ","Ο","Ὀ","ή","Ἐ","ἄ","ἧ","ὁ","ᾶ","ὖ","ἕ","ἡ","ὕ","ἦ","ῷ","ἢ","ῖ","ὑ","ἔ","Ἁ","ὢ","ᾳ","ἰ","ʼ","ὄ","“","ῇ","ἁ","”","ὅ","ἵ","ῥ","ὡ","ὗ","·","Ἡ","ῴ","Ἱ","Ε","ἴ","ἤ","ἶ","ἠ","ὃ","Α","ἂ","Ὁ","ὀ","ῳ","Ἠ","ΐ","‘","’","ῃ","ἑ","Ἤ","ἅ","Ἄ","ᾧ","Ἔ","Ὕ","ᾷ","Ὑ","ἓ","Ὃ","Ἴ","ὒ","ὔ","ἥ","Ὅ","ὥ","ᾖ","ὧ","!","ῄ","Ἢ","ᾠ","ϋ","ἷ","Ἕ","Ἦ","Ἵ","ἆ","ἣ","ἃ","ὦ","Η","ὠ","ϊ","Ἅ","Ι","ΰ","Ὥ","ᾑ","Ὡ","Ὦ","ὤ","ῒ","Ἆ","Ὄ","ῢ","ὓ","Ὧ","ᾔ","ᾗ","Ἥ","ᾐ","ἳ","ὂ","Ὤ","Ἓ","Ὠ","Ἃ","ᾴ","ᾄ"]
 
@@ -5410,42 +5410,49 @@ G9992	τυπικῶς｜ADV｜ADVerb or adverb and particle combined`
 //each word will be its own key for fast lookup
 //each word will point to an object for its parse and Strong Number
 
-let separateLines = lexicon.split("\n");  //split on new lines
-let separateGNumber = []
-for (let i=0; i < separateLines.length; i++) {
-    separateGNumber.push(separateLines[i].split("\t")); //split on tab. This seperates the G# from the rest of the line.
+let separateLines = lexicon.split("\n"); //split on new lines
+let separateGNumber = [];
+for (let i = 0; i < separateLines.length; i++) {
+  separateGNumber.push(separateLines[i].split("\t")); //split on tab. This seperates the G# from the rest of the line.
 }
-
 
 let gnumObject = {};
 separateGNumber.forEach((line) => {
-    let gnum = line[0];
-    let splitOnbr = line[1].split("<br>"); //each words usage is seperate by a <br> tag.
-    gnumObject[gnum] = splitOnbr; //key a temporary object with the G#
-})
+  let gnum = line[0];
+  let splitOnbr = line[1].split("<br>"); //each words usage is seperate by a <br> tag.
+  gnumObject[gnum] = splitOnbr; //key a temporary object with the G#
+});
 
 //now we can make a new object that is keyed by each word usages
 
 let wordUsages = {};
 
 for (lines in gnumObject) {
-    let gnum = lines
-    gnumObject[lines].forEach((line) => {
-        let i = 0;
-        while (line[i] !== "｜") { //each word spelling is seperated from the parse definition by a " | "
-            i++
-        };
-        let theWord = line.slice(0 , i);
-        wordUsages[theWord] = {parse: line.slice(i + 1), GN: gnum};
-    })
+  let gnum = lines;
+  gnumObject[lines].forEach((line) => {
+    let i = 0;
+    while (line[i] !== "｜") {
+      //each word spelling is seperated from the parse definition by a " | "
+      i++;
+    }
+    let theWord = line.slice(0, i);
+    wordUsages[theWord] = { parse: line.slice(i + 1), GN: gnum };
+  });
 }
 // console.log(wordUsages)
-const wordUsagesJSON = JSON.stringify(wordUsages)
-const fs = require('fs')
+const wordUsagesJSON = JSON.stringify(wordUsages);
+const fs = require("fs");
 
-fs.writeFile("C:/Users/zmason/Documents/GreekStuff/learn-koine/src/greek_text/greekLexiconObject.js", wordUsagesJSON, err => {
+fs.writeFile(
+  "C:/Users/zmason/Documents/GreekStuff/learn-koine/src/greek_text/greekLexiconObject.js",
+  wordUsagesJSON,
+  (err) => {
     if (err) {
-        console.log(err);
+      console.log(err);
     }
-})
+  }
+);
 // export default wordUsages;
+
+// pronoun αὐτοῦ
+// adverb  αὐτοῦ
