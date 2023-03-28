@@ -1,5 +1,4 @@
 import "./Word.css";
-import { randomChoicesSelection } from "./greek_text/parseLexicon";
 import { selectWordSlice } from "./features/wordSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
