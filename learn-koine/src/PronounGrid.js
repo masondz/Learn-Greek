@@ -2,7 +2,6 @@ import "./Word.css";
 import { selectWordSlice } from "./features/wordSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
-import { greekPronouns } from "./greek_text/greekPronouns";
 
 const PronounGrid = ({ reset }) => {
   const word = useSelector(selectWordSlice);
