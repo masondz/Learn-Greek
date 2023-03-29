@@ -14860,14 +14860,14 @@ export const wordUsages = {
     gloss: "tomorrow",
   },
   αὐστηρός: {
-    parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
+    parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G840",
-    gloss: "severe",
+    gloss: "harsh, severe",
   },
   αὐστηρὸς: {
-    parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
+    parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G840",
-    gloss: "severe",
+    gloss: "harsh, severe",
   },
   αὐτάρκειαν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",

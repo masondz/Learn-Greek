@@ -11,14 +11,6 @@ export const greekPronouns = {
     parse: "C-GPM｜reCiprocal pronoun, genitive, plural, masculine",
     gloss: "one another",
   },
-  αὐστηρός: {
-    parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
-    gloss: "severe",
-  },
-  αὐστηρὸς: {
-    parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
-    gloss: "severe",
-  },
   αὐτά: {
     parse: "P-APN｜Personal pronoun, accusative, plural, neuter",
     gloss: "it/she/he",
