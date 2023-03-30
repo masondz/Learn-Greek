@@ -716,62 +716,62 @@ export const wordUsages = {
   ἄγγελοι: {
     parse: "N-NPM｜Noun, nominative, plural, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἄγγελοί: {
     parse: "N-NPM｜Noun, nominative, plural, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἀγγέλοις: {
     parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἄγγελον: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἄγγελόν: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἄγγελος: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   Ἄγγελος: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἄγγελός: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἀγγέλου: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἀγγέλους: {
     parse: "N-APM｜Noun, accusative, plural, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἀγγέλῳ: {
     parse: "N-DSM｜Noun, dative, singular, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἀγγέλων: {
     parse: "N-GPM｜Noun, genitive, plural, masculine",
     GN: "G32",
-    gloss: ": angel",
+    gloss: "angel",
   },
   ἀγέλη: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
@@ -3282,37 +3282,37 @@ export const wordUsages = {
   αἰῶνα: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G165",
-    gloss: ": eternity",
+    gloss: "eternity",
   },
   αἰῶνας: {
     parse: "N-APM｜Noun, accusative, plural, masculine",
     GN: "G165",
-    gloss: ": eternity",
+    gloss: "eternity",
   },
   αἰῶνι: {
     parse: "N-DSM｜Noun, dative, singular, masculine",
     GN: "G165",
-    gloss: ": eternity",
+    gloss: "eternity",
   },
   αἰῶνος: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G165",
-    gloss: ": eternity",
+    gloss: "eternity",
   },
   αἰῶνός: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G165",
-    gloss: ": eternity",
+    gloss: "eternity",
   },
   αἰώνων: {
     parse: "N-GPM｜Noun, genitive, plural, masculine",
     GN: "G165",
-    gloss: ": eternity",
+    gloss: "eternity",
   },
   αἰῶσιν: {
     parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G165",
-    gloss: ": eternity",
+    gloss: "eternity",
   },
   αἰώνια: {
     parse: "A-NPN｜Adjective, nominative, plural, neuter",
@@ -7658,82 +7658,82 @@ export const wordUsages = {
   ἄνδρα: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   Ἄνδρα: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἄνδρας: {
     parse: "N-APM｜Noun, accusative, plural, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνδράσιν: {
     parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἄνδρες: {
     parse: "N-VPM｜Noun, Vocative, plural, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   Ἄνδρες: {
     parse: "N-VPM｜Noun, Vocative, plural, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνδρί: {
     parse: "N-DSM｜Noun, dative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνδρὶ: {
     parse: "N-DSM｜Noun, dative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνδρός: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνδρὸς: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνδρῶν: {
     parse: "N-GPM｜Noun, genitive, plural, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἄνερ: {
     parse: "N-VSM｜Noun, Vocative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνήρ: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   Ἀνήρ: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνὴρ: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   Ἀνὴρ: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G435",
-    gloss: ": husband",
+    gloss: "husband",
   },
   ἀνθέστηκεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
@@ -11447,138 +11447,138 @@ export const wordUsages = {
   ἀπέλυεν: {
     parse: "V-IAI-3S｜Verb, Imperfect, Active, Indicative, third, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπελύθησαν: {
     parse: "V-API-3P｜Verb, Aorist, Passive, Indicative, third, plural",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπελύοντο: {
     parse: "V-IMI-3P｜Verb, Imperfect, Middle, Indicative, third, plural",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπέλυσαν: {
     parse: "V-AAI-3P｜Verb, Aorist, Active, Indicative, third, plural",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπέλυσεν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολελυμένον: {
     parse:
       "V-RPP-ASM｜Verb, peRfect, Passive, Participle, accusative, singular, masculine",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολέλυσαι: {
     parse: "V-RPI-2S｜Verb, peRfect, Passive, Indicative, second, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   Ἀπολελύσθαι: {
     parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύει: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύειν: {
     parse: "V-PAN｜Verb, Present, Active, iNfinitive",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύεις: {
     parse: "V-PAI-2S｜Verb, Present, Active, Indicative, second, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύετε: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολυθέντες: {
     parse:
       "V-APP-NPM｜Verb, Aorist, Passive, Participle, nominative, plural, masculine",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   Ἀπολυθέντες: {
     parse:
       "V-APP-NPM｜Verb, Aorist, Passive, Participle, nominative, plural, masculine",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολυθήσεσθε: {
     parse: "V-FPI-2P｜Verb, Future, Passive, Indicative, second, plural",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολυθῆτε: {
     parse: "V-APS-2P｜Verb, Aorist, Passive, Subjunctive, second, plural",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολῦσαι: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολῦσαί: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύσας: {
     parse:
       "V-AAP-NSM｜Verb, Aorist, Active, Participle, nominative, singular, masculine",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύσασα: {
     parse:
       "V-AAP-NSF｜Verb, Aorist, Active, Participle, nominative, singular, feminine",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύσῃ: {
     parse: "V-AAS-3S｜Verb, Aorist, Active, Subjunctive, third, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύσῃς: {
     parse: "V-AAS-2S｜Verb, Aorist, Active, Subjunctive, second, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπόλυσον: {
     parse: "V-AAM-2S｜Verb, Aorist, Active, iMperative, second, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   Ἀπόλυσον: {
     parse: "V-AAM-2S｜Verb, Aorist, Active, iMperative, second, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύσω: {
     parse: "V-FAI-1S｜Verb, Future, Active, Indicative, first, singular",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπολύων: {
     parse:
       "V-PAP-NSM｜Verb, Present, Active, Participle, nominative, singular, masculine",
     GN: "G630",
-    gloss: ": divorce",
+    gloss: "divorce",
   },
   ἀπομασσόμεθα: {
     parse: "V-PMI-1P｜Verb, Present, Middle, Indicative, first, plural",
@@ -13840,113 +13840,113 @@ export const wordUsages = {
   ἀσθενείᾳ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G769",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθένεια: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G769",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενείαις: {
     parse: "N-DPF｜Noun, dative, plural, feminine",
     GN: "G769",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθένειαν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G769",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενείας: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G769",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενειῶν: {
     parse: "N-GPF｜Noun, genitive, plural, feminine",
     GN: "G769",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενεῖ: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενήσας: {
     parse:
       "V-AAP-NSM｜Verb, Aorist, Active, Participle, nominative, singular, masculine",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενήσασαν: {
     parse:
       "V-AAP-ASF｜Verb, Aorist, Active, Participle, accusative, singular, feminine",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενοῦμεν: {
     parse: "V-PAI-1P｜Verb, Present, Active, Indicative, first, plural",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενοῦντα: {
     parse:
       "V-PAP-ASM｜Verb, Present, Active, Participle, accusative, singular, masculine",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενοῦντας: {
     parse:
       "V-PAP-APM｜Verb, Present, Active, Participle, accusative, plural, masculine",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενούντων: {
     parse:
       "V-PAP-GPM｜Verb, Present, Active, Participle, genitive, plural, masculine",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενοῦσαν: {
     parse:
       "V-PAP-ASF｜Verb, Present, Active, Participle, accusative, singular, feminine",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενῶ: {
     parse: "V-PAS-1S｜Verb, Present, Active, Subjunctive, first, singular",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενῶμεν: {
     parse: "V-PAS-1P｜Verb, Present, Active, Subjunctive, first, plural",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενῶν: {
     parse: "A-GPM｜Adjective, genitive, plural, masculine",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἠσθένει: {
     parse: "V-IAI-3S｜Verb, Imperfect, Active, Indicative, third, singular",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἠσθενήκαμεν: {
     parse: "V-RAI-1P｜Verb, peRfect, Active, Indicative, first, plural",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἠσθένησα: {
     parse: "V-AAI-1S｜Verb, Aorist, Active, Indicative, first, singular",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἠσθένησεν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G770",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενήματα: {
     parse: "N-APN｜Noun, accusative, plural, neuter",
@@ -13956,47 +13956,47 @@ export const wordUsages = {
   ἀσθενεῖς: {
     parse: "A-NPM｜Adjective, nominative, plural, masculine",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενὲς: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενέσιν: {
     parse: "A-DPM｜Adjective, dative, plural, masculine",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενέστερα: {
     parse: "A-NPN-C｜Adjective, nominative, plural, neuter, Comparative",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενεστέρῳ: {
     parse: "A-DSN-C｜Adjective, dative, singular, neuter, Comparative",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενῆ: {
     parse: "A-ASM｜Adjective, accusative, singular, masculine",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενὴς: {
     parse: "A-NSF｜Adjective, nominative, singular, feminine",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενής: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἀσθενοῦς: {
     parse: "A-GSM｜Adjective, genitive, singular, masculine",
     GN: "G772",
-    gloss: ": ill",
+    gloss: "ill",
   },
   Ἀσίᾳ: {
     parse: "N-DSF-L｜Noun, dative, singular, feminine, Location",
@@ -15203,209 +15203,209 @@ export const wordUsages = {
   ἀφεθῇ: {
     parse: "V-APS-3S｜Verb, Aorist, Passive, Subjunctive, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφέθησαν: {
     parse: "V-API-3P｜Verb, Aorist, Passive, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφεθήσεται: {
     parse: "V-FPI-3S｜Verb, Future, Passive, Indicative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφεθήσεταί: {
     parse: "V-FPI-3S｜Verb, Future, Passive, Indicative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφεῖναι: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφεὶς: {
     parse:
       "V-2AAP-NSM｜Verb, second Aorist, Active, Participle, nominative, singular, masculine",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφεῖς: {
     parse:
       "V-2PAI-2S｜Verb, second Present, Active, Indicative, second, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφέντες: {
     parse:
       "V-2AAP-NPM｜Verb, second Aorist, Active, Participle, nominative, plural, masculine",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἄφες: {
     parse:
       "V-2AAM-2S｜Verb, second Aorist, Active, iMperative, second, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   Ἄφες: {
     parse:
       "V-2AAM-2S｜Verb, second Aorist, Active, iMperative, second, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἄφετε: {
     parse: "V-2AAM-2P｜Verb, second Aorist, Active, iMperative, second, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   Ἄφετε: {
     parse: "V-2AAM-2P｜Verb, second Aorist, Active, iMperative, second, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφέωνται: {
     parse: "V-RPI-3P｜Verb, peRfect, Passive, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφέωνταί: {
     parse: "V-RPI-3P｜Verb, peRfect, Passive, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   Ἀφέωνταί: {
     parse: "V-RPI-3P｜Verb, peRfect, Passive, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφῇ: {
     parse:
       "V-2AAS-3S｜Verb, second Aorist, Active, Subjunctive, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφῆκά: {
     parse: "V-AAI-1S｜Verb, Aorist, Active, Indicative, first, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφήκαμεν: {
     parse: "V-AAI-1P｜Verb, Aorist, Active, Indicative, first, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφῆκαν: {
     parse: "V-AAI-3P｜Verb, Aorist, Active, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφήκατε: {
     parse: "V-AAI-2P｜Verb, Aorist, Active, Indicative, second, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφῆκεν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφῆκέν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφῆκες: {
     parse: "V-AAI-2S｜Verb, Aorist, Active, Indicative, second, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφήσει: {
     parse: "V-FAI-3S｜Verb, Future, Active, Indicative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφήσεις: {
     parse: "V-FAI-2S｜Verb, Future, Active, Indicative, second, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφήσουσιν: {
     parse: "V-FAI-3P｜Verb, Future, Active, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφήσω: {
     parse: "V-FAI-1S｜Verb, Future, Active, Indicative, first, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφῆτε: {
     parse:
       "V-2AAS-2P｜Verb, second Aorist, Active, Subjunctive, second, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφιέναι: {
     parse: "V-PAN｜Verb, Present, Active, iNfinitive",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφίενταί: {
     parse: "V-PPI-3P｜Verb, Present, Passive, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   Ἀφίενταί: {
     parse: "V-PPI-3P｜Verb, Present, Passive, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφίεται: {
     parse: "V-PPI-3S｜Verb, Present, Passive, Indicative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφίετε: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφιέτω: {
     parse: "V-PAM-3S｜Verb, Present, Active, iMperative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφίημι: {
     parse: "V-PAI-1S｜Verb, Present, Active, Indicative, first, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφίησιν: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφίομεν: {
     parse: "V-PAI-1P｜Verb, Present, Active, Indicative, first, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφίουσιν: {
     parse: "V-PAI-3P｜Verb, Present, Active, Indicative, third, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφῶμεν: {
     parse: "V-2AAS-1P｜Verb, second Aorist, Active, Subjunctive, first, plural",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἤφιεν: {
     parse: "V-IAI-3S｜Verb, Imperfect, Active, Indicative, third, singular",
     GN: "G863",
-    gloss: ": permit",
+    gloss: "permit",
   },
   ἀφίκετο: {
     parse:
@@ -15889,242 +15889,242 @@ export const wordUsages = {
     parse:
       "V-2AAM-2S｜Verb, second Aorist, Active, iMperative, second, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   Βάλε: {
     parse:
       "V-2AAM-2S｜Verb, second Aorist, Active, iMperative, second, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαλεῖ: {
     parse: "V-FAI-3S｜Verb, Future, Active, Indicative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαλεῖν: {
     parse: "V-2AAN｜Verb, second Aorist, Active, iNfinitive",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   Βάλετε: {
     parse: "V-2AAM-2P｜Verb, second Aorist, Active, iMperative, second, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαλέτω: {
     parse:
       "V-2AAM-3S｜Verb, second Aorist, Active, iMperative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλῃ: {
     parse:
       "V-2AAS-3S｜Verb, second Aorist, Active, Subjunctive, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλητε: {
     parse:
       "V-2AAS-2P｜Verb, second Aorist, Active, Subjunctive, second, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλει: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλειν: {
     parse: "V-PAN｜Verb, Present, Active, iNfinitive",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλεται: {
     parse: "V-PPI-3S｜Verb, Present, Passive, Indicative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλομεν: {
     parse: "V-PAI-1P｜Verb, Present, Active, Indicative, first, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαλλόμενα: {
     parse:
       "V-PPP-APN｜Verb, Present, Passive, Participle, accusative, plural, neuter",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαλλόμενον: {
     parse:
       "V-PPP-ASM｜Verb, Present, Passive, Participle, accusative, singular, masculine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλοντας: {
     parse:
       "V-PAP-APM｜Verb, Present, Active, Participle, accusative, plural, masculine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλοντες: {
     parse:
       "V-PAP-NPM｜Verb, Present, Active, Participle, nominative, plural, masculine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαλλόντων: {
     parse:
       "V-PAP-GPM｜Verb, Present, Active, Participle, genitive, plural, masculine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλουσαν: {
     parse:
       "V-PAP-ASF｜Verb, Present, Active, Participle, accusative, singular, feminine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλουσιν: {
     parse: "V-PAI-3P｜Verb, Present, Active, Indicative, third, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλλω: {
     parse: "V-PAI-1S｜Verb, Present, Active, Indicative, first, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαλοῦσα: {
     parse:
       "V-2AAP-NSF｜Verb, second Aorist, Active, Participle, nominative, singular, feminine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαλοῦσιν: {
     parse: "V-FAI-3P｜Verb, Future, Active, Indicative, third, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλω: {
     parse:
       "V-2AAS-1S｜Verb, second Aorist, Active, Subjunctive, first, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βάλωσιν: {
     parse: "V-2AAS-3P｜Verb, second Aorist, Active, Subjunctive, third, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βεβληκότος: {
     parse:
       "V-RAP-GSM｜Verb, peRfect, Active, Participle, genitive, singular, masculine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βεβλημένην: {
     parse:
       "V-RPP-ASF｜Verb, peRfect, Passive, Participle, accusative, singular, feminine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βεβλημένον: {
     parse:
       "V-RPP-ASN｜Verb, peRfect, Passive, Participle, accusative, singular, neuter",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βεβλημένος: {
     parse:
       "V-RPP-NSM｜Verb, peRfect, Passive, Participle, nominative, singular, masculine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βέβληται: {
     parse: "V-RPI-3S｜Verb, peRfect, Passive, Indicative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βληθεὶς: {
     parse:
       "V-APP-NSM｜Verb, Aorist, Passive, Participle, nominative, singular, masculine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βληθείσῃ: {
     parse:
       "V-APP-DSF｜Verb, Aorist, Passive, Participle, dative, singular, feminine",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βληθὲν: {
     parse:
       "V-APP-NSN｜Verb, Aorist, Passive, Participle, nominative, singular, neuter",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βληθῇ: {
     parse: "V-APS-3S｜Verb, Aorist, Passive, Subjunctive, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βληθῆναι: {
     parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βληθήσεται: {
     parse: "V-FPI-3S｜Verb, Future, Passive, Indicative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βληθήσῃ: {
     parse: "V-FPI-2S｜Verb, Future, Passive, Indicative, second, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βλήθητι: {
     parse: "V-APM-2S｜Verb, Aorist, Passive, iMperative, second, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   ἔβαλαν: {
     parse: "V-2AAI-3P｜Verb, second Aorist, Active, Indicative, third, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   ἔβαλεν: {
     parse:
       "V-2AAI-3S｜Verb, second Aorist, Active, Indicative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   ἔβαλλον: {
     parse: "V-IAI-3P｜Verb, Imperfect, Active, Indicative, third, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   ἔβαλον: {
     parse: "V-2AAI-3P｜Verb, second Aorist, Active, Indicative, third, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   ἐβέβλητο: {
     parse: "V-LPI-3S｜Verb, pLuperfect, Passive, Indicative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   ἐβλήθη: {
     parse: "V-API-3S｜Verb, Aorist, Passive, Indicative, third, singular",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   ἐβλήθησαν: {
     parse: "V-API-3P｜Verb, Aorist, Passive, Indicative, third, plural",
     GN: "G906",
-    gloss: ": hit",
+    gloss: "hit",
   },
   βαπτίζει: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
@@ -16507,55 +16507,55 @@ export const wordUsages = {
     parse:
       "V-PPP-NSF｜Verb, Present, Passive, Participle, nominative, singular, feminine",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   βασανιζόμενον: {
     parse:
       "V-PPP-NSN｜Verb, Present, Passive, Participle, nominative, singular, neuter",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   βασανιζόμενος: {
     parse:
       "V-PPP-NSM｜Verb, Present, Passive, Participle, nominative, singular, masculine",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   βασανιζομένους: {
     parse:
       "V-PPP-APM｜Verb, Present, Passive, Participle, accusative, plural, masculine",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   βασανίσαι: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   βασανίσῃς: {
     parse: "V-AAS-2S｜Verb, Aorist, Active, Subjunctive, second, singular",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   βασανισθήσεται: {
     parse: "V-FPI-3S｜Verb, Future, Passive, Indicative, third, singular",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   βασανισθήσονται: {
     parse: "V-FPI-3P｜Verb, Future, Passive, Indicative, third, plural",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   ἐβασάνιζεν: {
     parse: "V-IAI-3S｜Verb, Imperfect, Active, Indicative, third, singular",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   ἐβασάνισαν: {
     parse: "V-AAI-3P｜Verb, Aorist, Active, Indicative, third, plural",
     GN: "G928",
-    gloss: ": anguish",
+    gloss: "anguish",
   },
   βασανισμὸν: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
@@ -18999,22 +18999,22 @@ export const wordUsages = {
   γενήματα: {
     parse: "N-APN｜Noun, accusative, plural, neuter",
     GN: "G1081",
-    gloss: ": fruit",
+    gloss: "fruit",
   },
   γενήματος: {
     parse: "N-GSN｜Noun, genitive, singular, neuter",
     GN: "G1081",
-    gloss: ": fruit",
+    gloss: "fruit",
   },
   γεννήματα: {
     parse: "N-VPN｜Noun, Vocative, plural, neuter",
     GN: "G1081",
-    gloss: ": fruit",
+    gloss: "fruit",
   },
   Γεννήματα: {
     parse: "N-VPN｜Noun, Vocative, plural, neuter",
     GN: "G1081",
-    gloss: ": fruit",
+    gloss: "fruit",
   },
   Γεννησαρέτ: {
     parse: "N-ASF-L｜Noun, accusative, singular, feminine, Location",
@@ -19034,22 +19034,22 @@ export const wordUsages = {
   γένει: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
     GN: "G1085",
-    gloss: ": kind",
+    gloss: "kind",
   },
   γένη: {
     parse: "N-NPN｜Noun, nominative, plural, neuter",
     GN: "G1085",
-    gloss: ": kind",
+    gloss: "kind",
   },
   γένος: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
     GN: "G1085",
-    gloss: ": kind",
+    gloss: "kind",
   },
   γένους: {
     parse: "N-GSN｜Noun, genitive, singular, neuter",
     GN: "G1085",
-    gloss: ": kind",
+    gloss: "kind",
   },
   Γερασηνῶν: {
     parse: "N-GPM-LG｜Noun, genitive, plural, masculine, Location Gentilic",
@@ -19172,27 +19172,27 @@ export const wordUsages = {
   γῇ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G1093",
-    gloss: ": planet",
+    gloss: "planet",
   },
   γῆ: {
     parse: "N-VSF｜Noun, Vocative, singular, feminine",
     GN: "G1093",
-    gloss: ": planet",
+    gloss: "planet",
   },
   Γῆ: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G1093",
-    gloss: ": planet",
+    gloss: "planet",
   },
   γῆν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G1093",
-    gloss: ": planet",
+    gloss: "planet",
   },
   γῆς: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G1093",
-    gloss: ": planet",
+    gloss: "planet",
   },
   γήρει: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
@@ -20965,92 +20965,92 @@ export const wordUsages = {
   γύναι: {
     parse: "N-VSF｜Noun, Vocative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   Γύναι: {
     parse: "N-VSF｜Noun, Vocative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναῖκα: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   Γυναῖκα: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναῖκά: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναῖκας: {
     parse: "N-APF｜Noun, accusative, plural, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναῖκες: {
     parse: "N-VPF｜Noun, Vocative, plural, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναῖκές: {
     parse: "N-NPF｜Noun, nominative, plural, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναικί: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναικὶ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναικός: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναικὸς: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναικῶν: {
     parse: "N-GPF｜Noun, genitive, plural, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναιξίν: {
     parse: "N-DPF｜Noun, dative, plural, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυναιξὶν: {
     parse: "N-DPF｜Noun, dative, plural, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυνή: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   γυνὴ: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   Γυνὴ: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G1135",
-    gloss: ": wife",
+    gloss: "wife",
   },
   Γὼγ: {
     parse: "N-ASM-L｜Noun, accusative, singular, masculine, Location",
@@ -28305,22 +28305,22 @@ export const wordUsages = {
   εἰ: {
     parse: "PRT｜PaRTicle, disjunctive particle",
     GN: "G1487",
-    gloss: ": even_though",
+    gloss: "even_though",
   },
   Εἰ: {
     parse: "PRT｜PaRTicle, disjunctive particle",
     GN: "G1487",
-    gloss: ": even_though",
+    gloss: "even_though",
   },
   εἴ: {
     parse: "PRT｜PaRTicle, disjunctive particle",
     GN: "G1487",
-    gloss: ": even_though",
+    gloss: "even_though",
   },
   Εἴ: {
     parse: "PRT｜PaRTicle, disjunctive particle",
     GN: "G1487",
-    gloss: ": even_though",
+    gloss: "even_though",
   },
   εἴδει: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
@@ -28340,348 +28340,348 @@ export const wordUsages = {
   εἴδαμεν: {
     parse: "V-2AAI-1P｜Verb, second Aorist, Active, Indicative, first, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἶδαν: {
     parse: "V-2AAI-3P｜Verb, second Aorist, Active, Indicative, third, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἶδεν: {
     parse:
       "V-2AAI-3S｜Verb, second Aorist, Active, Indicative, third, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδέναι: {
     parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἶδες: {
     parse:
       "V-2AAI-2S｜Verb, second Aorist, Active, Indicative, second, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἶδές: {
     parse:
       "V-2AAI-2S｜Verb, second Aorist, Active, Indicative, second, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἴδετε: {
     parse: "V-2AAI-2P｜Verb, second Aorist, Active, Indicative, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδῇς: {
     parse: "V-RAS-2S｜Verb, peRfect, Active, Subjunctive, second, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδήσουσίν: {
     parse: "V-FAI-3P｜Verb, Future, Active, Indicative, third, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδῆτε: {
     parse: "V-RAS-2P｜Verb, peRfect, Active, Subjunctive, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἴδομεν: {
     parse: "V-2AAI-1P｜Verb, second Aorist, Active, Indicative, first, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Εἴδομεν: {
     parse: "V-2AAI-1P｜Verb, second Aorist, Active, Indicative, first, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἴδομέν: {
     parse: "V-2AAI-1P｜Verb, second Aorist, Active, Indicative, first, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἶδον: {
     parse: "V-2AAI-3P｜Verb, second Aorist, Active, Indicative, third, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἶδόν: {
     parse:
       "V-2AAI-1S｜Verb, second Aorist, Active, Indicative, first, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδόσιν: {
     parse:
       "V-RAP-DPM｜Verb, peRfect, Active, Participle, dative, plural, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδότα: {
     parse:
       "V-RAP-NPN｜Verb, peRfect, Active, Participle, nominative, plural, neuter",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδότας: {
     parse:
       "V-RAP-APM｜Verb, peRfect, Active, Participle, accusative, plural, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδότες: {
     parse:
       "V-RAP-NPM｜Verb, peRfect, Active, Participle, nominative, plural, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Εἰδότες: {
     parse:
       "V-RAP-NPM｜Verb, peRfect, Active, Participle, nominative, plural, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδότι: {
     parse:
       "V-RAP-DSM｜Verb, peRfect, Active, Participle, dative, singular, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδυῖα: {
     parse:
       "V-RAP-NSF｜Verb, peRfect, Active, Participle, nominative, singular, feminine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδῶ: {
     parse: "V-RAS-1S｜Verb, peRfect, Active, Subjunctive, first, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδῶμεν: {
     parse: "V-RAS-1P｜Verb, peRfect, Active, Subjunctive, first, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδώς: {
     parse:
       "V-RAP-NSM｜Verb, peRfect, Active, Participle, nominative, singular, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδὼς: {
     parse:
       "V-RAP-NSM｜Verb, peRfect, Active, Participle, nominative, singular, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ᾔδει: {
     parse:
       "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ᾔδειν: {
     parse:
       "V-2LAI-1S｜Verb, second pLuperfect, Active, Indicative, first, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ᾔδεις: {
     parse:
       "V-2LAI-2S｜Verb, second pLuperfect, Active, Indicative, second, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ᾔδεισαν: {
     parse:
       "V-2LAI-3P｜Verb, second pLuperfect, Active, Indicative, third, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ᾔδειτε: {
     parse:
       "V-2LAI-2P｜Verb, second pLuperfect, Active, Indicative, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Ἤιδει: {
     parse:
       "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδε: { parse: "INJ｜INterJection", GN: "G2396", gloss: "look!" },
   ἰδεῖν: {
     parse: "V-2AAN｜Verb, second Aorist, Active, iNfinitive",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδετε: {
     parse: "V-2AAM-2P｜Verb, second Aorist, Active, iMperative, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Ἴδετε: {
     parse: "V-2AAM-2P｜Verb, second Aorist, Active, iMperative, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδῃ: {
     parse:
       "V-2AAS-3S｜Verb, second Aorist, Active, Subjunctive, third, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδῃς: {
     parse:
       "V-2AAS-2S｜Verb, second Aorist, Active, Subjunctive, second, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδητε: {
     parse:
       "V-2AAS-2P｜Verb, second Aorist, Active, Subjunctive, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδητέ: {
     parse:
       "V-2AAS-2P｜Verb, second Aorist, Active, Subjunctive, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἰδόντες: {
     parse:
       "V-2AAP-NPM｜Verb, second Aorist, Active, Participle, nominative, plural, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Ἰδόντες: {
     parse:
       "V-2AAP-NPM｜Verb, second Aorist, Active, Participle, nominative, plural, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἰδοῦσα: {
     parse:
       "V-2AAP-NSF｜Verb, second Aorist, Active, Participle, nominative, singular, feminine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδω: {
     parse:
       "V-2AAS-1S｜Verb, second Aorist, Active, Subjunctive, first, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδωμεν: {
     parse: "V-2AAS-1P｜Verb, second Aorist, Active, Subjunctive, first, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἰδών: {
     parse:
       "V-2AAP-NSM｜Verb, second Aorist, Active, Participle, nominative, singular, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἰδὼν: {
     parse:
       "V-2AAP-NSM｜Verb, second Aorist, Active, Participle, nominative, singular, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Ἰδὼν: {
     parse:
       "V-2AAP-NSM｜Verb, second Aorist, Active, Participle, nominative, singular, masculine",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴδωσιν: {
     parse: "V-2AAS-3P｜Verb, second Aorist, Active, Subjunctive, third, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴσασιν: {
     parse: "V-RAI-3P｜Verb, peRfect, Active, Indicative, third, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   ἴστε: {
     parse: "V-RAM-2P｜Verb, peRfect, Active, iMperative, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Ἴστε: {
     parse: "V-RAM-2P｜Verb, peRfect, Active, iMperative, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   οἶδα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Οἶδα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   οἶδά: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Οἶδά: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   οἴδαμεν: {
     parse: "V-RAI-1P｜Verb, peRfect, Active, Indicative, first, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Οἴδαμεν: {
     parse: "V-RAI-1P｜Verb, peRfect, Active, Indicative, first, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   οἶδας: {
     parse: "V-RAI-2S｜Verb, peRfect, Active, Indicative, second, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Οἶδας: {
     parse: "V-RAI-2S｜Verb, peRfect, Active, Indicative, second, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   οἴδασιν: {
     parse: "V-RAI-3P｜Verb, peRfect, Active, Indicative, third, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   οἴδατε: {
     parse: "V-RAI-2P｜Verb, peRfect, Active, Indicative, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   Οἴδατε: {
     parse: "V-RAI-2P｜Verb, peRfect, Active, Indicative, second, plural",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   οἶδεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
     GN: "G1492",
-    gloss: ": see",
+    gloss: "see",
   },
   εἰδωλείῳ: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
@@ -48533,72 +48533,72 @@ export const wordUsages = {
   κακά: {
     parse: "A-APN｜Adjective, accusative, plural, neuter",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακὰ: {
     parse: "A-NPN｜Adjective, nominative, plural, neuter",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακαί: {
     parse: "A-NPF｜Adjective, nominative, plural, feminine",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακήν: {
     parse: "A-ASF｜Adjective, accusative, singular, feminine",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακοὶ: {
     parse: "A-NPM｜Adjective, nominative, plural, masculine",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακόν: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακὸν: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακὸς: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακοῦ: {
     parse: "A-GSN｜Adjective, genitive, singular, neuter",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακούς: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακοὺς: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   Κακοὺς: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακῷ: {
     parse: "A-DSN｜Adjective, dative, singular, neuter",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακῶν: {
     parse: "A-GPN｜Adjective, genitive, plural, neuter",
     GN: "G2556",
-    gloss: ": harm",
+    gloss: "harm",
   },
   κακοῦργοι: {
     parse: "A-NPM｜Adjective, nominative, plural, masculine",
@@ -48696,186 +48696,186 @@ export const wordUsages = {
   ἐκάλεσα: {
     parse: "V-AAI-1S｜Verb, Aorist, Active, Indicative, first, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   ἐκάλεσεν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   ἐκάλουν: {
     parse: "V-IAI-3P｜Verb, Imperfect, Active, Indicative, third, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   ἐκλήθη: {
     parse: "V-API-3S｜Verb, Aorist, Passive, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   ἐκλήθης: {
     parse: "V-API-2S｜Verb, Aorist, Passive, Indicative, second, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   ἐκλήθητε: {
     parse: "V-API-2P｜Verb, Aorist, Passive, Indicative, second, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλεῖ: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κάλει: {
     parse: "V-PAM-2S｜Verb, Present, Active, iMperative, second, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλεῖν: {
     parse: "V-PAN｜Verb, Present, Active, iNfinitive",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλεῖσθαι: {
     parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλεῖται: {
     parse: "V-PPI-3S｜Verb, Present, Passive, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλεῖτε: {
     parse: "V-PAI-2P｜Verb, Present, Active, Indicative, second, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσαι: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσαντα: {
     parse:
       "V-AAP-ASM｜Verb, Aorist, Active, Participle, accusative, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσαντες: {
     parse:
       "V-AAP-NPM｜Verb, Aorist, Active, Participle, nominative, plural, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσαντος: {
     parse:
       "V-AAP-GSM｜Verb, Aorist, Active, Participle, genitive, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσας: {
     parse:
       "V-AAP-NSM｜Verb, Aorist, Active, Participle, nominative, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσατε: {
     parse: "V-AAM-2P｜Verb, Aorist, Active, iMperative, second, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσεις: {
     parse: "V-FAI-2S｜Verb, Future, Active, Indicative, second, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσητε: {
     parse: "V-AAS-2P｜Verb, Aorist, Active, Subjunctive, second, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   Κάλεσον: {
     parse: "V-AAM-2S｜Verb, Aorist, Active, iMperative, second, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλέσουσιν: {
     parse: "V-FAI-3P｜Verb, Future, Active, Indicative, third, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   Καλέσω: {
     parse: "V-FAI-1S｜Verb, Future, Active, Indicative, first, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλουμένῃ: {
     parse:
       "V-PPP-DSF｜Verb, Present, Passive, Participle, dative, singular, feminine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλουμένη: {
     parse:
       "V-PPP-NSF｜Verb, Present, Passive, Participle, nominative, singular, feminine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλουμένην: {
     parse:
       "V-PPP-ASF｜Verb, Present, Passive, Participle, accusative, singular, feminine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλουμένης: {
     parse:
       "V-PPP-GSF｜Verb, Present, Passive, Participle, genitive, singular, feminine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλούμενον: {
     parse:
       "V-PPP-ASN｜Verb, Present, Passive, Participle, accusative, singular, neuter",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλούμενος: {
     parse:
       "V-PPP-NSM｜Verb, Present, Passive, Participle, nominative, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλουμένου: {
     parse:
       "V-PPP-GSN｜Verb, Present, Passive, Participle, genitive, singular, neuter",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλοῦνται: {
     parse: "V-PPI-3P｜Verb, Present, Passive, Indicative, third, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλοῦντες: {
     parse:
       "V-PAP-NPM｜Verb, Present, Active, Participle, nominative, plural, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλοῦντος: {
     parse:
       "V-PAP-GSM｜Verb, Present, Active, Participle, genitive, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλοῦσα: {
     parse:
       "V-PAP-NSF｜Verb, Present, Active, Participle, nominative, singular, feminine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλῶν: {
     parse: "A-GPN｜Adjective, genitive, plural, neuter",
@@ -48885,117 +48885,117 @@ export const wordUsages = {
   κέκληκεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κεκληκότι: {
     parse:
       "V-RAP-DSM｜Verb, peRfect, Active, Participle, dative, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κεκληκώς: {
     parse:
       "V-RAP-NSM｜Verb, peRfect, Active, Participle, nominative, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κεκλημένοι: {
     parse:
       "V-RPP-NPM｜Verb, peRfect, Passive, Participle, nominative, plural, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κεκλημένοις: {
     parse:
       "V-RPP-DPM｜Verb, peRfect, Passive, Participle, dative, plural, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κεκλημένος: {
     parse:
       "V-RPP-NSM｜Verb, peRfect, Passive, Participle, nominative, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κεκλημένους: {
     parse:
       "V-RPP-APM｜Verb, peRfect, Passive, Participle, accusative, plural, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κεκλημένων: {
     parse:
       "V-RPP-GPM｜Verb, peRfect, Passive, Participle, genitive, plural, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κέκληται: {
     parse: "V-RPI-3S｜Verb, peRfect, Passive, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κέκληταί: {
     parse: "V-RPI-3S｜Verb, peRfect, Passive, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθεὶς: {
     parse:
       "V-APP-NSM｜Verb, Aorist, Passive, Participle, nominative, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθὲν: {
     parse:
       "V-APP-NSN｜Verb, Aorist, Passive, Participle, nominative, singular, neuter",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθέντος: {
     parse:
       "V-APP-GSM｜Verb, Aorist, Passive, Participle, genitive, singular, masculine",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθῆναι: {
     parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθῇς: {
     parse: "V-APS-2S｜Verb, Aorist, Passive, Subjunctive, second, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθήσεται: {
     parse: "V-FPI-3S｜Verb, Future, Passive, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθήσεταί: {
     parse: "V-FPI-3S｜Verb, Future, Passive, Indicative, third, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθήσῃ: {
     parse: "V-FPI-2S｜Verb, Future, Passive, Indicative, second, singular",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθήσονται: {
     parse: "V-FPI-3P｜Verb, Future, Passive, Indicative, third, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθῆτε: {
     parse: "V-APS-2P｜Verb, Aorist, Passive, Subjunctive, second, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   κληθῶμεν: {
     parse: "V-APS-1P｜Verb, Aorist, Passive, Subjunctive, first, plural",
     GN: "G2564",
-    gloss: ": name",
+    gloss: "name",
   },
   καλλιέλαιον: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
@@ -49173,13 +49173,13 @@ export const wordUsages = {
     parse:
       "V-2AAS-2P｜Verb, second Aorist, Active, Subjunctive, second, plural",
     GN: "G2577",
-    gloss: ": ill",
+    gloss: "ill",
   },
   κάμνοντα: {
     parse:
       "V-PAP-ASM｜Verb, Present, Active, Participle, accusative, singular, masculine",
     GN: "G2577",
-    gloss: ": ill",
+    gloss: "ill",
   },
   ἔκαμψαν: {
     parse: "V-AAI-3P｜Verb, Aorist, Active, Indicative, third, plural",
@@ -52772,22 +52772,22 @@ export const wordUsages = {
   κιβωτόν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G2787",
-    gloss: ": Noah",
+    gloss: "Noah",
   },
   κιβωτὸν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G2787",
-    gloss: ": Noah",
+    gloss: "Noah",
   },
   κιβωτὸς: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G2787",
-    gloss: ": Noah",
+    gloss: "Noah",
   },
   κιβωτοῦ: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G2787",
-    gloss: ": Noah",
+    gloss: "Noah",
   },
   κιθάρα: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
@@ -53677,32 +53677,32 @@ export const wordUsages = {
   κοινά: {
     parse: "A-NPN｜Adjective, nominative, plural, neuter",
     GN: "G2839",
-    gloss: ": shared",
+    gloss: "shared",
   },
   κοιναῖς: {
     parse: "A-DPF｜Adjective, dative, plural, feminine",
     GN: "G2839",
-    gloss: ": shared",
+    gloss: "shared",
   },
   κοινὴν: {
     parse: "A-ASF｜Adjective, accusative, singular, feminine",
     GN: "G2839",
-    gloss: ": shared",
+    gloss: "shared",
   },
   κοινῆς: {
     parse: "A-GSF｜Adjective, genitive, singular, feminine",
     GN: "G2839",
-    gloss: ": shared",
+    gloss: "shared",
   },
   κοινὸν: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G2839",
-    gloss: ": shared",
+    gloss: "shared",
   },
   κοινόν: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G2839",
-    gloss: ": shared",
+    gloss: "shared",
   },
   κεκοίνωκεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
@@ -55916,87 +55916,87 @@ export const wordUsages = {
   κύριε: {
     parse: "N-VSM｜Noun, Vocative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   Κύριε: {
     parse: "N-VSM｜Noun, Vocative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   Κύριέ: {
     parse: "N-VSM｜Noun, Vocative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κύριοι: {
     parse: "N-VPM｜Noun, Vocative, plural, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   Κύριοι: {
     parse: "N-VPM｜Noun, Vocative, plural, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κυρίοις: {
     parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κύριον: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   Κύριον: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κύριόν: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κύριος: {
     parse: "N-VSM｜Noun, Vocative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   Κύριος: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κύριός: {
     parse: "N-VSM｜Noun, Vocative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   Κύριός: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κυρίου: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   Κυρίου: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κυρίῳ: {
     parse: "N-DSM｜Noun, dative, singular, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κυρίων: {
     parse: "N-GPM｜Noun, genitive, plural, masculine",
     GN: "G2962",
-    gloss: ": master",
+    gloss: "master",
   },
   κυριότητα: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
@@ -57195,254 +57195,254 @@ export const wordUsages = {
   ἔλεγεν: {
     parse: "V-IAI-3S｜Verb, Imperfect, Active, Indicative, third, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   Ἔλεγεν: {
     parse: "V-IAI-3S｜Verb, Imperfect, Active, Indicative, third, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   ἐλέγετε: {
     parse: "V-IAI-2P｜Verb, Imperfect, Active, Indicative, second, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   ἔλεγον: {
     parse: "V-IAI-3P｜Verb, Imperfect, Active, Indicative, third, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   Ἔλεγον: {
     parse: "V-IAI-3P｜Verb, Imperfect, Active, Indicative, third, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   Λέγε: {
     parse: "V-PAM-2S｜Verb, Present, Active, iMperative, second, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγει: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   Λέγει: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγειν: {
     parse: "V-PAN｜Verb, Present, Active, iNfinitive",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγεις: {
     parse: "V-PAI-2S｜Verb, Present, Active, Indicative, second, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγεσθαι: {
     parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγεται: {
     parse: "V-PPI-3S｜Verb, Present, Passive, Indicative, third, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγετε: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   Λέγετέ: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγέτω: {
     parse: "V-PAM-3S｜Verb, Present, Active, iMperative, third, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγῃ: {
     parse: "V-PAS-3S｜Verb, Present, Active, Subjunctive, third, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγητε: {
     parse: "V-PAS-2P｜Verb, Present, Active, Subjunctive, second, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγομεν: {
     parse: "V-PAI-1P｜Verb, Present, Active, Indicative, first, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγόμενα: {
     parse:
       "V-PPP-APN｜Verb, Present, Passive, Participle, accusative, plural, neuter",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγομένη: {
     parse:
       "V-PPP-NSF｜Verb, Present, Passive, Participle, nominative, singular, feminine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγομένην: {
     parse:
       "V-PPP-ASF｜Verb, Present, Passive, Participle, accusative, singular, feminine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγομένης: {
     parse:
       "V-PPP-GSF｜Verb, Present, Passive, Participle, genitive, singular, feminine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγόμενοι: {
     parse:
       "V-PPP-NPM｜Verb, Present, Passive, Participle, nominative, plural, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγομένοις: {
     parse:
       "V-PPP-DPN｜Verb, Present, Passive, Participle, dative, plural, neuter",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγόμενον: {
     parse:
       "V-PPP-ASN｜Verb, Present, Passive, Participle, accusative, singular, neuter",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγόμενος: {
     parse:
       "V-PPP-NSM｜Verb, Present, Passive, Participle, nominative, singular, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγομένου: {
     parse:
       "V-PPP-GSM｜Verb, Present, Passive, Participle, genitive, singular, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγον: {
     parse:
       "V-PAP-NSN｜Verb, Present, Active, Participle, nominative, singular, neuter",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγοντα: {
     parse:
       "V-PAP-NPN｜Verb, Present, Active, Participle, nominative, plural, neuter",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγοντά: {
     parse:
       "V-PAP-ASM｜Verb, Present, Active, Participle, accusative, singular, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγοντας: {
     parse:
       "V-PAP-APM｜Verb, Present, Active, Participle, accusative, plural, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγοντες: {
     parse:
       "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγοντι: {
     parse:
       "V-PAP-DSM｜Verb, Present, Active, Participle, dative, singular, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγοντος: {
     parse:
       "V-PAP-GSN｜Verb, Present, Active, Participle, genitive, singular, neuter",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγόντων: {
     parse:
       "V-PAP-GPM｜Verb, Present, Active, Participle, genitive, plural, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγουσα: {
     parse:
       "V-PAP-NSF｜Verb, Present, Active, Participle, nominative, singular, feminine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγουσαι: {
     parse:
       "V-PAP-NPF｜Verb, Present, Active, Participle, nominative, plural, feminine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγουσαν: {
     parse:
       "V-PAP-ASF｜Verb, Present, Active, Participle, accusative, singular, feminine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεγούσης: {
     parse:
       "V-PAP-GSF｜Verb, Present, Active, Participle, genitive, singular, feminine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγουσιν: {
     parse: "V-PAI-3P｜Verb, Present, Active, Indicative, third, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   Λέγουσιν: {
     parse: "V-PAI-3P｜Verb, Present, Active, Indicative, third, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγουσίν: {
     parse: "V-PAI-3P｜Verb, Present, Active, Indicative, third, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγω: {
     parse: "V-PAS-1S｜Verb, Present, Active, Subjunctive, first, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   Λέγω: {
     parse: "V-PAI-1S｜Verb, Present, Active, Indicative, first, singular",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγων: {
     parse:
       "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λέγωσιν: {
     parse: "V-PAS-3P｜Verb, Present, Active, Subjunctive, third, plural",
     GN: "G3004",
-    gloss: ": call",
+    gloss: "call",
   },
   λεῖμμα: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
@@ -59356,7 +59356,7 @@ export const wordUsages = {
   μᾶλλον: {
     parse: "ADV｜ADVerb or adverb and particle combined",
     GN: "G3123",
-    gloss: ": rather",
+    gloss: "rather",
   },
   Μάλχος: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
@@ -65405,27 +65405,27 @@ export const wordUsages = {
   οἰκίᾳ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G3614",
-    gloss: ": household",
+    gloss: "household",
   },
   οἰκία: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G3614",
-    gloss: ": household",
+    gloss: "household",
   },
   οἰκίαν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G3614",
-    gloss: ": household",
+    gloss: "household",
   },
   οἰκίας: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G3614",
-    gloss: ": household",
+    gloss: "household",
   },
   οἰκιῶν: {
     parse: "N-GPF｜Noun, genitive, plural, feminine",
     GN: "G3614",
-    gloss: ": household",
+    gloss: "household",
   },
   οἰκιακοὶ: {
     parse: "N-NPM｜Noun, nominative, plural, masculine",
@@ -65660,47 +65660,47 @@ export const wordUsages = {
   οἴκοις: {
     parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἶκον: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἶκόν: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἶκος: {
     parse: "N-VSM｜Noun, Vocative, singular, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἶκός: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἴκου: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἴκους: {
     parse: "N-APM｜Noun, accusative, plural, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἴκῳ: {
     parse: "N-DSM｜Noun, dative, singular, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἴκων: {
     parse: "N-GPM｜Noun, genitive, plural, masculine",
     GN: "G3624",
-    gloss: ": household",
+    gloss: "household",
   },
   οἰκουμένῃ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
@@ -66827,241 +66827,241 @@ export const wordUsages = {
   ἑόρακα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑόρακαν: {
     parse: "V-RAI-3P｜Verb, peRfect, Active, Indicative, third, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑόρακεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑώρακα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   Ἑώρακα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑωράκαμεν: {
     parse: "V-RAI-1P｜Verb, peRfect, Active, Indicative, first, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   Ἑωράκαμεν: {
     parse: "V-RAI-1P｜Verb, peRfect, Active, Indicative, first, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑώρακαν: {
     parse: "V-RAI-3P｜Verb, peRfect, Active, Indicative, third, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑώρακας: {
     parse: "V-RAI-2S｜Verb, peRfect, Active, Indicative, second, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑώρακάς: {
     parse: "V-RAI-2S｜Verb, peRfect, Active, Indicative, second, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑωράκασιν: {
     parse: "V-RAI-3P｜Verb, peRfect, Active, Indicative, third, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑωράκατε: {
     parse: "V-RAI-2P｜Verb, peRfect, Active, Indicative, second, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑωράκατέ: {
     parse: "V-RAI-2P｜Verb, peRfect, Active, Indicative, second, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑωράκει: {
     parse: "V-LAI-3S｜Verb, pLuperfect, Active, Indicative, third, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑώρακεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑώρακέν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑωρακέναι: {
     parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑωρακότες: {
     parse:
       "V-RAP-NPM｜Verb, peRfect, Active, Participle, nominative, plural, masculine",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ἑωρακὼς: {
     parse:
       "V-RAP-NSM｜Verb, peRfect, Active, Participle, nominative, singular, masculine",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὁρᾷ: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   Ὅρα: {
     parse: "V-PAM-2S｜Verb, Present, Active, iMperative, second, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὁρᾶτε: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   Ὁρᾶτε: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὁρῶ: {
     parse: "V-PAI-1S｜Verb, Present, Active, Indicative, first, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὁρῶμεν: {
     parse: "V-PAI-1P｜Verb, Present, Active, Indicative, first, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὁρῶν: {
     parse:
       "V-PAP-NSM｜Verb, Present, Active, Participle, nominative, singular, masculine",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὁρῶντες: {
     parse:
       "V-PAP-NPM｜Verb, Present, Active, Participle, nominative, plural, masculine",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὁρῶσαι: {
     parse:
       "V-PAP-NPF｜Verb, Present, Active, Participle, nominative, plural, feminine",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὀφθείς: {
     parse:
       "V-APP-NSM｜Verb, Aorist, Passive, Participle, nominative, singular, masculine",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὀφθέντες: {
     parse:
       "V-APP-NPM｜Verb, Aorist, Passive, Participle, nominative, plural, masculine",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὀφθέντος: {
     parse:
       "V-APP-GSM｜Verb, Aorist, Passive, Participle, genitive, singular, masculine",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὀφθήσεται: {
     parse: "V-FPI-3S｜Verb, Future, Passive, Indicative, third, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὀφθήσομαί: {
     parse: "V-FPI-1S｜Verb, Future, Passive, Indicative, first, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὄψεσθε: {
     parse:
       "V-FDI-2P｜Verb, Future, middle Deponent, Indicative, second, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὄψεσθέ: {
     parse:
       "V-FDI-2P｜Verb, Future, middle Deponent, Indicative, second, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὄψεται: {
     parse:
       "V-FDI-3S｜Verb, Future, middle Deponent, Indicative, third, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὄψῃ: {
     parse:
       "V-FDI-2S｜Verb, Future, middle Deponent, Indicative, second, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὄψησθε: {
     parse:
       "V-2ADS-2P｜Verb, second Aorist, middle Deponent, Subjunctive, second, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὄψομαι: {
     parse:
       "V-FDI-1S｜Verb, Future, middle Deponent, Indicative, first, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὀψόμεθα: {
     parse: "V-FDI-1P｜Verb, Future, middle Deponent, Indicative, first, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὄψονται: {
     parse: "V-FDI-3P｜Verb, Future, middle Deponent, Indicative, third, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   Ὄψονται: {
     parse: "V-FDI-3P｜Verb, Future, middle Deponent, Indicative, third, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὤφθη: {
     parse: "V-API-3S｜Verb, Aorist, Passive, Indicative, third, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὤφθην: {
     parse: "V-API-1S｜Verb, Aorist, Passive, Indicative, first, singular",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὤφθησαν: {
     parse: "V-API-3P｜Verb, Aorist, Passive, Indicative, third, plural",
     GN: "G3708",
-    gloss: ": appear",
+    gloss: "appear",
   },
   ὀργῇ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
@@ -67788,12 +67788,12 @@ export const wordUsages = {
   ὅτι: {
     parse: "CONJ｜Conjunction or conjunctive particle",
     GN: "G3754",
-    gloss: ": since",
+    gloss: "since",
   },
   Ὅτι: {
     parse: "CONJ｜Conjunction or conjunctive particle",
     GN: "G3754",
-    gloss: ": since",
+    gloss: "since",
   },
   οὐ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3756", gloss: "no" },
   Οὐ: {
@@ -72400,143 +72400,143 @@ export const wordUsages = {
   ἐπείραζεν: {
     parse: "V-IAI-3S｜Verb, Imperfect, Active, Indicative, third, singular",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   ἐπείραζον: {
     parse: "V-IAI-3P｜Verb, Imperfect, Active, Indicative, third, plural",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   ἐπείρασαν: {
     parse: "V-AAI-3P｜Verb, Aorist, Active, Indicative, third, plural",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   ἐπείρασας: {
     parse: "V-AAI-2S｜Verb, Aorist, Active, Indicative, second, singular",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   ἐπείρασεν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειράζει: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειράζεται: {
     parse: "V-PPI-3S｜Verb, Present, Passive, Indicative, third, singular",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειράζετε: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειράζῃ: {
     parse: "V-PAS-3S｜Verb, Present, Active, Subjunctive, third, singular",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειράζομαι: {
     parse: "V-PPI-1S｜Verb, Present, Passive, Indicative, first, singular",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειραζομένοις: {
     parse:
       "V-PPP-DPM｜Verb, Present, Passive, Participle, dative, plural, masculine",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειραζόμενος: {
     parse:
       "V-PPP-NSM｜Verb, Present, Passive, Participle, nominative, singular, masculine",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειράζοντες: {
     parse:
       "V-PAP-NPM｜Verb, Present, Active, Participle, nominative, plural, masculine",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειράζων: {
     parse:
       "V-PAP-NSM｜Verb, Present, Active, Participle, nominative, singular, masculine",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειράσαι: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειρασθείς: {
     parse:
       "V-APP-NSM｜Verb, Aorist, Passive, Participle, nominative, singular, masculine",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειρασθῆναι: {
     parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειρασθῇς: {
     parse: "V-APS-2S｜Verb, Aorist, Passive, Subjunctive, second, singular",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειρασθῆτε: {
     parse: "V-APS-2P｜Verb, Aorist, Passive, Subjunctive, second, plural",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πεπειρασμένον: {
     parse:
       "V-RPP-ASM｜Verb, peRfect, Passive, Participle, accusative, singular, masculine",
     GN: "G3985",
-    gloss: ": try",
+    gloss: "try",
   },
   πειρασμοῖς: {
     parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G3986",
-    gloss: ": testing",
+    gloss: "testing",
   },
   πειρασμόν: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G3986",
-    gloss: ": testing",
+    gloss: "testing",
   },
   πειρασμὸν: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G3986",
-    gloss: ": testing",
+    gloss: "testing",
   },
   πειρασμὸς: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
     GN: "G3986",
-    gloss: ": testing",
+    gloss: "testing",
   },
   πειρασμοῦ: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G3986",
-    gloss: ": testing",
+    gloss: "testing",
   },
   πειρασμῷ: {
     parse: "N-DSM｜Noun, dative, singular, masculine",
     GN: "G3986",
-    gloss: ": testing",
+    gloss: "testing",
   },
   πειρασμῶν: {
     parse: "N-GPM｜Noun, genitive, plural, masculine",
     GN: "G3986",
-    gloss: ": testing",
+    gloss: "testing",
   },
   ἐπειρῶντο: {
     parse:
@@ -74961,32 +74961,32 @@ export const wordUsages = {
   πίστει: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G4102",
-    gloss: ": faith",
+    gloss: "faith",
   },
   Πίστει: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G4102",
-    gloss: ": faith",
+    gloss: "faith",
   },
   πίστεως: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G4102",
-    gloss: ": faith",
+    gloss: "faith",
   },
   πίστεώς: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G4102",
-    gloss: ": faith",
+    gloss: "faith",
   },
   πίστιν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G4102",
-    gloss: ": faith",
+    gloss: "faith",
   },
   πίστις: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G4102",
-    gloss: ": faith",
+    gloss: "faith",
   },
   πιστά: {
     parse: "A-APN｜Adjective, accusative, plural, neuter",
@@ -76161,52 +76161,52 @@ export const wordUsages = {
   πνεῦμα: {
     parse: "N-VSN｜Noun, Vocative, singular, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   Πνεῦμα: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνεῦμά: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνεύμασιν: {
     parse: "N-DPN｜Noun, dative, plural, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνεύματα: {
     parse: "N-NPN｜Noun, nominative, plural, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνεύματι: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνεύματί: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνεύματος: {
     parse: "N-GSN｜Noun, genitive, singular, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνεύματός: {
     parse: "N-GSN｜Noun, genitive, singular, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνευμάτων: {
     parse: "N-GPN｜Noun, genitive, plural, neuter",
     GN: "G4151",
-    gloss: ": breath",
+    gloss: "breath",
   },
   πνευματικά: {
     parse: "A-APN｜Adjective, accusative, plural, neuter",
@@ -76369,429 +76369,429 @@ export const wordUsages = {
   ἐποίει: {
     parse: "V-IAI-3S｜Verb, Imperfect, Active, Indicative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποιεῖτε: {
     parse: "V-IAI-2P｜Verb, Imperfect, Active, Indicative, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποίησα: {
     parse: "V-AAI-1S｜Verb, Aorist, Active, Indicative, first, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποιήσαμεν: {
     parse: "V-AAI-1P｜Verb, Aorist, Active, Indicative, first, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποιησάμην: {
     parse: "V-AMI-1S｜Verb, Aorist, Middle, Indicative, first, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποίησαν: {
     parse: "V-AAI-3P｜Verb, Aorist, Active, Indicative, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποίησας: {
     parse: "V-AAI-2S｜Verb, Aorist, Active, Indicative, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποιήσατε: {
     parse: "V-AAI-2P｜Verb, Aorist, Active, Indicative, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποίησεν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   Ἐποίησεν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποίησέν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποίουν: {
     parse: "V-IAI-3P｜Verb, Imperfect, Active, Indicative, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ἐποιοῦντο: {
     parse: "V-IMI-3P｜Verb, Imperfect, Middle, Indicative, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποίηκα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιήκαμεν: {
     parse: "V-RAI-1P｜Verb, peRfect, Active, Indicative, first, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιήκατε: {
     parse: "V-RAI-2P｜Verb, peRfect, Active, Indicative, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιήκεισαν: {
     parse: "V-LAI-3P｜Verb, pLuperfect, Active, Indicative, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποίηκεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιηκέναι: {
     parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιηκόσιν: {
     parse:
       "V-RAP-DPM｜Verb, peRfect, Active, Participle, dative, plural, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιηκότες: {
     parse:
       "V-RAP-NPM｜Verb, peRfect, Active, Participle, nominative, plural, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιηκότος: {
     parse:
       "V-RAP-GSM｜Verb, peRfect, Active, Participle, genitive, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιηκώς: {
     parse:
       "V-RAP-NSM｜Verb, peRfect, Active, Participle, nominative, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   πεποιημένων: {
     parse:
       "V-RPP-GPN｜Verb, peRfect, Passive, Participle, genitive, plural, neuter",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιεῖ: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποίει: {
     parse: "V-PAM-2S｜Verb, Present, Active, iMperative, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιεῖν: {
     parse: "V-PAN｜Verb, Present, Active, iNfinitive",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιεῖς: {
     parse: "V-PAI-2S｜Verb, Present, Active, Indicative, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιεῖσθαι: {
     parse: "V-PEN｜Verb, Present, Either middle or passive, iNfinitive",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιεῖσθε: {
     parse: "V-PMM-2P｜Verb, Present, Middle, iMperative, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιεῖται: {
     parse: "V-PMI-3S｜Verb, Present, Middle, Indicative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιεῖτε: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιείτω: {
     parse: "V-PAM-3S｜Verb, Present, Active, iMperative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιῇ: {
     parse: "V-PAS-3S｜Verb, Present, Active, Subjunctive, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιῇς: {
     parse: "V-PAS-2S｜Verb, Present, Active, Subjunctive, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιῆσαι: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσαιεν: {
     parse: "V-AAO-3P｜Verb, Aorist, Active, Optative, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιησάμενοι: {
     parse:
       "V-AMP-NPM｜Verb, Aorist, Middle, Participle, nominative, plural, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιησάμενος: {
     parse:
       "V-AMP-NSM｜Verb, Aorist, Middle, Participle, nominative, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσαντες: {
     parse:
       "V-AAP-NPM｜Verb, Aorist, Active, Participle, nominative, plural, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσαντι: {
     parse:
       "V-AAP-DSM｜Verb, Aorist, Active, Participle, dative, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσας: {
     parse:
       "V-AAP-NSM｜Verb, Aorist, Active, Participle, nominative, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσασαν: {
     parse:
       "V-AAP-ASF｜Verb, Aorist, Active, Participle, accusative, singular, feminine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσασθαι: {
     parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσατε: {
     parse: "V-AAM-2P｜Verb, Aorist, Active, iMperative, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   Ποιήσατε: {
     parse: "V-AAM-2P｜Verb, Aorist, Active, iMperative, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιησάτω: {
     parse: "V-AAM-3S｜Verb, Aorist, Active, iMperative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσει: {
     parse: "V-FAI-3S｜Verb, Future, Active, Indicative, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσεις: {
     parse: "V-FAI-2S｜Verb, Future, Active, Indicative, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσετε: {
     parse: "V-FAI-2P｜Verb, Future, Active, Indicative, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσῃ: {
     parse: "V-AAS-3S｜Verb, Aorist, Active, Subjunctive, third, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσῃς: {
     parse: "V-AAS-2S｜Verb, Aorist, Active, Subjunctive, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσητε: {
     parse: "V-AAS-2P｜Verb, Aorist, Active, Subjunctive, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιησόμεθα: {
     parse: "V-FDI-1P｜Verb, Future, middle Deponent, Indicative, first, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσομεν: {
     parse: "V-FAI-1P｜Verb, Future, Active, Indicative, first, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποίησον: {
     parse: "V-AAM-2S｜Verb, Aorist, Active, iMperative, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   Ποίησον: {
     parse: "V-AAM-2S｜Verb, Aorist, Active, iMperative, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποίησόν: {
     parse: "V-AAM-2S｜Verb, Aorist, Active, iMperative, second, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσουσιν: {
     parse: "V-FAI-3P｜Verb, Future, Active, Indicative, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσω: {
     parse: "V-FAI-1S｜Verb, Future, Active, Indicative, first, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσωμεν: {
     parse: "V-AAS-1P｜Verb, Aorist, Active, Subjunctive, first, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   Ποιήσωμεν: {
     parse: "V-AAS-1P｜Verb, Aorist, Active, Subjunctive, first, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσων: {
     parse:
       "V-FAP-NSM｜Verb, Future, Active, Participle, nominative, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιήσωσιν: {
     parse: "V-AAS-3P｜Verb, Aorist, Active, Subjunctive, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιῆτε: {
     parse: "V-PAS-2P｜Verb, Present, Active, Subjunctive, second, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦμαι: {
     parse: "V-PMI-1S｜Verb, Present, Middle, Indicative, first, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦμεν: {
     parse: "V-PAI-1P｜Verb, Present, Active, Indicative, first, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιούμενοι: {
     parse:
       "V-PMP-NPM｜Verb, Present, Middle, Participle, nominative, plural, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιούμενος: {
     parse:
       "V-PMP-NSM｜Verb, Present, Middle, Participle, nominative, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦν: {
     parse:
       "V-PAP-NSN｜Verb, Present, Active, Participle, nominative, singular, neuter",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦντα: {
     parse:
       "V-PAP-NPN｜Verb, Present, Active, Participle, nominative, plural, neuter",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦνται: {
     parse: "V-PMI-3P｜Verb, Present, Middle, Indicative, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦντας: {
     parse:
       "V-PAP-APM｜Verb, Present, Active, Participle, accusative, plural, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦντες: {
     parse:
       "V-PAP-NPM｜Verb, Present, Active, Participle, nominative, plural, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦντι: {
     parse:
       "V-PAP-DSN｜Verb, Present, Active, Participle, dative, singular, neuter",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦντος: {
     parse:
       "V-PAP-GSM｜Verb, Present, Active, Participle, genitive, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιοῦσιν: {
     parse:
       "V-PAP-DPM｜Verb, Present, Active, Participle, dative, plural, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιῶ: {
     parse: "V-PAS-1S｜Verb, Present, Active, Subjunctive, first, singular",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιῶμεν: {
     parse: "V-PAS-1P｜Verb, Present, Active, Subjunctive, first, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιῶν: {
     parse:
       "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποιῶσιν: {
     parse: "V-PAS-3P｜Verb, Present, Active, Subjunctive, third, plural",
     GN: "G4160",
-    gloss: ": spend(TIME)",
+    gloss: "spend(TIME)",
   },
   ποίημα: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
@@ -78637,47 +78637,47 @@ export const wordUsages = {
   πρεσβυτέρας: {
     parse: "A-APF-C｜Adjective, accusative, plural, feminine, Comparative",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   πρεσβύτεροι: {
     parse: "A-VPM｜Adjective, Vocative, plural, masculine",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   πρεσβυτέροις: {
     parse: "A-DPM-C｜Adjective, dative, plural, masculine, Comparative",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   πρεσβύτερος: {
     parse: "A-NSM-C｜Adjective, nominative, singular, masculine, Comparative",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   πρεσβυτέρου: {
     parse: "A-GSM｜Adjective, genitive, singular, masculine",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   πρεσβυτέρους: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   Πρεσβυτέρους: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   Πρεσβυτέρῳ: {
     parse: "A-DSM-C｜Adjective, dative, singular, masculine, Comparative",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   πρεσβυτέρων: {
     parse: "A-GPM｜Adjective, genitive, plural, masculine",
     GN: "G4245",
-    gloss: ": old",
+    gloss: "old",
   },
   πρεσβύτας: {
     parse: "N-APM｜Noun, accusative, plural, masculine",
@@ -81355,87 +81355,87 @@ export const wordUsages = {
   πρῶτα: {
     parse: "A-NPN｜Adjective, nominative, plural, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτῃ: {
     parse: "A-DSF｜Adjective, dative, singular, feminine",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτη: {
     parse: "A-NSF｜Adjective, nominative, singular, feminine",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   Πρώτη: {
     parse: "A-NSF｜Adjective, nominative, singular, feminine",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτην: {
     parse: "A-ASF｜Adjective, accusative, singular, feminine",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτης: {
     parse: "A-GSF-S｜Adjective, genitive, singular, feminine, Superlative",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρῶτοι: {
     parse: "A-NPM｜Adjective, nominative, plural, masculine",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτοις: {
     parse: "A-DPN｜Adjective, dative, plural, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρῶτον: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   Πρῶτον: {
     parse: "A-ASN｜Adjective, accusative, singular, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρῶτόν: {
     parse: "A-ASN｜Adjective, accusative, singular, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρῶτος: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρῶτός: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτου: {
     parse: "A-GSN｜Adjective, genitive, singular, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτους: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτῳ: {
     parse: "A-DSN｜Adjective, dative, singular, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρώτων: {
     parse: "A-GPN｜Adjective, genitive, plural, neuter",
     GN: "G4413",
-    gloss: ": best",
+    gloss: "best",
   },
   πρωτοστάτην: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
@@ -84956,37 +84956,37 @@ export const wordUsages = {
   σπέρμα: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
     GN: "G4690",
-    gloss: ": seeds",
+    gloss: "seeds",
   },
   Σπέρμα: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
     GN: "G4690",
-    gloss: ": seeds",
+    gloss: "seeds",
   },
   σπέρμασιν: {
     parse: "N-DPN｜Noun, dative, plural, neuter",
     GN: "G4690",
-    gloss: ": seeds",
+    gloss: "seeds",
   },
   σπέρματι: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
     GN: "G4690",
-    gloss: ": seeds",
+    gloss: "seeds",
   },
   σπέρματί: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
     GN: "G4690",
-    gloss: ": seeds",
+    gloss: "seeds",
   },
   σπέρματος: {
     parse: "N-GSN｜Noun, genitive, singular, neuter",
     GN: "G4690",
-    gloss: ": seeds",
+    gloss: "seeds",
   },
   σπερμάτων: {
     parse: "N-GPN｜Noun, genitive, plural, neuter",
     GN: "G4690",
-    gloss: ": seeds",
+    gloss: "seeds",
   },
   σπερμολόγος: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
@@ -90669,125 +90669,125 @@ export const wordUsages = {
   ἐτηρεῖτο: {
     parse: "V-IPI-3S｜Verb, Imperfect, Passive, Indicative, third, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   ἐτήρησα: {
     parse: "V-AAI-1S｜Verb, Aorist, Active, Indicative, first, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   ἐτήρησαν: {
     parse: "V-AAI-3P｜Verb, Aorist, Active, Indicative, third, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   ἐτήρησας: {
     parse: "V-AAI-2S｜Verb, Aorist, Active, Indicative, second, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   ἐτήρησάς: {
     parse: "V-AAI-2S｜Verb, Aorist, Active, Indicative, second, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   ἐτήρουν: {
     parse: "V-IAI-3P｜Verb, Imperfect, Active, Indicative, third, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τετήρηκα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τετήρηκαν: {
     parse: "V-RAI-3P｜Verb, peRfect, Active, Indicative, third, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τετήρηκας: {
     parse: "V-RAI-2S｜Verb, peRfect, Active, Indicative, second, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τετήρηκεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τετηρημένην: {
     parse:
       "V-RPP-ASF｜Verb, peRfect, Passive, Participle, accusative, singular, feminine",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τετηρημένοις: {
     parse:
       "V-RPP-DPM｜Verb, peRfect, Passive, Participle, dative, plural, masculine",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τετήρηται: {
     parse: "V-RPI-3S｜Verb, peRfect, Passive, Indicative, third, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρεῖ: {
     parse: "V-PAI-3S｜Verb, Present, Active, Indicative, third, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τήρει: {
     parse: "V-PAM-2S｜Verb, Present, Active, iMperative, second, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρεῖν: {
     parse: "V-PAN｜Verb, Present, Active, iNfinitive",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρεῖσθαι: {
     parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρεῖτε: {
     parse: "V-PAM-2P｜Verb, Present, Active, iMperative, second, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρῇ: {
     parse: "V-PAS-3S｜Verb, Present, Active, Subjunctive, third, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρηθείη: {
     parse: "V-APO-3S｜Verb, Aorist, Passive, Optative, third, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρηθῆναι: {
     parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρῆσαί: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρήσαντας: {
     parse:
       "V-AAP-APM｜Verb, Aorist, Active, Participle, accusative, plural, masculine",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρήσατε: {
     parse: "V-AAM-2P｜Verb, Aorist, Active, iMperative, second, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρήσει: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
@@ -90797,82 +90797,82 @@ export const wordUsages = {
   τηρήσετε: {
     parse: "V-FAI-2P｜Verb, Future, Active, Indicative, second, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρήσῃ: {
     parse: "V-AAS-3S｜Verb, Aorist, Active, Subjunctive, third, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρήσῃς: {
     parse: "V-AAS-2S｜Verb, Aorist, Active, Subjunctive, second, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρήσητε: {
     parse: "V-AAS-2P｜Verb, Aorist, Active, Subjunctive, second, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τήρησον: {
     parse: "V-AAM-2S｜Verb, Aorist, Active, iMperative, second, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρήσουσιν: {
     parse: "V-FAI-3P｜Verb, Future, Active, Indicative, third, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρήσω: {
     parse: "V-FAI-1S｜Verb, Future, Active, Indicative, first, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηροῦμεν: {
     parse: "V-PAI-1P｜Verb, Present, Active, Indicative, first, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρούμενοι: {
     parse:
       "V-PPP-NPM｜Verb, Present, Passive, Participle, nominative, plural, masculine",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρουμένους: {
     parse:
       "V-PPP-APM｜Verb, Present, Passive, Participle, accusative, plural, masculine",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηροῦντες: {
     parse:
       "V-PAP-NPM｜Verb, Present, Active, Participle, nominative, plural, masculine",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρούντων: {
     parse:
       "V-PAP-GPM｜Verb, Present, Active, Participle, genitive, plural, masculine",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρῶ: {
     parse: "V-PAI-1S｜Verb, Present, Active, Indicative, first, singular",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρῶμεν: {
     parse: "V-PAS-1P｜Verb, Present, Active, Subjunctive, first, plural",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τηρῶν: {
     parse:
       "V-PAP-NSM｜Verb, Present, Active, Participle, nominative, singular, masculine",
     GN: "G5083",
-    gloss: ": protect",
+    gloss: "protect",
   },
   τήρησιν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
@@ -93668,10 +93668,10 @@ export const wordUsages = {
     GN: "G5258",
     gloss: "sleep",
   },
-  ὑπʼ: { parse: "PREP｜Preposition", GN: "G5259", gloss: ": under" },
-  ὑπό: { parse: "PREP｜Preposition", GN: "G5259", gloss: ": under" },
-  ὑπὸ: { parse: "PREP｜Preposition", GN: "G5259", gloss: ": under" },
-  ὑφʼ: { parse: "PREP｜Preposition", GN: "G5259", gloss: ": under" },
+  ὑπʼ: { parse: "PREP｜Preposition", GN: "G5259", gloss: "under" },
+  ὑπό: { parse: "PREP｜Preposition", GN: "G5259", gloss: "under" },
+  ὑπὸ: { parse: "PREP｜Preposition", GN: "G5259", gloss: "under" },
+  ὑφʼ: { parse: "PREP｜Preposition", GN: "G5259", gloss: "under" },
   ὑπέβαλον: {
     parse: "V-2AAI-3P｜Verb, second Aorist, Active, Indicative, third, plural",
     GN: "G5260",
@@ -96785,42 +96785,42 @@ export const wordUsages = {
   φυλακαῖς: {
     parse: "N-DPF｜Noun, dative, plural, feminine",
     GN: "G5438",
-    gloss: ": watch",
+    gloss: "watch",
   },
   φυλακάς: {
     parse: "N-APF｜Noun, accusative, plural, feminine",
     GN: "G5438",
-    gloss: ": watch",
+    gloss: "watch",
   },
   φυλακὰς: {
     parse: "N-APF｜Noun, accusative, plural, feminine",
     GN: "G5438",
-    gloss: ": watch",
+    gloss: "watch",
   },
   φυλακῇ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G5438",
-    gloss: ": watch",
+    gloss: "watch",
   },
   φυλακὴ: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G5438",
-    gloss: ": watch",
+    gloss: "watch",
   },
   φυλακήν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G5438",
-    gloss: ": watch",
+    gloss: "watch",
   },
   φυλακὴν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G5438",
-    gloss: ": watch",
+    gloss: "watch",
   },
   φυλακῆς: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G5438",
-    gloss: ": watch",
+    gloss: "watch",
   },
   φυλακίζων: {
     parse:
@@ -96846,106 +96846,106 @@ export const wordUsages = {
   ἐφύλαξα: {
     parse: "V-AAI-1S｜Verb, Aorist, Active, Indicative, first, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   ἐφυλαξάμην: {
     parse: "V-AMI-1S｜Verb, Aorist, Middle, Indicative, first, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   ἐφυλάξατε: {
     parse: "V-AAI-2P｜Verb, Aorist, Active, Indicative, second, plural",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   ἐφύλαξεν: {
     parse: "V-AAI-3S｜Verb, Aorist, Active, Indicative, third, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάξαι: {
     parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάξατε: {
     parse: "V-AAM-2P｜Verb, Aorist, Active, iMperative, second, plural",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάξει: {
     parse: "V-FAI-3S｜Verb, Future, Active, Indicative, third, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάξῃ: {
     parse: "V-AAS-3S｜Verb, Aorist, Active, Subjunctive, third, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάξῃς: {
     parse: "V-AAS-2S｜Verb, Aorist, Active, Subjunctive, second, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φύλαξον: {
     parse: "V-AAM-2S｜Verb, Aorist, Active, iMperative, second, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσειν: {
     parse: "V-PAN｜Verb, Present, Active, iNfinitive",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσεσθαι: {
     parse: "V-PEN｜Verb, Present, Either middle or passive, iNfinitive",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσεσθε: {
     parse: "V-PMM-2P｜Verb, Present, Middle, iMperative, second, plural",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσῃ: {
     parse: "V-PAS-3S｜Verb, Present, Active, Subjunctive, third, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλασσόμενος: {
     parse:
       "V-PPP-NSM｜Verb, Present, Passive, Participle, nominative, singular, masculine",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσοντες: {
     parse:
       "V-PAP-NPM｜Verb, Present, Active, Participle, nominative, plural, masculine",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσοντι: {
     parse:
       "V-PAP-DSM｜Verb, Present, Active, Participle, dative, singular, masculine",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσου: {
     parse: "V-PMM-2S｜Verb, Present, Middle, iMperative, second, singular",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσουσιν: {
     parse: "V-PAI-3P｜Verb, Present, Active, Indicative, third, plural",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλάσσων: {
     parse:
       "V-PAP-NSM｜Verb, Present, Active, Participle, nominative, singular, masculine",
     GN: "G5442",
-    gloss: ": protect",
+    gloss: "protect",
   },
   φυλαὶ: {
     parse: "N-NPF｜Noun, nominative, plural, feminine",
@@ -97220,57 +97220,57 @@ export const wordUsages = {
   φωναὶ: {
     parse: "N-NPF｜Noun, nominative, plural, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωναῖς: {
     parse: "N-DPF｜Noun, dative, plural, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωνάς: {
     parse: "N-APF｜Noun, accusative, plural, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωνὰς: {
     parse: "N-APF｜Noun, accusative, plural, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωνῇ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωνὴ: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   Φωνὴ: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωνήν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωνὴν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωνῆς: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φωνῶν: {
     parse: "N-GPF｜Noun, genitive, plural, feminine",
     GN: "G5456",
-    gloss: ": voice",
+    gloss: "voice",
   },
   φῶς: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
@@ -99434,7 +99434,7 @@ export const wordUsages = {
   ψῆφον: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G5586",
-    gloss: ": vote",
+    gloss: "vote",
   },
   ψιθυρισμοί: {
     parse: "N-NPM｜Noun, nominative, plural, masculine",
@@ -99454,67 +99454,67 @@ export const wordUsages = {
   ψυχαί: {
     parse: "N-NPF｜Noun, nominative, plural, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχαὶ: {
     parse: "N-NPF｜Noun, nominative, plural, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχαῖς: {
     parse: "N-DPF｜Noun, dative, plural, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχάς: {
     parse: "N-APF｜Noun, accusative, plural, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχὰς: {
     parse: "N-APF｜Noun, accusative, plural, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχῇ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχή: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχὴ: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   Ψυχή: {
     parse: "N-VSF｜Noun, Vocative, singular, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχήν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχὴν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχῆς: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχῶν: {
     parse: "N-GPF｜Noun, genitive, plural, feminine",
     GN: "G5590",
-    gloss: ": animal",
+    gloss: "animal",
   },
   ψυχική: {
     parse: "A-NSF｜Adjective, nominative, singular, feminine",

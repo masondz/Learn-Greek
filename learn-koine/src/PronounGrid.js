@@ -225,7 +225,7 @@ const PronounGrid = ({ reset }) => {
 
   return (
     <div>
-      <p>{gridOption ? gridOption : "Practice Pronoun Grid component"}</p>
+      <p>{word.parse.includes("pronoun") ? gridOption : "Pick a Pronoun"}</p>
     </div>
   );
 };
