@@ -45,6 +45,12 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
       dispatch(setMode("Preposition"));
     } else if (option === "Pronoun") {
       dispatch(setMode("Pronoun"));
+    } else if (option === "Verb") {
+      dispatch(setMode("Verb"));
+    } else if (option === "Particle") {
+      dispatch(setMode("Particle"));
+    } else if (option === "Adverb") {
+      dispatch(setMode("Adverb"));
     } else {
       return console.log("missed styling");
     }

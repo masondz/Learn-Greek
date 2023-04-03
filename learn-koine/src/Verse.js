@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Verse.css";
 import CheckWord from "./CheckWord";
 import Word from "./Word";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectVerseSlice,
@@ -84,6 +85,19 @@ const Verse = () => {
     case "Pronoun":
       practiceGrid = <PronounGrid reset={reset} />;
       break;
+    case "Verb":
+      practiceGrid = (
+        <>
+          <br></br>
+          <br></br>
+          <Link className="button" to={"/verb"}>
+            Go Here To Practice Verbs
+          </Link>
+          <br></br>
+          <br></br>
+        </>
+      );
+      break;
     default:
       practiceGrid = (
         <ArticleGrid
@@ -100,9 +114,9 @@ const Verse = () => {
     let parsedWord = parseWord(verseArray[i].word);
     if (parsedWord.parse.includes(verseMode)) {
       articleCount++;
-    } else if (verseArray[i].partOfSpeech === "Noun") {
+    } /*else if (verseArray[i].partOfSpeech === "Noun") {
       verseArray[i].partOfSpeech = "Noun";
-    }
+    } */
   }
 
   dispatch(setArticleCount(articleCount));
@@ -113,6 +127,9 @@ const Verse = () => {
     "Preposition",
     "Noun and Adjective",
     "Pronoun",
+    "Verb",
+    "Particle",
+    "Adverb",
   ];
 
   const menuLinks = ["vocabulary", "verb"];

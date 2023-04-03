@@ -29,7 +29,9 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   } else if (
     partOfSpeech.includes("Noun") ||
     partOfSpeech.includes("Adjective") ||
-    partOfSpeech.includes("Verb")
+    partOfSpeech.includes("Verb") ||
+    partOfSpeech.includes("Adverb") ||
+    partOfSpeech.includes("Particle")
   ) {
     describeWord = ` - ${partOfSpeech} - "${gloss}"`;
   }

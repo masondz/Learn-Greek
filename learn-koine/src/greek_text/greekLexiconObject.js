@@ -1262,7 +1262,7 @@ export const wordUsages = {
     gloss: "purity",
   },
   ἁγνῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G55",
     gloss: "purely",
   },
@@ -1938,7 +1938,7 @@ export const wordUsages = {
     gloss: "uncertainty",
   },
   ἀδήλως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G84",
     gloss: "uncertainly",
   },
@@ -1989,7 +1989,7 @@ export const wordUsages = {
     gloss: "continuous",
   },
   ἀδιαλείπτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G89",
     gloss: "unceasingly",
   },
@@ -2174,7 +2174,7 @@ export const wordUsages = {
     gloss: "unjust",
   },
   ἀδίκως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G95",
     gloss: "unjustly",
   },
@@ -2265,12 +2265,12 @@ export const wordUsages = {
     gloss: "to sing",
   },
   ἀεὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G104",
     gloss: "always",
   },
   Ἀεὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G104",
     gloss: "always",
   },
@@ -2926,7 +2926,7 @@ export const wordUsages = {
     gloss: "greedy",
   },
   αἰσχροκερδῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G147",
     gloss: "greedily",
   },
@@ -3426,7 +3426,7 @@ export const wordUsages = {
     gloss: "to lack opportunity",
   },
   ἀκαίρως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G171",
     gloss: "unseasonably",
   },
@@ -3581,7 +3581,7 @@ export const wordUsages = {
     gloss: "to ripen",
   },
   Ἀκμὴν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G188",
     gloss: "still",
   },
@@ -4194,7 +4194,7 @@ export const wordUsages = {
     gloss: "strictest",
   },
   ἀκριβέστερον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G0197",
   },
   ἠκρίβωσεν: {
@@ -4203,7 +4203,7 @@ export const wordUsages = {
     gloss: "be exactly",
   },
   ἀκριβῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G199",
     gloss: "exactly",
   },
@@ -4314,7 +4314,7 @@ export const wordUsages = {
     gloss: "to nullify",
   },
   ἀκωλύτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G209",
     gloss: "freely",
   },
@@ -4630,12 +4630,12 @@ export const wordUsages = {
     gloss: "to grind",
   },
   ἀληθῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G230",
     gloss: "truly",
   },
   Ἀληθῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G230",
     gloss: "truly",
   },
@@ -4720,12 +4720,12 @@ export const wordUsages = {
     gloss: "to change",
   },
   ἀλλαχόθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G237",
     gloss: "from elsewhere",
   },
   ἀλλαχοῦ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G237",
     gloss: "from elsewhere",
   },
@@ -4736,7 +4736,7 @@ export const wordUsages = {
     gloss: "to use an analogy",
   },
   Ἁλληλουϊά: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G239",
     gloss: "hallelujah",
   },
@@ -4914,7 +4914,7 @@ export const wordUsages = {
     gloss: "foreigner",
   },
   ἄλλως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G247",
     gloss: "otherwise",
   },
@@ -5011,7 +5011,7 @@ export const wordUsages = {
     gloss: "capture",
   },
   ἅμα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G260",
     gloss: "together",
   },
@@ -5328,7 +5328,7 @@ export const wordUsages = {
     gloss: "blameless",
   },
   ἀμέμπτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G274",
     gloss: "blamelessly",
   },
@@ -5594,8 +5594,8 @@ export const wordUsages = {
     GN: "G301",
     gloss: "Amos",
   },
-  ἄν: { parse: "PRT｜PaRTicle, disjunctive particle", GN: "G302", gloss: "if" },
-  ἂν: { parse: "PRT｜PaRTicle, disjunctive particle", GN: "G302", gloss: "if" },
+  ἄν: { parse: "PRT｜Particle, disjunctive particle", GN: "G302", gloss: "if" },
+  ἂν: { parse: "PRT｜Particle, disjunctive particle", GN: "G302", gloss: "if" },
   ἀνὰ: { parse: "PREP｜Preposition", GN: "G303", gloss: "each" },
   ἀναβαθμούς: {
     parse: "N-APM｜Noun, accusative, plural, masculine",
@@ -6104,7 +6104,7 @@ export const wordUsages = {
     gloss: "necessary",
   },
   ἀναγκαστῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G317",
     gloss: "necessarily",
   },
@@ -6833,7 +6833,7 @@ export const wordUsages = {
     gloss: "indisputable",
   },
   ἀναντιρρήτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G369",
     gloss: "without objection",
   },
@@ -6843,7 +6843,7 @@ export const wordUsages = {
     gloss: "unworthy",
   },
   ἀναξίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G371",
     gloss: "unworthily",
   },
@@ -8439,7 +8439,7 @@ export const wordUsages = {
     gloss: "lawless",
   },
   ἀνόμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G460",
     gloss: "without law",
   },
@@ -8632,7 +8632,7 @@ export const wordUsages = {
     gloss: "be an opponent",
   },
   ἄντικρυς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G481",
     gloss: "opposite",
   },
@@ -8779,7 +8779,7 @@ export const wordUsages = {
     gloss: "Antipatris",
   },
   ἀντιπέρα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G495",
     gloss: "opposite",
   },
@@ -8918,7 +8918,7 @@ export const wordUsages = {
     gloss: "insubordinate",
   },
   ἄνω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G507",
     gloss: "above",
   },
@@ -8928,12 +8928,12 @@ export const wordUsages = {
     gloss: "an upper room",
   },
   ἄνωθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G509",
     gloss: "from above/again",
   },
   ἄνωθέν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G509",
     gloss: "from above/again",
   },
@@ -9058,7 +9058,7 @@ export const wordUsages = {
     gloss: "to deem worthy",
   },
   ἀξίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G516",
     gloss: "appropriately",
   },
@@ -9300,7 +9300,7 @@ export const wordUsages = {
     gloss: "meeting",
   },
   ἅπαξ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G530",
     gloss: "once",
   },
@@ -9674,7 +9674,7 @@ export const wordUsages = {
     gloss: "endless",
   },
   ἀπερισπάστως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G563",
     gloss: "undistracted",
   },
@@ -9986,7 +9986,7 @@ export const wordUsages = {
     gloss: "sound",
   },
   ἁπλῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G574",
     gloss: "without reserve",
   },
@@ -12181,7 +12181,7 @@ export const wordUsages = {
     gloss: "severity",
   },
   ἀποτόμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G664",
     gloss: "severely",
   },
@@ -12313,7 +12313,7 @@ export const wordUsages = {
     gloss: "not giving offence",
   },
   ἀπροσωπολήμπτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G678",
     gloss: "impartially",
   },
@@ -13265,12 +13265,12 @@ export const wordUsages = {
     gloss: "foresail",
   },
   ἄρτι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G737",
     gloss: "now",
   },
   Ἄρτι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G737",
     gloss: "now",
   },
@@ -14063,7 +14063,7 @@ export const wordUsages = {
     gloss: "wineskin",
   },
   ἀσμένως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G780",
     gloss: "gladly",
   },
@@ -14241,7 +14241,7 @@ export const wordUsages = {
     gloss: "assarion",
   },
   ἆσσον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G788",
     gloss: "nearer",
   },
@@ -14466,7 +14466,7 @@ export const wordUsages = {
     gloss: "to secure",
   },
   ἀσφαλῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G806",
     gloss: "securely",
   },
@@ -14501,7 +14501,7 @@ export const wordUsages = {
     gloss: "debauchery",
   },
   ἀσώτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G811",
     gloss: "in debauchery",
   },
@@ -14516,7 +14516,7 @@ export const wordUsages = {
     gloss: "disorderly",
   },
   ἀτάκτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G814",
     gloss: "idly",
   },
@@ -14850,12 +14850,12 @@ export const wordUsages = {
     gloss: "growth",
   },
   αὔριον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G839",
     gloss: "tomorrow",
   },
   Αὔριον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G839",
     gloss: "tomorrow",
   },
@@ -15005,7 +15005,7 @@ export const wordUsages = {
     gloss: "it/she/he",
   },
   αὐτοῦ: {
-    //ADV｜ADVerb or adverb and particle combined this word can have two different uses. going for the most common
+    //ADV｜Adverb or Adverb and particle combined this word can have two different uses. going for the most common
     parse: "P-ASM｜Personal pronoun, genitive, singular, masculine or neuter",
     GN: "G846", //G847
     gloss: "there",
@@ -15502,12 +15502,12 @@ export const wordUsages = {
     gloss: "to leave",
   },
   ἄφνω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G869",
     gloss: "suddenly",
   },
   ἀφόβως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G870",
     gloss: "fearlessly",
   },
@@ -16409,7 +16409,7 @@ export const wordUsages = {
     gloss: "to burden",
   },
   βαρέως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G917",
     gloss: "difficultly",
   },
@@ -18627,7 +18627,7 @@ export const wordUsages = {
     GN: "G1064",
     gloss: "belly",
   },
-  γε: { parse: "PRT-N｜PaRTicle, Negative", GN: "G1065", gloss: "indeed" },
+  γε: { parse: "PRT-N｜Particle, Negative", GN: "G1065", gloss: "indeed" },
   Γεδεών: {
     parse: "N-GSM-P｜Noun, genitive, singular, masculine, Person",
     GN: "G1066",
@@ -20177,7 +20177,7 @@ export const wordUsages = {
     gloss: "genuine",
   },
   γνησίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1104",
     gloss: "genuinely",
   },
@@ -21569,7 +21569,7 @@ export const wordUsages = {
     gloss: "a certain one",
   },
   δεινῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1171",
     gloss: "terribly",
   },
@@ -22090,22 +22090,22 @@ export const wordUsages = {
     gloss: "master",
   },
   δεῦρο: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1204",
     gloss: "come",
   },
   Δεῦρο: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1204",
     gloss: "come",
   },
   δεῦτε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1205",
     gloss: "come",
   },
   Δεῦτε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1205",
     gloss: "come",
   },
@@ -22438,12 +22438,12 @@ export const wordUsages = {
     gloss: "to bind",
   },
   δή: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1211",
     gloss: "so",
   },
   δὴ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1211",
     gloss: "so",
   },
@@ -22560,7 +22560,7 @@ export const wordUsages = {
     gloss: "denarius",
   },
   δήπου: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1222",
     gloss: "surely",
   },
@@ -25379,7 +25379,7 @@ export const wordUsages = {
     gloss: "righteous act",
   },
   δικαίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1346",
     gloss: "rightly",
   },
@@ -25540,12 +25540,12 @@ export const wordUsages = {
     gloss: "to double",
   },
   δίς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1364",
     gloss: "twice",
   },
   δὶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1364",
     gloss: "twice",
   },
@@ -27106,7 +27106,7 @@ export const wordUsages = {
     gloss: "difficult",
   },
   δυσκόλως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1423",
     gloss: "difficultly",
   },
@@ -27172,7 +27172,7 @@ export const wordUsages = {
     gloss: "free gift",
   },
   δωρεὰν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1432",
     gloss: "freely",
   },
@@ -27182,7 +27182,7 @@ export const wordUsages = {
     gloss: "free gift",
   },
   δωρεάν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1432",
     gloss: "freely",
   },
@@ -27245,7 +27245,7 @@ export const wordUsages = {
   },
   Ἔα: { parse: "INJ｜INterJection", GN: "G1436", gloss: "ha!/aha!" },
   ἐάν: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1437",
     gloss: "if",
   },
@@ -27255,7 +27255,7 @@ export const wordUsages = {
     gloss: "if",
   },
   ἐὰν: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1437",
     gloss: "if",
   },
@@ -27407,7 +27407,7 @@ export const wordUsages = {
     gloss: "seventy",
   },
   ἑβδομηκοντάκις: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1441",
     gloss: "seventy times",
   },
@@ -27467,12 +27467,12 @@ export const wordUsages = {
     gloss: "Hebrew",
   },
   Ἑβραϊστί: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1447",
     gloss: "Hebrew",
   },
   Ἑβραϊστὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1447",
     gloss: "Hebrew",
   },
@@ -27603,7 +27603,7 @@ export const wordUsages = {
   ἐγγὺς: { parse: "PREP｜Preposition", GN: "G1451", gloss: "near" },
   Ἐγγύς: { parse: "PREP｜Preposition", GN: "G1451", gloss: "near" },
   ἐγγύτερον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1452",
     gloss: "nearer",
   },
@@ -28227,7 +28227,7 @@ export const wordUsages = {
     gloss: "Gentile-like",
   },
   ἐθνικῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1483",
     gloss: "Gentile-way",
   },
@@ -28303,22 +28303,22 @@ export const wordUsages = {
     gloss: "to have a custom",
   },
   εἰ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1487",
     gloss: "even_though",
   },
   Εἰ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1487",
     gloss: "even_though",
   },
   εἴ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1487",
     gloss: "even_though",
   },
   Εἴ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G1487",
     gloss: "even_though",
   },
@@ -28774,7 +28774,7 @@ export const wordUsages = {
     gloss: "idol",
   },
   εἰκῇ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1500",
     gloss: "in vain",
   },
@@ -29823,7 +29823,7 @@ export const wordUsages = {
     gloss: "to bring in",
   },
   εἶτα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1534",
     gloss: "then",
   },
@@ -29877,7 +29877,7 @@ export const wordUsages = {
     gloss: "each",
   },
   ἑκάστοτε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1539",
     gloss: "always",
   },
@@ -30303,27 +30303,27 @@ export const wordUsages = {
     gloss: "to strip",
   },
   ἐκεῖ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1563",
     gloss: "there",
   },
   Ἐκεῖ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1563",
     gloss: "there",
   },
   ἐκεῖθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1564",
     gloss: "from there",
   },
   Ἐκεῖθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1564",
     gloss: "from there",
   },
   ἐκεῖθέν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1564",
     gloss: "from there",
   },
@@ -30433,7 +30433,7 @@ export const wordUsages = {
     gloss: "that",
   },
   ἐκεῖσε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1566",
     gloss: "there",
   },
@@ -30877,17 +30877,17 @@ export const wordUsages = {
     gloss: "voluntary",
   },
   ἑκουσίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1596",
     gloss: "voluntarily",
   },
   Ἑκουσίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1596",
     gloss: "voluntarily",
   },
   ἔκπαλαι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1597",
     gloss: "of old",
   },
@@ -31235,7 +31235,7 @@ export const wordUsages = {
     gloss: "fervent",
   },
   ἐκτενῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1619",
     gloss: "fervently",
   },
@@ -32226,12 +32226,12 @@ export const wordUsages = {
     gloss: "Hellenist",
   },
   Ἑλληνιστί: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1676",
     gloss: "Greek",
   },
   Ἑλληνιστὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1676",
     gloss: "Greek",
   },
@@ -33500,7 +33500,7 @@ export const wordUsages = {
     gloss: "to oppose",
   },
   ἐνθάδε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1759",
     gloss: "in/to this place",
   },
@@ -33669,7 +33669,7 @@ export const wordUsages = {
     gloss: "under law",
   },
   ἔννυχα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1773",
     gloss: "at night",
   },
@@ -33797,7 +33797,7 @@ export const wordUsages = {
     gloss: "to order",
   },
   ἐντεῦθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1782",
     gloss: "from here",
   },
@@ -33887,7 +33887,7 @@ export const wordUsages = {
     gloss: "resident",
   },
   ἐντὸς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1787",
     gloss: "inside",
   },
@@ -34169,7 +34169,7 @@ export const wordUsages = {
     gloss: "to demand/ask for",
   },
   ἐξαίφνης: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1810",
     gloss: "suddenly",
   },
@@ -34274,7 +34274,7 @@ export const wordUsages = {
     gloss: "to deceive",
   },
   ἐξάπινα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1819",
     gloss: "suddenly",
   },
@@ -34329,7 +34329,7 @@ export const wordUsages = {
     gloss: "to flash forth",
   },
   ἐξαυτῆς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1824",
     gloss: "immediately",
   },
@@ -34692,7 +34692,7 @@ export const wordUsages = {
     gloss: "sixty",
   },
   ἑξῆς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1836",
     gloss: "next/afterward",
   },
@@ -34954,7 +34954,7 @@ export const wordUsages = {
   },
   ἔξω: { parse: "PREP｜Preposition", GN: "G1854", gloss: "out/outside(r)" },
   ἔξωθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1855",
     gloss: "outside",
   },
@@ -35309,7 +35309,7 @@ export const wordUsages = {
     gloss: "when/as soon as",
   },
   ἐπάναγκες: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1876",
     gloss: "necessarily",
   },
@@ -35400,7 +35400,7 @@ export const wordUsages = {
     gloss: "residence",
   },
   ἐπαύριον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1887",
     gloss: "the next day",
   },
@@ -35483,12 +35483,12 @@ export const wordUsages = {
     gloss: "introduction",
   },
   ἔπειτα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1899",
     gloss: "then",
   },
   Ἔπειτα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1899",
     gloss: "then",
   },
@@ -36686,7 +36686,7 @@ export const wordUsages = {
     gloss: "to care",
   },
   ἐπιμελῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G1960",
     gloss: "carefully",
   },
@@ -37956,7 +37956,7 @@ export const wordUsages = {
     gloss: "seven",
   },
   ἑπτάκις: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2034",
     gloss: "seven times",
   },
@@ -39525,17 +39525,17 @@ export const wordUsages = {
     gloss: "last/least",
   },
   ἐσχάτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2079",
     gloss: "extremely",
   },
   ἔσω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2080",
     gloss: "in/inner/inwardly",
   },
   ἔσωθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2081",
     gloss: "inwardly",
   },
@@ -39651,17 +39651,17 @@ export const wordUsages = {
     gloss: "other",
   },
   ἑτέρως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2088",
     gloss: "differently",
   },
   ἔτι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2089",
     gloss: "still",
   },
   Ἔτι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2089",
     gloss: "still",
   },
@@ -39821,7 +39821,7 @@ export const wordUsages = {
     gloss: "ready",
   },
   ἑτοίμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2093",
     gloss: "readily",
   },
@@ -39851,12 +39851,12 @@ export const wordUsages = {
     gloss: "year",
   },
   εὖ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2095",
     gloss: "well/well done!",
   },
   Εὖ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2095",
     gloss: "well/well done!",
   },
@@ -40098,7 +40098,7 @@ export const wordUsages = {
     gloss: "well-pleasing",
   },
   εὐαρέστως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2102",
     gloss: "acceptably",
   },
@@ -40225,22 +40225,22 @@ export const wordUsages = {
     gloss: "suitable",
   },
   εὐθέως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2112",
     gloss: "immediately",
   },
   Εὐθέως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2112",
     gloss: "immediately",
   },
   εὐθύς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2112",
     gloss: "immediately",
   },
   εὐθὺς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2112",
     gloss: "immediately",
   },
@@ -40276,7 +40276,7 @@ export const wordUsages = {
     gloss: "cheerful",
   },
   εὐθύμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2115",
     gloss: "cheerful",
   },
@@ -40347,7 +40347,7 @@ export const wordUsages = {
     gloss: "opportune",
   },
   εὐκαίρως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2122",
     gloss: "well timed",
   },
@@ -40983,7 +40983,7 @@ export const wordUsages = {
     gloss: "pious",
   },
   εὐσεβῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2153",
     gloss: "piously",
   },
@@ -40998,7 +40998,7 @@ export const wordUsages = {
     gloss: "compassionate",
   },
   εὐσχημόνως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2156",
     gloss: "properly",
   },
@@ -41033,7 +41033,7 @@ export const wordUsages = {
     gloss: "proper",
   },
   εὐτόνως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2159",
     gloss: "vehemently",
   },
@@ -41360,7 +41360,7 @@ export const wordUsages = {
     gloss: "to jump on",
   },
   ἐφάπαξ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2178",
     gloss: "once/at once",
   },
@@ -42927,17 +42927,17 @@ export const wordUsages = {
     gloss: "to govern",
   },
   ἡδέως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2234",
     gloss: "gladly",
   },
   ἤδη: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2235",
     gloss: "already",
   },
   Ἤδη: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2235",
     gloss: "already",
   },
@@ -46065,17 +46065,17 @@ export const wordUsages = {
   Ἰησοῦ: {
     parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
     GN: "G2424",
-    gloss: "Joshua",
+    gloss: "Jesus (or Joshua)",
   },
   Ἰησοῦν: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G2424",
-    gloss: "Joshua",
+    gloss: "Jesus (or Joshua)",
   },
   Ἰησοῦς: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
     GN: "G2424",
-    gloss: "Joshua",
+    gloss: "Jesus (or Joshua)",
   },
   ἱκανὰ: {
     parse: "A-APN｜Adjective, accusative, plural, neuter",
@@ -46356,12 +46356,12 @@ export const wordUsages = {
     gloss: "in order that/to",
   },
   ἱνατί: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2444",
     gloss: "why?",
   },
   Ἱνατί: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2444",
     gloss: "why?",
   },
@@ -46442,7 +46442,7 @@ export const wordUsages = {
     gloss: "Jewish",
   },
   Ἰουδαϊκῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2452",
     gloss: "Jew",
   },
@@ -47184,7 +47184,7 @@ export const wordUsages = {
     gloss: "be strong",
   },
   ἴσως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2481",
     gloss: "perhaps",
   },
@@ -47699,7 +47699,7 @@ export const wordUsages = {
     gloss: "to sit down",
   },
   καθεξῆς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2517",
     gloss: "in order",
   },
@@ -48073,7 +48073,7 @@ export const wordUsages = {
     gloss: "insofar as",
   },
   καθόλου: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2527",
     gloss: "at all",
   },
@@ -48406,14 +48406,14 @@ export const wordUsages = {
     GN: "G2545",
     gloss: "to kindle/burn",
   },
-  κἀκεῖ: { parse: "ADV-K｜ADVerb, Kai", GN: "G2546", gloss: "and there" },
+  κἀκεῖ: { parse: "ADV-K｜Adverb, Kai", GN: "G2546", gloss: "and there" },
   κἀκεῖθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2547",
     gloss: "and from there",
   },
   Κἀκεῖθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2547",
     gloss: "and from there",
   },
@@ -48659,7 +48659,7 @@ export const wordUsages = {
     gloss: "to harm",
   },
   κακῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2560",
     gloss: "badly",
   },
@@ -49003,7 +49003,7 @@ export const wordUsages = {
     gloss: "olive tree",
   },
   κάλλιον: {
-    parse: "ADV-C｜ADVerb, Contracted form",
+    parse: "ADV-C｜Adverb, Contracted form",
     GN: "G2566",
     gloss: "good",
   },
@@ -49130,12 +49130,12 @@ export const wordUsages = {
     gloss: "to cover",
   },
   καλῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2573",
     gloss: "well",
   },
   Καλῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2573",
     gloss: "well",
   },
@@ -49207,7 +49207,7 @@ export const wordUsages = {
     gloss: "and/even if",
   },
   Κἂν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2579",
     gloss: "and/even if",
   },
@@ -51844,7 +51844,7 @@ export const wordUsages = {
     gloss: "to reflect",
   },
   κάτω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2736",
     gloss: "under",
   },
@@ -52306,7 +52306,7 @@ export const wordUsages = {
     gloss: "centurion",
   },
   κενῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2761",
     gloss: "vainly",
   },
@@ -55527,7 +55527,7 @@ export const wordUsages = {
     gloss: "crystal",
   },
   κρυφῇ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2931",
     gloss: "in secret",
   },
@@ -55713,7 +55713,7 @@ export const wordUsages = {
     gloss: "captain",
   },
   κυκλόθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2943",
     gloss: "around",
   },
@@ -55741,7 +55741,7 @@ export const wordUsages = {
     gloss: "to surround",
   },
   κύκλῳ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2945",
     gloss: "surrounding",
   },
@@ -56230,7 +56230,7 @@ export const wordUsages = {
     gloss: "[father of Lazarus]",
   },
   λάθρᾳ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2977",
     gloss: "quietly",
   },
@@ -56916,7 +56916,7 @@ export const wordUsages = {
     gloss: "brightness",
   },
   λαμπρῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G2988",
     gloss: "magnificently",
   },
@@ -57784,7 +57784,7 @@ export const wordUsages = {
     gloss: "receiving",
   },
   λίαν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3029",
     gloss: "greatly",
   },
@@ -58466,7 +58466,7 @@ export const wordUsages = {
     gloss: "Lycaonia",
   },
   Λυκαονιστὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3072",
     gloss: "Lycaonian",
   },
@@ -59237,7 +59237,7 @@ export const wordUsages = {
     gloss: "meat market",
   },
   μακρόθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3113",
     gloss: "from afar",
   },
@@ -59299,7 +59299,7 @@ export const wordUsages = {
     gloss: "patience",
   },
   μακροθύμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3116",
     gloss: "patiently",
   },
@@ -59349,12 +59349,12 @@ export const wordUsages = {
     gloss: "Mahalaleel",
   },
   μάλιστα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3122",
     gloss: "especially",
   },
   μᾶλλον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3123",
     gloss: "rather",
   },
@@ -60042,7 +60042,7 @@ export const wordUsages = {
     gloss: "to make futile",
   },
   μάτην: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3155",
     gloss: "in vain",
   },
@@ -60211,7 +60211,7 @@ export const wordUsages = {
     gloss: "to magnify",
   },
   μεγάλως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3171",
     gloss: "greatly",
   },
@@ -60754,22 +60754,22 @@ export const wordUsages = {
     gloss: "malcontent",
   },
   μέν: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3303",
     gloss: "on the other hand",
   },
   μὲν: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3303",
     gloss: "on the other hand",
   },
   Μενοῦν: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3304",
     gloss: "rather",
   },
   μενοῦνγε: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3304",
     gloss: "rather",
   },
@@ -61656,7 +61656,7 @@ export const wordUsages = {
     gloss: "to transport",
   },
   μετέπειτα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3347",
     gloss: "afterward",
   },
@@ -61789,7 +61789,7 @@ export const wordUsages = {
     gloss: "be gentle",
   },
   μετρίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3357",
     gloss: "moderately",
   },
@@ -61825,12 +61825,12 @@ export const wordUsages = {
   },
   μέχρι: { parse: "PREP｜Preposition", GN: "G3360", gloss: "until" },
   μέχρις: { parse: "PREP｜Preposition", GN: "G3360", gloss: "until" },
-  μή: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3361", gloss: "not" },
-  Μή: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3361", gloss: "not" },
-  μὴ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3361", gloss: "not" },
-  Μὴ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3361", gloss: "not" },
+  μή: { parse: "PRT-N｜Particle, Negative", GN: "G3361", gloss: "not" },
+  Μή: { parse: "PRT-N｜Particle, Negative", GN: "G3361", gloss: "not" },
+  μὴ: { parse: "PRT-N｜Particle, Negative", GN: "G3361", gloss: "not" },
+  Μὴ: { parse: "PRT-N｜Particle, Negative", GN: "G3361", gloss: "not" },
   Μηδαμῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3365",
     gloss: "surely not",
   },
@@ -61845,7 +61845,7 @@ export const wordUsages = {
     gloss: "nor",
   },
   Μηδὲ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3366",
     gloss: "nor",
   },
@@ -61915,12 +61915,12 @@ export const wordUsages = {
     gloss: "nothing",
   },
   μηδέποτε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3368",
     gloss: "never",
   },
   μηδέπω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3369",
     gloss: "not yet",
   },
@@ -61930,12 +61930,12 @@ export const wordUsages = {
     gloss: "Medes",
   },
   μηκέτι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3371",
     gloss: "never again",
   },
   Μηκέτι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3371",
     gloss: "never again",
   },
@@ -61997,7 +61997,7 @@ export const wordUsages = {
     gloss: "to disclose",
   },
   μήποτε: {
-    parse: "PRT-I｜PaRTicle, Interrogative",
+    parse: "PRT-I｜Particle, Interrogative",
     GN: "G3379",
     gloss: "lest",
   },
@@ -62012,7 +62012,7 @@ export const wordUsages = {
     gloss: "lest",
   },
   μήπω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3380",
     gloss: "not yet",
   },
@@ -62072,17 +62072,17 @@ export const wordUsages = {
     gloss: "mother",
   },
   μήτι: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3385",
     gloss: "surely not",
   },
   Μήτι: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3385",
     gloss: "surely not",
   },
   "μήτι γε": {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3386",
     gloss: "how much more",
   },
@@ -62721,7 +62721,7 @@ export const wordUsages = {
     gloss: "hardly talking",
   },
   μόγις: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3425",
     gloss: "hardly",
   },
@@ -62834,7 +62834,7 @@ export const wordUsages = {
     gloss: "adulterer",
   },
   μόλις: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3433",
     gloss: "hardly",
   },
@@ -63393,22 +63393,22 @@ export const wordUsages = {
     gloss: "Nathanael",
   },
   ναί: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3483",
     gloss: "yes",
   },
   Ναί: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3483",
     gloss: "yes",
   },
   ναὶ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3483",
     gloss: "yes",
   },
   Ναὶ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3483",
     gloss: "yes",
   },
@@ -63761,7 +63761,7 @@ export const wordUsages = {
     gloss: "youthful",
   },
   νὴ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3513",
     gloss: "as surely as",
   },
@@ -64343,7 +64343,7 @@ export const wordUsages = {
     gloss: "lawyer",
   },
   νομίμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3545",
     gloss: "lawfully",
   },
@@ -64508,7 +64508,7 @@ export const wordUsages = {
     gloss: "New Moon",
   },
   νουνεχῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3562",
     gloss: "wisely",
   },
@@ -64583,22 +64583,22 @@ export const wordUsages = {
     gloss: "bridegroom",
   },
   νῦν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3568",
     gloss: "now",
   },
   Νῦν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3568",
     gloss: "now",
   },
   νυνὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3570",
     gloss: "now",
   },
   Νυνὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3570",
     gloss: "now",
   },
@@ -66084,12 +66084,12 @@ export const wordUsages = {
     gloss: "late fig",
   },
   ὅλως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3654",
     gloss: "at all",
   },
   Ὅλως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3654",
     gloss: "at all",
   },
@@ -66196,7 +66196,7 @@ export const wordUsages = {
     gloss: "to swear",
   },
   ὁμοθυμαδὸν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3661",
     gloss: "united",
   },
@@ -66322,12 +66322,12 @@ export const wordUsages = {
     gloss: "likeness",
   },
   ὁμοίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3668",
     gloss: "similarly",
   },
   Ὁμοίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3668",
     gloss: "similarly",
   },
@@ -66431,7 +66431,7 @@ export const wordUsages = {
     gloss: "confession",
   },
   ὁμολογουμένως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3672",
     gloss: "undeniably",
   },
@@ -66441,7 +66441,7 @@ export const wordUsages = {
     gloss: "of the same trade",
   },
   ὁμοῦ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3674",
     gloss: "together",
   },
@@ -66451,7 +66451,7 @@ export const wordUsages = {
     gloss: "like-minded",
   },
   ὅμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3676",
     gloss: "just as",
   },
@@ -66647,12 +66647,12 @@ export const wordUsages = {
     gloss: "donkey",
   },
   ὄντως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3689",
     gloss: "really",
   },
   Ὄντως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3689",
     gloss: "really",
   },
@@ -66702,7 +66702,7 @@ export const wordUsages = {
     gloss: "hole",
   },
   ὄπισθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3693",
     gloss: "after",
   },
@@ -67208,12 +67208,12 @@ export const wordUsages = {
     gloss: "dawn",
   },
   ὀρθῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3723",
     gloss: "correctly",
   },
   Ὀρθῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3723",
     gloss: "correctly",
   },
@@ -67551,7 +67551,7 @@ export const wordUsages = {
     gloss: "which",
   },
   οὗ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3757",
     gloss: "whither",
   },
@@ -67611,7 +67611,7 @@ export const wordUsages = {
     gloss: "holiness",
   },
   ὁσίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3743",
     gloss: "devoutly",
   },
@@ -67795,22 +67795,22 @@ export const wordUsages = {
     GN: "G3754",
     gloss: "since",
   },
-  οὐ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3756", gloss: "no" },
+  οὐ: { parse: "PRT-N｜Particle, Negative", GN: "G3756", gloss: "no" },
   Οὐ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3757",
     gloss: "whither",
   },
-  οὔ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3756", gloss: "no" },
-  Οὔ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3756", gloss: "no" },
-  οὒ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3756", gloss: "no" },
-  Οὒ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3756", gloss: "no" },
-  οὐκ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3756", gloss: "no" },
-  Οὐκ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3756", gloss: "no" },
-  οὐχ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3780", gloss: "not" },
-  Οὐχ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3780", gloss: "not" },
+  οὔ: { parse: "PRT-N｜Particle, Negative", GN: "G3756", gloss: "no" },
+  Οὔ: { parse: "PRT-N｜Particle, Negative", GN: "G3756", gloss: "no" },
+  οὒ: { parse: "PRT-N｜Particle, Negative", GN: "G3756", gloss: "no" },
+  Οὒ: { parse: "PRT-N｜Particle, Negative", GN: "G3756", gloss: "no" },
+  οὐκ: { parse: "PRT-N｜Particle, Negative", GN: "G3756", gloss: "no" },
+  Οὐκ: { parse: "PRT-N｜Particle, Negative", GN: "G3756", gloss: "no" },
+  οὐχ: { parse: "PRT-N｜Particle, Negative", GN: "G3780", gloss: "not" },
+  Οὐχ: { parse: "PRT-N｜Particle, Negative", GN: "G3780", gloss: "not" },
   Οὐὰ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3758",
     gloss: "aha!",
   },
@@ -67819,7 +67819,7 @@ export const wordUsages = {
   οὐαὶ: { parse: "INJ｜INterJection", GN: "G3759", gloss: "woe!" },
   Οὐαὶ: { parse: "INJ｜INterJection", GN: "G3759", gloss: "woe!" },
   οὐδαμῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3760",
     gloss: "by no means",
   },
@@ -67929,27 +67929,27 @@ export const wordUsages = {
     gloss: "none",
   },
   οὐδέποτε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3763",
     gloss: "never",
   },
   Οὐδέποτε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3763",
     gloss: "never",
   },
   οὐδέπω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3764",
     gloss: "not yet",
   },
   οὐκέτι: {
-    parse: "ADV-N｜ADVerb, Negative",
+    parse: "ADV-N｜Adverb, Negative",
     GN: "G3765",
     gloss: "not any more",
   },
   Οὐκέτι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3765",
     gloss: "not any more",
   },
@@ -67964,12 +67964,12 @@ export const wordUsages = {
     gloss: "therefore/then",
   },
   οὔπω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3768",
     gloss: "not yet",
   },
   Οὔπω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3768",
     gloss: "not yet",
   },
@@ -68009,7 +68009,7 @@ export const wordUsages = {
     gloss: "heavenly",
   },
   οὐρανόθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3771",
     gloss: "from heaven",
   },
@@ -68319,19 +68319,19 @@ export const wordUsages = {
     gloss: "this/he/she/it",
   },
   οὕτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3779",
     gloss: "thus(-ly)",
   },
   Οὕτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3779",
     gloss: "thus(-ly)",
   },
-  οὐχί: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3780", gloss: "not" },
-  Οὐχί: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3780", gloss: "not" },
-  οὐχὶ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3780", gloss: "not" },
-  Οὐχὶ: { parse: "PRT-N｜PaRTicle, Negative", GN: "G3780", gloss: "not" },
+  οὐχί: { parse: "PRT-N｜Particle, Negative", GN: "G3780", gloss: "not" },
+  Οὐχί: { parse: "PRT-N｜Particle, Negative", GN: "G3780", gloss: "not" },
+  οὐχὶ: { parse: "PRT-N｜Particle, Negative", GN: "G3780", gloss: "not" },
+  Οὐχὶ: { parse: "PRT-N｜Particle, Negative", GN: "G3780", gloss: "not" },
   ὀφειλέται: {
     parse: "N-NPM｜Noun, nominative, plural, masculine",
     GN: "G3781",
@@ -68436,17 +68436,17 @@ export const wordUsages = {
     gloss: "to owe",
   },
   ὄφελον: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3785",
     gloss: "I wish!",
   },
   Ὄφελον: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3785",
     gloss: "I wish!",
   },
   ὄφελόν: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G3785",
     gloss: "I wish!",
   },
@@ -68628,12 +68628,12 @@ export const wordUsages = {
     gloss: "fish",
   },
   ὀψὲ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3796",
     gloss: "late",
   },
   Ὀψὲ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3796",
     gloss: "late",
   },
@@ -68853,7 +68853,7 @@ export const wordUsages = {
     gloss: "to instruct",
   },
   παιδιόθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3812",
     gloss: "from childhood",
   },
@@ -68974,12 +68974,12 @@ export const wordUsages = {
     gloss: "to strike",
   },
   πάλαι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3819",
     gloss: "of old",
   },
   Πάλαι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3819",
     gloss: "of old",
   },
@@ -69076,17 +69076,17 @@ export const wordUsages = {
     gloss: "regeneration",
   },
   πάλιν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3825",
     gloss: "again",
   },
   Πάλιν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3825",
     gloss: "again",
   },
   παμπληθεὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3826",
     gloss: "together",
   },
@@ -69116,7 +69116,7 @@ export const wordUsages = {
     gloss: "assembly",
   },
   πανοικεὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3832",
     gloss: "with all the house",
   },
@@ -69141,7 +69141,7 @@ export const wordUsages = {
     gloss: "crafty",
   },
   πανταχοῦ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3837",
     gloss: "everywhere",
   },
@@ -69156,12 +69156,12 @@ export const wordUsages = {
     gloss: "completely",
   },
   πάντῃ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3839",
     gloss: "always",
   },
   πάντοθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3840",
     gloss: "from all sides",
   },
@@ -69176,22 +69176,22 @@ export const wordUsages = {
     gloss: "almighty",
   },
   πάντοτε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3842",
     gloss: "always",
   },
   πάντοτέ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3842",
     gloss: "always",
   },
   πάντως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3843",
     gloss: "surely",
   },
   Πάντως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3843",
     gloss: "surely",
   },
@@ -70532,7 +70532,7 @@ export const wordUsages = {
     gloss: "almost",
   },
   παραπλησίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3898",
     gloss: "similarly",
   },
@@ -70759,7 +70759,7 @@ export const wordUsages = {
     gloss: "be there",
   },
   παραυτίκα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3910",
     gloss: "momentary",
   },
@@ -70813,7 +70813,7 @@ export const wordUsages = {
     gloss: "wintering",
   },
   παραχρῆμα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3916",
     gloss: "instantly",
   },
@@ -72115,7 +72115,7 @@ export const wordUsages = {
     gloss: "to walk",
   },
   πεζῇ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3979",
     gloss: "on foot",
   },
@@ -72794,7 +72794,7 @@ export const wordUsages = {
     gloss: "poor",
   },
   πεντάκις: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3999",
     gloss: "five times",
   },
@@ -73283,7 +73283,7 @@ export const wordUsages = {
     gloss: "to await",
   },
   πέριξ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4038",
     gloss: "around",
   },
@@ -73692,12 +73692,12 @@ export const wordUsages = {
     gloss: "superabundant",
   },
   περισσοτέρως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4056",
     gloss: "superabundantly",
   },
   περισσῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4057",
     gloss: "superabundantly",
   },
@@ -73932,7 +73932,7 @@ export const wordUsages = {
     gloss: "Persis",
   },
   πέρυσι: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4070",
     gloss: "last year",
   },
@@ -74219,7 +74219,7 @@ export const wordUsages = {
     gloss: "bitter",
   },
   πικρῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4090",
     gloss: "bitterly",
   },
@@ -75957,7 +75957,7 @@ export const wordUsages = {
     gloss: "fulfillment",
   },
   πλησίον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4139",
     gloss: "near/neighbor",
   },
@@ -76058,7 +76058,7 @@ export const wordUsages = {
     gloss: "rich",
   },
   πλουσίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4146",
     gloss: "richly",
   },
@@ -76274,7 +76274,7 @@ export const wordUsages = {
     gloss: "spiritual",
   },
   πνευματικῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4153",
     gloss: "spiritually",
   },
@@ -76357,12 +76357,12 @@ export const wordUsages = {
     gloss: "floorlength",
   },
   πόθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4159",
     gloss: "whence",
   },
   Πόθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4159",
     gloss: "whence",
   },
@@ -77137,7 +77137,7 @@ export const wordUsages = {
     gloss: "citizen",
   },
   πολλάκις: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4178",
     gloss: "often",
   },
@@ -77152,7 +77152,7 @@ export const wordUsages = {
     gloss: "wordiness",
   },
   Πολυμερῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4181",
     gloss: "little by little",
   },
@@ -77357,7 +77357,7 @@ export const wordUsages = {
     gloss: "valuable",
   },
   πολυτρόπως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4187",
     gloss: "in many ways",
   },
@@ -77959,17 +77959,17 @@ export const wordUsages = {
     gloss: "sexual sinner",
   },
   πόρρω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4206",
     gloss: "far (away)",
   },
   πορρώτερον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4206",
     gloss: "far (away)",
   },
   πόρρωθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4207",
     gloss: "afar off",
   },
@@ -77994,7 +77994,7 @@ export const wordUsages = {
     gloss: "dealer in purple",
   },
   ποσάκις: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4212",
     gloss: "how often!",
   },
@@ -78166,27 +78166,27 @@ export const wordUsages = {
     gloss: "of what kind?",
   },
   ποτε: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G4218",
     gloss: "once/when",
   },
   ποτέ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G4218",
     gloss: "once/when",
   },
   ποτὲ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G4218",
     gloss: "once/when",
   },
   πότε: {
-    parse: "PRT-I｜PaRTicle, Interrogative",
+    parse: "PRT-I｜Particle, Interrogative",
     GN: "G4219",
     gloss: "when?",
   },
   πότερον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4220",
     gloss: "whether",
   },
@@ -78282,17 +78282,17 @@ export const wordUsages = {
     gloss: "carousing",
   },
   που: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4225",
     gloss: "somewhere",
   },
   πού: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4225",
     gloss: "somewhere",
   },
-  ποῦ: { parse: "ADV-I｜ADVerb, Interrogative", GN: "G4226", gloss: "where?" },
-  Ποῦ: { parse: "ADV-I｜ADVerb, Interrogative", GN: "G4226", gloss: "where?" },
+  ποῦ: { parse: "ADV-I｜Adverb, Interrogative", GN: "G4226", gloss: "where?" },
+  Ποῦ: { parse: "ADV-I｜Adverb, Interrogative", GN: "G4226", gloss: "where?" },
   Πούδης: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
     GN: "G4227",
@@ -78710,7 +78710,7 @@ export const wordUsages = {
     gloss: "before",
   },
   Πρὶν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4250",
     gloss: "before",
   },
@@ -79200,7 +79200,7 @@ export const wordUsages = {
     gloss: "eager",
   },
   προθύμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4290",
     gloss: "eagerly",
   },
@@ -80703,7 +80703,7 @@ export const wordUsages = {
     gloss: "new",
   },
   προσφάτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4373",
     gloss: "recently",
   },
@@ -81282,17 +81282,17 @@ export const wordUsages = {
     gloss: "stern",
   },
   πρωΐ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4404",
     gloss: "early",
   },
   πρωῒ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4404",
     gloss: "early",
   },
   Πρωῒ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4404",
     gloss: "early",
   },
@@ -82039,7 +82039,7 @@ export const wordUsages = {
     gloss: "colt",
   },
   πώποτε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4455",
     gloss: "ever",
   },
@@ -82086,13 +82086,13 @@ export const wordUsages = {
     gloss: "hardening",
   },
   πως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4459",
     gloss: "how?!",
   },
-  πῶς: { parse: "ADV-I｜ADVerb, Interrogative", GN: "G4459", gloss: "how?!" },
+  πῶς: { parse: "ADV-I｜Adverb, Interrogative", GN: "G4459", gloss: "how?!" },
   Πῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4459",
     gloss: "how?!",
   },
@@ -82361,7 +82361,7 @@ export const wordUsages = {
     gloss: "spokesman",
   },
   ῥητῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4490",
     gloss: "expressly",
   },
@@ -82463,7 +82463,7 @@ export const wordUsages = {
     gloss: "Rhodes",
   },
   ῥοιζηδὸν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4500",
     gloss: "with a roar",
   },
@@ -82673,7 +82673,7 @@ export const wordUsages = {
     gloss: "Roman",
   },
   Ῥωμαϊστί: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4515",
     gloss: "in Latin",
   },
@@ -83625,12 +83625,12 @@ export const wordUsages = {
     gloss: "to note",
   },
   σήμερον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4594",
     gloss: "today",
   },
   Σήμερον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4594",
     gloss: "today",
   },
@@ -85183,12 +85183,12 @@ export const wordUsages = {
     gloss: "eager",
   },
   σπουδαιοτέρως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4708",
     gloss: "more eagerly",
   },
   σπουδαίως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4709",
     gloss: "diligently",
   },
@@ -88650,7 +88650,7 @@ export const wordUsages = {
     gloss: "to agree",
   },
   συντόμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4935",
     gloss: "concisely",
   },
@@ -88992,12 +88992,12 @@ export const wordUsages = {
     gloss: "to slaughter",
   },
   σφόδρα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4970",
     gloss: "very",
   },
   σφοδρῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4971",
     gloss: "violently",
   },
@@ -89081,7 +89081,7 @@ export const wordUsages = {
     gloss: "ankle",
   },
   σχεδὸν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4975",
     gloss: "nearly",
   },
@@ -89406,7 +89406,7 @@ export const wordUsages = {
     gloss: "bodily",
   },
   σωματικῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4985",
     gloss: "bodily",
   },
@@ -89533,7 +89533,7 @@ export const wordUsages = {
     gloss: "self-discipline",
   },
   σωφρόνως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G4996",
     gloss: "in self-control",
   },
@@ -89922,12 +89922,12 @@ export const wordUsages = {
     gloss: "grave",
   },
   τάχα: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5029",
     gloss: "perhaps",
   },
   ταχέως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5030",
     gloss: "quickly",
   },
@@ -90219,7 +90219,7 @@ export const wordUsages = {
     gloss: "to perfect",
   },
   τελείως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5049",
     gloss: "completely",
   },
@@ -90642,7 +90642,7 @@ export const wordUsages = {
     gloss: "to melt",
   },
   τηλαυγῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5081",
     gloss: "clearly",
   },
@@ -91788,7 +91788,7 @@ export const wordUsages = {
     gloss: "be bold",
   },
   τολμηρότερον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5112",
     gloss: "more boldly",
   },
@@ -91913,17 +91913,17 @@ export const wordUsages = {
     gloss: "so great",
   },
   τότε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5119",
     gloss: "then",
   },
   Τότε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5119",
     gloss: "then",
   },
   τοὐναντίον: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5121",
     gloss: "instead",
   },
@@ -92209,12 +92209,12 @@ export const wordUsages = {
     gloss: "three months",
   },
   τρίς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5151",
     gloss: "three times",
   },
   τρὶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5151",
     gloss: "three times",
   },
@@ -93421,7 +93421,7 @@ export const wordUsages = {
     gloss: "to wrong",
   },
   ὑπερβαλλόντως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5234",
     gloss: "severely",
   },
@@ -93562,7 +93562,7 @@ export const wordUsages = {
     gloss: "to abound",
   },
   ὑπερπερισσῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5249",
     gloss: "exceedingly",
   },
@@ -95005,7 +95005,7 @@ export const wordUsages = {
     gloss: "to reveal",
   },
   φανερῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5320",
     gloss: "plainly",
   },
@@ -95203,7 +95203,7 @@ export const wordUsages = {
     gloss: "to spare",
   },
   φειδομένως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5340",
     gloss: "sparingly",
   },
@@ -95772,7 +95772,7 @@ export const wordUsages = {
     gloss: "benevolence",
   },
   φιλανθρώπως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5364",
     gloss: "benevolently",
   },
@@ -96053,7 +96053,7 @@ export const wordUsages = {
     gloss: "to aspire",
   },
   φιλοφρόνως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5390",
     gloss: "hospitably",
   },
@@ -96727,7 +96727,7 @@ export const wordUsages = {
     gloss: "thoughtful",
   },
   φρονίμως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5430",
     gloss: "shrewdly",
   },
@@ -97003,7 +97003,7 @@ export const wordUsages = {
     gloss: "natural",
   },
   φυσικῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5447",
     gloss: "physically",
   },
@@ -97669,12 +97669,12 @@ export const wordUsages = {
     gloss: "copper/bronze/coin",
   },
   χαμαί: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5476",
     gloss: "on the ground",
   },
   χαμαὶ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5476",
     gloss: "on the ground",
   },
@@ -98166,12 +98166,12 @@ export const wordUsages = {
     gloss: "widow",
   },
   ἐχθὲς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5504",
     gloss: "yesterday",
   },
   Ἐχθὲς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5504",
     gloss: "yesterday",
   },
@@ -99595,17 +99595,17 @@ export const wordUsages = {
     gloss: "Obed",
   },
   ὧδε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5602",
     gloss: "here",
   },
   Ὧδε: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5602",
     gloss: "here",
   },
   ὧδέ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5602",
     gloss: "here",
   },
@@ -99728,22 +99728,22 @@ export const wordUsages = {
     gloss: "as/when",
   },
   Ὡσαννά: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G5614",
     gloss: "Hosanna",
   },
   Ὡσαννὰ: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G5614",
     gloss: "Hosanna",
   },
   ὡσαύτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5615",
     gloss: "likewise",
   },
   Ὡσαύτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G5615",
     gloss: "likewise",
   },
@@ -99966,7 +99966,7 @@ export const wordUsages = {
     gloss: "be amazed",
   },
   ἐκπερισσῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G6029",
     gloss: "exceedingly",
   },
@@ -99986,7 +99986,7 @@ export const wordUsages = {
     gloss: "derision",
   },
   ἔνθεν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G6033",
     gloss: "hence",
   },
@@ -100068,7 +100068,7 @@ export const wordUsages = {
     gloss: "to settle",
   },
   κατωτέρω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G6053",
     gloss: "lower",
   },
@@ -100119,7 +100119,7 @@ export const wordUsages = {
     gloss: "fog",
   },
   πανταχῇ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G6069",
     gloss: "everywhere",
   },
@@ -100129,7 +100129,7 @@ export const wordUsages = {
     gloss: "to encamp",
   },
   περαιτέρω: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G6071",
     gloss: "further",
   },
@@ -100165,7 +100165,7 @@ export const wordUsages = {
     gloss: "Pyrrhus",
   },
   πρώτως: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G6078",
     gloss: "originally",
   },
@@ -100207,12 +100207,12 @@ export const wordUsages = {
     gloss: "hole",
   },
   ὑπερεκπερισσοῦ: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G6087",
     gloss: "superabundantly",
   },
   ὑπερλίαν: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G6088",
     gloss: "greatly",
   },
@@ -100262,7 +100262,7 @@ export const wordUsages = {
     gloss: "to boast of",
   },
   Εὖγε: {
-    parse: "PRT｜PaRTicle, disjunctive particle",
+    parse: "PRT｜Particle, disjunctive particle",
     GN: "G7530",
     gloss: "well done",
   },
@@ -100272,7 +100272,7 @@ export const wordUsages = {
     gloss: "a vestige",
   },
   τυπικῶς: {
-    parse: "ADV｜ADVerb or adverb and particle combined",
+    parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G9992",
     gloss: "figuratively",
   },
