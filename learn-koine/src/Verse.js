@@ -19,6 +19,7 @@ import "./Menu.css";
 import ConjuctionGrid from "./ConjuctionGrid";
 import PrepositionGrid from "./PrepositionGrid";
 import PronounGrid from "./PronounGrid";
+import VerbGrid from "./VerbGrid";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -86,17 +87,7 @@ const Verse = () => {
       practiceGrid = <PronounGrid reset={reset} />;
       break;
     case "Verb":
-      practiceGrid = (
-        <>
-          <br></br>
-          <br></br>
-          <Link className="button" to={"/verb"}>
-            Go Here To Practice Verbs
-          </Link>
-          <br></br>
-          <br></br>
-        </>
-      );
+      practiceGrid = <VerbGrid verbMode={"parsing"} reset={reset} />;
       break;
     default:
       practiceGrid = (
@@ -114,9 +105,7 @@ const Verse = () => {
     let parsedWord = parseWord(verseArray[i].word);
     if (parsedWord.parse.includes(verseMode)) {
       articleCount++;
-    } /*else if (verseArray[i].partOfSpeech === "Noun") {
-      verseArray[i].partOfSpeech = "Noun";
-    } */
+    }
   }
 
   dispatch(setArticleCount(articleCount));

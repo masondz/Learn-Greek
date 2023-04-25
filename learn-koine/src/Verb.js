@@ -44,14 +44,6 @@ const VerbMenu = ({ setVerbMode }) => {
     let splitOption = option.split(" ");
     let nextVerb = randomWord(wordUsages, "parse", splitOption);
     dispatch(setWord(nextVerb));
-    // if (option === "Present Active Indicative") {
-    //     setVerbMode("Present Active Indicative");
-    //     let nextVerb = randomWord(wordUsages, splitOption);
-    // } else if (option === "Future Active Indicative") {
-    //     setVerbMode("Future Active Indicative")
-    // } else {
-    //    return console.log("missed styling");
-    // }
     setTimeout(() => {
       cycleOpen();
     }, 10);

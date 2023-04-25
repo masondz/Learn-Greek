@@ -1,11 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { wordUsages } from "./greek_text/greekLexiconObject";
+import { selectWordSlice } from "./features/wordSlice";
 import "./Word.css";
+import { useSelector } from "react-redux";
 
-const VerbGrid = ({ verb, dispatch, setWord, randomWord, verbMode }) => {
+const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
   const [checkParse, setCheckParse] = useState(
     "Pick correct person and number"
   );
+
+  const word = useSelector(selectWordSlice);
+
+  useEffect(() => {
+    let caseOptions = document.getElementsByClassName("case-option");
+    if (caseOptions) {
+      for (let i = 0; i < caseOptions.length; i++) {
+        caseOptions[i].className = "case-option";
+      }
+    }
+  }, [word, reset]);
 
   const handleNext = () => {
     let caseOptions = document.getElementsByClassName("case-option");
@@ -20,6 +33,7 @@ const VerbGrid = ({ verb, dispatch, setWord, randomWord, verbMode }) => {
   let numCorrect = 0;
 
   const isParsed = () => {
+    console.log(verbMode);
     console.log("check parsed thing");
     numCorrect++;
     if (numCorrect === 2) {
@@ -34,10 +48,13 @@ const VerbGrid = ({ verb, dispatch, setWord, randomWord, verbMode }) => {
   };
 
   const onClick = (e) => {
-    if (verb.parse.includes(e.target.innerHTML)) {
+    console.log(word);
+    if (word.parse.includes(e.target.innerHTML)) {
       console.log("correct!");
       e.target.className = e.target.className + " correct";
-      isParsed();
+      if (verbMode !== "parsing") {
+        isParsed();
+      }
     } else {
       console.log("wrong!");
       e.target.className = e.target.className + " wrong";
