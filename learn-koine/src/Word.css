@@ -52,6 +52,13 @@
   font-weight: bold;
 }
 
+.case-option-disabled {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0.5;
+}
+
 .cases div {
   margin-bottom: 10px;
   padding: 10px;

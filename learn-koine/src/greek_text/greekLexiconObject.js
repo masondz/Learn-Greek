@@ -27,7 +27,7 @@ export const wordUsages = {
     gloss: "not burdensome",
   },
   Αββα: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G5",
     gloss: "Abba",
   },
@@ -67,7 +67,7 @@ export const wordUsages = {
     gloss: "Abiud",
   },
   Ἀβραάμ: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G11",
     gloss: "Abraham",
   },
@@ -166,12 +166,12 @@ export const wordUsages = {
     gloss: "good-doer",
   },
   ἀγαθέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G18",
     gloss: "good-doer",
   },
   ἀγαθὲ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G18",
     gloss: "good-doer",
   },
@@ -532,7 +532,7 @@ export const wordUsages = {
   },
   ἠγαπημένοι: {
     parse:
-      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative, plural, masculine",
+      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative or nominative, plural, masculine",
     GN: "G25",
     gloss: "to love",
   },
@@ -619,7 +619,7 @@ export const wordUsages = {
     gloss: "beloved",
   },
   Ἀγαπητέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G27",
     gloss: "beloved",
   },
@@ -629,17 +629,17 @@ export const wordUsages = {
     gloss: "beloved",
   },
   ἀγαπητοὶ: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G27",
     gloss: "beloved",
   },
   ἀγαπητοί: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G27",
     gloss: "beloved",
   },
   Ἀγαπητοί: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G27",
     gloss: "beloved",
   },
@@ -968,12 +968,12 @@ export const wordUsages = {
     gloss: "saint",
   },
   ἅγιε: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G40",
     gloss: "saint",
   },
   ἅγιοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G40",
     gloss: "saint",
   },
@@ -993,7 +993,7 @@ export const wordUsages = {
     gloss: "saint",
   },
   ἅγιος: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G40",
     gloss: "saint",
   },
@@ -1453,7 +1453,7 @@ export const wordUsages = {
     gloss: "wild",
   },
   Ἀγρίππα: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G67",
     gloss: "Agrippa",
   },
@@ -1838,27 +1838,27 @@ export const wordUsages = {
     gloss: "sister",
   },
   ἀδελφέ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G80",
     gloss: "brother",
   },
   Ἀδελφέ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G80",
     gloss: "brother",
   },
   ἀδελφοί: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G80",
     gloss: "brother",
   },
   ἀδελφοὶ: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G80",
     gloss: "brother",
   },
   Ἀδελφοί: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G80",
     gloss: "brother",
   },
@@ -2437,7 +2437,7 @@ export const wordUsages = {
     gloss: "Athens",
   },
   Ἀθηναῖοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G117",
     gloss: "Athenian",
   },
@@ -2603,7 +2603,7 @@ export const wordUsages = {
     gloss: "to bleed",
   },
   Αἰνέα: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G132",
     gloss: "Aeneas",
   },
@@ -3395,7 +3395,7 @@ export const wordUsages = {
     gloss: "unclean",
   },
   ἀκάθαρτον: {
-    parse: "A-VSN｜Adjective, Vocative, singular, neuter",
+    parse: "A-VSN｜Adjective, Vocative or nominative, singular, neuter",
     GN: "G169",
     gloss: "unclean",
   },
@@ -4366,7 +4366,7 @@ export const wordUsages = {
     gloss: "inexpressible",
   },
   ἄλαλον: {
-    parse: "A-VSN｜Adjective, Vocative, singular, neuter",
+    parse: "A-VSN｜Adjective, Vocative or nominative, singular, neuter",
     GN: "G216",
     gloss: "mute",
   },
@@ -4604,7 +4604,7 @@ export const wordUsages = {
     gloss: "true",
   },
   ἀληθινός: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G228",
     gloss: "true",
   },
@@ -5226,7 +5226,7 @@ export const wordUsages = {
     gloss: "without witness",
   },
   ἁμαρτωλοί: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G268",
     gloss: "sinful",
   },
@@ -6813,7 +6813,7 @@ export const wordUsages = {
     gloss: "to regain senses",
   },
   Ἁνανία: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G367",
     gloss: "Ananias",
   },
@@ -7676,12 +7676,12 @@ export const wordUsages = {
     gloss: "husband",
   },
   ἄνδρες: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G435",
     gloss: "husband",
   },
   Ἄνδρες: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G435",
     gloss: "husband",
   },
@@ -7711,7 +7711,7 @@ export const wordUsages = {
     gloss: "husband",
   },
   ἄνερ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G435",
     gloss: "husband",
   },
@@ -7840,12 +7840,12 @@ export const wordUsages = {
     gloss: "murderer",
   },
   ἄνθρωπε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G444",
     gloss: "a human",
   },
   Ἄνθρωπε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G444",
     gloss: "a human",
   },
@@ -8149,7 +8149,7 @@ export const wordUsages = {
     gloss: "Annas",
   },
   ἀνόητοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G453",
     gloss: "foolish",
   },
@@ -9679,7 +9679,7 @@ export const wordUsages = {
     gloss: "undistracted",
   },
   ἀπερίτμητοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G564",
     gloss: "uncircumcised",
   },
@@ -9951,7 +9951,7 @@ export const wordUsages = {
     gloss: "unbelieving",
   },
   ἄπιστος: {
-    parse: "A-VSF｜Adjective, Vocative, singular, feminine",
+    parse: "A-VSF｜Adjective, Vocative or nominative, singular, feminine",
     GN: "G571",
     gloss: "unbelieving",
   },
@@ -10962,7 +10962,7 @@ export const wordUsages = {
   },
   ἀποκτείνουσα: {
     parse:
-      "V-PAP-VSF｜Verb, Present, Active, Participle, Vocative, singular, feminine",
+      "V-PAP-VSF｜Verb, Present, Active, Participle, Vocative or nominative, singular, feminine",
     GN: "G615",
     gloss: "to kill",
   },
@@ -11975,7 +11975,7 @@ export const wordUsages = {
     gloss: "apostleship",
   },
   ἀπόστολοι: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G652",
     gloss: "apostle",
   },
@@ -13683,7 +13683,7 @@ export const wordUsages = {
     gloss: "ruler",
   },
   Ἄρχοντες: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G758",
     gloss: "ruler",
   },
@@ -15628,7 +15628,7 @@ export const wordUsages = {
     gloss: "foolish",
   },
   ἄφρονες: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G878",
     gloss: "foolish",
   },
@@ -15638,12 +15638,12 @@ export const wordUsages = {
     gloss: "foolish",
   },
   ἄφρων: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G878",
     gloss: "foolish",
   },
   Ἄφρων: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G878",
     gloss: "foolish",
   },
@@ -15791,7 +15791,8 @@ export const wordUsages = {
     gloss: "Baal",
   },
   Βαβυλὼν: {
-    parse: "N-VSF-L｜Noun, Vocative, singular, feminine, Location",
+    parse:
+      "N-VSF-L｜Noun, Vocative or nominative, singular, feminine, Location",
     GN: "G897",
     gloss: "Babylon",
   },
@@ -16429,7 +16430,7 @@ export const wordUsages = {
     gloss: "Bar-Jesus",
   },
   Βαριωνᾶ: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G920",
     gloss: "Bar-Jonah",
   },
@@ -16633,7 +16634,7 @@ export const wordUsages = {
     gloss: "king",
   },
   βασιλεῦ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G935",
     gloss: "king",
   },
@@ -16643,7 +16644,7 @@ export const wordUsages = {
     gloss: "king",
   },
   βασιλεὺς: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G935",
     gloss: "king",
   },
@@ -16910,7 +16911,7 @@ export const wordUsages = {
   },
   βδελυσσόμενος: {
     parse:
-      "V-PNP-VSM｜Verb, Present, middle or passive depoNent, Participle, Vocative, singular, masculine",
+      "V-PNP-VSM｜Verb, Present, middle or passive depoNent, Participle, Vocative or nominative, singular, masculine",
     GN: "G948",
     gloss: "to abhor",
   },
@@ -17089,12 +17090,14 @@ export const wordUsages = {
     gloss: "Bethesda",
   },
   Βηθλέεμ: {
-    parse: "N-VSF-L｜Noun, Vocative, singular, feminine, Location",
+    parse:
+      "N-VSF-L｜Noun, Vocative or nominative, singular, feminine, Location",
     GN: "G965",
     gloss: "Bethlehem",
   },
   Βηθσαϊδά: {
-    parse: "N-VSF-L｜Noun, Vocative, singular, feminine, Location",
+    parse:
+      "N-VSF-L｜Noun, Vocative or nominative, singular, feminine, Location",
     GN: "G966",
     gloss: "Bethsaida",
   },
@@ -18039,7 +18042,7 @@ export const wordUsages = {
     gloss: "to sail slowly",
   },
   βραδεῖς: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G1021",
     gloss: "slow",
   },
@@ -18364,7 +18367,8 @@ export const wordUsages = {
     gloss: "milk",
   },
   Γαλάται: {
-    parse: "N-VPM-LG｜Noun, Vocative, plural, masculine, Location Gentilic",
+    parse:
+      "N-VPM-LG｜Noun, Vocative or nominative, plural, masculine, Location Gentilic",
     GN: "G1052",
     gloss: "Galatian",
   },
@@ -18410,7 +18414,8 @@ export const wordUsages = {
     gloss: "(Sea of )Galilee",
   },
   Γαλιλαῖοι: {
-    parse: "N-VPM-LG｜Noun, Vocative, plural, masculine, Location Gentilic",
+    parse:
+      "N-VPM-LG｜Noun, Vocative or nominative, plural, masculine, Location Gentilic",
     GN: "G1057",
     gloss: "Galilean",
   },
@@ -18675,7 +18680,7 @@ export const wordUsages = {
   },
   γελῶντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G1070",
     gloss: "to laugh",
   },
@@ -18760,7 +18765,7 @@ export const wordUsages = {
     gloss: "generation",
   },
   γενεὰ: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G1074",
     gloss: "generation",
   },
@@ -19007,12 +19012,12 @@ export const wordUsages = {
     gloss: "fruit",
   },
   γεννήματα: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G1081",
     gloss: "fruit",
   },
   Γεννήματα: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G1081",
     gloss: "fruit",
   },
@@ -19175,7 +19180,7 @@ export const wordUsages = {
     gloss: "planet",
   },
   γῆ: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G1093",
     gloss: "planet",
   },
@@ -20162,7 +20167,7 @@ export const wordUsages = {
     gloss: "one who bleaches",
   },
   γνήσιε: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G1103",
     gloss: "genuine",
   },
@@ -20508,7 +20513,7 @@ export const wordUsages = {
     gloss: "something written",
   },
   γραμματεῖς: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G1122",
     gloss: "scribe",
   },
@@ -20963,12 +20968,12 @@ export const wordUsages = {
     gloss: "feminine",
   },
   γύναι: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G1135",
     gloss: "wife",
   },
   Γύναι: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G1135",
     gloss: "wife",
   },
@@ -20993,7 +20998,7 @@ export const wordUsages = {
     gloss: "wife",
   },
   γυναῖκες: {
-    parse: "N-VPF｜Noun, Vocative, plural, feminine",
+    parse: "N-VPF｜Noun, Vocative or nominative, plural, feminine",
     GN: "G1135",
     gloss: "wife",
   },
@@ -22055,12 +22060,12 @@ export const wordUsages = {
     gloss: "prisoner",
   },
   δέσποτα: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1203",
     gloss: "master",
   },
   Δέσποτα: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1203",
     gloss: "master",
   },
@@ -22085,7 +22090,7 @@ export const wordUsages = {
     gloss: "master",
   },
   δεσπότης: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1203",
     gloss: "master",
   },
@@ -23808,7 +23813,7 @@ export const wordUsages = {
   },
   διεστραμμένη: {
     parse:
-      "V-RPP-VSF｜Verb, peRfect, Passive, Participle, Vocative, singular, feminine",
+      "V-RPP-VSF｜Verb, peRfect, Passive, Participle, Vocative or nominative, singular, feminine",
     GN: "G1294",
     gloss: "to pervert",
   },
@@ -24207,12 +24212,12 @@ export const wordUsages = {
     gloss: "teaching",
   },
   διδάσκαλε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1320",
     gloss: "teacher",
   },
   Διδάσκαλε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1320",
     gloss: "teacher",
   },
@@ -24316,7 +24321,7 @@ export const wordUsages = {
   },
   διδάσκων: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G1321",
     gloss: "to teach",
   },
@@ -25142,7 +25147,7 @@ export const wordUsages = {
     gloss: "just",
   },
   δίκαιε: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G1342",
     gloss: "just",
   },
@@ -25576,7 +25581,7 @@ export const wordUsages = {
   },
   διϋλίζοντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G1368",
     gloss: "to strain out",
   },
@@ -25665,7 +25670,7 @@ export const wordUsages = {
     gloss: "thirst",
   },
   δίψυχοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G1374",
     gloss: "double-minded",
   },
@@ -26477,12 +26482,12 @@ export const wordUsages = {
     gloss: "slave",
   },
   δοῦλε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1401",
     gloss: "slave",
   },
   Δοῦλε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1401",
     gloss: "slave",
   },
@@ -26497,7 +26502,7 @@ export const wordUsages = {
     gloss: "slave",
   },
   δοῦλοι: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G1401",
     gloss: "slave",
   },
@@ -28242,7 +28247,7 @@ export const wordUsages = {
     gloss: "Gentiles",
   },
   ἔθνη: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G1484",
     gloss: "Gentiles",
   },
@@ -29206,7 +29211,7 @@ export const wordUsages = {
   },
   ὢν: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G1510",
     gloss: "to be",
   },
@@ -32763,7 +32768,7 @@ export const wordUsages = {
   },
   ἐμπεπλησμένοι: {
     parse:
-      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative, plural, masculine",
+      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative or nominative, plural, masculine",
     GN: "G1705",
     gloss: "to fill up",
   },
@@ -36859,7 +36864,7 @@ export const wordUsages = {
     gloss: "longing",
   },
   ἐπιπόθητοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G1973",
     gloss: "longed for",
   },
@@ -37050,12 +37055,12 @@ export const wordUsages = {
     gloss: "to know/understand",
   },
   ἐπιστάτα: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1988",
     gloss: "master",
   },
   Ἐπιστάτα: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G1988",
     gloss: "master",
   },
@@ -38379,7 +38384,7 @@ export const wordUsages = {
   },
   ἐργαζόμενοι: {
     parse:
-      "V-PNP-VPM｜Verb, Present, middle or passive depoNent, Participle, Vocative, plural, masculine",
+      "V-PNP-VPM｜Verb, Present, middle or passive depoNent, Participle, Vocative or nominative, plural, masculine",
     GN: "G2038",
     gloss: "to work",
   },
@@ -39550,7 +39555,7 @@ export const wordUsages = {
     gloss: "inner",
   },
   Ἑταῖρε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2083",
     gloss: "friend",
   },
@@ -40420,7 +40425,7 @@ export const wordUsages = {
   },
   εὐλογημένοι: {
     parse:
-      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative, plural, masculine",
+      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative or nominative, plural, masculine",
     GN: "G2127",
     gloss: "to praise/bless",
   },
@@ -41365,7 +41370,7 @@ export const wordUsages = {
     gloss: "once/at once",
   },
   Ἐφέσιοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G2180",
     gloss: "Ephesian",
   },
@@ -41514,7 +41519,7 @@ export const wordUsages = {
     gloss: "hostility",
   },
   ἐχθρὲ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G2190",
     gloss: "enemy",
   },
@@ -41920,7 +41925,7 @@ export const wordUsages = {
     gloss: "Zebulun",
   },
   Ζακχαῖε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G2195",
     gloss: "Zacchaeus",
   },
@@ -41935,7 +41940,7 @@ export const wordUsages = {
     gloss: "Zerah",
   },
   Ζαχαρία: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G2197",
     gloss: "Zechariah",
   },
@@ -43007,7 +43012,7 @@ export const wordUsages = {
     gloss: "to come/be present",
   },
   ἠλὶ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2241",
     gloss: "Eli",
   },
@@ -43477,7 +43482,7 @@ export const wordUsages = {
     gloss: "deadly",
   },
   θάνατε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2288",
     gloss: "death",
   },
@@ -44061,7 +44066,7 @@ export const wordUsages = {
   },
   θέλοντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G2309",
     gloss: "to will/desire",
   },
@@ -44193,12 +44198,12 @@ export const wordUsages = {
     gloss: "God-breathed",
   },
   θεέ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2316",
     gloss: "God",
   },
   Θεέ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2316",
     gloss: "God",
   },
@@ -44228,12 +44233,12 @@ export const wordUsages = {
     gloss: "God",
   },
   θεός: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, nominative, singular, masculine",
     GN: "G2316",
     gloss: "God",
   },
   θεὸς: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, nominative, singular, masculine",
     GN: "G2316",
     gloss: "God",
   },
@@ -44278,7 +44283,7 @@ export const wordUsages = {
     gloss: "deity",
   },
   Θεόφιλε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G2321",
     gloss: "Theophilus",
   },
@@ -45199,7 +45204,7 @@ export const wordUsages = {
     gloss: "Thyatira",
   },
   θύγατερ: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G2364",
     gloss: "daughter",
   },
@@ -45219,7 +45224,7 @@ export const wordUsages = {
     gloss: "daughter",
   },
   Θυγατέρες: {
-    parse: "N-VPF｜Noun, Vocative, plural, feminine",
+    parse: "N-VPF｜Noun, Vocative or nominative, plural, feminine",
     GN: "G2364",
     gloss: "daughter",
   },
@@ -45229,7 +45234,7 @@ export const wordUsages = {
     gloss: "daughter",
   },
   θυγάτηρ: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G2364",
     gloss: "daughter",
   },
@@ -45733,7 +45738,7 @@ export const wordUsages = {
     gloss: "Jason",
   },
   Ἰατρέ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2395",
     gloss: "physician",
   },
@@ -46018,12 +46023,14 @@ export const wordUsages = {
     gloss: "Jerusalem",
   },
   Ἰερουσαλήμ: {
-    parse: "N-VSF-L｜Noun, Vocative, singular, feminine, Location",
+    parse:
+      "N-VSF-L｜Noun, Vocative or nominative, singular, feminine, Location",
     GN: "G2419",
     gloss: "Jerusalem",
   },
   Ἰερουσαλὴμ: {
-    parse: "N-VSF-L｜Noun, Vocative, singular, feminine, Location",
+    parse:
+      "N-VSF-L｜Noun, Vocative or nominative, singular, feminine, Location",
     GN: "G2419",
     gloss: "Jerusalem",
   },
@@ -46063,7 +46070,7 @@ export const wordUsages = {
     gloss: "Jechoniah",
   },
   Ἰησοῦ: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G2424",
     gloss: "Jesus (or Joshua)",
   },
@@ -46406,7 +46413,7 @@ export const wordUsages = {
     gloss: "poison/rust",
   },
   Ἰούδα: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G2455",
     gloss: "Judah",
   },
@@ -46447,7 +46454,8 @@ export const wordUsages = {
     gloss: "Jew",
   },
   Ἰουδαῖοι: {
-    parse: "A-VPM-PG｜Adjective, Vocative, plural, masculine, Person Gentilic",
+    parse:
+      "A-VPM-PG｜Adjective, Vocative or nominative, plural, masculine, Person Gentilic",
     GN: "G2453",
     gloss: "Jewish",
   },
@@ -46693,7 +46701,8 @@ export const wordUsages = {
     gloss: "like-minded",
   },
   Ἰσραήλ: {
-    parse: "N-VSM-L｜Noun, Vocative, singular, masculine, Location",
+    parse:
+      "N-VSM-L｜Noun, Vocative or nominative, singular, masculine, Location",
     GN: "G2474",
     gloss: "Israel",
   },
@@ -46703,7 +46712,8 @@ export const wordUsages = {
     gloss: "Israel",
   },
   Ἰσραηλῖται: {
-    parse: "N-VPM-PG｜Noun, Vocative, plural, masculine, Person Gentilic",
+    parse:
+      "N-VPM-PG｜Noun, Vocative or nominative, plural, masculine, Person Gentilic",
     GN: "G2475",
     gloss: "Israelite",
   },
@@ -47012,7 +47022,7 @@ export const wordUsages = {
     gloss: "to get acquainted",
   },
   ἰσχυρά: {
-    parse: "A-VSF｜Adjective, Vocative, singular, feminine",
+    parse: "A-VSF｜Adjective, Vocative or nominative, singular, feminine",
     GN: "G2478",
     gloss: "strong",
   },
@@ -47350,7 +47360,7 @@ export const wordUsages = {
     gloss: "Joseph",
   },
   Ἰωσὴφ: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G2501",
     gloss: "Joseph",
   },
@@ -47767,7 +47777,7 @@ export const wordUsages = {
   },
   καθεύδων: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G2518",
     gloss: "to sleep",
   },
@@ -49247,7 +49257,8 @@ export const wordUsages = {
     gloss: "rule",
   },
   Καφαρναούμ: {
-    parse: "N-VSF-L｜Noun, Vocative, singular, feminine, Location",
+    parse:
+      "N-VSF-L｜Noun, Vocative or nominative, singular, feminine, Location",
     GN: "G2584",
     gloss: "Capernaum",
   },
@@ -49323,7 +49334,7 @@ export const wordUsages = {
     gloss: "heart",
   },
   καρδιογνῶστα: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2589",
     gloss: "heart-knower",
   },
@@ -50460,7 +50471,7 @@ export const wordUsages = {
   },
   καταλύων: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G2647",
     gloss: "to destroy/lodge",
   },
@@ -50698,7 +50709,7 @@ export const wordUsages = {
   },
   καταπίνοντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G2666",
     gloss: "to swallow",
   },
@@ -50802,7 +50813,7 @@ export const wordUsages = {
   },
   κατηραμένοι: {
     parse:
-      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative, plural, masculine",
+      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative or nominative, plural, masculine",
     GN: "G2672",
     gloss: "to curse",
   },
@@ -51279,7 +51290,7 @@ export const wordUsages = {
     gloss: "to despise",
   },
   καταφρονηταί: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G2707",
     gloss: "despiser",
   },
@@ -51789,7 +51800,7 @@ export const wordUsages = {
   },
   κατοικοῦντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G2730",
     gloss: "to dwell",
   },
@@ -52216,7 +52227,7 @@ export const wordUsages = {
     gloss: "empty",
   },
   κενέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G2756",
     gloss: "empty",
   },
@@ -52713,7 +52724,7 @@ export const wordUsages = {
   },
   κηρύσσων: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G2784",
     gloss: "to preach",
   },
@@ -54109,7 +54120,7 @@ export const wordUsages = {
   },
   κεκονιαμένε: {
     parse:
-      "V-RPP-VSM｜Verb, peRfect, Passive, Participle, Vocative, singular, masculine",
+      "V-RPP-VSM｜Verb, peRfect, Passive, Participle, Vocative or nominative, singular, masculine",
     GN: "G2867",
     gloss: "to whitewash",
   },
@@ -54215,7 +54226,7 @@ export const wordUsages = {
   },
   κοπιῶντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G2872",
     gloss: "to labor",
   },
@@ -54313,7 +54324,7 @@ export const wordUsages = {
     gloss: "raven",
   },
   κοράσιον: {
-    parse: "N-VSN｜Noun, Vocative, singular, neuter",
+    parse: "N-VSN｜Noun, Vocative or nominative, singular, neuter",
     GN: "G2877",
     gloss: "girl",
   },
@@ -54350,7 +54361,8 @@ export const wordUsages = {
     gloss: "to satisfy",
   },
   Κορίνθιοι: {
-    parse: "N-VPM-LG｜Noun, Vocative, plural, masculine, Location Gentilic",
+    parse:
+      "N-VPM-LG｜Noun, Vocative or nominative, plural, masculine, Location Gentilic",
     GN: "G2881",
     gloss: "Corinthian",
   },
@@ -54370,7 +54382,7 @@ export const wordUsages = {
     gloss: "Corinth",
   },
   Κορνήλιε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G2883",
     gloss: "Cornelius",
   },
@@ -54822,7 +54834,7 @@ export const wordUsages = {
     gloss: "to grasp/seize",
   },
   κράτιστε: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G2903",
     gloss: "excellent",
   },
@@ -55284,7 +55296,7 @@ export const wordUsages = {
   },
   κρίνων: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G2919",
     gloss: "to judge",
   },
@@ -55868,7 +55880,7 @@ export const wordUsages = {
     gloss: "lady",
   },
   κυρία: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G2959",
     gloss: "lady",
   },
@@ -55914,27 +55926,27 @@ export const wordUsages = {
     gloss: "to lord over",
   },
   κύριε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2962",
     gloss: "master",
   },
   Κύριε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2962",
     gloss: "master",
   },
   Κύριέ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2962",
     gloss: "master",
   },
   κύριοι: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G2962",
     gloss: "master",
   },
   Κύριοι: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G2962",
     gloss: "master",
   },
@@ -55959,7 +55971,7 @@ export const wordUsages = {
     gloss: "master",
   },
   κύριος: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2962",
     gloss: "master",
   },
@@ -55969,7 +55981,7 @@ export const wordUsages = {
     gloss: "master",
   },
   κύριός: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2962",
     gloss: "master",
   },
@@ -56173,7 +56185,7 @@ export const wordUsages = {
     gloss: "deaf/mute",
   },
   κωφὸν: {
-    parse: "A-VSN｜Adjective, Vocative, singular, neuter",
+    parse: "A-VSN｜Adjective, Vocative or nominative, singular, neuter",
     GN: "G2974",
     gloss: "deaf/mute",
   },
@@ -56215,7 +56227,7 @@ export const wordUsages = {
     gloss: "to choose by lot",
   },
   Λάζαρε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G2976",
     gloss: "[father of Lazarus]",
   },
@@ -57002,7 +57014,7 @@ export const wordUsages = {
     gloss: "a people",
   },
   λαός: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G2992",
     gloss: "a people",
   },
@@ -57362,7 +57374,7 @@ export const wordUsages = {
   },
   λέγοντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G3004",
     gloss: "call",
   },
@@ -57435,7 +57447,7 @@ export const wordUsages = {
   },
   λέγων: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G3004",
     gloss: "call",
   },
@@ -57896,7 +57908,7 @@ export const wordUsages = {
   },
   λιθοβολοῦσα: {
     parse:
-      "V-PAP-VSF｜Verb, Present, Active, Participle, Vocative, singular, feminine",
+      "V-PAP-VSF｜Verb, Present, Active, Participle, Vocative or nominative, singular, feminine",
     GN: "G3036",
     gloss: "to stone",
   },
@@ -59537,7 +59549,7 @@ export const wordUsages = {
     gloss: "pearl",
   },
   Μάρθα: {
-    parse: "N-VSF-P｜Noun, Vocative, singular, feminine, Person",
+    parse: "N-VSF-P｜Noun, Vocative or nominative, singular, feminine, Person",
     GN: "G3136",
     gloss: "Martha",
   },
@@ -59567,7 +59579,7 @@ export const wordUsages = {
     gloss: "Mary",
   },
   Μαριάμ: {
-    parse: "N-VSF-P｜Noun, Vocative, singular, feminine, Person",
+    parse: "N-VSF-P｜Noun, Vocative or nominative, singular, feminine, Person",
     GN: "G3137",
     gloss: "Mary",
   },
@@ -60261,7 +60273,7 @@ export const wordUsages = {
     gloss: "great",
   },
   μεγάλη: {
-    parse: "A-VSF｜Adjective, Vocative, singular, feminine",
+    parse: "A-VSF｜Adjective, Vocative or nominative, singular, feminine",
     GN: "G3173",
     gloss: "great",
   },
@@ -60281,7 +60293,7 @@ export const wordUsages = {
     gloss: "great",
   },
   μεγάλοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G3173",
     gloss: "great",
   },
@@ -61728,7 +61740,7 @@ export const wordUsages = {
     gloss: "participation",
   },
   μέτοχοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G3353",
     gloss: "partaker",
   },
@@ -62171,7 +62183,7 @@ export const wordUsages = {
     gloss: "small",
   },
   μικροὶ: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G3398",
     gloss: "small",
   },
@@ -62181,7 +62193,7 @@ export const wordUsages = {
     gloss: "small",
   },
   μικρὸν: {
-    parse: "A-VSN｜Adjective, Vocative, singular, neuter",
+    parse: "A-VSN｜Adjective, Vocative or nominative, singular, neuter",
     GN: "G3398",
     gloss: "small",
   },
@@ -62736,7 +62748,7 @@ export const wordUsages = {
     gloss: "adulterous",
   },
   μοιχαλίδες: {
-    parse: "A-VPF｜Adjective, Vocative, plural, feminine",
+    parse: "A-VPF｜Adjective, Vocative or nominative, plural, feminine",
     GN: "G3428",
     gloss: "adulterous",
   },
@@ -63238,12 +63250,12 @@ export const wordUsages = {
     gloss: "foolish",
   },
   Μωρέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G3474",
     gloss: "foolish",
   },
   μωροὶ: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G3474",
     gloss: "foolish",
   },
@@ -63338,7 +63350,7 @@ export const wordUsages = {
     gloss: "Nazareth",
   },
   Ναζαρηνέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G3479",
     gloss: "Nazareth",
   },
@@ -63513,12 +63525,12 @@ export const wordUsages = {
     gloss: "young man",
   },
   Νεανίσκε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G3495",
     gloss: "young man",
   },
   νεανίσκοι: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G3495",
     gloss: "young man",
   },
@@ -63650,7 +63662,8 @@ export const wordUsages = {
     gloss: "new",
   },
   νεώτεροι: {
-    parse: "A-VPM-C｜Adjective, Vocative, plural, masculine, Comparative",
+    parse:
+      "A-VPM-C｜Adjective, Vocative or nominative, plural, masculine, Comparative",
     GN: "G3501",
     gloss: "new",
   },
@@ -64877,7 +64890,7 @@ export const wordUsages = {
     gloss: "which",
   },
   Αἱ: {
-    parse: "T-VPF｜definite article, Vocative, plural, feminine",
+    parse: "T-VPF｜definite article, Vocative or nominative, plural, feminine",
     GN: "G3588",
     gloss: "the/this/who",
   },
@@ -64887,12 +64900,14 @@ export const wordUsages = {
     gloss: "which",
   },
   ἡ: {
-    parse: "T-VSF｜definite article, Vocative, singular, feminine",
+    parse:
+      "T-VSF｜definite article, Vocative or nominative, singular, feminine",
     GN: "G3588",
     gloss: "the/this/who",
   },
   Ἡ: {
-    parse: "T-VSF｜definite article, Vocative, singular, feminine",
+    parse:
+      "T-VSF｜definite article, Vocative or nominative, singular, feminine",
     GN: "G3588",
     gloss: "the/this/who",
   },
@@ -64902,12 +64917,14 @@ export const wordUsages = {
     gloss: "the/this/who",
   },
   ὁ: {
-    parse: "T-VSM｜definite article, Vocative, singular, masculine",
+    parse:
+      "T-VSM｜definite article, Vocative or nominative, singular, masculine",
     GN: "G3588",
     gloss: "the/this/who",
   },
   Ὁ: {
-    parse: "T-VSM｜definite article, Vocative, singular, masculine",
+    parse:
+      "T-VSM｜definite article, Vocative or nominative, singular, masculine",
     GN: "G3588",
     gloss: "the/this/who",
   },
@@ -64917,12 +64934,12 @@ export const wordUsages = {
     gloss: "which",
   },
   οἱ: {
-    parse: "T-VPM｜definite article, Vocative, plural, masculine",
+    parse: "T-VPM｜definite article, Vocative or nominative, plural, masculine",
     GN: "G3588",
     gloss: "the/this/who",
   },
   Οἱ: {
-    parse: "T-VPM｜definite article, Vocative, plural, masculine",
+    parse: "T-VPM｜definite article, Vocative or nominative, plural, masculine",
     GN: "G3588",
     gloss: "the/this/who",
   },
@@ -64937,12 +64954,12 @@ export const wordUsages = {
     gloss: "the/this/who",
   },
   τὰ: {
-    parse: "T-VPN｜definite article, Vocative, plural, neuter",
+    parse: "T-VPN｜definite article, Vocative or nominative, plural, neuter",
     GN: "G3588",
     gloss: "the/this/who",
   },
   Τὰ: {
-    parse: "T-VPN｜definite article, Vocative, plural, neuter",
+    parse: "T-VPN｜definite article, Vocative or nominative, plural, neuter",
     GN: "G3588",
     gloss: "the/this/who",
   },
@@ -64997,12 +65014,12 @@ export const wordUsages = {
     gloss: "the/this/who",
   },
   τὸ: {
-    parse: "T-VSN｜definite article, Vocative, singular, neuter",
+    parse: "T-VSN｜definite article, Vocative or nominative, singular, neuter",
     GN: "G3588",
     gloss: "the/this/who",
   },
   Τὸ: {
-    parse: "T-VSN｜definite article, Vocative, singular, neuter",
+    parse: "T-VSN｜definite article, Vocative or nominative, singular, neuter",
     GN: "G3588",
     gloss: "the/this/who",
   },
@@ -65144,7 +65161,7 @@ export const wordUsages = {
     gloss: "guide/leader",
   },
   ὁδηγοὶ: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G3595",
     gloss: "guide/leader",
   },
@@ -65351,7 +65368,7 @@ export const wordUsages = {
     gloss: "of one’s household",
   },
   οἰκέται: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G3610",
     gloss: "slave",
   },
@@ -65553,7 +65570,7 @@ export const wordUsages = {
   },
   οἰκοδομῶν: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G3618",
     gloss: "to build",
   },
@@ -65673,7 +65690,7 @@ export const wordUsages = {
     gloss: "household",
   },
   οἶκος: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G3624",
     gloss: "household",
   },
@@ -65861,7 +65878,7 @@ export const wordUsages = {
     gloss: "to delay",
   },
   ὀκνηρέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G3636",
     gloss: "lazy",
   },
@@ -65897,12 +65914,12 @@ export const wordUsages = {
     gloss: "destructive",
   },
   Ὀλιγόπιστε: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G3640",
     gloss: "of little faith",
   },
   ὀλιγόπιστοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G3640",
     gloss: "of little faith",
   },
@@ -67596,7 +67613,7 @@ export const wordUsages = {
     gloss: "sacred",
   },
   ὅσιος: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G3741",
     gloss: "sacred",
   },
@@ -68014,7 +68031,7 @@ export const wordUsages = {
     gloss: "from heaven",
   },
   οὐρανέ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G3772",
     gloss: "heaven",
   },
@@ -68024,7 +68041,7 @@ export const wordUsages = {
     gloss: "heaven",
   },
   οὐρανοὶ: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G3772",
     gloss: "heaven",
   },
@@ -68521,7 +68538,7 @@ export const wordUsages = {
     gloss: "eye",
   },
   ὄφεις: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G3789",
     gloss: "snake",
   },
@@ -68858,12 +68875,12 @@ export const wordUsages = {
     gloss: "from childhood",
   },
   παιδία: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G3813",
     gloss: "child",
   },
   Παιδία: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G3813",
     gloss: "child",
   },
@@ -68873,7 +68890,7 @@ export const wordUsages = {
     gloss: "child",
   },
   παιδίον: {
-    parse: "N-VSN｜Noun, Vocative, singular, neuter",
+    parse: "N-VSN｜Noun, Vocative or nominative, singular, neuter",
     GN: "G3813",
     gloss: "child",
   },
@@ -68948,7 +68965,7 @@ export const wordUsages = {
     gloss: "child",
   },
   παῖς: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G3816",
     gloss: "child",
   },
@@ -69171,7 +69188,7 @@ export const wordUsages = {
     gloss: "almighty",
   },
   παντοκράτωρ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G3841",
     gloss: "almighty",
   },
@@ -71527,7 +71544,7 @@ export const wordUsages = {
     gloss: "all",
   },
   πάντα: {
-    parse: "A-VPN｜Adjective, Vocative, plural, neuter",
+    parse: "A-VPN｜Adjective, Vocative or nominative, plural, neuter",
     GN: "G3956",
     gloss: "all",
   },
@@ -71542,7 +71559,7 @@ export const wordUsages = {
     gloss: "all",
   },
   πάντες: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G3956",
     gloss: "all",
   },
@@ -71582,7 +71599,7 @@ export const wordUsages = {
     gloss: "all",
   },
   πᾶς: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G3956",
     gloss: "all",
   },
@@ -71844,12 +71861,12 @@ export const wordUsages = {
     gloss: "to trample",
   },
   πάτερ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G3962",
     gloss: "father",
   },
   Πάτερ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G3962",
     gloss: "father",
   },
@@ -71869,7 +71886,7 @@ export const wordUsages = {
     gloss: "father",
   },
   πατέρες: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G3962",
     gloss: "father",
   },
@@ -71879,7 +71896,7 @@ export const wordUsages = {
     gloss: "father",
   },
   πατήρ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G3962",
     gloss: "father",
   },
@@ -71999,7 +72016,7 @@ export const wordUsages = {
     gloss: "ancestral",
   },
   Παῦλε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G3972",
     gloss: " Paulus",
   },
@@ -73004,7 +73021,7 @@ export const wordUsages = {
   },
   περιβεβλημένη: {
     parse:
-      "V-REP-VSF｜Verb, peRfect, Either middle or passive, Participle, Vocative, singular, feminine",
+      "V-REP-VSF｜Verb, peRfect, Either middle or passive, Participle, Vocative or nominative, singular, feminine",
     GN: "G4016",
     gloss: "to clothe",
   },
@@ -74007,7 +74024,7 @@ export const wordUsages = {
     gloss: "rock",
   },
   Πέτρε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G4074",
     gloss: "[wife of Peter]",
   },
@@ -74999,7 +75016,7 @@ export const wordUsages = {
     gloss: "faithful",
   },
   πιστέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G4103",
     gloss: "faithful",
   },
@@ -75679,7 +75696,7 @@ export const wordUsages = {
     gloss: "full",
   },
   πλήρης: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G4134",
     gloss: "full",
   },
@@ -76023,7 +76040,7 @@ export const wordUsages = {
     gloss: "voyage",
   },
   πλούσιοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G4145",
     gloss: "rich",
   },
@@ -76159,7 +76176,7 @@ export const wordUsages = {
     gloss: "to wash",
   },
   πνεῦμα: {
-    parse: "N-VSN｜Noun, Vocative, singular, neuter",
+    parse: "N-VSN｜Noun, Vocative or nominative, singular, neuter",
     GN: "G4151",
     gloss: "breath",
   },
@@ -76784,7 +76801,7 @@ export const wordUsages = {
   },
   ποιῶν: {
     parse:
-      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative, singular, masculine",
+      "V-PAP-VSM｜Verb, Present, Active, Participle, Vocative or nominative, singular, masculine",
     GN: "G4160",
     gloss: "spend(TIME)",
   },
@@ -76921,7 +76938,7 @@ export const wordUsages = {
     gloss: "flock",
   },
   ποίμνιον: {
-    parse: "N-VSN｜Noun, Vocative, singular, neuter",
+    parse: "N-VSN｜Noun, Vocative or nominative, singular, neuter",
     GN: "G4168",
     gloss: "flock",
   },
@@ -77081,7 +77098,7 @@ export const wordUsages = {
     gloss: "city",
   },
   πόλις: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G4172",
     gloss: "city",
   },
@@ -77422,17 +77439,17 @@ export const wordUsages = {
     gloss: "evil/bad",
   },
   πονηρέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G4190",
     gloss: "evil/bad",
   },
   πονηρὲ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G4190",
     gloss: "evil/bad",
   },
   Πονηρὲ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G4190",
     gloss: "evil/bad",
   },
@@ -78640,7 +78657,7 @@ export const wordUsages = {
     gloss: "old",
   },
   πρεσβύτεροι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G4245",
     gloss: "old",
   },
@@ -81164,7 +81181,7 @@ export const wordUsages = {
     gloss: "to prophesy",
   },
   προφῆται: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G4396",
     gloss: "prophet",
   },
@@ -83058,12 +83075,12 @@ export const wordUsages = {
     gloss: "plank",
   },
   Σαοὺλ: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G4549",
     gloss: "Saul",
   },
   Σαούλ: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G4549",
     gloss: "Saul",
   },
@@ -83264,7 +83281,7 @@ export const wordUsages = {
     gloss: "Satan",
   },
   Σατανᾶ: {
-    parse: "N-VSM-T｜Noun, Vocative, singular, masculine, Title",
+    parse: "N-VSM-T｜Noun, Vocative or nominative, singular, masculine, Title",
     GN: "G4567",
     gloss: "Satan",
   },
@@ -83813,7 +83830,7 @@ export const wordUsages = {
     gloss: "apron",
   },
   Σίμων: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G4613",
     gloss: "Simon",
   },
@@ -84176,7 +84193,7 @@ export const wordUsages = {
   },
   σκηνοῦντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G4637",
     gloss: "to dwell",
   },
@@ -84261,7 +84278,7 @@ export const wordUsages = {
     gloss: "hardness",
   },
   Σκληροτράχηλοι: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G4644",
     gloss: "stiff-necked",
   },
@@ -85478,7 +85495,7 @@ export const wordUsages = {
     gloss: "barren",
   },
   στεῖρα: {
-    parse: "A-VSF｜Adjective, Vocative, singular, feminine",
+    parse: "A-VSF｜Adjective, Vocative or nominative, singular, feminine",
     GN: "G4723",
     gloss: "barren",
   },
@@ -85636,7 +85653,7 @@ export const wordUsages = {
     gloss: "crown",
   },
   στέφανός: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G4735",
     gloss: "crown",
   },
@@ -86635,7 +86652,7 @@ export const wordUsages = {
     gloss: "debater",
   },
   σύζυγε: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G4805",
     gloss: "yokefellow",
   },
@@ -87117,7 +87134,7 @@ export const wordUsages = {
   },
   συμπαρόντες: {
     parse:
-      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative, plural, masculine",
+      "V-PAP-VPM｜Verb, Present, Active, Participle, Vocative or nominative, plural, masculine",
     GN: "G4840",
     gloss: "be present with",
   },
@@ -89558,7 +89575,7 @@ export const wordUsages = {
     gloss: " Taverns",
   },
   Ταβιθά: {
-    parse: "N-VSF-P｜Noun, Vocative, singular, feminine, Person",
+    parse: "N-VSF-P｜Noun, Vocative or nominative, singular, feminine, Person",
     GN: "G5000",
     gloss: "Tabitha",
   },
@@ -89623,7 +89640,7 @@ export const wordUsages = {
     gloss: "talent",
   },
   Ταλιθα: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G5008",
     gloss: "girl",
   },
@@ -90002,12 +90019,12 @@ export const wordUsages = {
     gloss: "clear proof",
   },
   τεκνία: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G5040",
     gloss: "children",
   },
   Τεκνία: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G5040",
     gloss: "children",
   },
@@ -90022,12 +90039,12 @@ export const wordUsages = {
     gloss: "childbearing",
   },
   τέκνα: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G5043",
     gloss: "child",
   },
   Τέκνα: {
-    parse: "N-VPN｜Noun, Vocative, plural, neuter",
+    parse: "N-VPN｜Noun, Vocative or nominative, plural, neuter",
     GN: "G5043",
     gloss: "child",
   },
@@ -90037,12 +90054,12 @@ export const wordUsages = {
     gloss: "child",
   },
   τέκνον: {
-    parse: "N-VSN｜Noun, Vocative, singular, neuter",
+    parse: "N-VSN｜Noun, Vocative or nominative, singular, neuter",
     GN: "G5043",
     gloss: "child",
   },
   Τέκνον: {
-    parse: "N-VSN｜Noun, Vocative, singular, neuter",
+    parse: "N-VSN｜Noun, Vocative or nominative, singular, neuter",
     GN: "G5043",
     gloss: "child",
   },
@@ -91173,7 +91190,7 @@ export const wordUsages = {
   },
   τίκτουσα: {
     parse:
-      "V-PAP-VSF｜Verb, Present, Active, Participle, Vocative, singular, feminine",
+      "V-PAP-VSF｜Verb, Present, Active, Participle, Vocative or nominative, singular, feminine",
     GN: "G5088",
     gloss: "to give birth to",
   },
@@ -91346,7 +91363,7 @@ export const wordUsages = {
     gloss: "wealth",
   },
   Τιμόθεε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G5095",
     gloss: "Timothy",
   },
@@ -91717,7 +91734,7 @@ export const wordUsages = {
     gloss: "such as this",
   },
   τοῖχε: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G5109",
     gloss: "wall",
   },
@@ -92594,17 +92611,17 @@ export const wordUsages = {
     gloss: "Tyre",
   },
   τυφλέ: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G5185",
     gloss: "blind",
   },
   τυφλοί: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G5185",
     gloss: "blind",
   },
   τυφλοὶ: {
-    parse: "A-VPM｜Adjective, Vocative, plural, masculine",
+    parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G5185",
     gloss: "blind",
   },
@@ -92960,17 +92977,17 @@ export const wordUsages = {
     gloss: "adoption (as son)",
   },
   Υἱέ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G5207",
     gloss: "son",
   },
   υἱὲ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G5207",
     gloss: "son",
   },
   Υἱὲ: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G5207",
     gloss: "son",
   },
@@ -92980,7 +92997,7 @@ export const wordUsages = {
     gloss: "son",
   },
   υἱοὶ: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G5207",
     gloss: "son",
   },
@@ -93821,12 +93838,12 @@ export const wordUsages = {
     gloss: "hypocrisy",
   },
   ὑποκριτά: {
-    parse: "N-VSM｜Noun, Vocative, singular, masculine",
+    parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G5273",
     gloss: "hypocrite",
   },
   ὑποκριταί: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G5273",
     gloss: "hypocrite",
   },
@@ -93836,7 +93853,7 @@ export const wordUsages = {
     gloss: "hypocrite",
   },
   Ὑποκριταί: {
-    parse: "N-VPM｜Noun, Vocative, plural, masculine",
+    parse: "N-VPM｜Noun, Vocative or nominative, plural, masculine",
     GN: "G5273",
     gloss: "hypocrite",
   },
@@ -95066,12 +95083,12 @@ export const wordUsages = {
     gloss: "Perez",
   },
   Φαρισαῖε: {
-    parse: "N-VSM-T｜Noun, Vocative, singular, masculine, Title",
+    parse: "N-VSM-T｜Noun, Vocative or nominative, singular, masculine, Title",
     GN: "G5330",
     gloss: "Pharisee",
   },
   Φαρισαῖοι: {
-    parse: "N-VPM-T｜Noun, Vocative, plural, masculine, Title",
+    parse: "N-VPM-T｜Noun, Vocative or nominative, plural, masculine, Title",
     GN: "G5330",
     gloss: "Pharisee",
   },
@@ -95467,7 +95484,7 @@ export const wordUsages = {
     gloss: "Felix",
   },
   Φῆλιξ: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G5344",
     gloss: "Felix",
   },
@@ -95507,7 +95524,7 @@ export const wordUsages = {
     gloss: "to say",
   },
   Φῆστε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G5347",
     gloss: "Festus",
   },
@@ -95885,7 +95902,8 @@ export const wordUsages = {
     gloss: "friendship",
   },
   Φιλιππήσιοι: {
-    parse: "N-VPM-LG｜Noun, Vocative, plural, masculine, Location Gentilic",
+    parse:
+      "N-VPM-LG｜Noun, Vocative or nominative, plural, masculine, Location Gentilic",
     GN: "G5374",
     gloss: "Philippian",
   },
@@ -95905,7 +95923,7 @@ export const wordUsages = {
     gloss: "Philippi",
   },
   Φίλιππε: {
-    parse: "N-VSM-P｜Noun, Vocative, singular, masculine, Person",
+    parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G5376",
     gloss: " Philippi",
   },
@@ -95981,7 +95999,7 @@ export const wordUsages = {
     gloss: "friendly/friend",
   },
   Φίλε: {
-    parse: "A-VSM｜Adjective, Vocative, singular, masculine",
+    parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G5384",
     gloss: "friendly/friend",
   },
@@ -96289,7 +96307,7 @@ export const wordUsages = {
   },
   φοβούμενοι: {
     parse:
-      "V-PNP-VPM｜Verb, Present, middle or passive depoNent, Participle, Vocative, plural, masculine",
+      "V-PNP-VPM｜Verb, Present, middle or passive depoNent, Participle, Vocative or nominative, plural, masculine",
     GN: "G5399",
     gloss: "to fear",
   },
@@ -96507,7 +96525,7 @@ export const wordUsages = {
   },
   πεφορτισμένοι: {
     parse:
-      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative, plural, masculine",
+      "V-RPP-VPM｜Verb, peRfect, Passive, Participle, Vocative or nominative, plural, masculine",
     GN: "G5412",
     gloss: "to burden",
   },
@@ -97700,7 +97718,7 @@ export const wordUsages = {
     gloss: "joy",
   },
   χαρὰ: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G5479",
     gloss: "joy",
   },
@@ -97896,7 +97914,7 @@ export const wordUsages = {
   },
   κεχαριτωμένη: {
     parse:
-      "V-RPP-VSF｜Verb, peRfect, Passive, Participle, Vocative, singular, feminine",
+      "V-RPP-VSF｜Verb, peRfect, Passive, Participle, Vocative or nominative, singular, feminine",
     GN: "G5487",
     gloss: "to favor",
   },
@@ -98366,7 +98384,8 @@ export const wordUsages = {
     gloss: "dust",
   },
   Χοραζίν: {
-    parse: "N-VSF-L｜Noun, Vocative, singular, feminine, Location",
+    parse:
+      "N-VSF-L｜Noun, Vocative or nominative, singular, feminine, Location",
     GN: "G5523",
     gloss: "Chorazin",
   },
@@ -98736,7 +98755,7 @@ export const wordUsages = {
     gloss: "Christian",
   },
   χριστέ: {
-    parse: "N-VSM-T｜Noun, Vocative, singular, masculine, Title",
+    parse: "N-VSM-T｜Noun, Vocative or nominative, singular, masculine, Title",
     GN: "G5547",
     gloss: "Christ",
   },
@@ -98974,7 +98993,7 @@ export const wordUsages = {
   },
   κεχρυσωμένη: {
     parse:
-      "V-RPP-VSF｜Verb, peRfect, Passive, Participle, Vocative, singular, feminine",
+      "V-RPP-VSF｜Verb, peRfect, Passive, Participle, Vocative or nominative, singular, feminine",
     GN: "G5558",
     gloss: "to gild",
   },
@@ -99492,7 +99511,7 @@ export const wordUsages = {
     gloss: "animal",
   },
   Ψυχή: {
-    parse: "N-VSF｜Noun, Vocative, singular, feminine",
+    parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G5590",
     gloss: "animal",
   },
@@ -99636,7 +99655,7 @@ export const wordUsages = {
   },
   ὠδίνουσα: {
     parse:
-      "V-PAP-VSF｜Verb, Present, Active, Participle, Vocative, singular, feminine",
+      "V-PAP-VSF｜Verb, Present, Active, Participle, Vocative or nominative, singular, feminine",
     GN: "G5605",
     gloss: "be in labor",
   },
