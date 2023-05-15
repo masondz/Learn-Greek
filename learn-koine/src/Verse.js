@@ -19,6 +19,7 @@ import ConjuctionGrid from "./ConjuctionGrid";
 import PrepositionGrid from "./PrepositionGrid";
 import PronounGrid from "./PronounGrid";
 import VerbGrid from "./VerbGrid";
+import PickVerse from "./PickVerse";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -124,6 +125,7 @@ const Verse = () => {
 
   return (
     <div className="body">
+      <PickVerse />
       <Menu
         setArticleGrid={setArticleGrid}
         blankGrid={blankGrid}

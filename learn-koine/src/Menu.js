@@ -103,6 +103,7 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
                       className="menu-button"
                       variants={itemVariants}
                       onClick={() => handleClick({ option })}
+                      key={option}
                     >
                       {option}
                     </motion.button>
@@ -127,6 +128,7 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
                       to={"/" + link}
                       className="menu-link"
                       onClick={() => dispatch(clearWord())}
+                      key={link}
                     >
                       {link === "parsing-verse" ? "parsing practice" : link}
                     </Link>
@@ -135,7 +137,7 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
                 );
               })}
               <br></br>
-              <Link to={"/"} className="menu-link">
+              <Link to={"/"} className="menu-link" key="home-link">
                 Home
               </Link>
             </motion.div>

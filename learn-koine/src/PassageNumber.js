@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { selectVerseReference } from "./features/verseSlice";
 import "./Verse.css";
 
-const books = [
+export const books = [
   "Μαθθαῖον",
   "Μᾶρκον",
   "Λουκᾶν",

@@ -34,6 +34,8 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
     partOfSpeech.includes("Particle")
   ) {
     describeWord = ` - ${partOfSpeech} - "${gloss}"`;
+  } else if (partOfSpeech.includes("Hebrew")) {
+    describeWord = `Hebrew transliteration (indeclinable) - ${gloss}`;
   }
 
   return (

@@ -5373,22 +5373,22 @@ export const wordUsages = {
     gloss: "immoderate",
   },
   ἀμήν: {
-    parse: "HEB｜HEBrew transliterated word (indeclinable)",
+    parse: "HEB｜Hebrew transliterated word (indeclinable)",
     GN: "G281",
     gloss: "amen",
   },
   Ἀμήν: {
-    parse: "HEB｜HEBrew transliterated word (indeclinable)",
+    parse: "HEB｜Hebrew transliterated word (indeclinable)",
     GN: "G281",
     gloss: "amen",
   },
   ἀμὴν: {
-    parse: "HEB｜HEBrew transliterated word (indeclinable)",
+    parse: "HEB｜Hebrew transliterated word (indeclinable)",
     GN: "G281",
     gloss: "amen",
   },
   Ἀμὴν: {
-    parse: "HEB｜HEBrew transliterated word (indeclinable)",
+    parse: "HEB｜Hebrew transliterated word (indeclinable)",
     GN: "G281",
     gloss: "amen",
   },
@@ -59488,7 +59488,7 @@ export const wordUsages = {
     gloss: "insanity",
   },
   μάννα: {
-    parse: "HEB｜HEBrew transliterated word (indeclinable)",
+    parse: "HEB｜Hebrew transliterated word (indeclinable)",
     GN: "G3131",
     gloss: "manna",
   },
@@ -82118,8 +82118,8 @@ export const wordUsages = {
     GN: "G4460",
     gloss: "Rahab",
   },
-  ῥαββί: { parse: "HEB-T｜HEBrew, Title", GN: "G4461", gloss: "Rabbi" },
-  Ῥαββί: { parse: "HEB-T｜HEBrew, Title", GN: "G4461", gloss: "Rabbi" },
+  ῥαββί: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
+  Ῥαββί: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
   Ραββουνι: {
     parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
     GN: "G4462",
