@@ -1,0 +1,27 @@
+.pick-verse-menu {
+  border: 1px solid whitesmoke;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: bold;
+  max-height: 400px;
+
+  width: 100%;
+}
+
+.book-lists {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  max-width: 500px;
+  color: rgb(255, 153, 0);
+}
+
+.pick-verse-menu p {
+  flex: 5px;
+}

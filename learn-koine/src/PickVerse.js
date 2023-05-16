@@ -1,12 +1,81 @@
-import React from "react";
-
+import React, { useState } from "react";
+import "./PickVerse.css";
 const PickVerse = () => {
-  return <p>Pick Verse Component</p>;
+  const [listIsOpen, setListIsOpen] = useState(false);
+  const [chapterList, setChapterList] = useState([]);
+  const [verseList, setVerseList] = useState([]);
+
+  const [chosenBook, setChosenBook] = useState("");
+  const [chosenChapter, setChosenChapter] = useState(0);
+  const [chosenVerse, setChosenVerse] = useState(0);
+
+  const bookNames = Object.keys(newTestament);
+
+  const handleOpenList = () => {
+    listIsOpen ? setListIsOpen(false) : setListIsOpen(true);
+  };
+
+  const handlePickBook = (e) => {
+    e.preventDefault();
+    const pickedBook = e.target.innerHTML;
+    const chaptersArray = [];
+    for (let i = 1; i < newTestament[pickedBook].length + 1; i++) {
+      chaptersArray.push(i);
+    }
+    console.log(chaptersArray);
+    setChosenBook(pickedBook);
+    setChapterList(chaptersArray);
+  };
+
+  const handlePickChapter = (e) => {
+    e.preventDefault();
+    const chapterNumber = e.target.innerHTML - 1;
+    const numberOfVerses = newTestament[chosenBook][chapterNumber].verses;
+    const versesArray = [];
+
+    for (let i = 1; i < numberOfVerses + 1; i++) {
+      versesArray.push(i);
+    }
+
+    setChosenChapter(chapterNumber);
+    setVerseList(versesArray);
+  };
+
+  const handlePickVerse = (e) => {
+    e.preventDefault();
+    setChosenVerse(e.target.innerHTML);
+  };
+
+  return (
+    <div>
+      <p onClick={handleOpenList}>
+        {chosenBook} {chosenChapter}: {chosenVerse}
+      </p>
+      {listIsOpen && (
+        <div className="pick-verse-menu">
+          <div className="book-lists" onClick={handlePickBook}>
+            {bookNames.map((book) => {
+              return <p>{book}</p>;
+            })}
+          </div>
+          <div className="book-lists" onClick={handlePickChapter}>
+            {chapterList.map((chapter) => {
+              return <p>{chapter}</p>;
+            })}
+          </div>
+          <div className="book-lists" onClick={handlePickVerse}>
+            {verseList.map((verse) => {
+              return <p>{verse}</p>;
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default PickVerse;
 
-/*
 const newTestament = {
   Matthew: [
     { chapter: 1, verses: 25 },
@@ -331,4 +400,3 @@ const newTestament = {
     { chapter: 22, verses: 21 },
   ],
 };
-*/
