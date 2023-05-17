@@ -17,7 +17,7 @@ const PickVerse = () => {
 
   const handlePickBook = (e) => {
     e.preventDefault();
-    const pickedBook = e.target.innerHTML;
+    const pickedBook = e.target.value;
     const chaptersArray = [];
     for (let i = 1; i < newTestament[pickedBook].length + 1; i++) {
       chaptersArray.push(i);
@@ -29,8 +29,8 @@ const PickVerse = () => {
 
   const handlePickChapter = (e) => {
     e.preventDefault();
-    const chapterNumber = e.target.innerHTML - 1;
-    const numberOfVerses = newTestament[chosenBook][chapterNumber].verses;
+    const chapterNumber = e.target.value;
+    const numberOfVerses = newTestament[chosenBook][chapterNumber - 1].verses;
     const versesArray = [];
 
     for (let i = 1; i < numberOfVerses + 1; i++) {
@@ -43,7 +43,7 @@ const PickVerse = () => {
 
   const handlePickVerse = (e) => {
     e.preventDefault();
-    setChosenVerse(e.target.innerHTML);
+    setChosenVerse(e.target.value);
   };
 
   return (
@@ -53,21 +53,33 @@ const PickVerse = () => {
       </p>
       {listIsOpen && (
         <div className="pick-verse-menu">
-          <div className="book-lists" onClick={handlePickBook}>
+          <select
+            className="drop-lists"
+            id="book-list"
+            onClick={handlePickBook}
+          >
             {bookNames.map((book) => {
-              return <p>{book}</p>;
+              return <option value={book}>{book}</option>;
             })}
-          </div>
-          <div className="book-lists" onClick={handlePickChapter}>
+          </select>
+          <select
+            className="drop-lists"
+            id="chapter-list"
+            onClick={handlePickChapter}
+          >
             {chapterList.map((chapter) => {
-              return <p>{chapter}</p>;
+              return <option value={chapter}>{chapter}</option>;
             })}
-          </div>
-          <div className="book-lists" onClick={handlePickVerse}>
+          </select>
+          <select
+            className="drop-lists"
+            id="verse-list"
+            onClick={handlePickVerse}
+          >
             {verseList.map((verse) => {
-              return <p>{verse}</p>;
+              return <option value={verse}>{verse}</option>;
             })}
-          </div>
+          </select>
         </div>
       )}
     </div>
@@ -77,7 +89,7 @@ const PickVerse = () => {
 export default PickVerse;
 
 const newTestament = {
-  Matthew: [
+  "Matt.": [
     { chapter: 1, verses: 25 },
     { chapter: 2, verses: 23 },
     { chapter: 3, verses: 17 },
@@ -226,7 +238,7 @@ const newTestament = {
     { chapter: 16, verses: 27 },
   ],
 
-  "1 Corinthians": [
+  "1 Cor.": [
     { chapter: 1, verses: 31 },
     { chapter: 2, verses: 16 },
     { chapter: 3, verses: 23 },
@@ -245,7 +257,7 @@ const newTestament = {
     { chapter: 16, verses: 24 },
   ],
 
-  "2 Corinthians": [
+  "2 Cor.": [
     { chapter: 1, verses: 24 },
     { chapter: 2, verses: 17 },
     { chapter: 3, verses: 18 },
@@ -261,7 +273,7 @@ const newTestament = {
     { chapter: 13, verses: 14 },
   ],
 
-  Galatians: [
+  "Gal.": [
     { chapter: 1, verses: 24 },
     { chapter: 2, verses: 21 },
     { chapter: 3, verses: 29 },
@@ -270,7 +282,7 @@ const newTestament = {
     { chapter: 6, verses: 18 },
   ],
 
-  Ephesians: [
+  "Eph.": [
     { chapter: 1, verses: 23 },
     { chapter: 2, verses: 22 },
     { chapter: 3, verses: 21 },
@@ -279,21 +291,21 @@ const newTestament = {
     { chapter: 6, verses: 24 },
   ],
 
-  Philippians: [
+  "Phil.": [
     { chapter: 1, verses: 30 },
     { chapter: 2, verses: 30 },
     { chapter: 3, verses: 21 },
     { chapter: 4, verses: 23 },
   ],
 
-  Colossians: [
+  "Col.": [
     { chapter: 1, verses: 29 },
     { chapter: 2, verses: 23 },
     { chapter: 3, verses: 25 },
     { chapter: 4, verses: 18 },
   ],
 
-  "1 Thessalonians": [
+  "1 Thess.": [
     { chapter: 1, verses: 10 },
     { chapter: 2, verses: 20 },
     { chapter: 3, verses: 13 },
@@ -301,13 +313,13 @@ const newTestament = {
     { chapter: 5, verses: 28 },
   ],
 
-  "2 Thessalonians": [
+  "2 Thess.": [
     { chapter: 1, verses: 12 },
     { chapter: 2, verses: 17 },
     { chapter: 3, verses: 18 },
   ],
 
-  "1 Timothy": [
+  "1 Tim.": [
     { chapter: 1, verses: 20 },
     { chapter: 2, verses: 15 },
     { chapter: 3, verses: 16 },
@@ -316,7 +328,7 @@ const newTestament = {
     { chapter: 6, verses: 21 },
   ],
 
-  "2 Timothy": [
+  "2 Tim.": [
     { chapter: 1, verses: 18 },
     { chapter: 2, verses: 26 },
     { chapter: 3, verses: 17 },
@@ -329,9 +341,9 @@ const newTestament = {
     { chapter: 3, verses: 15 },
   ],
 
-  Philemon: [{ chapter: 1, verses: 25 }],
+  "Phile.": [{ chapter: 1, verses: 25 }],
 
-  Hebrews: [
+  "Heb.": [
     { chapter: 1, verses: 14 },
     { chapter: 2, verses: 18 },
     { chapter: 3, verses: 19 },
@@ -375,7 +387,7 @@ const newTestament = {
 
   Jude: [{ chapter: 1, verses: 25 }],
 
-  Revelation: [
+  "Rev.": [
     { chapter: 1, verses: 20 },
     { chapter: 2, verses: 29 },
     { chapter: 3, verses: 22 },
