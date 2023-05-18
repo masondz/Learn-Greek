@@ -1,46 +1,55 @@
 .pick-verse-menu {
-  border: 1px solid whitesmoke;
-  background-color: white;
-  position: absolute;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  justify-self: center;
   z-index: 1;
   font-size: 14px;
   font-weight: bold;
   max-height: 800px;
-  width: 90%;
-  margin-left: 5%;
 }
 
 #book-list {
-  padding-left: 15px;
-  padding-right: 15px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  border-right: solid black 1px;
 }
 
 #chapter-list {
   /* padding: auto; */
+  padding: 5px;
   text-align: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px 5px;
+  border-right: solid black 1px;
 }
 
 #verse-list {
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px 5px;
+  padding: 5px;
+  text-align: center;
+  border-right: solid black 1px;
 }
 
 .drop-lists {
   display: grid;
   text-align: center;
   max-width: 500px;
-  color: rgb(255, 153, 0);
+  color: rgb(0, 0, 0);
   overflow: scroll;
+  border: solid 1px whitesmoke;
+  cursor: pointer;
 }
 
-.pick-verse-menu p {
-  flex: 5px;
+.go-button {
+  font-weight: bolder;
+  color: white;
+  padding: 9px 19px;
+  border: none;
+  background-color: rgb(16, 185, 45);
+  cursor: pointer;
+}
+
+.go-button:active {
+  background-color: rgb(10, 116, 28);
 }
 
 ::-webkit-scrollbar {
@@ -53,5 +62,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 153, 0);
+  background: rgb(20, 250, 59);
 }

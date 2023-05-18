@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./PickVerse.css";
+// import { organizeText } from "./features/verseSlice";
+
 const PickVerse = () => {
   const [listIsOpen, setListIsOpen] = useState(false);
   const [chapterList, setChapterList] = useState([]);
@@ -19,7 +21,11 @@ const PickVerse = () => {
     e.preventDefault();
     const pickedBook = e.target.value;
     const chaptersArray = [];
-    for (let i = 1; i < newTestament[pickedBook].length + 1; i++) {
+    for (
+      let i = 1;
+      i < newTestament[pickedBook].chapterVerseIndex.length + 1;
+      i++
+    ) {
       chaptersArray.push(i);
     }
     console.log(chaptersArray);
@@ -30,7 +36,8 @@ const PickVerse = () => {
   const handlePickChapter = (e) => {
     e.preventDefault();
     const chapterNumber = e.target.value;
-    const numberOfVerses = newTestament[chosenBook][chapterNumber - 1].verses;
+    const numberOfVerses =
+      newTestament[chosenBook].chapterVerseIndex[chapterNumber - 1];
     const versesArray = [];
 
     for (let i = 1; i < numberOfVerses + 1; i++) {
@@ -45,6 +52,27 @@ const PickVerse = () => {
     e.preventDefault();
     setChosenVerse(e.target.value);
   };
+
+  //"40 0 01 0 01 Βίβλος γενέσεως ˚Ἰησοῦ ˚Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ:"
+
+  /*
+  const decodeReference = (ref) => {
+  //book
+  let bookIndex = ref.slice(0, 2) - 40;
+  //chapter
+  let chapterNumber = ref.slice(3, 5);
+  if (chapterNumber[0] === "0") {
+    chapterNumber = chapterNumber[1];
+  }
+  //verse
+  let verseNumber = ref.slice(6, 9);
+  return {
+    bookIndex: bookIndex,
+    chapterNumber: chapterNumber,
+    verseNumber: verseNumber,
+  };
+};
+  */
 
   return (
     <div>
@@ -80,6 +108,7 @@ const PickVerse = () => {
               return <option value={verse}>{verse}</option>;
             })}
           </select>
+          <button className="go-button">Go</button>
         </div>
       )}
     </div>
@@ -88,327 +117,114 @@ const PickVerse = () => {
 
 export default PickVerse;
 
+// const bookCode = {
+//   Matthew: {code:{}, chapters:{}}
+//   Mark: 41,
+//   Luke:
+// }
+
 const newTestament = {
-  "Matt.": [
-    { chapter: 1, verses: 25 },
-    { chapter: 2, verses: 23 },
-    { chapter: 3, verses: 17 },
-    { chapter: 4, verses: 25 },
-    { chapter: 5, verses: 48 },
-    { chapter: 6, verses: 34 },
-    { chapter: 7, verses: 29 },
-    { chapter: 8, verses: 34 },
-    { chapter: 9, verses: 38 },
-    { chapter: 10, verses: 42 },
-    { chapter: 11, verses: 30 },
-    { chapter: 12, verses: 50 },
-    { chapter: 13, verses: 58 },
-    { chapter: 14, verses: 36 },
-    { chapter: 15, verses: 39 },
-    { chapter: 16, verses: 28 },
-    { chapter: 17, verses: 27 },
-    { chapter: 18, verses: 35 },
-    { chapter: 19, verses: 30 },
-    { chapter: 20, verses: 34 },
-    { chapter: 21, verses: 46 },
-    { chapter: 22, verses: 46 },
-    { chapter: 23, verses: 39 },
-    { chapter: 24, verses: 51 },
-    { chapter: 25, verses: 46 },
-    { chapter: 26, verses: 75 },
-    { chapter: 27, verses: 66 },
-    { chapter: 28, verses: 20 },
-  ],
-  Mark: [
-    { chapter: 1, verses: 45 },
-    { chapter: 2, verses: 28 },
-    { chapter: 3, verses: 35 },
-    { chapter: 4, verses: 41 },
-    { chapter: 5, verses: 43 },
-    { chapter: 6, verses: 56 },
-    { chapter: 7, verses: 37 },
-    { chapter: 8, verses: 38 },
-    { chapter: 9, verses: 50 },
-    { chapter: 10, verses: 52 },
-    { chapter: 11, verses: 33 },
-    { chapter: 12, verses: 44 },
-    { chapter: 13, verses: 37 },
-    { chapter: 14, verses: 72 },
-    { chapter: 15, verses: 47 },
-    { chapter: 16, verses: 20 },
-  ],
-  Luke: [
-    { chapter: 1, verses: 80 },
-    { chapter: 2, verses: 52 },
-    { chapter: 3, verses: 38 },
-    { chapter: 4, verses: 44 },
-    { chapter: 5, verses: 39 },
-    { chapter: 6, verses: 49 },
-    { chapter: 7, verses: 50 },
-    { chapter: 8, verses: 56 },
-    { chapter: 9, verses: 62 },
-    { chapter: 10, verses: 42 },
-    { chapter: 11, verses: 54 },
-    { chapter: 12, verses: 59 },
-    { chapter: 13, verses: 35 },
-    { chapter: 14, verses: 35 },
-    { chapter: 15, verses: 32 },
-    { chapter: 16, verses: 31 },
-    { chapter: 17, verses: 37 },
-    { chapter: 18, verses: 43 },
-    { chapter: 19, verses: 48 },
-    { chapter: 20, verses: 47 },
-    { chapter: 21, verses: 38 },
-    { chapter: 22, verses: 71 },
-    { chapter: 23, verses: 56 },
-    { chapter: 24, verses: 53 },
-  ],
+  Matthew: {
+    code: 40,
+    //books are arranged by index, and the value is verse count. ex. Matt. chapter 1 has 25 verses (Matthew.chapterVerseIndex[1] = 25)
+    chapterVerseIndex: [
+      25, 23, 17, 25, 48, 34, 29, 34, 38, 42, 30, 50, 58, 36, 39, 28, 27, 35,
+      30, 34, 46, 46, 39, 51, 46, 75, 66, 20,
+    ],
+  },
+  Mark: {
+    code: 41,
+    chapterVerseIndex: [
+      45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 47, 20,
+    ],
+  },
+  Luke: {
+    code: 42,
+    chapterVerseIndex: [
+      80, 52, 38, 44, 39, 49, 50, 56, 62, 42, 54, 59, 35, 35, 32, 31, 37, 43,
+      48, 47, 38, 71, 56, 53,
+    ],
+  },
 
-  John: [
-    { chapter: 1, verses: 51 },
-    { chapter: 2, verses: 25 },
-    { chapter: 3, verses: 36 },
-    { chapter: 4, verses: 54 },
-    { chapter: 5, verses: 47 },
-    { chapter: 6, verses: 71 },
-    { chapter: 7, verses: 53 },
-    { chapter: 8, verses: 59 },
-    { chapter: 9, verses: 41 },
-    { chapter: 10, verses: 42 },
-    { chapter: 11, verses: 57 },
-    { chapter: 12, verses: 50 },
-    { chapter: 13, verses: 38 },
-    { chapter: 14, verses: 31 },
-    { chapter: 15, verses: 27 },
-    { chapter: 16, verses: 33 },
-    { chapter: 17, verses: 26 },
-    { chapter: 18, verses: 40 },
-    { chapter: 19, verses: 42 },
-    { chapter: 20, verses: 31 },
-    { chapter: 21, verses: 25 },
-  ],
+  John: {
+    code: 43,
+    chapterVerseIndex: [
+      51, 25, 36, 54, 47, 71, 53, 59, 41, 42, 57, 50, 38, 31, 27, 33, 26, 40,
+      42, 31, 25,
+    ],
+  },
 
-  Acts: [
-    { chapter: 1, verses: 26 },
-    { chapter: 2, verses: 47 },
-    { chapter: 3, verses: 26 },
-    { chapter: 4, verses: 37 },
-    { chapter: 5, verses: 42 },
-    { chapter: 6, verses: 15 },
-    { chapter: 7, verses: 60 },
-    { chapter: 8, verses: 40 },
-    { chapter: 9, verses: 43 },
-    { chapter: 10, verses: 48 },
-    { chapter: 11, verses: 30 },
-    { chapter: 12, verses: 25 },
-    { chapter: 13, verses: 52 },
-    { chapter: 14, verses: 28 },
-    { chapter: 15, verses: 41 },
-    { chapter: 16, verses: 40 },
-    { chapter: 17, verses: 34 },
-    { chapter: 18, verses: 28 },
-    { chapter: 19, verses: 41 },
-    { chapter: 20, verses: 38 },
-    { chapter: 21, verses: 40 },
-    { chapter: 22, verses: 30 },
-    { chapter: 23, verses: 35 },
-    { chapter: 24, verses: 27 },
-    { chapter: 25, verses: 27 },
-    { chapter: 26, verses: 32 },
-    { chapter: 27, verses: 44 },
-    { chapter: 28, verses: 31 },
-  ],
+  Acts: {
+    code: 44,
+    chapterVerseIndex: [
+      26, 47, 26, 37, 42, 15, 60, 40, 43, 48, 30, 25, 52, 28, 41, 40, 34, 28,
+      41, 38, 40, 30, 35, 27, 27, 32, 44, 31,
+    ],
+  },
 
-  Romans: [
-    { chapter: 1, verses: 32 },
-    { chapter: 2, verses: 29 },
-    { chapter: 3, verses: 31 },
-    { chapter: 4, verses: 25 },
-    { chapter: 5, verses: 21 },
-    { chapter: 6, verses: 23 },
-    { chapter: 7, verses: 25 },
-    { chapter: 8, verses: 39 },
-    { chapter: 9, verses: 33 },
-    { chapter: 10, verses: 21 },
-    { chapter: 11, verses: 36 },
-    { chapter: 12, verses: 21 },
-    { chapter: 13, verses: 14 },
-    { chapter: 14, verses: 23 },
-    { chapter: 15, verses: 33 },
-    { chapter: 16, verses: 27 },
-  ],
+  Romans: {
+    code: 45,
+    chapterVerseIndex: [
+      32, 29, 31, 25, 21, 23, 25, 39, 33, 21, 36, 21, 14, 23, 33, 27,
+    ],
+  },
 
-  "1 Cor.": [
-    { chapter: 1, verses: 31 },
-    { chapter: 2, verses: 16 },
-    { chapter: 3, verses: 23 },
-    { chapter: 4, verses: 21 },
-    { chapter: 5, verses: 13 },
-    { chapter: 6, verses: 20 },
-    { chapter: 7, verses: 40 },
-    { chapter: 8, verses: 13 },
-    { chapter: 9, verses: 27 },
-    { chapter: 10, verses: 33 },
-    { chapter: 11, verses: 34 },
-    { chapter: 12, verses: 31 },
-    { chapter: 13, verses: 13 },
-    { chapter: 14, verses: 40 },
-    { chapter: 15, verses: 58 },
-    { chapter: 16, verses: 24 },
-  ],
+  "1 Corinthians": {
+    code: 46,
+    chapterVerseIndex: [
+      31, 16, 23, 21, 13, 20, 40, 13, 27, 33, 34, 31, 13, 40, 58, 24,
+    ],
+  },
 
-  "2 Cor.": [
-    { chapter: 1, verses: 24 },
-    { chapter: 2, verses: 17 },
-    { chapter: 3, verses: 18 },
-    { chapter: 4, verses: 18 },
-    { chapter: 5, verses: 21 },
-    { chapter: 6, verses: 18 },
-    { chapter: 7, verses: 16 },
-    { chapter: 8, verses: 24 },
-    { chapter: 9, verses: 15 },
-    { chapter: 10, verses: 18 },
-    { chapter: 11, verses: 33 },
-    { chapter: 12, verses: 21 },
-    { chapter: 13, verses: 14 },
-  ],
+  "2 Corinthians.": {
+    code: 47,
+    chapterVerseIndex: [24, 17, 18, 18, 21, 18, 16, 24, 15, 18, 33, 21, 14],
+  },
 
-  "Gal.": [
-    { chapter: 1, verses: 24 },
-    { chapter: 2, verses: 21 },
-    { chapter: 3, verses: 29 },
-    { chapter: 4, verses: 31 },
-    { chapter: 5, verses: 26 },
-    { chapter: 6, verses: 18 },
-  ],
+  Galatians: { code: 48, chapterVerseIndex: [24, 21, 29, 31, 26, 18] },
 
-  "Eph.": [
-    { chapter: 1, verses: 23 },
-    { chapter: 2, verses: 22 },
-    { chapter: 3, verses: 21 },
-    { chapter: 4, verses: 32 },
-    { chapter: 5, verses: 33 },
-    { chapter: 6, verses: 24 },
-  ],
+  Ephesians: { code: 49, chapterVerseIndex: [23, 22, 21, 32, 33, 24] },
 
-  "Phil.": [
-    { chapter: 1, verses: 30 },
-    { chapter: 2, verses: 30 },
-    { chapter: 3, verses: 21 },
-    { chapter: 4, verses: 23 },
-  ],
+  Philippians: { code: 50, chapterVerseIndex: [30, 30, 21, 23] },
 
-  "Col.": [
-    { chapter: 1, verses: 29 },
-    { chapter: 2, verses: 23 },
-    { chapter: 3, verses: 25 },
-    { chapter: 4, verses: 18 },
-  ],
+  Colossians: { code: 51, chapterVerseIndex: [29, 23, 25, 18] },
 
-  "1 Thess.": [
-    { chapter: 1, verses: 10 },
-    { chapter: 2, verses: 20 },
-    { chapter: 3, verses: 13 },
-    { chapter: 4, verses: 18 },
-    { chapter: 5, verses: 28 },
-  ],
+  "1 Thessalonians": { code: 52, chapterVerseIndex: [10, 20, 13, 18, 28] },
 
-  "2 Thess.": [
-    { chapter: 1, verses: 12 },
-    { chapter: 2, verses: 17 },
-    { chapter: 3, verses: 18 },
-  ],
+  "2 Thessalonians": { code: 53, chapterVerseIndex: [12, 17, 18] },
 
-  "1 Tim.": [
-    { chapter: 1, verses: 20 },
-    { chapter: 2, verses: 15 },
-    { chapter: 3, verses: 16 },
-    { chapter: 4, verses: 16 },
-    { chapter: 5, verses: 25 },
-    { chapter: 6, verses: 21 },
-  ],
+  "1 Timothy": { code: 54, chapterVerseIndex: [20, 15, 16, 16, 25, 21] },
 
-  "2 Tim.": [
-    { chapter: 1, verses: 18 },
-    { chapter: 2, verses: 26 },
-    { chapter: 3, verses: 17 },
-    { chapter: 4, verses: 22 },
-  ],
+  "2 Timothy": { code: 55, chapterVerseIndex: [18, 26, 17, 22] },
 
-  Titus: [
-    { chapter: 1, verses: 16 },
-    { chapter: 2, verses: 15 },
-    { chapter: 3, verses: 15 },
-  ],
+  Titus: { code: 56, chapterVerseIndex: [16, 15, 15] },
 
-  "Phile.": [{ chapter: 1, verses: 25 }],
+  Philemon: { code: 57, chapterVerseIndex: [25] },
 
-  "Heb.": [
-    { chapter: 1, verses: 14 },
-    { chapter: 2, verses: 18 },
-    { chapter: 3, verses: 19 },
-    { chapter: 4, verses: 16 },
-    { chapter: 5, verses: 14 },
-    { chapter: 6, verses: 20 },
-    { chapter: 7, verses: 28 },
-    { chapter: 8, verses: 13 },
-    { chapter: 9, verses: 28 },
-    { chapter: 10, verses: 39 },
-    { chapter: 11, verses: 40 },
-    { chapter: 12, verses: 29 },
-    { chapter: 13, verses: 25 },
-  ],
+  Hebrews: {
+    code: 58,
+    chapterVerseIndex: [14, 18, 19, 16, 14, 20, 28, 13, 28, 39, 40, 29, 25],
+  },
 
-  "1 Peter": [
-    { chapter: 1, verses: 25 },
-    { chapter: 2, verses: 25 },
-    { chapter: 3, verses: 22 },
-    { chapter: 4, verses: 19 },
-    { chapter: 5, verses: 14 },
-  ],
+  James: { code: 59, chapterVerseIndex: [27, 26, 18, 17, 20] },
 
-  "2 Peter": [
-    { chapter: 1, verses: 21 },
-    { chapter: 2, verses: 22 },
-    { chapter: 3, verses: 18 },
-  ],
+  "1 Peter": { code: 60, chapterVerseIndex: [25, 25, 22, 19, 14] },
 
-  "1 John": [
-    { chapter: 1, verses: 10 },
-    { chapter: 2, verses: 29 },
-    { chapter: 3, verses: 24 },
-    { chapter: 4, verses: 21 },
-    { chapter: 5, verses: 21 },
-  ],
+  "2 Peter": { code: 61, chapterVerseIndex: [21, 22, 18] },
 
-  "2 John": [{ chapter: 1, verses: 13 }],
+  "1 John": { code: 62, chapterVerseIndex: [10, 29, 24, 21, 21] },
 
-  "3 John": [{ chapter: 1, verses: 14 }],
+  "2 John": { code: 63, chapterVerseIndex: [13] },
 
-  Jude: [{ chapter: 1, verses: 25 }],
+  "3 John": { code: 64, chapterVerseIndex: [14] },
 
-  "Rev.": [
-    { chapter: 1, verses: 20 },
-    { chapter: 2, verses: 29 },
-    { chapter: 3, verses: 22 },
-    { chapter: 4, verses: 11 },
-    { chapter: 5, verses: 14 },
-    { chapter: 6, verses: 17 },
-    { chapter: 7, verses: 17 },
-    { chapter: 8, verses: 13 },
-    { chapter: 9, verses: 21 },
-    { chapter: 10, verses: 11 },
-    { chapter: 11, verses: 19 },
-    { chapter: 12, verses: 17 },
-    { chapter: 13, verses: 18 },
-    { chapter: 14, verses: 20 },
-    { chapter: 15, verses: 8 },
-    { chapter: 16, verses: 21 },
-    { chapter: 17, verses: 18 },
-    { chapter: 18, verses: 24 },
-    { chapter: 19, verses: 21 },
-    { chapter: 20, verses: 15 },
-    { chapter: 21, verses: 27 },
-    { chapter: 22, verses: 21 },
-  ],
+  Jude: { code: (65)[{ chapter: 1, verses: 25 }] },
+
+  Revelation: {
+    code: 66,
+    chapterVerseIndex: [
+      20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 8, 21, 18, 24, 21,
+      15, 27, 21,
+    ],
+  },
 };
