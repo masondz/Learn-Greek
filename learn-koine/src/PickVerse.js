@@ -3,7 +3,9 @@ import "./PickVerse.css";
 // import { organizeText } from "./features/verseSlice";
 
 const PickVerse = () => {
-  const [listIsOpen, setListIsOpen] = useState(false);
+  const [bookListIsOpen, setBookListIsOpen] = useState(false);
+  const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
+  const [verseListIsOpen, setVerseListIsOpen] = useState(false);
   const [chapterList, setChapterList] = useState([]);
   const [verseList, setVerseList] = useState([]);
 
@@ -13,13 +15,9 @@ const PickVerse = () => {
 
   const bookNames = Object.keys(newTestament);
 
-  const handleOpenList = () => {
-    listIsOpen ? setListIsOpen(false) : setListIsOpen(true);
-  };
-
   const handlePickBook = (e) => {
     e.preventDefault();
-    const pickedBook = e.target.value;
+    const pickedBook = e.target.innerHTML;
     const chaptersArray = [];
     for (
       let i = 1;
@@ -35,7 +33,7 @@ const PickVerse = () => {
 
   const handlePickChapter = (e) => {
     e.preventDefault();
-    const chapterNumber = e.target.value;
+    const chapterNumber = e.target.innerHTML;
     const numberOfVerses =
       newTestament[chosenBook].chapterVerseIndex[chapterNumber - 1];
     const versesArray = [];
@@ -50,7 +48,7 @@ const PickVerse = () => {
 
   const handlePickVerse = (e) => {
     e.preventDefault();
-    setChosenVerse(e.target.value);
+    setChosenVerse(e.target.innerHTML);
   };
 
   //"40 0 01 0 01 Βίβλος γενέσεως ˚Ἰησοῦ ˚Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ:"
@@ -74,43 +72,98 @@ const PickVerse = () => {
 };
   */
 
+  const handleOpenBookList = () => {
+    bookListIsOpen ? setBookListIsOpen(false) : setBookListIsOpen(true);
+  };
+  const handleOpenChapterList = () => {
+    chapterListIsOpen
+      ? setChapterListIsOpen(false)
+      : setChapterListIsOpen(true);
+  };
+  const handleOpenVerseList = () => {
+    verseListIsOpen ? setVerseListIsOpen(false) : setVerseListIsOpen(true);
+  };
+
   return (
     <div>
-      <p onClick={handleOpenList}>
+      <p>
         {chosenBook} {chosenChapter}: {chosenVerse}
       </p>
-      {listIsOpen && (
-        <div className="pick-verse-menu">
-          <select
-            className="drop-lists"
-            id="book-list"
-            onClick={handlePickBook}
-          >
-            {bookNames.map((book) => {
-              return <option value={book}>{book}</option>;
-            })}
-          </select>
-          <select
-            className="drop-lists"
-            id="chapter-list"
-            onClick={handlePickChapter}
-          >
-            {chapterList.map((chapter) => {
-              return <option value={chapter}>{chapter}</option>;
-            })}
-          </select>
-          <select
-            className="drop-lists"
-            id="verse-list"
-            onClick={handlePickVerse}
-          >
-            {verseList.map((verse) => {
-              return <option value={verse}>{verse}</option>;
-            })}
-          </select>
-          <button className="go-button">Go</button>
+      <div className="pick-verse-menu">
+        <div className="drop-lists">
+          <button onClick={handleOpenBookList} className="booklist-button">
+            Select Book
+          </button>
         </div>
-      )}
+        <div className="drop-lists">
+          <button
+            onClick={handleOpenChapterList}
+            className="chapterlist-button"
+          >
+            Select Chapter
+          </button>
+        </div>
+        <div className="drop-lists">
+          <button onClick={handleOpenVerseList} className="verselist-button">
+            Select Verse
+          </button>
+        </div>
+        <button className="go-button">Go</button>
+
+        {/* {bookNames.map((book) => {
+            return <option value={book}>{book}</option>;
+          })}
+        </select>
+        <select
+          className="drop-lists"
+          id="chapter-list"
+          onClick={handlePickChapter}
+        >
+          {chapterList.map((chapter) => {
+            return <option value={chapter}>{chapter}</option>;
+          })}
+        </select>
+        <select
+          className="drop-lists"
+          id="verse-list"
+          onClick={handlePickVerse}
+        >
+          {verseList.map((verse) => {
+            return <option value={verse}>{verse}</option>;
+          })} */}
+      </div>{" "}
+      <div className="lists-container" id="book-list">
+        <div className="lists">
+          {bookListIsOpen &&
+            bookNames.map((book) => {
+              return (
+                <div value={book} onClick={handlePickBook}>
+                  {book}
+                </div>
+              );
+            })}
+        </div>
+        <div className="lists" id="chapter-list">
+          {chapterListIsOpen &&
+            chapterList.map((chapter) => {
+              return (
+                <div value={chapter} onClick={handlePickChapter}>
+                  {chapter}
+                </div>
+              );
+            })}
+        </div>
+        <div className="lists" id="verse-list">
+          {verseListIsOpen &&
+            verseList.map((verse) => {
+              return (
+                <div value={verse} onClick={handlePickVerse}>
+                  {verse}
+                </div>
+              );
+            })}
+        </div>
+      </div>
     </div>
   );
 };
@@ -126,7 +179,7 @@ export default PickVerse;
 const newTestament = {
   Matthew: {
     code: 40,
-    //books are arranged by index, and the value is verse count. ex. Matt. chapter 1 has 25 verses (Matthew.chapterVerseIndex[1] = 25)
+    //chapter are arranged by index - 1, and the value is verse count. ex. Matt. chapter 1 has 25 verses (Matthew.chapterVerseIndex[0] = 25)
     chapterVerseIndex: [
       25, 23, 17, 25, 48, 34, 29, 34, 38, 42, 30, 50, 58, 36, 39, 28, 27, 35,
       30, 34, 46, 46, 39, 51, 46, 75, 66, 20,

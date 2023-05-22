@@ -36,7 +36,32 @@
   color: rgb(0, 0, 0);
   overflow: scroll;
   border: solid 1px whitesmoke;
+}
+
+.drop-lists button {
+  border: none;
   cursor: pointer;
+  background-color: whitesmoke;
+  min-width: 115px;
+  font-size: 14px;
+}
+
+.lists-container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  left: 500px;
+  z-index: 1;
+}
+
+.lists {
+  background-color: whitesmoke;
+  color: black;
+  max-width: 115px;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
 }
 
 .go-button {
