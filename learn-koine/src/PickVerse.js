@@ -85,14 +85,11 @@ const PickVerse = () => {
   };
 
   return (
-    <div>
-      <p>
-        {chosenBook} {chosenChapter}: {chosenVerse}
-      </p>
+    <div className="pick-component">
       <div className="pick-verse-menu">
         <div className="drop-lists">
           <button onClick={handleOpenBookList} className="booklist-button">
-            Select Book
+            {chosenBook ? chosenBook : "Select Book"}
           </button>
         </div>
         <div className="drop-lists">
@@ -100,15 +97,17 @@ const PickVerse = () => {
             onClick={handleOpenChapterList}
             className="chapterlist-button"
           >
-            Select Chapter
+            {chosenChapter ? chosenChapter : "Select Chapter"}
           </button>
         </div>
         <div className="drop-lists">
           <button onClick={handleOpenVerseList} className="verselist-button">
-            Select Verse
+            {chosenVerse ? chosenVerse : "Select Verse"}
           </button>
         </div>
-        <button className="go-button">Go</button>
+        <button className="go-button" onClick={() => alert("coming soon!")}>
+          Go
+        </button>
 
         {/* {bookNames.map((book) => {
             return <option value={book}>{book}</option>;
@@ -132,37 +131,52 @@ const PickVerse = () => {
             return <option value={verse}>{verse}</option>;
           })} */}
       </div>{" "}
-      <div className="lists-container" id="book-list">
-        <div className="lists">
-          {bookListIsOpen &&
-            bookNames.map((book) => {
+      <div className="lists-container">
+        {bookListIsOpen && (
+          <div className="lists" id="book-list">
+            {bookNames.map((book) => {
               return (
-                <div value={book} onClick={handlePickBook}>
+                <div
+                  className="list-option"
+                  value={book}
+                  onClick={handlePickBook}
+                >
                   {book}
                 </div>
               );
             })}
-        </div>
-        <div className="lists" id="chapter-list">
-          {chapterListIsOpen &&
-            chapterList.map((chapter) => {
+          </div>
+        )}
+        {chapterListIsOpen && (
+          <div className="lists" id="chapter-list">
+            {chapterList.map((chapter) => {
               return (
-                <div value={chapter} onClick={handlePickChapter}>
+                <div
+                  className="list-option"
+                  value={chapter}
+                  onClick={handlePickChapter}
+                >
                   {chapter}
                 </div>
               );
             })}
-        </div>
-        <div className="lists" id="verse-list">
-          {verseListIsOpen &&
-            verseList.map((verse) => {
+          </div>
+        )}
+        {verseListIsOpen && (
+          <div className="lists" id="verse-list">
+            {verseList.map((verse) => {
               return (
-                <div value={verse} onClick={handlePickVerse}>
+                <div
+                  className="list-option"
+                  value={verse}
+                  onClick={handlePickVerse}
+                >
                   {verse}
                 </div>
               );
             })}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

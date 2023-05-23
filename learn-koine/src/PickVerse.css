@@ -7,26 +7,33 @@
   font-size: 14px;
   font-weight: bold;
   max-height: 800px;
+  /* margin: auto; */
+}
+
+.pick-component {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 409px;
+  margin: auto;
+  position: relative;
 }
 
 #book-list {
-  padding: 5px;
   text-align: center;
   font-size: 16px;
-  border-right: solid black 1px;
+  padding: 5px;
 }
 
 #chapter-list {
   /* padding: auto; */
   padding: 5px;
   text-align: center;
-  border-right: solid black 1px;
 }
 
 #verse-list {
   padding: 5px;
   text-align: center;
-  border-right: solid black 1px;
 }
 
 .drop-lists {
@@ -34,8 +41,7 @@
   text-align: center;
   max-width: 500px;
   color: rgb(0, 0, 0);
-  overflow: scroll;
-  border: solid 1px whitesmoke;
+  border: solid 1px rgb(206, 206, 206);
 }
 
 .drop-lists button {
@@ -48,20 +54,30 @@
 
 .lists-container {
   display: flex;
-  position: absolute;
-  justify-content: center;
-  left: 500px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  justify-self: center;
+  margin: auto;
   z-index: 1;
+  width: 351px;
+  position: absolute;
+  top: 39px;
 }
 
 .lists {
-  background-color: whitesmoke;
+  background-color: rgb(241, 237, 230);
   color: black;
   max-width: 115px;
   font-size: 14px;
   text-align: center;
-  display: inline-block;
-  position: relative;
+  width: 215px;
+  padding: 0 4px;
+  height: 200px;
+  overflow: scroll;
+}
+
+.list-option {
+  cursor: pointer;
 }
 
 .go-button {
