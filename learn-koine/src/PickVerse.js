@@ -72,6 +72,29 @@ const PickVerse = () => {
 };
   */
 
+  const encodeReference = () => {
+    if (!chosenBook || !chosenChapter || !chosenVerse) {
+      return;
+    }
+    let bookCode = newTestament[chosenBook].code;
+    let tempChapter = "";
+    let tempVerse = "";
+
+    if (chosenChapter < 10) {
+      tempChapter = "0" + chosenChapter;
+    } else {
+      tempChapter = chosenChapter;
+    }
+
+    if (chosenVerse < 10) {
+      tempVerse = "0" + chosenVerse;
+    } else {
+      tempVerse = chosenVerse;
+    }
+    let reference = bookCode + "0" + tempChapter + "0" + tempVerse;
+    alert(reference);
+  };
+
   const handleOpenBookList = () => {
     bookListIsOpen ? setBookListIsOpen(false) : setBookListIsOpen(true);
   };
@@ -105,31 +128,9 @@ const PickVerse = () => {
             {chosenVerse ? chosenVerse : "Select Verse"}
           </button>
         </div>
-        <button className="go-button" onClick={() => alert("coming soon!")}>
+        <button className="go-button" onClick={encodeReference}>
           Go
         </button>
-
-        {/* {bookNames.map((book) => {
-            return <option value={book}>{book}</option>;
-          })}
-        </select>
-        <select
-          className="drop-lists"
-          id="chapter-list"
-          onClick={handlePickChapter}
-        >
-          {chapterList.map((chapter) => {
-            return <option value={chapter}>{chapter}</option>;
-          })}
-        </select>
-        <select
-          className="drop-lists"
-          id="verse-list"
-          onClick={handlePickVerse}
-        >
-          {verseList.map((verse) => {
-            return <option value={verse}>{verse}</option>;
-          })} */}
       </div>{" "}
       <div className="lists-container">
         {bookListIsOpen && (
