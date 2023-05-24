@@ -117,3 +117,31 @@
 ::-webkit-scrollbar-thumb {
   background: rgb(20, 250, 59);
 }
+
+@media only screen and (max-width: 540px) {
+  .lists-container {
+    left: 24px;
+  }
+
+  #book-list {
+    width: 91;
+  }
+
+  #chapter-list {
+    /* padding: auto; */
+    padding: 5px;
+    padding-left: 10px;
+    text-align: center;
+    left: 102px;
+    border-right: 3px solid rgb(206, 206, 206);
+    width: 85px;
+  }
+
+  #verse-list {
+    padding: 5px;
+    padding-left: 9px;
+    text-align: center;
+    left: 204px;
+    width: 87px;
+  }
+}
