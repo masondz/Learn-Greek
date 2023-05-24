@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { greekText } from "../greek_text/greekText";
 
-const organizeText = (text) => {
+export const organizeText = (text) => {
   let verses = [];
   let key = "";
   let value = "";
