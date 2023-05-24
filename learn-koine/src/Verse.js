@@ -5,9 +5,9 @@ import Word from "./Word";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectVerseSlice,
-  randomVerse,
   setMode,
   selectVerseMode,
+  setVerse,
 } from "./features/verseSlice";
 import { setArticleCount } from "./features/countSlice";
 import { ArticleGrid } from "./ArticleGrid";
@@ -20,6 +20,8 @@ import PrepositionGrid from "./PrepositionGrid";
 import PronounGrid from "./PronounGrid";
 import VerbGrid from "./VerbGrid";
 import PickVerse from "./PickVerse";
+import { newTestament } from "./PickVerse";
+import { greekText } from "./greek_text/greekText";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -32,13 +34,81 @@ const arrayIffy = (verse) => {
   return sentenceWords;
 };
 
+const organizeText = (text) => {
+  // let verses = [];
+  let verses = {};
+  let key = "";
+  let value = "";
+
+  const textArray = text.split("\n");
+
+  for (let i = 0; i < textArray.length; i++) {
+    key = textArray[i].slice(0, 8);
+    value = textArray[i].slice(9);
+    verses[key] = value;
+    // verses.push({ index: i, reference: key, verse: value });
+  }
+  return verses;
+};
+
+const getRandomVerse = (theText) => {
+  let bookArray = Object.keys(newTestament);
+  let randomBook = Math.floor(Math.random() * bookArray.length + 1);
+  console.log(randomBook + 40);
+
+  let randomChapter = Math.floor(
+    Math.random() * newTestament[bookArray[randomBook]].chapterVerseIndex.length
+  );
+  console.log(randomChapter);
+
+  let randomVerse = Math.floor(
+    Math.random() *
+      newTestament[bookArray[randomBook]].chapterVerseIndex[randomChapter] +
+      1
+  );
+  console.log(randomVerse);
+
+  let tempChapter = "";
+  let tempVerse = "";
+
+  if (randomChapter === 0) {
+    randomChapter++;
+  }
+
+  if (randomVerse === 0) {
+    randomVerse++;
+  }
+
+  if (randomChapter < 10) {
+    tempChapter = "0" + randomChapter;
+  } else {
+    tempChapter = randomChapter;
+  }
+
+  if (randomVerse < 10) {
+    tempVerse = "0" + randomVerse;
+  } else {
+    tempVerse = randomVerse;
+  }
+
+  let randomReference = randomBook + 40 + "0" + tempChapter + "0" + tempVerse;
+  console.log(randomReference);
+  console.log(theText[randomReference]);
+  // let randomIndex = Math.floor(Math.random() * theText.length + 1);
+
+  // return [theText[randomIndex].reference, theText[randomIndex].verse];
+  return [randomReference, theText[randomReference]];
+};
+
 const Verse = () => {
   let [word] = useState("");
   const dispatch = useDispatch();
   const [reset, setReset] = useState(true);
 
   useEffect(() => {
-    dispatch(randomVerse());
+    let randomVerse = getRandomVerse(organizeText(greekText));
+    console.log(randomVerse);
+    dispatch(setVerse(randomVerse));
     dispatch(setMode("definite article"));
   }, [dispatch]);
 

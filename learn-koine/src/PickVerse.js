@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./PickVerse.css";
-// import { organizeText } from "./features/verseSlice";
+import { organizeText } from "./features/verseSlice";
+import { greekText } from "./greek_text/greekText";
 
 const PickVerse = () => {
   const [bookListIsOpen, setBookListIsOpen] = useState(false);
@@ -72,6 +73,7 @@ const PickVerse = () => {
 };
   */
 
+  //this will turn the selected book chapter and verse into its reference code in the grktext
   const encodeReference = () => {
     if (!chosenBook || !chosenChapter || !chosenVerse) {
       return;
@@ -92,7 +94,12 @@ const PickVerse = () => {
       tempVerse = chosenVerse;
     }
     let reference = bookCode + "0" + tempChapter + "0" + tempVerse;
-    alert(reference);
+    lookUpVerse();
+  };
+
+  const lookUpVerse = (ref) => {
+    let allVerses = organizeText(greekText);
+    alert(typeof allVerses);
   };
 
   const handleOpenBookList = () => {
@@ -191,7 +198,7 @@ export default PickVerse;
 //   Luke:
 // }
 
-const newTestament = {
+export const newTestament = {
   Matthew: {
     code: 40,
     //chapter are arranged by index - 1, and the value is verse count. ex. Matt. chapter 1 has 25 verses (Matthew.chapterVerseIndex[0] = 25)
