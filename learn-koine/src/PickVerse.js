@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./PickVerse.css";
 import { organizeText } from "./features/verseSlice";
 import { greekText } from "./greek_text/greekText";
+import { useDispatch } from "react-redux";
+import { setVerse } from "./features/verseSlice";
 
 const PickVerse = () => {
   const [bookListIsOpen, setBookListIsOpen] = useState(false);
@@ -13,6 +15,8 @@ const PickVerse = () => {
   const [chosenBook, setChosenBook] = useState("");
   const [chosenChapter, setChosenChapter] = useState(0);
   const [chosenVerse, setChosenVerse] = useState(0);
+
+  const dispatch = useDispatch();
 
   const bookNames = Object.keys(newTestament);
 
@@ -94,13 +98,18 @@ const PickVerse = () => {
       tempVerse = chosenVerse;
     }
     let reference = bookCode + "0" + tempChapter + "0" + tempVerse;
-    console.log(reference);
-    lookUpVerse();
+    lookUpVerse(reference);
   };
 
   const lookUpVerse = (ref) => {
+    setBookListIsOpen(false);
+    setChapterListIsOpen(false);
+    setVerseListIsOpen(false);
     let allVerses = organizeText(greekText);
-    alert(typeof allVerses);
+    const verse = allVerses[ref];
+    const payload = [ref, verse];
+    console.log(payload);
+    dispatch(setVerse(payload));
   };
 
   const handleOpenBookList = () => {
