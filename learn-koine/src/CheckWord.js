@@ -1,13 +1,11 @@
 import React from "react";
 // import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  randomVerse,
-  clearVerse,
-  selectVerseMode,
-} from "./features/verseSlice";
+import { clearVerse, selectVerseMode, setVerse } from "./features/verseSlice";
 import { clearWord, selectWordSlice } from "./features/wordSlice";
 import "./Word.css";
+import { getRandomVerse, organizeText } from "./Verse";
+import { greekText } from "./greek_text/greekText";
 
 const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
   console.log("CheckWord renders");
@@ -52,9 +50,10 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
           onClick={() => {
             dispatch(clearVerse());
             // setCheckComplete("Check");
+            let newRandomVerse = getRandomVerse(organizeText(greekText));
             setTimeout(() => {
               // dispatch(clearArticleCount());
-              dispatch(randomVerse());
+              dispatch(setVerse(newRandomVerse));
               setArticleGrid(blankGrid);
               dispatch(clearWord());
             }, 1);

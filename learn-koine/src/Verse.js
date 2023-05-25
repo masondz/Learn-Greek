@@ -34,7 +34,7 @@ const arrayIffy = (verse) => {
   return sentenceWords;
 };
 
-const organizeText = (text) => {
+export const organizeText = (text) => {
   // let verses = [];
   let verses = {};
   let key = "";
@@ -51,7 +51,7 @@ const organizeText = (text) => {
   return verses;
 };
 
-const getRandomVerse = (theText) => {
+export const getRandomVerse = (theText) => {
   let bookArr = Object.keys(newTestament);
   let index = bookArr[Math.floor(Math.random() * bookArr.length)];
 
