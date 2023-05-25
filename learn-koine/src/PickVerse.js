@@ -94,6 +94,7 @@ const PickVerse = () => {
       tempVerse = chosenVerse;
     }
     let reference = bookCode + "0" + tempChapter + "0" + tempVerse;
+    console.log(reference);
     lookUpVerse();
   };
 
@@ -293,7 +294,7 @@ export const newTestament = {
 
   "3 John": { code: 64, chapterVerseIndex: [14] },
 
-  Jude: { code: (65)[{ chapter: 1, verses: 25 }] },
+  Jude: { code: 65, chapterVerseIndex: [25] },
 
   Revelation: {
     code: 66,

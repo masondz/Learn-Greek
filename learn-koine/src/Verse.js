@@ -52,52 +52,33 @@ const organizeText = (text) => {
 };
 
 const getRandomVerse = (theText) => {
-  let bookArray = Object.keys(newTestament);
-  let randomBook = Math.floor(Math.random() * bookArray.length + 1);
-  console.log(randomBook + 40);
+  let bookArr = Object.keys(newTestament);
+  let index = bookArr[Math.floor(Math.random() * bookArr.length)];
 
-  let randomChapter = Math.floor(
-    Math.random() * newTestament[bookArray[randomBook]].chapterVerseIndex.length
-  );
+  let randomBook = newTestament[index];
+
+  let chapters = randomBook.chapterVerseIndex;
+  let randomChapter = Math.floor(Math.random() * chapters.length);
   console.log(randomChapter);
 
-  let randomVerse = Math.floor(
-    Math.random() *
-      newTestament[bookArray[randomBook]].chapterVerseIndex[randomChapter] +
-      1
+  let verse = Math.floor(
+    Math.random() * randomBook.chapterVerseIndex[randomChapter]
   );
-  console.log(randomVerse);
 
-  let tempChapter = "";
-  let tempVerse = "";
-
-  if (randomChapter === 0) {
-    randomChapter++;
-  }
-
-  if (randomVerse === 0) {
-    randomVerse++;
-  }
+  randomChapter++;
+  verse++;
 
   if (randomChapter < 10) {
-    tempChapter = "0" + randomChapter;
-  } else {
-    tempChapter = randomChapter;
+    randomChapter = "0" + randomChapter;
   }
 
-  if (randomVerse < 10) {
-    tempVerse = "0" + randomVerse;
-  } else {
-    tempVerse = randomVerse;
+  if (verse < 10) {
+    verse = "0" + verse;
   }
 
-  let randomReference = randomBook + 40 + "0" + tempChapter + "0" + tempVerse;
-  console.log(randomReference);
-  console.log(theText[randomReference]);
-  // let randomIndex = Math.floor(Math.random() * theText.length + 1);
+  let reference = randomBook.code + "0" + randomChapter + "0" + verse;
 
-  // return [theText[randomIndex].reference, theText[randomIndex].verse];
-  return [randomReference, theText[randomReference]];
+  return [reference, theText[reference]];
 };
 
 const Verse = () => {
