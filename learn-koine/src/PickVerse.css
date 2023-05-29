@@ -105,6 +105,15 @@
   background-color: rgb(10, 116, 28);
 }
 
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 10px;
+  width: 200px;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -121,6 +130,10 @@
 @media only screen and (max-width: 540px) {
   .lists-container {
     left: 25px;
+  }
+
+  .button {
+    border-color: red;
   }
 
   #book-list {

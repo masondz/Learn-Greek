@@ -39,6 +39,7 @@ const PickVerse = () => {
   const handlePickChapter = (e) => {
     e.preventDefault();
     const chapterNumber = e.target.innerHTML;
+    console.log(chapterNumber);
     const numberOfVerses =
       newTestament[chosenBook].chapterVerseIndex[chapterNumber - 1];
     const versesArray = [];
@@ -47,13 +48,28 @@ const PickVerse = () => {
       versesArray.push(i);
     }
 
-    setChosenChapter(chapterNumber);
+    let encodeChapter = "";
+
+    if (chapterNumber < 10) {
+      encodeChapter = "0" + chapterNumber;
+      console.log(encodeChapter);
+    } else {
+      encodeChapter = chapterNumber;
+    }
+
+    setChosenChapter(encodeChapter);
     setVerseList(versesArray);
   };
 
   const handlePickVerse = (e) => {
     e.preventDefault();
-    setChosenVerse(e.target.innerHTML);
+    let encodeVerse = "";
+    if (Number(e.target.innerHTML) < 10) {
+      encodeVerse = "0" + e.target.innerHTML;
+    } else {
+      encodeVerse = e.target.innerHTML;
+    }
+    setChosenVerse(encodeVerse);
   };
 
   //"40 0 01 0 01 Βίβλος γενέσεως ˚Ἰησοῦ ˚Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ:"
@@ -83,21 +99,8 @@ const PickVerse = () => {
       return;
     }
     let bookCode = newTestament[chosenBook].code;
-    let tempChapter = "";
-    let tempVerse = "";
 
-    if (chosenChapter < 10) {
-      tempChapter = "0" + chosenChapter;
-    } else {
-      tempChapter = chosenChapter;
-    }
-
-    if (chosenVerse < 10) {
-      tempVerse = "0" + chosenVerse;
-    } else {
-      tempVerse = chosenVerse;
-    }
-    let reference = bookCode + "0" + tempChapter + "0" + tempVerse;
+    let reference = bookCode + "0" + chosenChapter + "0" + chosenVerse;
     lookUpVerse(reference);
   };
 
@@ -106,11 +109,54 @@ const PickVerse = () => {
     setChapterListIsOpen(false);
     setVerseListIsOpen(false);
     let allVerses = organizeText(greekText);
+    if (!allVerses[ref]) {
+      alert("Verse doesn't exist!");
+      return false;
+    }
     const verse = allVerses[ref];
     const payload = [ref, verse];
     console.log(payload);
     dispatch(setVerse(payload));
+    return true;
   };
+
+  function nextVerse() {
+    if (!chosenBook || !chosenChapter || !chosenVerse) {
+      return;
+    }
+
+    let tempVerse = Number(chosenVerse) + 1;
+    console.log(tempVerse);
+
+    if (tempVerse < 10) {
+      tempVerse = "0" + tempVerse;
+    }
+    let reference =
+      newTestament[chosenBook].code + "0" + chosenChapter + "0" + tempVerse;
+    console.log(reference);
+    if (lookUpVerse(reference)) {
+      setChosenVerse(tempVerse);
+    }
+  }
+
+  function prevVerse() {
+    if (!chosenBook || !chosenChapter || !chosenVerse) {
+      return;
+    }
+
+    let tempVerse = Number(chosenVerse) - 1;
+    console.log(tempVerse);
+
+    if (tempVerse < 10) {
+      tempVerse = "0" + tempVerse;
+    }
+    let reference =
+      newTestament[chosenBook].code + "0" + chosenChapter + "0" + tempVerse;
+    console.log(reference);
+    if (lookUpVerse(reference)) {
+      setChosenVerse(tempVerse);
+    }
+  }
 
   const handleOpenBookList = () => {
     bookListIsOpen ? setBookListIsOpen(false) : setBookListIsOpen(true);
@@ -158,6 +204,7 @@ const PickVerse = () => {
                   className="list-option"
                   value={book}
                   onClick={handlePickBook}
+                  key={book.code}
                 >
                   {book}
                 </div>
@@ -195,6 +242,14 @@ const PickVerse = () => {
             })}
           </div>
         )}
+      </div>
+      <div className="nav-buttons">
+        <button className="button" onClick={prevVerse}>
+          prev
+        </button>
+        <button className="button" onClick={nextVerse}>
+          next
+        </button>
       </div>
     </div>
   );

@@ -59,7 +59,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
             }, 1);
           }}
         >
-          Next Verse
+          Random Verse
         </button>
       </div>
     </div>
