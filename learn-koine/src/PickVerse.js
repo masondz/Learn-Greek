@@ -72,27 +72,6 @@ const PickVerse = () => {
     setChosenVerse(encodeVerse);
   };
 
-  //"40 0 01 0 01 Βίβλος γενέσεως ˚Ἰησοῦ ˚Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ:"
-
-  /*
-  const decodeReference = (ref) => {
-  //book
-  let bookIndex = ref.slice(0, 2) - 40;
-  //chapter
-  let chapterNumber = ref.slice(3, 5);
-  if (chapterNumber[0] === "0") {
-    chapterNumber = chapterNumber[1];
-  }
-  //verse
-  let verseNumber = ref.slice(6, 9);
-  return {
-    bookIndex: bookIndex,
-    chapterNumber: chapterNumber,
-    verseNumber: verseNumber,
-  };
-};
-  */
-
   //this will turn the selected book chapter and verse into its reference code in the grktext
   const encodeReference = () => {
     if (!chosenBook || !chosenChapter || !chosenVerse) {
