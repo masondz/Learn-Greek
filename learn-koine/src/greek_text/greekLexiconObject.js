@@ -67805,12 +67805,12 @@ export const wordUsages = {
   ὅτι: {
     parse: "CONJ｜Conjunction or conjunctive particle",
     GN: "G3754",
-    gloss: "since",
+    gloss: "that/because/since",
   },
   Ὅτι: {
     parse: "CONJ｜Conjunction or conjunctive particle",
     GN: "G3754",
-    gloss: "since",
+    gloss: "that/because/since",
   },
   οὐ: { parse: "PRT-N｜Particle, Negative", GN: "G3756", gloss: "no" },
   Οὐ: {
