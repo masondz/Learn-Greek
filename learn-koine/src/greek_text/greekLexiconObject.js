@@ -1,6 +1,6 @@
 // const fs = require("fs");
 
-const wordUsages = {
+export const wordUsages = {
   Ἄλφα: {
     parse: "N-NSN-T｜Noun, nominative, singular, neuter, Title",
     GN: "G1",
@@ -100297,26 +100297,26 @@ const wordUsages = {
   },
 };
 
-let gnumberObject = {};
+// let gnumberObject = {};
 
-let gnumCount = [];
+// let gnumCount = [];
 
-for (const word in wordUsages) {
-  let gnum = wordUsages[word].GN;
-  if (!gnumberObject[gnum]) {
-    gnumberObject[gnum] = 1;
-  } else {
-    gnumberObject[gnum]++;
-  }
-}
+// for (const word in wordUsages) {
+//   let gnum = wordUsages[word].GN;
+//   if (!gnumberObject[gnum]) {
+//     gnumberObject[gnum] = 1;
+//   } else {
+//     gnumberObject[gnum]++;
+//   }
+// }
 
-for (const num in gnumberObject) {
-  if (gnumberObject[num] > 25 && gnumberObject[num] < 45) {
-    gnumCount.push(num);
-  }
-}
+// for (const num in gnumberObject) {
+//   if (gnumberObject[num] > 25 && gnumberObject[num] < 45) {
+//     gnumCount.push(num);
+//   }
+// }
 
-console.log(gnumCount);
+// console.log(gnumCount);
 
 //continue backwards at G3992
 
