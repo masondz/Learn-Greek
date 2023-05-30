@@ -28361,7 +28361,7 @@ export const wordUsages = {
   εἰδέναι: {
     parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἶδες: {
     parse:
@@ -28383,17 +28383,17 @@ export const wordUsages = {
   εἰδῇς: {
     parse: "V-RAS-2S｜Verb, peRfect, Active, Subjunctive, second, singular",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδήσουσίν: {
     parse: "V-FAI-3P｜Verb, Future, Active, Indicative, third, plural",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδῆτε: {
     parse: "V-RAS-2P｜Verb, peRfect, Active, Subjunctive, second, plural",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἴδομεν: {
     parse: "V-2AAI-1P｜Verb, second Aorist, Active, Indicative, first, plural",
@@ -28425,95 +28425,95 @@ export const wordUsages = {
     parse:
       "V-RAP-DPM｜Verb, peRfect, Active, Participle, dative, plural, masculine",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδότα: {
     parse:
       "V-RAP-NPN｜Verb, peRfect, Active, Participle, nominative, plural, neuter",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδότας: {
     parse:
       "V-RAP-APM｜Verb, peRfect, Active, Participle, accusative, plural, masculine",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδότες: {
     parse:
       "V-RAP-NPM｜Verb, peRfect, Active, Participle, nominative, plural, masculine",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   Εἰδότες: {
     parse:
       "V-RAP-NPM｜Verb, peRfect, Active, Participle, nominative, plural, masculine",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδότι: {
     parse:
       "V-RAP-DSM｜Verb, peRfect, Active, Participle, dative, singular, masculine",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδυῖα: {
     parse:
       "V-RAP-NSF｜Verb, peRfect, Active, Participle, nominative, singular, feminine",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδῶ: {
     parse: "V-RAS-1S｜Verb, peRfect, Active, Subjunctive, first, singular",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδῶμεν: {
     parse: "V-RAS-1P｜Verb, peRfect, Active, Subjunctive, first, plural",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδώς: {
     parse:
       "V-RAP-NSM｜Verb, peRfect, Active, Participle, nominative, singular, masculine",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   εἰδὼς: {
     parse:
       "V-RAP-NSM｜Verb, peRfect, Active, Participle, nominative, singular, masculine",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   ᾔδει: {
     parse:
       "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   ᾔδειν: {
     parse:
       "V-2LAI-1S｜Verb, second pLuperfect, Active, Indicative, first, singular",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   ᾔδεις: {
     parse:
       "V-2LAI-2S｜Verb, second pLuperfect, Active, Indicative, second, singular",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   ᾔδεισαν: {
     parse:
       "V-2LAI-3P｜Verb, second pLuperfect, Active, Indicative, third, plural",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   ᾔδειτε: {
     parse:
       "V-2LAI-2P｜Verb, second pLuperfect, Active, Indicative, second, plural",
     GN: "G1492",
-    gloss: "see",
+    gloss: "know",
   },
   Ἤιδει: {
     parse:
@@ -28630,62 +28630,62 @@ export const wordUsages = {
   },
   οἶδα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   Οἶδα: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   οἶδά: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   Οἶδά: {
     parse: "V-RAI-1S｜Verb, perfect, Active, Indicative, first, singular",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   οἴδαμεν: {
     parse: "V-RAI-1P｜Verb, peRfect, Active, Indicative, first, plural",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   Οἴδαμεν: {
     parse: "V-RAI-1P｜Verb, peRfect, Active, Indicative, first, plural",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   οἶδας: {
     parse: "V-RAI-2S｜Verb, peRfect, Active, Indicative, second, singular",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   Οἶδας: {
     parse: "V-RAI-2S｜Verb, peRfect, Active, Indicative, second, singular",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   οἴδασιν: {
     parse: "V-RAI-3P｜Verb, peRfect, Active, Indicative, third, plural",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   οἴδατε: {
     parse: "V-RAI-2P｜Verb, peRfect, Active, Indicative, second, plural",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   Οἴδατε: {
     parse: "V-RAI-2P｜Verb, peRfect, Active, Indicative, second, plural",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   οἶδεν: {
     parse: "V-RAI-3S｜Verb, peRfect, Active, Indicative, third, singular",
-    GN: "G6063",
+    GN: "G1492",
     gloss: "to know",
   },
   εἰδωλείῳ: {
