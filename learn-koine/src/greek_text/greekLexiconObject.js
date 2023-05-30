@@ -29287,9 +29287,9 @@ export const wordUsages = {
     GN: "G1518",
     gloss: "peacemaker",
   },
-  εἰς: { parse: "PREP｜Preposition", GN: "G1519", gloss: "toward" },
-  Εἰς: { parse: "PREP｜Preposition", GN: "G1519", gloss: "toward" },
-  εἴς: { parse: "PREP｜Preposition", GN: "G1519", gloss: "toward" },
+  εἰς: { parse: "PREP｜Preposition", GN: "G1519", gloss: "unto/toward" },
+  Εἰς: { parse: "PREP｜Preposition", GN: "G1519", gloss: "unto/toward" },
+  εἴς: { parse: "PREP｜Preposition", GN: "G1519", gloss: "unto/toward" },
   εἷς: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G1520",
