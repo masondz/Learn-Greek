@@ -115,6 +115,10 @@
   justify-content: center;
 }
 
+#Random-Verse-Button {
+  margin-bottom: 125px;
+}
+
 .chosen-word {
   display: inline-flex;
 }

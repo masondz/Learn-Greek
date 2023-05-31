@@ -22,6 +22,7 @@ import VerbGrid from "./VerbGrid";
 import PickVerse from "./PickVerse";
 import { newTestament } from "./PickVerse";
 import { greekText } from "./greek_text/greekText";
+import Toolkit from "./Toolkit";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -209,6 +210,7 @@ const Verse = () => {
             {practiceGrid}
           </CheckWord>
         </div>
+        <Toolkit />
       </div>
     </div>
   );

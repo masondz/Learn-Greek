@@ -14,7 +14,6 @@
 }
 
 h1 {
-  
 }
 
 .links {
@@ -27,7 +26,7 @@ a {
   border-radius: 5px;
   color: white;
   text-decoration: none;
-  padding: .5em;
+  padding: 0.5em;
   /* max-width: 150px; */
   min-width: 200px;
 }

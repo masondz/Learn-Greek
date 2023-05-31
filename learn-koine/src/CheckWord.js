@@ -47,6 +47,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
       <div className="button-group">
         <button
           className="button"
+          id="Random-Verse-Button"
           onClick={() => {
             dispatch(clearVerse());
             // setCheckComplete("Check");

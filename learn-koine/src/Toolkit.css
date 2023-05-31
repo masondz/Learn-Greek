@@ -1,0 +1,62 @@
+.toolkit-container {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  z-index: 2;
+  bottom: 0px;
+  font-size: 0.5em;
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+.tool {
+  padding: 0px 5px 5px 5px;
+  background-color: white;
+  width: 100%;
+  border-right: solid 0.5px rgba(128, 128, 128, 0.568);
+  cursor: pointer;
+}
+
+.selected-tool {
+  background-color: gainsboro;
+}
+
+#definite-article {
+  border-top: rgb(3, 224, 3) 8px solid;
+}
+
+#Conjunction {
+  border-top: rgb(247, 196, 149) 8px solid;
+}
+
+#Preposition {
+  border-top: rgb(241, 241, 113) 8px solid;
+}
+
+#Noun-and-Adjective {
+  border-top: rgb(113, 232, 241) 8px solid;
+}
+
+#Pronoun {
+  border-top: rgb(200, 113, 241) 8px solid;
+}
+
+#Verb {
+  border-top: rgb(111, 161, 255) 8px solid;
+}
+
+#Particle {
+  border-top: rgb(241, 163, 193) 8px solid;
+}
+
+#Adverb {
+  border-top: rgb(113, 241, 188) 8px solid;
+}
+
+@media only screen and (max-width: 822px) {
+  .toolkit-container {
+    font-size: 0.8em;
+  }
+}
