@@ -3,6 +3,7 @@
   justify-content: center;
   margin: auto;
   align-items: stretch;
+  max-width: fit-content;
 }
 
 .categories-hidden {
@@ -136,7 +137,11 @@
 
 @media only screen and (max-width: 475px) {
   .cases {
-    padding: 5px;
+    padding: 1px;
+  }
+
+  .case-option {
+    max-width: 200px;
   }
 
   .button {

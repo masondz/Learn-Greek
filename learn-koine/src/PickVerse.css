@@ -6,6 +6,7 @@
   z-index: 1;
   font-size: 14px;
   font-weight: bold;
+  width: 100%;
   max-height: 800px;
   /* border: 1px yellow solid; */
   /* margin: auto; */
@@ -130,10 +131,6 @@
 @media only screen and (max-width: 540px) {
   .lists-container {
     left: 25px;
-  }
-
-  .button {
-    border-color: red;
   }
 
   #book-list {
