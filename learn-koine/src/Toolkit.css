@@ -1,5 +1,5 @@
 .toolkit-container {
-  color: black;
+  color: white;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -13,7 +13,7 @@
 
 .tool {
   padding: 0px 5px 5px 5px;
-  background-color: white;
+  background-color: #282c34;
   width: 100%;
   border-right: solid 0.5px rgba(128, 128, 128, 0.568);
   cursor: pointer;
@@ -24,35 +24,35 @@
 }
 
 #definite-article {
-  border-top: rgb(3, 224, 3) 8px solid;
+  border-top: rgb(3, 224, 3) 4px solid;
 }
 
 #Conjunction {
-  border-top: rgb(247, 196, 149) 8px solid;
+  border-top: rgb(247, 196, 149) 4px solid;
 }
 
 #Preposition {
-  border-top: rgb(241, 241, 113) 8px solid;
+  border-top: rgb(241, 241, 113) 4px solid;
 }
 
 #Noun-and-Adjective {
-  border-top: rgb(113, 232, 241) 8px solid;
+  border-top: rgb(113, 232, 241) 4px solid;
 }
 
 #Pronoun {
-  border-top: rgb(200, 113, 241) 8px solid;
+  border-top: rgb(200, 113, 241) 4px solid;
 }
 
 #Verb {
-  border-top: rgb(111, 161, 255) 8px solid;
+  border-top: rgb(111, 161, 255) 4px solid;
 }
 
 #Particle {
-  border-top: rgb(241, 163, 193) 8px solid;
+  border-top: rgb(241, 163, 193) 4px solid;
 }
 
 #Adverb {
-  border-top: rgb(113, 241, 188) 8px solid;
+  border-top: rgb(113, 241, 188) 4px solid;
 }
 
 @media only screen and (max-width: 822px) {
