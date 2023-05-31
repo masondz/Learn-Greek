@@ -3,9 +3,10 @@ import "./PickVerse.css";
 import { organizeText } from "./features/verseSlice";
 import { greekText } from "./greek_text/greekText";
 import { useDispatch } from "react-redux";
-import { setVerse } from "./features/verseSlice";
+import { setVerse, clearVerse } from "./features/verseSlice";
+import { clearWord } from "./features/wordSlice";
 
-const PickVerse = () => {
+const PickVerse = ({ setArticleGrid, blankGrid }) => {
   const [bookListIsOpen, setBookListIsOpen] = useState(false);
   const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
   const [verseListIsOpen, setVerseListIsOpen] = useState(false);
@@ -95,7 +96,12 @@ const PickVerse = () => {
     const verse = allVerses[ref];
     const payload = [ref, verse];
     console.log(payload);
-    dispatch(setVerse(payload));
+    dispatch(clearVerse());
+    setTimeout(() => {
+      dispatch(setVerse(payload));
+      dispatch(clearWord());
+      dispatch(setArticleGrid(blankGrid));
+    }, 1);
     return true;
   };
 
@@ -134,6 +140,7 @@ const PickVerse = () => {
     console.log(reference);
     if (lookUpVerse(reference)) {
       setChosenVerse(tempVerse);
+      dispatch(clearWord());
     }
   }
 

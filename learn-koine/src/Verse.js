@@ -176,7 +176,7 @@ const Verse = () => {
 
   return (
     <div className="body">
-      <PickVerse />
+      <PickVerse setArticleGrid={setArticleGrid} blankGrid={blankGrid} />
       <Menu
         setArticleGrid={setArticleGrid}
         blankGrid={blankGrid}
