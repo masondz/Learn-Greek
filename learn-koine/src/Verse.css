@@ -44,13 +44,57 @@
   height: 55px;
   margin-right: 2px;
   padding: 0px 2.5px;
-  background-color: green;
+  /* background-color: green; */
   border-radius: 5%;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
+.da {
+  background-color: rgb(3, 187, 3);
+}
+
+.na {
+  background-color: rgb(86, 175, 182);
+}
+
+.conj {
+  background-color: rgb(218, 99, 3);
+}
+
+.prep {
+  background-color: rgb(138, 135, 0);
+}
+
+.pron {
+  background-color: rgb(160, 90, 192);
+}
+
+.vrb {
+  background-color: rgb(59, 112, 209);
+}
+
+.prt {
+  background-color: rgb(204, 63, 117);
+}
+
+.adv {
+  background-color: rgb(65, 146, 112);
+}
+
+/*
+ const styleMap = {
+    "definite article": "da",
+    Conjunction: "conj",
+    Preposition: "prep",
+    "Noun and Adjective": "na",
+    Pronoun: "pron",
+    Verb: "vrb",
+    Particle: "prt",
+    Adverb: "adv",
+  };
+*/
 .verse-word-highlight-correct p {
   position: relative;
   bottom: 30px;
@@ -86,7 +130,7 @@
   height: 55px;
   margin-right: 2px;
   padding: 0px 2.5px;
-  background-color: rgb(231, 77, 77);
+  background-color: rgb(255, 0, 0);
   border-radius: 5%;
   -webkit-user-select: none;
   -ms-user-select: none;

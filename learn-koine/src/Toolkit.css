@@ -28,11 +28,11 @@
 }
 
 #Conjunction {
-  border-top: rgb(247, 196, 149) 4px solid;
+  border-top: rgb(218, 99, 3) 4px solid;
 }
 
 #Preposition {
-  border-top: rgb(241, 241, 113) 4px solid;
+  border-top: rgb(138, 135, 0) 4px solid;
 }
 
 #Noun-and-Adjective {
@@ -48,7 +48,7 @@
 }
 
 #Particle {
-  border-top: rgb(241, 163, 193) 4px solid;
+  border-top: rgb(204, 63, 117) 4px solid;
 }
 
 #Adverb {

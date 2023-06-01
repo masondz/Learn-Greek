@@ -24,6 +24,17 @@ const Word = (props) => {
 
   const { blankGrid, setArticleGrid, word, reset, setReset } = props;
 
+  const styleMap = {
+    "definite article": "da",
+    Conjunction: "conj",
+    Preposition: "prep",
+    "Noun and Adjective": "na",
+    Pronoun: "pron",
+    Verb: "vrb",
+    Particle: "prt",
+    Adverb: "adv",
+  };
+
   const handleClick = () => {
     let wordData = parseWord(word.word);
     if (!wordData) {
@@ -32,7 +43,7 @@ const Word = (props) => {
       dispatch(setWord(removePunctuation(word.word)));
       return;
     }
-    if (highlight === "-highlight-correct") {
+    if (highlight.includes("-highlight-correct")) {
       return;
     }
     if (verseMode === "Noun and Adjective") {
@@ -41,7 +52,7 @@ const Word = (props) => {
         wordData.parse.includes("Adjective")
       ) {
         setIndicator(correctPick);
-        setHighlight("-highlight-correct");
+        setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
         dispatch(incrementFoundArticles());
         dispatch(setParsingArticle(true));
       } else {
@@ -51,14 +62,16 @@ const Word = (props) => {
     } else if (verseMode === "Pronoun") {
       if (wordData.parse.includes("pronoun")) {
         setIndicator(correctPick);
-        setHighlight("-highlight-correct");
+
+        setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
       } else {
         setIndicator(wrongPick);
         setHighlight("-highlight-wrong");
       }
     } else if (wordData.parse.includes(verseMode)) {
       setIndicator(correctPick);
-      setHighlight("-highlight-correct");
+      setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
+
       dispatch(incrementFoundArticles());
       dispatch(setParsingArticle(true));
     } else if (!wordData.parse.includes(verseMode)) {
