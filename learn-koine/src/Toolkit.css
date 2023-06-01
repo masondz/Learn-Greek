@@ -17,6 +17,9 @@
   width: 100%;
   border-right: solid 0.5px rgba(128, 128, 128, 0.568);
   cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .selected-tool {
