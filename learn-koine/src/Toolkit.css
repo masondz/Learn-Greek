@@ -1,6 +1,7 @@
 .toolkit-container {
   color: white;
   display: flex;
+  justify-self: center;
   justify-content: space-around;
   width: 100%;
   position: fixed;
@@ -16,6 +17,7 @@
   background-color: #282c34;
   width: 100%;
   border-right: solid 0.5px rgba(128, 128, 128, 0.568);
+  justify-self: center;
   cursor: pointer;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -61,5 +63,11 @@
 @media only screen and (max-width: 822px) {
   .toolkit-container {
     font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .toolkit-container {
+    width: 100%;
   }
 }

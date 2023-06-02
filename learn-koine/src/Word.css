@@ -73,8 +73,8 @@
   column-gap: 0.2em;
   row-gap: 2em;
   place-items: stretch;
-  margin: 1.2em;
-  padding: 20px;
+  /* margin: 1.2em; */
+  /* padding: 20px; */
   place-content: space-around;
 }
 

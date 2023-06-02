@@ -171,6 +171,33 @@
 .inner-word {
 }
 
+@media (orientation: landscape) {
+  .verse-word-highlight-correct .indicator {
+    bottom: 0px;
+    top: 18px;
+  }
+  .verse-word-highlight-correct .indicator-highlight-correct {
+    bottom: 0px;
+    top: 18px;
+  }
+
+  .verse-word-highlight-wrong {
+    height: 48px;
+    padding: 0px 2.5px;
+    /* font-size: larger; */
+  }
+
+  .verse-word-highlight-wrong .indicator {
+    bottom: 0px;
+    top: 18px;
+  }
+
+  .verse-word-highlight-wrong .indicator-highlight-wrong {
+    bottom: 0px;
+    top: 18px;
+  }
+}
+
 @media only screen and (max-width: 540px) {
   .verse-word {
     height: 45px;
