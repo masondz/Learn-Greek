@@ -171,7 +171,7 @@
 .inner-word {
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   .verse-word-highlight-correct .indicator {
     bottom: 0px;
     top: 18px;
@@ -194,6 +194,42 @@
   .verse-word-highlight-wrong .indicator-highlight-wrong {
     bottom: 0px;
     top: -11px;
+  }
+} */
+
+@media only screen and (max-height: 670px) {
+  .indicator-highlight-correct {
+    top: 21px;
+  }
+
+  .verse-word-highlight-correct {
+    height: 55px;
+  }
+
+  .indicator-highlight-wrong {
+    top: 21px;
+  }
+
+  .verse-word-highlight-wrong {
+    height: 55px;
+  }
+}
+
+@media only screen and (max-height: 425px) {
+  .indicator-highlight-correct {
+    top: 10px;
+  }
+
+  .verse-word-highlight-correct {
+    height: 40px;
+  }
+
+  .indicator-highlight-wrong {
+    top: 10px;
+  }
+
+  .verse-word-highlight-wrong {
+    height: 40px;
   }
 }
 

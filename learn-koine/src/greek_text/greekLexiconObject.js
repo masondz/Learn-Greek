@@ -3782,29 +3782,28 @@ export const wordUsages = {
     gloss: "to follow",
   },
   ἀκηκόαμεν: {
-    parse: "V-2RAI-1P｜Verb, second peRfect, Active, Indicative, first, plural",
+    parse: "V-2RAI-1P｜Verb, 2nd Perfect, Active, Indicative, first, plural",
     GN: "G191",
     gloss: "to hear",
   },
   Ἀκηκόαμεν: {
-    parse: "V-2RAI-1P｜Verb, second peRfect, Active, Indicative, first, plural",
+    parse: "V-2RAI-1P｜Verb, 2nd Perfect, Active, Indicative, first, plural",
     GN: "G191",
     gloss: "to hear",
   },
   ἀκηκόασιν: {
-    parse: "V-2RAI-3P｜Verb, second peRfect, Active, Indicative, third, plural",
+    parse: "V-2RAI-3P｜Verb, 2nd Perfect, Active, Indicative, third, plural",
     GN: "G191",
     gloss: "to hear",
   },
   ἀκηκόατε: {
-    parse:
-      "V-2RAI-2P｜Verb, second peRfect, Active, Indicative, second, plural",
+    parse: "V-2RAI-2P｜Verb, 2nd Perfect, Active, Indicative, second, plural",
     GN: "G191",
     gloss: "to hear",
   },
   ἀκηκοότας: {
     parse:
-      "V-2RAP-APM｜Verb, second peRfect, Active, Participle, accusative, plural, masculine",
+      "V-2RAP-APM｜Verb, 2nd Perfect, Active, Participle, accusative, plural, masculine",
     GN: "G191",
     gloss: "to hear",
   },
@@ -4692,12 +4691,12 @@ export const wordUsages = {
     gloss: "but",
   },
   ἀλλαγησόμεθα: {
-    parse: "V-2FPI-1P｜Verb, second Future, Passive, Indicative, first, plural",
+    parse: "V-2FPI-1P｜Verb, 2nd Future, Passive, Indicative, first, plural",
     GN: "G236",
     gloss: "to change",
   },
   ἀλλαγήσονται: {
-    parse: "V-2FPI-3P｜Verb, second Future, Passive, Indicative, third, plural",
+    parse: "V-2FPI-3P｜Verb, 2nd Future, Passive, Indicative, third, plural",
     GN: "G236",
     gloss: "to change",
   },
@@ -6387,8 +6386,7 @@ export const wordUsages = {
     gloss: "to kill",
   },
   ἀνελεῖ: {
-    parse:
-      "V-2FAI-3S｜Verb, second Future, Active, Indicative, third, singular",
+    parse: "V-2FAI-3S｜Verb, 2nd Future, Active, Indicative, third, singular",
     GN: "G337",
     gloss: "to kill",
   },
@@ -6835,7 +6833,7 @@ export const wordUsages = {
     gloss: "rest",
   },
   ἀναπαήσονται: {
-    parse: "V-2FPI-3P｜Verb, second Future, Passive, Indicative, third, plural",
+    parse: "V-2FPI-3P｜Verb, 2nd Future, Passive, Indicative, third, plural",
     GN: "G373",
     gloss: "to give rest",
   },
@@ -8142,32 +8140,31 @@ export const wordUsages = {
     gloss: "folly",
   },
   ἀνέῳγεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G455",
     gloss: "to open",
   },
   ἀνεῳγμένας: {
     parse:
-      "V-2RPP-APF｜Verb, second peRfect, Passive, Participle, accusative, plural, feminine",
+      "V-2RPP-APF｜Verb, 2nd Perfect, Passive, Participle, accusative, plural, feminine",
     GN: "G455",
     gloss: "to open",
   },
   ἀνεῳγμένης: {
     parse:
-      "V-2RPP-GSF｜Verb, second peRfect, Passive, Participle, genitive, singular, feminine",
+      "V-2RPP-GSF｜Verb, 2nd Perfect, Passive, Participle, genitive, singular, feminine",
     GN: "G455",
     gloss: "to open",
   },
   ἀνεῳγμένον: {
     parse:
-      "V-2RPP-ASM｜Verb, second peRfect, Passive, Participle, accusative, singular, masculine",
+      "V-2RPP-ASM｜Verb, 2nd Perfect, Passive, Participle, accusative, singular, masculine",
     GN: "G455",
     gloss: "to open",
   },
   ἀνεῳγμένος: {
     parse:
-      "V-2RPP-NSM｜Verb, second peRfect, Passive, Participle, nominative, singular, masculine",
+      "V-2RPP-NSM｜Verb, 2nd Perfect, Passive, Participle, nominative, singular, masculine",
     GN: "G455",
     gloss: "to open",
   },
@@ -8179,7 +8176,7 @@ export const wordUsages = {
   },
   ἀνεῳγότα: {
     parse:
-      "V-2RAP-ASM｜Verb, second peRfect, Active, Participle, accusative, singular, masculine",
+      "V-2RAP-ASM｜Verb, 2nd Perfect, Active, Participle, accusative, singular, masculine",
     GN: "G455",
     gloss: "to open",
   },
@@ -8214,8 +8211,7 @@ export const wordUsages = {
     gloss: "to open",
   },
   ἀνοιγήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G455",
     gloss: "to open",
   },
@@ -9655,14 +9651,12 @@ export const wordUsages = {
     gloss: "to go away",
   },
   ἀπεληλύθεισαν: {
-    parse:
-      "V-2LAI-3P｜Verb, second pLuperfect, Active, Indicative, third, plural",
+    parse: "V-2LAI-3P｜Verb, 2nd Pluperfect, Active, Indicative, third, plural",
     GN: "G565",
     gloss: "to go away",
   },
   ἀπελήλυθεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G565",
     gloss: "to go away",
   },
@@ -11085,8 +11079,7 @@ export const wordUsages = {
     gloss: "to destroy",
   },
   ἀπολεῖται: {
-    parse:
-      "V-2FMI-3S｜Verb, second Future, Middle, Indicative, third, singular",
+    parse: "V-2FMI-3S｜Verb, 2nd Future, Middle, Indicative, third, singular",
     GN: "G622",
     gloss: "to destroy",
   },
@@ -11208,25 +11201,25 @@ export const wordUsages = {
   },
   ἀπολωλός: {
     parse:
-      "V-2RAP-ASN｜Verb, second peRfect, Active, Participle, accusative, singular, neuter",
+      "V-2RAP-ASN｜Verb, 2nd Perfect, Active, Participle, accusative, singular, neuter",
     GN: "G622",
     gloss: "to destroy",
   },
   ἀπολωλὸς: {
     parse:
-      "V-2RAP-ASN｜Verb, second peRfect, Active, Participle, accusative, singular, neuter",
+      "V-2RAP-ASN｜Verb, 2nd Perfect, Active, Participle, accusative, singular, neuter",
     GN: "G622",
     gloss: "to destroy",
   },
   ἀπολωλότα: {
     parse:
-      "V-2RAP-APN｜Verb, second peRfect, Active, Participle, accusative, plural, neuter",
+      "V-2RAP-APN｜Verb, 2nd Perfect, Active, Participle, accusative, plural, neuter",
     GN: "G622",
     gloss: "to destroy",
   },
   ἀπολωλὼς: {
     parse:
-      "V-2RAP-NSM｜Verb, second peRfect, Active, Participle, nominative, singular, masculine",
+      "V-2RAP-NSM｜Verb, 2nd Perfect, Active, Participle, nominative, singular, masculine",
     GN: "G622",
     gloss: "to destroy",
   },
@@ -13038,7 +13031,7 @@ export const wordUsages = {
     gloss: "to seize",
   },
   ἁρπαγησόμεθα: {
-    parse: "V-2FPI-1P｜Verb, second Future, Passive, Indicative, first, plural",
+    parse: "V-2FPI-1P｜Verb, 2nd Future, Passive, Indicative, first, plural",
     GN: "G726",
     gloss: "to seize",
   },
@@ -14990,8 +14983,7 @@ export const wordUsages = {
     gloss: "to remove",
   },
   ἀφελεῖ: {
-    parse:
-      "V-2FAI-3S｜Verb, second Future, Active, Indicative, third, singular",
+    parse: "V-2FAI-3S｜Verb, 2nd Future, Active, Indicative, third, singular",
     GN: "G851",
     gloss: "to remove",
   },
@@ -15153,8 +15145,7 @@ export const wordUsages = {
     gloss: "permit",
   },
   ἀφεῖς: {
-    parse:
-      "V-2PAI-2S｜Verb, second Present, Active, Indicative, second, singular",
+    parse: "V-2PAI-2S｜Verb, 2nd Present, Active, Indicative, second, singular",
     GN: "G863",
     gloss: "permit",
   },
@@ -19132,111 +19123,105 @@ export const wordUsages = {
     gloss: "to be",
   },
   γέγονα: {
-    parse:
-      "V-2RAI-1S｜Verb, second peRfect, Active, Indicative, first, singular",
+    parse: "V-2RAI-1S｜Verb, 2nd Perfect, Active, Indicative, first, singular",
     GN: "G1096",
     gloss: "to be",
   },
   Γέγονα: {
-    parse:
-      "V-2RAI-1S｜Verb, second peRfect, Active, Indicative, first, singular",
+    parse: "V-2RAI-1S｜Verb, 2nd Perfect, Active, Indicative, first, singular",
     GN: "G1096",
     gloss: "to be",
   },
   γεγόναμεν: {
-    parse: "V-2RAI-1P｜Verb, second peRfect, Active, Indicative, first, plural",
+    parse: "V-2RAI-1P｜Verb, 2nd Perfect, Active, Indicative, first, plural",
     GN: "G1096",
     gloss: "to be",
   },
   γέγοναν: {
-    parse: "V-2RAI-3P｜Verb, second peRfect, Active, Indicative, third, plural",
+    parse: "V-2RAI-3P｜Verb, 2nd Perfect, Active, Indicative, third, plural",
     GN: "G1096",
     gloss: "to be",
   },
   Γέγοναν: {
-    parse: "V-2RAI-3P｜Verb, second peRfect, Active, Indicative, third, plural",
+    parse: "V-2RAI-3P｜Verb, 2nd Perfect, Active, Indicative, third, plural",
     GN: "G1096",
     gloss: "to be",
   },
   γέγονας: {
-    parse:
-      "V-2RAI-2S｜Verb, second peRfect, Active, Indicative, second, singular",
+    parse: "V-2RAI-2S｜Verb, 2nd Perfect, Active, Indicative, second, singular",
     GN: "G1096",
     gloss: "to be",
   },
   γεγόνασιν: {
-    parse: "V-2RAI-3P｜Verb, second peRfect, Active, Indicative, third, plural",
+    parse: "V-2RAI-3P｜Verb, 2nd Perfect, Active, Indicative, third, plural",
     GN: "G1096",
     gloss: "to be",
   },
   γεγόνατε: {
-    parse:
-      "V-2RAI-2P｜Verb, second peRfect, Active, Indicative, second, plural",
+    parse: "V-2RAI-2P｜Verb, 2nd Perfect, Active, Indicative, second, plural",
     GN: "G1096",
     gloss: "to be",
   },
   γεγόνει: {
     parse:
-      "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd Pluperfect, Active, Indicative, third, singular",
     GN: "G1096",
     gloss: "to be",
   },
   γέγονεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G1096",
     gloss: "to be",
   },
   Γέγονεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G1096",
     gloss: "to be",
   },
   γεγονέναι: {
-    parse: "V-2RAN｜Verb, second peRfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
     GN: "G1096",
     gloss: "to be",
   },
   γεγονός: {
     parse:
-      "V-2RAP-NSN｜Verb, second peRfect, Active, Participle, nominative, singular, neuter",
+      "V-2RAP-NSN｜Verb, 2nd Perfect, Active, Participle, nominative, singular, neuter",
     GN: "G1096",
     gloss: "to be",
   },
   γεγονὸς: {
     parse:
-      "V-2RAP-ASN｜Verb, second peRfect, Active, Participle, accusative, singular, neuter",
+      "V-2RAP-ASN｜Verb, 2nd Perfect, Active, Participle, accusative, singular, neuter",
     GN: "G1096",
     gloss: "to be",
   },
   γεγονότας: {
     parse:
-      "V-2RAP-APM｜Verb, second peRfect, Active, Participle, accusative, plural, masculine",
+      "V-2RAP-APM｜Verb, 2nd Perfect, Active, Participle, accusative, plural, masculine",
     GN: "G1096",
     gloss: "to be",
   },
   γεγονότες: {
     parse:
-      "V-2RAP-NPM｜Verb, second peRfect, Active, Participle, nominative, plural, masculine",
+      "V-2RAP-NPM｜Verb, 2nd Perfect, Active, Participle, nominative, plural, masculine",
     GN: "G1096",
     gloss: "to be",
   },
   γεγονότι: {
     parse:
-      "V-2RAP-DSN｜Verb, second peRfect, Active, Participle, dative, singular, neuter",
+      "V-2RAP-DSN｜Verb, 2nd Perfect, Active, Participle, dative, singular, neuter",
     GN: "G1096",
     gloss: "to be",
   },
   γεγονυῖα: {
     parse:
-      "V-2RAP-NSF｜Verb, second peRfect, Active, Participle, nominative, singular, feminine",
+      "V-2RAP-NSF｜Verb, 2nd Perfect, Active, Participle, nominative, singular, feminine",
     GN: "G1096",
     gloss: "to be",
   },
   γεγονὼς: {
     parse:
-      "V-2RAP-NSM｜Verb, second peRfect, Active, Participle, nominative, singular, masculine",
+      "V-2RAP-NSM｜Verb, 2nd Perfect, Active, Participle, nominative, singular, masculine",
     GN: "G1096",
     gloss: "to be",
   },
@@ -19556,7 +19541,7 @@ export const wordUsages = {
   },
   ἐγεγόνει: {
     parse:
-      "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd Pluperfect, Active, Indicative, third, singular",
     GN: "G1096",
     gloss: "to be",
   },
@@ -20554,8 +20539,7 @@ export const wordUsages = {
     gloss: "to write",
   },
   γέγραφα: {
-    parse:
-      "V-2RAI-1S｜Verb, second peRfect, Active, Indicative, first, singular",
+    parse: "V-2RAI-1S｜Verb, 2nd Perfect, Active, Indicative, first, singular",
     GN: "G1125",
     gloss: "to write",
   },
@@ -21785,14 +21769,12 @@ export const wordUsages = {
     gloss: "made of leather",
   },
   δαρήσεσθε: {
-    parse:
-      "V-2FPI-2P｜Verb, second Future, Passive, Indicative, second, plural",
+    parse: "V-2FPI-2P｜Verb, 2nd Future, Passive, Indicative, second, plural",
     GN: "G1194",
     gloss: "to beat up",
   },
   δαρήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G1194",
     gloss: "to beat up",
   },
@@ -24777,7 +24759,7 @@ export const wordUsages = {
   },
   διεληλυθότα: {
     parse:
-      "V-2RAP-ASM｜Verb, second peRfect, Active, Participle, accusative, singular, masculine",
+      "V-2RAP-ASM｜Verb, 2nd Perfect, Active, Participle, accusative, singular, masculine",
     GN: "G1330",
     gloss: "to pass through",
   },
@@ -28164,7 +28146,7 @@ export const wordUsages = {
   },
   εἰωθὸς: {
     parse:
-      "V-2RAP-ASN｜Verb, second peRfect, Active, Participle, accusative, singular, neuter",
+      "V-2RAP-ASN｜Verb, 2nd Perfect, Active, Participle, accusative, singular, neuter",
     GN: "G1486",
     gloss: "to have a custom",
   },
@@ -28344,37 +28326,36 @@ export const wordUsages = {
   },
   ᾔδει: {
     parse:
-      "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd Pluperfect, Active, Indicative, third, singular",
     GN: "G1492",
     gloss: "know",
   },
   ᾔδειν: {
     parse:
-      "V-2LAI-1S｜Verb, second pLuperfect, Active, Indicative, first, singular",
+      "V-2LAI-1S｜Verb, 2nd Pluperfect, Active, Indicative, first, singular",
     GN: "G1492",
     gloss: "know",
   },
   ᾔδεις: {
     parse:
-      "V-2LAI-2S｜Verb, second pLuperfect, Active, Indicative, second, singular",
+      "V-2LAI-2S｜Verb, 2nd Pluperfect, Active, Indicative, second, singular",
     GN: "G1492",
     gloss: "know",
   },
   ᾔδεισαν: {
-    parse:
-      "V-2LAI-3P｜Verb, second pLuperfect, Active, Indicative, third, plural",
+    parse: "V-2LAI-3P｜Verb, 2nd Pluperfect, Active, Indicative, third, plural",
     GN: "G1492",
     gloss: "know",
   },
   ᾔδειτε: {
     parse:
-      "V-2LAI-2P｜Verb, second pLuperfect, Active, Indicative, second, plural",
+      "V-2LAI-2P｜Verb, 2nd Pluperfect, Active, Indicative, second, plural",
     GN: "G1492",
     gloss: "know",
   },
   Ἤιδει: {
     parse:
-      "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd Pluperfect, Active, Indicative, third, singular",
     GN: "G1492",
     gloss: "see",
   },
@@ -29317,13 +29298,12 @@ export const wordUsages = {
     gloss: "to enter",
   },
   εἰσεληλύθασιν: {
-    parse: "V-2RAI-3P｜Verb, second peRfect, Active, Indicative, third, plural",
+    parse: "V-2RAI-3P｜Verb, 2nd Perfect, Active, Indicative, third, plural",
     GN: "G1525",
     gloss: "to enter",
   },
   εἰσεληλύθατε: {
-    parse:
-      "V-2RAI-2P｜Verb, second peRfect, Active, Indicative, second, plural",
+    parse: "V-2RAI-2P｜Verb, 2nd Perfect, Active, Indicative, second, plural",
     GN: "G1525",
     gloss: "to enter",
   },
@@ -30459,8 +30439,7 @@ export const wordUsages = {
     gloss: "to carry out",
   },
   ἐκκοπήσῃ: {
-    parse:
-      "V-2FPI-2S｜Verb, second Future, Passive, Indicative, second, singular",
+    parse: "V-2FPI-2S｜Verb, 2nd Future, Passive, Indicative, second, singular",
     GN: "G1581",
     gloss: "to prevent",
   },
@@ -31137,7 +31116,7 @@ export const wordUsages = {
     gloss: "to turn/wander away",
   },
   ἐκτραπήσονται: {
-    parse: "V-2FPI-3P｜Verb, second Future, Passive, Indicative, third, plural",
+    parse: "V-2FPI-3P｜Verb, 2nd Future, Passive, Indicative, third, plural",
     GN: "G1624",
     gloss: "to turn/wander away",
   },
@@ -31205,7 +31184,7 @@ export const wordUsages = {
     gloss: "to bring/carry out",
   },
   ἐκπεφευγέναι: {
-    parse: "V-2RAN｜Verb, second peRfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
     GN: "G1628",
     gloss: "to escape",
   },
@@ -33732,12 +33711,12 @@ export const wordUsages = {
     gloss: "to cause shame",
   },
   ἐντραπήσονται: {
-    parse: "V-2FPI-3P｜Verb, second Future, Passive, Indicative, third, plural",
+    parse: "V-2FPI-3P｜Verb, 2nd Future, Passive, Indicative, third, plural",
     GN: "G1788",
     gloss: "to cause shame",
   },
   Ἐντραπήσονται: {
-    parse: "V-2FPI-3P｜Verb, second Future, Passive, Indicative, third, plural",
+    parse: "V-2FPI-3P｜Verb, 2nd Future, Passive, Indicative, third, plural",
     GN: "G1788",
     gloss: "to cause shame",
   },
@@ -34207,37 +34186,36 @@ export const wordUsages = {
     gloss: "to go out",
   },
   ἐξεληλύθασιν: {
-    parse: "V-2RAI-3P｜Verb, second peRfect, Active, Indicative, third, plural",
+    parse: "V-2RAI-3P｜Verb, 2nd Perfect, Active, Indicative, third, plural",
     GN: "G1831",
     gloss: "to go out",
   },
   ἐξεληλύθει: {
     parse:
-      "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd Pluperfect, Active, Indicative, third, singular",
     GN: "G1831",
     gloss: "to go out",
   },
   ἐξελήλυθεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G1831",
     gloss: "to go out",
   },
   ἐξεληλυθός: {
     parse:
-      "V-2RAP-ASN｜Verb, second peRfect, Active, Participle, accusative, singular, neuter",
+      "V-2RAP-ASN｜Verb, 2nd Perfect, Active, Participle, accusative, singular, neuter",
     GN: "G1831",
     gloss: "to go out",
   },
   ἐξεληλυθότας: {
     parse:
-      "V-2RAP-APM｜Verb, second peRfect, Active, Participle, accusative, plural, masculine",
+      "V-2RAP-APM｜Verb, 2nd Perfect, Active, Participle, accusative, plural, masculine",
     GN: "G1831",
     gloss: "to go out",
   },
   ἐξεληλυθυῖαν: {
     parse:
-      "V-2RAP-ASF｜Verb, second peRfect, Active, Participle, accusative, singular, feminine",
+      "V-2RAP-ASF｜Verb, 2nd Perfect, Active, Participle, accusative, singular, feminine",
     GN: "G1831",
     gloss: "to go out",
   },
@@ -35147,8 +35125,7 @@ export const wordUsages = {
     gloss: "to remind",
   },
   ἐπαναπαήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G1879",
     gloss: "to rest/rely on",
   },
@@ -38563,56 +38540,51 @@ export const wordUsages = {
     gloss: "to come/go",
   },
   ἐλήλυθα: {
-    parse:
-      "V-2RAI-1S｜Verb, second peRfect, Active, Indicative, first, singular",
+    parse: "V-2RAI-1S｜Verb, 2nd Perfect, Active, Indicative, first, singular",
     GN: "G2064",
     gloss: "to come/go",
   },
   ἐλήλυθας: {
-    parse:
-      "V-2RAI-2S｜Verb, second peRfect, Active, Indicative, second, singular",
+    parse: "V-2RAI-2S｜Verb, 2nd Perfect, Active, Indicative, second, singular",
     GN: "G2064",
     gloss: "to come/go",
   },
   ἐληλύθει: {
     parse:
-      "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd Pluperfect, Active, Indicative, third, singular",
     GN: "G2064",
     gloss: "to come/go",
   },
   ἐληλύθεισαν: {
-    parse:
-      "V-2LAI-3P｜Verb, second pLuperfect, Active, Indicative, third, plural",
+    parse: "V-2LAI-3P｜Verb, 2nd Pluperfect, Active, Indicative, third, plural",
     GN: "G2064",
     gloss: "to come/go",
   },
   ἐλήλυθεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G2064",
     gloss: "to come/go",
   },
   Ἐλήλυθεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G2064",
     gloss: "to come/go",
   },
   ἐληλυθότα: {
     parse:
-      "V-2RAP-ASM｜Verb, second peRfect, Active, Participle, accusative, singular, masculine",
+      "V-2RAP-ASM｜Verb, 2nd Perfect, Active, Participle, accusative, singular, masculine",
     GN: "G2064",
     gloss: "to come/go",
   },
   ἐληλυθότες: {
     parse:
-      "V-2RAP-NPM｜Verb, second peRfect, Active, Participle, nominative, plural, masculine",
+      "V-2RAP-NPM｜Verb, 2nd Perfect, Active, Participle, nominative, plural, masculine",
     GN: "G2064",
     gloss: "to come/go",
   },
   ἐληλυθυῖαν: {
     parse:
-      "V-2RAP-ASF｜Verb, second peRfect, Active, Participle, accusative, singular, feminine",
+      "V-2RAP-ASF｜Verb, 2nd Perfect, Active, Participle, accusative, singular, feminine",
     GN: "G2064",
     gloss: "to come/go",
   },
@@ -46577,7 +46549,7 @@ export const wordUsages = {
   },
   ἑστὸς: {
     parse:
-      "V-2RAP-NSN｜Verb, second peRfect, Active, Participle, nominative, singular, neuter",
+      "V-2RAP-NSN｜Verb, 2nd Perfect, Active, Participle, nominative, singular, neuter",
     GN: "G2476",
     gloss: "to stand/make stand",
   },
@@ -47197,8 +47169,7 @@ export const wordUsages = {
     gloss: "to take down",
   },
   καθελῶ: {
-    parse:
-      "V-2FAI-1S｜Verb, second Future, Active, Indicative, first, singular",
+    parse: "V-2FAI-1S｜Verb, 2nd Future, Active, Indicative, first, singular",
     GN: "G2507",
     gloss: "to take down",
   },
@@ -49600,8 +49571,7 @@ export const wordUsages = {
     gloss: "to dishonor",
   },
   κατακαήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G2618",
     gloss: "to burn",
   },
@@ -49975,7 +49945,7 @@ export const wordUsages = {
     gloss: "to grasp",
   },
   κατειληφέναι: {
-    parse: "V-2RAN｜Verb, second peRfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
     GN: "G2638",
     gloss: "to grasp",
   },
@@ -54284,8 +54254,7 @@ export const wordUsages = {
     gloss: "to cry",
   },
   κέκραγεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G2896",
     gloss: "to cry",
   },
@@ -56300,26 +56269,23 @@ export const wordUsages = {
     gloss: "why?",
   },
   εἴληφα: {
-    parse:
-      "V-2RAI-1S｜Verb, second peRfect, Active, Indicative, first, singular",
+    parse: "V-2RAI-1S｜Verb, 2nd Perfect, Active, Indicative, first, singular",
     GN: "G2983",
     gloss: "to take",
   },
   εἴληφας: {
-    parse:
-      "V-2RAI-2S｜Verb, second peRfect, Active, Indicative, second, singular",
+    parse: "V-2RAI-2S｜Verb, 2nd Perfect, Active, Indicative, second, singular",
     GN: "G2983",
     gloss: "to take",
   },
   εἴληφεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G2983",
     gloss: "to take",
   },
   εἰληφὼς: {
     parse:
-      "V-2RAP-NSM｜Verb, second peRfect, Active, Participle, nominative, singular, masculine",
+      "V-2RAP-NSM｜Verb, 2nd Perfect, Active, Participle, nominative, singular, masculine",
     GN: "G2983",
     gloss: "to take",
   },
@@ -61272,8 +61238,7 @@ export const wordUsages = {
     gloss: "to summon",
   },
   μεταστραφήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G3344",
     gloss: "to change",
   },
@@ -70509,12 +70474,12 @@ export const wordUsages = {
     gloss: "be present",
   },
   παρεῖναι: {
-    parse: "V-2PAN｜Verb, second Present, Active, iNfinitive",
+    parse: "V-2PAN｜Verb, 2nd Present, Active, iNfinitive",
     GN: "G3918",
     gloss: "be present",
   },
   παρεῖναί: {
-    parse: "V-2PAN｜Verb, second Present, Active, iNfinitive",
+    parse: "V-2PAN｜Verb, 2nd Present, Active, iNfinitive",
     GN: "G3918",
     gloss: "be present",
   },
@@ -70674,13 +70639,13 @@ export const wordUsages = {
     gloss: "to pass by",
   },
   παρεληλυθέναι: {
-    parse: "V-2RAN｜Verb, second peRfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
     GN: "G3928",
     gloss: "to pass by",
   },
   παρεληλυθὼς: {
     parse:
-      "V-2RAP-NSM｜Verb, second peRfect, Active, Participle, nominative, singular, masculine",
+      "V-2RAP-NSM｜Verb, 2nd Perfect, Active, Participle, nominative, singular, masculine",
     GN: "G3928",
     gloss: "to pass by",
   },
@@ -70766,7 +70731,7 @@ export const wordUsages = {
   },
   παρέξῃ: {
     parse:
-      "V-2FDI-2S｜Verb, second Future, middle Deponent, Indicative, second, singular",
+      "V-2FDI-2S｜Verb, 2nd Future, middle Deponent, Indicative, second, singular",
     GN: "G3930",
     gloss: "to furnish occasion",
   },
@@ -71442,13 +71407,12 @@ export const wordUsages = {
     gloss: "to suffer",
   },
   πεπόνθασιν: {
-    parse: "V-2RAI-3P｜Verb, second peRfect, Active, Indicative, third, plural",
+    parse: "V-2RAI-3P｜Verb, 2nd Perfect, Active, Indicative, third, plural",
     GN: "G3958",
     gloss: "to suffer",
   },
   πέπονθεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G3958",
     gloss: "to suffer",
   },
@@ -71849,7 +71813,7 @@ export const wordUsages = {
   },
   ἐπεποίθει: {
     parse:
-      "V-2LAI-3S｜Verb, second pLuperfect, Active, Indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd Pluperfect, Active, Indicative, third, singular",
     GN: "G3982",
     gloss: "to persuade",
   },
@@ -71955,48 +71919,45 @@ export const wordUsages = {
     gloss: "to persuade",
   },
   πέποιθα: {
-    parse:
-      "V-2RAI-1S｜Verb, second peRfect, Active, Indicative, first, singular",
+    parse: "V-2RAI-1S｜Verb, 2nd Perfect, Active, Indicative, first, singular",
     GN: "G3982",
     gloss: "to persuade",
   },
   πεποίθαμεν: {
-    parse: "V-2RAI-1P｜Verb, second peRfect, Active, Indicative, first, plural",
+    parse: "V-2RAI-1P｜Verb, 2nd Perfect, Active, Indicative, first, plural",
     GN: "G3982",
     gloss: "to persuade",
   },
   πέποιθάς: {
-    parse:
-      "V-2RAI-2S｜Verb, second peRfect, Active, Indicative, second, singular",
+    parse: "V-2RAI-2S｜Verb, 2nd Perfect, Active, Indicative, second, singular",
     GN: "G3982",
     gloss: "to persuade",
   },
   πέποιθεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G3982",
     gloss: "to persuade",
   },
   πεποιθέναι: {
-    parse: "V-2RAN｜Verb, second peRfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
     GN: "G3982",
     gloss: "to persuade",
   },
   πεποιθότας: {
     parse:
-      "V-2RAP-APM｜Verb, second peRfect, Active, Participle, accusative, plural, masculine",
+      "V-2RAP-APM｜Verb, 2nd Perfect, Active, Participle, accusative, plural, masculine",
     GN: "G3982",
     gloss: "to persuade",
   },
   πεποιθότες: {
     parse:
-      "V-2RAP-NPM｜Verb, second peRfect, Active, Participle, nominative, plural, masculine",
+      "V-2RAP-NPM｜Verb, 2nd Perfect, Active, Participle, nominative, plural, masculine",
     GN: "G3982",
     gloss: "to persuade",
   },
   πεποιθὼς: {
     parse:
-      "V-2RAP-NSM｜Verb, second peRfect, Active, Participle, nominative, singular, masculine",
+      "V-2RAP-NSM｜Verb, 2nd Perfect, Active, Participle, nominative, singular, masculine",
     GN: "G3982",
     gloss: "to persuade",
   },
@@ -78572,7 +78533,7 @@ export const wordUsages = {
   },
   προγεγονότων: {
     parse:
-      "V-2RAP-GPN｜Verb, second peRfect, Active, Participle, genitive, plural, neuter",
+      "V-2RAP-GPN｜Verb, 2nd Perfect, Active, Participle, genitive, plural, neuter",
     GN: "G4266",
     gloss: "to do beforehand",
   },
@@ -79381,8 +79342,7 @@ export const wordUsages = {
     gloss: "to earn more",
   },
   προσεληλύθατε: {
-    parse:
-      "V-2RAI-2P｜Verb, second peRfect, Active, Indicative, second, plural",
+    parse: "V-2RAI-2P｜Verb, 2nd Perfect, Active, Indicative, second, plural",
     GN: "G4334",
     gloss: "to come near/agree",
   },
@@ -80371,8 +80331,7 @@ export const wordUsages = {
     gloss: "to bring to",
   },
   προσενήνοχεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G4374",
     gloss: "to bring to",
   },
@@ -83260,8 +83219,7 @@ export const wordUsages = {
     gloss: "today",
   },
   σέσηπεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G4595",
     gloss: "to rot",
   },
@@ -84455,7 +84413,7 @@ export const wordUsages = {
   },
   ἐσπαρμένον: {
     parse:
-      "V-2RPP-ASN｜Verb, second peRfect, Passive, Participle, accusative, singular, neuter",
+      "V-2RPP-ASN｜Verb, 2nd Perfect, Passive, Participle, accusative, singular, neuter",
     GN: "G4687",
     gloss: "to sow",
   },
@@ -86409,8 +86367,7 @@ export const wordUsages = {
     gloss: "to seize/conceive/help",
   },
   συνείληφεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G4815",
     gloss: "to seize/conceive/help",
   },
@@ -87655,20 +87612,19 @@ export const wordUsages = {
     gloss: "co-worker",
   },
   συνεληλύθεισαν: {
-    parse:
-      "V-2LAI-3P｜Verb, second pLuperfect, Active, Indicative, third, plural",
+    parse: "V-2LAI-3P｜Verb, 2nd Pluperfect, Active, Indicative, third, plural",
     GN: "G4905",
     gloss: "to assemble",
   },
   συνεληλυθότας: {
     parse:
-      "V-2RAP-APM｜Verb, second peRfect, Active, Participle, accusative, plural, masculine",
+      "V-2RAP-APM｜Verb, 2nd Perfect, Active, Participle, accusative, plural, masculine",
     GN: "G4905",
     gloss: "to assemble",
   },
   συνεληλυθυῖαι: {
     parse:
-      "V-2RAP-NPF｜Verb, second peRfect, Active, Participle, nominative, plural, feminine",
+      "V-2RAP-NPF｜Verb, 2nd Perfect, Active, Participle, nominative, plural, feminine",
     GN: "G4905",
     gloss: "to assemble",
   },
@@ -88295,8 +88251,7 @@ export const wordUsages = {
     gloss: "to break",
   },
   συντριβήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G4937",
     gloss: "to break",
   },
@@ -92055,8 +92010,7 @@ export const wordUsages = {
     gloss: "to eat",
   },
   τέτυχεν: {
-    parse:
-      "V-2RAI-3S｜Verb, second peRfect, Active, Indicative, third, singular",
+    parse: "V-2RAI-3S｜Verb, 2nd Perfect, Active, Indicative, third, singular",
     GN: "G5177",
     gloss: "to obtain/happen",
   },
@@ -93798,13 +93752,12 @@ export const wordUsages = {
     gloss: "to subject",
   },
   ὑποταγήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G5293",
     gloss: "to subject",
   },
   ὑποταγησόμεθα: {
-    parse: "V-2FPI-1P｜Verb, second Future, Passive, Indicative, first, plural",
+    parse: "V-2FPI-1P｜Verb, 2nd Future, Passive, Indicative, first, plural",
     GN: "G5293",
     gloss: "to subject",
   },
@@ -94425,8 +94378,7 @@ export const wordUsages = {
     gloss: "to shine/appear",
   },
   φανήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G5316",
     gloss: "to shine/appear",
   },
@@ -95184,7 +95136,7 @@ export const wordUsages = {
     gloss: "to destroy",
   },
   φθαρήσονται: {
-    parse: "V-2FPI-3P｜Verb, second Future, Passive, Indicative, third, plural",
+    parse: "V-2FPI-3P｜Verb, 2nd Future, Passive, Indicative, third, plural",
     GN: "G5351",
     gloss: "to destroy",
   },
@@ -96168,8 +96120,7 @@ export const wordUsages = {
     gloss: "to stop",
   },
   φραγήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G5420",
     gloss: "to stop",
   },
@@ -97101,19 +97052,19 @@ export const wordUsages = {
   },
   χαρήσεται: {
     parse:
-      "V-2FOI-3S｜Verb, second Future, passive depOnent, Indicative, third, singular",
+      "V-2FOI-3S｜Verb, 2nd Future, passive depOnent, Indicative, third, singular",
     GN: "G5463",
     gloss: "to rejoice",
   },
   χαρήσομαι: {
     parse:
-      "V-2FOI-1S｜Verb, second Future, passive depOnent, Indicative, first, singular",
+      "V-2FOI-1S｜Verb, 2nd Future, passive depOnent, Indicative, first, singular",
     GN: "G5463",
     gloss: "to rejoice",
   },
   χαρήσονται: {
     parse:
-      "V-2FOI-3P｜Verb, second Future, passive depOnent, Indicative, third, plural",
+      "V-2FOI-3P｜Verb, 2nd Future, passive depOnent, Indicative, third, plural",
     GN: "G5463",
     gloss: "to rejoice",
   },
@@ -99147,8 +99098,7 @@ export const wordUsages = {
     gloss: "cold",
   },
   ψυγήσεται: {
-    parse:
-      "V-2FPI-3S｜Verb, second Future, Passive, Indicative, third, singular",
+    parse: "V-2FPI-3S｜Verb, 2nd Future, Passive, Indicative, third, singular",
     GN: "G5594",
     gloss: "to cool",
   },

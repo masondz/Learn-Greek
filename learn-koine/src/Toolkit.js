@@ -41,14 +41,17 @@ const Toolkit = () => {
   }, []);
 
   return (
-    <div className="toolkit-container">
-      {tools.map((tool) => {
-        return isMobile ? (
-          <Tool title={toolsAbbreviationMap[tool]} id={tool} />
-        ) : (
-          <Tool title={tool} id={tool} />
-        );
-      })}
+    <div>
+      <div className="toolkit-container">
+        {tools.map((tool) => {
+          return <Tool title={tool} id={tool} />;
+        })}
+      </div>
+      <div className="toolkit-container-abv">
+        {tools.map((tool) => {
+          return <Tool title={toolsAbbreviationMap[tool]} id={tool} />;
+        })}
+      </div>
     </div>
   );
 };

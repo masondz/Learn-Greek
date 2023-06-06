@@ -8,8 +8,24 @@
   left: 0px;
   z-index: 2;
   bottom: 0px;
+  font-size: 0.6em;
+  background-color: rgba(255, 255, 255, 0.884);
+  visibility: visible;
+}
+
+.toolkit-container-abv {
+  color: white;
+  display: flex;
+  justify-self: center;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  z-index: 3;
+  bottom: 0px;
   font-size: 0.5em;
   background-color: rgba(255, 255, 255, 0.884);
+  visibility: hidden;
 }
 
 .tool {
@@ -62,12 +78,18 @@
 
 @media only screen and (max-width: 822px) {
   .toolkit-container {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  .toolkit-container {
+  .toolkit-container-abv {
     width: 100%;
+    visibility: visible;
+    font-size: 0.9em;
+  }
+
+  .toolkit-container {
+    visibility: hidden;
   }
 }
