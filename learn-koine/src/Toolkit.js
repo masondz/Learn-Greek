@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { setMode } from "./features/verseSlice";
 
@@ -27,29 +27,18 @@ const toolsAbbreviationMap = {
 };
 
 const Toolkit = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 836);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <div>
       <div className="toolkit-container">
         {tools.map((tool) => {
-          return <Tool title={tool} id={tool} />;
+          return <Tool title={tool} id={tool} key={tool} />;
         })}
       </div>
       <div className="toolkit-container-abv">
         {tools.map((tool) => {
-          return <Tool title={toolsAbbreviationMap[tool]} id={tool} />;
+          return (
+            <Tool title={toolsAbbreviationMap[tool]} id={tool} key={tool} />
+          );
         })}
       </div>
     </div>
@@ -73,7 +62,7 @@ const Tool = ({ title, id }) => {
   };
 
   return (
-    <div className="tool" id={idCheck} key={title} onClick={handleClick}>
+    <div className="tool" id={idCheck} onClick={handleClick}>
       <p>{title}</p>
     </div>
   );
