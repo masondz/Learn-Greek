@@ -90,7 +90,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     setVerseListIsOpen(false);
     let allVerses = organizeText(greekText);
     if (!allVerses[ref]) {
-      alert("Verse doesn't exist!");
+      // alert("Verse doesn't exist!");
       return false;
     }
     const verse = allVerses[ref];
@@ -118,9 +118,39 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     }
     let reference =
       newTestament[chosenBook].code + "0" + chosenChapter + "0" + tempVerse;
-    console.log(reference);
     if (lookUpVerse(reference)) {
       setChosenVerse(tempVerse);
+    } else {
+      console.log("checking next chapter");
+      tempVerse = "01";
+      let tempChapter = Number(chosenChapter) + 1;
+      if (tempChapter < 10) {
+        tempChapter = "0" + tempChapter;
+      }
+      reference =
+        newTestament[chosenBook].code + "0" + tempChapter + "0" + tempVerse;
+      console.log(reference);
+      if (lookUpVerse(reference)) {
+        setChosenChapter(tempChapter);
+        setChosenVerse(tempVerse);
+      } else {
+        console.log("checking next book");
+        let tempBookCode = newTestament[chosenBook].code + 1;
+        if (tempBookCode > 66) {
+          return alert("You've reached the end!");
+        }
+
+        for (let book in newTestament) {
+          if (newTestament[book].code === Number(tempBookCode)) {
+            console.log(book);
+            setChosenBook(book);
+            setChosenChapter("01");
+            setChosenVerse("01");
+          }
+        }
+
+        lookUpVerse(`${tempBookCode}001001`);
+      }
     }
   }
 
@@ -206,6 +236,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
                   className="list-option"
                   value={chapter}
                   onClick={handlePickChapter}
+                  key={chapter}
                 >
                   {chapter}
                 </div>
@@ -221,6 +252,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
                   className="list-option"
                   value={verse}
                   onClick={handlePickVerse}
+                  key={verse}
                 >
                   {verse}
                 </div>
