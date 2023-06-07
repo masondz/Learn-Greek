@@ -160,17 +160,41 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     }
 
     let tempVerse = Number(chosenVerse) - 1;
-    console.log(tempVerse);
+    let tempChapter = Number(chosenChapter);
+    let tempBookCode = newTestament[chosenBook].code;
+    let tempBook = "";
+    if (tempVerse < 1) {
+      tempChapter--;
+      if (tempChapter < 1) {
+        tempBookCode--;
+        if (tempBookCode < 40) {
+          return alert("You are already at the beginning.");
+        }
+        for (let book in newTestament) {
+          if (newTestament[book].code === Number(tempBookCode)) {
+            tempBook = book;
+          }
+        }
+        tempChapter = newTestament[tempBook].chapterVerseIndex.length;
+        tempVerse = newTestament[tempBook].chapterVerseIndex[tempChapter - 1];
+        setChosenBook(tempBook);
+      }
+    }
 
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
     }
-    let reference =
-      newTestament[chosenBook].code + "0" + chosenChapter + "0" + tempVerse;
-    console.log(reference);
+    if (tempChapter < 10) {
+      tempChapter = "0" + tempChapter;
+    }
+    let reference = tempBookCode + "0" + tempChapter + "0" + tempVerse;
+    console.log("Prev Reference", reference);
     if (lookUpVerse(reference)) {
       setChosenVerse(tempVerse);
+      setChosenChapter(tempChapter);
       dispatch(clearWord());
+    } else {
+      console.log("something wong");
     }
   }
 
