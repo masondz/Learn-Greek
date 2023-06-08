@@ -8,7 +8,6 @@ import { getRandomVerse, organizeText } from "./Verse";
 import { greekText } from "./greek_text/greekText";
 
 const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
-  console.log("CheckWord renders");
   const { word, partOfSpeech, gloss } = useSelector(selectWordSlice);
   const verseMode = useSelector(selectVerseMode);
   const dispatch = useDispatch();

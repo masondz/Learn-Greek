@@ -24,6 +24,11 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
   const handlePickBook = (e) => {
     e.preventDefault();
     const pickedBook = e.target.innerHTML;
+    setChapterList(updateChapterList(pickedBook));
+    setChosenBook(pickedBook);
+  };
+
+  const updateChapterList = (pickedBook) => {
     const chaptersArray = [];
     for (
       let i = 1;
@@ -32,22 +37,14 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     ) {
       chaptersArray.push(i);
     }
-    console.log(chaptersArray);
-    setChosenBook(pickedBook);
-    setChapterList(chaptersArray);
+    return chaptersArray;
   };
 
   const handlePickChapter = (e) => {
     e.preventDefault();
     const chapterNumber = e.target.innerHTML;
     console.log(chapterNumber);
-    const numberOfVerses =
-      newTestament[chosenBook].chapterVerseIndex[chapterNumber - 1];
-    const versesArray = [];
-
-    for (let i = 1; i < numberOfVerses + 1; i++) {
-      versesArray.push(i);
-    }
+    setVerseList(updateVerseList(chapterNumber));
 
     let encodeChapter = "";
 
@@ -59,7 +56,16 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     }
 
     setChosenChapter(encodeChapter);
-    setVerseList(versesArray);
+  };
+
+  const updateVerseList = (chapterNumber, book = chosenBook) => {
+    const numberOfVerses =
+      newTestament[book].chapterVerseIndex[chapterNumber - 1];
+    const versesArray = [];
+    for (let i = 1; i < numberOfVerses + 1; i++) {
+      versesArray.push(i);
+    }
+    return versesArray;
   };
 
   const handlePickVerse = (e) => {
@@ -131,6 +137,8 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
         newTestament[chosenBook].code + "0" + tempChapter + "0" + tempVerse;
       console.log(reference);
       if (lookUpVerse(reference)) {
+        //update chapter and vere list
+        setVerseList(updateVerseList(Number(tempChapter)));
         setChosenChapter(tempChapter);
         setChosenVerse(tempVerse);
       } else {
@@ -143,7 +151,10 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
         for (let book in newTestament) {
           if (newTestament[book].code === Number(tempBookCode)) {
             console.log(book);
+            tempChapter = "01";
             setChosenBook(book);
+            setChapterList(updateChapterList(book));
+            setVerseList(updateVerseList(Number(tempChapter), book));
             setChosenChapter("01");
             setChosenVerse("01");
           }
@@ -244,7 +255,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
                   className="list-option"
                   value={book}
                   onClick={handlePickBook}
-                  key={book.code}
+                  key={book}
                 >
                   {book}
                 </div>

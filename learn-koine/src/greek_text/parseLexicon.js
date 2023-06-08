@@ -15,14 +15,12 @@ export const parseWord = (inputWord) => {
     wordUsages[chosenWord] === undefined &&
     wordUsages[chosenWord.toLowerCase()] === undefined
   ) {
-    console.log(chosenWord + "ʼ");
     if (
       wordUsages[chosenWord + "ʼ"] !== undefined ||
       wordUsages[chosenWord.toLowerCase() + "ʼ"] !== undefined
     ) {
       chosenWord = chosenWord.toLowerCase() + "ʼ";
     } else {
-      console.log("cant' find lower case");
       wordState.word = "Word not in Lexicon";
       wordState.parse = "";
       wordState.gNum = "";
