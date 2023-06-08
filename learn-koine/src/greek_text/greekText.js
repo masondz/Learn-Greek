@@ -1728,7 +1728,7 @@ export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ 
 41016005 Καὶ εἰσελθοῦσαι εἰς τὸ μνημεῖον, εἶδον νεανίσκον καθήμενον ἐν τοῖς δεξιοῖς, περιβεβλημένον στολὴν λευκήν, καὶ ἐξεθαμβήθησαν.
 41016006 Ὁ δὲ λέγει αὐταῖς, “Μὴ ἐκθαμβεῖσθε. ˚Ἰησοῦν ζητεῖτε τὸν Ναζαρηνὸν, τὸν ἐσταυρωμένον. Ἠγέρθη! Οὐκ ἔστιν ὧδε· ἴδε, ὁ τόπος ὅπου ἔθηκαν αὐτόν.
 41016007 Ἀλλὰ ὑπάγετε, εἴπατε τοῖς μαθηταῖς αὐτοῦ καὶ τῷ Πέτρῳ, ὅτι ‘Προάγει ὑμᾶς εἰς τὴν Γαλιλαίαν· ἐκεῖ αὐτὸν ὄψεσθε, καθὼς εἶπεν ὑμῖν.’”
-41016008 Καὶ ἐξελθοῦσαι, ἔφυγον ἀπὸ τοῦ μνημείου, εἶχεν γὰρ αὐτὰς τρόμος καὶ ἔκστασις, καὶ οὐδενὶ οὐδὲν εἶπον, ἐφοβοῦντο γάρ.
+41016008 Καὶ ἐξελθοῦσαι, ἔφυγον ἀπὸ τοῦ μνημείου, εἶχεν γὰρ αὐτὰς τρόμος καὶ ἔκστασις, καὶ οὐδενὶ οὐδὲν εἶπον, ἐφοβοῦντο γάρ. [This Version does not contain the longer ending of Mark.]
 42001001 Ἐπειδήπερ πολλοὶ ἐπεχείρησαν ἀνατάξασθαι διήγησιν, περὶ τῶν πεπληροφορημένων ἐν ἡμῖν πραγμάτων,
 42001002 καθὼς παρέδοσαν ἡμῖν οἱ ἀπʼ ἀρχῆς, αὐτόπται καὶ ὑπηρέται γενόμενοι τοῦ λόγου,
 42001003 ἔδοξε κἀμοὶ παρηκολουθηκότι ἄνωθεν πᾶσιν ἀκριβῶς, καθεξῆς σοι γράψαι, κράτιστε Θεόφιλε,
@@ -7926,25 +7926,26 @@ export const greekText = `40001001 Βίβλος γενέσεως ˚Ἰησοῦ 
 */
 
 // console.log(gText === gLex )
-    function removePunctuation(str) {  //this is from ChatpGPT
-        const punctuationRegex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·ʼ]/g;
-        // const diacriticsRegex = /[\u0300-\u036f]/g;
-        // const greekLettersRegex = /[α-ωΑ-Ω]/g;
-      
-        const punctuationRemoved = str.replace(punctuationRegex, '');
-        // const diacriticsKept = punctuationRemoved.replace(diacriticsRegex, (match) => match);
-        // const greekLettersKept = diacriticsKept.replace(greekLettersRegex, (match) => match);
-      
-        return punctuationRemoved;
-      }
+function removePunctuation(str) {
+  //this is from ChatpGPT
+  const punctuationRegex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·ʼ]/g;
+  // const diacriticsRegex = /[\u0300-\u036f]/g;
+  // const greekLettersRegex = /[α-ωΑ-Ω]/g;
 
-let greekTextArray = greekText.split(" ")
-let wordCount = {}
+  const punctuationRemoved = str.replace(punctuationRegex, "");
+  // const diacriticsKept = punctuationRemoved.replace(diacriticsRegex, (match) => match);
+  // const greekLettersKept = diacriticsKept.replace(greekLettersRegex, (match) => match);
+
+  return punctuationRemoved;
+}
+
+let greekTextArray = greekText.split(" ");
+let wordCount = {};
 for (let i = 0; i < greekTextArray.length; i++) {
-    let word = removePunctuation(greekTextArray[i]).toLowerCase();
-    if (!(word in wordCount)) {
-        wordCount[word] = 0;
-    } else {
-        wordCount[word] += 1;
-    }
+  let word = removePunctuation(greekTextArray[i]).toLowerCase();
+  if (!(word in wordCount)) {
+    wordCount[word] = 0;
+  } else {
+    wordCount[word] += 1;
+  }
 }

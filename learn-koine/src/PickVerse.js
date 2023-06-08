@@ -26,6 +26,8 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     const pickedBook = e.target.innerHTML;
     setChapterList(updateChapterList(pickedBook));
     setChosenBook(pickedBook);
+    setVerseList(updateVerseList(chosenChapter, pickedBook));
+    setChosenVerse(0);
   };
 
   const updateChapterList = (pickedBook) => {
@@ -87,7 +89,9 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     let bookCode = newTestament[chosenBook].code;
 
     let reference = bookCode + "0" + chosenChapter + "0" + chosenVerse;
-    lookUpVerse(reference);
+    if (!lookUpVerse(reference)) {
+      return alert("Check verse reference");
+    }
   };
 
   const lookUpVerse = (ref) => {
@@ -104,9 +108,9 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     console.log(payload);
     dispatch(clearVerse());
     setTimeout(() => {
+      setArticleGrid(blankGrid);
       dispatch(setVerse(payload));
       dispatch(clearWord());
-      dispatch(setArticleGrid(blankGrid));
     }, 1);
     return true;
   };
@@ -171,42 +175,62 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     }
 
     let tempVerse = Number(chosenVerse) - 1;
-    let tempChapter = Number(chosenChapter);
-    let tempBookCode = newTestament[chosenBook].code;
-    let tempBook = "";
-    if (tempVerse < 1) {
-      tempChapter--;
-      if (tempChapter < 1) {
-        tempBookCode--;
-        if (tempBookCode < 40) {
-          return alert("You are already at the beginning.");
-        }
-        for (let book in newTestament) {
-          if (newTestament[book].code === Number(tempBookCode)) {
-            tempBook = book;
-          }
-        }
-        tempChapter = newTestament[tempBook].chapterVerseIndex.length;
-        tempVerse = newTestament[tempBook].chapterVerseIndex[tempChapter - 1];
-        setChosenBook(tempBook);
-      }
-    }
-
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
     }
+    let tempChapter = Number(chosenChapter);
+    let tempBookCode = newTestament[chosenBook].code;
+    let tempBook = "";
+    let reference = "";
+
+    if (tempVerse < 1) {
+      tempChapter = tempChapter - 1;
+
+      if (tempChapter < 1) {
+        tempBookCode = tempBookCode - 1;
+        if (tempBookCode < 40) {
+          return alert("You are already at the beginning.");
+        } else {
+          for (let bookTitle in newTestament) {
+            if (newTestament[bookTitle].code === tempBookCode) {
+              tempBook = bookTitle;
+              tempChapter = newTestament[bookTitle].chapterVerseIndex.length;
+              tempVerse =
+                newTestament[bookTitle].chapterVerseIndex[tempChapter - 1];
+              if (tempChapter < 10) {
+                tempChapter = "0" + tempChapter;
+              }
+
+              reference = tempBookCode + "0" + tempChapter + "0" + tempVerse;
+              setChosenBook(tempBook);
+              setChosenChapter(tempChapter);
+              setChosenVerse(tempVerse);
+              setChapterList(updateChapterList(tempBook));
+              setVerseList(updateVerseList(Number(tempChapter), tempBook));
+              lookUpVerse(reference);
+              dispatch(clearWord());
+              return;
+            }
+          }
+        }
+      }
+
+      tempVerse = newTestament[chosenBook].chapterVerseIndex[tempChapter - 1];
+      setVerseList(updateVerseList(Number(tempChapter)));
+    }
+
     if (tempChapter < 10) {
       tempChapter = "0" + tempChapter;
     }
-    let reference = tempBookCode + "0" + tempChapter + "0" + tempVerse;
-    console.log("Prev Reference", reference);
-    if (lookUpVerse(reference)) {
-      setChosenVerse(tempVerse);
-      setChosenChapter(tempChapter);
-      dispatch(clearWord());
-    } else {
-      console.log("something wong");
-    }
+
+    reference = tempBookCode + "0" + tempChapter + "0" + tempVerse;
+    console.log(reference);
+
+    lookUpVerse(reference);
+    setChosenVerse(tempVerse);
+    setChosenChapter(tempChapter);
+    dispatch(clearWord());
+    return;
   }
 
   const handleOpenBookList = () => {
@@ -223,6 +247,9 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
 
   return (
     <div className="pick-component">
+      <p>
+        {chosenBook}-{chosenChapter}-{chosenVerse}
+      </p>
       <div className="pick-verse-menu">
         <div className="drop-lists">
           <button onClick={handleOpenBookList} className="booklist-button">
@@ -328,7 +355,7 @@ export const newTestament = {
   Mark: {
     code: 41,
     chapterVerseIndex: [
-      45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 47, 20,
+      45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 47, 8,
     ],
   },
   Luke: {
@@ -369,7 +396,7 @@ export const newTestament = {
     ],
   },
 
-  "2 Corinthians.": {
+  "2 Corinthians": {
     code: 47,
     chapterVerseIndex: [24, 17, 18, 18, 21, 18, 16, 24, 15, 18, 33, 21, 14],
   },
