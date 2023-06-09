@@ -28,6 +28,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     setChosenBook(pickedBook);
     setVerseList(updateVerseList(chosenChapter, pickedBook));
     setChosenVerse(0);
+    setChosenChapter(0);
   };
 
   const updateChapterList = (pickedBook) => {
