@@ -19073,27 +19073,27 @@ export const wordUsages = {
   γῇ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G1093",
-    gloss: "planet",
+    gloss: "land, earth, planet",
   },
   γῆ: {
     parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G1093",
-    gloss: "planet",
+    gloss: "land, earth, planet",
   },
   Γῆ: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G1093",
-    gloss: "planet",
+    gloss: "land, earth, planet",
   },
   γῆν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G1093",
-    gloss: "planet",
+    gloss: "land, earth, planet",
   },
   γῆς: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
     GN: "G1093",
-    gloss: "planet",
+    gloss: "land, earth, planet",
   },
   γήρει: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
