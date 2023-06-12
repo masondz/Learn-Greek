@@ -27094,7 +27094,7 @@ export const wordUsages = {
     GN: "G1435",
     gloss: "gift",
   },
-  Ἔα: { parse: "INJ｜INterJection", GN: "G1436", gloss: "ha!/aha!" },
+  Ἔα: { parse: "INJ｜Interjection", GN: "G1436", gloss: "ha!/aha!" },
   ἐάν: {
     parse: "PRT｜Particle, disjunctive particle",
     GN: "G1437",
@@ -28153,22 +28153,22 @@ export const wordUsages = {
   εἰ: {
     parse: "PRT｜Particle, disjunctive particle",
     GN: "G1487",
-    gloss: "even_though",
+    gloss: "even though",
   },
   Εἰ: {
     parse: "PRT｜Particle, disjunctive particle",
     GN: "G1487",
-    gloss: "even_though",
+    gloss: "even though",
   },
   εἴ: {
     parse: "PRT｜Particle, disjunctive particle",
     GN: "G1487",
-    gloss: "even_though",
+    gloss: "even though",
   },
   Εἴ: {
     parse: "PRT｜Particle, disjunctive particle",
     GN: "G1487",
-    gloss: "even_though",
+    gloss: "even though",
   },
   εἴδει: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
@@ -28359,7 +28359,7 @@ export const wordUsages = {
     GN: "G1492",
     gloss: "see",
   },
-  ἴδε: { parse: "INJ｜INterJection", GN: "G2396", gloss: "look!" },
+  ἴδε: { parse: "INJ｜Interjection", GN: "G2396", gloss: "look!" },
   ἰδεῖν: {
     parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
     GN: "G1492",
@@ -29030,7 +29030,7 @@ export const wordUsages = {
     GN: "G1510",
     gloss: "to be",
   },
-  ὦ: { parse: "INJ｜INterJection", GN: "G5599", gloss: "oh!" },
+  ὦ: { parse: "INJ｜Interjection", GN: "G5599", gloss: "oh!" },
   ὦμεν: {
     parse: "V-PAS-1P｜Verb, Present, Active, Subjunctive, first, plural",
     GN: "G1510",
@@ -45467,7 +45467,7 @@ export const wordUsages = {
     GN: "G2395",
     gloss: "physician",
   },
-  Ἴδε: { parse: "INJ｜INterJection", GN: "G2396", gloss: "look!" },
+  Ἴδε: { parse: "INJ｜Interjection", GN: "G2396", gloss: "look!" },
   εἰδέα: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G2397",
@@ -45553,9 +45553,9 @@ export const wordUsages = {
     GN: "G2399",
     gloss: "unlearned",
   },
-  ἰδού: { parse: "INJ｜INterJection", GN: "G2400", gloss: "look!" },
-  ἰδοὺ: { parse: "INJ｜INterJection", GN: "G2400", gloss: "look!" },
-  Ἰδοὺ: { parse: "INJ｜INterJection", GN: "G2400", gloss: "look!" },
+  ἰδού: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!" },
+  ἰδοὺ: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!" },
+  Ἰδοὺ: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!" },
   Ἰδουμαίας: {
     parse: "N-GSF-L｜Noun, genitive, singular, feminine, Location",
     GN: "G2401",
@@ -67469,10 +67469,10 @@ export const wordUsages = {
     GN: "G3758",
     gloss: "aha!",
   },
-  οὐαί: { parse: "INJ｜INterJection", GN: "G3759", gloss: "woe!" },
-  Οὐαί: { parse: "INJ｜INterJection", GN: "G3759", gloss: "woe!" },
-  οὐαὶ: { parse: "INJ｜INterJection", GN: "G3759", gloss: "woe!" },
-  Οὐαὶ: { parse: "INJ｜INterJection", GN: "G3759", gloss: "woe!" },
+  οὐαί: { parse: "INJ｜Interjection", GN: "G3759", gloss: "woe!" },
+  Οὐαί: { parse: "INJ｜Interjection", GN: "G3759", gloss: "woe!" },
+  οὐαὶ: { parse: "INJ｜Interjection", GN: "G3759", gloss: "woe!" },
+  Οὐαὶ: { parse: "INJ｜Interjection", GN: "G3759", gloss: "woe!" },
   οὐδαμῶς: {
     parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3760",
@@ -99123,7 +99123,7 @@ export const wordUsages = {
     GN: "G5597",
     gloss: "to rub",
   },
-  Ὦ: { parse: "INJ｜INterJection", GN: "G5599", gloss: "oh!" },
+  Ὦ: { parse: "INJ｜Interjection", GN: "G5599", gloss: "oh!" },
   Ἰωβὴδ: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
     GN: "G5601",
@@ -99836,19 +99836,46 @@ export const wordUsages = {
 
 // χωρίς: { parse: "PREP｜Preposition", GN: "G5565", gloss: "without" },
 
-// let pronouns = {};
+// let parseOptions = [];
 
 // for (let word in wordUsages) {
-//   if (wordUsages[word].parse.includes("pronoun")) {
-//     pronouns[word] = {
+//   if (parseOptions.includes([wordUsages[word].parse])) {
+//     return;
+//   } else {
+//     parseOptions.push(wordUsages[word].parse);
+//   }
+// }
+
+// console.log(parseOptions.length);
+
+// let particles = {};
+
+// for (let word in wordUsages) {
+//   let wordParse = wordUsages[word].parse;
+//   if (wordParse.includes(P)
+
+//   ) {
+//     continue;
+//   } else {
+//     parseOptions.push(parseOption);
+//   }
+// }
+
+// console.log(parseOptions.length);
+
+//   if (wordUsages[word].parse.includes("Interjection")) {
+//     interjections[word] = {
 //       parse: wordUsages[word].parse,
 //       gloss: wordUsages[word].gloss,
+//       GN: wordUsages[word].GN,
 //     };
 //   }
 // }
 
-// let prepString = JSON.stringify(pronouns);
+// console.log(interjections);
 
-// fs.writeFile("./src/greek_text/greekPronouns.js", prepString, (err) => {
+// let prepString = JSON.stringify(parseOptions);
+
+// fs.writeFile("./src/greek_text/parseOptions.js", prepString, (err) => {
 //   if (err) throw err;
 // });
