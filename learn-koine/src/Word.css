@@ -19,8 +19,8 @@
   flex-flow: column;
   justify-content: center;
   align-items: stretch;
-  margin-bottom: 1em;
-  padding: 20px;
+  /* margin-bottom: 1em; */
+  padding: 5px;
 }
 
 .case-option-clear {

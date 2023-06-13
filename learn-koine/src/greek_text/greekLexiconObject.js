@@ -27116,102 +27116,102 @@ export const wordUsages = {
     gloss: "if",
   },
   αὑτὴν: {
-    parse: "F-3ASF｜reFlexive pronoun, third, accusative, singular, feminine",
+    parse: "F-3ASF｜Reflexive pronoun, third, accusative, singular, feminine",
     GN: "G1438",
     gloss: "themself",
   },
   αὑτοῦ: {
-    parse: "F-3GSM｜reFlexive pronoun, third, genitive, singular, masculine",
+    parse: "F-3GSM｜Reflexive pronoun, third, genitive, singular, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   αὑτῷ: {
-    parse: "F-3DSM｜reFlexive pronoun, third, dative, singular, masculine",
+    parse: "F-3DSM｜Reflexive pronoun, third, dative, singular, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτὰ: {
-    parse: "F-2APN｜reFlexive pronoun, second, accusative, plural, neuter",
+    parse: "F-2APN｜Reflexive pronoun, second, accusative, plural, neuter",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυταῖς: {
-    parse: "F-2DPF｜reFlexive pronoun, second, dative, plural, feminine",
+    parse: "F-2DPF｜Reflexive pronoun, second, dative, plural, feminine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτὰς: {
-    parse: "F-2APF｜reFlexive pronoun, second, accusative, plural, feminine",
+    parse: "F-2APF｜Reflexive pronoun, second, accusative, plural, feminine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτάς: {
-    parse: "F-3APF｜reFlexive pronoun, third, accusative, plural, feminine",
+    parse: "F-3APF｜Reflexive pronoun, third, accusative, plural, feminine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτῇ: {
-    parse: "F-3DSF｜reFlexive pronoun, third, dative, singular, feminine",
+    parse: "F-3DSF｜Reflexive pronoun, third, dative, singular, feminine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτήν: {
-    parse: "F-3ASF｜reFlexive pronoun, third, accusative, singular, feminine",
+    parse: "F-3ASF｜Reflexive pronoun, third, accusative, singular, feminine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτὴν: {
-    parse: "F-3ASF｜reFlexive pronoun, third, accusative, singular, feminine",
+    parse: "F-3ASF｜Reflexive pronoun, third, accusative, singular, feminine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτῆς: {
-    parse: "F-3GSF｜reFlexive pronoun, third, genitive, singular, feminine",
+    parse: "F-3GSF｜Reflexive pronoun, third, genitive, singular, feminine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτοῖς: {
-    parse: "F-3DPM｜reFlexive pronoun, third, dative, plural, masculine",
+    parse: "F-3DPM｜Reflexive pronoun, third, dative, plural, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτόν: {
-    parse: "F-3ASM｜reFlexive pronoun, third, accusative, singular, masculine",
+    parse: "F-3ASM｜Reflexive pronoun, third, accusative, singular, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτὸν: {
-    parse: "F-3ASM｜reFlexive pronoun, third, accusative, singular, masculine",
+    parse: "F-3ASM｜Reflexive pronoun, third, accusative, singular, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτοῦ: {
-    parse: "F-3GSN｜reFlexive pronoun, third, genitive, singular, neuter",
+    parse: "F-3GSN｜Reflexive pronoun, third, genitive, singular, neuter",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτούς: {
-    parse: "F-3APM｜reFlexive pronoun, third, accusative, plural, masculine",
+    parse: "F-3APM｜Reflexive pronoun, third, accusative, plural, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτοὺς: {
-    parse: "F-3APM｜reFlexive pronoun, third, accusative, plural, masculine",
+    parse: "F-3APM｜Reflexive pronoun, third, accusative, plural, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   Ἑαυτοὺς: {
-    parse: "F-2APM｜reFlexive pronoun, second, accusative, plural, masculine",
+    parse: "F-2APM｜Reflexive pronoun, second, accusative, plural, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτῷ: {
-    parse: "F-3DSM｜reFlexive pronoun, third, dative, singular, masculine",
+    parse: "F-3DSM｜Reflexive pronoun, third, dative, singular, masculine",
     GN: "G1438",
     gloss: "themself",
   },
   ἑαυτῶν: {
-    parse: "F-3GPN｜reFlexive pronoun, third, genitive, plural, neuter",
+    parse: "F-3GPN｜Reflexive pronoun, third, genitive, plural, neuter",
     GN: "G1438",
     gloss: "themself",
   },
@@ -27928,7 +27928,7 @@ export const wordUsages = {
   },
   ἐμοὶ: {
     parse:
-      "S-1SNPM｜poSsessive pronoun, first, singular, nominative, plural, masculine",
+      "S-1SNPM｜Possessive pronoun, first, singular, nominative, plural, masculine",
     GN: "G1699",
     gloss: "mine",
   },
@@ -27939,7 +27939,7 @@ export const wordUsages = {
   },
   ἐμοῦ: {
     parse:
-      "S-1SGSN｜poSsessive pronoun, first, singular, genitive, singular, neuter",
+      "S-1SGSN｜Possessive pronoun, first, singular, genitive, singular, neuter",
     GN: "G1699",
     gloss: "mine",
   },
@@ -32201,22 +32201,22 @@ export const wordUsages = {
     gloss: "Eloi",
   },
   ἐμαυτόν: {
-    parse: "F-1ASM｜reFlexive pronoun, first, accusative, singular, masculine",
+    parse: "F-1ASM｜Reflexive pronoun, first, accusative, singular, masculine",
     GN: "G1683",
     gloss: "myself",
   },
   ἐμαυτὸν: {
-    parse: "F-1ASM｜reFlexive pronoun, first, accusative, singular, masculine",
+    parse: "F-1ASM｜Reflexive pronoun, first, accusative, singular, masculine",
     GN: "G1683",
     gloss: "myself",
   },
   ἐμαυτοῦ: {
-    parse: "F-1GSM｜reFlexive pronoun, first, genitive, singular, masculine",
+    parse: "F-1GSM｜Reflexive pronoun, first, genitive, singular, masculine",
     GN: "G1683",
     gloss: "myself",
   },
   ἐμαυτῷ: {
-    parse: "F-1DSM｜reFlexive pronoun, first, dative, singular, masculine",
+    parse: "F-1DSM｜Reflexive pronoun, first, dative, singular, masculine",
     GN: "G1683",
     gloss: "myself",
   },
@@ -32409,103 +32409,103 @@ export const wordUsages = {
   },
   ἐμὰ: {
     parse:
-      "S-1SNPN｜poSsessive pronoun, first, singular, nominative, plural, neuter",
+      "S-1SNPN｜Possessive pronoun, first, singular, nominative, plural, neuter",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμά: {
     parse:
-      "S-1SNPN｜poSsessive pronoun, first, singular, nominative, plural, neuter",
+      "S-1SNPN｜Possessive pronoun, first, singular, nominative, plural, neuter",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμὰς: {
     parse:
-      "S-1SAPF｜poSsessive pronoun, first, singular, accusative, plural, feminine",
+      "S-1SAPF｜Possessive pronoun, first, singular, accusative, plural, feminine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμῇ: {
     parse:
-      "S-1SDSF｜poSsessive pronoun, first, singular, dative, singular, feminine",
+      "S-1SDSF｜Possessive pronoun, first, singular, dative, singular, feminine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμή: {
     parse:
-      "S-1SNSF｜poSsessive pronoun, first, singular, nominative, singular, feminine",
+      "S-1SNSF｜Possessive pronoun, first, singular, nominative, singular, feminine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμὴ: {
     parse:
-      "S-1SNSF｜poSsessive pronoun, first, singular, nominative, singular, feminine",
+      "S-1SNSF｜Possessive pronoun, first, singular, nominative, singular, feminine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμήν: {
     parse:
-      "S-1SASF｜poSsessive pronoun, first, singular, accusative, singular, feminine",
+      "S-1SASF｜Possessive pronoun, first, singular, accusative, singular, feminine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμὴν: {
     parse:
-      "S-1SASF｜poSsessive pronoun, first, singular, accusative, singular, feminine",
+      "S-1SASF｜Possessive pronoun, first, singular, accusative, singular, feminine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμῆς: {
     parse:
-      "S-1SGSF｜poSsessive pronoun, first, singular, genitive, singular, feminine",
+      "S-1SGSF｜Possessive pronoun, first, singular, genitive, singular, feminine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμοῖς: {
     parse:
-      "S-1SDPN｜poSsessive pronoun, first, singular, dative, plural, neuter",
+      "S-1SDPN｜Possessive pronoun, first, singular, dative, plural, neuter",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμόν: {
     parse:
-      "S-1SASM｜poSsessive pronoun, first, singular, accusative, singular, masculine",
+      "S-1SASM｜Possessive pronoun, first, singular, accusative, singular, masculine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμὸν: {
     parse:
-      "S-1SNSN｜poSsessive pronoun, first, singular, nominative, singular, neuter",
+      "S-1SNSN｜Possessive pronoun, first, singular, nominative, singular, neuter",
     GN: "G1699",
     gloss: "mine",
   },
   Ἐμὸν: {
     parse:
-      "S-1SNSN｜poSsessive pronoun, first, singular, nominative, singular, neuter",
+      "S-1SNSN｜Possessive pronoun, first, singular, nominative, singular, neuter",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμὸς: {
     parse:
-      "S-1SNSM｜poSsessive pronoun, first, singular, nominative, singular, masculine",
+      "S-1SNSM｜Possessive pronoun, first, singular, nominative, singular, masculine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμοὺς: {
     parse:
-      "S-1SAPM｜poSsessive pronoun, first, singular, accusative, plural, masculine",
+      "S-1SAPM｜Possessive pronoun, first, singular, accusative, plural, masculine",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμῷ: {
     parse:
-      "S-1SDSN｜poSsessive pronoun, first, singular, dative, singular, neuter",
+      "S-1SDSN｜Possessive pronoun, first, singular, dative, singular, neuter",
     GN: "G1699",
     gloss: "mine",
   },
   ἐμῶν: {
     parse:
-      "S-1SGPN｜poSsessive pronoun, first, singular, genitive, plural, neuter",
+      "S-1SGPN｜Possessive pronoun, first, singular, genitive, plural, neuter",
     GN: "G1699",
     gloss: "mine",
   },
@@ -42851,43 +42851,43 @@ export const wordUsages = {
   },
   ἡμετέρα: {
     parse:
-      "S-1PNSF｜poSsessive pronoun, first, plural, nominative, singular, feminine",
+      "S-1PNSF｜Possessive pronoun, first, plural, nominative, singular, feminine",
     GN: "G2251",
     gloss: "our",
   },
   ἡμετέραις: {
     parse:
-      "S-1PDPF｜poSsessive pronoun, first, plural, dative, plural, feminine",
+      "S-1PDPF｜Possessive pronoun, first, plural, dative, plural, feminine",
     GN: "G2251",
     gloss: "our",
   },
   ἡμετέραν: {
     parse:
-      "S-1PASF｜poSsessive pronoun, first, plural, accusative, singular, feminine",
+      "S-1PASF｜Possessive pronoun, first, plural, accusative, singular, feminine",
     GN: "G2251",
     gloss: "our",
   },
   ἡμετέρας: {
     parse:
-      "S-1PGSF｜poSsessive pronoun, first, plural, genitive, singular, feminine",
+      "S-1PGSF｜Possessive pronoun, first, plural, genitive, singular, feminine",
     GN: "G2251",
     gloss: "our",
   },
   ἡμέτεροι: {
     parse:
-      "S-1PNPM｜poSsessive pronoun, first, plural, nominative, plural, masculine",
+      "S-1PNPM｜Possessive pronoun, first, plural, nominative, plural, masculine",
     GN: "G2251",
     gloss: "our",
   },
   ἡμετέροις: {
     parse:
-      "S-1PDPM｜poSsessive pronoun, first, plural, dative, plural, masculine",
+      "S-1PDPM｜Possessive pronoun, first, plural, dative, plural, masculine",
     GN: "G2251",
     gloss: "our",
   },
   ἡμετέρων: {
     parse:
-      "S-1PGPF｜poSsessive pronoun, first, plural, genitive, plural, feminine",
+      "S-1PGPF｜Possessive pronoun, first, plural, genitive, plural, feminine",
     GN: "G2251",
     gloss: "our",
   },
@@ -82918,22 +82918,22 @@ export const wordUsages = {
     gloss: "to extinguish",
   },
   σεαυτόν: {
-    parse: "F-2ASM｜reFlexive pronoun, second, accusative, singular, masculine",
+    parse: "F-2ASM｜Reflexive pronoun, second, accusative, singular, masculine",
     GN: "G4572",
     gloss: "yourself",
   },
   σεαυτὸν: {
-    parse: "F-2ASM｜reFlexive pronoun, second, accusative, singular, masculine",
+    parse: "F-2ASM｜Reflexive pronoun, second, accusative, singular, masculine",
     GN: "G4572",
     gloss: "yourself",
   },
   σεαυτοῦ: {
-    parse: "F-2GSM｜reFlexive pronoun, second, genitive, singular, masculine",
+    parse: "F-2GSM｜Reflexive pronoun, second, genitive, singular, masculine",
     GN: "G4572",
     gloss: "yourself",
   },
   σεαυτῷ: {
-    parse: "F-2DSM｜reFlexive pronoun, second, dative, singular, masculine",
+    parse: "F-2DSM｜Reflexive pronoun, second, dative, singular, masculine",
     GN: "G4572",
     gloss: "yourself",
   },
@@ -84177,31 +84177,31 @@ export const wordUsages = {
   },
   σὰ: {
     parse:
-      "S-2SNPN｜poSsessive pronoun, second, singular, nominative, plural, neuter",
+      "S-2SNPN｜Possessive pronoun, second, singular, nominative, plural, neuter",
     GN: "G4674",
     gloss: "your",
   },
   σά: {
     parse:
-      "S-2SNPN｜poSsessive pronoun, second, singular, nominative, plural, neuter",
+      "S-2SNPN｜Possessive pronoun, second, singular, nominative, plural, neuter",
     GN: "G4674",
     gloss: "your",
   },
   σῇ: {
     parse:
-      "S-2SDSF｜poSsessive pronoun, second, singular, dative, singular, feminine",
+      "S-2SDSF｜Possessive pronoun, second, singular, dative, singular, feminine",
     GN: "G4674",
     gloss: "your",
   },
   σὴν: {
     parse:
-      "S-2SASF｜poSsessive pronoun, second, singular, accusative, singular, feminine",
+      "S-2SASF｜Possessive pronoun, second, singular, accusative, singular, feminine",
     GN: "G4674",
     gloss: "your",
   },
   σῆς: {
     parse:
-      "S-2SGSF｜poSsessive pronoun, second, singular, genitive, singular, feminine",
+      "S-2SGSF｜Possessive pronoun, second, singular, genitive, singular, feminine",
     GN: "G4674",
     gloss: "your",
   },
@@ -84212,31 +84212,31 @@ export const wordUsages = {
   },
   σόν: {
     parse:
-      "S-2SASN｜poSsessive pronoun, second, singular, accusative, singular, neuter",
+      "S-2SASN｜Possessive pronoun, second, singular, accusative, singular, neuter",
     GN: "G4674",
     gloss: "your",
   },
   σὸν: {
     parse:
-      "S-2SNSN｜poSsessive pronoun, second, singular, nominative, singular, neuter",
+      "S-2SNSN｜Possessive pronoun, second, singular, nominative, singular, neuter",
     GN: "G4674",
     gloss: "your",
   },
   σὸς: {
     parse:
-      "S-2SNSM｜poSsessive pronoun, second, singular, nominative, singular, masculine",
+      "S-2SNSM｜Possessive pronoun, second, singular, nominative, singular, masculine",
     GN: "G4674",
     gloss: "your",
   },
   σούς: {
     parse:
-      "S-2SAPM｜poSsessive pronoun, second, singular, accusative, plural, masculine",
+      "S-2SAPM｜Possessive pronoun, second, singular, accusative, plural, masculine",
     GN: "G4674",
     gloss: "your",
   },
   σῷ: {
     parse:
-      "S-2SDSN｜poSsessive pronoun, second, singular, dative, singular, neuter",
+      "S-2SDSN｜Possessive pronoun, second, singular, dative, singular, neuter",
     GN: "G4674",
     gloss: "your",
   },

@@ -18,7 +18,7 @@ const PronounGrid = ({ reset }) => {
   };
 
   const reflexivePronounGrid = (
-    <div className="categories">
+    <div className="pronouns-grid">
       <div className="cases">
         <div className={"case-option"} onClick={(e) => checkCase(e)}>
           first
@@ -67,7 +67,7 @@ const PronounGrid = ({ reset }) => {
   );
 
   const possesiveGrid = (
-    <div className="categories">
+    <div className="pronouns-grid">
       <div className="cases">
         <div className={"case-option"} onClick={(e) => checkCase(e)}>
           first
