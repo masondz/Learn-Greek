@@ -1,8 +1,7 @@
 .pick-verse-menu {
   position: relative;
   display: flex;
-  justify-content: center;
-  justify-self: center;
+  justify-content: flex-start;
   z-index: 1;
   font-size: 14px;
   font-weight: bold;
@@ -13,17 +12,17 @@
 }
 
 .pick-component {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  width: 363px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-items: flex-start; */
+  max-width: 400px;
   margin: 50px auto;
   position: relative;
 }
 
 #book-list {
   text-align: center;
-  font-size: 14px;
+  /* font-size: 14px; */
   padding: 5px;
   border-right: 3px solid rgb(206, 206, 206);
 }
@@ -35,7 +34,7 @@
   text-align: center;
   left: 103px;
   border-right: 3px solid rgb(206, 206, 206);
-  width: 84px;
+  /* width: 84px; */
 }
 
 #verse-list {
@@ -43,12 +42,13 @@
   padding-left: 9px;
   text-align: center;
   left: 205px;
-  width: 86px;
+  /* width: 86px; */
 }
 
 .drop-lists {
   display: flex;
   max-width: 100px;
+  width: 25%;
   color: rgb(0, 0, 0);
   border: solid 1px rgb(206, 206, 206);
 }
@@ -57,38 +57,47 @@
   text-align: center;
   border: none;
   cursor: pointer;
+
   background-color: whitesmoke;
-  width: 180px;
-  font-size: 14px;
+  width: 100%;
+  font-size: 1em;
 }
 
 .lists-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  justify-self: flex-start;
-  width: 100%;
+  /* flex-shrink: 1; */
+  /* align-items: baseline; */
+  /* justify-content: flex-start; */
+  /* justify-self: center; */
+  /* margin: auto; */
+  width: 77%;
+  /* max-width: 358px; */
   /* left: 23px; */
-  margin: auto;
   z-index: 1;
-  position: relative;
+  /* position: absolute; */
   /* border: 1px red solid; */
 }
 
 .lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgb(241, 237, 230);
   color: black;
-  max-width: 115px;
+  max-width: 90px;
+  width: 33%;
   font-size: 14px;
   text-align: center;
-  width: 90px;
-  padding: 0 4px;
+  /* max-width: 100px; */
+  /* padding: 0 4px; */
   height: 200px;
   overflow: scroll;
   position: absolute;
 }
 
 .list-option {
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   margin-bottom: 15px;
 }
@@ -101,6 +110,7 @@
   border: none;
   background-color: rgb(16, 185, 45);
   cursor: pointer;
+  /* width: 25%; */
 }
 
 .go-button:active {
@@ -132,20 +142,20 @@
 @media only screen and (max-width: 540px) {
   .pick-component {
     /* width: 100%; */
-    /* margin: 20auto; */
+    justify-content: center;
   }
 
   .lists-container {
-    width: 100%;
+    /* margin: auto; */
+    /* border: 2px solid red; */
   }
 
-  #book-list {
+  /* #book-list {
     width: 92;
     overflow-x: hidden;
   }
 
   #chapter-list {
-    /* padding: auto; */
     left: 103px;
     width: 85px;
   }
@@ -153,5 +163,5 @@
   #verse-list {
     left: 205px;
     width: 87px;
-  }
+  } */
 }

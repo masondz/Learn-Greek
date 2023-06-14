@@ -41,7 +41,7 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
         <p>{selectedWord}</p>
         <p>{describeWord}</p>
       </div>
-      {children}
+      <div className="grid-area">{children}</div>
       <br></br>
       <div className="button-group">
         <button
