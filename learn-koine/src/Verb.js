@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { randomWord } from "./greek_text/parseLexicon";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import VerbGrid from "./VerbGrid";
-import "./Verb.css";
+import "./";
 import { setWord, selectWordSlice } from "./features/wordSlice";
 import { selectVerseMode, setMode } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
