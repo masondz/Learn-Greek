@@ -12,38 +12,39 @@
 }
 
 .pick-component {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-items: flex-start; */
+  /* display: flex;
+  flex-direction: column;
+  justify-items: center; */
+  /* align-items: baseline; */
   max-width: 400px;
   margin: 50px auto;
   position: relative;
 }
 
-#book-list {
+/* #book-list {
   text-align: center;
-  /* font-size: 14px; */
+  font-size: 14px;
   padding: 5px;
   border-right: 3px solid rgb(206, 206, 206);
-}
+} */
 
-#chapter-list {
-  /* padding: auto; */
+/* #chapter-list {
+  padding: auto;
   padding: 5px;
   padding-left: 10px;
   text-align: center;
   left: 103px;
   border-right: 3px solid rgb(206, 206, 206);
-  /* width: 84px; */
-}
+  width: 84px;
+} */
 
-#verse-list {
+/* #verse-list {
   padding: 5px;
   padding-left: 9px;
   text-align: center;
   left: 205px;
-  /* width: 86px; */
-}
+  width: 86px;
+} */
 
 .drop-lists {
   display: flex;
@@ -68,10 +69,10 @@
   display: flex;
   /* flex-shrink: 1; */
   /* align-items: baseline; */
-  /* justify-content: flex-start; */
-  /* justify-self: center; */
+  /* justify-content: center; */
+  justify-self: center;
   /* margin: auto; */
-  width: 77%;
+  width: 75%;
   /* max-width: 358px; */
   /* left: 23px; */
   z-index: 1;
@@ -81,7 +82,6 @@
 
 .false {
   visibility: hidden;
-  border: 1px solid red;
 }
 
 .true {
@@ -91,8 +91,8 @@
 .lists {
   background-color: rgb(241, 237, 230);
   color: black;
-  max-width: 90px;
-  width: 33%;
+  /* max-width: 90px; */
+  width: 45%;
   font-size: 14px;
   text-align: center;
   /* max-width: 100px; */
@@ -110,14 +110,13 @@
 }
 
 .go-button {
-  display: flex;
   font-weight: bolder;
   color: white;
   padding: 9px 19px;
   border: none;
   background-color: rgb(16, 185, 45);
   cursor: pointer;
-  /* width: 25%; */
+  width: 25%;
 }
 
 .go-button:active {
