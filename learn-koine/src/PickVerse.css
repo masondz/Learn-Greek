@@ -64,6 +64,7 @@
 }
 /*  5473138*/
 .lists-container {
+  visibility: hidden;
   display: flex;
   /* flex-shrink: 1; */
   /* align-items: baseline; */
