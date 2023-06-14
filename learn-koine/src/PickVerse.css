@@ -81,9 +81,6 @@
 }
 
 .lists {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: rgb(241, 237, 230);
   color: black;
   max-width: 90px;

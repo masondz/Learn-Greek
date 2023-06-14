@@ -1,11 +1,11 @@
-/* .body {
+.vocab-component {
   background-color: #282c34;
   display: flex;
   color: white;
   justify-content: flex-start;
   flex-wrap: nowrap;
   text-align: center;
-} */
+}
 
 .card-back {
   background-color: #bbb;
@@ -88,7 +88,7 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  margin-top: 7em;
+  margin: 7em auto;
 }
 
 @media only screen and (max-width: 475px) {
