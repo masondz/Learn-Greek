@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { randomWord } from "./greek_text/parseLexicon";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import VerbGrid from "./VerbGrid";
-import "./Verse.css";
+import "./Verb.css";
 import { setWord, selectWordSlice } from "./features/wordSlice";
 import { selectVerseMode, setMode } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
@@ -150,18 +150,20 @@ const Verb = () => {
   }, [dispatch]);
 
   return (
-    <div className="body">
+    <div>
       <VerbMenu setVerbMode={setVerbMode} />
       <br></br>
-      <div style={{ marginTop: "70px" }}>{verbMode}</div>
-      <h1>{verb.word}</h1>
-      <VerbGrid
-        verb={verb}
-        dispatch={dispatch}
-        setWord={setWord}
-        randomWord={randomWord}
-        verbMode={verbMode}
-      />
+      <div className="verb-component">
+        <div style={{ marginTop: "70px" }}>{verbMode}</div>
+        <h1>{verb.word}</h1>
+        <VerbGrid
+          verb={verb}
+          dispatch={dispatch}
+          setWord={setWord}
+          randomWord={randomWord}
+          verbMode={verbMode}
+        />
+      </div>
     </div>
   );
 };
