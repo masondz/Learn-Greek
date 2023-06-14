@@ -35,8 +35,6 @@
   left: 103px;
   border-right: 3px solid rgb(206, 206, 206);
   /* width: 84px; */
-
-  visibility: visible;
 }
 
 #verse-list {
@@ -78,6 +76,15 @@
   z-index: 1;
 
   position: absolute;
+}
+
+.false {
+  visibility: hidden;
+  border: 1px solid red;
+}
+
+.true {
+  visibility: visible;
 }
 
 .lists {
