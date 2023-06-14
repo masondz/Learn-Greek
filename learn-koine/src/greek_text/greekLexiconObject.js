@@ -92,7 +92,7 @@ export const wordUsages = {
     gloss: "Agabus",
   },
   ἀγαθοεργεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G14",
     gloss: "to do good",
   },
@@ -108,7 +108,7 @@ export const wordUsages = {
     gloss: "to do good",
   },
   ἀγαθοποιῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G15",
     gloss: "to do good",
   },
@@ -291,7 +291,7 @@ export const wordUsages = {
     gloss: "joy",
   },
   ἀγαλλιαθῆναι: {
-    parse: "V-AON｜Verb, Aorist, passive depOnent, iNfinitive",
+    parse: "V-AON｜Verb, Aorist, passive depOnent, Infinitive",
     GN: "G21",
     gloss: "to rejoice",
   },
@@ -334,7 +334,7 @@ export const wordUsages = {
     gloss: "unmarried",
   },
   ἀγανακτεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G23",
     gloss: "be indignant",
   },
@@ -371,7 +371,7 @@ export const wordUsages = {
     gloss: "to love",
   },
   ἀγαπᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G25",
     gloss: "to love",
   },
@@ -1136,7 +1136,7 @@ export const wordUsages = {
     gloss: "be ignorant",
   },
   ἀγνοεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G50",
     gloss: "be ignorant",
   },
@@ -1314,7 +1314,7 @@ export const wordUsages = {
     gloss: "to buy",
   },
   ἀγοράσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G59",
     gloss: "to buy",
   },
@@ -1539,7 +1539,7 @@ export const wordUsages = {
     gloss: "sleeplessness",
   },
   ἀγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G71",
     gloss: "to bring/lead",
   },
@@ -1586,12 +1586,12 @@ export const wordUsages = {
     gloss: "to bring/lead",
   },
   ἄγειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G71",
     gloss: "to bring/lead",
   },
   ἄγεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G71",
     gloss: "to bring/lead",
   },
@@ -1659,7 +1659,7 @@ export const wordUsages = {
     gloss: "to bring/lead",
   },
   ἀχθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G71",
     gloss: "to bring/lead",
   },
@@ -1940,7 +1940,7 @@ export const wordUsages = {
     gloss: "uncertainly",
   },
   ἀδημονεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G85",
     gloss: "be distressed",
   },
@@ -2012,7 +2012,7 @@ export const wordUsages = {
     gloss: "to harm",
   },
   ἀδικῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G91",
     gloss: "to harm",
   },
@@ -2377,7 +2377,7 @@ export const wordUsages = {
     gloss: "to reject",
   },
   ἀθετῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G114",
     gloss: "to reject",
   },
@@ -2615,7 +2615,7 @@ export const wordUsages = {
     gloss: "praise",
   },
   αἰνεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G134",
     gloss: "to praise",
   },
@@ -2764,7 +2764,7 @@ export const wordUsages = {
     gloss: "to take up",
   },
   ἆραι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G142",
     gloss: "to take up",
   },
@@ -2993,7 +2993,7 @@ export const wordUsages = {
     gloss: "be ashamed",
   },
   αἰτεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G154",
     gloss: "to ask",
   },
@@ -3003,7 +3003,7 @@ export const wordUsages = {
     gloss: "to ask",
   },
   αἰτεῖσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G154",
     gloss: "to ask",
   },
@@ -3028,7 +3028,7 @@ export const wordUsages = {
     gloss: "to ask",
   },
   αἰτῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G154",
     gloss: "to ask",
   },
@@ -3648,7 +3648,7 @@ export const wordUsages = {
     gloss: "to follow",
   },
   ἀκολουθεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G190",
     gloss: "to follow",
   },
@@ -3658,7 +3658,7 @@ export const wordUsages = {
     gloss: "to follow",
   },
   ἀκολουθῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G190",
     gloss: "to follow",
   },
@@ -3818,7 +3818,7 @@ export const wordUsages = {
     gloss: "to hear",
   },
   ἀκούειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G191",
     gloss: "to hear",
   },
@@ -3924,12 +3924,12 @@ export const wordUsages = {
     gloss: "to hear",
   },
   ἀκοῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G191",
     gloss: "to hear",
   },
   ἀκοῦσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G191",
     gloss: "to hear",
   },
@@ -4641,7 +4641,7 @@ export const wordUsages = {
     gloss: "fisherman",
   },
   ἁλιεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G232",
     gloss: "to fish",
   },
@@ -4701,7 +4701,7 @@ export const wordUsages = {
     gloss: "to change",
   },
   ἀλλάξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G236",
     gloss: "to change",
   },
@@ -5037,7 +5037,7 @@ export const wordUsages = {
     gloss: "to sin",
   },
   ἁμαρτάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G264",
     gloss: "to sin",
   },
@@ -5609,7 +5609,7 @@ export const wordUsages = {
     gloss: "to ascend",
   },
   ἀναβαίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G305",
     gloss: "to ascend",
   },
@@ -5861,7 +5861,7 @@ export const wordUsages = {
     gloss: "delay",
   },
   ἀναγγεῖλαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G312",
     gloss: "to report",
   },
@@ -5983,7 +5983,7 @@ export const wordUsages = {
     gloss: "to read",
   },
   ἀναγνῶναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G314",
     gloss: "to read",
   },
@@ -5993,7 +5993,7 @@ export const wordUsages = {
     gloss: "to read",
   },
   ἀναγνωσθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G314",
     gloss: "to read",
   },
@@ -6138,7 +6138,7 @@ export const wordUsages = {
     gloss: "reading",
   },
   ἀναγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G321",
     gloss: "to lead",
   },
@@ -6155,7 +6155,7 @@ export const wordUsages = {
     gloss: "to lead",
   },
   ἀνάγεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G321",
     gloss: "to lead",
   },
@@ -6178,7 +6178,7 @@ export const wordUsages = {
     gloss: "to lead",
   },
   ἀναχθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G321",
     gloss: "to lead",
   },
@@ -6235,7 +6235,7 @@ export const wordUsages = {
     gloss: "to revive",
   },
   ἀναζητῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G327",
     gloss: "to search",
   },
@@ -6257,7 +6257,7 @@ export const wordUsages = {
     gloss: "to gird",
   },
   ἀναζωπυρεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G329",
     gloss: "to rekindle",
   },
@@ -6287,7 +6287,7 @@ export const wordUsages = {
     gloss: "devoted",
   },
   ἀναθεματίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G332",
     gloss: "to take an oath",
   },
@@ -6324,7 +6324,7 @@ export const wordUsages = {
     gloss: "murder",
   },
   ἀναιρεθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G337",
     gloss: "to kill",
   },
@@ -6334,12 +6334,12 @@ export const wordUsages = {
     gloss: "to kill",
   },
   ἀναιρεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G337",
     gloss: "to kill",
   },
   ἀναιρεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G337",
     gloss: "to kill",
   },
@@ -6391,7 +6391,7 @@ export const wordUsages = {
     gloss: "to kill",
   },
   ἀνελεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G337",
     gloss: "to kill",
   },
@@ -6421,7 +6421,7 @@ export const wordUsages = {
     gloss: "to sit up",
   },
   ἀνακαινίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G340",
     gloss: "to restore",
   },
@@ -6459,7 +6459,7 @@ export const wordUsages = {
     gloss: "to unveil",
   },
   ἀνακάμψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G344",
     gloss: "to return",
   },
@@ -6515,12 +6515,12 @@ export const wordUsages = {
     gloss: "to summarise",
   },
   ἀνακεφαλαιώσασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G346",
     gloss: "to summarise",
   },
   ἀνακλιθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G347",
     gloss: "to recline",
   },
@@ -6530,7 +6530,7 @@ export const wordUsages = {
     gloss: "to recline",
   },
   ἀνακλῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G347",
     gloss: "to recline",
   },
@@ -6626,7 +6626,7 @@ export const wordUsages = {
     gloss: "investigation",
   },
   ἀνακύψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G352",
     gloss: "to straighten up",
   },
@@ -6664,7 +6664,7 @@ export const wordUsages = {
     gloss: "to take up",
   },
   ἀναλαμβάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G353",
     gloss: "to take up",
   },
@@ -6695,7 +6695,7 @@ export const wordUsages = {
     gloss: "to consume",
   },
   ἀναλῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G355",
     gloss: "to consume",
   },
@@ -6721,7 +6721,7 @@ export const wordUsages = {
     gloss: "departure",
   },
   ἀναλῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G360",
     gloss: "to depart",
   },
@@ -6736,7 +6736,7 @@ export const wordUsages = {
     gloss: "sinless",
   },
   ἀναμένειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G362",
     gloss: "to await",
   },
@@ -6783,7 +6783,7 @@ export const wordUsages = {
     gloss: "remembrance",
   },
   ἀνανεοῦσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G365",
     gloss: "to renew",
   },
@@ -6913,7 +6913,7 @@ export const wordUsages = {
     gloss: "to recline",
   },
   ἀναπεσεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G377",
     gloss: "to recline",
   },
@@ -6945,7 +6945,7 @@ export const wordUsages = {
     gloss: "to fulfil",
   },
   ἀναπληρῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G378",
     gloss: "to fulfil",
   },
@@ -7082,7 +7082,7 @@ export const wordUsages = {
     gloss: "to live/return",
   },
   ἀναστρέφεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G390",
     gloss: "to live/return",
   },
@@ -7145,7 +7145,7 @@ export const wordUsages = {
     gloss: "behaviour",
   },
   ἀνατάξασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G392",
     gloss: "to compile",
   },
@@ -7238,7 +7238,7 @@ export const wordUsages = {
     gloss: "to bring up",
   },
   ἀναφαίνεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G398",
     gloss: "to appear",
   },
@@ -7254,7 +7254,7 @@ export const wordUsages = {
     gloss: "to carry up",
   },
   ἀναφέρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G399",
     gloss: "to carry up",
   },
@@ -7264,7 +7264,7 @@ export const wordUsages = {
     gloss: "to carry up",
   },
   ἀνενέγκαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G399",
     gloss: "to carry up",
   },
@@ -7275,7 +7275,7 @@ export const wordUsages = {
     gloss: "to carry up",
   },
   ἀνενεγκεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G399",
     gloss: "to carry up",
   },
@@ -7535,12 +7535,12 @@ export const wordUsages = {
     gloss: "rest",
   },
   ἀνετάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G426",
     gloss: "to question",
   },
   ἀνετάζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G426",
     gloss: "to question",
   },
@@ -7743,7 +7743,7 @@ export const wordUsages = {
     gloss: "to oppose",
   },
   ἀντιστῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G436",
     gloss: "to oppose",
   },
@@ -8018,7 +8018,7 @@ export const wordUsages = {
     gloss: "to arise",
   },
   ἀναστῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G450",
     gloss: "to arise",
   },
@@ -8085,7 +8085,7 @@ export const wordUsages = {
     gloss: "to arise",
   },
   ἀνίστασθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G450",
     gloss: "to arise",
   },
@@ -8191,7 +8191,7 @@ export const wordUsages = {
     gloss: "to open",
   },
   ἀνεῳχθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G455",
     gloss: "to open",
   },
@@ -8206,7 +8206,7 @@ export const wordUsages = {
     gloss: "to open",
   },
   ἀνοίγειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G455",
     gloss: "to open",
   },
@@ -8227,7 +8227,7 @@ export const wordUsages = {
     gloss: "to open",
   },
   ἀνοῖξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G455",
     gloss: "to open",
   },
@@ -8454,12 +8454,12 @@ export const wordUsages = {
     gloss: "to repay",
   },
   ἀνταποδοῦναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G467",
     gloss: "to repay",
   },
   ἀνταποδοῦναί: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G467",
     gloss: "to repay",
   },
@@ -8484,7 +8484,7 @@ export const wordUsages = {
     gloss: "reward",
   },
   ἀνταποκριθῆναι: {
-    parse: "V-AON｜Verb, Aorist, passive depOnent, iNfinitive",
+    parse: "V-AON｜Verb, Aorist, passive depOnent, Infinitive",
     GN: "G470",
     gloss: "to contradict",
   },
@@ -8597,7 +8597,7 @@ export const wordUsages = {
     gloss: "to help",
   },
   ἀντιλαμβάνεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G482",
     gloss: "to help",
   },
@@ -8608,7 +8608,7 @@ export const wordUsages = {
     gloss: "to help",
   },
   ἀντειπεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G483",
     gloss: "to dispute",
   },
@@ -8790,12 +8790,12 @@ export const wordUsages = {
     gloss: "antichrist",
   },
   ἀντλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G501",
     gloss: "to draw",
   },
   ἀντλῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G501",
     gloss: "to draw",
   },
@@ -8816,7 +8816,7 @@ export const wordUsages = {
     gloss: "bucket",
   },
   ἀντοφθαλμεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G503",
     gloss: "to face",
   },
@@ -9036,12 +9036,12 @@ export const wordUsages = {
     gloss: "invisible",
   },
   ἀπαγγεῖλαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G518",
     gloss: "to announce",
   },
   ἀπαγγεῖλαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G518",
     gloss: "to announce",
   },
@@ -9168,7 +9168,7 @@ export const wordUsages = {
     gloss: "to lead away",
   },
   ἀπαχθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G520",
     gloss: "to lead away",
   },
@@ -9209,12 +9209,12 @@ export const wordUsages = {
     gloss: "to release",
   },
   ἀπαλλάσσεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G525",
     gloss: "to release",
   },
   ἀπηλλάχθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G525",
     gloss: "to release",
   },
@@ -9661,7 +9661,7 @@ export const wordUsages = {
     gloss: "to go away",
   },
   ἀπελθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G565",
     gloss: "to go away",
   },
@@ -9728,7 +9728,7 @@ export const wordUsages = {
     gloss: "to go away",
   },
   ἀπέρχεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G565",
     gloss: "to go away",
   },
@@ -9780,7 +9780,7 @@ export const wordUsages = {
     gloss: "to have in full",
   },
   ἀπέχεσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G568",
     gloss: "to have in full",
   },
@@ -10006,12 +10006,12 @@ export const wordUsages = {
     gloss: "to register",
   },
   ἀπογράφεσθαι: {
-    parse: "V-PEN｜Verb, Present, Either middle or passive, iNfinitive",
+    parse: "V-PEN｜Verb, Present, Either middle or passive, Infinitive",
     GN: "G583",
     gloss: "to register",
   },
   ἀπογράψασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G583",
     gloss: "to register",
   },
@@ -10033,7 +10033,7 @@ export const wordUsages = {
     gloss: "to display",
   },
   ἀποδεῖξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G584",
     gloss: "to display",
   },
@@ -10043,7 +10043,7 @@ export const wordUsages = {
     gloss: "demonstration",
   },
   ἀποδεκατοῦν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G586",
     gloss: "to tithe",
   },
@@ -10092,7 +10092,7 @@ export const wordUsages = {
     gloss: "to receive",
   },
   ἀποδέξασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G588",
     gloss: "to receive",
   },
@@ -10144,7 +10144,7 @@ export const wordUsages = {
     gloss: "to pay",
   },
   ἀποδιδόναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G591",
     gloss: "to pay",
   },
@@ -10176,7 +10176,7 @@ export const wordUsages = {
     gloss: "to pay",
   },
   ἀποδοθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G591",
     gloss: "to pay",
   },
@@ -10201,7 +10201,7 @@ export const wordUsages = {
     gloss: "to pay",
   },
   ἀποδοῦναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G591",
     gloss: "to pay",
   },
@@ -10270,7 +10270,7 @@ export const wordUsages = {
     gloss: "to reject",
   },
   ἀποδοκιμασθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G593",
     gloss: "to reject",
   },
@@ -10336,7 +10336,7 @@ export const wordUsages = {
     gloss: "to die",
   },
   ἀποθανεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G599",
     gloss: "to die",
   },
@@ -10404,7 +10404,7 @@ export const wordUsages = {
     gloss: "to die",
   },
   ἀποθνῄσκειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G599",
     gloss: "to die",
   },
@@ -10491,7 +10491,7 @@ export const wordUsages = {
     gloss: "to reveal",
   },
   ἀποκαλύπτεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G601",
     gloss: "to reveal",
   },
@@ -10511,7 +10511,7 @@ export const wordUsages = {
     gloss: "to reveal",
   },
   ἀποκαλυφθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G601",
     gloss: "to reveal",
   },
@@ -10526,7 +10526,7 @@ export const wordUsages = {
     gloss: "to reveal",
   },
   ἀποκαλύψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G601",
     gloss: "to reveal",
   },
@@ -10571,7 +10571,7 @@ export const wordUsages = {
     gloss: "eager expectation",
   },
   ἀποκαταλλάξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G604",
     gloss: "to reconcile",
   },
@@ -10731,7 +10731,7 @@ export const wordUsages = {
     gloss: "to answer",
   },
   ἀποκριθῆναι: {
-    parse: "V-AON｜Verb, Aorist, passive depOnent, iNfinitive",
+    parse: "V-AON｜Verb, Aorist, passive depOnent, Infinitive",
     GN: "G611",
     gloss: "to answer",
   },
@@ -10766,7 +10766,7 @@ export const wordUsages = {
     gloss: "to answer",
   },
   ἀποκρίνεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G611",
     gloss: "to answer",
   },
@@ -10862,7 +10862,7 @@ export const wordUsages = {
     gloss: "to kill",
   },
   ἀποκτανθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G615",
     gloss: "to kill",
   },
@@ -10872,7 +10872,7 @@ export const wordUsages = {
     gloss: "to kill",
   },
   ἀποκτεῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G615",
     gloss: "to kill",
   },
@@ -10926,7 +10926,7 @@ export const wordUsages = {
     gloss: "to kill",
   },
   ἀποκτέννεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G615",
     gloss: "to kill",
   },
@@ -11084,7 +11084,7 @@ export const wordUsages = {
     gloss: "to destroy",
   },
   ἀπολέσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G622",
     gloss: "to destroy",
   },
@@ -11110,7 +11110,7 @@ export const wordUsages = {
     gloss: "to destroy",
   },
   ἀπολέσθαι: {
-    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, iNfinitive",
+    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, Infinitive",
     GN: "G622",
     gloss: "to destroy",
   },
@@ -11285,12 +11285,12 @@ export const wordUsages = {
     gloss: "to defend oneself",
   },
   ἀπολογεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G626",
     gloss: "to defend oneself",
   },
   ἀπολογηθῆναι: {
-    parse: "V-AON｜Verb, Aorist, passive depOnent, iNfinitive",
+    parse: "V-AON｜Verb, Aorist, passive depOnent, Infinitive",
     GN: "G626",
     gloss: "to defend oneself",
   },
@@ -11406,7 +11406,7 @@ export const wordUsages = {
     gloss: "divorce",
   },
   Ἀπολελύσθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G630",
     gloss: "divorce",
   },
@@ -11416,7 +11416,7 @@ export const wordUsages = {
     gloss: "divorce",
   },
   ἀπολύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G630",
     gloss: "divorce",
   },
@@ -11453,12 +11453,12 @@ export const wordUsages = {
     gloss: "divorce",
   },
   ἀπολῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G630",
     gloss: "divorce",
   },
   ἀπολῦσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G630",
     gloss: "divorce",
   },
@@ -11532,7 +11532,7 @@ export const wordUsages = {
     gloss: "to mislead",
   },
   ἀποπλανᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G635",
     gloss: "to mislead",
   },
@@ -11542,7 +11542,7 @@ export const wordUsages = {
     gloss: "to set sail",
   },
   ἀποπλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G636",
     gloss: "to set sail",
   },
@@ -11563,7 +11563,7 @@ export const wordUsages = {
     gloss: "to choke",
   },
   ἀπορεῖσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G639",
     gloss: "be perplexed",
   },
@@ -11633,7 +11633,7 @@ export const wordUsages = {
     gloss: "to draw away",
   },
   ἀποσπᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G645",
     gloss: "to draw away",
   },
@@ -11769,7 +11769,7 @@ export const wordUsages = {
     gloss: "to send",
   },
   ἀποστεῖλαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G649",
     gloss: "to send",
   },
@@ -11828,7 +11828,7 @@ export const wordUsages = {
     gloss: "to send",
   },
   ἀποστέλλειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G649",
     gloss: "to send",
   },
@@ -11931,7 +11931,7 @@ export const wordUsages = {
     gloss: "apostle",
   },
   ἀποστοματίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G653",
     gloss: "to interrogate",
   },
@@ -11947,7 +11947,7 @@ export const wordUsages = {
     gloss: "to turn away",
   },
   ἀποστρέφειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G654",
     gloss: "to turn away",
   },
@@ -12012,7 +12012,7 @@ export const wordUsages = {
     gloss: "to leave",
   },
   ἀποτάξασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G657",
     gloss: "to leave",
   },
@@ -12055,7 +12055,7 @@ export const wordUsages = {
     gloss: "to put aside",
   },
   ἀποθέσθαι: {
-    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, iNfinitive",
+    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, Infinitive",
     GN: "G659",
     gloss: "to put aside",
   },
@@ -12116,12 +12116,12 @@ export const wordUsages = {
     gloss: "absence",
   },
   ἀπενεγκεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G667",
     gloss: "to carry off",
   },
   ἀπενεχθῆναι: {
-    parse: "V-2APN｜Verb, 2nd Aorist, Passive, iNfinitive",
+    parse: "V-2APN｜Verb, 2nd Aorist, Passive, Infinitive",
     GN: "G667",
     gloss: "to carry off",
   },
@@ -12136,7 +12136,7 @@ export const wordUsages = {
     gloss: "to carry off",
   },
   ἀποφέρεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G667",
     gloss: "to carry off",
   },
@@ -12159,7 +12159,7 @@ export const wordUsages = {
     gloss: "to declare",
   },
   ἀποφθέγγεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G669",
     gloss: "to declare",
   },
@@ -12202,7 +12202,7 @@ export const wordUsages = {
     gloss: "to separate from",
   },
   ἀποχωρισθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G673",
     gloss: "to separate from",
   },
@@ -12248,7 +12248,7 @@ export const wordUsages = {
     gloss: "to touch",
   },
   ἅπτεσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G681",
     gloss: "to touch",
   },
@@ -12566,7 +12566,7 @@ export const wordUsages = {
     gloss: "pleasing",
   },
   ἀρέσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G700",
     gloss: "to please",
   },
@@ -12576,7 +12576,7 @@ export const wordUsages = {
     gloss: "to please",
   },
   ἀρέσκειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G700",
     gloss: "to please",
   },
@@ -12653,7 +12653,7 @@ export const wordUsages = {
     gloss: "lamb",
   },
   ἀριθμῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G705",
     gloss: "to number",
   },
@@ -12846,7 +12846,7 @@ export const wordUsages = {
     gloss: "joint",
   },
   ἀρνεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G720",
     gloss: "to deny",
   },
@@ -12863,7 +12863,7 @@ export const wordUsages = {
     gloss: "to deny",
   },
   ἀρνήσασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G720",
     gloss: "to deny",
   },
@@ -12988,7 +12988,7 @@ export const wordUsages = {
     gloss: "lamb",
   },
   ἀροτριᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G722",
     gloss: "to plow",
   },
@@ -13041,7 +13041,7 @@ export const wordUsages = {
     gloss: "to seize",
   },
   ἁρπάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G726",
     gloss: "to seize",
   },
@@ -13057,7 +13057,7 @@ export const wordUsages = {
     gloss: "to seize",
   },
   ἁρπάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G726",
     gloss: "to seize",
   },
@@ -13496,12 +13496,12 @@ export const wordUsages = {
     gloss: "be first",
   },
   ἄρξασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G757",
     gloss: "be first",
   },
   ἄρξασθαί: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G757",
     gloss: "be first",
   },
@@ -13536,7 +13536,7 @@ export const wordUsages = {
     gloss: "be first",
   },
   ἄρχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G757",
     gloss: "be first",
   },
@@ -13690,7 +13690,7 @@ export const wordUsages = {
     gloss: "be ungodly",
   },
   ἀσεβεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G765",
     gloss: "ungodly",
   },
@@ -13990,7 +13990,7 @@ export const wordUsages = {
     gloss: "unwise",
   },
   ἀσπάζεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G782",
     gloss: "to pay respects to",
   },
@@ -14367,7 +14367,7 @@ export const wordUsages = {
     gloss: "to secure",
   },
   ἀσφαλισθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G805",
     gloss: "to secure",
   },
@@ -14393,7 +14393,7 @@ export const wordUsages = {
     gloss: "to act improperly",
   },
   ἀσχημονεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G807",
     gloss: "to act improperly",
   },
@@ -14454,7 +14454,7 @@ export const wordUsages = {
     gloss: "to gaze",
   },
   ἀτενίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G816",
     gloss: "to gaze",
   },
@@ -14483,7 +14483,7 @@ export const wordUsages = {
     gloss: "to dishonor",
   },
   ἀτιμάζεσθαι: {
-    parse: "V-PEN｜Verb, Present, Either middle or passive, iNfinitive",
+    parse: "V-PEN｜Verb, Present, Either middle or passive, Infinitive",
     GN: "G818",
     gloss: "to dishonor",
   },
@@ -14499,7 +14499,7 @@ export const wordUsages = {
     gloss: "to dishonor",
   },
   ἀτιμασθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G818",
     gloss: "to dishonor",
   },
@@ -14579,7 +14579,7 @@ export const wordUsages = {
     gloss: "Attalia",
   },
   αὐγάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G826",
     gloss: "to see",
   },
@@ -14614,7 +14614,7 @@ export const wordUsages = {
     gloss: "self-chosen",
   },
   αὐθεντεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G831",
     gloss: "to domineer",
   },
@@ -14682,7 +14682,7 @@ export const wordUsages = {
     gloss: "to grow",
   },
   αὐξάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G837",
     gloss: "to grow",
   },
@@ -14968,7 +14968,7 @@ export const wordUsages = {
     gloss: "to remove",
   },
   ἀφαιρεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G851",
     gloss: "to remove",
   },
@@ -14988,7 +14988,7 @@ export const wordUsages = {
     gloss: "to remove",
   },
   ἀφελεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G851",
     gloss: "to remove",
   },
@@ -15134,7 +15134,7 @@ export const wordUsages = {
     gloss: "permit",
   },
   ἀφεῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G863",
     gloss: "permit",
   },
@@ -15256,7 +15256,7 @@ export const wordUsages = {
     gloss: "permit",
   },
   ἀφιέναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G863",
     gloss: "permit",
   },
@@ -15374,7 +15374,7 @@ export const wordUsages = {
     gloss: "to leave",
   },
   ἀποστῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G868",
     gloss: "to leave",
   },
@@ -15805,7 +15805,7 @@ export const wordUsages = {
     gloss: "hit",
   },
   βαλεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G906",
     gloss: "hit",
   },
@@ -15835,7 +15835,7 @@ export const wordUsages = {
     gloss: "hit",
   },
   βάλλειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G906",
     gloss: "hit",
   },
@@ -15969,7 +15969,7 @@ export const wordUsages = {
     gloss: "hit",
   },
   βληθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G906",
     gloss: "hit",
   },
@@ -16029,7 +16029,7 @@ export const wordUsages = {
     gloss: "to baptize",
   },
   βαπτίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G907",
     gloss: "to baptize",
   },
@@ -16106,7 +16106,7 @@ export const wordUsages = {
     gloss: "to baptize",
   },
   βαπτισθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G907",
     gloss: "to baptize",
   },
@@ -16425,7 +16425,7 @@ export const wordUsages = {
     gloss: "anguish",
   },
   βασανίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G928",
     gloss: "anguish",
   },
@@ -16570,7 +16570,7 @@ export const wordUsages = {
     gloss: "to reign",
   },
   βασιλεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G936",
     gloss: "to reign",
   },
@@ -16586,7 +16586,7 @@ export const wordUsages = {
     gloss: "to reign",
   },
   βασιλεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G936",
     gloss: "to reign",
   },
@@ -16676,7 +16676,7 @@ export const wordUsages = {
     gloss: "to carry",
   },
   βαστάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G941",
     gloss: "to carry",
   },
@@ -16686,7 +16686,7 @@ export const wordUsages = {
     gloss: "to carry",
   },
   βαστάζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G941",
     gloss: "to carry",
   },
@@ -16719,7 +16719,7 @@ export const wordUsages = {
     gloss: "to carry",
   },
   βαστάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G941",
     gloss: "to carry",
   },
@@ -16850,7 +16850,7 @@ export const wordUsages = {
     gloss: "to confirm",
   },
   βεβαιοῦσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G950",
     gloss: "to confirm",
   },
@@ -16861,7 +16861,7 @@ export const wordUsages = {
     gloss: "to confirm",
   },
   βεβαιῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G950",
     gloss: "to confirm",
   },
@@ -16901,7 +16901,7 @@ export const wordUsages = {
     gloss: "to profane",
   },
   βεβηλῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G953",
     gloss: "to profane",
   },
@@ -17135,7 +17135,7 @@ export const wordUsages = {
     gloss: "life",
   },
   βιῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G980",
     gloss: "to live",
   },
@@ -17202,7 +17202,7 @@ export const wordUsages = {
     gloss: "to blaspheme",
   },
   βλασφημεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G987",
     gloss: "to blaspheme",
   },
@@ -17227,7 +17227,7 @@ export const wordUsages = {
     gloss: "to blaspheme",
   },
   βλασφημῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G987",
     gloss: "to blaspheme",
   },
@@ -17356,7 +17356,7 @@ export const wordUsages = {
     gloss: "to see",
   },
   βλέπειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G991",
     gloss: "to see",
   },
@@ -17574,7 +17574,7 @@ export const wordUsages = {
     gloss: "to help",
   },
   βοηθῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G997",
     gloss: "to help",
   },
@@ -17640,7 +17640,7 @@ export const wordUsages = {
     gloss: "to feed",
   },
   βόσκειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1006",
     gloss: "to feed",
   },
@@ -17998,7 +17998,7 @@ export const wordUsages = {
     gloss: "infant",
   },
   βρέξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1026",
     gloss: "to rain down",
   },
@@ -18008,7 +18008,7 @@ export const wordUsages = {
     gloss: "to rain down",
   },
   βρέχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1026",
     gloss: "to rain down",
   },
@@ -18143,7 +18143,7 @@ export const wordUsages = {
     gloss: "eating",
   },
   βυθίζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1036",
     gloss: "to sink",
   },
@@ -18361,7 +18361,7 @@ export const wordUsages = {
     gloss: "Gamaliel",
   },
   γαμεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1060",
     gloss: "to marry",
   },
@@ -18371,12 +18371,12 @@ export const wordUsages = {
     gloss: "to marry",
   },
   γαμηθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1060",
     gloss: "to marry",
   },
   γαμῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1060",
     gloss: "to marry",
   },
@@ -18586,7 +18586,7 @@ export const wordUsages = {
     gloss: "laughter",
   },
   γεμίζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1072",
     gloss: "to fill",
   },
@@ -18825,7 +18825,7 @@ export const wordUsages = {
     gloss: "to beget",
   },
   γεννηθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1080",
     gloss: "to beget",
   },
@@ -18980,7 +18980,7 @@ export const wordUsages = {
     gloss: "to taste",
   },
   γεύσασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G1089",
     gloss: "to taste",
   },
@@ -19118,7 +19118,7 @@ export const wordUsages = {
     gloss: "to be",
   },
   γεγενῆσθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G1096",
     gloss: "to be",
   },
@@ -19179,7 +19179,7 @@ export const wordUsages = {
     gloss: "to be",
   },
   γεγονέναι: {
-    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, Infinitive",
     GN: "G1096",
     gloss: "to be",
   },
@@ -19226,7 +19226,7 @@ export const wordUsages = {
     gloss: "to be",
   },
   γενέσθαι: {
-    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, iNfinitive",
+    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, Infinitive",
     GN: "G1096",
     gloss: "to be",
   },
@@ -19255,7 +19255,7 @@ export const wordUsages = {
     gloss: "to be",
   },
   γενηθῆναι: {
-    parse: "V-AON｜Verb, Aorist, passive depOnent, iNfinitive",
+    parse: "V-AON｜Verb, Aorist, passive depOnent, Infinitive",
     GN: "G1096",
     gloss: "to be",
   },
@@ -19427,7 +19427,7 @@ export const wordUsages = {
     gloss: "to be",
   },
   γίνεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1096",
     gloss: "to be",
   },
@@ -19646,12 +19646,12 @@ export const wordUsages = {
     gloss: "to know",
   },
   γινώσκειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1097",
     gloss: "to know",
   },
   Γινώσκειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1097",
     gloss: "to know",
   },
@@ -19784,12 +19784,12 @@ export const wordUsages = {
     gloss: "to know",
   },
   γνῶναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1097",
     gloss: "to know",
   },
   γνῶναί: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1097",
     gloss: "to know",
   },
@@ -19934,7 +19934,7 @@ export const wordUsages = {
     gloss: "to know",
   },
   ἐγνωκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G1097",
     gloss: "to know",
   },
@@ -20105,7 +20105,7 @@ export const wordUsages = {
     gloss: "to make known",
   },
   γνωρίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1107",
     gloss: "to make known",
   },
@@ -20554,12 +20554,12 @@ export const wordUsages = {
     gloss: "to write",
   },
   γράφειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1125",
     gloss: "to write",
   },
   γράφεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1125",
     gloss: "to write",
   },
@@ -20596,7 +20596,7 @@ export const wordUsages = {
     gloss: "to write",
   },
   γράψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1125",
     gloss: "to write",
   },
@@ -20698,7 +20698,7 @@ export const wordUsages = {
     gloss: "to keep watch",
   },
   γρηγορῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1127",
     gloss: "to keep watch",
   },
@@ -21129,7 +21129,7 @@ export const wordUsages = {
     gloss: "to tame",
   },
   δαμάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1150",
     gloss: "to tame",
   },
@@ -21179,7 +21179,7 @@ export const wordUsages = {
     gloss: "to lend/borrow",
   },
   δανίσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G1155",
     gloss: "to lend/borrow",
   },
@@ -21291,7 +21291,7 @@ export const wordUsages = {
     gloss: "petition",
   },
   δεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1163",
     gloss: "be necessary",
   },
@@ -21323,7 +21323,7 @@ export const wordUsages = {
     gloss: "example",
   },
   δειγματίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1165",
     gloss: "to disgrace",
   },
@@ -21333,7 +21333,7 @@ export const wordUsages = {
     gloss: "to disgrace",
   },
   δεικνύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1166",
     gloss: "to show",
   },
@@ -21359,7 +21359,7 @@ export const wordUsages = {
     gloss: "to show",
   },
   δεῖξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1166",
     gloss: "to show",
   },
@@ -21450,7 +21450,7 @@ export const wordUsages = {
     gloss: "terribly",
   },
   δειπνῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1172",
     gloss: "to dine",
   },
@@ -22075,7 +22075,7 @@ export const wordUsages = {
     gloss: "to receive",
   },
   δέξασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G1209",
     gloss: "to receive",
   },
@@ -22212,7 +22212,7 @@ export const wordUsages = {
     gloss: "to bind",
   },
   δεδέσθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G1210",
     gloss: "to bind",
   },
@@ -22239,7 +22239,7 @@ export const wordUsages = {
     gloss: "to bind",
   },
   δεθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1210",
     gloss: "to bind",
   },
@@ -22254,7 +22254,7 @@ export const wordUsages = {
     gloss: "to bind",
   },
   δῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1210",
     gloss: "to bind",
   },
@@ -22449,7 +22449,7 @@ export const wordUsages = {
     gloss: "to cross",
   },
   διαβῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1224",
     gloss: "to cross",
   },
@@ -22470,7 +22470,7 @@ export const wordUsages = {
     gloss: "to insist",
   },
   διαβεβαιοῦσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1226",
     gloss: "to insist",
   },
@@ -22553,7 +22553,7 @@ export const wordUsages = {
     gloss: "to pass",
   },
   διαγινώσκειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1231",
     gloss: "to decide",
   },
@@ -22715,7 +22715,7 @@ export const wordUsages = {
     gloss: "to serve",
   },
   διακονεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1247",
     gloss: "to serve",
   },
@@ -22736,12 +22736,12 @@ export const wordUsages = {
     gloss: "to serve",
   },
   διακονηθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1247",
     gloss: "to serve",
   },
   διακονῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1247",
     gloss: "to serve",
   },
@@ -22908,7 +22908,7 @@ export const wordUsages = {
     gloss: "to judge/doubt",
   },
   διακρῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1252",
     gloss: "to judge/doubt",
   },
@@ -22924,7 +22924,7 @@ export const wordUsages = {
     gloss: "to judge/doubt",
   },
   διακρίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1252",
     gloss: "to judge/doubt",
   },
@@ -23059,7 +23059,7 @@ export const wordUsages = {
     gloss: "be reconciled",
   },
   διαλογίζεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1260",
     gloss: "to discuss",
   },
@@ -23157,7 +23157,7 @@ export const wordUsages = {
     gloss: "to testify solemnly",
   },
   διαμαρτύρασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G1263",
     gloss: "to testify solemnly",
   },
@@ -23437,7 +23437,7 @@ export const wordUsages = {
     gloss: "be vexed",
   },
   διαπορεύεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1279",
     gloss: "to go through",
   },
@@ -23486,7 +23486,7 @@ export const wordUsages = {
     gloss: "be furious",
   },
   διαρπάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1283",
     gloss: "to rob",
   },
@@ -23581,7 +23581,7 @@ export const wordUsages = {
     gloss: "to tear apart",
   },
   διεσπάσθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G1288",
     gloss: "to tear apart",
   },
@@ -23665,7 +23665,7 @@ export const wordUsages = {
     gloss: "to pervert",
   },
   διαστρέψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1294",
     gloss: "to pervert",
   },
@@ -23700,12 +23700,12 @@ export const wordUsages = {
     gloss: "to save",
   },
   διασωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1295",
     gloss: "to save",
   },
   διασῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1295",
     gloss: "to save",
   },
@@ -23792,7 +23792,7 @@ export const wordUsages = {
     gloss: "to direct",
   },
   διατεταχέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G1299",
     gloss: "to direct",
   },
@@ -23940,7 +23940,7 @@ export const wordUsages = {
     gloss: "to escape",
   },
   διαφημίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1310",
     gloss: "to publish abroad",
   },
@@ -23955,7 +23955,7 @@ export const wordUsages = {
     gloss: "to publish abroad",
   },
   διαφθεῖραι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1311",
     gloss: "to destroy",
   },
@@ -24012,12 +24012,12 @@ export const wordUsages = {
     gloss: "different",
   },
   διαφυλάξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1314",
     gloss: "to protect",
   },
   διαχειρίσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G1315",
     gloss: "to kill",
   },
@@ -24027,7 +24027,7 @@ export const wordUsages = {
     gloss: "to kill",
   },
   διαχωρίζεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1316",
     gloss: "be separated",
   },
@@ -24107,7 +24107,7 @@ export const wordUsages = {
     gloss: "teacher",
   },
   διδάξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1321",
     gloss: "to teach",
   },
@@ -24142,7 +24142,7 @@ export const wordUsages = {
     gloss: "to teach",
   },
   διδάσκειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1321",
     gloss: "to teach",
   },
@@ -24339,7 +24339,7 @@ export const wordUsages = {
     gloss: "to give",
   },
   διδόναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1325",
     gloss: "to give",
   },
@@ -24450,7 +24450,7 @@ export const wordUsages = {
     gloss: "to give",
   },
   δοθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1325",
     gloss: "to give",
   },
@@ -24518,12 +24518,12 @@ export const wordUsages = {
     gloss: "to give",
   },
   δοῦναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1325",
     gloss: "to give",
   },
   δοῦναί: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1325",
     gloss: "to give",
   },
@@ -24690,7 +24690,7 @@ export const wordUsages = {
     gloss: "to give",
   },
   διεγείρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1326",
     gloss: "to arouse",
   },
@@ -24764,7 +24764,7 @@ export const wordUsages = {
     gloss: "to pass through",
   },
   διελθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1330",
     gloss: "to pass through",
   },
@@ -24797,7 +24797,7 @@ export const wordUsages = {
     gloss: "to pass through",
   },
   διέρχεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1330",
     gloss: "to pass through",
   },
@@ -25113,7 +25113,7 @@ export const wordUsages = {
     gloss: "to justify",
   },
   δικαιοῦσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1344",
     gloss: "to justify",
   },
@@ -25140,7 +25140,7 @@ export const wordUsages = {
     gloss: "to justify",
   },
   δικαιωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1344",
     gloss: "to justify",
   },
@@ -25176,7 +25176,7 @@ export const wordUsages = {
     gloss: "to justify",
   },
   δικαιῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1344",
     gloss: "to justify",
   },
@@ -25342,7 +25342,7 @@ export const wordUsages = {
     gloss: "to break in",
   },
   διορυχθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1358",
     gloss: "to break in",
   },
@@ -25433,7 +25433,7 @@ export const wordUsages = {
     gloss: "to strain out",
   },
   διχάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1369",
     gloss: "to disunite",
   },
@@ -25734,7 +25734,7 @@ export const wordUsages = {
     gloss: "to think",
   },
   δοκεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1380",
     gloss: "to think",
   },
@@ -25867,7 +25867,7 @@ export const wordUsages = {
     gloss: "to test",
   },
   δοκιμάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1381",
     gloss: "to test",
   },
@@ -25916,7 +25916,7 @@ export const wordUsages = {
     gloss: "to test",
   },
   δοκιμάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1381",
     gloss: "to test",
   },
@@ -26094,7 +26094,7 @@ export const wordUsages = {
     gloss: "to glorify",
   },
   δοξάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1392",
     gloss: "to glorify",
   },
@@ -26142,7 +26142,7 @@ export const wordUsages = {
     gloss: "to glorify",
   },
   δοξάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1392",
     gloss: "to glorify",
   },
@@ -26262,7 +26262,7 @@ export const wordUsages = {
     gloss: "be a slave",
   },
   δουλεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1398",
     gloss: "be a slave",
   },
@@ -26655,7 +26655,7 @@ export const wordUsages = {
     gloss: "be able",
   },
   δύνασθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1410",
     gloss: "be able",
   },
@@ -27338,7 +27338,7 @@ export const wordUsages = {
     gloss: "to come near",
   },
   ἐγγίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1448",
     gloss: "to come near",
   },
@@ -27383,7 +27383,7 @@ export const wordUsages = {
     gloss: "to come near",
   },
   ἐγγίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1448",
     gloss: "to come near",
   },
@@ -27459,7 +27459,7 @@ export const wordUsages = {
     gloss: "nearer",
   },
   ἐγεῖραι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1453",
     gloss: "to arise",
   },
@@ -27497,7 +27497,7 @@ export const wordUsages = {
     gloss: "to arise",
   },
   ἐγείρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1453",
     gloss: "to arise",
   },
@@ -27589,12 +27589,12 @@ export const wordUsages = {
     gloss: "to arise",
   },
   ἐγερθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1453",
     gloss: "to arise",
   },
   ἐγερθῆναί: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1453",
     gloss: "to arise",
   },
@@ -27690,7 +27690,7 @@ export const wordUsages = {
     gloss: "to inaugurate",
   },
   ἐγκαλεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1458",
     gloss: "to accuse",
   },
@@ -27774,7 +27774,7 @@ export const wordUsages = {
     gloss: "to live among",
   },
   ἐγκεντρίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1461",
     gloss: "to ingraft",
   },
@@ -27815,7 +27815,7 @@ export const wordUsages = {
     gloss: "hindrance",
   },
   ἐγκόπτεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1465",
     gloss: "to impede",
   },
@@ -27872,7 +27872,7 @@ export const wordUsages = {
     gloss: "self-controlled",
   },
   ἐγκρῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1469",
     gloss: "to classify",
   },
@@ -27887,7 +27887,7 @@ export const wordUsages = {
     gloss: "pregnant",
   },
   ἐγχρῖσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1472",
     gloss: "to rub on",
   },
@@ -28201,7 +28201,7 @@ export const wordUsages = {
     gloss: "see",
   },
   εἰδέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G1492",
     gloss: "know",
   },
@@ -28361,7 +28361,7 @@ export const wordUsages = {
   },
   ἴδε: { parse: "INJ｜Interjection", GN: "G2396", gloss: "look!" },
   ἰδεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1492",
     gloss: "see",
   },
@@ -28698,12 +28698,12 @@ export const wordUsages = {
     gloss: "to be",
   },
   εἶναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1510",
     gloss: "to be",
   },
   εἶναί: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1510",
     gloss: "to be",
   },
@@ -28728,7 +28728,7 @@ export const wordUsages = {
     gloss: "to be",
   },
   ἔσεσθαι: {
-    parse: "V-FDN｜Verb, Future, middle Deponent, iNfinitive",
+    parse: "V-FDN｜Verb, Future, middle Deponent, Infinitive",
     GN: "G1510",
     gloss: "to be",
   },
@@ -29209,7 +29209,7 @@ export const wordUsages = {
     gloss: "to bring in",
   },
   εἰσαγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1521",
     gloss: "to bring in",
   },
@@ -29219,7 +29219,7 @@ export const wordUsages = {
     gloss: "to bring in",
   },
   εἰσάγεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1521",
     gloss: "to bring in",
   },
@@ -29271,12 +29271,12 @@ export const wordUsages = {
     gloss: "to enter",
   },
   εἰσιέναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1524",
     gloss: "to enter",
   },
   εἰσελεύσεσθαι: {
-    parse: "V-FDN｜Verb, Future, middle Deponent, iNfinitive",
+    parse: "V-FDN｜Verb, Future, middle Deponent, Infinitive",
     GN: "G1525",
     gloss: "to enter",
   },
@@ -29323,7 +29323,7 @@ export const wordUsages = {
     gloss: "to enter",
   },
   εἰσελθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1525",
     gloss: "to enter",
   },
@@ -29611,7 +29611,7 @@ export const wordUsages = {
     gloss: "to run in",
   },
   εἰσενεγκεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1533",
     gloss: "to bring in",
   },
@@ -29778,7 +29778,7 @@ export const wordUsages = {
     gloss: "to expel",
   },
   ἐκβαλεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1544",
     gloss: "to expel",
   },
@@ -29798,7 +29798,7 @@ export const wordUsages = {
     gloss: "to expel",
   },
   ἐκβάλλειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1544",
     gloss: "to expel",
   },
@@ -29992,7 +29992,7 @@ export const wordUsages = {
     gloss: "clearly evident",
   },
   ἐκδημῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1553",
     gloss: "be away",
   },
@@ -30036,7 +30036,7 @@ export const wordUsages = {
     gloss: "to avenge",
   },
   ἐκδικῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1556",
     gloss: "to avenge",
   },
@@ -30110,7 +30110,7 @@ export const wordUsages = {
     gloss: "to strip",
   },
   ἐκδύσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G1562",
     gloss: "to strip",
   },
@@ -30293,7 +30293,7 @@ export const wordUsages = {
     gloss: "to seek out",
   },
   ἐκθαμβεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1568",
     gloss: "be awe-struck",
   },
@@ -30333,7 +30333,7 @@ export const wordUsages = {
     gloss: "be enflamed",
   },
   ἐγκακεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1573",
     gloss: "to lose heart",
   },
@@ -30368,7 +30368,7 @@ export const wordUsages = {
     gloss: "to break off",
   },
   ἐκκλεῖσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1576",
     gloss: "to exclude",
   },
@@ -30474,7 +30474,7 @@ export const wordUsages = {
     gloss: "to hang upon",
   },
   ἐκλαλῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1583",
     gloss: "to speak out",
   },
@@ -30656,7 +30656,7 @@ export const wordUsages = {
     gloss: "to wipe off",
   },
   ἐκμάσσειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1591",
     gloss: "to wipe off",
   },
@@ -30743,7 +30743,7 @@ export const wordUsages = {
     gloss: "to fall out",
   },
   ἐκπεσεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1601",
     gloss: "to fall out",
   },
@@ -30778,7 +30778,7 @@ export const wordUsages = {
     gloss: "to fall out",
   },
   ἐκπλεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1602",
     gloss: "to sail out/away",
   },
@@ -30803,7 +30803,7 @@ export const wordUsages = {
     gloss: "fulfillment",
   },
   ἐκπλήσσεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1605",
     gloss: "be astonished",
   },
@@ -30834,7 +30834,7 @@ export const wordUsages = {
     gloss: "to expire",
   },
   ἐκπορεύεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1607",
     gloss: "to depart",
   },
@@ -30997,7 +30997,7 @@ export const wordUsages = {
     gloss: "to stretch out",
   },
   ἐκτείνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1614",
     gloss: "to stretch out",
   },
@@ -31027,7 +31027,7 @@ export const wordUsages = {
     gloss: "to stretch out",
   },
   ἐκτελέσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1615",
     gloss: "to finish up",
   },
@@ -31147,7 +31147,7 @@ export const wordUsages = {
     gloss: "untimely birth",
   },
   ἐκφέρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1627",
     gloss: "to bring/carry out",
   },
@@ -31169,7 +31169,7 @@ export const wordUsages = {
     gloss: "to bring/carry out",
   },
   ἐξενεγκεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1627",
     gloss: "to bring/carry out",
   },
@@ -31184,7 +31184,7 @@ export const wordUsages = {
     gloss: "to bring/carry out",
   },
   ἐκπεφευγέναι: {
-    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, Infinitive",
     GN: "G1628",
     gloss: "to escape",
   },
@@ -31200,7 +31200,7 @@ export const wordUsages = {
     gloss: "to escape",
   },
   ἐκφυγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1628",
     gloss: "to escape",
   },
@@ -31215,7 +31215,7 @@ export const wordUsages = {
     gloss: "to escape",
   },
   ἐκφοβεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1629",
     gloss: "to terrify",
   },
@@ -31246,7 +31246,7 @@ export const wordUsages = {
     gloss: "to pour out",
   },
   ἐκχέαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1632",
     gloss: "to pour out",
   },
@@ -31387,7 +31387,7 @@ export const wordUsages = {
     gloss: "to have little",
   },
   ἐλαττοῦσθαι: {
-    parse: "V-PEN｜Verb, Present, Either middle or passive, iNfinitive",
+    parse: "V-PEN｜Verb, Present, Either middle or passive, Infinitive",
     GN: "G1642",
     gloss: "to make less",
   },
@@ -31403,7 +31403,7 @@ export const wordUsages = {
     gloss: "to make less",
   },
   ἐλαύνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1643",
     gloss: "to drive",
   },
@@ -31501,7 +31501,7 @@ export const wordUsages = {
     gloss: "rebuke",
   },
   ἐλέγξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1651",
     gloss: "to rebuke",
   },
@@ -31526,7 +31526,7 @@ export const wordUsages = {
     gloss: "to rebuke",
   },
   ἐλέγχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1651",
     gloss: "to rebuke",
   },
@@ -31605,7 +31605,7 @@ export const wordUsages = {
     gloss: "to have mercy",
   },
   ἐλεῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1653",
     gloss: "to have mercy",
   },
@@ -31947,7 +31947,7 @@ export const wordUsages = {
     gloss: "to draw/persuade",
   },
   ἑλκύσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1670",
     gloss: "to draw/persuade",
   },
@@ -32140,7 +32140,7 @@ export const wordUsages = {
     gloss: "to hope/expect",
   },
   ἠλπικέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G1679",
     gloss: "to hope/expect",
   },
@@ -32251,7 +32251,7 @@ export const wordUsages = {
     gloss: "to climb",
   },
   ἐμβῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1684",
     gloss: "to climb",
   },
@@ -32266,7 +32266,7 @@ export const wordUsages = {
     gloss: "to climb",
   },
   ἐμβαλεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1685",
     gloss: "to throw in",
   },
@@ -32362,7 +32362,7 @@ export const wordUsages = {
     gloss: "be agitated",
   },
   ἐμέσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1692",
     gloss: "to vomit",
   },
@@ -32388,7 +32388,7 @@ export const wordUsages = {
     gloss: "to abide in/by",
   },
   ἐμμένειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1696",
     gloss: "to abide in/by",
   },
@@ -32515,7 +32515,7 @@ export const wordUsages = {
     gloss: "jeering",
   },
   ἐμπαίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1702",
     gloss: "to mock",
   },
@@ -32526,7 +32526,7 @@ export const wordUsages = {
     gloss: "to mock",
   },
   ἐμπαῖξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1702",
     gloss: "to mock",
   },
@@ -32599,7 +32599,7 @@ export const wordUsages = {
     gloss: "to fill up",
   },
   ἐμπεσεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1706",
     gloss: "to fall into",
   },
@@ -32690,7 +32690,7 @@ export const wordUsages = {
   ἔμπροσθεν: { parse: "PREP｜Preposition", GN: "G1715", gloss: "before" },
   ἔμπροσθέν: { parse: "PREP｜Preposition", GN: "G1715", gloss: "before" },
   ἐμπτύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1716",
     gloss: "to spit on/at",
   },
@@ -32731,7 +32731,7 @@ export const wordUsages = {
     gloss: "revealed",
   },
   ἐμφανίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1718",
     gloss: "to show",
   },
@@ -32746,7 +32746,7 @@ export const wordUsages = {
     gloss: "to show",
   },
   ἐμφανισθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1718",
     gloss: "to show",
   },
@@ -32885,12 +32885,12 @@ export const wordUsages = {
     gloss: "to show",
   },
   ἐνδείκνυσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G1731",
     gloss: "to show",
   },
   ἐνδείξασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G1731",
     gloss: "to show",
   },
@@ -32947,7 +32947,7 @@ export const wordUsages = {
     gloss: "be possible",
   },
   ἐνδημῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1736",
     gloss: "be home",
   },
@@ -32988,7 +32988,7 @@ export const wordUsages = {
     gloss: "be glorified",
   },
   ἐνδοξασθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1740",
     gloss: "be glorified",
   },
@@ -33106,7 +33106,7 @@ export const wordUsages = {
     gloss: "to put on",
   },
   ἐνδύσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G1746",
     gloss: "to put on",
   },
@@ -33203,7 +33203,7 @@ export const wordUsages = {
     gloss: "be active",
   },
   ἐνεργεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1754",
     gloss: "be active",
   },
@@ -33299,7 +33299,7 @@ export const wordUsages = {
     gloss: "to oppose",
   },
   ἐνέχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1758",
     gloss: "to oppose",
   },
@@ -33550,12 +33550,12 @@ export const wordUsages = {
     gloss: "precept",
   },
   ἐνταφιάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1779",
     gloss: "to prepare burial",
   },
   ἐνταφιάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1779",
     gloss: "to prepare burial",
   },
@@ -33770,7 +33770,7 @@ export const wordUsages = {
     gloss: "to call on",
   },
   ἐντυγχάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1793",
     gloss: "to call on",
   },
@@ -33876,7 +33876,7 @@ export const wordUsages = {
     gloss: "to redeem",
   },
   ἐξαγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1806",
     gloss: "to lead out",
   },
@@ -33950,7 +33950,7 @@ export const wordUsages = {
     gloss: "to take out/select",
   },
   ἐξελέσθαι: {
-    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, iNfinitive",
+    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, Infinitive",
     GN: "G1807",
     gloss: "to take out/select",
   },
@@ -33997,7 +33997,7 @@ export const wordUsages = {
     gloss: "six hundred",
   },
   ἐξαλειφθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1813",
     gloss: "to blot out",
   },
@@ -34080,7 +34080,7 @@ export const wordUsages = {
     gloss: "suddenly",
   },
   ἐξαπορηθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G1820",
     gloss: "to despair",
   },
@@ -34111,7 +34111,7 @@ export const wordUsages = {
     gloss: "to send out/away",
   },
   ἐξαρτίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1822",
     gloss: "to finish/furnish",
   },
@@ -34148,7 +34148,7 @@ export const wordUsages = {
     gloss: "to go out/away",
   },
   ἐξιέναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1826",
     gloss: "to go out/away",
   },
@@ -34240,7 +34240,7 @@ export const wordUsages = {
     gloss: "to go out",
   },
   ἐξελθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1831",
     gloss: "to go out",
   },
@@ -34436,7 +34436,7 @@ export const wordUsages = {
     gloss: "be permitted",
   },
   ἐξετάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1833",
     gloss: "to find out",
   },
@@ -34497,7 +34497,7 @@ export const wordUsages = {
     gloss: "habit/practice",
   },
   ἐξεστακέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G1839",
     gloss: "to amaze",
   },
@@ -34528,7 +34528,7 @@ export const wordUsages = {
     gloss: "to amaze",
   },
   ἐξίστασθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G1839",
     gloss: "to amaze",
   },
@@ -34748,7 +34748,7 @@ export const wordUsages = {
     gloss: "outside",
   },
   ἐξῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1856",
     gloss: "to expel",
   },
@@ -34880,7 +34880,7 @@ export const wordUsages = {
     gloss: "a promise",
   },
   ἐπαγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1863",
     gloss: "to bring upon",
   },
@@ -34897,7 +34897,7 @@ export const wordUsages = {
     gloss: "to bring upon",
   },
   ἐπαγωνίζεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1864",
     gloss: "to contend",
   },
@@ -34965,7 +34965,7 @@ export const wordUsages = {
     gloss: "to lift up",
   },
   ἐπᾶραι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1869",
     gloss: "to lift up",
   },
@@ -35050,7 +35050,7 @@ export const wordUsages = {
     gloss: "be ashamed of",
   },
   ἐπαιτεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1871",
     gloss: "to ask/beg",
   },
@@ -35108,7 +35108,7 @@ export const wordUsages = {
     gloss: "to set off",
   },
   ἐπαναγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1877",
     gloss: "to set off",
   },
@@ -35136,12 +35136,12 @@ export const wordUsages = {
     gloss: "to rest/rely on",
   },
   ἐπανελθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1880",
     gloss: "to return",
   },
   ἐπανέρχεσθαί: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1880",
     gloss: "to return",
   },
@@ -35285,7 +35285,7 @@ export const wordUsages = {
     gloss: "to reach out to",
   },
   ἐπενδύσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G1902",
     gloss: "be clothed",
   },
@@ -35341,7 +35341,7 @@ export const wordUsages = {
     gloss: "to arrive/invade",
   },
   ἐπερωτᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1905",
     gloss: "to question",
   },
@@ -35357,7 +35357,7 @@ export const wordUsages = {
     gloss: "to question",
   },
   ἐπερωτῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1905",
     gloss: "to question",
   },
@@ -35486,7 +35486,7 @@ export const wordUsages = {
     gloss: "to mount/board",
   },
   ἐπιβαίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1910",
     gloss: "to mount/board",
   },
@@ -35524,7 +35524,7 @@ export const wordUsages = {
     gloss: "to put on/seize",
   },
   ἐπιβαλεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1911",
     gloss: "to put on/seize",
   },
@@ -35561,7 +35561,7 @@ export const wordUsages = {
     gloss: "to put on/seize",
   },
   ἐπιβαρῆσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1912",
     gloss: "to burden",
   },
@@ -35593,7 +35593,7 @@ export const wordUsages = {
     gloss: "to look upon/at",
   },
   ἐπιβλέψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1914",
     gloss: "to look upon/at",
   },
@@ -35659,7 +35659,7 @@ export const wordUsages = {
     gloss: "to come to know",
   },
   ἐπεγνωκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G1921",
     gloss: "to come to know",
   },
@@ -35745,7 +35745,7 @@ export const wordUsages = {
     gloss: "to come to know",
   },
   ἐπιγνῶναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1921",
     gloss: "to come to know",
   },
@@ -35836,7 +35836,7 @@ export const wordUsages = {
     gloss: "to show/prove",
   },
   ἐπιδεῖξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1925",
     gloss: "to show/prove",
   },
@@ -36021,7 +36021,7 @@ export const wordUsages = {
     gloss: "to long for",
   },
   ἐπιθυμῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1937",
     gloss: "to long for",
   },
@@ -36123,7 +36123,7 @@ export const wordUsages = {
     gloss: "to call (on)/name",
   },
   ἐπικαλεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G1941",
     gloss: "to call (on)/name",
   },
@@ -36150,7 +36150,7 @@ export const wordUsages = {
     gloss: "to call (on)/name",
   },
   ἐπικαλέσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G1941",
     gloss: "to call (on)/name",
   },
@@ -36279,7 +36279,7 @@ export const wordUsages = {
     gloss: "to lay on",
   },
   ἐπικεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1945",
     gloss: "to lay on",
   },
@@ -36311,7 +36311,7 @@ export const wordUsages = {
     gloss: "to catch",
   },
   ἐπιλαβέσθαι: {
-    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, iNfinitive",
+    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, Infinitive",
     GN: "G1949",
     gloss: "to catch",
   },
@@ -36370,7 +36370,7 @@ export const wordUsages = {
     gloss: "to forget",
   },
   ἐπιλαθέσθαι: {
-    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, iNfinitive",
+    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, Infinitive",
     GN: "G1950",
     gloss: "to forget",
   },
@@ -36488,7 +36488,7 @@ export const wordUsages = {
     gloss: "to remain/keep on",
   },
   ἐπιμεῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1961",
     gloss: "to remain/keep on",
   },
@@ -36498,7 +36498,7 @@ export const wordUsages = {
     gloss: "to remain/keep on",
   },
   ἐπιμένειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1961",
     gloss: "to remain/keep on",
   },
@@ -36587,7 +36587,7 @@ export const wordUsages = {
     gloss: "to fall/press upon",
   },
   ἐπιπίπτειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1968",
     gloss: "to fall/press upon",
   },
@@ -36694,7 +36694,7 @@ export const wordUsages = {
     gloss: "to visit/care for",
   },
   ἐπισκέπτεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G1980",
     gloss: "to visit/care for",
   },
@@ -36705,7 +36705,7 @@ export const wordUsages = {
     gloss: "to visit/care for",
   },
   ἐπισκέψασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G1980",
     gloss: "to visit/care for",
   },
@@ -36846,7 +36846,7 @@ export const wordUsages = {
     gloss: "to write to",
   },
   ἐπιστεῖλαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1989",
     gloss: "to write to",
   },
@@ -36923,7 +36923,7 @@ export const wordUsages = {
     gloss: "epistle",
   },
   ἐπιστομίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1993",
     gloss: "to silence",
   },
@@ -36970,7 +36970,7 @@ export const wordUsages = {
     gloss: "to turn",
   },
   ἐπιστρέφειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G1994",
     gloss: "to turn",
   },
@@ -36986,7 +36986,7 @@ export const wordUsages = {
     gloss: "to turn",
   },
   ἐπιστρέψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1994",
     gloss: "to turn",
   },
@@ -37038,7 +37038,7 @@ export const wordUsages = {
     gloss: "conversion",
   },
   ἐπισυναγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G1996",
     gloss: "to gather",
   },
@@ -37048,7 +37048,7 @@ export const wordUsages = {
     gloss: "to gather",
   },
   ἐπισυνάξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G1996",
     gloss: "to gather",
   },
@@ -37155,7 +37155,7 @@ export const wordUsages = {
     gloss: "to command",
   },
   ἐπιτάσσειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2004",
     gloss: "to command",
   },
@@ -37165,12 +37165,12 @@ export const wordUsages = {
     gloss: "to command",
   },
   ἐπιτελεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2005",
     gloss: "to complete",
   },
   ἐπιτελεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2005",
     gloss: "to complete",
   },
@@ -37181,7 +37181,7 @@ export const wordUsages = {
     gloss: "to complete",
   },
   ἐπιτελέσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2005",
     gloss: "to complete",
   },
@@ -37243,7 +37243,7 @@ export const wordUsages = {
     gloss: "to put/lay on",
   },
   ἐπιθεῖναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2007",
     gloss: "to put/lay on",
   },
@@ -37323,7 +37323,7 @@ export const wordUsages = {
     gloss: "to put/lay on",
   },
   ἐπιτίθεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2007",
     gloss: "to put/lay on",
   },
@@ -37353,7 +37353,7 @@ export const wordUsages = {
     gloss: "to rebuke",
   },
   ἐπιτιμᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2008",
     gloss: "to rebuke",
   },
@@ -37466,7 +37466,7 @@ export const wordUsages = {
     gloss: "to obtain",
   },
   ἐπιτυχεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2013",
     gloss: "to obtain",
   },
@@ -37487,7 +37487,7 @@ export const wordUsages = {
     gloss: "to appear",
   },
   ἐπιφᾶναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2014",
     gloss: "to appear",
   },
@@ -37517,7 +37517,7 @@ export const wordUsages = {
     gloss: "to shine on",
   },
   ἐπενεγκεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2018",
     gloss: "to inflict",
   },
@@ -37801,7 +37801,7 @@ export const wordUsages = {
     gloss: "to say",
   },
   εἰπεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2036",
     gloss: "to say",
   },
@@ -37972,7 +37972,7 @@ export const wordUsages = {
     gloss: "to say",
   },
   εἰρηκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G2036",
     gloss: "to say",
   },
@@ -38092,7 +38092,7 @@ export const wordUsages = {
     gloss: "to work",
   },
   ἐργάζεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2038",
     gloss: "to work",
   },
@@ -38604,7 +38604,7 @@ export const wordUsages = {
     gloss: "to come/go",
   },
   ἐλθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2064",
     gloss: "to come/go",
   },
@@ -38717,7 +38717,7 @@ export const wordUsages = {
     gloss: "to come/go",
   },
   ἔρχεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2064",
     gloss: "to come/go",
   },
@@ -38928,7 +38928,7 @@ export const wordUsages = {
     gloss: "to ask",
   },
   ἐρωτᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2065",
     gloss: "to ask",
   },
@@ -38938,12 +38938,12 @@ export const wordUsages = {
     gloss: "to ask",
   },
   ἐρωτῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2065",
     gloss: "to ask",
   },
   ἐρωτῆσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2065",
     gloss: "to ask",
   },
@@ -39076,7 +39076,7 @@ export const wordUsages = {
     gloss: "to eat",
   },
   ἐσθίειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2068",
     gloss: "to eat",
   },
@@ -39292,7 +39292,7 @@ export const wordUsages = {
     gloss: "to teach heresy",
   },
   ἑτεροδιδασκαλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2085",
     gloss: "to teach heresy",
   },
@@ -39398,7 +39398,7 @@ export const wordUsages = {
     gloss: "to make ready",
   },
   ἑτοιμάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2090",
     gloss: "to make ready",
   },
@@ -39598,7 +39598,7 @@ export const wordUsages = {
     gloss: "Eve",
   },
   εὐαγγελίζεσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G2097",
     gloss: "to speak good news",
   },
@@ -39664,7 +39664,7 @@ export const wordUsages = {
     gloss: "to speak good news",
   },
   εὐαγγελίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2097",
     gloss: "to speak good news",
   },
@@ -39687,12 +39687,12 @@ export const wordUsages = {
     gloss: "to speak good news",
   },
   εὐαγγελίσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G2097",
     gloss: "to speak good news",
   },
   εὐαγγελίσασθαί: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G2097",
     gloss: "to speak good news",
   },
@@ -39790,12 +39790,12 @@ export const wordUsages = {
     gloss: "to please",
   },
   εὐαρεστηκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G2100",
     gloss: "to please",
   },
   εὐαρεστῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2100",
     gloss: "to please",
   },
@@ -39988,7 +39988,7 @@ export const wordUsages = {
     gloss: "be cheerful",
   },
   εὐθυμεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2114",
     gloss: "be cheerful",
   },
@@ -40120,7 +40120,7 @@ export const wordUsages = {
     gloss: "devout",
   },
   εὐλογεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2127",
     gloss: "to praise/bless",
   },
@@ -40299,7 +40299,7 @@ export const wordUsages = {
     gloss: "Euodia",
   },
   εὐοδοῦσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2137",
     gloss: "to get along well",
   },
@@ -40364,7 +40364,7 @@ export const wordUsages = {
     gloss: "devoted",
   },
   εὐπροσωπῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2146",
     gloss: "to impress",
   },
@@ -40406,7 +40406,7 @@ export const wordUsages = {
     gloss: "to find/meet",
   },
   εὑρεθῆναι: {
-    parse: "V-2APN｜Verb, 2nd Aorist, Passive, iNfinitive",
+    parse: "V-2APN｜Verb, 2nd Aorist, Passive, Infinitive",
     GN: "G2147",
     gloss: "to find/meet",
   },
@@ -40441,7 +40441,7 @@ export const wordUsages = {
     gloss: "to find/meet",
   },
   εὑρεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2147",
     gloss: "to find/meet",
   },
@@ -40481,7 +40481,7 @@ export const wordUsages = {
     gloss: "to find/meet",
   },
   εὑρηκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G2147",
     gloss: "to find/meet",
   },
@@ -40678,7 +40678,7 @@ export const wordUsages = {
     gloss: "piety",
   },
   εὐσεβεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2151",
     gloss: "to show piety",
   },
@@ -40783,7 +40783,7 @@ export const wordUsages = {
     gloss: "be fruitful",
   },
   εὐφραίνεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2165",
     gloss: "to celebrate",
   },
@@ -40825,7 +40825,7 @@ export const wordUsages = {
     gloss: "to celebrate",
   },
   εὐφρανθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2165",
     gloss: "to celebrate",
   },
@@ -40875,12 +40875,12 @@ export const wordUsages = {
     gloss: "to thank",
   },
   εὐχαριστεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2168",
     gloss: "to thank",
   },
   Εὐχαριστεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2168",
     gloss: "to thank",
   },
@@ -41130,7 +41130,7 @@ export const wordUsages = {
     gloss: "daily",
   },
   ἐφικέσθαι: {
-    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, iNfinitive",
+    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, Infinitive",
     GN: "G2185",
     gloss: "to reach",
   },
@@ -41412,7 +41412,7 @@ export const wordUsages = {
     gloss: "to have/be",
   },
   ἔχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2192",
     gloss: "to have/be",
   },
@@ -41698,7 +41698,7 @@ export const wordUsages = {
     gloss: "to live",
   },
   ζῆν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2198",
     gloss: "to live",
   },
@@ -41929,7 +41929,7 @@ export const wordUsages = {
     gloss: "be eager",
   },
   ζηλοῦσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G2206",
     gloss: "be eager",
   },
@@ -42006,7 +42006,7 @@ export const wordUsages = {
     gloss: "to lose",
   },
   ζημιωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2210",
     gloss: "to lose",
   },
@@ -42076,7 +42076,7 @@ export const wordUsages = {
     gloss: "to seek",
   },
   ζητεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2212",
     gloss: "to seek",
   },
@@ -42111,7 +42111,7 @@ export const wordUsages = {
     gloss: "to seek",
   },
   ζητῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2212",
     gloss: "to seek",
   },
@@ -42405,7 +42405,7 @@ export const wordUsages = {
     gloss: "to dress",
   },
   ζῳογονεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2225",
     gloss: "to give life",
   },
@@ -42462,7 +42462,7 @@ export const wordUsages = {
     gloss: "to make alive",
   },
   ζῳοποιῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2227",
     gloss: "to make alive",
   },
@@ -42545,7 +42545,7 @@ export const wordUsages = {
     gloss: "ruler",
   },
   ἡγεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2233",
     gloss: "to govern",
   },
@@ -43012,7 +43012,7 @@ export const wordUsages = {
     gloss: "Esau",
   },
   ἡσυχάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2270",
     gloss: "be quiet/give up",
   },
@@ -43252,7 +43252,7 @@ export const wordUsages = {
     gloss: "to kill",
   },
   θανατῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2289",
     gloss: "to kill",
   },
@@ -43277,7 +43277,7 @@ export const wordUsages = {
     gloss: "to bury",
   },
   θάψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2290",
     gloss: "to bury",
   },
@@ -43293,7 +43293,7 @@ export const wordUsages = {
     gloss: "Terah",
   },
   θαρρῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2292",
     gloss: "be confident",
   },
@@ -43380,7 +43380,7 @@ export const wordUsages = {
     gloss: "to marvel",
   },
   θαυμάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2296",
     gloss: "to marvel",
   },
@@ -43418,7 +43418,7 @@ export const wordUsages = {
     gloss: "to marvel",
   },
   θαυμάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2296",
     gloss: "to marvel",
   },
@@ -43439,7 +43439,7 @@ export const wordUsages = {
     gloss: "to marvel",
   },
   θαυμασθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2296",
     gloss: "to marvel",
   },
@@ -43506,7 +43506,7 @@ export const wordUsages = {
     gloss: "to look at",
   },
   θεαθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2300",
     gloss: "to look at",
   },
@@ -43529,7 +43529,7 @@ export const wordUsages = {
     gloss: "to look at",
   },
   θεάσασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G2300",
     gloss: "to look at",
   },
@@ -43684,7 +43684,7 @@ export const wordUsages = {
     gloss: "to will/desire",
   },
   θέλειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2309",
     gloss: "to will/desire",
   },
@@ -44040,12 +44040,12 @@ export const wordUsages = {
     gloss: "to serve/heal",
   },
   θεραπεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2323",
     gloss: "to serve/heal",
   },
   θεραπεύεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2323",
     gloss: "to serve/heal",
   },
@@ -44065,7 +44065,7 @@ export const wordUsages = {
     gloss: "to serve/heal",
   },
   θεραπευθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2323",
     gloss: "to serve/heal",
   },
@@ -44076,7 +44076,7 @@ export const wordUsages = {
     gloss: "to serve/heal",
   },
   θεραπεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2323",
     gloss: "to serve/heal",
   },
@@ -44130,7 +44130,7 @@ export const wordUsages = {
     gloss: "to reap",
   },
   θερίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2325",
     gloss: "to reap",
   },
@@ -44156,7 +44156,7 @@ export const wordUsages = {
     gloss: "to reap",
   },
   θερίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2325",
     gloss: "to reap",
   },
@@ -44306,7 +44306,7 @@ export const wordUsages = {
     gloss: "to see/experience",
   },
   θεωρεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2334",
     gloss: "to see/experience",
   },
@@ -44336,7 +44336,7 @@ export const wordUsages = {
     gloss: "to see/experience",
   },
   θεωρῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2334",
     gloss: "to see/experience",
   },
@@ -44466,7 +44466,7 @@ export const wordUsages = {
     gloss: "trap",
   },
   θηρεῦσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2340",
     gloss: "to hunt/catch",
   },
@@ -44506,7 +44506,7 @@ export const wordUsages = {
     gloss: "to store up",
   },
   θησαυρίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2343",
     gloss: "to store up",
   },
@@ -44583,7 +44583,7 @@ export const wordUsages = {
     gloss: "to touch",
   },
   θλίβεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2346",
     gloss: "to press on",
   },
@@ -44677,7 +44677,7 @@ export const wordUsages = {
     gloss: "to die/be dead",
   },
   τεθνηκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G2348",
     gloss: "to die/be dead",
   },
@@ -44844,7 +44844,7 @@ export const wordUsages = {
     gloss: "hair",
   },
   θροεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2360",
     gloss: "to alarm",
   },
@@ -45004,7 +45004,7 @@ export const wordUsages = {
     gloss: "incense altar",
   },
   θυμιᾶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2370",
     gloss: "to burn incense",
   },
@@ -45195,12 +45195,12 @@ export const wordUsages = {
     gloss: "to sacrifice",
   },
   θύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2380",
     gloss: "to sacrifice",
   },
   θύεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2380",
     gloss: "to sacrifice",
   },
@@ -45327,7 +45327,7 @@ export const wordUsages = {
     gloss: "to heal",
   },
   ἰαθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2390",
     gloss: "to heal",
   },
@@ -45364,7 +45364,7 @@ export const wordUsages = {
     gloss: "to heal",
   },
   ἰᾶσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2390",
     gloss: "to heal",
   },
@@ -45592,7 +45592,7 @@ export const wordUsages = {
     gloss: "priesthood",
   },
   ἱερατεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2407",
     gloss: "to serve as priest",
   },
@@ -45941,7 +45941,7 @@ export const wordUsages = {
     gloss: "to propitiate",
   },
   ἱλάσκεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2433",
     gloss: "to propitiate",
   },
@@ -46144,7 +46144,7 @@ export const wordUsages = {
     gloss: "Jewish",
   },
   Ἰουδαΐζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2450",
     gloss: "Jew",
   },
@@ -46458,7 +46458,7 @@ export const wordUsages = {
     gloss: "to stand/make stand",
   },
   ἑστάναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G2476",
     gloss: "to stand/make stand",
   },
@@ -46630,7 +46630,7 @@ export const wordUsages = {
     gloss: "to stand/make stand",
   },
   σταθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2476",
     gloss: "to stand/make stand",
   },
@@ -46673,12 +46673,12 @@ export const wordUsages = {
     gloss: "to stand/make stand",
   },
   στῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2476",
     gloss: "to stand/make stand",
   },
   στῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2476",
     gloss: "to stand/make stand",
   },
@@ -46719,7 +46719,7 @@ export const wordUsages = {
     gloss: "to stand/make stand",
   },
   ἱστορῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2477",
     gloss: "to get acquainted",
   },
@@ -46834,7 +46834,7 @@ export const wordUsages = {
     gloss: "be strong",
   },
   ἰσχύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2480",
     gloss: "be strong",
   },
@@ -47142,7 +47142,7 @@ export const wordUsages = {
     gloss: "destruction",
   },
   καθαιρεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2507",
     gloss: "to take down",
   },
@@ -47158,7 +47158,7 @@ export const wordUsages = {
     gloss: "to take down",
   },
   καθελεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2507",
     gloss: "to take down",
   },
@@ -47225,7 +47225,7 @@ export const wordUsages = {
     gloss: "to clean",
   },
   καθαρίζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2511",
     gloss: "to clean",
   },
@@ -47251,7 +47251,7 @@ export const wordUsages = {
     gloss: "to clean",
   },
   καθαρίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2511",
     gloss: "to clean",
   },
@@ -47429,7 +47429,7 @@ export const wordUsages = {
     gloss: "to sleep",
   },
   καθεύδειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2518",
     gloss: "to sleep",
   },
@@ -47599,7 +47599,7 @@ export const wordUsages = {
     gloss: "to sit",
   },
   καθῆσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2521",
     gloss: "to sit",
   },
@@ -47652,7 +47652,7 @@ export const wordUsages = {
     gloss: "to seat",
   },
   καθίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2523",
     gloss: "to seat",
   },
@@ -48183,7 +48183,7 @@ export const wordUsages = {
     gloss: "malice",
   },
   κακολογῆσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2551",
     gloss: "to curse/revile",
   },
@@ -48220,7 +48220,7 @@ export const wordUsages = {
     gloss: "to endure",
   },
   κακοποιῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2554",
     gloss: "to do evil/harm",
   },
@@ -48353,7 +48353,7 @@ export const wordUsages = {
     gloss: "to harm",
   },
   κακῶσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2559",
     gloss: "to harm",
   },
@@ -48444,12 +48444,12 @@ export const wordUsages = {
     gloss: "to call out/to name",
   },
   καλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2564",
     gloss: "to call out/to name",
   },
   καλεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2564",
     gloss: "to call out/to name",
   },
@@ -48464,7 +48464,7 @@ export const wordUsages = {
     gloss: "to call out/to name",
   },
   καλέσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2564",
     gloss: "to call out/to name",
   },
@@ -48668,7 +48668,7 @@ export const wordUsages = {
     gloss: "to call out/to name",
   },
   κληθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2564",
     gloss: "to call out/to name",
   },
@@ -48819,7 +48819,7 @@ export const wordUsages = {
     gloss: "to cover",
   },
   καλύπτεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2572",
     gloss: "to cover",
   },
@@ -49093,7 +49093,7 @@ export const wordUsages = {
     gloss: "to bear fruit",
   },
   καρποφορῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2592",
     gloss: "to bear fruit",
   },
@@ -49146,7 +49146,7 @@ export const wordUsages = {
     gloss: "to come/go down",
   },
   καταβαίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2597",
     gloss: "to come/go down",
   },
@@ -49261,7 +49261,7 @@ export const wordUsages = {
     gloss: "to come/go down",
   },
   καταβῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2597",
     gloss: "to come/go down",
   },
@@ -49334,7 +49334,7 @@ export const wordUsages = {
     gloss: "proclaimer",
   },
   καταγγέλλειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2605",
     gloss: "to proclaim",
   },
@@ -49422,7 +49422,7 @@ export const wordUsages = {
     gloss: "to break",
   },
   καταγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2609",
     gloss: "to bring down",
   },
@@ -49586,7 +49586,7 @@ export const wordUsages = {
     gloss: "to burn",
   },
   κατακαῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2618",
     gloss: "to burn",
   },
@@ -49611,7 +49611,7 @@ export const wordUsages = {
     gloss: "to burn",
   },
   κατακαλύπτεσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G2619",
     gloss: "to cover",
   },
@@ -49668,7 +49668,7 @@ export const wordUsages = {
     gloss: "to recline",
   },
   κατακεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2621",
     gloss: "to recline",
   },
@@ -49705,7 +49705,7 @@ export const wordUsages = {
     gloss: "to distribute",
   },
   κατακλιθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2625",
     gloss: "to sit",
   },
@@ -49769,7 +49769,7 @@ export const wordUsages = {
     gloss: "to cut",
   },
   κατακρημνίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2630",
     gloss: "to cast down",
   },
@@ -49903,7 +49903,7 @@ export const wordUsages = {
     gloss: "slanderous",
   },
   καταλαβέσθαι: {
-    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, iNfinitive",
+    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, Infinitive",
     GN: "G2638",
     gloss: "to grasp",
   },
@@ -49945,7 +49945,7 @@ export const wordUsages = {
     gloss: "to grasp",
   },
   κατειληφέναι: {
-    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, Infinitive",
     GN: "G2638",
     gloss: "to grasp",
   },
@@ -49981,7 +49981,7 @@ export const wordUsages = {
     gloss: "to leave behind",
   },
   καταλειφθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2641",
     gloss: "to leave behind",
   },
@@ -50128,7 +50128,7 @@ export const wordUsages = {
     gloss: "to destroy/lodge",
   },
   καταλῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2647",
     gloss: "to destroy/lodge",
   },
@@ -50180,7 +50180,7 @@ export const wordUsages = {
     gloss: "curse",
   },
   καταθεματίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2653",
     gloss: "to curse",
   },
@@ -50211,7 +50211,7 @@ export const wordUsages = {
     gloss: "to observe",
   },
   κατανοῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2657",
     gloss: "to observe",
   },
@@ -50248,7 +50248,7 @@ export const wordUsages = {
     gloss: "to observe",
   },
   καταντῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2658",
     gloss: "to come to",
   },
@@ -50310,7 +50310,7 @@ export const wordUsages = {
     gloss: "to consider worthy",
   },
   καταξιωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2661",
     gloss: "to consider worthy",
   },
@@ -50320,12 +50320,12 @@ export const wordUsages = {
     gloss: "to consider worthy",
   },
   καταπατεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2662",
     gloss: "to trample",
   },
   καταπατεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2662",
     gloss: "to trample",
   },
@@ -50381,7 +50381,7 @@ export const wordUsages = {
     gloss: "curtain",
   },
   καταπιεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2666",
     gloss: "to swallow",
   },
@@ -50418,7 +50418,7 @@ export const wordUsages = {
     gloss: "to fall down",
   },
   καταπίπτειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2667",
     gloss: "to fall down",
   },
@@ -50445,7 +50445,7 @@ export const wordUsages = {
     gloss: "to oppress",
   },
   καταποντίζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2670",
     gloss: "to sink",
   },
@@ -50525,7 +50525,7 @@ export const wordUsages = {
     gloss: "to abate",
   },
   καταργῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2673",
     gloss: "to abate",
   },
@@ -50633,7 +50633,7 @@ export const wordUsages = {
     gloss: "to complete",
   },
   κατηρτίσθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G2675",
     gloss: "to complete",
   },
@@ -50737,7 +50737,7 @@ export const wordUsages = {
     gloss: "to prepare",
   },
   κατασκηνοῦν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2681",
     gloss: "to dwell",
   },
@@ -50763,7 +50763,7 @@ export const wordUsages = {
     gloss: "to overshadow",
   },
   κατασκοπῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2684",
     gloss: "to spy",
   },
@@ -50847,7 +50847,7 @@ export const wordUsages = {
     gloss: "possession",
   },
   καταθέσθαι: {
-    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, iNfinitive",
+    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, Infinitive",
     GN: "G2698",
     gloss: "to attain",
   },
@@ -50980,7 +50980,7 @@ export const wordUsages = {
     gloss: "subterranean",
   },
   καταχρήσασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G2710",
     gloss: "to use up",
   },
@@ -51014,7 +51014,7 @@ export const wordUsages = {
     gloss: "to workout/produce",
   },
   κατειργάσθαι: {
-    parse: "V-RNN｜Verb, peRfect, middle or passive depoNent, iNfinitive",
+    parse: "V-RNN｜Verb, peRfect, middle or passive depoNent, Infinitive",
     GN: "G2716",
     gloss: "to workout/produce",
   },
@@ -51024,7 +51024,7 @@ export const wordUsages = {
     gloss: "to workout/produce",
   },
   κατεργάζεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2716",
     gloss: "to workout/produce",
   },
@@ -51083,7 +51083,7 @@ export const wordUsages = {
     gloss: "to workout/produce",
   },
   κατελθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2718",
     gloss: "to descend",
   },
@@ -51185,7 +51185,7 @@ export const wordUsages = {
     gloss: "to devour",
   },
   κατευθῦναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2720",
     gloss: "to guide",
   },
@@ -51215,7 +51215,7 @@ export const wordUsages = {
     gloss: "to hold back/fast",
   },
   κατέχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2722",
     gloss: "to hold back/fast",
   },
@@ -51259,12 +51259,12 @@ export const wordUsages = {
     gloss: "to hold back/fast",
   },
   κατηγορεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2723",
     gloss: "to accuse",
   },
   κατηγορεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2723",
     gloss: "to accuse",
   },
@@ -51436,7 +51436,7 @@ export const wordUsages = {
     gloss: "to dwell",
   },
   κατοικεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2730",
     gloss: "to dwell",
   },
@@ -51451,7 +51451,7 @@ export const wordUsages = {
     gloss: "to dwell",
   },
   κατοικῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2730",
     gloss: "to dwell",
   },
@@ -51549,7 +51549,7 @@ export const wordUsages = {
     gloss: "to scorch",
   },
   καυματίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2739",
     gloss: "to scorch",
   },
@@ -51592,12 +51592,12 @@ export const wordUsages = {
     gloss: "to boast",
   },
   καυχᾶσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2744",
     gloss: "to boast",
   },
   Καυχᾶσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2744",
     gloss: "to boast",
   },
@@ -51620,7 +51620,7 @@ export const wordUsages = {
     gloss: "to boast",
   },
   καυχήσασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G2744",
     gloss: "to boast",
   },
@@ -51813,7 +51813,7 @@ export const wordUsages = {
     gloss: "to shear",
   },
   κείρασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G2751",
     gloss: "to shear",
   },
@@ -52092,12 +52092,12 @@ export const wordUsages = {
     gloss: "to gain",
   },
   κερδῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2770",
     gloss: "to gain",
   },
   κερδῆσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2770",
     gloss: "to gain",
   },
@@ -52308,7 +52308,7 @@ export const wordUsages = {
     gloss: "to preach",
   },
   κηρύξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2784",
     gloss: "to preach",
   },
@@ -52344,7 +52344,7 @@ export const wordUsages = {
     gloss: "to preach",
   },
   κηρύσσειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2784",
     gloss: "to preach",
   },
@@ -52415,7 +52415,7 @@ export const wordUsages = {
     gloss: "to preach",
   },
   κηρυχθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2784",
     gloss: "to preach",
   },
@@ -52557,7 +52557,7 @@ export const wordUsages = {
     gloss: "to move",
   },
   κινῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2795",
     gloss: "to move",
   },
@@ -52639,7 +52639,7 @@ export const wordUsages = {
     gloss: "to weep",
   },
   κλαίειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2799",
     gloss: "to weep",
   },
@@ -52777,7 +52777,7 @@ export const wordUsages = {
     gloss: "to break",
   },
   κλάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2806",
     gloss: "to break",
   },
@@ -52861,7 +52861,7 @@ export const wordUsages = {
     gloss: "to shut",
   },
   κλεῖσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2808",
     gloss: "to shut",
   },
@@ -52923,7 +52923,7 @@ export const wordUsages = {
     gloss: "to steal",
   },
   κλέπτειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2813",
     gloss: "to steal",
   },
@@ -52994,12 +52994,12 @@ export const wordUsages = {
     gloss: "to inherit",
   },
   κληρονομεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2816",
     gloss: "to inherit",
   },
   κληρονομῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2816",
     gloss: "to inherit",
   },
@@ -53196,7 +53196,7 @@ export const wordUsages = {
     gloss: "to bow/lay down",
   },
   κλίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2827",
     gloss: "to bow/lay down",
   },
@@ -53412,7 +53412,7 @@ export const wordUsages = {
     gloss: "to profane",
   },
   κοινῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2840",
     gloss: "to profane",
   },
@@ -53589,7 +53589,7 @@ export const wordUsages = {
     gloss: "to beat",
   },
   κολαφίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2852",
     gloss: "to beat",
   },
@@ -53620,7 +53620,7 @@ export const wordUsages = {
     gloss: "to join",
   },
   κολλᾶσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2853",
     gloss: "to join",
   },
@@ -53704,7 +53704,7 @@ export const wordUsages = {
     gloss: "bosom",
   },
   κολυμβᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2860",
     gloss: "to swim",
   },
@@ -54104,7 +54104,7 @@ export const wordUsages = {
     gloss: "to arrange",
   },
   κοσμεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2885",
     gloss: "to arrange",
   },
@@ -54264,7 +54264,7 @@ export const wordUsages = {
     gloss: "to cry",
   },
   κράζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2896",
     gloss: "to cry",
   },
@@ -54366,7 +54366,7 @@ export const wordUsages = {
     gloss: "to strengthen",
   },
   κραταιωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2901",
     gloss: "to strengthen",
   },
@@ -54396,7 +54396,7 @@ export const wordUsages = {
     gloss: "to grasp/seize",
   },
   κεκρατηκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G2902",
     gloss: "to grasp/seize",
   },
@@ -54411,7 +54411,7 @@ export const wordUsages = {
     gloss: "power",
   },
   κρατεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2902",
     gloss: "to grasp/seize",
   },
@@ -54421,7 +54421,7 @@ export const wordUsages = {
     gloss: "to grasp/seize",
   },
   κρατεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2902",
     gloss: "to grasp/seize",
   },
@@ -54431,7 +54431,7 @@ export const wordUsages = {
     gloss: "to grasp/seize",
   },
   κρατῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2902",
     gloss: "to grasp/seize",
   },
@@ -54789,7 +54789,7 @@ export const wordUsages = {
     gloss: "to judge",
   },
   κριθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2919",
     gloss: "to judge",
   },
@@ -54814,7 +54814,7 @@ export const wordUsages = {
     gloss: "to judge",
   },
   κρῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2919",
     gloss: "to judge",
   },
@@ -54863,7 +54863,7 @@ export const wordUsages = {
     gloss: "to judge",
   },
   κρίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2919",
     gloss: "to judge",
   },
@@ -54873,12 +54873,12 @@ export const wordUsages = {
     gloss: "to judge",
   },
   κρίνεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2919",
     gloss: "to judge",
   },
   κρίνεσθαί: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2919",
     gloss: "to judge",
   },
@@ -55059,7 +55059,7 @@ export const wordUsages = {
     gloss: "discerning",
   },
   κρούειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2925",
     gloss: "to knock",
   },
@@ -55177,7 +55177,7 @@ export const wordUsages = {
     gloss: "to hide",
   },
   κρυβῆναι: {
-    parse: "V-2APN｜Verb, 2nd Aorist, Passive, iNfinitive",
+    parse: "V-2APN｜Verb, 2nd Aorist, Passive, Infinitive",
     GN: "G2928",
     gloss: "to hide",
   },
@@ -55220,7 +55220,7 @@ export const wordUsages = {
     gloss: "to posses",
   },
   κτᾶσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G2932",
     gloss: "to posses",
   },
@@ -55696,7 +55696,7 @@ export const wordUsages = {
     gloss: "to affirm",
   },
   κυρῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2964",
     gloss: "to affirm",
   },
@@ -55751,12 +55751,12 @@ export const wordUsages = {
     gloss: "to prevent",
   },
   κωλύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2967",
     gloss: "to prevent",
   },
   κωλύεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2967",
     gloss: "to prevent",
   },
@@ -55784,12 +55784,12 @@ export const wordUsages = {
     gloss: "to prevent",
   },
   κωλῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2967",
     gloss: "to prevent",
   },
   κωλῦσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2967",
     gloss: "to prevent",
   },
@@ -55920,7 +55920,7 @@ export const wordUsages = {
     gloss: "storm",
   },
   λακτίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2979",
     gloss: "to kick",
   },
@@ -55985,7 +55985,7 @@ export const wordUsages = {
     gloss: "to speak",
   },
   λαλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2980",
     gloss: "to speak",
   },
@@ -55995,7 +55995,7 @@ export const wordUsages = {
     gloss: "to speak",
   },
   λαλεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G2980",
     gloss: "to speak",
   },
@@ -56044,7 +56044,7 @@ export const wordUsages = {
     gloss: "to speak",
   },
   λαληθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G2980",
     gloss: "to speak",
   },
@@ -56065,12 +56065,12 @@ export const wordUsages = {
     gloss: "to speak",
   },
   λαλῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2980",
     gloss: "to speak",
   },
   λαλῆσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G2980",
     gloss: "to speak",
   },
@@ -56335,7 +56335,7 @@ export const wordUsages = {
     gloss: "to take",
   },
   λαβεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2983",
     gloss: "to take",
   },
@@ -56432,7 +56432,7 @@ export const wordUsages = {
     gloss: "to take",
   },
   λαμβάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2983",
     gloss: "to take",
   },
@@ -56614,7 +56614,7 @@ export const wordUsages = {
     gloss: "be hidden",
   },
   λαθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G2990",
     gloss: "be hidden",
   },
@@ -56624,7 +56624,7 @@ export const wordUsages = {
     gloss: "be hidden",
   },
   λανθάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G2990",
     gloss: "be hidden",
   },
@@ -56755,7 +56755,7 @@ export const wordUsages = {
     gloss: "to minister",
   },
   λατρεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3000",
     gloss: "to minister",
   },
@@ -56895,7 +56895,7 @@ export const wordUsages = {
     gloss: "call",
   },
   λέγειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3004",
     gloss: "call",
   },
@@ -56905,7 +56905,7 @@ export const wordUsages = {
     gloss: "call",
   },
   λέγεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G3004",
     gloss: "call",
   },
@@ -57144,7 +57144,7 @@ export const wordUsages = {
     gloss: "to lack",
   },
   λειτουργῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3008",
     gloss: "to minister",
   },
@@ -57286,7 +57286,7 @@ export const wordUsages = {
     gloss: "to bleach",
   },
   λευκᾶναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3021",
     gloss: "to bleach",
   },
@@ -57486,7 +57486,7 @@ export const wordUsages = {
     gloss: "to stone",
   },
   λιθάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3034",
     gloss: "to stone",
   },
@@ -57501,7 +57501,7 @@ export const wordUsages = {
     gloss: "to stone",
   },
   λιθάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3034",
     gloss: "to stone",
   },
@@ -57552,7 +57552,7 @@ export const wordUsages = {
     gloss: "to stone",
   },
   λιθοβολῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3036",
     gloss: "to stone",
   },
@@ -57744,7 +57744,7 @@ export const wordUsages = {
     gloss: "to count",
   },
   λογίζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G3049",
     gloss: "to count",
   },
@@ -57815,7 +57815,7 @@ export const wordUsages = {
     gloss: "to count",
   },
   λογίσασθαί: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G3049",
     gloss: "to count",
   },
@@ -57832,7 +57832,7 @@ export const wordUsages = {
     gloss: "to count",
   },
   λογισθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3049",
     gloss: "to count",
   },
@@ -57877,7 +57877,7 @@ export const wordUsages = {
     gloss: "thought",
   },
   λογομαχεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3054",
     gloss: "to quarrel",
   },
@@ -58194,7 +58194,7 @@ export const wordUsages = {
     gloss: "to grieve",
   },
   λυπεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G3076",
     gloss: "to grieve",
   },
@@ -58221,7 +58221,7 @@ export const wordUsages = {
     gloss: "to grieve",
   },
   λυπηθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3076",
     gloss: "to grieve",
   },
@@ -58323,7 +58323,7 @@ export const wordUsages = {
     gloss: "to ransom",
   },
   λυτροῦσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G3084",
     gloss: "to ransom",
   },
@@ -58456,7 +58456,7 @@ export const wordUsages = {
     gloss: "to loose",
   },
   λυθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3089",
     gloss: "to loose",
   },
@@ -58494,7 +58494,7 @@ export const wordUsages = {
     gloss: "to loose",
   },
   λῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3089",
     gloss: "to loose",
   },
@@ -59076,7 +59076,7 @@ export const wordUsages = {
     gloss: "to learn",
   },
   μαθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3129",
     gloss: "to learn",
   },
@@ -59305,7 +59305,7 @@ export const wordUsages = {
     gloss: "to testify",
   },
   μαρτυρεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3140",
     gloss: "to testify",
   },
@@ -59331,7 +59331,7 @@ export const wordUsages = {
     gloss: "to testify",
   },
   μαρτυρῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3140",
     gloss: "to testify",
   },
@@ -59589,7 +59589,7 @@ export const wordUsages = {
     gloss: "to whip",
   },
   μαστιγῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3146",
     gloss: "to whip",
   },
@@ -59610,7 +59610,7 @@ export const wordUsages = {
     gloss: "to whip",
   },
   μαστίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3147",
     gloss: "to whip",
   },
@@ -59796,7 +59796,7 @@ export const wordUsages = {
     gloss: "to quarrel",
   },
   μάχεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G3164",
     gloss: "to quarrel",
   },
@@ -59848,7 +59848,7 @@ export const wordUsages = {
     gloss: "to magnify",
   },
   μεγαλυνθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3170",
     gloss: "to magnify",
   },
@@ -60065,7 +60065,7 @@ export const wordUsages = {
     gloss: "drunkenness",
   },
   μεθιστάναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3179",
     gloss: "to move",
   },
@@ -60101,7 +60101,7 @@ export const wordUsages = {
     gloss: "to get drunk",
   },
   μεθύσκεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G3182",
     gloss: "to get drunk",
   },
@@ -60229,7 +60229,7 @@ export const wordUsages = {
     gloss: "to ensue",
   },
   μέλλειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3195",
     gloss: "to ensue",
   },
@@ -60467,7 +60467,7 @@ export const wordUsages = {
     gloss: "to stay",
   },
   μεῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3306",
     gloss: "to stay",
   },
@@ -60517,7 +60517,7 @@ export const wordUsages = {
     gloss: "to stay",
   },
   μένειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3306",
     gloss: "to stay",
   },
@@ -60617,7 +60617,7 @@ export const wordUsages = {
     gloss: "to divide",
   },
   μερίσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G3307",
     gloss: "to divide",
   },
@@ -60940,7 +60940,7 @@ export const wordUsages = {
     gloss: "to turn",
   },
   μεταδιδόναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3330",
     gloss: "to share",
   },
@@ -60956,7 +60956,7 @@ export const wordUsages = {
     gloss: "to share",
   },
   μεταδοῦναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3330",
     gloss: "to share",
   },
@@ -61007,7 +61007,7 @@ export const wordUsages = {
     gloss: "to shift",
   },
   μεταλαβεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3335",
     gloss: "to partake",
   },
@@ -61023,7 +61023,7 @@ export const wordUsages = {
     gloss: "to partake",
   },
   μεταλαμβάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3335",
     gloss: "to partake",
   },
@@ -61088,7 +61088,7 @@ export const wordUsages = {
     gloss: "to transform",
   },
   μετανοεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3340",
     gloss: "to repent",
   },
@@ -61103,7 +61103,7 @@ export const wordUsages = {
     gloss: "to repent",
   },
   μετανοῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3340",
     gloss: "to repent",
   },
@@ -61218,7 +61218,7 @@ export const wordUsages = {
     gloss: "to summon",
   },
   μεταπέμψασθαί: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G3343",
     gloss: "to summon",
   },
@@ -61243,7 +61243,7 @@ export const wordUsages = {
     gloss: "to change",
   },
   μεταστρέψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3344",
     gloss: "to change",
   },
@@ -61322,7 +61322,7 @@ export const wordUsages = {
     gloss: "to share",
   },
   μετέχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3348",
     gloss: "to share",
   },
@@ -61434,7 +61434,7 @@ export const wordUsages = {
     gloss: "measure",
   },
   μετριοπαθεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3356",
     gloss: "be gentle",
   },
@@ -61901,7 +61901,7 @@ export const wordUsages = {
     gloss: "mile",
   },
   μιμεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G3401",
     gloss: "to imitate",
   },
@@ -61971,7 +61971,7 @@ export const wordUsages = {
     gloss: "to remember",
   },
   μνησθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3403",
     gloss: "to remember",
   },
@@ -62052,7 +62052,7 @@ export const wordUsages = {
     gloss: "to hate",
   },
   μισεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3404",
     gloss: "to hate",
   },
@@ -62167,7 +62167,7 @@ export const wordUsages = {
     gloss: "to hire",
   },
   μισθώσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G3409",
     gloss: "to hire",
   },
@@ -62307,7 +62307,7 @@ export const wordUsages = {
     gloss: "to remember",
   },
   μνημονεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3421",
     gloss: "to remember",
   },
@@ -62432,7 +62432,7 @@ export const wordUsages = {
     gloss: "to commit adultery",
   },
   μοιχεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3431",
     gloss: "to commit adultery",
   },
@@ -62442,7 +62442,7 @@ export const wordUsages = {
     gloss: "to commit adultery",
   },
   μοιχευθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3431",
     gloss: "to commit adultery",
   },
@@ -62746,7 +62746,7 @@ export const wordUsages = {
     gloss: "myriad",
   },
   μυρίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3462",
     gloss: "to anoint",
   },
@@ -63512,7 +63512,7 @@ export const wordUsages = {
     gloss: "fasting",
   },
   νηστεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3522",
     gloss: "to fast",
   },
@@ -63544,7 +63544,7 @@ export const wordUsages = {
     gloss: "to fast",
   },
   νηστεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3522",
     gloss: "to fast",
   },
@@ -63658,7 +63658,7 @@ export const wordUsages = {
     gloss: "to conquer",
   },
   νικῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3528",
     gloss: "to conquer",
   },
@@ -63772,7 +63772,7 @@ export const wordUsages = {
     gloss: "to wash",
   },
   νίπτειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3538",
     gloss: "to wash",
   },
@@ -63798,7 +63798,7 @@ export const wordUsages = {
     gloss: "to wash",
   },
   νίψασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G3538",
     gloss: "to wash",
   },
@@ -63833,7 +63833,7 @@ export const wordUsages = {
     gloss: "to understand",
   },
   νοῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3539",
     gloss: "to understand",
   },
@@ -63915,7 +63915,7 @@ export const wordUsages = {
     gloss: "to think",
   },
   νομίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3543",
     gloss: "to think",
   },
@@ -64101,7 +64101,7 @@ export const wordUsages = {
     gloss: "to embezzle",
   },
   νοσφίσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G3557",
     gloss: "to embezzle",
   },
@@ -64126,7 +64126,7 @@ export const wordUsages = {
     gloss: "admonition",
   },
   νουθετεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3560",
     gloss: "to admonish",
   },
@@ -64513,7 +64513,7 @@ export const wordUsages = {
     gloss: "to shave",
   },
   ξυρᾶσθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G3587",
     gloss: "to shave",
   },
@@ -64779,7 +64779,7 @@ export const wordUsages = {
     gloss: "to journey",
   },
   ὁδηγεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3594",
     gloss: "to guide",
   },
@@ -65031,7 +65031,7 @@ export const wordUsages = {
     gloss: "to dwell",
   },
   οἰκεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3611",
     gloss: "to dwell",
   },
@@ -65093,7 +65093,7 @@ export const wordUsages = {
     gloss: "member of a house",
   },
   οἰκοδεσποτεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3616",
     gloss: "to manage a house",
   },
@@ -65123,7 +65123,7 @@ export const wordUsages = {
     gloss: "to build",
   },
   οἰκοδομεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3618",
     gloss: "to build",
   },
@@ -65153,7 +65153,7 @@ export const wordUsages = {
     gloss: "to build",
   },
   οἰκοδομῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3618",
     gloss: "to build",
   },
@@ -65174,7 +65174,7 @@ export const wordUsages = {
     gloss: "to build",
   },
   οἰκοδομῆσθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G3618",
     gloss: "to build",
   },
@@ -65268,7 +65268,7 @@ export const wordUsages = {
     gloss: "building",
   },
   οἰκονομεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3621",
     gloss: "to manage",
   },
@@ -65754,7 +65754,7 @@ export const wordUsages = {
     gloss: "rainstorm",
   },
   ὁμιλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3656",
     gloss: "to talk",
   },
@@ -65795,7 +65795,7 @@ export const wordUsages = {
     gloss: "to swear",
   },
   ὀμνύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3660",
     gloss: "to swear",
   },
@@ -65805,7 +65805,7 @@ export const wordUsages = {
     gloss: "to swear",
   },
   ὀμνύναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3660",
     gloss: "to swear",
   },
@@ -65815,7 +65815,7 @@ export const wordUsages = {
     gloss: "to swear",
   },
   ὀμόσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3660",
     gloss: "to swear",
   },
@@ -65927,7 +65927,7 @@ export const wordUsages = {
     gloss: "to liken",
   },
   ὁμοιωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3666",
     gloss: "to liken",
   },
@@ -66121,7 +66121,7 @@ export const wordUsages = {
     gloss: "young donkey",
   },
   ὀνειδίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3679",
     gloss: "to revile",
   },
@@ -66249,7 +66249,7 @@ export const wordUsages = {
     gloss: "name",
   },
   ὀνομάζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3687",
     gloss: "to name",
   },
@@ -66560,7 +66560,7 @@ export const wordUsages = {
     gloss: "appear",
   },
   ἑωρακέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G3708",
     gloss: "appear",
   },
@@ -68568,7 +68568,7 @@ export const wordUsages = {
     gloss: "maidservant",
   },
   παίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3815",
     gloss: "to play",
   },
@@ -69019,7 +69019,7 @@ export const wordUsages = {
     gloss: "to order",
   },
   παραγγέλλειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3853",
     gloss: "to order",
   },
@@ -69216,7 +69216,7 @@ export const wordUsages = {
     gloss: "to welcome",
   },
   παραδέχεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G3858",
     gloss: "to welcome",
   },
@@ -69276,7 +69276,7 @@ export const wordUsages = {
     gloss: "to deliver/handover/betray",
   },
   παραδιδόναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3860",
     gloss: "to deliver/handover/betray",
   },
@@ -69299,7 +69299,7 @@ export const wordUsages = {
     gloss: "to deliver/handover/betray",
   },
   παραδίδοσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G3860",
     gloss: "to deliver/handover/betray",
   },
@@ -69349,7 +69349,7 @@ export const wordUsages = {
     gloss: "to deliver/handover/betray",
   },
   παραδοθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3860",
     gloss: "to deliver/handover/betray",
   },
@@ -69380,7 +69380,7 @@ export const wordUsages = {
     gloss: "to deliver/handover/betray",
   },
   παραδοῦναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3860",
     gloss: "to deliver/handover/betray",
   },
@@ -69543,7 +69543,7 @@ export const wordUsages = {
     gloss: "to make envious",
   },
   παραζηλῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3863",
     gloss: "to make envious",
   },
@@ -69578,7 +69578,7 @@ export const wordUsages = {
     gloss: "to urge",
   },
   παραιτεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G3868",
     gloss: "to refuse/excuse",
   },
@@ -69640,7 +69640,7 @@ export const wordUsages = {
     gloss: "to plead/comfort",
   },
   παρακαλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3870",
     gloss: "to plead/comfort",
   },
@@ -69734,7 +69734,7 @@ export const wordUsages = {
     gloss: "to plead/comfort",
   },
   παρακληθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3870",
     gloss: "to plead/comfort",
   },
@@ -69904,7 +69904,7 @@ export const wordUsages = {
     gloss: "to ignore",
   },
   παρακύψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3879",
     gloss: "to stoop",
   },
@@ -69925,7 +69925,7 @@ export const wordUsages = {
     gloss: "to take",
   },
   παραλαβεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3880",
     gloss: "to take",
   },
@@ -70105,7 +70105,7 @@ export const wordUsages = {
     gloss: "to continue",
   },
   παραμένειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3887",
     gloss: "to continue",
   },
@@ -70170,7 +70170,7 @@ export const wordUsages = {
     gloss: "to defect",
   },
   παραπλεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3896",
     gloss: "to sail past",
   },
@@ -70185,7 +70185,7 @@ export const wordUsages = {
     gloss: "similarly",
   },
   παραπορεύεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G3899",
     gloss: "to pass by/through",
   },
@@ -70327,7 +70327,7 @@ export const wordUsages = {
     gloss: "observation",
   },
   παραθεῖναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3908",
     gloss: "to set before",
   },
@@ -70370,7 +70370,7 @@ export const wordUsages = {
     gloss: "to set before",
   },
   παρατιθέναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3908",
     gloss: "to set before",
   },
@@ -70444,7 +70444,7 @@ export const wordUsages = {
     gloss: "to winter",
   },
   παραχειμάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3914",
     gloss: "to winter",
   },
@@ -70474,12 +70474,12 @@ export const wordUsages = {
     gloss: "be present",
   },
   παρεῖναι: {
-    parse: "V-2PAN｜Verb, 2nd Present, Active, iNfinitive",
+    parse: "V-2PAN｜Verb, 2nd Present, Active, Infinitive",
     GN: "G3918",
     gloss: "be present",
   },
   παρεῖναί: {
-    parse: "V-2PAN｜Verb, 2nd Present, Active, iNfinitive",
+    parse: "V-2PAN｜Verb, 2nd Present, Active, Infinitive",
     GN: "G3918",
     gloss: "be present",
   },
@@ -70608,7 +70608,7 @@ export const wordUsages = {
     gloss: "barracks",
   },
   παρενοχλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3926",
     gloss: "to trouble",
   },
@@ -70639,7 +70639,7 @@ export const wordUsages = {
     gloss: "to pass by",
   },
   παρεληλυθέναι: {
-    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, Infinitive",
     GN: "G3928",
     gloss: "to pass by",
   },
@@ -70655,7 +70655,7 @@ export const wordUsages = {
     gloss: "to pass by",
   },
   παρελθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3928",
     gloss: "to pass by",
   },
@@ -70746,7 +70746,7 @@ export const wordUsages = {
     gloss: "to furnish occasion",
   },
   παρέχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3930",
     gloss: "to furnish occasion",
   },
@@ -70834,12 +70834,12 @@ export const wordUsages = {
     gloss: "to neglect",
   },
   παραστῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3936",
     gloss: "to stand by",
   },
   παραστῆσαι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3936",
     gloss: "to stand by",
   },
@@ -71127,7 +71127,7 @@ export const wordUsages = {
     gloss: "to preach boldly",
   },
   παρρησιάζεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G3955",
     gloss: "to preach boldly",
   },
@@ -71326,7 +71326,7 @@ export const wordUsages = {
     gloss: "to suffer",
   },
   παθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G3958",
     gloss: "to suffer",
   },
@@ -71365,7 +71365,7 @@ export const wordUsages = {
     gloss: "to suffer",
   },
   πάσχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3958",
     gloss: "to suffer",
   },
@@ -71427,7 +71427,7 @@ export const wordUsages = {
     gloss: "to strike",
   },
   πατάξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3960",
     gloss: "to strike",
   },
@@ -71463,7 +71463,7 @@ export const wordUsages = {
     gloss: "to trample",
   },
   πατεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3961",
     gloss: "to trample",
   },
@@ -71694,7 +71694,7 @@ export const wordUsages = {
     gloss: "to cease",
   },
   παύσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G3973",
     gloss: "to cease",
   },
@@ -71745,7 +71745,7 @@ export const wordUsages = {
     gloss: "level",
   },
   πεζεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3978",
     gloss: "to walk",
   },
@@ -71755,12 +71755,12 @@ export const wordUsages = {
     gloss: "on foot",
   },
   πειθαρχεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3980",
     gloss: "to obey",
   },
   Πειθαρχεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3980",
     gloss: "to obey",
   },
@@ -71823,7 +71823,7 @@ export const wordUsages = {
     gloss: "to persuade",
   },
   πείθεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G3982",
     gloss: "to persuade",
   },
@@ -71939,7 +71939,7 @@ export const wordUsages = {
     gloss: "to persuade",
   },
   πεποιθέναι: {
-    parse: "V-2RAN｜Verb, 2nd Perfect, Active, iNfinitive",
+    parse: "V-2RAN｜Verb, 2nd Perfect, Active, Infinitive",
     GN: "G3982",
     gloss: "to persuade",
   },
@@ -71982,7 +71982,7 @@ export const wordUsages = {
     gloss: "to hunger",
   },
   πεινᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3983",
     gloss: "to hunger",
   },
@@ -72104,7 +72104,7 @@ export const wordUsages = {
     gloss: "try",
   },
   πειράσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3985",
     gloss: "try",
   },
@@ -72115,7 +72115,7 @@ export const wordUsages = {
     gloss: "try",
   },
   πειρασθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G3985",
     gloss: "try",
   },
@@ -72238,7 +72238,7 @@ export const wordUsages = {
     gloss: "to send",
   },
   πέμπειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3992",
     gloss: "to send",
   },
@@ -72266,7 +72266,7 @@ export const wordUsages = {
     gloss: "to send",
   },
   πέμψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G3992",
     gloss: "to send",
   },
@@ -72384,7 +72384,7 @@ export const wordUsages = {
     gloss: "to mourn",
   },
   πενθεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G3996",
     gloss: "to mourn",
   },
@@ -72549,7 +72549,7 @@ export const wordUsages = {
   περὶ: { parse: "PREP｜Preposition", GN: "G4012", gloss: "about" },
   Περὶ: { parse: "PREP｜Preposition", GN: "G4012", gloss: "about" },
   περιάγειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4013",
     gloss: "to take/go around",
   },
@@ -72575,7 +72575,7 @@ export const wordUsages = {
     gloss: "to take away",
   },
   περιελεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4014",
     gloss: "to take away",
   },
@@ -72591,7 +72591,7 @@ export const wordUsages = {
     gloss: "to take away",
   },
   περιαστράψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4015",
     gloss: "to shine",
   },
@@ -72818,7 +72818,7 @@ export const wordUsages = {
     gloss: "garbage",
   },
   περικαλύπτειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4028",
     gloss: "to cover",
   },
@@ -72905,7 +72905,7 @@ export const wordUsages = {
     gloss: "sorrowful",
   },
   περιμένειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4037",
     gloss: "to await",
   },
@@ -72981,7 +72981,7 @@ export const wordUsages = {
     gloss: "to walk",
   },
   περιπατεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4043",
     gloss: "to walk",
   },
@@ -73006,7 +73006,7 @@ export const wordUsages = {
     gloss: "to walk",
   },
   περιπατῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4043",
     gloss: "to walk",
   },
@@ -73115,7 +73115,7 @@ export const wordUsages = {
     gloss: "to gain",
   },
   περιποιήσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G4046",
     gloss: "to gain",
   },
@@ -73191,7 +73191,7 @@ export const wordUsages = {
     gloss: "to abound/exceed",
   },
   περισσεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4052",
     gloss: "to abound/exceed",
   },
@@ -73250,7 +73250,7 @@ export const wordUsages = {
     gloss: "to abound/exceed",
   },
   περισσεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4052",
     gloss: "to abound/exceed",
   },
@@ -73362,17 +73362,17 @@ export const wordUsages = {
     gloss: "to circumcise",
   },
   περιτεμεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4059",
     gloss: "to circumcise",
   },
   περιτέμνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4059",
     gloss: "to circumcise",
   },
   περιτέμνεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4059",
     gloss: "to circumcise",
   },
@@ -73410,7 +73410,7 @@ export const wordUsages = {
     gloss: "to circumcise",
   },
   περιτμηθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4059",
     gloss: "to circumcise",
   },
@@ -73497,7 +73497,7 @@ export const wordUsages = {
     gloss: "to run around",
   },
   περιφέρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4064",
     gloss: "to carry (around)",
   },
@@ -73775,7 +73775,7 @@ export const wordUsages = {
     gloss: "to arrest/catch",
   },
   πιάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4084",
     gloss: "to arrest/catch",
   },
@@ -73867,7 +73867,7 @@ export const wordUsages = {
     gloss: "Pilate",
   },
   πίμπρασθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4092",
     gloss: "to swell up",
   },
@@ -73907,7 +73907,7 @@ export const wordUsages = {
     gloss: "to drink",
   },
   πεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4095",
     gloss: "to drink",
   },
@@ -73922,7 +73922,7 @@ export const wordUsages = {
     gloss: "to drink",
   },
   πιεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4095",
     gloss: "to drink",
   },
@@ -73965,7 +73965,7 @@ export const wordUsages = {
     gloss: "to drink",
   },
   πίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4095",
     gloss: "to drink",
   },
@@ -74077,7 +74077,7 @@ export const wordUsages = {
     gloss: "to sell",
   },
   πραθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4097",
     gloss: "to sell",
   },
@@ -74129,7 +74129,7 @@ export const wordUsages = {
     gloss: "to collapse",
   },
   πεσεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4098",
     gloss: "to collapse",
   },
@@ -74363,7 +74363,7 @@ export const wordUsages = {
     gloss: "to trust (in)",
   },
   πιστεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4100",
     gloss: "to trust (in)",
   },
@@ -74403,7 +74403,7 @@ export const wordUsages = {
     gloss: "to trust (in)",
   },
   πιστευθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4100",
     gloss: "to trust (in)",
   },
@@ -74449,7 +74449,7 @@ export const wordUsages = {
     gloss: "to trust (in)",
   },
   πιστεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4100",
     gloss: "to trust (in)",
   },
@@ -74747,7 +74747,7 @@ export const wordUsages = {
     gloss: "to lead astray",
   },
   πλανῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4105",
     gloss: "to lead astray",
   },
@@ -75038,7 +75038,7 @@ export const wordUsages = {
     gloss: "to exploit",
   },
   πλεονεκτεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4122",
     gloss: "to exploit",
   },
@@ -75103,7 +75103,7 @@ export const wordUsages = {
     gloss: "to sail",
   },
   πλεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4126",
     gloss: "to sail",
   },
@@ -75206,7 +75206,7 @@ export const wordUsages = {
     gloss: "to multiply",
   },
   πληθυνθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4129",
     gloss: "to multiply",
   },
@@ -75255,7 +75255,7 @@ export const wordUsages = {
     gloss: "to fill",
   },
   πλησθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4130",
     gloss: "to fill",
   },
@@ -75384,7 +75384,7 @@ export const wordUsages = {
     gloss: "to fulfill",
   },
   πεπληρωκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G4137",
     gloss: "to fulfill",
   },
@@ -75451,7 +75451,7 @@ export const wordUsages = {
     gloss: "to fulfill",
   },
   πληροῦν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4137",
     gloss: "to fulfill",
   },
@@ -75478,7 +75478,7 @@ export const wordUsages = {
     gloss: "to fulfill",
   },
   πληρωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4137",
     gloss: "to fulfill",
   },
@@ -75508,7 +75508,7 @@ export const wordUsages = {
     gloss: "to fulfill",
   },
   πληρῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4137",
     gloss: "to fulfill",
   },
@@ -75689,7 +75689,7 @@ export const wordUsages = {
     gloss: "be rich",
   },
   πλουτεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4147",
     gloss: "be rich",
   },
@@ -76068,7 +76068,7 @@ export const wordUsages = {
     gloss: "to make/do",
   },
   πεποιηκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G4160",
     gloss: "to make/do",
   },
@@ -76113,7 +76113,7 @@ export const wordUsages = {
     gloss: "to make/do",
   },
   ποιεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4160",
     gloss: "to make/do",
   },
@@ -76123,7 +76123,7 @@ export const wordUsages = {
     gloss: "to make/do",
   },
   ποιεῖσθαι: {
-    parse: "V-PEN｜Verb, Present, Either middle or passive, iNfinitive",
+    parse: "V-PEN｜Verb, Present, Either middle or passive, Infinitive",
     GN: "G4160",
     gloss: "to make/do",
   },
@@ -76158,7 +76158,7 @@ export const wordUsages = {
     gloss: "to make/do",
   },
   ποιῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4160",
     gloss: "to make/do",
   },
@@ -76204,7 +76204,7 @@ export const wordUsages = {
     gloss: "to make/do",
   },
   ποιήσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G4160",
     gloss: "to make/do",
   },
@@ -76460,7 +76460,7 @@ export const wordUsages = {
     gloss: "to shepherd",
   },
   ποιμαίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4165",
     gloss: "to shepherd",
   },
@@ -76612,7 +76612,7 @@ export const wordUsages = {
     gloss: "to fight",
   },
   πολεμῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4170",
     gloss: "to fight",
   },
@@ -77220,7 +77220,7 @@ export const wordUsages = {
     gloss: "to go/travel",
   },
   πορεύεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G4198",
     gloss: "to go/travel",
   },
@@ -77285,7 +77285,7 @@ export const wordUsages = {
     gloss: "to go/travel",
   },
   πορευθῆναι: {
-    parse: "V-AON｜Verb, Aorist, passive depOnent, iNfinitive",
+    parse: "V-AON｜Verb, Aorist, passive depOnent, Infinitive",
     GN: "G4198",
     gloss: "to go/travel",
   },
@@ -77498,7 +77498,7 @@ export const wordUsages = {
     gloss: "to sin sexually",
   },
   πορνεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4203",
     gloss: "to sin sexually",
   },
@@ -78062,12 +78062,12 @@ export const wordUsages = {
     gloss: "to do/require",
   },
   πεπραχέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G4238",
     gloss: "to do/require",
   },
   πρᾶξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4238",
     gloss: "to do/require",
   },
@@ -78105,7 +78105,7 @@ export const wordUsages = {
     gloss: "to do/require",
   },
   πράσσειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4238",
     gloss: "to do/require",
   },
@@ -78348,7 +78348,7 @@ export const wordUsages = {
   πρὸ: { parse: "PREP｜Preposition", GN: "G4253", gloss: "before" },
   Πρὸ: { parse: "PREP｜Preposition", GN: "G4253", gloss: "before" },
   προαγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4254",
     gloss: "to go/bring before",
   },
@@ -78369,7 +78369,7 @@ export const wordUsages = {
     gloss: "to go/bring before",
   },
   προάγειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4254",
     gloss: "to go/bring before",
   },
@@ -78840,12 +78840,12 @@ export const wordUsages = {
     gloss: "to set before",
   },
   προΐστασθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G4291",
     gloss: "to set before",
   },
   προστῆναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4291",
     gloss: "to set before",
   },
@@ -78974,7 +78974,7 @@ export const wordUsages = {
     gloss: "to predict",
   },
   προμελετᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4304",
     gloss: "to premeditate",
   },
@@ -79073,7 +79073,7 @@ export const wordUsages = {
     gloss: "to help on the way",
   },
   προπεμφθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4311",
     gloss: "to help on the way",
   },
@@ -79150,7 +79150,7 @@ export const wordUsages = {
     gloss: "to bring near",
   },
   προσάγειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4317",
     gloss: "to bring near",
   },
@@ -79388,7 +79388,7 @@ export const wordUsages = {
     gloss: "to come near/agree",
   },
   προσέρχεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G4334",
     gloss: "to come near/agree",
   },
@@ -79529,7 +79529,7 @@ export const wordUsages = {
     gloss: "to pray",
   },
   προσεύξασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G4336",
     gloss: "to pray",
   },
@@ -79563,7 +79563,7 @@ export const wordUsages = {
     gloss: "to pray",
   },
   προσεύχεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G4336",
     gloss: "to pray",
   },
@@ -79696,7 +79696,7 @@ export const wordUsages = {
     gloss: "to watch out",
   },
   προσέχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4337",
     gloss: "to watch out",
   },
@@ -79947,7 +79947,7 @@ export const wordUsages = {
     gloss: "to worship",
   },
   προσκυνεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4352",
     gloss: "to worship",
   },
@@ -79957,7 +79957,7 @@ export const wordUsages = {
     gloss: "to worship",
   },
   προσκυνῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4352",
     gloss: "to worship",
   },
@@ -80052,7 +80052,7 @@ export const wordUsages = {
     gloss: "worshiper",
   },
   προσλαλῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4354",
     gloss: "to talk to/with",
   },
@@ -80100,7 +80100,7 @@ export const wordUsages = {
     gloss: "acceptance",
   },
   προσμεῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4357",
     gloss: "to remain/persist",
   },
@@ -80116,7 +80116,7 @@ export const wordUsages = {
     gloss: "to remain/persist",
   },
   προσμένειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4357",
     gloss: "to remain/persist",
   },
@@ -80246,7 +80246,7 @@ export const wordUsages = {
     gloss: "to add (to)",
   },
   προσθεῖναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4369",
     gloss: "to add (to)",
   },
@@ -80262,7 +80262,7 @@ export const wordUsages = {
     gloss: "to add (to)",
   },
   προστεθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4369",
     gloss: "to add (to)",
   },
@@ -80299,7 +80299,7 @@ export const wordUsages = {
     gloss: "recently",
   },
   προσενέγκαι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4374",
     gloss: "to bring to",
   },
@@ -80396,7 +80396,7 @@ export const wordUsages = {
     gloss: "to bring to",
   },
   προσφέρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4374",
     gloss: "to bring to",
   },
@@ -80689,7 +80689,7 @@ export const wordUsages = {
     gloss: "to prophesy",
   },
   προφητεύειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4395",
     gloss: "to prophesy",
   },
@@ -80716,7 +80716,7 @@ export const wordUsages = {
     gloss: "to prophesy",
   },
   προφητεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4395",
     gloss: "to prophesy",
   },
@@ -80835,7 +80835,7 @@ export const wordUsages = {
     gloss: "to appoint",
   },
   προχειρίσασθαί: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G4400",
     gloss: "to appoint",
   },
@@ -81374,7 +81374,7 @@ export const wordUsages = {
     gloss: "to inquire",
   },
   πυθέσθαι: {
-    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, iNfinitive",
+    parse: "V-2ADN｜Verb, 2nd Aorist, middle Deponent, Infinitive",
     GN: "G4441",
     gloss: "to inquire",
   },
@@ -81385,7 +81385,7 @@ export const wordUsages = {
     gloss: "to inquire",
   },
   πυνθάνεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G4441",
     gloss: "to inquire",
   },
@@ -81507,7 +81507,7 @@ export const wordUsages = {
     gloss: "to burn",
   },
   πυροῦσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4448",
     gloss: "to burn",
   },
@@ -81552,7 +81552,7 @@ export const wordUsages = {
     gloss: "to sell",
   },
   πωλῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4453",
     gloss: "to sell",
   },
@@ -81698,7 +81698,7 @@ export const wordUsages = {
     gloss: "to beat with a rod",
   },
   ῥαβδίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4463",
     gloss: "to beat with a rod",
   },
@@ -82113,7 +82113,7 @@ export const wordUsages = {
     gloss: "to rescue",
   },
   ῥύεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G4506",
     gloss: "to rescue",
   },
@@ -82362,7 +82362,7 @@ export const wordUsages = {
     gloss: "Zadok",
   },
   σαίνεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4525",
     gloss: "to shake",
   },
@@ -82417,7 +82417,7 @@ export const wordUsages = {
     gloss: "to shake",
   },
   σαλευθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4531",
     gloss: "to shake",
   },
@@ -82456,7 +82456,7 @@ export const wordUsages = {
     gloss: "to shake",
   },
   σαλεῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4531",
     gloss: "to shake",
   },
@@ -82527,7 +82527,7 @@ export const wordUsages = {
     gloss: "to sound a trumpet",
   },
   σαλπίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4537",
     gloss: "to sound a trumpet",
   },
@@ -82908,7 +82908,7 @@ export const wordUsages = {
     gloss: "to extinguish",
   },
   σβέσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4570",
     gloss: "to extinguish",
   },
@@ -82968,7 +82968,7 @@ export const wordUsages = {
     gloss: "Augustan",
   },
   σέβεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G4576",
     gloss: "be devout",
   },
@@ -83174,7 +83174,7 @@ export const wordUsages = {
     gloss: "to signify",
   },
   σημᾶναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4591",
     gloss: "to signify",
   },
@@ -83265,7 +83265,7 @@ export const wordUsages = {
     gloss: "be silent",
   },
   σιγᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4601",
     gloss: "be silent",
   },
@@ -83280,7 +83280,7 @@ export const wordUsages = {
     gloss: "be silent",
   },
   σιγῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4601",
     gloss: "be silent",
   },
@@ -83441,7 +83441,7 @@ export const wordUsages = {
     gloss: "linen",
   },
   σινιάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4617",
     gloss: "to sift",
   },
@@ -83622,7 +83622,7 @@ export const wordUsages = {
     gloss: "to dig",
   },
   σκάπτειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4626",
     gloss: "to dig",
   },
@@ -83894,7 +83894,7 @@ export const wordUsages = {
     gloss: "to watch out",
   },
   σκοπεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4648",
     gloss: "to watch out",
   },
@@ -84292,7 +84292,7 @@ export const wordUsages = {
     gloss: "to make wise",
   },
   σοφίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4679",
     gloss: "to make wise",
   },
@@ -84455,7 +84455,7 @@ export const wordUsages = {
     gloss: "to sow",
   },
   σπεῖραι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4687",
     gloss: "to sow",
   },
@@ -84483,7 +84483,7 @@ export const wordUsages = {
     gloss: "to sow",
   },
   σπείρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4687",
     gloss: "to sow",
   },
@@ -84937,7 +84937,7 @@ export const wordUsages = {
     gloss: "to crucify",
   },
   σταυρωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4717",
     gloss: "to crucify",
   },
@@ -84947,12 +84947,12 @@ export const wordUsages = {
     gloss: "to crucify",
   },
   σταυρῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4717",
     gloss: "to crucify",
   },
   σταυρῶσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4717",
     gloss: "to crucify",
   },
@@ -85070,7 +85070,7 @@ export const wordUsages = {
     gloss: "barren",
   },
   στέλλεσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G4724",
     gloss: "to avoid",
   },
@@ -85326,7 +85326,7 @@ export const wordUsages = {
     gloss: "to establish",
   },
   στηριχθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4741",
     gloss: "to establish",
   },
@@ -85377,7 +85377,7 @@ export const wordUsages = {
     gloss: "principle",
   },
   στοιχεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4748",
     gloss: "to follow",
   },
@@ -85665,7 +85665,7 @@ export const wordUsages = {
     gloss: "to turn",
   },
   στρέφειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4762",
     gloss: "to turn",
   },
@@ -85922,7 +85922,7 @@ export const wordUsages = {
     gloss: "to suffer with",
   },
   συγκακουχεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G4778",
     gloss: "to suffer with",
   },
@@ -85944,7 +85944,7 @@ export const wordUsages = {
     gloss: "to call together",
   },
   συγκαλέσασθαι: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G4779",
     gloss: "to call together",
   },
@@ -86075,7 +86075,7 @@ export const wordUsages = {
     gloss: "to entomb",
   },
   συγκρῖναι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4793",
     gloss: "to compare",
   },
@@ -86160,7 +86160,7 @@ export const wordUsages = {
     gloss: "confusion",
   },
   συζῆν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4800",
     gloss: "to live together",
   },
@@ -86175,7 +86175,7 @@ export const wordUsages = {
     gloss: "to join",
   },
   συζητεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4802",
     gloss: "to debate",
   },
@@ -86311,12 +86311,12 @@ export const wordUsages = {
     gloss: "to talk with",
   },
   συλλαβεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4815",
     gloss: "to seize/conceive/help",
   },
   συλλαβέσθαι: {
-    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, iNfinitive",
+    parse: "V-2AMN｜Verb, 2nd Aorist, Middle, Infinitive",
     GN: "G4815",
     gloss: "to seize/conceive/help",
   },
@@ -86356,7 +86356,7 @@ export const wordUsages = {
     gloss: "to seize/conceive/help",
   },
   συλλημφθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4815",
     gloss: "to seize/conceive/help",
   },
@@ -86429,7 +86429,7 @@ export const wordUsages = {
     gloss: "be grieved",
   },
   συμβαίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4819",
     gloss: "to happen",
   },
@@ -86473,7 +86473,7 @@ export const wordUsages = {
     gloss: "to happen",
   },
   συμβαλεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4820",
     gloss: "to ponder/confer",
   },
@@ -86642,7 +86642,7 @@ export const wordUsages = {
     gloss: "to make like",
   },
   συμπαθῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4834",
     gloss: "to sympathize",
   },
@@ -86663,12 +86663,12 @@ export const wordUsages = {
     gloss: "to gather/gather together/assemble",
   },
   συμπαρακληθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4837",
     gloss: "to encourage",
   },
   συμπαραλαβεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4838",
     gloss: "to take along with",
   },
@@ -86685,7 +86685,7 @@ export const wordUsages = {
     gloss: "to take along with",
   },
   συμπαραλαμβάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4838",
     gloss: "to take along with",
   },
@@ -86722,7 +86722,7 @@ export const wordUsages = {
     gloss: "to drink with",
   },
   συμπληροῦσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4845",
     gloss: "to (ful)fill",
   },
@@ -86904,7 +86904,7 @@ export const wordUsages = {
   σύν: { parse: "PREP｜Preposition", GN: "G4862", gloss: "with" },
   σὺν: { parse: "PREP｜Preposition", GN: "G4862", gloss: "with" },
   συναγαγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4863",
     gloss: "to gather/gather together/assemble",
   },
@@ -86995,7 +86995,7 @@ export const wordUsages = {
     gloss: "to gather/gather together/assemble",
   },
   συναχθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4863",
     gloss: "to gather/gather together/assemble",
   },
@@ -87114,7 +87114,7 @@ export const wordUsages = {
     gloss: "synagogue",
   },
   συναγωνίσασθαί: {
-    parse: "V-AMN｜Verb, Aorist, Middle, iNfinitive",
+    parse: "V-AMN｜Verb, Aorist, Middle, Infinitive",
     GN: "G4865",
     gloss: "to struggle",
   },
@@ -87147,12 +87147,12 @@ export const wordUsages = {
     gloss: "to settle accounts",
   },
   συναίρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4868",
     gloss: "to settle accounts",
   },
   συνᾶραι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4868",
     gloss: "to settle accounts",
   },
@@ -87167,7 +87167,7 @@ export const wordUsages = {
     gloss: "fellow prisoner",
   },
   συνακολουθῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4870",
     gloss: "to accompany",
   },
@@ -87231,7 +87231,7 @@ export const wordUsages = {
     gloss: "to dine with",
   },
   συναναμίγνυσθαι: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G4874",
     gloss: "to associate with",
   },
@@ -87298,7 +87298,7 @@ export const wordUsages = {
     gloss: "to die with",
   },
   συναποθανεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4880",
     gloss: "to die with",
   },
@@ -87347,7 +87347,7 @@ export const wordUsages = {
     gloss: "to seize",
   },
   συναυξάνεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4885",
     gloss: "to grow together",
   },
@@ -87629,7 +87629,7 @@ export const wordUsages = {
     gloss: "to assemble",
   },
   συνελθεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4905",
     gloss: "to assemble",
   },
@@ -87737,7 +87737,7 @@ export const wordUsages = {
     gloss: "to eat with",
   },
   συνεσθίειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4906",
     gloss: "to eat with",
   },
@@ -87973,7 +87973,7 @@ export const wordUsages = {
     gloss: "to understand",
   },
   συνιέναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4920",
     gloss: "to understand",
   },
@@ -88032,7 +88032,7 @@ export const wordUsages = {
     gloss: "to commend",
   },
   συνιστάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4921",
     gloss: "to commend",
   },
@@ -88071,7 +88071,7 @@ export const wordUsages = {
     gloss: "to commend",
   },
   συνίστασθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4921",
     gloss: "to commend",
   },
@@ -88155,7 +88155,7 @@ export const wordUsages = {
     gloss: "consummation",
   },
   συντελεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4931",
     gloss: "to complete",
   },
@@ -88241,7 +88241,7 @@ export const wordUsages = {
     gloss: "to break",
   },
   συντετρῖφθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G4937",
     gloss: "to break",
   },
@@ -88283,7 +88283,7 @@ export const wordUsages = {
     gloss: "brought up with",
   },
   συντυχεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G4940",
     gloss: "to meet with",
   },
@@ -88771,12 +88771,12 @@ export const wordUsages = {
     gloss: "to save",
   },
   σῴζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4982",
     gloss: "to save",
   },
   σῴζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G4982",
     gloss: "to save",
   },
@@ -88819,7 +88819,7 @@ export const wordUsages = {
     gloss: "to save",
   },
   σωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G4982",
     gloss: "to save",
   },
@@ -88864,7 +88864,7 @@ export const wordUsages = {
     gloss: "to save",
   },
   σῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G4982",
     gloss: "to save",
   },
@@ -89063,7 +89063,7 @@ export const wordUsages = {
     gloss: "saving",
   },
   σωφρονεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G4993",
     gloss: "be of sound mind",
   },
@@ -89259,7 +89259,7 @@ export const wordUsages = {
     gloss: "to humble",
   },
   ταπεινοῦσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5013",
     gloss: "to humble",
   },
@@ -89573,7 +89573,7 @@ export const wordUsages = {
     gloss: "children",
   },
   τεκνογονεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5041",
     gloss: "to have children",
   },
@@ -89719,7 +89719,7 @@ export const wordUsages = {
     gloss: "to perfect",
   },
   τελειῶσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5048",
     gloss: "to perfect",
   },
@@ -89810,7 +89810,7 @@ export const wordUsages = {
     gloss: "to decease",
   },
   τελευτᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5053",
     gloss: "to decease",
   },
@@ -89883,7 +89883,7 @@ export const wordUsages = {
     gloss: "to finish",
   },
   τελεσθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5055",
     gloss: "to finish",
   },
@@ -90305,12 +90305,12 @@ export const wordUsages = {
     gloss: "protect",
   },
   τηρεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5083",
     gloss: "protect",
   },
   τηρεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5083",
     gloss: "protect",
   },
@@ -90330,12 +90330,12 @@ export const wordUsages = {
     gloss: "protect",
   },
   τηρηθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5083",
     gloss: "protect",
   },
   τηρῆσαί: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5083",
     gloss: "protect",
   },
@@ -90526,7 +90526,7 @@ export const wordUsages = {
     gloss: "to place",
   },
   θεῖναι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G5087",
     gloss: "to place",
   },
@@ -90632,7 +90632,7 @@ export const wordUsages = {
     gloss: "to place",
   },
   τεθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5087",
     gloss: "to place",
   },
@@ -90653,7 +90653,7 @@ export const wordUsages = {
     gloss: "to place",
   },
   τιθέναι: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5087",
     gloss: "to place",
   },
@@ -90689,7 +90689,7 @@ export const wordUsages = {
     gloss: "to give birth to",
   },
   τεκεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G5088",
     gloss: "to give birth to",
   },
@@ -90738,7 +90738,7 @@ export const wordUsages = {
     gloss: "to pluck",
   },
   τίλλειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5089",
     gloss: "to pluck",
   },
@@ -91312,12 +91312,12 @@ export const wordUsages = {
     gloss: "be bold",
   },
   τολμᾶν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5111",
     gloss: "be bold",
   },
   τολμῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5111",
     gloss: "be bold",
   },
@@ -91633,7 +91633,7 @@ export const wordUsages = {
     gloss: "to feed",
   },
   τρέφεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5142",
     gloss: "to feed",
   },
@@ -92021,7 +92021,7 @@ export const wordUsages = {
     gloss: "to obtain/happen",
   },
   τυχεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G5177",
     gloss: "to obtain/happen",
   },
@@ -92095,17 +92095,17 @@ export const wordUsages = {
     gloss: "to strike",
   },
   τύπτειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5180",
     gloss: "to strike",
   },
   Τύπτειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5180",
     gloss: "to strike",
   },
   τύπτεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5180",
     gloss: "to strike",
   },
@@ -92300,7 +92300,7 @@ export const wordUsages = {
     gloss: "to mistreat",
   },
   ὑβρίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5195",
     gloss: "to mistreat",
   },
@@ -92346,7 +92346,7 @@ export const wordUsages = {
     gloss: "insolent man",
   },
   ὑγιαίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5198",
     gloss: "be healthy",
   },
@@ -92684,7 +92684,7 @@ export const wordUsages = {
     gloss: "to go",
   },
   ὑπάγειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5217",
     gloss: "to go",
   },
@@ -92776,7 +92776,7 @@ export const wordUsages = {
     gloss: "to obey",
   },
   ὑπακούειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5219",
     gloss: "to obey",
   },
@@ -92792,7 +92792,7 @@ export const wordUsages = {
     gloss: "to obey",
   },
   ὑπακοῦσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5219",
     gloss: "to obey",
   },
@@ -92822,7 +92822,7 @@ export const wordUsages = {
     gloss: "married",
   },
   ὑπαντῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5221",
     gloss: "to go meet",
   },
@@ -92857,7 +92857,7 @@ export const wordUsages = {
     gloss: "to be",
   },
   ὑπάρχειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5225",
     gloss: "to be",
   },
@@ -92969,7 +92969,7 @@ export const wordUsages = {
     gloss: "to increase",
   },
   ὑπερβαίνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5233",
     gloss: "to wrong",
   },
@@ -93130,7 +93130,7 @@ export const wordUsages = {
     gloss: "to exalt",
   },
   ὑπερφρονεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5252",
     gloss: "be haughty",
   },
@@ -93166,7 +93166,7 @@ export const wordUsages = {
     gloss: "obedient",
   },
   ὑπηρετεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5256",
     gloss: "to serve",
   },
@@ -93410,7 +93410,7 @@ export const wordUsages = {
     gloss: "to take up/suppose",
   },
   ὑπολαμβάνειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5274",
     gloss: "to take up/suppose",
   },
@@ -93520,12 +93520,12 @@ export const wordUsages = {
     gloss: "to remind",
   },
   ὑπομιμνῄσκειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5279",
     gloss: "to remind",
   },
   Ὑπομνῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5279",
     gloss: "to remind",
   },
@@ -93671,7 +93671,7 @@ export const wordUsages = {
     gloss: "to return",
   },
   ὑποστρέφειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5290",
     gloss: "to return",
   },
@@ -93688,7 +93688,7 @@ export const wordUsages = {
     gloss: "to return",
   },
   ὑποστρέψαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5290",
     gloss: "to return",
   },
@@ -93772,7 +93772,7 @@ export const wordUsages = {
     gloss: "to subject",
   },
   ὑποτάξαι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G5293",
     gloss: "to subject",
   },
@@ -93795,7 +93795,7 @@ export const wordUsages = {
     gloss: "to subject",
   },
   ὑποτάσσεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5293",
     gloss: "to subject",
   },
@@ -93882,7 +93882,7 @@ export const wordUsages = {
     gloss: "example",
   },
   ὑπενεγκεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G5297",
     gloss: "to endure",
   },
@@ -93938,7 +93938,7 @@ export const wordUsages = {
     gloss: "to lack",
   },
   ὑστερεῖσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5302",
     gloss: "to lack",
   },
@@ -93949,7 +93949,7 @@ export const wordUsages = {
     gloss: "to lack",
   },
   ὑστερηκέναι: {
-    parse: "V-RAN｜Verb, peRfect, Active, iNfinitive",
+    parse: "V-RAN｜Verb, peRfect, Active, Infinitive",
     GN: "G5302",
     gloss: "to lack",
   },
@@ -94080,7 +94080,7 @@ export const wordUsages = {
     gloss: "high",
   },
   ὑψηλοφρονεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5309",
     gloss: "be arrogant",
   },
@@ -94126,7 +94126,7 @@ export const wordUsages = {
     gloss: "to lift up",
   },
   ὑψωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5312",
     gloss: "to lift up",
   },
@@ -94217,7 +94217,7 @@ export const wordUsages = {
     gloss: "to eat",
   },
   φαγεῖν: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5315",
     gloss: "to eat",
   },
@@ -94458,7 +94458,7 @@ export const wordUsages = {
     gloss: "to reveal",
   },
   πεφανερῶσθαι: {
-    parse: "V-RPN｜Verb, peRfect, Passive, iNfinitive",
+    parse: "V-RPN｜Verb, peRfect, Passive, Infinitive",
     GN: "G5319",
     gloss: "to reveal",
   },
@@ -94508,7 +94508,7 @@ export const wordUsages = {
     gloss: "to reveal",
   },
   φανερωθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5319",
     gloss: "to reveal",
   },
@@ -94752,7 +94752,7 @@ export const wordUsages = {
     gloss: "cloak",
   },
   ἐνέγκαι: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G5342",
     gloss: "to bear/lead",
   },
@@ -94845,12 +94845,12 @@ export const wordUsages = {
     gloss: "to bear/lead",
   },
   φέρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5342",
     gloss: "to bear/lead",
   },
   φέρεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5342",
     gloss: "to bear/lead",
   },
@@ -94979,7 +94979,7 @@ export const wordUsages = {
     gloss: "to flee",
   },
   φυγεῖν: {
-    parse: "V-2AAN｜Verb, 2nd Aorist, Active, iNfinitive",
+    parse: "V-2AAN｜Verb, 2nd Aorist, Active, Infinitive",
     GN: "G5343",
     gloss: "to flee",
   },
@@ -95104,7 +95104,7 @@ export const wordUsages = {
     gloss: "perishable",
   },
   φθέγγεσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G5350",
     gloss: "to speak",
   },
@@ -95353,7 +95353,7 @@ export const wordUsages = {
     gloss: "to love",
   },
   φιλῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5368",
     gloss: "to love",
   },
@@ -95573,7 +95573,7 @@ export const wordUsages = {
     gloss: "child loving",
   },
   φιλοτιμεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G5389",
     gloss: "to aspire",
   },
@@ -95615,7 +95615,7 @@ export const wordUsages = {
     gloss: "to muzzle",
   },
   φιμοῦν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5392",
     gloss: "to muzzle",
   },
@@ -95718,7 +95718,7 @@ export const wordUsages = {
     gloss: "to fear",
   },
   φοβεῖσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G5399",
     gloss: "to fear",
   },
@@ -96180,7 +96180,7 @@ export const wordUsages = {
     gloss: "to reason",
   },
   φρονεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5426",
     gloss: "to reason",
   },
@@ -96399,7 +96399,7 @@ export const wordUsages = {
     gloss: "protect",
   },
   φυλάξαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5442",
     gloss: "protect",
   },
@@ -96429,12 +96429,12 @@ export const wordUsages = {
     gloss: "protect",
   },
   φυλάσσειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5442",
     gloss: "protect",
   },
   φυλάσσεσθαι: {
-    parse: "V-PEN｜Verb, Present, Either middle or passive, iNfinitive",
+    parse: "V-PEN｜Verb, Present, Either middle or passive, Infinitive",
     GN: "G5442",
     gloss: "protect",
   },
@@ -96700,12 +96700,12 @@ export const wordUsages = {
     gloss: "to call",
   },
   φωνηθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5455",
     gloss: "to call",
   },
   φωνῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5455",
     gloss: "to call",
   },
@@ -96899,7 +96899,7 @@ export const wordUsages = {
     gloss: "to illuminate",
   },
   φωτίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5461",
     gloss: "to illuminate",
   },
@@ -96988,7 +96988,7 @@ export const wordUsages = {
     gloss: "to rejoice",
   },
   χαίρειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5463",
     gloss: "to rejoice",
   },
@@ -97046,7 +97046,7 @@ export const wordUsages = {
     gloss: "to rejoice",
   },
   χαρῆναι: {
-    parse: "V-2AON｜Verb, 2nd Aorist, passive depOnent, iNfinitive",
+    parse: "V-2AON｜Verb, 2nd Aorist, passive depOnent, Infinitive",
     GN: "G5463",
     gloss: "to rejoice",
   },
@@ -97138,7 +97138,7 @@ export const wordUsages = {
     gloss: "harsh",
   },
   χαλιναγωγῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5468",
     gloss: "to bridle",
   },
@@ -97304,7 +97304,7 @@ export const wordUsages = {
     gloss: "to give grace",
   },
   χαρίζεσθαί: {
-    parse: "V-PMN｜Verb, Present, Middle, iNfinitive",
+    parse: "V-PMN｜Verb, Present, Middle, Infinitive",
     GN: "G5483",
     gloss: "to give grace",
   },
@@ -97327,7 +97327,7 @@ export const wordUsages = {
     gloss: "to give grace",
   },
   χαρίσασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G5483",
     gloss: "to give grace",
   },
@@ -97350,7 +97350,7 @@ export const wordUsages = {
     gloss: "to give grace",
   },
   χαρισθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5483",
     gloss: "to give grace",
   },
@@ -97932,7 +97932,7 @@ export const wordUsages = {
     gloss: "to feed",
   },
   χορτάζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5526",
     gloss: "to feed",
   },
@@ -97942,12 +97942,12 @@ export const wordUsages = {
     gloss: "to feed",
   },
   χορτάσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5526",
     gloss: "to feed",
   },
   χορτασθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5526",
     gloss: "to feed",
   },
@@ -98159,7 +98159,7 @@ export const wordUsages = {
     gloss: "to announce",
   },
   χρηματίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5537",
     gloss: "to announce",
   },
@@ -98358,7 +98358,7 @@ export const wordUsages = {
     gloss: "to delay",
   },
   χρονίζειν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5549",
     gloss: "to delay",
   },
@@ -98409,7 +98409,7 @@ export const wordUsages = {
     gloss: "time",
   },
   χρονοτριβῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5551",
     gloss: "to spend time",
   },
@@ -98585,7 +98585,7 @@ export const wordUsages = {
     gloss: "to make room for",
   },
   χωρεῖν: {
-    parse: "V-PAN｜Verb, Present, Active, iNfinitive",
+    parse: "V-PAN｜Verb, Present, Active, Infinitive",
     GN: "G5562",
     gloss: "to make room for",
   },
@@ -98595,7 +98595,7 @@ export const wordUsages = {
     gloss: "to make room for",
   },
   χωρῆσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5562",
     gloss: "to make room for",
   },
@@ -98627,7 +98627,7 @@ export const wordUsages = {
     gloss: "to separate/leave",
   },
   χωρίζεσθαι: {
-    parse: "V-PPN｜Verb, Present, Passive, iNfinitive",
+    parse: "V-PPN｜Verb, Present, Passive, Infinitive",
     GN: "G5563",
     gloss: "to separate/leave",
   },
@@ -98647,7 +98647,7 @@ export const wordUsages = {
     gloss: "to separate/leave",
   },
   χωρίσαι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G5563",
     gloss: "to separate/leave",
   },
@@ -98668,7 +98668,7 @@ export const wordUsages = {
     gloss: "to separate/leave",
   },
   χωρισθῆναι: {
-    parse: "V-APN｜Verb, Aorist, Passive, iNfinitive",
+    parse: "V-APN｜Verb, Aorist, Passive, Infinitive",
     GN: "G5563",
     gloss: "to separate/leave",
   },
@@ -98812,12 +98812,12 @@ export const wordUsages = {
     gloss: "to lie",
   },
   ψεύσασθαι: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G5574",
     gloss: "to lie",
   },
   ψεύσασθαί: {
-    parse: "V-ADN｜Verb, Aorist, middle Deponent, iNfinitive",
+    parse: "V-ADN｜Verb, Aorist, middle Deponent, Infinitive",
     GN: "G5574",
     gloss: "to lie",
   },
@@ -99458,7 +99458,7 @@ export const wordUsages = {
     gloss: "fear",
   },
   διακαθᾶραι: {
-    parse: "V-AAN｜Verb, Aorist, Active, iNfinitive",
+    parse: "V-AAN｜Verb, Aorist, Active, Infinitive",
     GN: "G6016",
     gloss: "to scour",
   },
@@ -99790,7 +99790,7 @@ export const wordUsages = {
     gloss: "if indeed",
   },
   ἐγκαυχᾶσθαι: {
-    parse: "V-PNN｜Verb, Present, middle or passive depoNent, iNfinitive",
+    parse: "V-PNN｜Verb, Present, middle or passive depoNent, Infinitive",
     GN: "G7013",
     gloss: "to boast of",
   },
