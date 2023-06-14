@@ -150,19 +150,21 @@ const Verb = () => {
   }, [dispatch]);
 
   return (
-    <div className="body">
+    <>
       <VerbMenu setVerbMode={setVerbMode} />
-      <br></br>
-      <div style={{ marginTop: "70px" }}>{verbMode}</div>
-      <h1>{verb.word}</h1>
-      <VerbGrid
-        verb={verb}
-        dispatch={dispatch}
-        setWord={setWord}
-        randomWord={randomWord}
-        verbMode={verbMode}
-      />
-    </div>
+      <div className="verb-component">
+        <br></br>
+        <div style={{ marginTop: "70px" }}>{verbMode}</div>
+        <h1>{verb.word}</h1>
+        <VerbGrid
+          verb={verb}
+          dispatch={dispatch}
+          setWord={setWord}
+          randomWord={randomWord}
+          verbMode={verbMode}
+        />
+      </div>
+    </>
   );
 };
 

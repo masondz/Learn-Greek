@@ -272,54 +272,48 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
         </button>
       </div>{" "}
       <div className="lists-container">
-        {bookListIsOpen && (
-          <div className="lists" id="book-list">
-            {bookNames.map((book) => {
-              return (
-                <div
-                  className="list-option"
-                  value={book}
-                  onClick={handlePickBook}
-                  key={book}
-                >
-                  {book}
-                </div>
-              );
-            })}
-          </div>
-        )}
-        {chapterListIsOpen && (
-          <div className="lists" id="chapter-list">
-            {chapterList.map((chapter) => {
-              return (
-                <div
-                  className="list-option"
-                  value={chapter}
-                  onClick={handlePickChapter}
-                  key={chapter}
-                >
-                  {chapter}
-                </div>
-              );
-            })}
-          </div>
-        )}
-        {verseListIsOpen && (
-          <div className="lists" id="verse-list">
-            {verseList.map((verse) => {
-              return (
-                <div
-                  className="list-option"
-                  value={verse}
-                  onClick={handlePickVerse}
-                  key={verse}
-                >
-                  {verse}
-                </div>
-              );
-            })}
-          </div>
-        )}
+        <div className={`lists ${bookListIsOpen}`} id="book-list">
+          {bookNames.map((book) => {
+            return (
+              <div
+                className="list-option"
+                value={book}
+                onClick={handlePickBook}
+                key={book}
+              >
+                {book}
+              </div>
+            );
+          })}
+        </div>
+        <div className={`lists ${chapterListIsOpen}`} id="chapter-list">
+          {chapterList.map((chapter) => {
+            return (
+              <div
+                className="list-option"
+                value={chapter}
+                onClick={handlePickChapter}
+                key={chapter}
+              >
+                {chapter}
+              </div>
+            );
+          })}
+        </div>
+        <div className={`lists ${verseListIsOpen}`} id="verse-list">
+          {verseList.map((verse) => {
+            return (
+              <div
+                className="list-option"
+                value={verse}
+                onClick={handlePickVerse}
+                key={verse}
+              >
+                {verse}
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="nav-buttons">
         <button className="button" onClick={prevVerse}>

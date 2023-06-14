@@ -10,7 +10,6 @@ export default function Vocabulary() {
   const [isFlipped, setIsFlipped] = useState(false);
   const [deckIndex, setDeckIndex] = useState(0);
 
-
   const onClick = () => {
     isFlipped ? setIsFlipped(false) : setIsFlipped(true);
   };
@@ -58,44 +57,50 @@ export default function Vocabulary() {
   };
 
   return (
-    <div className="body">
-      
-      <MenuVocabulary setDeck={setDeck} setDeckIndex={setDeckIndex} setVocabList={setVocabList} setIsFlipped={setIsFlipped}/>
-      
+    <div className="vocab-component">
+      <MenuVocabulary
+        setDeck={setDeck}
+        setDeckIndex={setDeckIndex}
+        setVocabList={setVocabList}
+        setIsFlipped={setIsFlipped}
+      />
+
       <div className="vocab-container">
-      <ReactCardFlip
-        isFlipped={isFlipped}
-        flipDirection="horizontal"
-        className="card-container"
+        <ReactCardFlip
+          isFlipped={isFlipped}
+          flipDirection="horizontal"
+          className="card-container"
         >
-        <div key="front" onClick={onClick} className="card-front">
-          {deck[deckIndex]}
+          <div key="front" onClick={onClick} className="card-front">
+            {deck[deckIndex]}
+          </div>
+          <div onClick={onClick} key="back" className="card-back">
+            {vocabListObj[deck[deckIndex]]
+              ? vocabListObj[deck[deckIndex]].english
+              : "Pick Vocabulary List"}
+          </div>
+        </ReactCardFlip>
+        <div className="card-buttons">
+          <button className="button-vocabulary" onClick={handlePrev}>
+            {"<"}
+          </button>
+          <button className="button-vocabulary" onClick={addToLearnt}>
+            Learnt
+          </button>
+          <button className="button-vocabulary" onClick={retryVocab}>
+            Retry
+          </button>
+          <button className="button-vocabulary" onClick={handleNext}>
+            {">"}
+          </button>
         </div>
-        <div onClick={onClick} key="back" className="card-back">
-          {vocabListObj[deck[deckIndex]]
-            ? vocabListObj[deck[deckIndex]].english
-            : "Pick Vocabulary List"}
+        <div>
+          <p>
+            {deck[0] !== "Pick Vocab List"
+              ? `Cards in deck: ${deck.length}`
+              : ""}
+          </p>
         </div>
-      </ReactCardFlip>
-      <div className="card-buttons">
-        <button className="button-vocabulary" onClick={handlePrev}>
-          {"<"}
-        </button>
-        <button className="button-vocabulary" onClick={addToLearnt}>
-          Learnt
-        </button>
-        <button className="button-vocabulary" onClick={retryVocab}>
-          Retry
-        </button>
-        <button className="button-vocabulary" onClick={handleNext}>
-          {">"}
-        </button>
-      </div>
-      <div>
-        <p>
-          {deck[0] !== "Pick Vocab List" ? `Cards in deck: ${deck.length}` : ""}
-        </p>
-      </div>
       </div>
     </div>
   );

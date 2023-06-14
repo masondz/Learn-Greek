@@ -177,13 +177,14 @@ const Verse = () => {
 
   return (
     <div className="body">
-      <PickVerse setArticleGrid={setArticleGrid} blankGrid={blankGrid} />
       <Menu
         setArticleGrid={setArticleGrid}
         blankGrid={blankGrid}
         menuOptions={menuOptions}
         menuLinks={menuLinks}
       />
+      <br></br>
+      <PickVerse setArticleGrid={setArticleGrid} blankGrid={blankGrid} />
       <div className="verse-sentence">
         {verseArray.map((word, i) => {
           return (
