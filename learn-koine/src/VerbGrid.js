@@ -17,11 +17,21 @@ const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
 
   useEffect(() => {
     let caseOptions = document.getElementsByClassName("case-option");
+    let verbOptions = document.getElementsByClassName("verb-options");
     if (caseOptions) {
       for (let i = 0; i < caseOptions.length; i++) {
         caseOptions[i].className = "case-option";
       }
     }
+
+    if (verbOptions) {
+      for (let i = 0; i < verbOptions.length; i++) {
+        verbOptions[i].className = "verb-options";
+      }
+    }
+    setIsInfinitive(false);
+    setIsParticiple(false);
+    setIsRegularVerb(false);
   }, [word, reset]);
 
   const handleNext = () => {
@@ -83,7 +93,6 @@ const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
 };
 
 const VerbStepOne = ({
-  onClick,
   word,
   setIsRegularVerb,
   setIsInfinitive,
@@ -93,7 +102,8 @@ const VerbStepOne = ({
     e.preventDefault();
     if (
       !word.parse.includes("Participle") &&
-      !word.parse.includes("Infinitive")
+      !word.parse.includes("Infinitive") &&
+      word.parse.includes("Verb")
     ) {
       e.target.className = e.target.className + " correct";
       return setIsRegularVerb(true);
