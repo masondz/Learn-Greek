@@ -145,6 +145,7 @@
   width: 30%;
   max-width: 230px;
   padding: 5px 0px;
+  cursor: pointer;
 }
 
 @media (hover: hover) {
