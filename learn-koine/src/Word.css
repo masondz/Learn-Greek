@@ -133,19 +133,8 @@
   margin-right: 0.5em;
 }
 
-.verb-step-one {
-  margin: 0px auto 10px;
-  display: flex;
-  justify-content: space-around;
-  max-width: 700px;
-}
-
-.verb-options {
-  border: 2px solid white;
-  width: 30%;
-  max-width: 230px;
-  padding: 5px 0px;
-  cursor: pointer;
+.pronoun-grid {
+  border: 1px solid red;
 }
 
 @media (hover: hover) {

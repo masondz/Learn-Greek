@@ -1,4 +1,5 @@
 import "./Word.css";
+import "./Verb.css";
 import { selectWordSlice } from "./features/wordSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
@@ -19,47 +20,47 @@ const PronounGrid = ({ reset }) => {
 
   const reflexivePronounGrid = (
     <div className="pronouns-grid">
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+      <div className="pronoun-cases">
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           first
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           second
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           third
         </div>
       </div>
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+      <div className="pronoun-cases">
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           nominative
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           genitive
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           dative
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           accusative
         </div>
       </div>
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+      <div className="pronoun-cases">
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           singular
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           plural
         </div>
       </div>
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+      <div className="pronoun-cases">
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           masculine
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           feminine
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           neuter
         </div>
       </div>
@@ -68,47 +69,47 @@ const PronounGrid = ({ reset }) => {
 
   const possesiveGrid = (
     <div className="pronouns-grid">
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+      <div className="pronoun-cases">
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           first
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           second
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           third
         </div>
       </div>
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+      <div className="pronoun-cases">
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           nominative
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           genitive
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           dative
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           accusative
         </div>
       </div>
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+      <div className="pronoun-cases">
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           singular
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           plural
         </div>
       </div>
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+      <div className="pronoun-cases">
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           masculine
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           feminine
         </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
+        <div className={"pronoun-options"} onClick={(e) => checkCase(e)}>
           neuter
         </div>
       </div>
