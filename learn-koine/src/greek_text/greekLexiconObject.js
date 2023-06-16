@@ -27924,13 +27924,12 @@ export const wordUsages = {
   ἐμοί: {
     parse: "P-1DS｜Personal pronoun, first, dative, singular",
     GN: "G1473",
-    gloss: "I/we",
+    gloss: "I/we (mine)",
   },
   ἐμοὶ: {
-    parse:
-      "S-1SNPM｜Possessive pronoun, first, singular, nominative, plural, masculine",
-    GN: "G1699",
-    gloss: "mine",
+    parse: "S-1SNPM｜Personal pronoun, first, dative, singular",
+    GN: "G1473",
+    gloss: "I/we (mine)",
   },
   Ἐμοὶ: {
     parse: "P-1DS｜Personal pronoun, first, dative, singular",
@@ -27938,10 +27937,9 @@ export const wordUsages = {
     gloss: "I/we",
   },
   ἐμοῦ: {
-    parse:
-      "S-1SGSN｜Possessive pronoun, first, singular, genitive, singular, neuter",
-    GN: "G1699",
-    gloss: "mine",
+    parse: "S-1SGSN｜Personal pronoun, first, genitive, singular",
+    GN: "G1473",
+    gloss: "I/we (mine)",
   },
   ἡμᾶς: {
     parse: "P-1AP｜Personal pronoun, first, accusative, plural",

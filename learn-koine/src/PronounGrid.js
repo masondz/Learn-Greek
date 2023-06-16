@@ -81,14 +81,6 @@ const PronounGrid = ({ reset }) => {
       </div>
       <div className="cases">
         <div className={"case-option"} onClick={(e) => checkCase(e)}>
-          singular
-        </div>
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
-          plural
-        </div>
-      </div>
-      <div className="cases">
-        <div className={"case-option"} onClick={(e) => checkCase(e)}>
           nominative
         </div>
         <div className={"case-option"} onClick={(e) => checkCase(e)}>
