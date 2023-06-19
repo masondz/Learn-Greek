@@ -1,6 +1,6 @@
 export const greekPrepositions = {
   Διὰ: "through/because of",
-  Εἰς: "toward",
+  Εἰς: "unto/toward",
   Κατʼ: "according to",
   Κατὰ: "according to",
   Μεθʼ: "with/after",
@@ -13,8 +13,8 @@ export const greekPrepositions = {
   διʼ: "through/because of",
   διά: "through/because of",
   διὰ: "through/because of",
-  εἰς: "toward",
-  εἴς: "toward",
+  εἰς: "unto/toward",
+  εἴς: "unto/toward",
   εἵνεκεν: "because of",
   καθʼ: "according to",
   κατʼ: "according to",
