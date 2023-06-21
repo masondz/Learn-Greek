@@ -71,7 +71,10 @@ export const randomChoicesSelection = (obj, conjunctionGloss) => {
     while (initialArray.length < 4) {
       const keys = Object.keys(obj);
       let randomGloss = obj[keys[Math.floor(Math.random() * keys.length)]];
-      if (!initialArray.includes(randomGloss)) {
+
+      let glossArray = randomGloss.split("/");
+      console.log(`glossArray: ${glossArray}`);
+      if (!glossArray.some((e) => initialArray.includes(e))) {
         initialArray.push(randomGloss);
       }
     }
