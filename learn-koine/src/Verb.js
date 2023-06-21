@@ -162,7 +162,7 @@ const Verb = () => {
       <div className="verb-component">
         <div style={{ marginTop: "70px" }}>{verbMode}</div>
         <h1>{verb.word}</h1>
-        <h3>{wordUsages[verb.word].gloss}</h3>
+        <h3>{verb.word ? wordUsages[verb.word].gloss : ""}</h3>
         <VerbGrid
           verb={verb}
           dispatch={dispatch}
