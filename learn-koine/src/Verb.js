@@ -11,10 +11,17 @@ import { motion, useCycle, AnimatePresence } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import "./Menu.css";
 
-const VerbMenu = ({ setVerbMode }) => {
+const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
   const verseMode = useSelector(selectVerseMode);
   const [open, cycleOpen] = useCycle(true, false);
   const dispatch = useDispatch();
+
+  const handleSelect = (option) => {
+    handleClick(option);
+    setTimeout(() => {
+      cycleOpen();
+    }, 10);
+  };
 
   const sideVariants = {
     closed: {
@@ -36,17 +43,6 @@ const VerbMenu = ({ setVerbMode }) => {
       opacity: 0,
     },
     open: { opacity: 1 },
-  };
-
-  const handleClick = ({ option }) => {
-    dispatch(clearWord());
-    setVerbMode(option);
-    let splitOption = option.split(" ");
-    let nextVerb = randomWord(wordUsages, "parse", splitOption);
-    dispatch(setWord(nextVerb));
-    setTimeout(() => {
-      cycleOpen();
-    }, 10);
   };
 
   const menuOptions = [
@@ -96,7 +92,7 @@ const VerbMenu = ({ setVerbMode }) => {
                     <motion.button
                       className="menu-button"
                       variants={itemVariants}
-                      onClick={() => handleClick({ option })}
+                      onClick={() => handleSelect({ option })}
                     >
                       {option}
                     </motion.button>
@@ -149,9 +145,18 @@ const Verb = () => {
     dispatch(setMode("Parse Verbs"));
   }, [dispatch]);
 
+  const handleClick = ({ option = verbMode }) => {
+    dispatch(clearWord());
+    setVerbMode(option);
+    let lowerCaseOption = option.toLowerCase();
+    let splitOption = lowerCaseOption.split(" ");
+    let nextVerb = randomWord(wordUsages, "parse", splitOption);
+    dispatch(setWord(nextVerb));
+  };
+
   return (
     <div>
-      <VerbMenu setVerbMode={setVerbMode} />
+      <VerbMenu setVerbMode={setVerbMode} handleClick={handleClick} />
       <br></br>
       <div className="verb-component">
         <div style={{ marginTop: "70px" }}>{verbMode}</div>
@@ -163,6 +168,10 @@ const Verb = () => {
           randomWord={randomWord}
           verbMode={verbMode}
         />
+        <br></br>
+        <button className="button" onClick={handleClick}>
+          Random Verb
+        </button>
       </div>
     </div>
   );

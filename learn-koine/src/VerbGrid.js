@@ -40,7 +40,11 @@ const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
     for (let i = 0; i < caseOptions.length; i++) {
       caseOptions[i].className = "case-option";
     }
-    let nextVerb = randomWord(wordUsages, "parse", verbMode.split(" "));
+    let nextVerb = randomWord(
+      wordUsages,
+      "parse",
+      verbMode.toLowerCase().split(" ")
+    );
     dispatch(setWord(nextVerb));
   };
 
@@ -50,7 +54,7 @@ const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
     console.log(verbMode);
     console.log("check parsed thing");
     numCorrect++;
-    if (numCorrect === 2) {
+    if (numCorrect === 5) {
       setCheckParse("Good Job!");
       setTimeout(() => {
         handleNext();

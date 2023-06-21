@@ -76774,13 +76774,13 @@ export const wordUsages = {
   πεπολίτευμαι: {
     parse: "V-RMI-1S｜Verb, perfect, middle, indicative, first, singular",
     GN: "G4176",
-    gloss: "be a citizen",
+    gloss: "to conduct",
   },
   πολιτεύεσθε: {
     parse:
       "V-PNM-2P｜Verb, present, Middle or Passive deponent, imperative, second, plural",
     GN: "G4176",
-    gloss: "be a citizen",
+    gloss: "to conduct",
   },
   πολῖται: {
     parse: "N-NPM｜Noun, nominative, plural, masculine",
