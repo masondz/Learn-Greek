@@ -151,6 +151,9 @@ const Verb = () => {
     setVerbMode(option);
     let lowerCaseOption = option.toLowerCase();
     let splitOption = lowerCaseOption.split(" ");
+    if (option === "Select Verb Form to Practice") {
+      return alert("You must select a verb option from menu!");
+    }
     let nextVerb = randomWord(wordUsages, "parse", splitOption);
     dispatch(setWord(nextVerb));
   };
