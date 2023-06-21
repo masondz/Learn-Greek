@@ -49,6 +49,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
     "Present Active Indicative",
     "Future Active Indicative",
     "Aorist Active Indicative",
+    "Perfect Active Indicative",
     "Imperfect Active Indicative",
   ];
 
