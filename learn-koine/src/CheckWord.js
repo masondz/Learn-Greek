@@ -30,17 +30,19 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
     partOfSpeech.includes("Adverb") ||
     partOfSpeech.includes("Particle")
   ) {
-    describeWord = ` - ${partOfSpeech} - "${gloss}"`;
+    describeWord = `${selectedWord} - ${partOfSpeech} - "${gloss}"`;
   } else if (partOfSpeech.includes("Hebrew")) {
     describeWord = `Hebrew transliteration (indeclinable) - ${gloss}`;
+  } else {
+    describeWord = `${selectedWord} - ${partOfSpeech}`;
   }
 
   return (
     <div>
       <div className="chosen-word">
-        <p>{selectedWord}</p>
         <p>{describeWord}</p>
       </div>
+      <br></br>
       <div className="grid-area">{children}</div>
       <br></br>
       <div className="button-group">

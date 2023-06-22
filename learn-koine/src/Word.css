@@ -138,11 +138,12 @@
 }
 
 .chosen-word {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 
 .chosen-word:first-child p {
-  margin-right: 0.5em;
+  /* margin-right: 0.5em; */
 }
 
 .vocative {
@@ -178,8 +179,8 @@
     max-width: 200px;
   }
 
-  .chosen-word:first-child {
-    margin-right: 1px;
+  .chosen-word:first-child p {
+    margin-right: 0.01em;
   }
 
   .button {
