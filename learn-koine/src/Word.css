@@ -178,6 +178,10 @@
     max-width: 200px;
   }
 
+  .chosen-word:first-child {
+    margin-right: 1px;
+  }
+
   .button {
     width: 15em;
     margin-bottom: 2em;

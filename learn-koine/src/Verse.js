@@ -23,6 +23,7 @@ import PickVerse from "./PickVerse";
 import { newTestament } from "./PickVerse";
 import { greekText } from "./greek_text/greekText";
 import Toolkit from "./Toolkit";
+import AdverbGrid from "./AdverbGrid";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -140,6 +141,8 @@ const Verse = () => {
       break;
     case "Verb":
       practiceGrid = <VerbGrid verbMode={"parsing"} reset={reset} />;
+    case "Adverb":
+      practiceGrid = <AdverbGrid reset={reset} />;
       break;
     default:
       practiceGrid = (
