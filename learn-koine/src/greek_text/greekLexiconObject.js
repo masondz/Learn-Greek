@@ -45591,9 +45591,9 @@ export const wordUsages = {
     GN: "G2399",
     gloss: "unlearned",
   },
-  ἰδού: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!" },
-  ἰδοὺ: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!" },
-  Ἰδοὺ: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!" },
+  ἰδού: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!/behold!" },
+  ἰδοὺ: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!/behold!" },
+  Ἰδοὺ: { parse: "INJ｜Interjection", GN: "G2400", gloss: "look!/behold!" },
   Ἰδουμαίας: {
     parse: "N-GSF-L｜Noun, genitive, singular, feminine, Location",
     GN: "G2401",
