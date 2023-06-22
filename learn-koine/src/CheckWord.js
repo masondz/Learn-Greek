@@ -28,11 +28,14 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
     partOfSpeech.includes("Adjective") ||
     partOfSpeech.includes("Verb") ||
     partOfSpeech.includes("Adverb") ||
-    partOfSpeech.includes("Particle")
+    partOfSpeech.includes("Particle") ||
+    partOfSpeech.includes("Interjection")
   ) {
     describeWord = `${selectedWord} - ${partOfSpeech} - "${gloss}"`;
   } else if (partOfSpeech.includes("Hebrew")) {
-    describeWord = `Hebrew transliteration (indeclinable) - ${gloss}`;
+    describeWord = `${selectedWord} - Hebrew transliteration (indeclinable) - ${gloss}`;
+  } else if (partOfSpeech.includes("Aramaic")) {
+    describeWord = `${selectedWord} - Aramaic transliteration (indeclinable) - ${gloss}`;
   } else {
     describeWord = `${selectedWord} - ${partOfSpeech}`;
   }

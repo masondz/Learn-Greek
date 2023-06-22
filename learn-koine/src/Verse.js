@@ -141,6 +141,7 @@ const Verse = () => {
       break;
     case "Verb":
       practiceGrid = <VerbGrid verbMode={"parsing"} reset={reset} />;
+      break;
     case "Adverb":
       practiceGrid = <AdverbGrid reset={reset} />;
       break;

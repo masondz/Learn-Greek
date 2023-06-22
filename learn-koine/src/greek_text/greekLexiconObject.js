@@ -32219,12 +32219,12 @@ export const wordUsages = {
     gloss: "Elymas",
   },
   ἐλωῒ: {
-    parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
+    parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G1682",
     gloss: "Eloi",
   },
   Ἐλωῒ: {
-    parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
+    parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G1682",
     gloss: "Eloi",
   },
@@ -54211,7 +54211,7 @@ export const wordUsages = {
     gloss: "Quartus",
   },
   κουμ: {
-    parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
+    parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G2891",
     gloss: "stand up!",
   },
@@ -56310,7 +56310,7 @@ export const wordUsages = {
     gloss: "speech",
   },
   λεμὰ: {
-    parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
+    parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G2982",
     gloss: "why?",
   },
@@ -59196,12 +59196,12 @@ export const wordUsages = {
     gloss: "to fade",
   },
   θά: {
-    parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
+    parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G3134",
     gloss: "Come, Lord!",
   },
   Μαράνα: {
-    parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
+    parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G3134",
     gloss: "Come, Lord!",
   },
@@ -81746,7 +81746,7 @@ export const wordUsages = {
   ῥαββί: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
   Ῥαββί: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
   Ραββουνι: {
-    parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
+    parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G4462",
     gloss: "Rabboni",
   },
@@ -81806,7 +81806,7 @@ export const wordUsages = {
     gloss: "trickery",
   },
   Ῥακά: {
-    parse: "ARAM｜ARAMaic transliterated word (indeclinable)",
+    parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G4469",
     gloss: "fool",
   },
