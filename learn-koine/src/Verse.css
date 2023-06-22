@@ -99,10 +99,30 @@
   bottom: 30px;
 }
 
-.verse-word-highlight-correct .indicator {
+.verse-word-highlight-odd p {
+  position: relative;
+  bottom: 30px;
+}
+
+.verse-word-highlight-odd .indicator {
   position: relative;
   bottom: 15px;
 }
+
+.verse-word-highlight-odd .indicator-highlight-odd {
+  position: relative;
+  bottom: 15px;
+}
+
+.indicator-highlight-odd {
+  font-size: small;
+  position: relative;
+  bottom: 15px;
+  height: 0px;
+  color: white;
+  opacity: 1;
+}
+
 .verse-word-highlight-wrong p {
   position: relative;
   bottom: 30px;
@@ -130,6 +150,20 @@
   margin-right: 2px;
   padding: 0px 2.5px;
   background-color: rgb(255, 0, 0);
+  border-radius: 5%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.verse-word-highlight-odd {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  height: 55px;
+  margin-right: 2px;
+  padding: 0px 2.5px;
+  background-color: goldenrod;
   border-radius: 5%;
   -webkit-user-select: none;
   -ms-user-select: none;

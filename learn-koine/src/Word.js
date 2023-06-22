@@ -46,6 +46,12 @@ const Word = (props) => {
     if (highlight.includes("-highlight-correct")) {
       return;
     }
+    if (wordData.parse.includes("Interjection")) {
+      setHighlight("-highlight-odd");
+      setIndicator(correctPick);
+      dispatch(setWord(wordData));
+      return;
+    }
     if (verseMode === "Noun and Adjective") {
       if (
         wordData.parse.includes("Noun") ||
