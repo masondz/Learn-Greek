@@ -104,6 +104,18 @@
   cursor: pointer;
 }
 
+.cases .vocative-container {
+  border: none;
+}
+
+.cases .vocative-container:hover {
+  cursor: default;
+}
+
+.cases .vocative:hover {
+  cursor: default;
+}
+
 .button {
   background-color: #282c34;
   border-radius: 10px;
@@ -133,8 +145,21 @@
   margin-right: 0.5em;
 }
 
-.pronoun-grid {
-  border: 1px solid red;
+.vocative {
+  position: relative;
+  rotate: -30deg;
+  margin-top: 175px;
+  margin-left: 0.55em;
+  bottom: 80px;
+  background-color: goldenrod;
+}
+
+.vocative-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 100px;
 }
 
 @media (hover: hover) {
@@ -156,5 +181,9 @@
   .button {
     width: 15em;
     margin-bottom: 2em;
+  }
+
+  .vocative {
+    margin-left: 0.1em;
   }
 }

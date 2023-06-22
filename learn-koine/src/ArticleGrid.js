@@ -6,6 +6,12 @@ import { selectWordSlice } from "./features/wordSlice";
 export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   const { parse } = useSelector(selectWordSlice);
 
+  let isVocative;
+
+  if (parse.includes("Vocative") && !parse.includes("nominative")) {
+    isVocative = true;
+  }
+
   let masculineOrFirst = articleGrid.masculine;
   let feminineOrSecond = articleGrid.feminine;
   let neutereOrThird = articleGrid.neuter;
@@ -41,6 +47,11 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   return (
     <div className="categories">
       <div className="cases">
+        {isVocative && (
+          <div className="vocative-container">
+            <div className={"case-option vocative"}>vocative</div>
+          </div>
+        )}
         <div
           className={"case-option" + articleGrid.nominative}
           onClick={(e) => checkCase(e)}
