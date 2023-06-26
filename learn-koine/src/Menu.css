@@ -28,6 +28,10 @@
   border: 2px solid rgb(119, 119, 118);
 }
 
+.verb-menu-options {
+  padding-left: 5px;
+}
+
 .menu-link {
   color: black;
   font-size: smaller;

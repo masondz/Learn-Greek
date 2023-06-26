@@ -27,13 +27,13 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
     closed: {
       transition: {
         // staggerChildren: 0.01,
-        staggerDiretion: -1,
+        staggerDiretion: 0.01,
       },
     },
     open: {
       transition: {
         // staggerChildren: 0.1,
-        staggerDirection: 1,
+        staggerDirection: 0.1,
       },
     },
   };
@@ -73,11 +73,124 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
               backgoundColor: "white",
             }}
             exit={{
-              height: 10,
+              height: 0,
               width: 0,
-              transition: { delay: 0.29, duration: 0.1 },
+              transition: { delay: 0.5, duration: 0.3 },
             }}
           >
+            <motion.div
+              className="verb-menu-options"
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={itemVariants}
+            >
+              <motion.h2>Tense</motion.h2>
+              <input type="radio" id="present" name="tense" value="present" />
+              <label for="present">Present</label>
+              <input type="radio" id="aorist" name="tense" value="aorist" />
+              <label for="aorist">Aorist</label>
+              <input type="radio" id="future" name="tense" value="future" />
+              <label for="future">Future</label>
+              <input type="radio" id="perfect" name="tense" value="perfect" />
+              <label for="perfect">Perfect</label>
+              <input
+                type="radio"
+                id="Imperfect"
+                name="voice"
+                value="imperfect"
+              />
+              <label for="imperfect">Imperfect</label>
+
+              <motion.h2>Voice</motion.h2>
+              <input type="radio" id="active" name="voice" value="active" />
+              <label for="active">Active</label>
+              <input type="radio" id="middle" name="voice" value="middle" />
+              <label for="middle">Middle</label>
+              <input type="radio" id="passive" name="voice" value="passive" />
+              <label for="passive">Passive</label>
+              <input type="radio" id="deponent" name="voice" value="deponent" />
+              <label for="deponent">Deponent</label>
+
+              <motion.h2>Mood</motion.h2>
+              <input
+                type="radio"
+                id="indicative"
+                name="mood"
+                value="indicative"
+              />
+              <label for="indicative">Indicative</label>
+              <input
+                type="radio"
+                id="subjunctive"
+                name="mood"
+                value="subjunctive"
+              />
+              <label for="subjunctive">Subjunctive</label>
+              <input
+                type="radio"
+                id="imperative"
+                name="mood"
+                value="imperative"
+              />
+              <label for="imperative">Imperative</label>
+
+              <motion.h2>Person</motion.h2>
+              <input type="radio" id="first" name="person" value="first" />
+              <label for="first">First</label>
+              <input type="radio" id="second" name="person" value="second" />
+              <label for="second">Second</label>
+              <input type="radio" id="third" name="person" value="third" />
+              <label for="third">Third</label>
+
+              <motion.h3>Number</motion.h3>
+              <input
+                type="radio"
+                id="singular"
+                name="person"
+                value="singular"
+              />
+              <label for="singular">Singular</label>
+              <input type="radio" id="plural" name="person" value="plural" />
+              <label for="plural">Plural</label>
+              <br></br>
+              <motion.button
+                onClick={() => {
+                  alert("coming soon!");
+                  cycleOpen();
+                }}
+              >
+                Submit
+              </motion.button>
+              <motion.div
+                className="menu-links"
+                initial="closed"
+                animate="open"
+                exit="closed"
+                variants={itemVariants}
+              >
+                <motion.h3>Links</motion.h3>
+                {menuLinks.map((link) => {
+                  return (
+                    <>
+                      <Link
+                        to={"/" + link}
+                        className="menu-link"
+                        onClick={() => dispatch(clearWord())}
+                      >
+                        {link === "parsing-verse" ? "parsing practice" : link}
+                      </Link>
+                      <br></br>
+                    </>
+                  );
+                })}
+                <br></br>
+                <Link to={"/"} className="menu-link">
+                  Home
+                </Link>
+              </motion.div>
+            </motion.div>
+            {/* 
             <div></div>
             <motion.div
               className="menu-options"
@@ -130,6 +243,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                 Home
               </Link>
             </motion.div>
+             */}
           </motion.div>
         )}
       </AnimatePresence>
