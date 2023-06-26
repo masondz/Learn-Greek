@@ -21,9 +21,36 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
 
   const bookNames = Object.keys(newTestament);
 
+  const makeHighlight = (e) => {
+    e.preventDefault();
+    const specificList = e.target.className.split(" ")[1];
+    console.log(specificList);
+    if (specificList === "book-option") {
+      removeHighlight("book-option");
+      removeHighlight("chapter-option");
+      removeHighlight("verse-option");
+    } else if (specificList === "chapter-option") {
+      removeHighlight("chapter-option");
+      removeHighlight("verse-option");
+    } else {
+      removeHighlight("verse-option");
+    }
+    e.target.className = e.target.className + " selected";
+    return;
+  };
+
+  const removeHighlight = (listOption) => {
+    const highlightedChoices = document.getElementsByClassName(listOption);
+    for (let i = 0; i < highlightedChoices.length; i++) {
+      highlightedChoices[i].className = `list-option ${listOption}`;
+    }
+    return;
+  };
+
   const handlePickBook = (e) => {
     e.preventDefault();
     const pickedBook = e.target.innerHTML;
+    makeHighlight(e);
     setChapterList(updateChapterList(pickedBook));
     setChosenBook(pickedBook);
     setVerseList(updateVerseList(chosenChapter, pickedBook));
@@ -45,6 +72,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
 
   const handlePickChapter = (e) => {
     e.preventDefault();
+    makeHighlight(e);
     const chapterNumber = e.target.innerHTML;
     console.log(chapterNumber);
     setVerseList(updateVerseList(chapterNumber));
@@ -73,6 +101,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
 
   const handlePickVerse = (e) => {
     e.preventDefault();
+    makeHighlight(e);
     let encodeVerse = "";
     if (Number(e.target.innerHTML) < 10) {
       encodeVerse = "0" + e.target.innerHTML;
@@ -276,7 +305,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
           {bookNames.map((book) => {
             return (
               <div
-                className="list-option"
+                className="list-option book-option"
                 value={book}
                 onClick={handlePickBook}
                 key={book}
@@ -290,7 +319,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
           {chapterList.map((chapter) => {
             return (
               <div
-                className="list-option"
+                className="list-option chapter-option"
                 value={chapter}
                 onClick={handlePickChapter}
                 key={chapter}
@@ -304,7 +333,7 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
           {verseList.map((verse) => {
             return (
               <div
-                className="list-option"
+                className="list-option verse-option"
                 value={verse}
                 onClick={handlePickVerse}
                 key={verse}
