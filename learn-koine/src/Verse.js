@@ -24,6 +24,7 @@ import { newTestament } from "./PickVerse";
 import { greekText } from "./greek_text/greekText";
 import Toolkit from "./Toolkit";
 import AdverbGrid from "./AdverbGrid";
+import ParticleGrid from "./ParticleGrid";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -144,6 +145,9 @@ const Verse = () => {
       break;
     case "Adverb":
       practiceGrid = <AdverbGrid reset={reset} />;
+      break;
+    case "Particle":
+      practiceGrid = <ParticleGrid rese={reset} />;
       break;
     default:
       practiceGrid = (
