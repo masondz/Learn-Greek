@@ -28,8 +28,13 @@
   border: 2px solid rgb(119, 119, 118);
 }
 
+.verb-menu-options h3 {
+  font-size: 1em;
+}
+
 .verb-menu-options {
   padding-left: 5px;
+  font-size: 0.8em;
 }
 
 .menu-link {
