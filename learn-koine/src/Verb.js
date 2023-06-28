@@ -19,6 +19,17 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
   const [open, cycleOpen] = useCycle(true, false);
   const dispatch = useDispatch();
 
+  const checkSelectionExists = (options) => {
+    if (
+      options.includes("future") &&
+      (options.includes("imperative") || options.includes("subjunctive"))
+    ) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+
   const handleSelect = (verbCharacteristics) => {
     console.log(verbCharacteristics);
     const optionsArr = Object.keys(verbCharacteristics);
@@ -29,6 +40,10 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
     }
     if (!options) {
       return alert("You must pick verb options from the menu!!");
+    }
+    if (!checkSelectionExists(options)) {
+      alert("Verb with given characteristics does not exist.");
+      return;
     }
     setVerbMode(options);
     setTimeout(() => {
