@@ -25,15 +25,24 @@ const VerbMenuOptions = ({
   };
 
   return (
-    <div className="verb-menu-options">
+    <div className="verb-menu-categories">
       {menuOptions.map((option) => {
         return (
-          <div key={option} onClick={handleAddCharacteristic}>
+          <div
+            className="verb-menu-selection"
+            key={option}
+            onClick={handleAddCharacteristic}
+          >
             {option}
           </div>
         );
       })}
-      <div onClick={handleAddCharacteristic}>All</div>
+      <div
+        className="verb-menu-all-selection"
+        onClick={handleAddCharacteristic}
+      >
+        All
+      </div>
     </div>
   );
 };

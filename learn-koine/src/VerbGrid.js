@@ -308,32 +308,4 @@ const InfinitiveGrid = ({ onClick }) => {
   );
 };
 
-//Verbs: Tense Voice Mood Person Number
-// ἀγαπῶ: {
-//   parse: "V-PAI-1S｜Verb, Present, Active, Indicative, first, singular",
-//   GN: "G25",
-//   gloss: "to love",
-// }
-
-// Tenses       Voices      Moods         Number      Person    Gender
-// Present      Active      Indicative    Singular    First     Masculine
-// Aorist       Middle      Subjunctive   Plural      Second    Feminine
-// Perfect      Passive     Imperative                Third     Neuter
-// Imperfect    Deponent
-// Future
-
-//Participle: Tense, Voice, Particple, Case, Number, Gender
-// ἀγαπῶν: {
-//   parse:
-//     "V-PAP-NSM｜Verb, Present, Active, Participle, nominative, singular, masculine",
-//   GN: "G25",
-//   gloss: "to love",
-// }
-
-//Infinitive: Tense, Voice, Infinitive
-// ἀγαπᾶν: {
-//   parse: "V-PAN｜Verb, Present, Active, Infinitive",
-//   GN: "G25",
-//   gloss: "to love",
-// }
 export default VerbGrid;

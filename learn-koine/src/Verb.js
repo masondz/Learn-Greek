@@ -120,7 +120,9 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                 setVerbCharacteristics={setVerbCharacteristics}
                 characteristic={"Number"}
               />
+              <br></br>
               <motion.button
+                className="button"
                 onClick={() => {
                   handleSelect(verbCharacteristics);
                   cycleOpen();
