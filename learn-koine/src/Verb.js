@@ -172,10 +172,11 @@ const Verb = () => {
     dispatch(setMode("Parse Verbs"));
   }, [dispatch]);
 
-  const handleClick = (option) => {
+  const handleClick = (option = verbMode) => {
+    console.log(option);
     dispatch(clearWord());
-    let lowerCaseOption = option.toLowerCase();
-    let splitOption = lowerCaseOption.split(" ");
+    // let lowerCaseOption = option.toLowerCase();
+    let splitOption = option.split(" ");
     let nextVerb = randomWord(wordUsages, "parse", splitOption);
     dispatch(setWord(nextVerb));
   };
@@ -196,7 +197,7 @@ const Verb = () => {
           verbMode={verbMode}
         />
         <br></br>
-        <button className="button" onClick={handleClick}>
+        <button className="button" onClick={() => handleClick()}>
           Random Verb
         </button>
       </div>

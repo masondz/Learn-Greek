@@ -54,7 +54,10 @@ const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
     console.log(verbMode);
     console.log("check parsed thing");
     numCorrect++;
-    if (numCorrect === 5) {
+    if (
+      numCorrect === 5 ||
+      (word.parse.includes("Infinitive") && numCorrect === 2)
+    ) {
       setCheckParse("Good Job!");
       setTimeout(() => {
         handleNext();
