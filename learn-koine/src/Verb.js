@@ -13,7 +13,9 @@ import "./Menu.css";
 import VerbMenuOptions from "./VerbMenuOptions";
 
 const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
-  const [verbCharacteristics, setVerbCharacteristics] = useState({});
+  const [verbCharacteristics, setVerbCharacteristics] = useState({
+    partOfSpeech: "Verb",
+  });
   const [open, cycleOpen] = useCycle(true, false);
   const dispatch = useDispatch();
 
@@ -124,7 +126,6 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                 className="button"
                 onClick={() => {
                   handleSelect(verbCharacteristics);
-                  cycleOpen();
                 }}
               >
                 Submit
