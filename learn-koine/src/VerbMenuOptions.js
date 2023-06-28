@@ -10,16 +10,37 @@ const VerbMenuOptions = ({
   //menu options will be an array
   useEffect(() => {
     const charChoices = document.getElementsByClassName(characteristic);
+    let anOptionIsPicked = false;
+    let allOptionIndex = 0;
     for (let i = 0; i < charChoices.length; i++) {
+      if (charChoices[i].innerHTML === "All") {
+        allOptionIndex = i;
+      }
+
       if (
         verbCharacteristics[characteristic] ===
-        charChoices[i].innerHTML.toLowerCase()
+          charChoices[i].innerHTML.toLowerCase() &&
+        !charChoices[i].className.includes("chosen-option")
       ) {
-        console.log(charChoices[i].className);
-        charChoices[i].className = charChoices[i].className + " chosen-option";
+        charChoices[i].className += " chosen-option";
+        anOptionIsPicked = true;
+        console.log(`${charChoices[i].innerHTML}: ${charChoices[i].className}`);
       }
     }
-  }, []);
+    if (anOptionIsPicked) {
+      console.log("option picked");
+      if (
+        charChoices[allOptionIndex].className.includes(
+          "verb-menu-all-selection"
+        )
+      ) {
+        console.log(charChoices[allOptionIndex]);
+        charChoices[
+          allOptionIndex
+        ].className = `${characteristic} verb-menu-all-selection`;
+      }
+    }
+  });
 
   const controlHighlight = (e) => {
     const charCategoryArray = document.getElementsByClassName(characteristic);
@@ -72,8 +93,9 @@ const VerbMenuOptions = ({
         );
       })}
       <div
-        className={`${characteristic} verb-menu-all-selection`}
+        className={`${characteristic} verb-menu-all-selection chosen-all-option`}
         onClick={handleAddCharacteristic}
+        key={characteristic + "all"}
       >
         All
       </div>
