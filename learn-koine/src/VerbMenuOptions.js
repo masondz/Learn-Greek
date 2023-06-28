@@ -1,4 +1,5 @@
 import "./Menu.css";
+import { useEffect } from "react";
 
 const VerbMenuOptions = ({
   menuOptions,
@@ -7,24 +8,21 @@ const VerbMenuOptions = ({
   verbCharacteristics,
 }) => {
   //menu options will be an array
-
-  // const handleNext = () => {
-  //   let caseOptions = document.getElementsByClassName("case-option");
-  //   console.log(caseOptions);
-  //   for (let i = 0; i < caseOptions.length; i++) {
-  //     caseOptions[i].className = "case-option";
-  //   }
-  //   let nextVerb = randomWord(
-  //     wordUsages,
-  //     "parse",
-  //     verbMode.toLowerCase().split(" ")
-  //   );
-  //   dispatch(setWord(nextVerb));
-  // };
+  useEffect(() => {
+    const charChoices = document.getElementsByClassName(characteristic);
+    for (let i = 0; i < charChoices.length; i++) {
+      if (
+        verbCharacteristics[characteristic] ===
+        charChoices[i].innerHTML.toLowerCase()
+      ) {
+        console.log(charChoices[i].className);
+        charChoices[i].className = charChoices[i].className + " chosen-option";
+      }
+    }
+  }, []);
 
   const controlHighlight = (e) => {
     const charCategoryArray = document.getElementsByClassName(characteristic);
-    console.log(charCategoryArray);
 
     for (let i = 0; i < charCategoryArray.length; i++) {
       charCategoryArray[i].className = charCategoryArray[i].className.replace(
@@ -48,7 +46,6 @@ const VerbMenuOptions = ({
     e.preventDefault();
     controlHighlight(e);
     const charOption = e.target.innerHTML.toLowerCase();
-    console.log(charOption);
     const newCharOptions = { ...verbCharacteristics };
 
     if (charOption === "all") {
@@ -58,7 +55,6 @@ const VerbMenuOptions = ({
     }
     newCharOptions[characteristic] = charOption;
     setVerbCharacteristics(newCharOptions);
-    console.log(newCharOptions);
     return;
   };
 
