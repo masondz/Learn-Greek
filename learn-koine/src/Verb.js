@@ -104,6 +104,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                 verbCharacteristics={verbCharacteristics}
                 setVerbCharacteristics={setVerbCharacteristics}
                 characteristic={"Tense"}
+                key="Tense"
               />
 
               <motion.h3>Voice</motion.h3>
@@ -112,6 +113,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                 verbCharacteristics={verbCharacteristics}
                 setVerbCharacteristics={setVerbCharacteristics}
                 characteristic={"Voice"}
+                key="Voice"
               />
 
               <motion.h3>Mood</motion.h3>
@@ -120,6 +122,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                 verbCharacteristics={verbCharacteristics}
                 setVerbCharacteristics={setVerbCharacteristics}
                 characteristic={"Mood"}
+                key="Mood"
               />
 
               <motion.h3>Person</motion.h3>
@@ -128,6 +131,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                 verbCharacteristics={verbCharacteristics}
                 setVerbCharacteristics={setVerbCharacteristics}
                 characteristic={"Person"}
+                key="Person"
               />
 
               <motion.h3>Number</motion.h3>
@@ -136,12 +140,14 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                 verbCharacteristics={verbCharacteristics}
                 setVerbCharacteristics={setVerbCharacteristics}
                 characteristic={"Number"}
+                key="Number"
               />
               <motion.button
                 className="button"
                 onClick={() => {
                   handleSelect(verbCharacteristics);
                 }}
+                key="Submit-Button"
               >
                 Submit
               </motion.button>
@@ -160,6 +166,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                         to={"/" + link}
                         className="menu-link"
                         onClick={() => dispatch(clearWord())}
+                        key={link}
                       >
                         {link === "parsing-verse" ? "parsing practice" : link}
                       </Link>
@@ -168,7 +175,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
                   );
                 })}
                 <br></br>
-                <Link to={"/"} className="menu-link">
+                <Link to={"/"} className="menu-link" key="home-link">
                   Home
                 </Link>
               </motion.div>
