@@ -51,17 +51,27 @@ export const parseWord = (inputWord) => {
   return wordState;
 };
 
-export const randomWord = (obj, attribute, arr) => {
+export const randomWord = (obj, attribute, arr, exclusions = []) => {
   const keys = Object.keys(obj);
   const checkKey = keys[Math.floor(Math.random() * keys.length)];
   let isEveryCharInAttribute = arr.every((characteristic) =>
     obj[checkKey][attribute].includes(characteristic)
   );
-  if (isEveryCharInAttribute) {
+
+  let isThereExclusion = false;
+  for (let i = 0; i < exclusions.length; i++) {
+    if (obj[checkKey][attribute].includes(exclusions[i])) {
+      isThereExclusion = true;
+    }
+  }
+
+  console.log(isThereExclusion);
+
+  if (isEveryCharInAttribute && !isThereExclusion) {
     console.log(checkKey + " " + obj[checkKey][attribute]);
     return { word: checkKey, parse: obj[checkKey][attribute] };
   } else {
-    return randomWord(obj, attribute, arr);
+    return randomWord(obj, attribute, arr, exclusions);
   }
 };
 

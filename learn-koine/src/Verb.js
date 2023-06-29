@@ -12,10 +12,13 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Menu.css";
 import VerbMenuOptions from "./VerbMenuOptions";
 
-const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
-  const [verbCharacteristics, setVerbCharacteristics] = useState({
-    partOfSpeech: "Verb",
-  });
+const VerbMenu = ({
+  setVerbMode,
+  handleClick,
+  verbMode,
+  verbCharacteristics,
+  setVerbCharacteristics,
+}) => {
   const [open, cycleOpen] = useCycle(true, false);
   const dispatch = useDispatch();
 
@@ -35,6 +38,7 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
     const optionsArr = Object.keys(verbCharacteristics);
     console.log(optionsArr);
     let options = "";
+
     for (let i = 0; i < optionsArr.length; i++) {
       options += ` ${verbCharacteristics[optionsArr[i]]}`;
     }
@@ -92,6 +96,14 @@ const VerbMenu = ({ setVerbMode, handleClick, verbMode }) => {
               exit="closed"
               variants={itemVariants}
             >
+              <motion.h3>Type</motion.h3>
+              <VerbMenuOptions
+                menuOptions={["Verb", "Participle", "Infinitive"]}
+                verbCharacteristics={verbCharacteristics}
+                setVerbCharacteristics={setVerbCharacteristics}
+                characteristic={"Type"}
+                key="Type"
+              />
               <motion.h3>Tense</motion.h3>
               <VerbMenuOptions
                 menuOptions={[
@@ -191,23 +203,74 @@ const Verb = () => {
   const verb = useSelector(selectWordSlice);
   const dispatch = useDispatch();
   const [verbMode, setVerbMode] = useState("Select Verb Form to Practice");
+  const [verbCharacteristics, setVerbCharacteristics] = useState({
+    partOfSpeech: "Verb",
+  });
 
   useEffect(() => {
     dispatch(setMode("Parse Verbs"));
   }, [dispatch]);
 
-  const handleClick = (option = verbMode) => {
+  const handleClick = (option = verbMode, exclusions = []) => {
+    if (verbCharacteristics["Type"] === "Verb") {
+      exclusions = ["Participle", "Infinitive"];
+    }
+
+    if (
+      verbCharacteristics.Type === "Participle" &&
+      !(
+        verbCharacteristics.Mood === undefined ||
+        verbCharacteristics.Mood === ""
+      )
+    ) {
+      return alert('check "All" in mood category to practice Participles.');
+    }
+
+    if (
+      verbCharacteristics.Type === "Infinitive" &&
+      !(
+        verbCharacteristics.Mood === undefined ||
+        verbCharacteristics.Mood === ""
+      ) &&
+      !(
+        verbCharacteristics.Person === undefined ||
+        verbCharacteristics.Person === ""
+      ) &&
+      !(
+        verbCharacteristics.Number === undefined ||
+        verbCharacteristics.Number === ""
+      )
+    ) {
+      return alert(
+        'Mood, Person, and Number must be set to "All" to practice Infinitives.'
+      );
+    }
+
+    if (
+      verbCharacteristics.Type === "Infinitive" &&
+      (verbCharacteristics.Tense === "future" ||
+        verbCharacteristics.Tense === "imperfect")
+    ) {
+      return alert("Infinitives cannot be in the future or imperfect tense.");
+    }
+
     console.log(option);
+    console.log(exclusions);
+
     dispatch(clearWord());
-    // let lowerCaseOption = option.toLowerCase();
     let splitOption = option.split(" ");
-    let nextVerb = randomWord(wordUsages, "parse", splitOption);
+    let nextVerb = randomWord(wordUsages, "parse", splitOption, exclusions);
     dispatch(setWord(nextVerb));
   };
 
   return (
     <div>
-      <VerbMenu setVerbMode={setVerbMode} handleClick={handleClick} />
+      <VerbMenu
+        setVerbMode={setVerbMode}
+        handleClick={handleClick}
+        verbCharacteristics={verbCharacteristics}
+        setVerbCharacteristics={setVerbCharacteristics}
+      />
       <br></br>
       <div className="verb-component">
         <div style={{ marginTop: "70px" }}>{verbMode}</div>

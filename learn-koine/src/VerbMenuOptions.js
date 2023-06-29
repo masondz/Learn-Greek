@@ -17,7 +17,19 @@ const VerbMenuOptions = ({
         allOptionIndex = i;
       }
 
-      if (
+      //styling type since options must be upper case.
+      if (characteristic === "Type") {
+        if (
+          verbCharacteristics.Type === charChoices[i].innerHTML &&
+          !charChoices[i].className.includes("chosen-option")
+        ) {
+          charChoices[i].className += " chosen-option";
+          anOptionIsPicked = true;
+          console.log(
+            `${charChoices[i].innerHTML}: ${charChoices[i].className}`
+          );
+        }
+      } else if (
         verbCharacteristics[characteristic] ===
           charChoices[i].innerHTML.toLowerCase() &&
         !charChoices[i].className.includes("chosen-option")
@@ -27,6 +39,7 @@ const VerbMenuOptions = ({
         console.log(`${charChoices[i].innerHTML}: ${charChoices[i].className}`);
       }
     }
+
     if (anOptionIsPicked) {
       console.log("option picked");
       if (
@@ -66,16 +79,20 @@ const VerbMenuOptions = ({
   const handleAddCharacteristic = (e) => {
     e.preventDefault();
     controlHighlight(e);
+
     const charOption = e.target.innerHTML.toLowerCase();
     const newCharOptions = { ...verbCharacteristics };
 
-    if (charOption === "all") {
+    if (["Verb", "Participle", "Infinitive"].includes(e.target.innerHTML)) {
+      newCharOptions["Type"] = e.target.innerHTML;
+      setVerbCharacteristics(newCharOptions);
+    } else if (charOption === "all") {
       newCharOptions[characteristic] = "";
       setVerbCharacteristics(newCharOptions);
-      return;
+    } else {
+      newCharOptions[characteristic] = charOption;
+      setVerbCharacteristics(newCharOptions);
     }
-    newCharOptions[characteristic] = charOption;
-    setVerbCharacteristics(newCharOptions);
     return;
   };
 

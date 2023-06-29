@@ -40,7 +40,6 @@ const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
     for (let i = 0; i < caseOptions.length; i++) {
       caseOptions[i].className = "case-option";
     }
-    console.log(verbMode);
     let nextVerb = randomWord(wordUsages, "parse", verbMode.split(" "));
     dispatch(setWord(nextVerb));
   };
