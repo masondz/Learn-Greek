@@ -11,3 +11,7 @@ React with Nodejs, and is hosted on Netlify.
 Witness SR
 Produced by the Center for New Testament Restoration (CNTR) 11/30/22
 Copyright © 2022 by Alan Bunning released under Creative Commons Attribution 4.0 International License (CC BY-SA 4.0)`;
+
+## Attribution for lexicon:
+Taken from this GitHub repository
+https://github.com/eliranwong/OpenGNT/tree/master/Lexicons
