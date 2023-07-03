@@ -3,6 +3,7 @@ import verseSlice from "./features/verseSlice";
 import wordSlice from "./features/wordSlice";
 import countSlice from "./features/countSlice";
 import parsingSlice from "./features/parsingSlice";
+import verbSlice from "./features/verbSlice";
 
 const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ const store = configureStore({
     word: wordSlice,
     count: countSlice,
     parsing: parsingSlice,
+    verb: verbSlice,
   },
 });
 

@@ -1,38 +1,50 @@
 import { useState, useEffect } from "react";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import { selectWordSlice } from "./features/wordSlice";
+import { selectVerbSlice } from "./features/verbSlice";
 import "./Verb.css";
 import { useSelector } from "react-redux";
 
-const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
+const VerbGrid = ({
+  dispatch,
+  setWord,
+  randomWord,
+  verbMode,
+  reset,
+  verbCharacteristics,
+  isInfinitive,
+  isParticiple,
+  isRegularVerb,
+  setIsInfinitive,
+  setIsParticiple,
+  setIsRegularVerb,
+}) => {
   const [checkParse, setCheckParse] = useState(
     "Pick correct person and number"
   );
 
-  const [isRegularVerb, setIsRegularVerb] = useState(false);
-  const [isParticiple, setIsParticiple] = useState(false);
-  const [isInfinitive, setIsInfinitive] = useState(false);
-
+  const verbType = useSelector(selectVerbSlice);
   const word = useSelector(selectWordSlice);
 
   useEffect(() => {
     let caseOptions = document.getElementsByClassName("case-option");
-    let verbOptions = document.getElementsByClassName("verb-options");
     if (caseOptions) {
       for (let i = 0; i < caseOptions.length; i++) {
         caseOptions[i].className = "case-option";
       }
     }
 
+    let verbOptions = document.getElementsByClassName("verb-options");
     if (verbOptions) {
       for (let i = 0; i < verbOptions.length; i++) {
-        verbOptions[i].className = "verb-options";
+        if (verbOptions[i].innerHTML === verbType.Type) {
+          verbOptions[i].className = "verb-options correct";
+        } else {
+          verbOptions[i].className = "verb-options";
+        }
       }
     }
-    setIsInfinitive(false);
-    setIsParticiple(false);
-    setIsRegularVerb(false);
-  }, [word, reset]);
+  }, [word, reset, verbType.Type]);
 
   const handleNext = () => {
     let caseOptions = document.getElementsByClassName("case-option");
@@ -84,6 +96,7 @@ const VerbGrid = ({ dispatch, setWord, randomWord, verbMode, reset }) => {
         setIsRegularVerb={setIsRegularVerb}
         setIsParticiple={setIsParticiple}
         setIsInfinitive={setIsInfinitive}
+        verbCharacteristics={verbCharacteristics}
         word={word}
         onClick={onClick}
       />
@@ -137,13 +150,25 @@ const VerbStepOne = ({
 
   return (
     <div className="verb-step-one">
-      <div className={"verb-options"} onClick={(e) => handleCheckVerb(e)}>
+      <div
+        className={"verb-options"}
+        id="Verb-Step-One"
+        onClick={(e) => handleCheckVerb(e)}
+      >
         Verb
       </div>
-      <div className={"verb-options"} onClick={(e) => handleCheckParticiple(e)}>
+      <div
+        className={"verb-options"}
+        id="Participle-Step-One"
+        onClick={(e) => handleCheckParticiple(e)}
+      >
         Participle
       </div>
-      <div className={"verb-options"} onClick={(e) => handleCheckInfinitive(e)}>
+      <div
+        className={"verb-options"}
+        id="Infinitive-Step-One"
+        onClick={(e) => handleCheckInfinitive(e)}
+      >
         Infinitive
       </div>
     </div>
