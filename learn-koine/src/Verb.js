@@ -200,8 +200,8 @@ const VerbMenu = ({
   const menuLinks = ["vocabulary", "parsing-verse"];
 
   return (
-    <div className="menu-container">
-      <div className="menu-button-container">
+    <div className="menu-container" key="verb-menu-container">
+      <div className="menu-button-container" key="verb-menu-button">
         <button className="menu-toggle-button" onClick={cycleOpen}>
           {open ? "X Choose an Option" : "="}
         </button>
@@ -209,6 +209,7 @@ const VerbMenu = ({
       <AnimatePresence>
         {open && (
           <motion.div
+            key="verb-menu"
             initial={{ width: 0, position: "absolute", backgound: "none" }}
             animate={{
               width: 300,
@@ -222,15 +223,15 @@ const VerbMenu = ({
               transition: { delay: 0.5, duration: 0.3 },
             }}
           >
-            <motion.p>{verbMode}</motion.p>
             <motion.div
+              key="verb-sub-menu"
               className="verb-menu-options"
               initial="closed"
               animate="open"
               exit="closed"
               variants={itemVariants}
             >
-              <motion.h3>Type</motion.h3>
+              <motion.h3 key="type-title">Type</motion.h3>
               <VerbMenuOptions
                 menuOptions={["Verb", "Participle", "Infinitive"]}
                 verbCharacteristics={verbCharacteristics}
@@ -238,7 +239,7 @@ const VerbMenu = ({
                 characteristic={"Type"}
                 key="Type"
               />
-              <motion.h3>Tense</motion.h3>
+              <motion.h3 key="tense-title">Tense</motion.h3>
               <VerbMenuOptions
                 menuOptions={[
                   "Present",
@@ -253,7 +254,7 @@ const VerbMenu = ({
                 key="Tense"
               />
 
-              <motion.h3>Voice</motion.h3>
+              <motion.h3 key="voice-title">Voice</motion.h3>
               <VerbMenuOptions
                 menuOptions={["Active", "Middle", "Passive", "Deponent"]}
                 verbCharacteristics={verbCharacteristics}
@@ -262,7 +263,7 @@ const VerbMenu = ({
                 key="Voice"
               />
 
-              <motion.h3>Mood</motion.h3>
+              <motion.h3 key="mood-title">Mood</motion.h3>
               <VerbMenuOptions
                 menuOptions={["Indicative", "Subjunctive", "Imperative"]}
                 verbCharacteristics={verbCharacteristics}
@@ -271,7 +272,7 @@ const VerbMenu = ({
                 key="Mood"
               />
 
-              <motion.h3>Person</motion.h3>
+              <motion.h3 key="person-title">Person</motion.h3>
               <VerbMenuOptions
                 menuOptions={["First", "Second", "Third"]}
                 verbCharacteristics={verbCharacteristics}
@@ -280,7 +281,7 @@ const VerbMenu = ({
                 key="Person"
               />
 
-              <motion.h3>Number</motion.h3>
+              <motion.h3 key="number-title">Number</motion.h3>
               <VerbMenuOptions
                 menuOptions={["Singular", "Plural"]}
                 verbCharacteristics={verbCharacteristics}
@@ -303,11 +304,12 @@ const VerbMenu = ({
                 animate="open"
                 exit="closed"
                 variants={itemVariants}
+                key="menu-lins"
               >
-                <motion.h3>Links</motion.h3>
+                <motion.h3 key="links-title">Links</motion.h3>
                 {menuLinks.map((link) => {
                   return (
-                    <>
+                    <div key={link + "-div"}>
                       <Link
                         to={"/" + link}
                         className="menu-link"
@@ -317,7 +319,7 @@ const VerbMenu = ({
                         {link === "parsing-verse" ? "parsing practice" : link}
                       </Link>
                       <br></br>
-                    </>
+                    </div>
                   );
                 })}
                 <br></br>

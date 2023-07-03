@@ -65,8 +65,6 @@ export const randomWord = (obj, attribute, arr, exclusions = []) => {
     }
   }
 
-  console.log(isThereExclusion);
-
   if (isEveryCharInAttribute && !isThereExclusion) {
     console.log(checkKey + " " + obj[checkKey][attribute]);
     return { word: checkKey, parse: obj[checkKey][attribute] };
