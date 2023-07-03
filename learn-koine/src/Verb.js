@@ -11,7 +11,7 @@ import { motion, useCycle, AnimatePresence } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import "./Menu.css";
 import VerbMenuOptions from "./VerbMenuOptions";
-import { setVerbType } from "./features/verbSlice";
+import { setVerbType, selectVerbSlice } from "./features/verbSlice";
 
 const Verb = () => {
   const verb = useSelector(selectWordSlice);
@@ -20,6 +20,8 @@ const Verb = () => {
   const [verbCharacteristics, setVerbCharacteristics] = useState({
     partOfSpeech: "Verb",
   });
+
+  const verbType = useSelector(selectVerbSlice);
 
   const [isRegularVerb, setIsRegularVerb] = useState(false);
   const [isParticiple, setIsParticiple] = useState(false);
@@ -72,12 +74,16 @@ const Verb = () => {
       return alert("Infinitives cannot be in the future or imperfect tense.");
     }
 
-    console.log(option);
-    console.log(exclusions);
-
     dispatch(clearWord());
     let splitOption = option.split(" ");
     let nextVerb = randomWord(wordUsages, "parse", splitOption, exclusions);
+
+    if (!verbType.Type) {
+      setIsInfinitive(false);
+      setIsParticiple(false);
+      setIsRegularVerb(false);
+    }
+
     dispatch(setWord(nextVerb));
   };
 

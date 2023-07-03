@@ -48,10 +48,17 @@ const VerbGrid = ({
 
   const handleNext = () => {
     let caseOptions = document.getElementsByClassName("case-option");
-    console.log(caseOptions);
+
     for (let i = 0; i < caseOptions.length; i++) {
       caseOptions[i].className = "case-option";
     }
+
+    if (!verbType.Type) {
+      setIsInfinitive(false);
+      setIsParticiple(false);
+      setIsRegularVerb(false);
+    }
+
     let nextVerb = randomWord(wordUsages, "parse", verbMode.split(" "));
     dispatch(setWord(nextVerb));
   };
@@ -59,8 +66,6 @@ const VerbGrid = ({
   let numCorrect = 0;
 
   const isParsed = () => {
-    console.log(verbMode);
-    console.log("check parsed thing");
     numCorrect++;
     if (
       numCorrect === 5 ||
@@ -77,15 +82,12 @@ const VerbGrid = ({
   };
 
   const onClick = (e) => {
-    console.log(word);
     if (word.parse.includes(e.target.innerHTML)) {
-      console.log("correct!");
       e.target.className = e.target.className + " correct";
       if (verbMode !== "parsing") {
         isParsed();
       }
     } else {
-      console.log("wrong!");
       e.target.className = e.target.className + " wrong";
     }
   };
@@ -122,7 +124,10 @@ const VerbStepOne = ({
       word.parse.includes("Verb")
     ) {
       e.target.className = e.target.className + " correct";
-      return setIsRegularVerb(true);
+      setIsRegularVerb(true);
+      setIsInfinitive(false);
+      setIsParticiple(false);
+      return;
     } else {
       e.target.className = e.target.className + " wrong";
     }
@@ -132,7 +137,10 @@ const VerbStepOne = ({
     e.preventDefault();
     if (word.parse.includes("Participle")) {
       e.target.className = e.target.className + " correct";
-      return setIsParticiple(true);
+      setIsParticiple(true);
+      setIsInfinitive(false);
+      setIsRegularVerb(false);
+      return;
     } else {
       e.target.className = e.target.className + " wrong";
     }
@@ -142,7 +150,10 @@ const VerbStepOne = ({
     e.preventDefault();
     if (word.parse.includes("Infinitive")) {
       e.target.className = e.target.className + " correct";
-      return setIsInfinitive(true);
+      setIsInfinitive(true);
+      setIsParticiple(false);
+      setIsRegularVerb(false);
+      return;
     } else {
       e.target.className = e.target.className + " wrong";
     }
