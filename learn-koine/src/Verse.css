@@ -50,6 +50,14 @@
   user-select: none;
 }
 
+.off-click {
+  height: 100%;
+  width: 100%;
+}
+
+.off-click-enabled {
+}
+
 .da {
   background-color: rgb(3, 187, 3);
 }

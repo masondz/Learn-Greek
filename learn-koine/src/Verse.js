@@ -90,6 +90,10 @@ const Verse = () => {
   const dispatch = useDispatch();
   const [reset, setReset] = useState(true);
 
+  const [bookListIsOpen, setBookListIsOpen] = useState(false);
+  const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
+  const [verseListIsOpen, setVerseListIsOpen] = useState(false);
+
   useEffect(() => {
     let randomVerse = getRandomVerse(organizeText(greekText));
     console.log(randomVerse);
@@ -185,8 +189,26 @@ const Verse = () => {
 
   const menuLinks = ["vocabulary", "verb"];
 
+  //close drop down menues on off-click
+  const offClickCloseMenu = (e) => {
+    console.log(e.target.className);
+    if (
+      !["booklist-button", "chapterlist-button", "verselist-button"].includes(
+        e.target.className
+      ) &&
+      !e.target.className.includes("list-option")
+    ) {
+      setBookListIsOpen(false);
+      setChapterListIsOpen(false);
+      setVerseListIsOpen(false);
+    }
+    document.removeEventListener("click", offClickCloseMenu);
+  };
+
+  document.addEventListener("click", offClickCloseMenu);
+
   return (
-    <div className="body">
+    <div className="body" onClick={offClickCloseMenu}>
       <Menu
         setArticleGrid={setArticleGrid}
         blankGrid={blankGrid}
@@ -194,7 +216,16 @@ const Verse = () => {
         menuLinks={menuLinks}
       />
       <br></br>
-      <PickVerse setArticleGrid={setArticleGrid} blankGrid={blankGrid} />
+      <PickVerse
+        setArticleGrid={setArticleGrid}
+        blankGrid={blankGrid}
+        bookListIsOpen={bookListIsOpen}
+        chapterListIsOpen={chapterListIsOpen}
+        verseListIsOpen={verseListIsOpen}
+        setBookListIsOpen={setBookListIsOpen}
+        setChapterListIsOpen={setChapterListIsOpen}
+        setVerseListIsOpen={setVerseListIsOpen}
+      />
       <div className="verse-sentence">
         {verseArray.map((word, i) => {
           return (

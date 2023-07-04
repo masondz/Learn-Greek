@@ -6,10 +6,16 @@ import { useDispatch } from "react-redux";
 import { setVerse, clearVerse } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
 
-const PickVerse = ({ setArticleGrid, blankGrid }) => {
-  const [bookListIsOpen, setBookListIsOpen] = useState(false);
-  const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
-  const [verseListIsOpen, setVerseListIsOpen] = useState(false);
+const PickVerse = ({
+  setArticleGrid,
+  blankGrid,
+  setVerseListIsOpen,
+  setChapterListIsOpen,
+  setBookListIsOpen,
+  bookListIsOpen,
+  chapterListIsOpen,
+  verseListIsOpen,
+}) => {
   const [chapterList, setChapterList] = useState([]);
   const [verseList, setVerseList] = useState([]);
 
@@ -24,7 +30,6 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
   const makeHighlight = (e) => {
     e.preventDefault();
     const specificList = e.target.className.split(" ")[1];
-    console.log(specificList);
     if (specificList === "book-option") {
       removeHighlight("book-option");
       removeHighlight("chapter-option");
@@ -74,14 +79,12 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     e.preventDefault();
     makeHighlight(e);
     const chapterNumber = e.target.innerHTML;
-    console.log(chapterNumber);
     setVerseList(updateVerseList(chapterNumber));
 
     let encodeChapter = "";
 
     if (chapterNumber < 10) {
       encodeChapter = "0" + chapterNumber;
-      console.log(encodeChapter);
     } else {
       encodeChapter = chapterNumber;
     }
@@ -135,7 +138,6 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     }
     const verse = allVerses[ref];
     const payload = [ref, verse];
-    console.log(payload);
     dispatch(clearVerse());
     setTimeout(() => {
       setArticleGrid(blankGrid);
@@ -151,7 +153,6 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     }
 
     let tempVerse = Number(chosenVerse) + 1;
-    console.log(tempVerse);
 
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
@@ -161,7 +162,6 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     if (lookUpVerse(reference)) {
       setChosenVerse(tempVerse);
     } else {
-      console.log("checking next chapter");
       tempVerse = "01";
       let tempChapter = Number(chosenChapter) + 1;
       if (tempChapter < 10) {
@@ -169,14 +169,12 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
       }
       reference =
         newTestament[chosenBook].code + "0" + tempChapter + "0" + tempVerse;
-      console.log(reference);
       if (lookUpVerse(reference)) {
         //update chapter and vere list
         setVerseList(updateVerseList(Number(tempChapter)));
         setChosenChapter(tempChapter);
         setChosenVerse(tempVerse);
       } else {
-        console.log("checking next book");
         let tempBookCode = newTestament[chosenBook].code + 1;
         if (tempBookCode > 66) {
           return alert("You've reached the end!");
@@ -184,7 +182,6 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
 
         for (let book in newTestament) {
           if (newTestament[book].code === Number(tempBookCode)) {
-            console.log(book);
             tempChapter = "01";
             setChosenBook(book);
             setChapterList(updateChapterList(book));
@@ -254,7 +251,6 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
     }
 
     reference = tempBookCode + "0" + tempChapter + "0" + tempVerse;
-    console.log(reference);
 
     lookUpVerse(reference);
     setChosenVerse(tempVerse);
@@ -274,6 +270,8 @@ const PickVerse = ({ setArticleGrid, blankGrid }) => {
   const handleOpenVerseList = () => {
     verseListIsOpen ? setVerseListIsOpen(false) : setVerseListIsOpen(true);
   };
+
+  //attempt to close menues if off-clicked
 
   return (
     <div className="pick-component">
