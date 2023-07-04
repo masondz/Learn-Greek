@@ -25,6 +25,7 @@ import { greekText } from "./greek_text/greekText";
 import Toolkit from "./Toolkit";
 import AdverbGrid from "./AdverbGrid";
 import ParticleGrid from "./ParticleGrid";
+import { setVerbType } from "./features/verbSlice";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -94,6 +95,7 @@ const Verse = () => {
     console.log(randomVerse);
     dispatch(setVerse(randomVerse));
     dispatch(setMode("definite article"));
+    dispatch(setVerbType(""));
   }, [dispatch]);
 
   const [articleGrid, setArticleGrid] = useState({

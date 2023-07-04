@@ -23,10 +23,6 @@ const Verb = () => {
 
   const verbType = useSelector(selectVerbSlice);
 
-  const [isRegularVerb, setIsRegularVerb] = useState(false);
-  const [isParticiple, setIsParticiple] = useState(false);
-  const [isInfinitive, setIsInfinitive] = useState(false);
-
   useEffect(() => {
     dispatch(setMode("Parse Verbs"));
   }, [dispatch]);
@@ -79,9 +75,7 @@ const Verb = () => {
     let nextVerb = randomWord(wordUsages, "parse", splitOption, exclusions);
 
     if (!verbType.Type) {
-      setIsInfinitive(false);
-      setIsParticiple(false);
-      setIsRegularVerb(false);
+      console.log("if verb type not declared, don't render any grid.");
     }
 
     dispatch(setWord(nextVerb));
@@ -94,12 +88,6 @@ const Verb = () => {
         handleClick={handleClick}
         verbCharacteristics={verbCharacteristics}
         setVerbCharacteristics={setVerbCharacteristics}
-        isInfinitive={isInfinitive}
-        isParticiple={isParticiple}
-        isRegularVerb={isRegularVerb}
-        setIsInfinitive={setIsInfinitive}
-        setIsParticiple={setIsParticiple}
-        setIsRegularVerb={setIsRegularVerb}
       />
       <br></br>
       <div className="verb-component">
@@ -113,12 +101,6 @@ const Verb = () => {
           randomWord={randomWord}
           verbMode={verbMode}
           verbCharacteristics={verbCharacteristics}
-          isInfinitive={isInfinitive}
-          isParticiple={isParticiple}
-          isRegularVerb={isRegularVerb}
-          setIsInfinitive={setIsInfinitive}
-          setIsParticiple={setIsParticiple}
-          setIsRegularVerb={setIsRegularVerb}
         />
         <br></br>
         <button className="button" onClick={() => handleClick()}>
@@ -136,9 +118,6 @@ const VerbMenu = ({
   verbMode,
   verbCharacteristics,
   setVerbCharacteristics,
-  setIsInfinitive,
-  setIsParticiple,
-  setIsRegularVerb,
 }) => {
   const [open, cycleOpen] = useCycle(true, false);
   const dispatch = useDispatch();
@@ -172,21 +151,13 @@ const VerbMenu = ({
       return;
     }
     if (verbCharacteristics.Type === "Participle") {
-      setIsParticiple(true);
-      setIsInfinitive(false);
-      setIsRegularVerb(false);
+      console.log("render participle grid");
     } else if (verbCharacteristics.Type === "Infinitive") {
-      setIsInfinitive(true);
-      setIsRegularVerb(false);
-      setIsParticiple(false);
+      console.log("render infinitive grid");
     } else if (verbCharacteristics.Type === "Verb") {
-      setIsRegularVerb(true);
-      setIsParticiple(false);
-      setIsInfinitive(false);
+      console.log("render regularVerb grid");
     } else {
-      setIsRegularVerb(false);
-      setIsParticiple(false);
-      setIsInfinitive(false);
+      console.log("don't render any grid.");
     }
     dispatch(setVerbType(newVerbType));
     setVerbMode(options);

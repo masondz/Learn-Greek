@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import { selectWordSlice } from "./features/wordSlice";
 import { selectVerbSlice } from "./features/verbSlice";
+import { selectVerseMode } from "./features/verseSlice";
 import "./Verb.css";
 import { useSelector } from "react-redux";
 
@@ -12,16 +13,14 @@ const VerbGrid = ({
   verbMode,
   reset,
   verbCharacteristics,
-  isInfinitive,
-  isParticiple,
-  isRegularVerb,
-  setIsInfinitive,
-  setIsParticiple,
-  setIsRegularVerb,
 }) => {
   const [checkParse, setCheckParse] = useState(
     "Pick correct person and number"
   );
+
+  const [isRegularVerb, setIsRegularVerb] = useState(false);
+  const [isParticiple, setIsParticiple] = useState(false);
+  const [isInfinitive, setIsInfinitive] = useState(false);
 
   const verbType = useSelector(selectVerbSlice);
   const word = useSelector(selectWordSlice);
@@ -43,6 +42,12 @@ const VerbGrid = ({
           verbOptions[i].className = "verb-options";
         }
       }
+    }
+
+    if (!verbType.Type) {
+      setIsInfinitive(false);
+      setIsParticiple(false);
+      setIsRegularVerb(false);
     }
   }, [word, reset, verbType.Type]);
 
