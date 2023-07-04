@@ -48,6 +48,18 @@ const VerbGrid = ({
       setIsInfinitive(false);
       setIsParticiple(false);
       setIsRegularVerb(false);
+    } else if (verbType.Type === "Infinitive") {
+      setIsInfinitive(true);
+      setIsParticiple(false);
+      setIsRegularVerb(false);
+    } else if (verbType.Type === "Participle") {
+      setIsInfinitive(false);
+      setIsParticiple(true);
+      setIsRegularVerb(false);
+    } else {
+      setIsInfinitive(false);
+      setIsParticiple(false);
+      setIsRegularVerb(true);
     }
   }, [word, reset, verbType.Type]);
 
