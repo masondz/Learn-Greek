@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import { selectWordSlice } from "./features/wordSlice";
 import { selectVerbSlice } from "./features/verbSlice";
-import { selectVerseMode } from "./features/verseSlice";
 import "./Verb.css";
 import { useSelector } from "react-redux";
 
