@@ -159,15 +159,13 @@ const PickVerse = ({
     return true;
   };
 
-  function nextVerse() {
-    let currentBook = chosenBook
-      ? chosenBook
-      : bookNames[referenceRaw.bookIndex];
-    let currentChapter = chosenChapter
-      ? chosenChapter
-      : referenceRaw.chapterNumber;
-    let currentVerse = chosenVerse ? chosenVerse : referenceRaw.verseNumber;
+  let currentBook = chosenBook ? chosenBook : bookNames[referenceRaw.bookIndex];
+  let currentChapter = chosenChapter
+    ? chosenChapter
+    : referenceRaw.chapterNumber;
+  let currentVerse = chosenVerse ? chosenVerse : referenceRaw.verseNumber;
 
+  function nextVerse() {
     let tempVerse = Number(currentVerse) + 1;
 
     if (tempVerse < 10) {
@@ -221,16 +219,14 @@ const PickVerse = ({
   }
 
   function prevVerse() {
-    if (!chosenBook || !chosenChapter || !chosenVerse) {
-      return;
-    }
+    let tempVerse = Number(currentVerse) - 1;
 
-    let tempVerse = Number(chosenVerse) - 1;
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
     }
-    let tempChapter = Number(chosenChapter);
-    let tempBookCode = newTestament[chosenBook].code;
+
+    let tempChapter = Number(currentChapter);
+    let tempBookCode = newTestament[currentBook].code;
     let tempBook = "";
     let reference = "";
 
@@ -266,8 +262,10 @@ const PickVerse = ({
         }
       }
 
-      tempVerse = newTestament[chosenBook].chapterVerseIndex[tempChapter - 1];
+      tempVerse = newTestament[currentBook].chapterVerseIndex[tempChapter - 1];
+      setChosenBook(currentBook);
       setVerseList(updateVerseList(Number(tempChapter)));
+      setChapterList(updateChapterList(currentBook));
     }
 
     if (tempChapter < 10) {
@@ -277,6 +275,9 @@ const PickVerse = ({
     reference = tempBookCode + "0" + tempChapter + "0" + tempVerse;
 
     lookUpVerse(reference);
+    setChosenBook(currentBook);
+    setChapterList(updateChapterList(currentBook));
+    setVerseList(updateVerseList(Number(currentChapter), currentBook));
     setChosenVerse(tempVerse);
     setChosenChapter(tempChapter);
     dispatch(clearWord());
