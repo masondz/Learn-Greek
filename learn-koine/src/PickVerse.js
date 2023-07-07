@@ -285,6 +285,7 @@ const PickVerse = ({
   const handleOpenBookList = () => {
     setBookListIsOpen(!bookListIsOpen);
   };
+
   const handleOpenChapterList = () => {
     if (chapterList.length === 0) {
       setChapterList(updateChapterList(currentBook));
