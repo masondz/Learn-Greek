@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "./PickVerse.css";
 import { organizeText } from "./features/verseSlice";
 import { greekText } from "./greek_text/greekText";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setVerse, clearVerse } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
+import { selectVerseReference } from "./features/verseSlice";
+import { decodeReference } from "./PassageNumber";
+import { useReducedMotionConfig } from "framer-motion";
 
 const PickVerse = ({
   setArticleGrid,
@@ -24,6 +27,8 @@ const PickVerse = ({
   const [chosenVerse, setChosenVerse] = useState(0);
 
   const dispatch = useDispatch();
+
+  const verseReferenceFromStore = useSelector(selectVerseReference);
 
   const bookNames = Object.keys(newTestament);
 
@@ -89,7 +94,17 @@ const PickVerse = ({
     setChosenChapter(encodeChapter);
   };
 
-  const updateVerseList = (chapterNumber, book = chosenBook) => {
+  // need verse reference info
+  const referenceRaw = decodeReference(verseReferenceFromStore);
+
+  if (referenceRaw.chapterNumber < 10) {
+    referenceRaw.chapterNumber = "0" + referenceRaw.chapterNumber;
+  }
+
+  const updateVerseList = (
+    chapterNumber,
+    book = bookNames[referenceRaw.bookIndex]
+  ) => {
     const numberOfVerses =
       newTestament[book].chapterVerseIndex[chapterNumber - 1];
     const versesArray = [];
@@ -145,34 +160,46 @@ const PickVerse = ({
   };
 
   function nextVerse() {
-    if (!chosenBook || !chosenChapter || !chosenVerse) {
-      return;
-    }
+    let currentBook = chosenBook
+      ? chosenBook
+      : bookNames[referenceRaw.bookIndex];
+    let currentChapter = chosenChapter
+      ? chosenChapter
+      : referenceRaw.chapterNumber;
+    let currentVerse = chosenVerse ? chosenVerse : referenceRaw.verseNumber;
 
-    let tempVerse = Number(chosenVerse) + 1;
+    let tempVerse = Number(currentVerse) + 1;
 
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
     }
-    let reference =
-      newTestament[chosenBook].code + "0" + chosenChapter + "0" + tempVerse;
-    if (lookUpVerse(reference)) {
+
+    let nextReference =
+      newTestament[currentBook].code + "0" + currentChapter + "0" + tempVerse;
+
+    if (lookUpVerse(nextReference)) {
       setChosenVerse(tempVerse);
+      setChosenChapter(currentChapter);
+      if (!chosenBook) {
+        setChosenBook(currentBook);
+        setChapterList(updateChapterList(currentBook));
+        setVerseList(updateVerseList(Number(currentChapter)));
+      }
     } else {
       tempVerse = "01";
-      let tempChapter = Number(chosenChapter) + 1;
+      let tempChapter = Number(currentChapter) + 1;
       if (tempChapter < 10) {
         tempChapter = "0" + tempChapter;
       }
-      reference =
-        newTestament[chosenBook].code + "0" + tempChapter + "0" + tempVerse;
-      if (lookUpVerse(reference)) {
+      nextReference =
+        newTestament[currentBook].code + "0" + tempChapter + "0" + tempVerse;
+      if (lookUpVerse(nextReference)) {
         //update chapter and vere list
         setVerseList(updateVerseList(Number(tempChapter)));
         setChosenChapter(tempChapter);
         setChosenVerse(tempVerse);
       } else {
-        let tempBookCode = newTestament[chosenBook].code + 1;
+        let tempBookCode = newTestament[currentBook].code + 1;
         if (tempBookCode > 66) {
           return alert("You've reached the end!");
         }

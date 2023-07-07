@@ -33,7 +33,7 @@ export const books = [
   "Ἀποκάλυψις Ἰωάννου",
 ];
 
-const decodeReference = (ref) => {
+export const decodeReference = (ref) => {
   //book
   let bookIndex = ref.slice(0, 2) - 40;
   //chapter
