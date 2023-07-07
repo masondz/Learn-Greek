@@ -191,7 +191,6 @@ const Verse = () => {
 
   //close drop down menues on off-click
   const offClickCloseMenu = (e) => {
-    console.log(e.target.className);
     if (
       !["booklist-button", "chapterlist-button", "verselist-button"].includes(
         e.target.className

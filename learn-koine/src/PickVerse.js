@@ -7,7 +7,6 @@ import { setVerse, clearVerse } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
 import { selectVerseReference } from "./features/verseSlice";
 import { decodeReference } from "./PassageNumber";
-import { useReducedMotionConfig } from "framer-motion";
 
 const PickVerse = ({
   setArticleGrid,
@@ -19,18 +18,22 @@ const PickVerse = ({
   chapterListIsOpen,
   verseListIsOpen,
 }) => {
+  const verseReferenceFromStore = useSelector(selectVerseReference);
+
+  const bookNames = Object.keys(newTestament);
+
+  const referenceRaw = decodeReference(verseReferenceFromStore);
+
   const [chapterList, setChapterList] = useState([]);
   const [verseList, setVerseList] = useState([]);
 
   const [chosenBook, setChosenBook] = useState("");
-  const [chosenChapter, setChosenChapter] = useState(0);
+  const [chosenChapter, setChosenChapter] = useState(
+    referenceRaw.chapterNumber
+  );
   const [chosenVerse, setChosenVerse] = useState(0);
 
   const dispatch = useDispatch();
-
-  const verseReferenceFromStore = useSelector(selectVerseReference);
-
-  const bookNames = Object.keys(newTestament);
 
   const makeHighlight = (e) => {
     e.preventDefault();
@@ -60,9 +63,9 @@ const PickVerse = ({
     makeHighlight(e);
     setChapterList(updateChapterList(pickedBook));
     setChosenBook(pickedBook);
-    setVerseList(updateVerseList(chosenChapter, pickedBook));
-    setChosenVerse(0);
-    setChosenChapter(0);
+    setVerseList(updateVerseList(currentChapter, pickedBook));
+    setChosenVerse("Select Verse");
+    setChosenChapter("Select Chapter");
   };
 
   const updateChapterList = (pickedBook) => {
@@ -82,6 +85,7 @@ const PickVerse = ({
     makeHighlight(e);
     const chapterNumber = e.target.innerHTML;
     setVerseList(updateVerseList(chapterNumber));
+    setChosenVerse("Select Verse");
 
     let encodeChapter = "";
 
@@ -95,7 +99,6 @@ const PickVerse = ({
   };
 
   // need verse reference info
-  const referenceRaw = decodeReference(verseReferenceFromStore);
 
   if (referenceRaw.chapterNumber < 10) {
     referenceRaw.chapterNumber = "0" + referenceRaw.chapterNumber;
@@ -124,19 +127,6 @@ const PickVerse = ({
       encodeVerse = e.target.innerHTML;
     }
     setChosenVerse(encodeVerse);
-  };
-
-  //this will turn the selected book chapter and verse into its reference code in the grktext
-  const encodeReference = () => {
-    if (!chosenBook || !chosenChapter || !chosenVerse) {
-      return;
-    }
-    let bookCode = newTestament[chosenBook].code;
-
-    let reference = bookCode + "0" + chosenChapter + "0" + chosenVerse;
-    if (!lookUpVerse(reference)) {
-      return alert("Check verse reference");
-    }
   };
 
   const lookUpVerse = (ref) => {
@@ -284,10 +274,24 @@ const PickVerse = ({
     return;
   }
 
+  //this will turn the selected book chapter and verse into its reference code in the grktext
+  const encodeReference = () => {
+    let bookCode = newTestament[currentBook].code;
+
+    let reference = bookCode + "0" + currentChapter + "0" + currentVerse;
+    if (!lookUpVerse(reference)) {
+      return alert("Check verse reference");
+    }
+  };
+
   const handleOpenBookList = () => {
     bookListIsOpen ? setBookListIsOpen(false) : setBookListIsOpen(true);
   };
   const handleOpenChapterList = () => {
+    if (chapterList.length === 0) {
+      setChapterList(updateChapterList(currentBook));
+    }
+
     chapterListIsOpen
       ? setChapterListIsOpen(false)
       : setChapterListIsOpen(true);
@@ -303,7 +307,7 @@ const PickVerse = ({
       <div className="pick-verse-menu">
         <div className="drop-lists">
           <button onClick={handleOpenBookList} className="booklist-button">
-            {chosenBook ? chosenBook : "Select Book"}
+            {chosenBook ? chosenBook : bookNames[referenceRaw.bookIndex]}
           </button>
         </div>
         <div className="drop-lists">
@@ -311,12 +315,12 @@ const PickVerse = ({
             onClick={handleOpenChapterList}
             className="chapterlist-button"
           >
-            {chosenChapter ? chosenChapter : "Select Chapter"}
+            {chosenChapter ? chosenChapter : referenceRaw.chapterNumber}
           </button>
         </div>
         <div className="drop-lists">
           <button onClick={handleOpenVerseList} className="verselist-button">
-            {chosenVerse ? chosenVerse : "Select Verse"}
+            {chosenVerse ? chosenVerse : referenceRaw.verseNumber}
           </button>
         </div>
         <button className="go-button" onClick={encodeReference}>
