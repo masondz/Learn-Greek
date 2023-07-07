@@ -98,8 +98,6 @@ const PickVerse = ({
     setChosenChapter(encodeChapter);
   };
 
-  // need verse reference info
-
   if (referenceRaw.chapterNumber < 10) {
     referenceRaw.chapterNumber = "0" + referenceRaw.chapterNumber;
   }
@@ -285,19 +283,20 @@ const PickVerse = ({
   };
 
   const handleOpenBookList = () => {
-    bookListIsOpen ? setBookListIsOpen(false) : setBookListIsOpen(true);
+    setBookListIsOpen(!bookListIsOpen);
   };
   const handleOpenChapterList = () => {
     if (chapterList.length === 0) {
       setChapterList(updateChapterList(currentBook));
     }
-
-    chapterListIsOpen
-      ? setChapterListIsOpen(false)
-      : setChapterListIsOpen(true);
+    setChapterListIsOpen(!chapterListIsOpen);
   };
+
   const handleOpenVerseList = () => {
-    verseListIsOpen ? setVerseListIsOpen(false) : setVerseListIsOpen(true);
+    if (verseList.length === 0) {
+      setVerseList(updateVerseList(Number(currentChapter), currentBook));
+    }
+    setVerseListIsOpen(!verseListIsOpen);
   };
 
   //attempt to close menues if off-clicked
