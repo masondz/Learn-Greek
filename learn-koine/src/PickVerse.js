@@ -30,18 +30,15 @@ const PickVerse = ({
   const makeHighlight = (e) => {
     e.preventDefault();
     const specificList = e.target.className.split(" ")[1];
-    if (specificList === "book-option") {
-      removeHighlight("book-option");
-      removeHighlight("chapter-option");
-      removeHighlight("verse-option");
-    } else if (specificList === "chapter-option") {
-      removeHighlight("chapter-option");
-      removeHighlight("verse-option");
-    } else {
-      removeHighlight("verse-option");
-    }
-    e.target.className = e.target.className + " selected";
-    return;
+
+    const options = ["book-option", "chapter-option", "verse-option"];
+    const classesToRemove = options.slice(options.indexOf(specificList));
+
+    classesToRemove.forEach((className) => {
+      removeHighlight(className);
+    });
+
+    e.target.classList.add("selected");
   };
 
   const removeHighlight = (listOption) => {
