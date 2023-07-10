@@ -70,6 +70,7 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
       <AnimatePresence>
         {open && (
           <motion.div
+            key="menu"
             initial={{ width: "0px", position: "absolute", backgound: "none" }}
             animate={{
               width: "300px",
@@ -98,22 +99,22 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
               </motion.h3>
               {menuOptions.map((option) => {
                 return (
-                  <>
+                  <div key={option}>
                     <motion.button
                       className="menu-button"
                       variants={itemVariants}
                       onClick={() => handleClick({ option })}
-                      key={option}
                     >
                       {option}
                     </motion.button>
                     <br></br>
-                  </>
+                  </div>
                 );
               })}
             </motion.div>
             <br></br>
             <motion.div
+              key="menu-links"
               className="menu-links"
               initial="closed"
               animate="open"
@@ -123,17 +124,16 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
               <motion.h3>Links</motion.h3>
               {menuLinks.map((link) => {
                 return (
-                  <>
+                  <div key={link}>
                     <Link
                       to={"/" + link}
                       className="menu-link"
                       onClick={() => dispatch(clearWord())}
-                      key={link}
                     >
                       {link === "parsing-verse" ? "parsing practice" : link}
                     </Link>
                     <br></br>
-                  </>
+                  </div>
                 );
               })}
               <br></br>

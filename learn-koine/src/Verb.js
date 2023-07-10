@@ -115,7 +115,6 @@ const Verb = () => {
 const VerbMenu = ({
   setVerbMode,
   handleClick,
-  verbMode,
   verbCharacteristics,
   setVerbCharacteristics,
 }) => {
@@ -140,7 +139,7 @@ const VerbMenu = ({
     console.log(optionsArr);
     let options = "";
 
-    for (let i = 0; i < optionsArr.length; i++) {
+    for (let i = 1; i < optionsArr.length; i++) {
       options += ` ${verbCharacteristics[optionsArr[i]]}`;
     }
     if (!options) {

@@ -20,7 +20,7 @@
 .menu-container {
   /* height: 50px; */
   position: absolute;
-  /* display: flex; */
+  /* width: 300px; */
   background-color: white;
   color: black;
   text-align: left;

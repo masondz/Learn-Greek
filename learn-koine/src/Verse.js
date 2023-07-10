@@ -9,11 +9,11 @@ import {
   selectVerseMode,
   setVerse,
 } from "./features/verseSlice";
-import { setArticleCount } from "./features/countSlice";
+// import { setArticleCount } from "./features/countSlice";
 import { ArticleGrid } from "./ArticleGrid";
 import { PassageNumber } from "./PassageNumber";
 import Menu from "./Menu";
-import { parseWord } from "./greek_text/parseLexicon";
+// import { parseWord } from "./greek_text/parseLexicon";
 import "./Menu.css";
 import ConjuctionGrid from "./ConjuctionGrid";
 import PrepositionGrid from "./PrepositionGrid";
@@ -63,7 +63,6 @@ export const getRandomVerse = (theText) => {
 
   let chapters = randomBook.chapterVerseIndex;
   let randomChapter = Math.floor(Math.random() * chapters.length);
-  console.log(randomChapter);
 
   let verse = Math.floor(
     Math.random() * randomBook.chapterVerseIndex[randomChapter]
@@ -94,13 +93,19 @@ const Verse = () => {
   const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
   const [verseListIsOpen, setVerseListIsOpen] = useState(false);
 
+  let randomVerse = getRandomVerse(organizeText(greekText));
   useEffect(() => {
-    let randomVerse = getRandomVerse(organizeText(greekText));
     console.log(randomVerse);
     dispatch(setVerse(randomVerse));
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
   }, [dispatch]);
+
+  // let randomVerse = getRandomVerse(organizeText(greekText));
+  // console.log(randomVerse);
+  // dispatch(setVerse(randomVerse));
+  // dispatch(setMode("definite article"));
+  // dispatch(setVerbType(""));
 
   const [articleGrid, setArticleGrid] = useState({
     nominative: "-clear",
@@ -164,17 +169,18 @@ const Verse = () => {
       );
   }
 
-  let articleCount = 0;
-
   let verseArray = arrayIffy(verse);
-  for (let i = 0; i < verseArray.length; i++) {
-    let parsedWord = parseWord(verseArray[i].word);
-    if (parsedWord.parse.includes(verseMode)) {
-      articleCount++;
-    }
-  }
+  // let articleCount = 0;
+  // for (let i = 0; i < verseArray.length; i++) {
+  //   let parsedWord = parseWord(verseArray[i].word);
+  //   if (parsedWord.parse.includes(verseMode)) {
+  //     articleCount++;
+  //   }
+  // }
 
-  dispatch(setArticleCount(articleCount));
+  // useEffect(() => {
+  //   dispatch(setArticleCount(articleCount));
+  // }, [dispatch, setArticleCount, articleCount]);
 
   const menuOptions = [
     "definite article",
