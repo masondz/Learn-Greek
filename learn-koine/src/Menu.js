@@ -70,7 +70,7 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ width: 0, position: "absolute", backgound: "none" }}
+            initial={{ width: "0px", position: "absolute", backgound: "none" }}
             animate={{
               width: "300px",
               minHeight: "110vh",
@@ -78,8 +78,8 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
               backgoundColor: "white",
             }}
             exit={{
-              height: 10,
-              width: 0,
+              height: "10px",
+              width: "0px",
               transition: { delay: 0.29, duration: 0.1 },
             }}
           >
