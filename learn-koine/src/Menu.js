@@ -72,7 +72,7 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
           <motion.div
             initial={{ width: 0, position: "absolute", backgound: "none" }}
             animate={{
-              width: 300,
+              width: "300px",
               minHeight: "110vh",
               position: "relative",
               backgoundColor: "white",

@@ -187,16 +187,16 @@ const VerbMenu = ({
         {open && (
           <motion.div
             key="verb-menu"
-            initial={{ width: 0, position: "absolute", backgound: "none" }}
+            initial={{ width: "0px", position: "absolute", backgound: "none" }}
             animate={{
-              width: 300,
+              width: "300px",
               minHeight: "110vh",
               position: "relative",
               backgoundColor: "white",
             }}
             exit={{
-              height: 0,
-              width: 0,
+              height: "0px",
+              width: "0px",
               transition: { delay: 0.5, duration: 0.3 },
             }}
           >
