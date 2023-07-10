@@ -93,19 +93,13 @@ const Verse = () => {
   const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
   const [verseListIsOpen, setVerseListIsOpen] = useState(false);
 
-  let randomVerse = getRandomVerse(organizeText(greekText));
   useEffect(() => {
+    const randomVerse = getRandomVerse(organizeText(greekText));
     console.log(randomVerse);
     dispatch(setVerse(randomVerse));
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
-  }, [dispatch, randomVerse]);
-
-  // let randomVerse = getRandomVerse(organizeText(greekText));
-  // console.log(randomVerse);
-  // dispatch(setVerse(randomVerse));
-  // dispatch(setMode("definite article"));
-  // dispatch(setVerbType(""));
+  }, [dispatch]);
 
   const [articleGrid, setArticleGrid] = useState({
     nominative: "-clear",
