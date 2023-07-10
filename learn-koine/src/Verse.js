@@ -99,7 +99,7 @@ const Verse = () => {
     dispatch(setVerse(randomVerse));
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
-  }, [dispatch]);
+  }, [dispatch, randomVerse]);
 
   // let randomVerse = getRandomVerse(organizeText(greekText));
   // console.log(randomVerse);

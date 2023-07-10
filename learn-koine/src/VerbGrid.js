@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import { selectWordSlice } from "./features/wordSlice";
 import { selectVerbSlice } from "./features/verbSlice";
+import { selectVerseMode } from "./features/verseSlice";
 import "./Verb.css";
 import { useSelector } from "react-redux";
 
@@ -75,7 +76,17 @@ const VerbGrid = ({
       setIsRegularVerb(false);
     }
 
-    let nextVerb = randomWord(wordUsages, "parse", verbMode.split(" "));
+    let exclusions = [];
+    if (verbType.Type === "Verb") {
+      exclusions = ["Participle", "Infinitive"];
+    }
+
+    let nextVerb = randomWord(
+      wordUsages,
+      "parse",
+      verbMode.split(" "),
+      exclusions
+    );
     dispatch(setWord(nextVerb));
   };
 
@@ -225,20 +236,30 @@ const Tense = ({ onClick }) => {
 };
 
 const Voice = ({ onClick }) => {
+  const verseMode = useSelector(selectVerseMode);
+
   return (
     <div className="verb-cases">
       <div className="case-option" onClick={(e) => onClick(e)}>
         active
       </div>
-      <div className="case-option" onClick={(e) => onClick(e)}>
-        middle
-      </div>
-      <div className="case-option" onClick={(e) => onClick(e)}>
-        passive
-      </div>
-      <div className="case-option" onClick={(e) => onClick(e)}>
-        deponent
-      </div>
+      {verseMode === "test" ? (
+        <>
+          <div className="case-option" onClick={(e) => onClick(e)}>
+            middle
+          </div>
+          <div className="case-option" onClick={(e) => onClick(e)}>
+            passive
+          </div>
+          <div className="case-option" onClick={(e) => onClick(e)}>
+            deponent
+          </div>
+        </>
+      ) : (
+        <div className="case-option" onClick={(e) => onClick(e)}>
+          middle/passive
+        </div>
+      )}
     </div>
   );
 };
