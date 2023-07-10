@@ -110,7 +110,7 @@ const VerbGrid = ({
 
   const onClick = (e) => {
     if (e.target.innerHTML === "middle/passive") {
-      if (word.parse.includes("middle") || word.parse.includes("passive")) || word.parse.includes("Passive") ||word.parse.includes("Middle")) ){
+      if (word.parse.includes("middle") || word.parse.includes("passive") || word.parse.includes("Passive") || word.parse.includes("Middle") ){
         e.target.className = e.target.className + " correct";
         if (verbMode !== "parsing") {
           isParsed();
