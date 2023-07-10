@@ -109,7 +109,14 @@ const VerbGrid = ({
   };
 
   const onClick = (e) => {
-    if (word.parse.includes(e.target.innerHTML)) {
+    if (e.target.innerHTML === "middle/passive") {
+      if (word.parse.includes("middle") || word.parse.includes("passive")) {
+        e.target.className = e.target.className + " correct";
+        if (verbMode !== "parsing") {
+          isParsed();
+        }
+      }
+    } else if (word.parse.includes(e.target.innerHTML)) {
       e.target.className = e.target.className + " correct";
       if (verbMode !== "parsing") {
         isParsed();
@@ -243,7 +250,7 @@ const Voice = ({ onClick }) => {
       <div className="case-option" onClick={(e) => onClick(e)}>
         active
       </div>
-      {verseMode === "test" ? (
+      {verseMode !== "Parse Verbs" ? (
         <>
           <div className="case-option" onClick={(e) => onClick(e)}>
             middle
