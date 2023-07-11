@@ -304,9 +304,6 @@ const PickVerse = ({
 
   return (
     <div className="pick-component">
-      <p>
-        {chosenBook} {chosenChapter}:{chosenVerse}
-      </p>
       <div className="pick-verse-menu">
         <div className="drop-lists">
           <button onClick={handleOpenBookList} className="booklist-button">
