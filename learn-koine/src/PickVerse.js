@@ -84,7 +84,7 @@ const PickVerse = ({
     e.preventDefault();
     makeHighlight(e);
     const chapterNumber = e.target.innerHTML;
-    setVerseList(updateVerseList(chapterNumber));
+    setVerseList(updateVerseList(chapterNumber, chosenBook));
     setChosenVerse("Select Verse");
 
     let encodeChapter = "";
@@ -304,6 +304,9 @@ const PickVerse = ({
 
   return (
     <div className="pick-component">
+      <p>
+        {chosenBook} {chosenChapter}:{chosenVerse}
+      </p>
       <div className="pick-verse-menu">
         <div className="drop-lists">
           <button onClick={handleOpenBookList} className="booklist-button">
