@@ -127,6 +127,15 @@ const VerbMenu = ({
       (options.includes("imperative") || options.includes("subjunctive"))
     ) {
       return false;
+    } else if (options.includes("perfect") && options.includes("subjunctive")) {
+      if (options.includes("middle") || options.includes("passive")) {
+        return false;
+      }
+    } else if (
+      options.includes("imperfect") &&
+      (options.includes("subjunctive") || options.includes("imperative"))
+    ) {
+      return false;
     } else {
       return true;
     }
