@@ -2,20 +2,32 @@ import "./Word.css";
 import { randomChoicesSelection } from "./greek_text/parseLexicon";
 import { selectWordSlice } from "./features/wordSlice";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { greekConjunctions } from "./greek_text/greekConjunctions";
 
 const ConjuctionGrid = ({ reset }) => {
   const word = useSelector(selectWordSlice);
-  let guessArray = [];
+  // let guessArray = [];
 
-  if (word.parse.includes("Conjunction")) {
-    guessArray = randomChoicesSelection(
-      greekConjunctions,
-      greekConjunctions[word.word]
-    );
-    console.log(guessArray);
-  }
+  // if (word.parse.includes("Conjunction")) {
+  //   guessArray = randomChoicesSelection(
+  //     greekConjunctions,
+  //     greekConjunctions[word.word]
+  //   );
+  //   console.log(guessArray);
+  // }
+
+  const guessArray = useMemo(() => {
+    let array = [];
+    if (word.parse.includes("Conjunction")) {
+      array = randomChoicesSelection(
+        greekConjunctions,
+        greekConjunctions[word.word]
+      );
+      console.log(array);
+      return array;
+    }
+  }, [word]);
 
   useEffect(() => {
     let caseOptions = document.getElementsByClassName("case-option");
