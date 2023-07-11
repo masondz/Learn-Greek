@@ -162,6 +162,11 @@
   align-content: center;
   padding: 100px;
 }
+.vocative-participle {
+  position: relative;
+  width: 100%;
+  background-color: goldenrod;
+}
 
 @media (hover: hover) {
   .button:hover {

@@ -134,6 +134,12 @@ const VerbGrid = ({
     }
   };
 
+  let isVocative = false;
+
+  if (word.parse.includes("Vocative") && !word.parse.includes("nominative")) {
+    isVocative = true;
+  }
+
   return (
     <div>
       <VerbStepOne
@@ -145,7 +151,9 @@ const VerbGrid = ({
         onClick={onClick}
       />
       {isRegularVerb && <RegularVerbGrid onClick={onClick} />}
-      {isParticiple && <ParticipleGrid onClick={onClick} />}
+      {isParticiple && (
+        <ParticipleGrid onClick={onClick} isVocative={isVocative} />
+      )}
       {isInfinitive && <InfinitiveGrid onClick={onClick} />}
       <p>{checkParse}</p>
     </div>
@@ -324,21 +332,33 @@ const NumberComponent = ({ onClick }) => {
   );
 };
 
-const CaseComponent = ({ onClick }) => {
+/*
+  {isVocative && (
+        <div className={"case-option vocative-participle"}>vocative</div>
+      )}
+*/
+
+const CaseComponent = ({ onClick, isVocative }) => {
   return (
     <div className="verb-cases">
-      <div className="case-option" onClick={(e) => onClick(e)}>
-        nominative
-      </div>
-      <div className="case-option" onClick={(e) => onClick(e)}>
-        genitive
-      </div>
-      <div className="case-option" onClick={(e) => onClick(e)}>
-        dative
-      </div>
-      <div className="case-option" onClick={(e) => onClick(e)}>
-        accusative
-      </div>
+      {isVocative ? (
+        <div className={"case-option vocative-participle"}>vocative</div>
+      ) : (
+        <>
+          <div className="case-option" onClick={(e) => onClick(e)}>
+            nominative
+          </div>
+          <div className="case-option" onClick={(e) => onClick(e)}>
+            genitive
+          </div>
+          <div className="case-option" onClick={(e) => onClick(e)}>
+            dative
+          </div>
+          <div className="case-option" onClick={(e) => onClick(e)}>
+            accusative
+          </div>
+        </>
+      )}
     </div>
   );
 };
@@ -371,12 +391,12 @@ const RegularVerbGrid = ({ onClick }) => {
   );
 };
 
-const ParticipleGrid = ({ onClick }) => {
+const ParticipleGrid = ({ onClick, isVocative }) => {
   return (
     <>
       <Tense onClick={onClick} />
       <Voice onClick={onClick} />
-      <CaseComponent onClick={onClick} />
+      <CaseComponent onClick={onClick} isVocative={isVocative} />
       <NumberComponent onClick={onClick} />
       <Gender onClick={onClick} />
     </>
