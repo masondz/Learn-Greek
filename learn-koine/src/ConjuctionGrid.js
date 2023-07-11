@@ -43,7 +43,11 @@ const ConjuctionGrid = ({ reset }) => {
         {word.parse.includes("Conjunction") ? (
           guessArray.map((guess) => {
             return (
-              <div className={"case-option"} onClick={(e) => checkCase(e)}>
+              <div
+                className={"case-option"}
+                onClick={(e) => checkCase(e)}
+                key={guess}
+              >
                 {guess}
               </div>
             );
