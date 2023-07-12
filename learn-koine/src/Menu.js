@@ -85,7 +85,6 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
               transition: { delay: 0.29, duration: 0.1 },
             }}
           >
-            <PickVerse />
             <div></div>
             <motion.div
               className="menu-options"
