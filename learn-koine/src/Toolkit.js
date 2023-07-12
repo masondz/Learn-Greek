@@ -16,12 +16,12 @@ const tools = [
 ];
 
 const toolsAbbreviationMap = {
-  "definite article": "D. A.",
+  "definite article": "Def Art.",
   Conjunction: "Conj.",
   Preposition: "Prep.",
-  "Noun and Adjective": "N. A.",
-  Pronoun: "Pron",
-  Verb: "Vrb",
+  "Noun and Adjective": "Noun/\nAdj.",
+  Pronoun: "Pron.",
+  Verb: "Vrb.",
   Particle: "Part.",
   Adverb: "Adv.",
 };
@@ -37,7 +37,9 @@ const Toolkit = () => {
       <div className="toolkit-container-abv">
         {tools.map((tool) => {
           return (
-            <Tool title={toolsAbbreviationMap[tool]} id={tool} key={tool} />
+            <>
+              <Tool title={toolsAbbreviationMap[tool]} id={tool} key={tool} />
+            </>
           );
         })}
       </div>

@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectVerseMode, setMode } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
 import "./Menu.css";
+import PickVerse from "./PickVerse";
 
 const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
   const verseMode = useSelector(selectVerseMode);
@@ -84,6 +85,7 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
               transition: { delay: 0.29, duration: 0.1 },
             }}
           >
+            <PickVerse />
             <div></div>
             <motion.div
               className="menu-options"

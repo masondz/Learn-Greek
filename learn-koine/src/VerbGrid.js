@@ -15,7 +15,7 @@ const VerbGrid = ({
   verbCharacteristics,
 }) => {
   const [checkParse, setCheckParse] = useState(
-    "Pick correct person and number"
+    "Pick Verb, Participle, or Infintive"
   );
 
   const [isRegularVerb, setIsRegularVerb] = useState(false);
@@ -52,14 +52,17 @@ const VerbGrid = ({
       setIsInfinitive(true);
       setIsParticiple(false);
       setIsRegularVerb(false);
+      setCheckParse("Parse the word");
     } else if (verbType.Type === "Participle") {
       setIsInfinitive(false);
       setIsParticiple(true);
       setIsRegularVerb(false);
+      setCheckParse("Parse the word");
     } else {
       setIsInfinitive(false);
       setIsParticiple(false);
       setIsRegularVerb(true);
+      setCheckParse("Parse the word");
     }
   }, [word, reset, verbType.Type]);
 
@@ -74,6 +77,7 @@ const VerbGrid = ({
       setIsInfinitive(false);
       setIsParticiple(false);
       setIsRegularVerb(false);
+      setCheckParse("Pick Verb, Participle, or Infintive");
     }
 
     let exclusions = [];
@@ -101,7 +105,7 @@ const VerbGrid = ({
       setCheckParse("Good Job!");
       setTimeout(() => {
         handleNext();
-        setCheckParse("Pick correct person and number");
+        setCheckParse("Parse the word");
       }, 850);
     } else {
       return;
@@ -149,6 +153,7 @@ const VerbGrid = ({
         verbCharacteristics={verbCharacteristics}
         word={word}
         onClick={onClick}
+        setCheckParse={setCheckParse}
       />
       {isRegularVerb && <RegularVerbGrid onClick={onClick} />}
       {isParticiple && (
@@ -165,6 +170,7 @@ const VerbStepOne = ({
   setIsRegularVerb,
   setIsInfinitive,
   setIsParticiple,
+  setCheckParse,
 }) => {
   const handleCheckVerb = (e) => {
     e.preventDefault();
@@ -177,6 +183,8 @@ const VerbStepOne = ({
       setIsRegularVerb(true);
       setIsInfinitive(false);
       setIsParticiple(false);
+      setCheckParse("Parse the verb");
+
       return;
     } else {
       e.target.className = e.target.className + " wrong";
@@ -190,6 +198,8 @@ const VerbStepOne = ({
       setIsParticiple(true);
       setIsInfinitive(false);
       setIsRegularVerb(false);
+      setCheckParse("Parse the participle");
+
       return;
     } else {
       e.target.className = e.target.className + " wrong";
@@ -203,6 +213,8 @@ const VerbStepOne = ({
       setIsInfinitive(true);
       setIsParticiple(false);
       setIsRegularVerb(false);
+      setCheckParse("Parse the infinitive");
+
       return;
     } else {
       e.target.className = e.target.className + " wrong";
