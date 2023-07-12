@@ -28,6 +28,20 @@
   visibility: hidden;
 }
 
+.category-tip {
+  position: fixed;
+  bottom: 3.5em;
+  z-index: 2;
+  height: 1.8em;
+  padding-top: 0.2em;
+  left: 0px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-align: start;
+  background-color: rgb(3, 97, 3);
+  font-size: 0.5em;
+}
+
 .tool {
   padding: 0px 5px 5px 5px;
   background-color: #282c34;
@@ -78,6 +92,13 @@
   border-top: rgb(113, 241, 188) 4px solid;
 }
 
+@media only screen and (max-width: 1114px) {
+  .category-tip {
+    bottom: 3.4em;
+    font-size: 0.6em;
+  }
+}
+
 @media only screen and (max-width: 822px) {
   .toolkit-container {
     font-size: 0.6em;
@@ -93,5 +114,10 @@
 
   .toolkit-container {
     visibility: hidden;
+  }
+
+  .category-tip {
+    bottom: 4.6em;
+    font-size: 0.7em;
   }
 }

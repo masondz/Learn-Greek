@@ -1,6 +1,6 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { setMode } from "./features/verseSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { selectVerseMode, setMode } from "./features/verseSlice";
 
 import "./Toolkit.css";
 
@@ -27,9 +27,12 @@ const toolsAbbreviationMap = {
 };
 
 const Toolkit = () => {
+  const verseMode = useSelector(selectVerseMode);
   return (
     <div>
+      <p className="category-tip">Mode: {verseMode}</p>
       <div className="toolkit-container">
+        <br></br>
         {tools.map((tool) => {
           return <Tool title={tool} id={tool} key={tool} />;
         })}
