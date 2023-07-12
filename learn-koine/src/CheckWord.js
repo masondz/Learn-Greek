@@ -1,13 +1,22 @@
 import React from "react";
 // import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { clearVerse, selectVerseMode, setVerse } from "./features/verseSlice";
+import { selectVerseMode, setVerse } from "./features/verseSlice";
 import { clearWord, selectWordSlice } from "./features/wordSlice";
 import "./Word.css";
 import { getRandomVerse, organizeText } from "./Verse";
 import { greekText } from "./greek_text/greekText";
+import { decodeReference } from "./PassageNumber";
+import { newTestament } from "./PickVerse";
 
-const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
+const CheckWord = ({
+  children,
+  setArticleGrid,
+  blankGrid,
+  setChosenBook,
+  setChosenChapter,
+  setChosenVerse,
+}) => {
   const { word, partOfSpeech, gloss } = useSelector(selectWordSlice);
   const verseMode = useSelector(selectVerseMode);
   const dispatch = useDispatch();
@@ -53,12 +62,17 @@ const CheckWord = ({ children, setArticleGrid, blankGrid }) => {
           className="button"
           id="Random-Verse-Button"
           onClick={() => {
-            dispatch(clearVerse());
-            // setCheckComplete("Check");
             let newRandomVerse = getRandomVerse(organizeText(greekText));
+
+            let referenceRaw = decodeReference(newRandomVerse[0]);
+
+            let books = Object.keys(newTestament);
+
             setTimeout(() => {
-              // dispatch(clearArticleCount());
               dispatch(setVerse(newRandomVerse));
+              setChosenBook(books[referenceRaw.bookIndex]);
+              setChosenChapter(referenceRaw.chapterNumber);
+              setChosenVerse(referenceRaw.verseNumber);
               setArticleGrid(blankGrid);
               dispatch(clearWord());
             }, 1);

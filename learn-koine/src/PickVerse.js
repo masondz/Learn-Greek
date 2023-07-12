@@ -17,21 +17,20 @@ const PickVerse = ({
   bookListIsOpen,
   chapterListIsOpen,
   verseListIsOpen,
+  chosenBook,
+  setChosenBook,
+  chosenChapter,
+  setChosenChapter,
+  chosenVerse,
+  setChosenVerse,
 }) => {
   const verseReferenceFromStore = useSelector(selectVerseReference);
 
   const bookNames = Object.keys(newTestament);
-
   const referenceRaw = decodeReference(verseReferenceFromStore);
 
   const [chapterList, setChapterList] = useState([]);
   const [verseList, setVerseList] = useState([]);
-
-  const [chosenBook, setChosenBook] = useState("");
-  const [chosenChapter, setChosenChapter] = useState(
-    referenceRaw.chapterNumber
-  );
-  const [chosenVerse, setChosenVerse] = useState(0);
 
   const dispatch = useDispatch();
 

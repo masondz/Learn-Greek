@@ -14906,7 +14906,7 @@ export const wordUsages = {
     gloss: "it/she/he",
   },
   αὐτοῖς: {
-    parse: "P-DPN｜Personal pronoun, dative, plural, neuter",
+    parse: "P-DPN｜Personal pronoun, dative, plural, neuter or masculine",
     GN: "G846",
     gloss: "it/she/he",
   },

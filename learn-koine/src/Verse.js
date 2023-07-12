@@ -93,6 +93,10 @@ const Verse = () => {
   const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
   const [verseListIsOpen, setVerseListIsOpen] = useState(false);
 
+  const [chosenBook, setChosenBook] = useState("");
+  const [chosenChapter, setChosenChapter] = useState("");
+  const [chosenVerse, setChosenVerse] = useState(0);
+
   useEffect(() => {
     const randomVerse = getRandomVerse(organizeText(greekText));
     console.log(randomVerse);
@@ -224,6 +228,12 @@ const Verse = () => {
         setBookListIsOpen={setBookListIsOpen}
         setChapterListIsOpen={setChapterListIsOpen}
         setVerseListIsOpen={setVerseListIsOpen}
+        chosenBook={chosenBook}
+        setChosenBook={setChosenBook}
+        chosenChapter={chosenChapter}
+        setChosenChapter={setChosenChapter}
+        chosenVerse={chosenVerse}
+        setChosenVerse={setChosenVerse}
       />
       <div className="verse-sentence">
         {verseArray.map((word, i) => {
@@ -247,6 +257,9 @@ const Verse = () => {
             word={word}
             setArticleGrid={setArticleGrid}
             blankGrid={blankGrid}
+            setChosenBook={setChosenBook}
+            setChosenChapter={setChosenChapter}
+            setChosenVerse={setChosenVerse}
           >
             {practiceGrid}
           </CheckWord>
