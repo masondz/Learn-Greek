@@ -5,7 +5,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectVerseMode, setMode } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
 import "./Menu.css";
-import PickVerse from "./PickVerse";
 
 const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
   const verseMode = useSelector(selectVerseMode);

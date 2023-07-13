@@ -98,6 +98,7 @@ const VerbGrid = ({
 
   const isParsed = () => {
     numCorrect++;
+    console.log(numCorrect);
     if (
       numCorrect === 5 ||
       (word.parse.includes("Infinitive") && numCorrect === 2)
@@ -113,6 +114,12 @@ const VerbGrid = ({
   };
 
   const onClick = (e) => {
+    if (word.parse.includes("imperfect")) {
+      if (e.target.innerHTML === "perfect") {
+        e.target.className = e.target.className + " wrong";
+        return;
+      }
+    }
     if (e.target.innerHTML === "middle/passive") {
       if (
         word.parse.includes("middle") ||
