@@ -22,6 +22,9 @@ const VerbGrid = ({
   const [isParticiple, setIsParticiple] = useState(false);
   const [isInfinitive, setIsInfinitive] = useState(false);
 
+  // const [imperfectPerson, setImperfectPerson] = useState("");
+  // const [imperfectNumber, setImperfectNumber] = useState("");
+
   const verbType = useSelector(selectVerbSlice);
   const word = useSelector(selectWordSlice);
 
@@ -119,7 +122,72 @@ const VerbGrid = ({
         e.target.className = e.target.className + " wrong";
         return;
       }
+
+      // if (
+      //   word.parse.includes("imperfect, active, indicative, first, singular") ||
+      //   word.parse.includes("imperfect, active, indicative, third, plural")
+      // ) {
+      //   console.log("checking for person and number for imperfect verb");
+      //   switch (e.target.innerHTML) {
+      //     case "first":
+      //       if (imperfectPerson === "third") {
+      //         e.target.className = e.target.className + " wrong";
+      //         break;
+      //       }
+      //       setImperfectPerson("first");
+      //       if (imperfectNumber === "plural") {
+      //         e.target.className = e.target.className + " wrong";
+      //       } else {
+      //         console.log("made it to first person statement");
+      //         e.target.className = e.target.className + " correct";
+      //         isParsed();
+      //       }
+      //       break;
+      //     case "third":
+      //       setImperfectPerson("third");
+      //       if (imperfectNumber === "singular") {
+      //         e.target.className = e.target.className + " wrong";
+      //       } else {
+      //         console.log("made it to third person statement");
+      //         e.target.className = e.target.className + " correct";
+      //         isParsed();
+      //       }
+      //       break;
+      //     case "singular":
+      //       setImperfectNumber("singular");
+      //       if (imperfectPerson === "third") {
+      //         e.target.className = e.target.className + " wrong";
+      //       } else {
+      //         console.log("made it to singular number statement");
+      //         e.target.className = e.target.className + " correct";
+      //         isParsed();
+      //       }
+      //       break;
+      //     case "plural":
+      //       setImperfectNumber("plural");
+      //       if (imperfectPerson === "first") {
+      //         e.target.className = e.target.className + " wrong";
+      //       } else {
+      //         console.log("made it to plural number statement");
+      //         e.target.className = e.target.className + " correct";
+      //         isParsed();
+      //       }
+      //       break;
+      //     default:
+      //       if (word.parse.includes(e.target.innerHTML)) {
+      //         e.target.className = e.target.className + " correct";
+      //         isParsed();
+      //         return;
+      //       } else {
+      //         e.target.className = e.target.className + " wrong";
+      //       }
+      //       break;
+      //   }
+      //   console.log(imperfectNumber, imperfectPerson);
+      //   return;
+      // }
     }
+
     if (e.target.innerHTML === "middle/passive") {
       if (
         word.parse.includes("middle") ||
