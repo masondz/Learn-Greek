@@ -13,14 +13,22 @@
 }
 
 .menu-links {
-  padding-left: 5px;
-  margin-bottom: 55px;
+  /* padding-left: 5px; */
+  /* padding-bottom: 5px; */
+  margin-bottom: 35px;
+}
+
+.menu-link {
+  color: black;
+  display: inline-block;
+  font-size: smaller;
+  /* border: 1px red solid; */
+  margin-bottom: 10px;
 }
 
 .menu-container {
   /* height: 50px; */
   position: absolute;
-  /* width: 300px; */
   background-color: white;
   color: black;
   text-align: left;
@@ -33,9 +41,9 @@
 }
 
 .verb-menu-options {
-  padding-left: 5px;
+  padding: 5px;
   font-size: 0.8em;
-  width: 97%;
+  /* width: 100%; */
 }
 
 .verb-menu-options button {
@@ -43,7 +51,7 @@
 }
 
 .verb-menu-categories {
-  /* border: 1px solid red; */
+  border-bottom: 1px solid rgb(45, 52, 56);
   display: grid;
   font-size: 0.8em;
   grid-template-columns: 1fr 1fr;
@@ -51,6 +59,7 @@
   row-gap: 5px;
   justify-items: stretch;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .verb-menu-selection {
@@ -87,13 +96,6 @@
   user-select: none;
 }
 
-.menu-link {
-  color: black;
-  font-size: smaller;
-  border: none;
-  margin-bottom: 20px;
-}
-
 .menu-button {
   border: none;
   color: #282c34;
@@ -110,9 +112,21 @@
   cursor: pointer;
 }
 
+.submit-button {
+  background-color: #282c34;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 0.5px;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin: 1.5em 0px;
+}
+
 @media only screen and (max-width: 475px) {
   .verb-menu-categories {
-    /* font-size: em; */
+    /* font-size: 2em; */
   }
 
   .verb-menu-options {

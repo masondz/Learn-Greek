@@ -325,6 +325,11 @@
     padding: 0px 2.5px;
     font-size: larger;
   }
+
+  .submit-button {
+    width: 15em;
+    margin-bottom: 2em;
+  }
 }
 
 .passage {
