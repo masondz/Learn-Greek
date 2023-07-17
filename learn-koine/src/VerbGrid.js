@@ -226,7 +226,6 @@ const VerbGrid = ({
 
   return (
     <div>
-      <p>{verbMode}</p>
       <VerbStepOne
         setIsRegularVerb={setIsRegularVerb}
         setIsParticiple={setIsParticiple}
