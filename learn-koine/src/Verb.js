@@ -106,7 +106,7 @@ const Verb = () => {
           verbCharacteristics={verbCharacteristics}
         />
         <br></br>
-        <button className="button" onClick={() => handleClick()}>
+        <button className="button-random" onClick={() => handleClick()}>
           Random Verb
         </button>
       </div>
