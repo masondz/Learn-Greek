@@ -88,10 +88,15 @@ const VerbGrid = ({
       exclusions = ["Participle", "Infinitive"];
     }
 
+    let options =
+      verbMode === "Select Verb Form to Practice" ? "Verb" : verbMode;
+
+    console.log(options);
+
     let nextVerb = randomWord(
       wordUsages,
       "parse",
-      verbMode.split(" "),
+      options.split(" "),
       exclusions
     );
     dispatch(setWord(nextVerb));
@@ -221,6 +226,7 @@ const VerbGrid = ({
 
   return (
     <div>
+      <p>{verbMode}</p>
       <VerbStepOne
         setIsRegularVerb={setIsRegularVerb}
         setIsParticiple={setIsParticiple}
