@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import { randomWord } from "./greek_text/parseLexicon";
+import { randomWord } from "./greek_text/parseLexicon";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import VerbGrid from "./VerbGrid";
 import "./Verb.css";
@@ -75,16 +75,11 @@ const Verb = () => {
 
     dispatch(clearWord());
     let splitOption = option.split(" ");
-    let nextVerb = async () =>
-      await import("./greek_text/parseLexicon").then((module) =>
-        module.randomWord(wordUsages, "parse", splitOption, exclusions)
-      );
+    let nextVerb = randomWord(wordUsages, "parse", splitOption, exclusions);
 
     if (!verbType.Type) {
       console.log("if verb type not declared, don't render any grid.");
     }
-
-    console.log(nextVerb);
 
     dispatch(setWord(nextVerb));
   };
@@ -106,7 +101,7 @@ const Verb = () => {
           verb={verb}
           dispatch={dispatch}
           setWord={setWord}
-          // randomWord={randomWord}
+          randomWord={randomWord}
           verbMode={verbMode}
           verbCharacteristics={verbCharacteristics}
         />
