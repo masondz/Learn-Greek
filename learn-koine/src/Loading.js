@@ -47,8 +47,6 @@ const Loading = () => {
     }
   }, [currentURL]);
 
-  console.log(currentURL);
-
   return <div>{loadingLayout}</div>;
 };
 

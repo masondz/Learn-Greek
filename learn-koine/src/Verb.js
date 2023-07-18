@@ -28,12 +28,14 @@ const Verb = () => {
   }, [dispatch]);
 
   const handleClick = (option = verbMode, exclusions = []) => {
-    if (verbMode === "Select Verb Form to Practice") {
+    if (option === "Select Verb Form to Practice") {
       option = "Verb";
     }
     if (verbCharacteristics["Type"] === "Verb") {
       exclusions = ["Participle", "Infinitive"];
     }
+
+    console.log(option);
 
     if (
       verbCharacteristics.Type === "Participle" &&
@@ -144,15 +146,13 @@ const VerbMenu = ({
     }
   };
 
-  const handleSelect = (verbCharacteristics) => {
-    console.log(verbCharacteristics);
-    const newVerbType = verbCharacteristics.Type;
-    const optionsArr = Object.keys(verbCharacteristics);
-    console.log(optionsArr);
+  const handleSelect = (verbChars) => {
+    const newVerbType = verbChars.Type;
+    const optionsArr = Object.keys(verbChars);
     let options = "";
 
     for (let i = 1; i < optionsArr.length; i++) {
-      options += ` ${verbCharacteristics[optionsArr[i]]}`;
+      options += ` ${verbChars[optionsArr[i]]}`;
     }
     if (!options) {
       return alert("You must pick verb options from the menu!!");
@@ -161,15 +161,16 @@ const VerbMenu = ({
       alert("Verb with given characteristics does not exist.");
       return;
     }
-    if (verbCharacteristics.Type === "Participle") {
+    if (verbChars.Type === "Participle") {
       console.log("render participle grid");
-    } else if (verbCharacteristics.Type === "Infinitive") {
+    } else if (verbChars.Type === "Infinitive") {
       console.log("render infinitive grid");
-    } else if (verbCharacteristics.Type === "Verb") {
+    } else if (verbChars.Type === "Verb") {
       console.log("render regularVerb grid");
     } else {
       console.log("don't render any grid.");
     }
+    console.log("handleSelect() options: " + options);
     dispatch(setVerbType(newVerbType));
     setVerbMode(options);
     setTimeout(() => {
