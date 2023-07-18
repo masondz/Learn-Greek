@@ -7,7 +7,7 @@ import "./Menu.css";
 
 const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
   const verseMode = useSelector(selectVerseMode);
-  const [openOrClosed, setIsOpenOrClosed] = useState("open");
+  const [openOrClosed, setIsOpenOrClosed] = useState("closed");
 
   const dispatch = useDispatch();
 
