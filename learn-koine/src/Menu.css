@@ -48,9 +48,11 @@
   color: black;
   text-align: left;
   width: 234px;
+  min-height: 99vh;
   z-index: 3;
   border: 2px solid rgb(119, 119, 118);
   transition: width 300ms, height 300ms;
+  overflow: hidden;
 }
 
 .menu-container-closed {
@@ -58,6 +60,7 @@
   position: absolute;
   background-color: white;
   width: 36px;
+  height: 39px;
   color: black;
   text-align: left;
   z-index: 3;

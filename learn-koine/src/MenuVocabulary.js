@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion, useCycle, AnimatePresence } from "framer-motion";
 import { vocabListObj } from "./greek_text/vocabularyWords";
 
 import "./Menu.css";
@@ -11,30 +10,10 @@ const MenuVocabulary = ({
   setVocabList,
   setIsFlipped,
 }) => {
-  const [open, cycleOpen] = useCycle(true, false);
+  const [openOrClosed, setIsOpenOrClosed] = useState("open");
   const [category, setCategory] = useState("Pick a Category");
 
-  const sideVariants = {
-    closed: {
-      transition: {
-        // staggerChildren: 0.01,
-        staggerDiretion: -1,
-      },
-    },
-    open: {
-      transition: {
-        // staggerChildren: 0.1,
-        staggerDirection: 1,
-      },
-    },
-  };
-
-  const itemVariants = {
-    closed: {
-      opacity: 0,
-    },
-    open: { opacity: 1 },
-  };
+  const menuLinks = ["parsing-verse", "verbs"];
 
   const handleSetList = (option) => {
     let list = {};
@@ -84,94 +63,62 @@ const MenuVocabulary = ({
           break;
       }
       setTimeout(() => {
-        cycleOpen();
+        setIsOpenOrClosed("closed");
       }, 10);
     }, 150);
   };
 
   return (
-    <div className="menu-container">
-      <div className="menu-button-container">
-        <button className="menu-toggle-button" onClick={cycleOpen}>
-          {open ? `X   Vocabulary Practice` : "="}
+    <div className={`menu-container-${openOrClosed}`} key="verb-menu-container">
+      <div
+        className={`menu-button-container-${openOrClosed}`}
+        key="verb-menu-button"
+      >
+        <button
+          className="menu-toggle-button"
+          onClick={() =>
+            openOrClosed === "open"
+              ? setIsOpenOrClosed("closed")
+              : setIsOpenOrClosed("open")
+          }
+        >
+          {openOrClosed === "open" ? "X" : "="}
         </button>
       </div>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            key="menu"
-            initial={{ width: "0px", position: "absolute", backgound: "none" }}
-            animate={{
-              width: "300px",
-              minHeight: "110vh",
-              position: "relative",
-              backgoundColor: "white",
-            }}
-            exit={{
-              height: "10px",
-              width: "0px",
-              transition: { delay: 0.29, duration: 0.1 },
-            }}
-          >
-            <div></div>
-            <motion.div
-              className="menu-options"
-              initial="closed"
-              animate="open"
-              exit="closed"
-              variants={sideVariants}
-            >
-              <motion.h3 variants={itemVariants}>{category}</motion.h3>
-              <motion.button
-                className="menu-button"
-                variants={itemVariants}
-                onClick={() => handleSetList("Most Common")}
-              >
-                Most Common
-              </motion.button>
-              <br></br>
-              <motion.button
-                className="menu-button"
-                variants={itemVariants}
-                onClick={() => handleSetList("More Common")}
-              >
-                More Common
-              </motion.button>
-              <br></br>
-              <motion.button
-                className="menu-button"
-                variants={itemVariants}
-                onClick={() => handleSetList("Common")}
-              >
-                Common
-              </motion.button>
-              <br></br>
-            </motion.div>
+      <h4>{`Studying: ${category}`}</h4>
+      <button
+        className="menu-button"
+        onClick={() => handleSetList("Most Common")}
+      >
+        Most Common
+      </button>
+      <br></br>
+      <button
+        className="menu-button"
+        onClick={() => handleSetList("More Common")}
+      >
+        More Common
+      </button>
+      <br></br>
+      <button className="menu-button" onClick={() => handleSetList("Common")}>
+        Common
+      </button>
+      <br></br>
+
+      <h3 key="links-title">Links</h3>
+      {menuLinks.map((link) => {
+        return (
+          <div key={link + "-div"}>
+            <Link to={"/" + link} className="menu-link" key={link}>
+              {link === "parsing-verse" ? "parsing practice" : link}
+            </Link>
             <br></br>
-            <motion.div
-              className="menu-links"
-              initial="closed"
-              animate="open"
-              exit="closed"
-              variants={itemVariants}
-            >
-              <motion.h3>Links</motion.h3>
-              <Link className="menu-link" to={"/parsing-verse"}>
-                Parse Practice
-              </Link>
-              <br></br>
-              <Link className="menu-link" to={"/verb"}>
-                Verbs
-              </Link>
-              <br></br>
-              <br></br>
-              <Link className="menu-link" to={"/"}>
-                Home
-              </Link>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+        );
+      })}
+      <Link to={"/"} className="menu-link" key="home-link">
+        Home
+      </Link>
     </div>
   );
 };
