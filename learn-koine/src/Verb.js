@@ -7,7 +7,7 @@ import { setWord, selectWordSlice } from "./features/wordSlice";
 import { setMode } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
 import { Link } from "react-router-dom";
-import { useCycle } from "framer-motion";
+// import { useCycle } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import "./Menu.css";
 import VerbMenuOptions from "./VerbMenuOptions";
@@ -123,7 +123,7 @@ const VerbMenu = ({
   verbCharacteristics,
   setVerbCharacteristics,
 }) => {
-  const [open, cycleOpen] = useCycle(true, false);
+  const [openOrClosed, setIsOpenOrClosed] = useState("open");
   const dispatch = useDispatch();
 
   const checkSelectionExists = (options) => {
@@ -175,7 +175,7 @@ const VerbMenu = ({
     setVerbMode(options);
     setTimeout(() => {
       handleClick(options);
-      cycleOpen();
+      setIsOpenOrClosed("closed");
     }, 10);
   };
 
@@ -189,111 +189,115 @@ const VerbMenu = ({
   const menuLinks = ["vocabulary", "parsing-verse"];
 
   return (
-    <div className="menu-container" key="verb-menu-container">
-      <div className="menu-button-container" key="verb-menu-button">
-        <button className="menu-toggle-button" onClick={cycleOpen}>
-          {open ? "X Choose an Option" : "="}
+    <div className={`menu-container-${openOrClosed}`} key="verb-menu-container">
+      <div
+        className={`menu-button-container-${openOrClosed}`}
+        key="verb-menu-button"
+      >
+        <button
+          className="menu-toggle-button"
+          onClick={() =>
+            openOrClosed === "open"
+              ? setIsOpenOrClosed("closed")
+              : setIsOpenOrClosed("open")
+          }
+        >
+          {openOrClosed === "open" ? "X" : "="}
         </button>
       </div>
-      {open && (
-        <div className="verb-menu-options">
-          <h3 key="type-title">Type</h3>
-          <VerbMenuOptions
-            menuOptions={["Verb", "Participle", "Infinitive"]}
-            verbCharacteristics={verbCharacteristics}
-            setVerbCharacteristics={setVerbCharacteristics}
-            characteristic={"Type"}
-            key="Type"
-          />
-          <h3 key="tense-title">Tense</h3>
-          <VerbMenuOptions
-            menuOptions={[
-              "Present",
-              "Aorist",
-              "Future",
-              "Perfect",
-              "Imperfect",
-            ]}
-            verbCharacteristics={verbCharacteristics}
-            setVerbCharacteristics={setVerbCharacteristics}
-            characteristic={"Tense"}
-            key="Tense"
-          />
 
-          <h3 key="voice-title">Voice</h3>
-          <VerbMenuOptions
-            menuOptions={["Active", "Middle", "Passive", "Deponent"]}
-            verbCharacteristics={verbCharacteristics}
-            setVerbCharacteristics={setVerbCharacteristics}
-            characteristic={"Voice"}
-            key="Voice"
-          />
+      <div className={`verb-menu-options-${openOrClosed}`}>
+        <p style={{ whiteSpace: "nowrap" }}>Select verb options</p>
+        <h3 key="type-title">Type</h3>
+        <VerbMenuOptions
+          menuOptions={["Verb", "Participle", "Infinitive"]}
+          verbCharacteristics={verbCharacteristics}
+          setVerbCharacteristics={setVerbCharacteristics}
+          characteristic={"Type"}
+          key="Type"
+        />
+        <h3 key="tense-title">Tense</h3>
+        <VerbMenuOptions
+          menuOptions={["Present", "Aorist", "Future", "Perfect", "Imperfect"]}
+          verbCharacteristics={verbCharacteristics}
+          setVerbCharacteristics={setVerbCharacteristics}
+          characteristic={"Tense"}
+          key="Tense"
+        />
 
-          <h3 key="mood-title">Mood</h3>
-          <VerbMenuOptions
-            menuOptions={["Indicative", "Subjunctive", "Imperative"]}
-            verbCharacteristics={verbCharacteristics}
-            setVerbCharacteristics={setVerbCharacteristics}
-            characteristic={"Mood"}
-            key="Mood"
-          />
+        <h3 key="voice-title">Voice</h3>
+        <VerbMenuOptions
+          menuOptions={["Active", "Middle", "Passive", "Deponent"]}
+          verbCharacteristics={verbCharacteristics}
+          setVerbCharacteristics={setVerbCharacteristics}
+          characteristic={"Voice"}
+          key="Voice"
+        />
 
-          <h3 key="person-title">Person</h3>
-          <VerbMenuOptions
-            menuOptions={["First", "Second", "Third"]}
-            verbCharacteristics={verbCharacteristics}
-            setVerbCharacteristics={setVerbCharacteristics}
-            characteristic={"Person"}
-            key="Person"
-          />
+        <h3 key="mood-title">Mood</h3>
+        <VerbMenuOptions
+          menuOptions={["Indicative", "Subjunctive", "Imperative"]}
+          verbCharacteristics={verbCharacteristics}
+          setVerbCharacteristics={setVerbCharacteristics}
+          characteristic={"Mood"}
+          key="Mood"
+        />
 
-          <h3 key="number-title">Number</h3>
-          <VerbMenuOptions
-            menuOptions={["Singular", "Plural"]}
-            verbCharacteristics={verbCharacteristics}
-            setVerbCharacteristics={setVerbCharacteristics}
-            characteristic={"Number"}
-            key="Number"
-          />
-          <button
-            className="submit-button"
-            onClick={() => {
-              handleSelect(verbCharacteristics);
-            }}
-            key="Submit-Button"
-          >
-            Submit
-          </button>
-          <div
-            className="menu-links"
-            initial="closed"
-            animate="open"
-            exit="closed"
-            variants={itemVariants}
-            key="menu-lins"
-          >
-            <h3 key="links-title">Links</h3>
-            {menuLinks.map((link) => {
-              return (
-                <div key={link + "-div"}>
-                  <Link
-                    to={"/" + link}
-                    className="menu-link"
-                    onClick={() => dispatch(clearWord())}
-                    key={link}
-                  >
-                    {link === "parsing-verse" ? "parsing practice" : link}
-                  </Link>
-                  <br></br>
-                </div>
-              );
-            })}
-            <Link to={"/"} className="menu-link" key="home-link">
-              Home
-            </Link>
-          </div>
+        <h3 key="person-title">Person</h3>
+        <VerbMenuOptions
+          menuOptions={["First", "Second", "Third"]}
+          verbCharacteristics={verbCharacteristics}
+          setVerbCharacteristics={setVerbCharacteristics}
+          characteristic={"Person"}
+          key="Person"
+        />
+
+        <h3 key="number-title">Number</h3>
+        <VerbMenuOptions
+          menuOptions={["Singular", "Plural"]}
+          verbCharacteristics={verbCharacteristics}
+          setVerbCharacteristics={setVerbCharacteristics}
+          characteristic={"Number"}
+          key="Number"
+        />
+        <button
+          className="submit-button"
+          onClick={() => {
+            handleSelect(verbCharacteristics);
+          }}
+          key="Submit-Button"
+        >
+          Submit
+        </button>
+        <div
+          className="menu-links"
+          initial="closed"
+          animate="open"
+          exit="closed"
+          variants={itemVariants}
+          key="menu-lins"
+        >
+          <h3 key="links-title">Links</h3>
+          {menuLinks.map((link) => {
+            return (
+              <div key={link + "-div"}>
+                <Link
+                  to={"/" + link}
+                  className="menu-link"
+                  onClick={() => dispatch(clearWord())}
+                  key={link}
+                >
+                  {link === "parsing-verse" ? "parsing practice" : link}
+                </Link>
+                <br></br>
+              </div>
+            );
+          })}
+          <Link to={"/"} className="menu-link" key="home-link">
+            Home
+          </Link>
         </div>
-      )}
+      </div>
     </div>
   );
 };

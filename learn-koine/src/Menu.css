@@ -1,10 +1,25 @@
-.menu-button-container {
+.menu-button-container-open {
   background-color: rgb(20, 250, 59);
   padding: 5px;
   height: 25px;
+  width: 222px;
   display: flex;
   /* justify-content: center; */
   border: 2px solid rgb(7, 99, 4);
+  transition: width 300ms, height 300ms;
+  overflow: hidden;
+}
+
+.menu-button-container-closed {
+  background-color: rgb(20, 250, 59);
+  padding: 5px;
+  height: 25px;
+  width: 22px;
+  display: flex;
+  /* justify-content: center; */
+  border: 2px solid rgb(7, 99, 4);
+  transition: width 300ms, height 300ms;
+  overflow: hidden;
 }
 
 .menu-options {
@@ -26,29 +41,58 @@
   margin-bottom: 10px;
 }
 
-.menu-container {
+.menu-container-open {
   /* height: 50px; */
   position: absolute;
   background-color: white;
   color: black;
   text-align: left;
+  width: 234px;
   z-index: 3;
   border: 2px solid rgb(119, 119, 118);
+  transition: width 300ms, height 300ms;
 }
 
-.verb-menu-options h3 {
+.menu-container-closed {
+  /* height: 50px; */
+  position: absolute;
+  background-color: white;
+  width: 36px;
+  color: black;
+  text-align: left;
+  z-index: 3;
+  border: 2px solid rgb(119, 119, 118);
+  transition: width 300ms, height 300ms;
+  overflow: hidden;
+}
+
+.verb-menu-options-open h3 {
   font-size: 1em;
 }
 
-.verb-menu-options {
-  padding: 5px;
-  font-size: 0.8em;
-  /* width: 100%; */
-  height: 120vh;
-  overflow: scroll;
+.verb-menu-options-closed h3 {
+  font-size: 1em;
 }
 
-.verb-menu-options button {
+.verb-menu-options-open {
+  padding: 5px;
+  font-size: 0.8em;
+  width: 225px;
+  height: 120vh;
+  overflow: scroll;
+  transition: width 300ms, height 300ms;
+}
+
+.verb-menu-options-closed {
+  padding: 0px;
+  font-size: 0.8em;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: width 300ms, height 300ms, padding 300ms;
+}
+
+.verb-menu-options-open button {
   width: 100%;
 }
 
@@ -124,6 +168,8 @@
   border: none;
   font-size: large;
   cursor: pointer;
+  width: 220px;
+  text-align: center;
 }
 
 .submit-button {
@@ -143,11 +189,15 @@
 }
 
 @media only screen and (max-width: 475px) {
-  .verb-menu-categories {
-    /* font-size: 2em; */
+  .verb-menu-options-open {
+    font-size: 1.1em;
   }
 
-  .verb-menu-options {
-    font-size: 1.2em;
+  .verb-menu-options-closed {
+    font-size: 1.1em;
+  }
+
+  .verb-menu-options-open h3 {
+    font-size: 1em;
   }
 }
