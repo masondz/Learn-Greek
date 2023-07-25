@@ -61,6 +61,7 @@
 #definite-article {
   border-top: rgb(3, 224, 3) 4px solid;
   font-size: 0.85em;
+  padding-top: 6px;
 }
 
 #Conjunction {
@@ -74,6 +75,7 @@
 #Noun-and-Adjective {
   border-top: rgb(113, 232, 241) 4px solid;
   font-size: 0.85em;
+  padding-top: 6px;
 }
 
 #Pronoun {

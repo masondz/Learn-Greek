@@ -5,7 +5,7 @@ import { selectVerseMode, setMode } from "./features/verseSlice";
 import "./Toolkit.css";
 
 const tools = [
-  "definite article",
+  "Definite Article",
   "Conjunction",
   "Preposition",
   "Noun and Adjective",
@@ -16,7 +16,7 @@ const tools = [
 ];
 
 const toolsAbbreviationMap = {
-  "definite article": "Def Art.",
+  "Definite Article": "Def Art.",
   Conjunction: "Conj.",
   Preposition: "Prep.",
   "Noun and Adjective": "Noun/\nAdj.",
@@ -53,7 +53,7 @@ const Toolkit = () => {
 //individual tools
 const Tool = ({ title, id }) => {
   let idCheck = id;
-  if (idCheck === "definite article") {
+  if (idCheck === "Definite Article") {
     idCheck = "definite-article";
   } else if (idCheck === "Noun and Adjective") {
     idCheck = "Noun-and-Adjective";
@@ -63,6 +63,9 @@ const Tool = ({ title, id }) => {
 
   const handleClick = () => {
     let nextMode = id;
+    if (id === "Definite Article") {
+      nextMode = "definite article";
+    }
     dispatch(setMode(nextMode));
   };
 
