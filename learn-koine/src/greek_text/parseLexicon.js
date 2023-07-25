@@ -76,13 +76,18 @@ export const randomWord = (obj, attribute, arr, exclusions = []) => {
 export const randomChoicesSelection = (obj, conjunctionGloss) => {
   try {
     let initialArray = [conjunctionGloss];
+    let initialGlossArray = conjunctionGloss.split("/");
     while (initialArray.length < 4) {
       const keys = Object.keys(obj);
       let randomGloss = obj[keys[Math.floor(Math.random() * keys.length)]];
 
       let glossArray = randomGloss.split("/");
-      console.log(`glossArray: ${glossArray}`);
-      if (!glossArray.some((e) => initialArray.includes(e))) {
+      console.log(glossArray);
+      if (
+        !glossArray.some((e) => initialArray.includes(e)) &&
+        !initialGlossArray.some((e) => glossArray.includes(e)) &&
+        !initialArray.includes(randomGloss)
+      ) {
         initialArray.push(randomGloss);
       }
     }
