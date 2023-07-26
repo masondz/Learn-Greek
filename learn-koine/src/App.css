@@ -24,9 +24,12 @@ a {
 }
 
 .home-links {
-  border: white solid 1px;
+  border-bottom: rgb(233, 89, 23) solid 2px;
+  border-right: rgb(233, 111, 54) solid 3px;
   border-radius: 5px;
-  color: white;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px 2px rgb(112, 53, 26);
+  background-color: rgb(245, 148, 103);
   padding: 0.5em;
   min-width: 200px;
 }
@@ -35,7 +38,6 @@ a {
   padding: 0.5em;
   border-radius: 5px;
   border: white solid 1px;
-  margin: 30px;
 }
 
 .sidebar-menu {

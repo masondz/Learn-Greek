@@ -13,7 +13,7 @@ const MenuVocabulary = ({
   const [openOrClosed, setIsOpenOrClosed] = useState("open");
   const [category, setCategory] = useState("Pick a Category");
 
-  const menuLinks = ["parsing-verse", "verbs"];
+  const menuLinks = ["parsing-verse", "verb"];
 
   const handleSetList = (option) => {
     let list = {};
