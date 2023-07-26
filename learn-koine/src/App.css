@@ -15,7 +15,8 @@
 
 .links {
   display: grid;
-  row-gap: 5px;
+  grid-template-areas: "a a" "a a";
+  gap: 5px;
 }
 
 a {
@@ -31,7 +32,7 @@ a {
   text-shadow: 1px 2px 2px rgb(112, 53, 26);
   background-color: rgb(245, 148, 103);
   padding: 0.5em;
-  min-width: 200px;
+  min-width: 125px;
 }
 
 #return-home {
