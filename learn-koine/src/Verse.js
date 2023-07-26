@@ -168,17 +168,6 @@ const Verse = () => {
   }
 
   let verseArray = arrayIffy(verse);
-  // let articleCount = 0;
-  // for (let i = 0; i < verseArray.length; i++) {
-  //   let parsedWord = parseWord(verseArray[i].word);
-  //   if (parsedWord.parse.includes(verseMode)) {
-  //     articleCount++;
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   dispatch(setArticleCount(articleCount));
-  // }, [dispatch, setArticleCount, articleCount]);
 
   const menuOptions = [
     "definite article",
@@ -211,13 +200,15 @@ const Verse = () => {
   document.addEventListener("click", offClickCloseMenu);
 
   return (
-    <div className="body" onClick={offClickCloseMenu}>
-      <Menu
-        setArticleGrid={setArticleGrid}
-        blankGrid={blankGrid}
-        menuOptions={menuOptions}
-        menuLinks={menuLinks}
-      />
+    <div className="verse-component" onClick={offClickCloseMenu}>
+      <div>
+        <Menu
+          setArticleGrid={setArticleGrid}
+          blankGrid={blankGrid}
+          menuOptions={menuOptions}
+          menuLinks={menuLinks}
+        />
+      </div>
       <br></br>
       <PickVerse
         setArticleGrid={setArticleGrid}

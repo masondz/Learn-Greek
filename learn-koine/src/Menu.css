@@ -48,7 +48,7 @@
   color: black;
   text-align: left;
   width: 234px;
-  min-height: 99vh;
+  min-height: 100%;
   z-index: 3;
   border: 2px solid rgb(119, 119, 118);
   transition: width 300ms, height 300ms;

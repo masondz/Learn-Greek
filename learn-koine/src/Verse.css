@@ -5,14 +5,12 @@
   margin-left: 1em;
 }
 
-/* .body {
+.verse-component {
   background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
 
 .verse-word {
   display: inline-block;

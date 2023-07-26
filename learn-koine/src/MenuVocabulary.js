@@ -85,7 +85,9 @@ const MenuVocabulary = ({
           {openOrClosed === "open" ? "X" : "="}
         </button>
       </div>
-      <h4>{`Studying: ${category}`}</h4>
+      <h4>
+        {category === "Pick a Category" ? category : `Studying: ${category}`}
+      </h4>
       <button
         className="menu-button"
         onClick={() => handleSetList("Most Common")}

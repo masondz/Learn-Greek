@@ -6,7 +6,7 @@
   width: 100%;
   position: fixed;
   left: 0px;
-  z-index: 2;
+  z-index: 5;
   bottom: 0px;
   font-size: 0.6em;
   background-color: rgba(255, 255, 255, 0.884);
@@ -21,7 +21,7 @@
   width: 100%;
   position: fixed;
   left: 0px;
-  z-index: 3;
+  z-index: 5;
   bottom: 0px;
   font-size: 0.5em;
   background-color: rgba(255, 255, 255, 0.884);
@@ -31,7 +31,7 @@
 .category-tip {
   position: fixed;
   bottom: 3.5em;
-  z-index: 2;
+  z-index: 5;
   height: 1.8em;
   padding-top: 0.2em;
   left: 0px;
