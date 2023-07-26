@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page";
 import Loading from "./Loading";
+// import About from "./About";
 // import Verse from "./Verse";
 // import Vocabulary from "./Vocabulary";
 // import Verb from "./Verb";
@@ -15,6 +16,7 @@ import Loading from "./Loading";
 const Verse = lazy(() => import("./Verse"));
 const Vocabulary = lazy(() => import("./Vocabulary"));
 const Verb = lazy(() => import("./Verb"));
+const About = lazy(() => import("./About"));
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,11 @@ const router = createBrowserRouter([
   {
     path: "verb",
     element: <Verb />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "about",
+    element: <About />,
     errorElement: <ErrorPage />,
   },
 ]);

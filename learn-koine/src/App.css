@@ -13,26 +13,42 @@
   /* padding: 1em; */
 }
 
-h1 {
-}
-
 .links {
   display: grid;
   row-gap: 5px;
 }
 
 a {
+  text-decoration: none;
+  color: white;
+}
+
+.home-links {
   border: white solid 1px;
   border-radius: 5px;
   color: white;
-  text-decoration: none;
   padding: 0.5em;
-  /* max-width: 150px; */
   min-width: 200px;
+}
+
+#return-home {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: white solid 1px;
+  margin: 30px;
 }
 
 .sidebar-menu {
   border-color: red;
+}
+
+.about-paragraph {
+  /* border: 1px red solid; */
+  max-width: 75%;
+  padding: 30px;
+  margin: auto;
+  font-size: 1em;
+  text-align: start;
 }
 
 @media only screen and (max-width: 540px) {
