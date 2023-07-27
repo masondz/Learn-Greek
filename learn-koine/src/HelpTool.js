@@ -23,8 +23,9 @@ const HelpTool = ({ pageName }) => {
   }
 
   return (
-    <div>
+    <div style={{ position: "relative", minHeight: "100%" }}>
       {helpShown && <div className="help-container">{chosenPage}</div>}
+
       <button className="help-tool-button" onClick={handleOnClick}>
         ?
       </button>
