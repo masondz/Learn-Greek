@@ -59,8 +59,6 @@ export default function Vocabulary() {
 
   return (
     <div className="vocab-component">
-      <HelpTool pageName={"vocabulary-help"} />
-
       <MenuVocabulary
         setDeck={setDeck}
         setDeckIndex={setDeckIndex}
@@ -105,6 +103,7 @@ export default function Vocabulary() {
           </p>
         </div>
       </div>
+      <HelpTool pageName={"vocabulary-help"} />
     </div>
   );
 }

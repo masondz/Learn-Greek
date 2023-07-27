@@ -47,7 +47,7 @@ a {
 
 .about-paragraph {
   /* border: 1px red solid; */
-  max-width: 75dvh;
+  max-width: 75%;
   padding: 30px;
   margin: auto;
   font-size: 1em;
@@ -66,8 +66,8 @@ a {
   background-color: aliceblue;
   color: black;
   z-index: 6;
-  top: 7dvh;
-  left: 2.5dvh;
+  top: 50px;
+  margin: auto;
 }
 
 .help-tool-button {
@@ -78,16 +78,15 @@ a {
   width: 1.4em;
   height: 1.4em;
   position: fixed;
-  top: 83dvh;
-  left: 87%;
   font-size: 1.2em;
   color: #282c34;
-  /* text-shadow: 0px 0px 2px rgb(245, 148, 103); */
   -webkit-text-stroke-color: rgb(245, 148, 103);
   -webkit-text-stroke-width: 0.03em;
   background-color: #282c34;
   cursor: pointer;
   z-index: 8;
+  left: 87%;
+  bottom: 85px;
 }
 
 @media only screen and (max-width: 525px) {

@@ -97,7 +97,6 @@ const Verb = () => {
       />
       <br></br>
       <div className="verb-component">
-        <HelpTool pageName={"verb-help"} />
         <div style={{ marginTop: "70px" }}>{verbMode}</div>
         <h1>{verb.word}</h1>
         <h3>{verb.word ? wordUsages[verb.word].gloss : ""}</h3>
@@ -114,6 +113,7 @@ const Verb = () => {
           Random Verb
         </button>
       </div>
+      <HelpTool pageName={"verb-help"} />
     </div>
   );
 };
