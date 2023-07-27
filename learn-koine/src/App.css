@@ -47,7 +47,7 @@ a {
 
 .about-paragraph {
   /* border: 1px red solid; */
-  max-width: 75%;
+  max-width: 75dvh;
   padding: 30px;
   margin: auto;
   font-size: 1em;
@@ -56,9 +56,7 @@ a {
 
 .help-container {
   position: absolute;
-  z-index: 0;
-  height: 130vh;
-  width: 100%;
+  z-index: 7;
 }
 
 .help-paragraph {
@@ -68,10 +66,8 @@ a {
   background-color: aliceblue;
   color: black;
   z-index: 6;
-  top: 7%;
-  left: 5%;
-  /* transform: translate(-50%, -50%); */
-  overflow: scroll;
+  top: 7dvh;
+  left: 2.5dvh;
 }
 
 .help-tool-button {
@@ -81,8 +77,8 @@ a {
   border: rgb(236, 150, 111) solid 2px;
   width: 1.4em;
   height: 1.4em;
-  position: sticky;
-  top: 84%;
+  position: fixed;
+  top: 83dvh;
   left: 87%;
   font-size: 1.2em;
   color: #282c34;
@@ -91,7 +87,7 @@ a {
   -webkit-text-stroke-width: 0.03em;
   background-color: #282c34;
   cursor: pointer;
-  z-index: 7;
+  z-index: 8;
 }
 
 @media only screen and (max-width: 525px) {
