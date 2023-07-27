@@ -55,13 +55,13 @@ a {
 }
 
 .help-container {
-  position: absolute;
-  height: 600px;
-  width: 75%;
+  position: fixed;
+  height: 475px;
+  width: 90%;
   background-color: aliceblue;
   color: black;
   z-index: 6;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: scroll;
