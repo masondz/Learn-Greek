@@ -45,7 +45,7 @@ const About = () => {
           </a>
         </p>
         <br></br>
-        <Link id="return-home" to={"/"}>
+        <Link className="home-links" to={"/"}>
           Return Home
         </Link>
       </section>

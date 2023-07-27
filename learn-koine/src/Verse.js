@@ -26,6 +26,7 @@ import Toolkit from "./Toolkit";
 import AdverbGrid from "./AdverbGrid";
 import ParticleGrid from "./ParticleGrid";
 import { setVerbType } from "./features/verbSlice";
+import HelpTool from "./HelpTool";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -201,6 +202,7 @@ const Verse = () => {
 
   return (
     <div className="verse-component" onClick={offClickCloseMenu}>
+      <HelpTool pageName={"parse-help"} />
       <div>
         <Menu
           setArticleGrid={setArticleGrid}

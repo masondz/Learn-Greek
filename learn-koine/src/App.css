@@ -32,7 +32,7 @@ a {
   text-shadow: 1px 2px 2px rgb(112, 53, 26);
   background-color: rgb(245, 148, 103);
   padding: 0.5em;
-  min-width: 125px;
+  min-width: 195px;
 }
 
 #return-home {
@@ -54,5 +54,46 @@ a {
   text-align: start;
 }
 
-@media only screen and (max-width: 540px) {
+.help-container {
+  position: absolute;
+  height: 600px;
+  width: 75%;
+  background-color: aliceblue;
+  color: black;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+}
+
+.help-tool-button {
+  color: white;
+  background: none;
+  border-radius: 50%;
+  border: rgb(236, 150, 111) solid 2px;
+  width: 1.4em;
+  height: 1.4em;
+  position: fixed;
+  top: 84%;
+  left: 87%;
+  font-size: 1.2em;
+  color: #282c34;
+  /* text-shadow: 0px 0px 2px rgb(245, 148, 103); */
+  -webkit-text-stroke-color: rgb(245, 148, 103);
+  -webkit-text-stroke-width: 0.03em;
+  background-color: #282c34;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 525px) {
+  .home-links {
+    min-width: 125px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .home-links {
+    min-width: 105px;
+  }
 }

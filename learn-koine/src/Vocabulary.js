@@ -3,6 +3,7 @@ import "./Vocabulary.css";
 import { vocabListObj } from "./greek_text/vocabularyWords";
 import ReactCardFlip from "react-card-flip";
 import MenuVocabulary from "./MenuVocabulary";
+import HelpTool from "./HelpTool";
 
 export default function Vocabulary() {
   const [vocabList, setVocabList] = useState({});
@@ -58,6 +59,8 @@ export default function Vocabulary() {
 
   return (
     <div className="vocab-component">
+      <HelpTool pageName={"vocabulary-help"} />
+
       <MenuVocabulary
         setDeck={setDeck}
         setDeckIndex={setDeckIndex}

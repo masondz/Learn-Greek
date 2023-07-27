@@ -12,6 +12,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Menu.css";
 import VerbMenuOptions from "./VerbMenuOptions";
 import { setVerbType, selectVerbSlice } from "./features/verbSlice";
+import HelpTool from "./HelpTool";
 
 const Verb = () => {
   const verb = useSelector(selectWordSlice);
@@ -96,6 +97,7 @@ const Verb = () => {
       />
       <br></br>
       <div className="verb-component">
+        <HelpTool pageName={"verb-help"} />
         <div style={{ marginTop: "70px" }}>{verbMode}</div>
         <h1>{verb.word}</h1>
         <h3>{verb.word ? wordUsages[verb.word].gloss : ""}</h3>
