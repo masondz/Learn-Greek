@@ -55,8 +55,10 @@ a {
 }
 
 .help-container {
-  position: fixed;
-  z-index: 6;
+  position: absolute;
+  z-index: 0;
+  height: 130vh;
+  width: 100%;
 }
 
 .help-paragraph {
@@ -79,7 +81,7 @@ a {
   border: rgb(236, 150, 111) solid 2px;
   width: 1.4em;
   height: 1.4em;
-  position: fixed;
+  position: sticky;
   top: 84%;
   left: 87%;
   font-size: 1.2em;

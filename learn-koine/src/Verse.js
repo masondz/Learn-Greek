@@ -201,65 +201,67 @@ const Verse = () => {
   document.addEventListener("click", offClickCloseMenu);
 
   return (
-    <div className="verse-component" onClick={offClickCloseMenu}>
-      <HelpTool pageName={"parse-help"} />
-      <div>
-        <Menu
-          setArticleGrid={setArticleGrid}
-          blankGrid={blankGrid}
-          menuOptions={menuOptions}
-          menuLinks={menuLinks}
-        />
-      </div>
-      <br></br>
-      <PickVerse
-        setArticleGrid={setArticleGrid}
-        blankGrid={blankGrid}
-        bookListIsOpen={bookListIsOpen}
-        chapterListIsOpen={chapterListIsOpen}
-        verseListIsOpen={verseListIsOpen}
-        setBookListIsOpen={setBookListIsOpen}
-        setChapterListIsOpen={setChapterListIsOpen}
-        setVerseListIsOpen={setVerseListIsOpen}
-        chosenBook={chosenBook}
-        setChosenBook={setChosenBook}
-        chosenChapter={chosenChapter}
-        setChosenChapter={setChosenChapter}
-        chosenVerse={chosenVerse}
-        setChosenVerse={setChosenVerse}
-      />
-      <div className="verse-sentence">
-        {verseArray.map((word, i) => {
-          return (
-            <Word
-              key={word.word + i}
-              word={word}
-              setArticleGrid={setArticleGrid}
-              setReset={setReset}
-              reset={reset}
-              blankGrid={blankGrid}
-            />
-          );
-        })}
-        <br></br>
-        <br></br>
-        <PassageNumber />
-        <br></br>
+    <>
+      <div className="verse-component" onClick={offClickCloseMenu}>
+        <HelpTool pageName={"parse-help"} />
         <div>
-          <CheckWord
-            word={word}
+          <Menu
             setArticleGrid={setArticleGrid}
             blankGrid={blankGrid}
-            setChosenBook={setChosenBook}
-            setChosenChapter={setChosenChapter}
-            setChosenVerse={setChosenVerse}
-          >
-            {practiceGrid}
-          </CheckWord>
+            menuOptions={menuOptions}
+            menuLinks={menuLinks}
+          />
         </div>
-        <Toolkit />
+        <br></br>
+        <PickVerse
+          setArticleGrid={setArticleGrid}
+          blankGrid={blankGrid}
+          bookListIsOpen={bookListIsOpen}
+          chapterListIsOpen={chapterListIsOpen}
+          verseListIsOpen={verseListIsOpen}
+          setBookListIsOpen={setBookListIsOpen}
+          setChapterListIsOpen={setChapterListIsOpen}
+          setVerseListIsOpen={setVerseListIsOpen}
+          chosenBook={chosenBook}
+          setChosenBook={setChosenBook}
+          chosenChapter={chosenChapter}
+          setChosenChapter={setChosenChapter}
+          chosenVerse={chosenVerse}
+          setChosenVerse={setChosenVerse}
+        />
+        <div className="verse-sentence">
+          {verseArray.map((word, i) => {
+            return (
+              <Word
+                key={word.word + i}
+                word={word}
+                setArticleGrid={setArticleGrid}
+                setReset={setReset}
+                reset={reset}
+                blankGrid={blankGrid}
+              />
+            );
+          })}
+          <br></br>
+          <br></br>
+          <PassageNumber />
+          <br></br>
+          <div>
+            <CheckWord
+              word={word}
+              setArticleGrid={setArticleGrid}
+              blankGrid={blankGrid}
+              setChosenBook={setChosenBook}
+              setChosenChapter={setChosenChapter}
+              setChosenVerse={setChosenVerse}
+            >
+              {practiceGrid}
+            </CheckWord>
+          </div>
+          <Toolkit />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
