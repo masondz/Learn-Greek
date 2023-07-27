@@ -23,9 +23,9 @@ const HelpTool = ({ pageName }) => {
   }
 
   return (
-    <div style={{ position: "fixed", zIndex: 6 }}>
+    <div className="help-container">
       <div className={{ position: "fixed" }}></div>
-      {helpShown && <div className="help-container">{chosenPage}</div>}
+      {helpShown && <div className="help-paragraph">{chosenPage}</div>}
       <button className="help-tool-button" onClick={handleOnClick}>
         ?
       </button>

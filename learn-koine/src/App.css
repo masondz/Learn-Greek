@@ -56,6 +56,11 @@ a {
 
 .help-container {
   position: fixed;
+  z-index: 6;
+}
+
+.help-paragraph {
+  position: fixed;
   height: 520px;
   width: 90%;
   background-color: aliceblue;
