@@ -66,8 +66,8 @@ a {
   background-color: aliceblue;
   color: black;
   z-index: 6;
-  top: 7vh;
-  left: 5vw;
+  top: 7%;
+  left: 5%;
   /* transform: translate(-50%, -50%); */
   overflow: scroll;
 }
@@ -80,8 +80,8 @@ a {
   width: 1.4em;
   height: 1.4em;
   position: fixed;
-  top: 84vh;
-  left: 87vw;
+  top: 84%;
+  left: 87%;
   font-size: 1.2em;
   color: #282c34;
   /* text-shadow: 0px 0px 2px rgb(245, 148, 103); */
