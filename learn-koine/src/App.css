@@ -56,14 +56,14 @@ a {
 
 .help-container {
   position: fixed;
-  height: 475px;
+  height: 520px;
   width: 90%;
   background-color: aliceblue;
   color: black;
   z-index: 6;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 7%;
+  left: 5%;
+  /* transform: translate(-50%, -50%); */
   overflow: scroll;
 }
 
@@ -84,6 +84,7 @@ a {
   -webkit-text-stroke-width: 0.03em;
   background-color: #282c34;
   cursor: pointer;
+  z-index: 7;
 }
 
 @media only screen and (max-width: 525px) {
