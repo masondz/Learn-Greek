@@ -57,18 +57,23 @@ a {
 .help-container {
   position: absolute;
   z-index: 7;
+  left: 87%;
+  bottom: 85px;
 }
 
 .help-paragraph {
+  padding: 15px;
   position: fixed;
-  height: 520px;
-  width: 90%;
+  max-height: 520px;
+  width: 80%;
   background-color: aliceblue;
+  border: rgb(236, 150, 111) 3px solid;
   color: black;
   z-index: 6;
-  top: 50px;
+  top: 15px;
   left: 5%;
   margin: auto;
+  overflow-y: scroll;
 }
 
 .help-tool-button {
