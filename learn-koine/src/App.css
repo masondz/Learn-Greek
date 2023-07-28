@@ -74,6 +74,7 @@ a {
   left: 5%;
   margin: auto;
   overflow-y: scroll;
+  text-align: start;
 }
 
 .help-tool-button {
