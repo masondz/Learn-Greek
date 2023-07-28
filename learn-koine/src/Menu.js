@@ -58,13 +58,8 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
 
       <div>
         <div></div>
-        <div
-          className={`menu-options-${openOrClosed}`}
-          initial="closed"
-          animate="open"
-          exit="closed"
-        >
-          <h3>
+        <div className={`menu-options-${openOrClosed}`}>
+          <h3 style={{ whiteSpace: "nowrap" }}>
             {verseMode === "definite article" ? "Definite Article" : verseMode}
           </h3>
           {menuOptions.map((option) => {

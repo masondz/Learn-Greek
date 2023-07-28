@@ -85,7 +85,7 @@ const MenuVocabulary = ({
           {openOrClosed === "open" ? "X" : "="}
         </button>
       </div>
-      <h4>
+      <h4 style={{ whiteSpace: "nowrap" }}>
         {category === "Pick a Category" ? category : `Studying: ${category}`}
       </h4>
       <button
