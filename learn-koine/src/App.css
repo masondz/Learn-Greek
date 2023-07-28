@@ -96,6 +96,50 @@ a {
   bottom: 85px;
 }
 
+.logo-container {
+  width: 255px;
+  min-height: 67px;
+  border: greenyellow 2px solid;
+  border-radius: 10px;
+  margin: 25px auto;
+}
+
+.logo-container h3 {
+  font-size: 25px;
+  color: greenyellow;
+}
+
+#delta {
+  font-weight: bold;
+  margin-bottom: 0px;
+  font-size: 33px;
+  position: absolute;
+  transform: translate(15px, -38px);
+}
+
+.key-bar {
+  width: 7px;
+  height: 12px;
+  position: absolute;
+  background-color: greenyellow;
+  transform: translate(20px, 30px);
+}
+
+#kappa {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 0px;
+  position: absolute;
+  transform: translate(18px, -0px);
+}
+
+#didakey {
+  font-weight: bold;
+  font-size: 48px;
+  position: absolute;
+  transform: translate(48px, -45px);
+}
+
 @media only screen and (max-width: 525px) {
   .home-links {
     min-width: 125px;

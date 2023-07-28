@@ -13,7 +13,12 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <h1>Dida Key</h1>
+        <div className="logo-container">
+          <h3 id="delta">δ</h3>
+          <div className="key-bar"></div>
+          <h3 id="kappa">κ</h3>
+          <h2 id="didakey">DidaKey</h2>
+        </div>
         <h2>
           <i>Practicing Koine Greek</i>
         </h2>
