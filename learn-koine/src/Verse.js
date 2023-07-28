@@ -257,10 +257,10 @@ const Verse = () => {
               {practiceGrid}
             </CheckWord>
           </div>
-          <HelpTool pageName={"parse-help"} />
 
           <Toolkit />
         </div>
+        <HelpTool pageName={"parse-help"} />
       </div>
     </>
   );
