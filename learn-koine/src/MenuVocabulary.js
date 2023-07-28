@@ -106,21 +106,22 @@ const MenuVocabulary = ({
         Common
       </button>
       <br></br>
-
-      <h3 key="links-title">Links</h3>
-      {menuLinks.map((link) => {
-        return (
-          <div key={link + "-div"}>
-            <Link to={"/" + link} className="menu-link" key={link}>
-              {link === "parsing-verse" ? "parsing practice" : link}
-            </Link>
-            <br></br>
-          </div>
-        );
-      })}
-      <Link to={"/"} className="menu-link" key="home-link">
-        Home
-      </Link>
+      <div className="menu-links" key="menu-lins">
+        <h3 key="links-title">Links</h3>
+        {menuLinks.map((link) => {
+          return (
+            <div key={link + "-div"}>
+              <Link to={"/" + link} className="menu-link" key={link}>
+                {link === "parsing-verse" ? "parsing practice" : link}
+              </Link>
+              <br></br>
+            </div>
+          );
+        })}
+        <Link to={"/"} className="menu-link" key="home-link">
+          Home
+        </Link>
+      </div>
     </div>
   );
 };

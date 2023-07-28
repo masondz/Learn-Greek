@@ -9,7 +9,8 @@
   background-color: #282c34;
   display: block;
   text-align: center;
-  overflow: hidden;
+  overflow-y: scroll;
+  height: 100dvh;
 }
 
 .verse-word {

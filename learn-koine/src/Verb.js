@@ -181,13 +181,6 @@ const VerbMenu = ({
     }, 10);
   };
 
-  const itemVariants = {
-    closed: {
-      opacity: 0,
-    },
-    open: { opacity: 1 },
-  };
-
   const menuLinks = ["vocabulary", "parsing-verse"];
 
   return (
@@ -271,14 +264,7 @@ const VerbMenu = ({
         >
           Submit
         </button>
-        <div
-          className="menu-links"
-          initial="closed"
-          animate="open"
-          exit="closed"
-          variants={itemVariants}
-          key="menu-lins"
-        >
+        <div className="menu-links" key="menu-lins">
           <h3 key="links-title">Links</h3>
           {menuLinks.map((link) => {
             return (

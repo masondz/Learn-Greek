@@ -98,7 +98,6 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
               </div>
             );
           })}
-          <br></br>
           <Link to={"/"} className="menu-link" key="home-link">
             Home
           </Link>
