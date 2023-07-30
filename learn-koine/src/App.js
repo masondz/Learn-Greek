@@ -12,13 +12,13 @@ function App() {
   // const verse = useSelector(selectVerseSlice);
   return (
     <div className="App">
+      <div className="logo-container">
+        <h3 id="delta">δ</h3>
+        <div className="key-bar"></div>
+        <h3 id="kappa">κ</h3>
+        <h2 id="didakey">DidaKey</h2>
+      </div>
       <div className="App-header">
-        <div className="logo-container">
-          <h3 id="delta">δ</h3>
-          <div className="key-bar"></div>
-          <h3 id="kappa">κ</h3>
-          <h2 id="didakey">DidaKey</h2>
-        </div>
         <h2>
           <i>Practicing Koine Greek</i>
         </h2>
