@@ -351,6 +351,9 @@ const Tense = ({ onClick }) => {
       <div className="case-option" onClick={(e) => onClick(e)}>
         imperfect
       </div>
+      <div className="case-option" onClick={(e) => onClick(e)}>
+        pluperfect
+      </div>
     </div>
   );
 };

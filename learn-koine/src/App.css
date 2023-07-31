@@ -97,10 +97,10 @@ a {
 }
 
 .logo-container {
-  --deltaLeft: 19px;
+  --deltaLeft: 15px;
   font-family: "Geologica";
   position: relative;
-  width: 260px;
+  width: 255px;
   height: 69px;
   margin: 25px auto;
   border: greenyellow 3px solid;

@@ -96,12 +96,6 @@ const Verb = () => {
         setVerbCharacteristics={setVerbCharacteristics}
       />
       <br></br>
-      <div className="logo-container">
-        <h3 id="delta">δ</h3>
-        <div className="key-bar"></div>
-        <h3 id="kappa">κ</h3>
-        <h2 id="didakey">DidaKey</h2>
-      </div>
       <div className="verb-component">
         <div style={{ marginTop: "70px" }}>{verbMode}</div>
         <h1>{verb.word}</h1>
@@ -147,6 +141,11 @@ const VerbMenu = ({
     } else if (
       options.includes("imperfect") &&
       (options.includes("subjunctive") || options.includes("imperative"))
+    ) {
+      return false;
+    } else if (
+      options.includes("pluperfect") &&
+      (options.includes("perfect") || options.includes("middle"))
     ) {
       return false;
     } else {
@@ -219,7 +218,14 @@ const VerbMenu = ({
         />
         <h3 key="tense-title">Tense</h3>
         <VerbMenuOptions
-          menuOptions={["Present", "Aorist", "Future", "Perfect", "Imperfect"]}
+          menuOptions={[
+            "Present",
+            "Aorist",
+            "Future",
+            "Perfect",
+            "Imperfect",
+            "Pluperfect",
+          ]}
           verbCharacteristics={verbCharacteristics}
           setVerbCharacteristics={setVerbCharacteristics}
           characteristic={"Tense"}

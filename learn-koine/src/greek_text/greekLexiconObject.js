@@ -9665,7 +9665,7 @@ export const wordUsages = {
     gloss: "to go away",
   },
   ἀπεληλύθεισαν: {
-    parse: "V-2LAI-3P｜Verb, 2nd Pluperfect, active, indicative, third, plural",
+    parse: "V-2LAI-3P｜Verb, 2nd pluperfect, active, indicative, third, plural",
     GN: "G565",
     gloss: "to go away",
   },
@@ -16023,7 +16023,7 @@ export const wordUsages = {
     gloss: "hit",
   },
   ἐβέβλητο: {
-    parse: "V-LPI-3S｜Verb, pLuperfect, passive, indicative, third, singular",
+    parse: "V-LPI-3S｜Verb, pluperfect, passive, indicative, third, singular",
     GN: "G906",
     gloss: "hit",
   },
@@ -19183,7 +19183,7 @@ export const wordUsages = {
   },
   γεγόνει: {
     parse:
-      "V-2LAI-3S｜Verb, 2nd Pluperfect, active, indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd pluperfect, active, indicative, third, singular",
     GN: "G1096",
     gloss: "to be",
   },
@@ -19560,7 +19560,7 @@ export const wordUsages = {
   },
   ἐγεγόνει: {
     parse:
-      "V-2LAI-3S｜Verb, 2nd Pluperfect, active, indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd pluperfect, active, indicative, third, singular",
     GN: "G1096",
     gloss: "to be",
   },
@@ -19943,7 +19943,7 @@ export const wordUsages = {
     gloss: "to know",
   },
   ἐγνώκειτε: {
-    parse: "V-LAI-2P｜Verb, pLuperfect, active, indicative, second, plural",
+    parse: "V-LAI-2P｜Verb, pluperfect, active, indicative, second, plural",
     GN: "G1097",
     gloss: "to know",
   },
@@ -24334,12 +24334,12 @@ export const wordUsages = {
     gloss: "to give",
   },
   δεδώκει: {
-    parse: "V-LAI-3S｜Verb, pLuperfect, active, indicative, third, singular",
+    parse: "V-LAI-3S｜Verb, pluperfect, active, indicative, third, singular",
     GN: "G1325",
     gloss: "to give",
   },
   δεδώκεισαν: {
-    parse: "V-LAI-3P｜Verb, pLuperfect, active, indicative, third, plural",
+    parse: "V-LAI-3P｜Verb, pluperfect, active, indicative, third, plural",
     GN: "G1325",
     gloss: "to give",
   },
@@ -28168,7 +28168,7 @@ export const wordUsages = {
     gloss: "custom",
   },
   εἰώθει: {
-    parse: "V-LAI-3S｜Verb, pLuperfect, active, indicative, third, singular",
+    parse: "V-LAI-3S｜Verb, pluperfect, active, indicative, third, singular",
     GN: "G1486",
     gloss: "to have a custom",
   },
@@ -28354,36 +28354,36 @@ export const wordUsages = {
   },
   ᾔδει: {
     parse:
-      "V-2LAI-3S｜Verb, 2nd Pluperfect, active, indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd pluperfect, active, indicative, third, singular",
     GN: "G1492",
     gloss: "know",
   },
   ᾔδειν: {
     parse:
-      "V-2LAI-1S｜Verb, 2nd Pluperfect, active, indicative, first, singular",
+      "V-2LAI-1S｜Verb, 2nd pluperfect, active, indicative, first, singular",
     GN: "G1492",
     gloss: "know",
   },
   ᾔδεις: {
     parse:
-      "V-2LAI-2S｜Verb, 2nd Pluperfect, active, indicative, second, singular",
+      "V-2LAI-2S｜Verb, 2nd pluperfect, active, indicative, second, singular",
     GN: "G1492",
     gloss: "know",
   },
   ᾔδεισαν: {
-    parse: "V-2LAI-3P｜Verb, 2nd Pluperfect, active, indicative, third, plural",
+    parse: "V-2LAI-3P｜Verb, 2nd pluperfect, active, indicative, third, plural",
     GN: "G1492",
     gloss: "know",
   },
   ᾔδειτε: {
     parse:
-      "V-2LAI-2P｜Verb, 2nd Pluperfect, active, indicative, second, plural",
+      "V-2LAI-2P｜Verb, 2nd pluperfect, active, indicative, second, plural",
     GN: "G1492",
     gloss: "know",
   },
   Ἤιδει: {
     parse:
-      "V-2LAI-3S｜Verb, 2nd Pluperfect, active, indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd pluperfect, active, indicative, third, singular",
     GN: "G1492",
     gloss: "see",
   },
@@ -29913,7 +29913,7 @@ export const wordUsages = {
     gloss: "to expel",
   },
   ἐκβεβλήκει: {
-    parse: "V-LAI-3S｜Verb, pLuperfect, active, indicative, third, singular",
+    parse: "V-LAI-3S｜Verb, pluperfect, active, indicative, third, singular",
     GN: "G1544",
     gloss: "to expel",
   },
@@ -34220,7 +34220,7 @@ export const wordUsages = {
   },
   ἐξεληλύθει: {
     parse:
-      "V-2LAI-3S｜Verb, 2nd Pluperfect, active, indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd pluperfect, active, indicative, third, singular",
     GN: "G1831",
     gloss: "to go out",
   },
@@ -35830,7 +35830,7 @@ export const wordUsages = {
     gloss: "inscription",
   },
   ἐπεγέγραπτο: {
-    parse: "V-LPI-3S｜Verb, pLuperfect, passive, indicative, third, singular",
+    parse: "V-LPI-3S｜Verb, pluperfect, passive, indicative, third, singular",
     GN: "G1924",
     gloss: "to write on",
   },
@@ -36141,7 +36141,7 @@ export const wordUsages = {
   },
   ἐπεκέκλητο: {
     parse:
-      "V-LDI-3S｜Verb, pLuperfect, Middle deponent, indicative, third, singular",
+      "V-LDI-3S｜Verb, pluperfect, Middle deponent, indicative, third, singular",
     GN: "G1941",
     gloss: "to call (on)/name",
   },
@@ -37988,7 +37988,7 @@ export const wordUsages = {
     gloss: "to say",
   },
   εἰρήκει: {
-    parse: "V-LAI-3S｜Verb, pLuperfect, active, indicative, third, singular",
+    parse: "V-LAI-3S｜Verb, pluperfect, active, indicative, third, singular",
     GN: "G2036",
     gloss: "to say",
   },
@@ -38582,12 +38582,12 @@ export const wordUsages = {
   },
   ἐληλύθει: {
     parse:
-      "V-2LAI-3S｜Verb, 2nd Pluperfect, active, indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd pluperfect, active, indicative, third, singular",
     GN: "G2064",
     gloss: "to come/go",
   },
   ἐληλύθεισαν: {
-    parse: "V-2LAI-3P｜Verb, 2nd Pluperfect, active, indicative, third, plural",
+    parse: "V-2LAI-3P｜Verb, 2nd pluperfect, active, indicative, third, plural",
     GN: "G2064",
     gloss: "to come/go",
   },
@@ -43919,7 +43919,7 @@ export const wordUsages = {
     gloss: "to found",
   },
   τεθεμελίωτο: {
-    parse: "V-LPI-3S｜Verb, pLuperfect, passive, indicative, third, singular",
+    parse: "V-LPI-3S｜Verb, pluperfect, passive, indicative, third, singular",
     GN: "G2311",
     gloss: "to found",
   },
@@ -46471,17 +46471,17 @@ export const wordUsages = {
     gloss: "Israelite",
   },
   εἱστήκει: {
-    parse: "V-LAI-3S｜Verb, pLuperfect, active, indicative, third, singular",
+    parse: "V-LAI-3S｜Verb, pluperfect, active, indicative, third, singular",
     GN: "G2476",
     gloss: "to stand/make stand",
   },
   εἱστήκεισαν: {
-    parse: "V-LAI-3P｜Verb, pLuperfect, active, indicative, third, plural",
+    parse: "V-LAI-3P｜Verb, pluperfect, active, indicative, third, plural",
     GN: "G2476",
     gloss: "to stand/make stand",
   },
   Εἱστήκεισαν: {
-    parse: "V-LAI-3P｜Verb, pLuperfect, active, indicative, third, plural",
+    parse: "V-LAI-3P｜Verb, pluperfect, active, indicative, third, plural",
     GN: "G2476",
     gloss: "to stand/make stand",
   },
@@ -54811,7 +54811,7 @@ export const wordUsages = {
     gloss: "to judge",
   },
   κεκρίκει: {
-    parse: "V-LAI-3S｜Verb, pLuperfect, active, indicative, third, singular",
+    parse: "V-LAI-3S｜Verb, pluperfect, active, indicative, third, singular",
     GN: "G2919",
     gloss: "to judge",
   },
@@ -60543,7 +60543,7 @@ export const wordUsages = {
     gloss: "to stay",
   },
   μεμενήκεισαν: {
-    parse: "V-LAI-3P｜Verb, pLuperfect, active, indicative, third, plural",
+    parse: "V-LAI-3P｜Verb, pluperfect, active, indicative, third, plural",
     GN: "G3306",
     gloss: "to stay",
   },
@@ -65267,7 +65267,7 @@ export const wordUsages = {
     gloss: "to build",
   },
   ᾠκοδόμητο: {
-    parse: "V-LPI-3S｜Verb, pLuperfect, passive, indicative, third, singular",
+    parse: "V-LPI-3S｜Verb, pluperfect, passive, indicative, third, singular",
     GN: "G3618",
     gloss: "to build",
   },
@@ -66597,7 +66597,7 @@ export const wordUsages = {
     gloss: "appear",
   },
   ἑωράκει: {
-    parse: "V-LAI-3S｜Verb, pLuperfect, active, indicative, third, singular",
+    parse: "V-LAI-3S｜Verb, pluperfect, active, indicative, third, singular",
     GN: "G3708",
     gloss: "appear",
   },
@@ -69313,7 +69313,7 @@ export const wordUsages = {
     gloss: "to deliver/handover/betray",
   },
   παραδεδώκεισαν: {
-    parse: "V-LAI-3P｜Verb, pLuperfect, active, indicative, third, plural",
+    parse: "V-LAI-3P｜Verb, pluperfect, active, indicative, third, plural",
     GN: "G3860",
     gloss: "to deliver/handover/betray",
   },
@@ -70927,7 +70927,7 @@ export const wordUsages = {
     gloss: "to stand by",
   },
   παρειστήκεισαν: {
-    parse: "V-LAI-3P｜Verb, pLuperfect, active, indicative, third, plural",
+    parse: "V-LAI-3P｜Verb, pluperfect, active, indicative, third, plural",
     GN: "G3936",
     gloss: "to stand by",
   },
@@ -71868,7 +71868,7 @@ export const wordUsages = {
   },
   ἐπεποίθει: {
     parse:
-      "V-2LAI-3S｜Verb, 2nd Pluperfect, active, indicative, third, singular",
+      "V-2LAI-3S｜Verb, 2nd pluperfect, active, indicative, third, singular",
     GN: "G3982",
     gloss: "to persuade",
   },
@@ -72764,7 +72764,7 @@ export const wordUsages = {
     gloss: "covering",
   },
   περιεδέδετο: {
-    parse: "V-LPI-3S｜Verb, pLuperfect, passive, indicative, third, singular",
+    parse: "V-LPI-3S｜Verb, pluperfect, passive, indicative, third, singular",
     GN: "G4019",
     gloss: "to wrap around",
   },
@@ -74358,7 +74358,7 @@ export const wordUsages = {
     gloss: "to trust (in)",
   },
   πεπιστεύκεισαν: {
-    parse: "V-LAI-3P｜Verb, pLuperfect, active, indicative, third, plural",
+    parse: "V-LAI-3P｜Verb, pluperfect, active, indicative, third, plural",
     GN: "G4100",
     gloss: "to trust (in)",
   },
@@ -76113,7 +76113,7 @@ export const wordUsages = {
     gloss: "to make/do",
   },
   πεποιήκεισαν: {
-    parse: "V-LAI-3P｜Verb, pLuperfect, active, indicative, third, plural",
+    parse: "V-LAI-3P｜Verb, pluperfect, active, indicative, third, plural",
     GN: "G4160",
     gloss: "to make/do",
   },
@@ -87397,7 +87397,7 @@ export const wordUsages = {
     gloss: "to seize",
   },
   συνηρπάκει: {
-    parse: "V-LAI-3S｜Verb, pLuperfect, active, indicative, third, singular",
+    parse: "V-LAI-3S｜Verb, pluperfect, active, indicative, third, singular",
     GN: "G4884",
     gloss: "to seize",
   },
@@ -87672,7 +87672,7 @@ export const wordUsages = {
     gloss: "co-worker",
   },
   συνεληλύθεισαν: {
-    parse: "V-2LAI-3P｜Verb, 2nd Pluperfect, active, indicative, third, plural",
+    parse: "V-2LAI-3P｜Verb, 2nd pluperfect, active, indicative, third, plural",
     GN: "G4905",
     gloss: "to assemble",
   },
@@ -88269,7 +88269,7 @@ export const wordUsages = {
     gloss: "to agree",
   },
   συνετέθειντο: {
-    parse: "V-LMI-3P｜Verb, pLuperfect, middle, indicative, third, plural",
+    parse: "V-LMI-3P｜Verb, pluperfect, middle, indicative, third, plural",
     GN: "G4934",
     gloss: "to agree",
   },
