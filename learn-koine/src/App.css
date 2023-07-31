@@ -100,9 +100,10 @@ a {
   --deltaLeft: 19px;
   position: relative;
   width: 255px;
-  min-height: 67px;
+  height: 75px;
   margin: 25px auto;
-  text-align: unset;
+  border: greenyellow 3px solid;
+  border-radius: 15px;
 }
 
 .logo-container h3 {
@@ -148,8 +149,6 @@ a {
   padding-bottom: 19px;
   font-size: 48px;
   position: relative;
-  border: greenyellow 3px solid;
-  border-radius: 15px;
   margin: 0;
 }
 

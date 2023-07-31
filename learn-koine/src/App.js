@@ -20,17 +20,9 @@ function App() {
       </div>
       <div className="App-header">
         <h2>
-          <i style={{ border: "1px red solid" }}>Practicing Koine Greek</i>
+          <i>Practicing Koine Greek</i>
         </h2>
-        <div
-          style={{
-            width: 15,
-            height: 15,
-            backgroundColor: "greenyellow",
-            position: "absolute",
-            // top: "398px",
-          }}
-        ></div>
+
         <h3>Choose a Subject:</h3>
         <div className="links">
           <Link className="home-links" to={"about"}>
