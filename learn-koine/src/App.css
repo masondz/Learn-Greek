@@ -128,7 +128,7 @@ a {
   height: 39px;
   position: absolute;
   left: calc(var(--deltaLeft) + 6px);
-  top: 24px;
+  top: 13px;
   background-color: greenyellow;
   margin: 0;
 }
