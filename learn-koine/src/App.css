@@ -114,15 +114,15 @@ a {
   margin-bottom: 0px;
   font-size: 33px;
   position: absolute;
-  transform: translate(15px, 6px);
+  transform: translate(15px, -31px);
 }
 
 .key-bar {
-  width: 6px;
-  height: 12px;
+  width: 7px;
+  height: 30px;
   position: absolute;
   background-color: greenyellow;
-  transform: translate(21px, 75px);
+  transform: translate(21px, 36px);
 }
 
 #kappa {
@@ -130,7 +130,7 @@ a {
   font-size: 40px;
   line-height: 0px;
   position: absolute;
-  transform: translate(18px, 49px);
+  transform: translate(19px, 9px);
 }
 
 #didakey {
@@ -139,7 +139,7 @@ a {
   padding-right: 15px;
   padding-bottom: 13px;
   font-size: 48px;
-  position: absolute;
+  position: relative;
   /* transform: translate(48px, -45px); */
   border: greenyellow 2px solid;
   border-radius: 10px;

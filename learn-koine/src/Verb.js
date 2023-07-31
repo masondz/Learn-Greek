@@ -96,6 +96,12 @@ const Verb = () => {
         setVerbCharacteristics={setVerbCharacteristics}
       />
       <br></br>
+      <div className="logo-container">
+        <h3 id="delta">δ</h3>
+        <div className="key-bar"></div>
+        <h3 id="kappa">κ</h3>
+        <h2 id="didakey">DidaKey</h2>
+      </div>
       <div className="verb-component">
         <div style={{ marginTop: "70px" }}>{verbMode}</div>
         <h1>{verb.word}</h1>
