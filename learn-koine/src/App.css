@@ -123,9 +123,10 @@ a {
   width: 7px;
   height: 30px;
   position: absolute;
-  left: calc(var(--deltaLeft) + 7px);
+  left: calc(var(--deltaLeft) + 6px);
   top: 32px;
   background-color: greenyellow;
+  margin: 0;
 }
 
 #kappa {
@@ -135,7 +136,7 @@ a {
   position: absolute;
   margin: 0;
   top: 46px;
-  left: calc(var(--deltaLeft) + 5px);
+  left: calc(var(--deltaLeft) + 4px);
 }
 
 #didakey {
