@@ -27,7 +27,7 @@ function App() {
             width: 15,
             height: 15,
             backgroundColor: "greenyellow",
-            top: 185,
+            top: 308,
           }}
         ></div>
         <h3>Choose a Subject:</h3>
