@@ -120,7 +120,7 @@ a {
   left: var(--deltaLeft);
   background-color: #282c34;
   z-index: 2;
-  height: 32px;
+  height: 28px;
 }
 
 .key-bar {
