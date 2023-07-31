@@ -144,7 +144,7 @@ const VerbMenu = ({
     ) {
       return false;
     } else if (options.includes("pluperfect")) {
-      if (options.includes("perfect") || options.includes("middle")) {
+      if (options.includes("passive") || options.includes("middle")) {
         return false;
       }
     } else {
