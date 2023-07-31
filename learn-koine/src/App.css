@@ -97,6 +97,7 @@ a {
 }
 
 .logo-container {
+  --deltaLeft: 19px;
   position: relative;
   width: 255px;
   min-height: 67px;
@@ -114,15 +115,17 @@ a {
   margin-bottom: 0px;
   font-size: 33px;
   position: absolute;
-  transform: translate(15px, -31px);
+  margin: 0;
+  left: var(--deltaLeft);
 }
 
 .key-bar {
   width: 7px;
   height: 30px;
   position: absolute;
+  left: calc(var(--deltaLeft) + 7px);
+  top: 32px;
   background-color: greenyellow;
-  transform: translate(21px, 36px);
 }
 
 #kappa {
@@ -130,7 +133,9 @@ a {
   font-size: 40px;
   line-height: 0px;
   position: absolute;
-  transform: translate(19px, 9px);
+  margin: 0;
+  top: 46px;
+  left: calc(var(--deltaLeft) + 5px);
 }
 
 #didakey {
@@ -140,9 +145,8 @@ a {
   padding-bottom: 13px;
   font-size: 48px;
   position: relative;
-  /* transform: translate(48px, -45px); */
-  border: greenyellow 2px solid;
-  border-radius: 10px;
+  border: greenyellow 3px solid;
+  border-radius: 15px;
 }
 
 @media only screen and (max-width: 525px) {
