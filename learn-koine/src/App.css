@@ -125,7 +125,7 @@ a {
 }
 
 .key-bar {
-  width: 7px;
+  width: 8px;
   height: 39px;
   position: absolute;
   left: calc(var(--deltaLeft) + 6px);
