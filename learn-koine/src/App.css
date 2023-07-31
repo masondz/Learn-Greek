@@ -118,14 +118,17 @@ a {
   position: absolute;
   margin: 0;
   left: var(--deltaLeft);
+  background-color: #282c34;
+  z-index: 2;
+  height: 32px;
 }
 
 .key-bar {
   width: 7px;
-  height: 30px;
+  height: 39px;
   position: absolute;
   left: calc(var(--deltaLeft) + 6px);
-  top: 32px;
+  top: 24px;
   background-color: greenyellow;
   margin: 0;
 }
@@ -144,9 +147,6 @@ a {
   padding: 6px 5px 16px 50px;
   line-height: 1;
   font-weight: bold;
-  padding-left: 50px;
-  padding-right: 15px;
-  padding-bottom: 19px;
   font-size: 48px;
   position: relative;
   margin: 0;
