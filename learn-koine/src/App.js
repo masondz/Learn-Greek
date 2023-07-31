@@ -27,7 +27,8 @@ function App() {
             width: 15,
             height: 15,
             backgroundColor: "greenyellow",
-            top: 308,
+            position: "absolute",
+            // top: "398px",
           }}
         ></div>
         <h3>Choose a Subject:</h3>
