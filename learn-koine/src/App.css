@@ -98,9 +98,10 @@ a {
 
 .logo-container {
   --deltaLeft: 19px;
+  font-family: "Geologica";
   position: relative;
-  width: 255px;
-  height: 75px;
+  width: 260px;
+  height: 69px;
   margin: 25px auto;
   border: greenyellow 3px solid;
   border-radius: 15px;
@@ -120,7 +121,7 @@ a {
   left: var(--deltaLeft);
   background-color: #282c34;
   z-index: 2;
-  height: 28px;
+  height: 30px;
 }
 
 .key-bar {
@@ -128,7 +129,7 @@ a {
   height: 39px;
   position: absolute;
   left: calc(var(--deltaLeft) + 6px);
-  top: 13px;
+  top: 20px;
   background-color: greenyellow;
   margin: 0;
 }
