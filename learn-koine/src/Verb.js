@@ -143,10 +143,9 @@ const VerbMenu = ({
       (options.includes("subjunctive") || options.includes("imperative"))
     ) {
       return false;
-    } else if (options.includes("pluperfect")) {
-      if (options.includes("perfect") || options.includes("middle")) {
-        return false;
-      }
+    } else if ( options.includes("pluperfect") &&
+(options.includes("passive") || options.includes("middle"))) {
+      return false;
     } else {
       return true;
     }

@@ -28,7 +28,7 @@ const Loading = () => {
       <div className="verse-sentence">
         <div
           style={{
-            width: "800px",
+            width: "80%",
             height: "200px",
             backgroundColor: "#14171b",
             margin: "auto",
