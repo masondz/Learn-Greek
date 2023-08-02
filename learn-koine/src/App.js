@@ -16,7 +16,7 @@ function App() {
         <h3 id="delta">δ</h3>
         <div className="key-bar"></div>
         <h3 id="kappa">κ</h3>
-        <h2 id="didakey">DidaKey</h2>
+        <h1 id="didakey">DidaKey</h1>
       </div>
       <div className="App-header">
         <h2>
