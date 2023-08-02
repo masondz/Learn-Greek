@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { randomWord } from "./greek_text/parseLexicon";
+// import { randomWord } from "./greek_text/parseLexicon";
+import { randomVerb } from "./greek_text/parseLexicon";
 import { wordUsages } from "./greek_text/greekLexiconObject";
 import VerbGrid from "./VerbGrid";
 import "./Verb.css";
@@ -78,7 +79,7 @@ const Verb = () => {
 
     dispatch(clearWord());
     let splitOption = option.split(" ");
-    let nextVerb = randomWord(wordUsages, "parse", splitOption, exclusions);
+    let nextVerb = randomVerb(wordUsages, "parse", splitOption, exclusions);
 
     if (!verbType.Type) {
       console.log("if verb type not declared, don't render any grid.");
@@ -104,7 +105,7 @@ const Verb = () => {
           verb={verb}
           dispatch={dispatch}
           setWord={setWord}
-          randomWord={randomWord}
+          randomVerb={randomVerb}
           verbMode={verbMode}
           verbCharacteristics={verbCharacteristics}
         />
@@ -142,9 +143,6 @@ const VerbMenu = ({
       options.includes("imperfect") &&
       (options.includes("subjunctive") || options.includes("imperative"))
     ) {
-      return false;
-    } else if ( options.includes("pluperfect") &&
-(options.includes("passive") || options.includes("middle"))) {
       return false;
     } else {
       return true;

@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 const VerbGrid = ({
   dispatch,
   setWord,
-  randomWord,
+  randomVerb,
   verbMode,
   reset,
   verbCharacteristics,
@@ -94,7 +94,7 @@ const VerbGrid = ({
 
     console.log(options);
 
-    let nextVerb = randomWord(
+    let nextVerb = randomVerb(
       wordUsages,
       "parse",
       options.split(" "),

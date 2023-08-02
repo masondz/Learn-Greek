@@ -73,6 +73,61 @@ export const randomWord = (obj, attribute, arr, exclusions = []) => {
   }
 };
 
+//let nextVerb = randomWord(wordUsages, "parse", splitOption, exclusions);
+/* let nextVerb = randomWord(
+  wordUsages,
+  "parse",
+  options.split(" "),
+  exclusions
+); */
+
+export const randomVerb = (obj, attribute, arr, exclusions) => {
+  console.log("trying randomVerb function");
+  const arrayOfPossibles = [];
+  const keys = Object.keys(obj);
+  // console.log(obj[keys[0]]);
+  for (let i = 0; i < keys.length; i++) {
+    if (
+      arr.every((characteristic) =>
+        obj[keys[i]][attribute].includes(characteristic)
+      )
+    ) {
+      arrayOfPossibles.push(keys[i]);
+    }
+  }
+
+  if (arrayOfPossibles.length === 0) {
+    return alert("Verb with given characteristics does not exist.");
+  }
+
+  console.log("possible verbs: " + arrayOfPossibles.length);
+
+  let checkKey = "";
+
+  let testingExclusions = true;
+
+  while (testingExclusions) {
+    let isThereExclusion = false;
+    checkKey =
+      arrayOfPossibles[Math.floor(Math.random() * arrayOfPossibles.length)];
+    console.log("checking verb: " + obj[checkKey]);
+    for (let i = 0; i < exclusions.length; i++) {
+      if (obj[checkKey][attribute].includes(exclusions[i])) {
+        isThereExclusion = true;
+      }
+    }
+
+    if (!isThereExclusion) {
+      console.log(checkKey + " " + obj[checkKey][attribute]);
+      testingExclusions = false;
+    }
+  }
+  console.log(
+    "random verb: " + { word: checkKey, parse: obj[checkKey][attribute] }
+  );
+  return { word: checkKey, parse: obj[checkKey][attribute] };
+};
+
 export const randomChoicesSelection = (obj, conjunctionGloss) => {
   try {
     let initialArray = [conjunctionGloss];
