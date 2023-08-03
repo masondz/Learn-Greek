@@ -1,5 +1,5 @@
 .vocab-component {
-  background-color: #282c34;
+  background: linear-gradient(#282c34, #3d4150, #282c34);
   display: flex;
   color: white;
   justify-content: flex-start;

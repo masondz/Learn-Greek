@@ -18,7 +18,9 @@ import HelpTool from "./HelpTool";
 const Verb = () => {
   const verb = useSelector(selectWordSlice);
   const dispatch = useDispatch();
-  const [verbMode, setVerbMode] = useState("Select Verb Form to Practice");
+  const [verbMode, setVerbMode] = useState(
+    "Use the menu to select verb forms to practice."
+  );
   const [verbCharacteristics, setVerbCharacteristics] = useState({
     partOfSpeech: "Verb",
   });
@@ -30,8 +32,12 @@ const Verb = () => {
   }, [dispatch]);
 
   const handleClick = (option = verbMode, exclusions = []) => {
-    if (option === "Select Verb Form to Practice") {
+    if (
+      option === "Use the menu to select verb forms to practice." ||
+      option === "Any"
+    ) {
       option = "Verb";
+      setVerbMode("Any");
     }
     if (verbCharacteristics["Type"] === "Verb") {
       exclusions = ["Participle", "Infinitive"];
@@ -79,6 +85,7 @@ const Verb = () => {
 
     dispatch(clearWord());
     let splitOption = option.split(" ");
+    console.log("handleClick: " + splitOption);
     let nextVerb = randomVerb(wordUsages, "parse", splitOption, exclusions);
 
     if (!verbType.Type) {
@@ -98,9 +105,11 @@ const Verb = () => {
       />
       <br></br>
       <div className="verb-component">
-        <div style={{ marginTop: "70px" }}>{verbMode}</div>
-        <h1>{verb.word}</h1>
-        <h3>{verb.word ? wordUsages[verb.word].gloss : ""}</h3>
+        <section className="verb-header">
+          <div style={{ marginTop: "60px" }}>{verbMode}</div>
+          <h1>{verb.word}</h1>
+          <h3>{verb.word ? wordUsages[verb.word].gloss : ""}</h3>
+        </section>
         <VerbGrid
           verb={verb}
           dispatch={dispatch}

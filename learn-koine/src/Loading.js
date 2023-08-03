@@ -6,20 +6,19 @@ const Loading = () => {
 
   useEffect(() => {
     const vocabularyLayout = (
-      <div className="vocab-component">
-        <div className="vocab-container">
-          <div className="card-container">
-            <div className="card-front">Wait...</div>
-          </div>
-          <div className="card-buttons">
-            <button className="button-vocabulary">{"<"}</button>
-            <button className="button-vocabulary">Learnt</button>
-            <button className="button-vocabulary">Retry</button>
-            <button className="button-vocabulary">{">"}</button>
-          </div>
-          <div>
-            <p>...</p>
-          </div>
+      <div className="verse-sentence">
+        <div
+          style={{
+            width: "80%",
+            height: "200px",
+            backgroundColor: "#14171b",
+            margin: "auto",
+            marginTop: "200px",
+          }}
+        >
+          <h2 style={{ padding: "15px", color: "gray", paddingTop: "25px" }}>
+            loading...
+          </h2>
         </div>
       </div>
     );
@@ -35,7 +34,9 @@ const Loading = () => {
             marginTop: "200px",
           }}
         >
-          <h2 style={{ padding: "15px", color: "gray" }}>loading...</h2>
+          <h2 style={{ padding: "15px", color: "gray", paddingTop: "25px" }}>
+            loading...
+          </h2>
         </div>
       </div>
     );

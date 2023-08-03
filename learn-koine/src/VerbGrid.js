@@ -90,7 +90,9 @@ const VerbGrid = ({
     }
 
     let options =
-      verbMode === "Select Verb Form to Practice" ? "Verb" : verbMode;
+      verbMode === "Use the menu to select verb forms to practice."
+        ? "Verb"
+        : verbMode;
 
     console.log(options);
 
