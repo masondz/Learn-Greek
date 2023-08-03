@@ -3,13 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function App() {
-  // const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   dispatch(randomVerse());
-  // }, [dispatch]);
-
-  // const verse = useSelector(selectVerseSlice);
   return (
     <div className="App">
       <div className="logo-container">
@@ -22,12 +15,8 @@ function App() {
         <h2>
           <i>Practicing Koine Greek</i>
         </h2>
-
         <h3>Choose a Subject:</h3>
         <div className="links">
-          <Link className="home-links" to={"about"}>
-            About
-          </Link>
           <Link className="home-links" to={"vocabulary"}>
             Vocabulary
           </Link>
@@ -37,8 +26,14 @@ function App() {
           <Link className="home-links" to={"verb"}>
             Verbs
           </Link>
+          <Link className="home-links" to={"about"}>
+            About
+          </Link>
         </div>
       </div>
+      <a id="github-link" href="https://github.com/masondz">
+        Created by
+      </a>
     </div>
   );
 }

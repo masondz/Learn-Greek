@@ -1,9 +1,15 @@
 .App {
   text-align: center;
+  /* border: green 1px solid; */
 }
 
 .App-header {
-  background-color: #282c34;
+  font-family: "Geologica";
+
+  background: linear-gradient(#282c34, #3d4150, #282c34);
+  /* border: yellow 1px solid; */
+  border-radius: 0 0 0 0;
+  padding-bottom: 200px;
   /* min-height: 110vh; */
   display: flex;
   flex-direction: column;
@@ -24,12 +30,28 @@ a {
   color: white;
 }
 
+#github-link {
+  color: rgb(183, 241, 241);
+  border: 1px solid rgb(183, 241, 241);
+  padding: 0.7em;
+  border-radius: 0.7em;
+  width: fit-content;
+  margin: 60px auto;
+  font-size: 0.6em;
+  font-weight: 100;
+}
+
+#github-link::after {
+  content: ": Zach Mason";
+  color: greenyellow;
+}
+
 .home-links {
   border-bottom: rgb(233, 89, 23) solid 2px;
   border-right: rgb(233, 111, 54) solid 3px;
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  text-shadow: 1px 2px 2px rgb(112, 53, 26);
+  text-shadow: 1px 2px 2px rgb(61, 30, 15);
   background-color: rgb(245, 148, 103);
   padding: 0.5em;
   min-width: 195px;
