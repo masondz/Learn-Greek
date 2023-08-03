@@ -102,6 +102,7 @@ const Verb = () => {
         handleClick={handleClick}
         verbCharacteristics={verbCharacteristics}
         setVerbCharacteristics={setVerbCharacteristics}
+        verbType={verbType}
       />
       <br></br>
       <div className="verb-component">
@@ -134,6 +135,7 @@ const VerbMenu = ({
   handleClick,
   verbCharacteristics,
   setVerbCharacteristics,
+  verbType,
 }) => {
   const [openOrClosed, setIsOpenOrClosed] = useState("open");
   const dispatch = useDispatch();
@@ -161,14 +163,20 @@ const VerbMenu = ({
   const handleSelect = (verbChars) => {
     const newVerbType = verbChars.Type;
     const optionsArr = Object.keys(verbChars);
-    let options = "";
+
+    console.log(verbChars);
+    let options = "Verb";
 
     for (let i = 1; i < optionsArr.length; i++) {
+      if (verbChars[optionsArr[i]] === "Verb") {
+        continue;
+      }
       options += ` ${verbChars[optionsArr[i]]}`;
     }
     if (!options) {
       return alert("You must pick verb options from the menu!!");
     }
+
     if (!checkSelectionExists(options)) {
       alert("Verb with given characteristics does not exist.");
       return;

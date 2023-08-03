@@ -89,10 +89,15 @@ const VerbGrid = ({
       exclusions = ["Participle", "Infinitive"];
     }
 
-    let options =
-      verbMode === "Use the menu to select verb forms to practice."
-        ? "Verb"
-        : verbMode;
+    let options = "";
+    if (
+      verbMode === "Use the menu to select verb forms to practice." ||
+      verbType === ""
+    ) {
+      options = "Verb";
+    } else {
+      options = verbMode;
+    }
 
     console.log(options);
 
