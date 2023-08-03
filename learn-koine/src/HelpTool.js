@@ -21,34 +21,41 @@ const parseHelp = (
     <h2>Verse Parsing Practice</h2>
     <p>
       This page allows the user to practice parsing an entire verse. First, a
-      random verse is displayed once the page loads. Users can use the search
-      menu to pick a particular verse, as well as click through the bible one
-      verse at a time.
+      random verse is displayed. Users can use the search menu to pick a
+      particular verse, as well as click through the New Testamen one verse at a
+      time.
     </p>
     <p>
-      At the bottom is a toolbar that has different parts of speech (definite
-      article, verbs, nouns and adjectives, etc.). Click on the part of speech
-      you wish to practice or identify. Then select a word in the verse that
-      matches the part of speech you chose. If you are wrong, the word will turn
-      red, but you can still try to guess the correct part of speech.
+      At the bottom is a toolbar that has different parts of speech. Click on
+      the part of speech you wish to practice or identify. Then select a word in
+      the verse that matches the part of speech you chose. If you are wrong, the
+      word will turn red, but you can still try to guess the correct part of
+      speech.
     </p>
     <p>
       Once you identify the word’s correct part of speech, the word will be
-      hihglighed the corresponding color from the toolbar. You can then practice
-      parsing the word. So if the word is a definite article, you would choose
-      the case, number and gender. If it is a verb, you will first choose what
-      kind of verb it is (regular, participle, or infinitive), then select the
-      correct options that describe the verb.
+      highlighted the corresponding color from the toolbar. You can then
+      practice parsing the word. For examle: if the word is a definite article,
+      you would choose the case, number and gender. If it is a verb, you will
+      first choose what kind of verb it is (regular, participle, or infinitive),
+      then select the correct options that describe the verb.
+    </p>
+    <p>
+      Verbs, participles, and infinitives are associated with the "Verb" tab.
     </p>
     <p>
       Particles and Adverbs do not have parsing characteristics, so only a brief
       translation will be provided.
     </p>
     <p>
-      NOTE: the text and definitions come from open source texts. They may not
-      represent the most current scholarship. This section is only meant for
-      practicing identifying the parts of speech. For true translation work,
-      scholarly lexicons, dictionaries and other resources should be consulted.
+      NOTE: the text and definitions come from{" "}
+      <a style={{ color: "rgb(236, 84, 13)" }} href="/about">
+        open source material
+      </a>
+      . They may not represent the most current scholarship. This section is
+      only meant for practicing identifying the parts of speech. For true
+      translation work, scholarly lexicons, dictionaries and other resources
+      should be consulted.
     </p>
   </div>
 );

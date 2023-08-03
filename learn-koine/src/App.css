@@ -93,6 +93,10 @@ a {
   text-align: start;
 }
 
+#link-to-home {
+  color: rgb(233, 111, 54);
+}
+
 .help-tool-button {
   color: white;
   background: none;
