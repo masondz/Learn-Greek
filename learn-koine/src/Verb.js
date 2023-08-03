@@ -106,7 +106,7 @@ const Verb = () => {
       <br></br>
       <div className="verb-component">
         <section className="verb-header">
-          <div style={{ marginTop: "60px" }}>{verbMode}</div>
+          <div style={{ marginTop: "45px" }}>{verbMode}</div>
           <h1>{verb.word}</h1>
           <h3>{verb.word ? wordUsages[verb.word].gloss : ""}</h3>
         </section>
