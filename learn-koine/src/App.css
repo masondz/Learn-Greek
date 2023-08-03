@@ -1,28 +1,24 @@
 .App {
   text-align: center;
-  /* border: green 1px solid; */
 }
 
 .App-header {
   font-family: "Geologica";
-
   background: linear-gradient(#282c34, #3d4150, #282c34);
-  /* border: yellow 1px solid; */
   border-radius: 0 0 0 0;
   padding-bottom: 200px;
-  /* min-height: 110vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  /* padding: 1em; */
 }
 
 .links {
   display: grid;
   grid-template-areas: "a a" "a a";
   gap: 5px;
+  margin-bottom: 100px;
 }
 
 a {
@@ -32,11 +28,10 @@ a {
 
 #github-link {
   color: rgb(183, 241, 241);
-  border: 1px solid rgb(183, 241, 241);
-  padding: 0.7em;
+  padding: 0.5em;
   border-radius: 0.7em;
   width: fit-content;
-  margin: 60px auto;
+  margin: 5px;
   font-size: 0.6em;
   font-weight: 100;
 }
@@ -68,7 +63,6 @@ a {
 }
 
 .about-paragraph {
-  /* border: 1px red solid; */
   max-width: 75%;
   padding: 30px;
   margin: auto;
