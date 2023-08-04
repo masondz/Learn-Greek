@@ -92,7 +92,8 @@ const VerbGrid = ({
     let options = "";
     if (
       verbMode === "Use the menu to select verb forms to practice." ||
-      verbType === ""
+      verbType === "" ||
+      verbMode === "Any"
     ) {
       options = "Verb";
     } else {

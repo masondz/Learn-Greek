@@ -165,12 +165,13 @@ const VerbMenu = ({
     const optionsArr = Object.keys(verbChars);
 
     console.log(verbChars);
-    let options = "Verb";
+    let options = "";
+
+    if (optionsArr.length === 1 && verbChars.Type === undefined) {
+      options = "Any";
+    }
 
     for (let i = 1; i < optionsArr.length; i++) {
-      if (verbChars[optionsArr[i]] === "Verb") {
-        continue;
-      }
       options += ` ${verbChars[optionsArr[i]]}`;
     }
     if (!options) {
@@ -180,15 +181,6 @@ const VerbMenu = ({
     if (!checkSelectionExists(options)) {
       alert("Verb with given characteristics does not exist.");
       return;
-    }
-    if (verbChars.Type === "Participle") {
-      console.log("render participle grid");
-    } else if (verbChars.Type === "Infinitive") {
-      console.log("render infinitive grid");
-    } else if (verbChars.Type === "Verb") {
-      console.log("render regularVerb grid");
-    } else {
-      console.log("don't render any grid.");
     }
     console.log("handleSelect() options: " + options);
     dispatch(setVerbType(newVerbType));
