@@ -25,6 +25,8 @@ const Verb = () => {
     partOfSpeech: "Verb",
   });
 
+  const [correctCount, setCorrectCount] = useState(0);
+
   const verbType = useSelector(selectVerbSlice);
 
   useEffect(() => {
@@ -93,6 +95,7 @@ const Verb = () => {
     }
 
     dispatch(setWord(nextVerb));
+    setCorrectCount(0);
   };
 
   return (
@@ -118,6 +121,8 @@ const Verb = () => {
           randomVerb={randomVerb}
           verbMode={verbMode}
           verbCharacteristics={verbCharacteristics}
+          correctCount={correctCount}
+          setCorrectCount={setCorrectCount}
         />
         <br></br>
         <button className="button-random" onClick={() => handleClick()}>

@@ -13,6 +13,8 @@ const VerbGrid = ({
   verbMode,
   reset,
   verbCharacteristics,
+  correctCount,
+  setCorrectCount,
 }) => {
   const [checkParse, setCheckParse] = useState(
     "Pick Verb, Participle, or Infintive"
@@ -24,7 +26,6 @@ const VerbGrid = ({
 
   const [imperfectPerson, setImperfectPerson] = useState("");
   const [imperfectNumber, setImperfectNumber] = useState("");
-  const [correctCount, setCorrectCount] = useState(0);
 
   const verbType = useSelector(selectVerbSlice);
   const word = useSelector(selectWordSlice);
@@ -212,8 +213,8 @@ const VerbGrid = ({
           return;
         }
       }
-    } else if (word.parse.includes("aorist")) {
-      if (checkSecondaryEndings(e, "aorist")) {
+    } else if (word.parse.includes("2nd aorist")) {
+      if (checkSecondaryEndings(e, "2nd aorist")) {
         return;
       }
     }
