@@ -134,78 +134,154 @@ const VerbGrid = ({
     }
   };
 
+  const checkSecondaryEndings = (e, tense) => {
+    if (
+      word.parse.includes(`${tense}, active, indicative, first, singular`) ||
+      word.parse.includes(`${tense}, active, indicative, third, plural`)
+    ) {
+      console.log("either first singular or third plural");
+      switch (e.target.innerHTML) {
+        case "first":
+          if (imperfectPerson === "third" || imperfectNumber === "plural") {
+            e.target.className = e.target.className + " wrong";
+            break;
+          } else {
+            isParsed();
+            setImperfectPerson("first");
+            console.log("made it to first person statement");
+            e.target.className = e.target.className + " correct";
+          }
+          break;
+        case "third":
+          if (imperfectPerson === "first" || imperfectNumber === "singular") {
+            e.target.className = e.target.className + " wrong";
+            break;
+          } else {
+            isParsed();
+            setImperfectPerson("third");
+            console.log("made it to third person statement");
+            e.target.className = e.target.className + " correct";
+          }
+          break;
+        case "singular":
+          if (imperfectNumber === "plural" || imperfectPerson === "third") {
+            e.target.className = e.target.className + " wrong";
+            break;
+          } else {
+            isParsed();
+            setImperfectNumber("singular");
+            console.log("made it to singular number statement");
+            e.target.className = e.target.className + " correct";
+          }
+          break;
+        case "plural":
+          if (imperfectNumber === "singular" || imperfectPerson === "first") {
+            e.target.className = e.target.className + " wrong";
+            break;
+          } else {
+            isParsed();
+            setImperfectNumber("plural");
+            console.log("made it to plural number statement");
+            e.target.className = e.target.className + " correct";
+          }
+          break;
+        default:
+          if (word.parse.includes(e.target.innerHTML)) {
+            isParsed();
+            e.target.className = e.target.className + " correct";
+            return true;
+          } else {
+            e.target.className = e.target.className + " wrong";
+          }
+          break;
+      }
+      console.log(imperfectNumber, imperfectPerson);
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   const onClick = (e) => {
     if (word.parse.includes("imperfect")) {
       if (e.target.innerHTML === "perfect") {
         e.target.className = e.target.className + " wrong";
         return;
-      }
-
-      if (
-        word.parse.includes("imperfect, active, indicative, first, singular") ||
-        word.parse.includes("imperfect, active, indicative, third, plural")
-      ) {
-        console.log("either first singular or third plural");
-        switch (e.target.innerHTML) {
-          case "first":
-            if (imperfectPerson === "third" || imperfectNumber === "plural") {
-              e.target.className = e.target.className + " wrong";
-              break;
-            } else {
-              isParsed();
-              setImperfectPerson("first");
-              console.log("made it to first person statement");
-              e.target.className = e.target.className + " correct";
-            }
-            break;
-          case "third":
-            if (imperfectPerson === "first" || imperfectNumber === "singular") {
-              e.target.className = e.target.className + " wrong";
-              break;
-            } else {
-              isParsed();
-              setImperfectPerson("third");
-              console.log("made it to third person statement");
-              e.target.className = e.target.className + " correct";
-            }
-            break;
-          case "singular":
-            if (imperfectNumber === "plural" || imperfectPerson === "third") {
-              e.target.className = e.target.className + " wrong";
-              break;
-            } else {
-              isParsed();
-              setImperfectNumber("singular");
-              console.log("made it to singular number statement");
-              e.target.className = e.target.className + " correct";
-            }
-            break;
-          case "plural":
-            if (imperfectNumber === "singular" || imperfectPerson === "first") {
-              e.target.className = e.target.className + " wrong";
-              break;
-            } else {
-              isParsed();
-              setImperfectNumber("plural");
-              console.log("made it to plural number statement");
-              e.target.className = e.target.className + " correct";
-            }
-            break;
-          default:
-            if (word.parse.includes(e.target.innerHTML)) {
-              isParsed();
-              e.target.className = e.target.className + " correct";
-              return;
-            } else {
-              e.target.className = e.target.className + " wrong";
-            }
-            break;
+      } else {
+        if (checkSecondaryEndings(e, "imperfect")) {
+          return;
         }
-        console.log(imperfectNumber, imperfectPerson);
+      }
+    } else if (word.parse.includes("aorist")) {
+      if (checkSecondaryEndings(e, "aorist")) {
         return;
       }
     }
 
+    // if (
+    //   word.parse.includes("imperfect, active, indicative, first, singular") ||
+    //   word.parse.includes("imperfect, active, indicative, third, plural")
+    // ) {
+    //   console.log("either first singular or third plural");
+    //   switch (e.target.innerHTML) {
+    //     case "first":
+    //       if (imperfectPerson === "third" || imperfectNumber === "plural") {
+    //         e.target.className = e.target.className + " wrong";
+    //         break;
+    //       } else {
+    //         isParsed();
+    //         setImperfectPerson("first");
+    //         console.log("made it to first person statement");
+    //         e.target.className = e.target.className + " correct";
+    //       }
+    //       break;
+    //     case "third":
+    //       if (imperfectPerson === "first" || imperfectNumber === "singular") {
+    //         e.target.className = e.target.className + " wrong";
+    //         break;
+    //       } else {
+    //         isParsed();
+    //         setImperfectPerson("third");
+    //         console.log("made it to third person statement");
+    //         e.target.className = e.target.className + " correct";
+    //       }
+    //       break;
+    //     case "singular":
+    //       if (imperfectNumber === "plural" || imperfectPerson === "third") {
+    //         e.target.className = e.target.className + " wrong";
+    //         break;
+    //       } else {
+    //         isParsed();
+    //         setImperfectNumber("singular");
+    //         console.log("made it to singular number statement");
+    //         e.target.className = e.target.className + " correct";
+    //       }
+    //       break;
+    //     case "plural":
+    //       if (imperfectNumber === "singular" || imperfectPerson === "first") {
+    //         e.target.className = e.target.className + " wrong";
+    //         break;
+    //       } else {
+    //         isParsed();
+    //         setImperfectNumber("plural");
+    //         console.log("made it to plural number statement");
+    //         e.target.className = e.target.className + " correct";
+    //       }
+    //       break;
+    //     default:
+    //       if (word.parse.includes(e.target.innerHTML)) {
+    //         isParsed();
+    //         e.target.className = e.target.className + " correct";
+    //         return;
+    //       } else {
+    //         e.target.className = e.target.className + " wrong";
+    //       }
+    //       break;
+    //   }
+    //   console.log(imperfectNumber, imperfectPerson);
+    //   return;
+    // }
+    // }
     if (e.target.innerHTML === "middle/passive") {
       if (
         word.parse.includes("middle") ||
