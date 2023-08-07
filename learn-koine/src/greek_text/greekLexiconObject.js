@@ -1688,7 +1688,8 @@ export const wordUsages = {
     gloss: "to bring/lead",
   },
   ἤγαγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G71",
     gloss: "to bring/lead",
   },
@@ -5156,12 +5157,14 @@ export const wordUsages = {
     gloss: "to sin",
   },
   ἥμαρτον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural, OR first, singular",
     GN: "G264",
     gloss: "to sin",
   },
   Ἥμαρτον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G264",
     gloss: "to sin",
   },
@@ -6192,7 +6195,8 @@ export const wordUsages = {
     gloss: "to lead",
   },
   ἀνήγαγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G321",
     gloss: "to lead",
   },
@@ -6560,7 +6564,8 @@ export const wordUsages = {
     gloss: "to yell",
   },
   Ἀνέκραγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G349",
     gloss: "to yell",
   },
@@ -7530,7 +7535,8 @@ export const wordUsages = {
     gloss: "to go up",
   },
   ἀνῆλθον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G424",
     gloss: "to go up",
   },
@@ -9186,7 +9192,8 @@ export const wordUsages = {
     gloss: "to lead away",
   },
   ἀπήγαγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G520",
     gloss: "to lead away",
   },
@@ -9774,7 +9781,8 @@ export const wordUsages = {
     gloss: "to go away",
   },
   ἀπῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G565",
     gloss: "to go away",
   },
@@ -10340,7 +10348,8 @@ export const wordUsages = {
     gloss: "to die",
   },
   ἀπέθανον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G599",
     gloss: "to die",
   },
@@ -11056,12 +11065,14 @@ export const wordUsages = {
     gloss: "enjoyment",
   },
   ἀπέλιπον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G620",
     gloss: "to leave",
   },
   ἀπέλιπόν: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G620",
     gloss: "to leave",
   },
@@ -16018,7 +16029,8 @@ export const wordUsages = {
     gloss: "hit",
   },
   ἔβαλον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G906",
     gloss: "hit",
   },
@@ -24863,12 +24875,14 @@ export const wordUsages = {
     gloss: "to pass through",
   },
   διῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1330",
     gloss: "to pass through",
   },
   Διῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1330",
     gloss: "to pass through",
   },
@@ -27793,7 +27807,8 @@ export const wordUsages = {
     gloss: "to leave behind",
   },
   ἐγκατέλιπον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1459",
     gloss: "to leave behind",
   },
@@ -28279,12 +28294,14 @@ export const wordUsages = {
     gloss: "see",
   },
   εἶδον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1492",
     gloss: "see",
   },
   εἶδόν: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G1492",
     gloss: "see",
   },
@@ -29257,7 +29274,8 @@ export const wordUsages = {
     gloss: "to bring in",
   },
   εἰσήγαγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1521",
     gloss: "to bring in",
   },
@@ -29543,12 +29561,14 @@ export const wordUsages = {
     gloss: "to enter",
   },
   εἰσῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1525",
     gloss: "to enter",
   },
   εἰσῆλθόν: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G1525",
     gloss: "to enter",
   },
@@ -29949,7 +29969,8 @@ export const wordUsages = {
     gloss: "to expel",
   },
   ἐξέβαλον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1544",
     gloss: "to expel",
   },
@@ -31238,7 +31259,8 @@ export const wordUsages = {
     gloss: "to escape",
   },
   ἐξέφυγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1628",
     gloss: "to escape",
   },
@@ -34426,7 +34448,8 @@ export const wordUsages = {
     gloss: "to go out",
   },
   ἐξῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1831",
     gloss: "to go out",
   },
@@ -35547,7 +35570,8 @@ export const wordUsages = {
     gloss: "to put on/seize",
   },
   ἐπέβαλον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G1911",
     gloss: "to put on/seize",
   },
@@ -37492,7 +37516,8 @@ export const wordUsages = {
     gloss: "to obtain",
   },
   ἐπέτυχον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2013",
     gloss: "to obtain",
   },
@@ -37882,12 +37907,14 @@ export const wordUsages = {
     gloss: "to say",
   },
   εἶπον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2036",
     gloss: "to say",
   },
   Εἶπον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G2036",
     gloss: "to say",
   },
@@ -38926,12 +38953,14 @@ export const wordUsages = {
     gloss: "to come/go",
   },
   ἦλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2064",
     gloss: "to come/go",
   },
   Ἦλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2064",
     gloss: "to come/go",
   },
@@ -40605,12 +40634,14 @@ export const wordUsages = {
     gloss: "to find/meet",
   },
   εὗρον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2147",
     gloss: "to find/meet",
   },
   Εὗρον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G2147",
     gloss: "to find/meet",
   },
@@ -41430,7 +41461,8 @@ export const wordUsages = {
     gloss: "to have/be",
   },
   ἔσχον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2192",
     gloss: "to have/be",
   },
@@ -49494,7 +49526,8 @@ export const wordUsages = {
     gloss: "to bring down",
   },
   κατήγαγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2609",
     gloss: "to bring down",
   },
@@ -50069,12 +50102,14 @@ export const wordUsages = {
     gloss: "to leave behind",
   },
   Κατέλιπον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G2641",
     gloss: "to leave behind",
   },
   κατέλιπον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural, OR first, singular",
     GN: "G2641",
     gloss: "to leave behind",
   },
@@ -50930,7 +50965,8 @@ export const wordUsages = {
     gloss: "to flee",
   },
   κατέφυγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2703",
     gloss: "to flee",
   },
@@ -51167,7 +51203,8 @@ export const wordUsages = {
     gloss: "to descend",
   },
   κατῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2718",
     gloss: "to descend",
   },
@@ -51220,7 +51257,8 @@ export const wordUsages = {
     gloss: "to devour",
   },
   κατέφαγον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G2719",
     gloss: "to devour",
   },
@@ -56361,7 +56399,8 @@ export const wordUsages = {
     gloss: "to take",
   },
   ἔλαβον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G2983",
     gloss: "to take",
   },
@@ -59117,7 +59156,8 @@ export const wordUsages = {
     gloss: "to learn",
   },
   ἔμαθον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G3129",
     gloss: "to learn",
   },
@@ -70054,12 +70094,14 @@ export const wordUsages = {
     gloss: "to take",
   },
   παρέλαβον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G3880",
     gloss: "to take",
   },
   Παρέλαβον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G3880",
     gloss: "to take",
   },
@@ -70629,7 +70671,8 @@ export const wordUsages = {
     gloss: "to come in",
   },
   παρεισῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G3922",
     gloss: "to come in",
   },
@@ -70752,7 +70795,8 @@ export const wordUsages = {
     gloss: "to pass by",
   },
   παρῆλθον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G3928",
     gloss: "to pass by",
   },
@@ -70789,7 +70833,8 @@ export const wordUsages = {
     gloss: "to furnish occasion",
   },
   παρέσχον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G3930",
     gloss: "to furnish occasion",
   },
@@ -71374,7 +71419,8 @@ export const wordUsages = {
     gloss: "to suffer",
   },
   ἔπαθον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G3958",
     gloss: "to suffer",
   },
@@ -72732,7 +72778,8 @@ export const wordUsages = {
     gloss: "to clothe",
   },
   περιέβαλον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4016",
     gloss: "to clothe",
   },
@@ -72797,7 +72844,8 @@ export const wordUsages = {
     gloss: "to go around",
   },
   περιῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4022",
     gloss: "to go around",
   },
@@ -73957,7 +74005,8 @@ export const wordUsages = {
     gloss: "to drink",
   },
   ἔπιον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4095",
     gloss: "to drink",
   },
@@ -78472,7 +78521,8 @@ export const wordUsages = {
     gloss: "to go/bring before",
   },
   προήγαγον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G4254",
     gloss: "to go/bring before",
   },
@@ -78706,7 +78756,8 @@ export const wordUsages = {
     gloss: "to predict",
   },
   προεῖπον: {
-    parse: "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular",
+    parse:
+      "V-2AAI-1S｜Verb, 2nd aorist, active, indicative, first, singular OR third, plural",
     GN: "G4277",
     gloss: "to predict",
   },
@@ -78784,7 +78835,8 @@ export const wordUsages = {
     gloss: "to go before",
   },
   προῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4281",
     gloss: "to go before",
   },
@@ -79508,7 +79560,8 @@ export const wordUsages = {
     gloss: "to come near/agree",
   },
   προσῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4334",
     gloss: "to come near/agree",
   },
@@ -86437,7 +86490,8 @@ export const wordUsages = {
     gloss: "to seize/conceive/help",
   },
   συνέλαβον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4815",
     gloss: "to seize/conceive/help",
   },
@@ -87085,7 +87139,8 @@ export const wordUsages = {
     gloss: "to gather/gather together/assemble",
   },
   συνήγαγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4863",
     gloss: "to gather/gather together/assemble",
   },
@@ -87775,7 +87830,8 @@ export const wordUsages = {
     gloss: "to assemble",
   },
   συνῆλθον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4905",
     gloss: "to assemble",
   },
@@ -87894,7 +87950,8 @@ export const wordUsages = {
     gloss: "to hold/oppress",
   },
   συνέσχον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4912",
     gloss: "to hold/oppress",
   },
@@ -88284,7 +88341,8 @@ export const wordUsages = {
     gloss: "to flock",
   },
   συνέδραμον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G4936",
     gloss: "to flock",
   },
@@ -91722,7 +91780,8 @@ export const wordUsages = {
     gloss: "to run",
   },
   ἔδραμον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G5143",
     gloss: "to run",
   },
@@ -93293,7 +93352,8 @@ export const wordUsages = {
   ὑπὸ: { parse: "PREP｜Preposition", GN: "G5259", gloss: "under" },
   ὑφʼ: { parse: "PREP｜Preposition", GN: "G5259", gloss: "under" },
   ὑπέβαλον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G5260",
     gloss: "to instigate",
   },
@@ -95013,7 +95073,8 @@ export const wordUsages = {
     gloss: "to flee",
   },
   ἔφυγον: {
-    parse: "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural",
+    parse:
+      "V-2AAI-3P｜Verb, 2nd aorist, active, indicative, third, plural OR first, singular",
     GN: "G5343",
     gloss: "to flee",
   },
@@ -99881,6 +99942,23 @@ export const wordUsages = {
     gloss: "figuratively",
   },
 };
+
+// const array = [];
+// const parttern = /ον$/;
+// const keys = Object.keys(wordUsages);
+
+// for (let word in wordUsages) {
+//   if (
+//     wordUsages[word].parse.includes(
+//       "2nd aorist, active, indicative, third, plural"
+//     ) &&
+//     parttern.test(word)
+//   ) {
+//     array.push(word);
+//   }
+// }
+
+// console.log(array);
 
 // let gnumberObject = {};
 
