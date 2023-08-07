@@ -118,6 +118,9 @@ const VerbGrid = ({
   let numCorrect = correctCount;
 
   const isParsed = () => {
+    if (correctCount === false) {
+      return;
+    }
     numCorrect++;
     console.log(numCorrect);
     if (
