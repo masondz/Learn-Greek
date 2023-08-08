@@ -119,6 +119,10 @@ const augmentStyle = {
   color: "blue",
 };
 
+const reduplicationStyle = {
+  color: "rgb(20, 195, 10, 1)",
+};
+
 const endingStyle = {
   color: "rgb(255, 20, 50)",
 };
@@ -258,32 +262,107 @@ const futureTense = {
     </p>
   ),
 };
+//ύ
+const perfectTense = {
+  name: "Perfect Active Indicative",
+  firstSingular: (
+    <p>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>κα</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>κας</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>κε(ν)</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={reduplicationStyle}>λε</i>λύ<b style={endingStyle}>καμεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={reduplicationStyle}>λε</i>λύ<b style={endingStyle}>κατε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={reduplicationStyle}>λε</i>λύ<b style={endingStyle}>κασι(ν)</b>
+    </p>
+  ),
+};
+const pluperfectTense = {
+  name: "Pluperfect Active Indicative",
+  firstSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>κειν</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>κεις</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>κει</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>
+      <i style={reduplicationStyle}>λε</i>λύ<b style={endingStyle}>κειμεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>
+      <i style={reduplicationStyle}>λε</i>λύ<b style={endingStyle}>κειτε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>
+      <i style={reduplicationStyle}>λε</i>λύ<b style={endingStyle}>κεισαν</b>
+    </p>
+  ),
+};
 
 const Paradigms = ({ tense }) => {
   return (
     <div style={tableContainer}>
       <h4 style={hFour}>{tense.name}</h4>
       <table style={tableStyle}>
-        <tr>
-          <th style={rowStyle}>Person</th>
-          <th style={rowStyle}>Singular</th>
-          <th style={rowStyle}>Plural</th>
-        </tr>
-        <tr>
-          <td style={tdStyle}>First</td>
-          <td style={tdStyle}>{tense.firstSingular}</td>
-          <td style={tdStyle}>{tense.firstPlural}</td> {/*firstPlural*/}
-        </tr>
-        <tr>
-          <td style={tdStyle}>Second</td>
-          <td style={tdStyle}>{tense.secondSingular}</td> {/*secondSingular*/}
-          <td style={tdStyle}>{tense.secondPlural}</td> {/*secondPlural*/}
-        </tr>
-        <tr>
-          <td style={tdStyle}>Third</td>
-          <td style={tdStyle}>{tense.thirdSingular}</td> {/*thirdSingular*/}
-          <td style={tdStyle}>{tense.thirdPlural}</td> {/*thirdPlural*/}
-        </tr>
+        <tbody>
+          <tr>
+            <th style={rowStyle}>Person</th>
+            <th style={rowStyle}>Singular</th>
+            <th style={rowStyle}>Plural</th>
+          </tr>
+          <tr>
+            <td style={tdStyle}>First</td>
+            <td style={tdStyle}>{tense.firstSingular}</td>
+            <td style={tdStyle}>{tense.firstPlural}</td> {/*firstPlural*/}
+          </tr>
+          <tr>
+            <td style={tdStyle}>Second</td>
+            <td style={tdStyle}>{tense.secondSingular}</td> {/*secondSingular*/}
+            <td style={tdStyle}>{tense.secondPlural}</td> {/*secondPlural*/}
+          </tr>
+          <tr>
+            <td style={tdStyle}>Third</td>
+            <td style={tdStyle}>{tense.thirdSingular}</td> {/*thirdSingular*/}
+            <td style={tdStyle}>{tense.thirdPlural}</td> {/*thirdPlural*/}
+          </tr>
+        </tbody>
       </table>
     </div>
   );
@@ -339,6 +418,8 @@ const HelpTabs = ({ tipShown, setTipShown }) => {
           <Paradigms tense={futureTense} />
           <Paradigms tense={aoristTense} />
           <Paradigms tense={imperfectTense} />
+          <Paradigms tense={perfectTense} />
+          <Paradigms tense={pluperfectTense} />
         </div>
       )}
     </div>
