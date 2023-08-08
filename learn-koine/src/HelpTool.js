@@ -80,8 +80,218 @@ const verbHelp = (
   </div>
 );
 
+const tableContainer = {
+  width: "100%",
+  border: "2px solid darkgray",
+  display: "flex",
+  flexDirection: "column",
+  marginBottom: 10,
+};
+
+const hFour = {
+  margin: 0,
+  background: "darkblue",
+  color: "white",
+  paddingLeft: "1em",
+};
+
+const tableStyle = {
+  borderCollapse: "collapse",
+  border: "solid black 1px",
+  textAlign: "center",
+};
+
+const rowStyle = {
+  background: "darkgray",
+  color: "white",
+  border: "1px black solid",
+  padding: "5px",
+  textShadow: "1px 1px 2px black",
+};
+
+const tdStyle = {
+  border: "1px black solid",
+  padding: "3px",
+  background: "white",
+};
+
+const augmentStyle = {
+  color: "blue",
+};
+
+const endingStyle = {
+  color: "rgb(255, 20, 50)",
+};
+
+const aoristTense = {
+  name: <p>Aorist Active Indicative</p>,
+  firstSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>σα</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>σας</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>σε(ν)</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>σαμεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>σατε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>σαν</b>
+    </p>
+  ),
+};
+
+const imperfectTense = {
+  name: "Imperfect Active Indicative",
+  firstSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>ον</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>ες</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>ε(ν)</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>ομεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>ετε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>ον</b>
+    </p>
+  ),
+};
+
+const presentTense = {
+  name: "Present Active Indicative",
+  firstSingular: (
+    <p>
+      λυ<b style={endingStyle}>ω</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λυ<b style={endingStyle}>εις</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λυ<b style={endingStyle}>ει</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λυ<b style={endingStyle}>ομεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λυ<b style={endingStyle}>ετε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λυ<b style={endingStyle}>ουσι(ν)</b>
+    </p>
+  ),
+};
+
+const futureTense = {
+  name: "Future Active Indicative",
+  firstSingular: (
+    <p>
+      λυ<b style={endingStyle}>σω</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λυ<b style={endingStyle}>σεις</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λυ<b style={endingStyle}>σει</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λυ<b style={endingStyle}>σομεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λυ<b style={endingStyle}>σετε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λυ<b style={endingStyle}>σουσι(ν)</b>
+    </p>
+  ),
+};
+
+const Paradigms = ({ tense }) => {
+  return (
+    <div style={tableContainer}>
+      <h4 style={hFour}>{tense.name}</h4>
+      <table style={tableStyle}>
+        <tr>
+          <th style={rowStyle}>Person</th>
+          <th style={rowStyle}>Singular</th>
+          <th style={rowStyle}>Plural</th>
+        </tr>
+        <tr>
+          <td style={tdStyle}>First</td>
+          <td style={tdStyle}>{tense.firstSingular}</td>
+          <td style={tdStyle}>{tense.firstPlural}</td> {/*firstPlural*/}
+        </tr>
+        <tr>
+          <td style={tdStyle}>Second</td>
+          <td style={tdStyle}>{tense.secondSingular}</td> {/*secondSingular*/}
+          <td style={tdStyle}>{tense.secondPlural}</td> {/*secondPlural*/}
+        </tr>
+        <tr>
+          <td style={tdStyle}>Third</td>
+          <td style={tdStyle}>{tense.thirdSingular}</td> {/*thirdSingular*/}
+          <td style={tdStyle}>{tense.thirdPlural}</td> {/*thirdPlural*/}
+        </tr>
+      </table>
+    </div>
+  );
+};
+
 const HelpTool = ({ pageName }) => {
   const [helpShown, setHelpShown] = useState(false);
+  const [tipShown, setTipShown] = useState(false);
 
   let chosenPage = "";
 
@@ -102,10 +312,35 @@ const HelpTool = ({ pageName }) => {
   return (
     <div className="help-container">
       <div style={{ position: "fixed" }}></div>
-      {helpShown && <div className="help-paragraph">{chosenPage}</div>}
+      {helpShown && (
+        <div className="help-paragraph">
+          {chosenPage}
+          <HelpTabs tipShown={tipShown} setTipShown={setTipShown} />
+        </div>
+      )}
       <button className="help-tool-button" onClick={handleOnClick}>
         ?
       </button>
+    </div>
+  );
+};
+
+const HelpTabs = ({ tipShown, setTipShown }) => {
+  function handleClick() {
+    setTipShown(!tipShown);
+  }
+
+  return (
+    <div>
+      <p onClick={handleClick}>Tips</p>
+      {tipShown && (
+        <div style={{ marginBottom: 11 }}>
+          <Paradigms tense={presentTense} />
+          <Paradigms tense={futureTense} />
+          <Paradigms tense={aoristTense} />
+          <Paradigms tense={imperfectTense} />
+        </div>
+      )}
     </div>
   );
 };

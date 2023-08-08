@@ -98,6 +98,9 @@ const Verse = () => {
   const [chosenChapter, setChosenChapter] = useState("");
   const [chosenVerse, setChosenVerse] = useState(0);
 
+  //this is for VerbGrid. Must be set to false to stop random verb after correct guesses.
+  const [correctCount, setCorrectCount] = useState(false);
+
   useEffect(() => {
     const randomVerse = getRandomVerse(organizeText(greekText));
     console.log(randomVerse);
@@ -151,7 +154,14 @@ const Verse = () => {
       practiceGrid = <PronounGrid reset={reset} />;
       break;
     case "Verb":
-      practiceGrid = <VerbGrid verbMode={"parsing"} reset={reset} />;
+      practiceGrid = (
+        <VerbGrid
+          verbMode={"parsing"}
+          correctCount={correctCount}
+          setCorrectCount={setCorrectCount}
+          reset={reset}
+        />
+      );
       break;
     case "Adverb":
       practiceGrid = <AdverbGrid reset={reset} />;
