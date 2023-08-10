@@ -2,7 +2,7 @@
   background-color: rgb(20, 250, 59);
   padding: 5px;
   height: 25px;
-  width: 222px;
+  width: 232px;
   display: flex;
   /* justify-content: center; */
   border: 2px solid rgb(7, 99, 4);
@@ -36,7 +36,7 @@
 .menu-link {
   color: black;
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.8em;
   /* border: 1px red solid; */
   margin-bottom: 10px;
   padding-left: 0.2em;
@@ -49,7 +49,7 @@
   background-color: white;
   color: black;
   text-align: left;
-  width: 234px;
+  width: 245px;
   min-height: 100%;
   z-index: 6;
   border: 2px solid rgb(119, 119, 118);
