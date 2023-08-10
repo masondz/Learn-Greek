@@ -82,7 +82,7 @@
 .verb-menu-options-open {
   padding: 5px;
   font-size: 0.8em;
-  width: 225px;
+  width: 235px;
   height: 120vh;
   overflow: scroll;
   transition: width 300ms, height 300ms;
