@@ -73,14 +73,6 @@ export const randomWord = (obj, attribute, arr, exclusions = []) => {
   }
 };
 
-//let nextVerb = randomWord(wordUsages, "parse", splitOption, exclusions);
-/* let nextVerb = randomWord(
-  wordUsages,
-  "parse",
-  options.split(" "),
-  exclusions
-); */
-
 export const randomVerb = (obj, attribute, arr, exclusions) => {
   console.log("trying randomVerb function");
   const arrayOfPossibles = [];
