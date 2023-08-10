@@ -45,6 +45,10 @@ const Verb = () => {
       exclusions = ["Participle", "Infinitive"];
     }
 
+    if (verbCharacteristics.Tense === "perfect") {
+      exclusions = ["imperfect", "pluperfect"];
+    }
+
     console.log(option);
 
     if (
