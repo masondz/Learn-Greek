@@ -169,6 +169,46 @@ a {
   margin: 0;
 }
 
+/*Alphabet Animations */
+
+/* animation: (name) (duration) (timing-function (linear etc)) (delay) (iteration count) (direction);*/
+/* animation-fill-mode is separate*/
+
+.letter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  border: 1px yellow solid;
+  height: 75vh;
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.letter-lane {
+  display: block;
+  position: relative;
+  /* border: 1px cyan solid; */
+}
+
+.letter {
+  position: absolute;
+  /* border: 1px red solid; */
+  bottom: -45px;
+}
+
+@keyframes move {
+  from {
+    bottom: -45px;
+  }
+  to {
+    bottom: 700px;
+  }
+}
+
+/*////////*/
+
 @media only screen and (max-width: 525px) {
   .home-links {
     min-width: 125px;
