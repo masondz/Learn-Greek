@@ -187,14 +187,16 @@ a {
 }
 
 .letter-lane {
-  display: block;
   position: relative;
   /* border: 1px cyan solid; */
+  width: 100%;
 }
 
 .letter {
   position: absolute;
   /* border: 1px red solid; */
+  left: 35%;
+  margin: auto;
   bottom: -45px;
 }
 
