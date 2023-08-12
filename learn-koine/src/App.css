@@ -188,7 +188,7 @@ a {
 
 .letter-lane {
   position: relative;
-  /* border: 1px cyan solid; */
+  border: 1px cyan solid;
   width: 100%;
 }
 

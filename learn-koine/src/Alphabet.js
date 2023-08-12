@@ -1,17 +1,51 @@
-import { createElement } from "react";
+import { createElement, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 
-function Greeting() {
+function Letter() {
+  const [randomLetter, setRandomLetter] = useState("");
+  const [randomTime, setRandomTime] = useState("");
+
   const alphabetArray = "ςερτυθιοπασδφγηξκλζχψωβνμ";
-  const randomTime = Math.random() * 10000 + 2000;
+  function generateRandomTime() {
+    let newTime = Math.random() * 10000 + 2000;
+    return newTime;
+  }
   console.log(randomTime);
 
-  let randomNumber = Math.floor(Math.random() * alphabetArray.length);
-  let randomLetter = alphabetArray[randomNumber];
+  function makeRandomLetter() {
+    let randomNumber = Math.floor(Math.random() * alphabetArray.length);
+    let randomLetter = alphabetArray[randomNumber];
+    return randomLetter;
+  }
+
+  useEffect(() => {
+    let firstLetter = makeRandomLetter();
+    let firstTime = generateRandomTime();
+
+    setRandomLetter(firstLetter);
+    setRandomTime(firstTime);
+  }, []);
 
   const handleClick = (e) => {
-    return e.target.remove();
+    e.preventDefault();
+    console.log(e.target.style);
+    e.target.animationName = "blank";
+    let newLetter = makeRandomLetter();
+    let newTime = generateRandomTime();
+    setTimeout(() => {
+      setRandomLetter(newLetter);
+      setRandomTime(newTime);
+      e.target.className = "letter";
+    }, 10);
+    // const currentAnimationName = e.target.style.animationName;
+    // e.target.style.animationName = "";
+    // requestAnimationFrame(() => {
+    //   e.target.style.animationName = currentAnimationName;
+    // });
+    // e.target.style.animationName = currentAnimationName;
+    // console.log(e.target.style);
+    return;
   };
 
   return createElement(
@@ -19,7 +53,11 @@ function Greeting() {
     {
       className: "letter",
       style: {
-        animation: `move ${randomTime}ms linear 0s 2`,
+        animationName: "move",
+        animationDuration: randomTime + "ms",
+        animationTimingFunction: "linear",
+        animationDelay: "0s",
+        animationIterationCount: "infinite",
         animationFillMode: "forwards",
       },
       onClick: (e) => handleClick(e),
@@ -37,22 +75,22 @@ const Alphabet = () => {
       <h1>Alphabet Practice</h1>
       <div className="letter-container">
         <div className="letter-lane">
-          <Greeting />
+          <Letter />
         </div>
         <div className="letter-lane">
-          <Greeting />
+          <Letter />
         </div>
         <div className="letter-lane">
-          <Greeting />
+          <Letter />
         </div>
         <div className="letter-lane">
-          <Greeting />
+          <Letter />
         </div>
         <div className="letter-lane">
-          <Greeting />
+          <Letter />
         </div>
         <div className="letter-lane">
-          <Greeting />
+          <Letter />
         </div>
       </div>
       <br></br>
