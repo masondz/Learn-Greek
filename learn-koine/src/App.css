@@ -200,6 +200,12 @@ a {
   bottom: -45px;
 }
 
+.letter-correct {
+  color: rgb(47, 255, 89);
+  position: absolute;
+  left: 35%;
+}
+
 @keyframes move {
   from {
     bottom: -45px;

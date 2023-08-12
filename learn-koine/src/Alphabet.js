@@ -1,4 +1,4 @@
-import { createElement, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 
@@ -29,40 +29,44 @@ function Letter() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log(e.target.style);
-    e.target.animationName = "blank";
-    let newLetter = makeRandomLetter();
-    let newTime = generateRandomTime();
-    setTimeout(() => {
-      setRandomLetter(newLetter);
-      setRandomTime(newTime);
-      e.target.className = "letter";
-    }, 10);
-    // const currentAnimationName = e.target.style.animationName;
-    // e.target.style.animationName = "";
-    // requestAnimationFrame(() => {
-    //   e.target.style.animationName = currentAnimationName;
-    // });
-    // e.target.style.animationName = currentAnimationName;
-    // console.log(e.target.style);
-    return;
+    if (e.target.innerHTML === "α" || e.target.innerHTML === "β") {
+      e.target.style.animationPlayState = "paused";
+      e.target.style.color = "greenyellow";
+      return;
+    } else {
+      console.log("wrong!");
+    }
   };
 
-  return createElement(
-    "h1",
-    {
-      className: "letter",
-      style: {
-        animationName: "move",
-        animationDuration: randomTime + "ms",
-        animationTimingFunction: "linear",
-        animationDelay: "0s",
-        animationIterationCount: "infinite",
-        animationFillMode: "forwards",
-      },
-      onClick: (e) => handleClick(e),
-    },
-    createElement("i", null, randomLetter)
+  const handleAnimationIteration = (e) => {
+    e.target.style.animationName = "none";
+    let newLetter = makeRandomLetter();
+    let newTime = generateRandomTime();
+    setRandomLetter(newLetter);
+    setRandomTime(newTime);
+    setTimeout(() => {
+      e.target.style.animationName = "move";
+    }, 500);
+  };
+
+  const animationStyle = {
+    animationName: "move",
+    animationDuration: randomTime + "ms",
+    animationTimingFunction: "linear",
+    animationDelay: "0s",
+    animationIterationCount: "infinite",
+    animationFillMode: "forwards",
+  };
+
+  return (
+    <h1
+      className="letter"
+      style={animationStyle}
+      onClick={(e) => handleClick(e)}
+      onAnimationIteration={(e) => handleAnimationIteration(e)}
+    >
+      {randomLetter}
+    </h1>
   );
 }
 
