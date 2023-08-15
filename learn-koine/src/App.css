@@ -201,7 +201,12 @@ a {
   /* border: 1px red solid; */
   left: 35%;
   margin: auto;
-  bottom: -55px;
+  bottom: -95px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .letter-correct {

@@ -2,17 +2,16 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 
-function Letter({ fieldWidth }) {
+function Letter({ fieldWidth, animationStyles }) {
   const [randomLetter, setRandomLetter] = useState("");
   const [randomTime, setRandomTime] = useState("");
   const [randomStartPoint, setRandomStartPoint] = useState("");
 
-  const alphabetArray = "ςερτυθιοπασδφγηξκλζχψωβνμ";
+  const alphabetArray = "ασβμ";
   function generateRandomTime() {
     let newTime = Math.random() * 3000 + 2000;
     return newTime;
   }
-  console.log(randomTime);
 
   function makeRandomLetter() {
     let randomNumber = Math.floor(Math.random() * alphabetArray.length);
@@ -25,20 +24,39 @@ function Letter({ fieldWidth }) {
     return randomPoint;
   }
 
+  // const [coloring, coloringTiming] = animationStyles;
+
   useEffect(() => {
+    const coloring = [
+      { color: "lightblue" },
+      { color: "cyan" },
+      { color: "lightblue" },
+      { color: "cyan" },
+    ];
+
+    const coloringTiming = {
+      duration: 3000,
+      iterations: Infinity,
+    };
     let firstLetter = makeRandomLetter();
     let firstTime = generateRandomTime();
     let startPoint = makeRandomStartPoint();
     setRandomLetter(firstLetter);
     setRandomTime(firstTime);
     setRandomStartPoint(startPoint);
+
+    const matches = document.querySelectorAll(".letter");
+    matches.forEach((element) => {
+      element.animate(coloring, coloringTiming);
+    });
   }, []);
 
   const handleClick = (e) => {
-    console.log(fieldWidth);
+    console.log(e.target.getAnimations());
     e.preventDefault();
     if (e.target.innerHTML === "α" || e.target.innerHTML === "β") {
       e.target.style.animationPlayState = "paused";
+      // e.target.animate(coloring, coloringTiming).pause();
       e.target.style.color = "greenyellow";
       return;
     } else {
@@ -100,36 +118,75 @@ function Letter({ fieldWidth }) {
 }
 
 const Alphabet = () => {
-  const getLetter = document.querySelector(".letter");
-  console.log(getLetter);
-
   const fieldWidth = useRef();
 
   const checkWidth = () => {
     console.log(fieldWidth.current.getBoundingClientRect().width);
   };
 
+  // const animationStyle = {
+  //   animationName: "move",
+  //   animationDuration: randomTime + "ms",
+  //   animationTimingFunction: "linear",
+  //   animationDelay: "0s",
+  //   animationIterationCount: "infinite",
+  //   animationFillMode: "forwards",
+  //   left: randomStartPoint + "%",
+  // };
+
+  // const coloring = [
+  //   { color: "lightblue" },
+  //   { color: "cyan" },
+  //   { color: "lightblue" },
+  //   { color: "cyan" },
+  // ];
+
+  // const coloringTiming = {
+  //   duration: 3000,
+  //   iterations: Infinity,
+  // };
+
+  // useEffect(() => {
+  //   const matches = document.querySelectorAll(".letter");
+  //   matches.forEach((element) => {
+  //     element.animate(coloring, coloringTiming);
+  //   });
+  // });
+
   return (
     <>
       <h1>Alphabet Practice</h1>
       <div className="letter-container" ref={fieldWidth} onClick={checkWidth}>
         <div className="letter-lane">
-          <Letter fieldWidth={fieldWidth} />
+          <Letter
+            // animationStyles={[coloring, coloringTiming]}
+            fieldWidth={fieldWidth}
+          />
         </div>
         <div className="letter-lane">
-          <Letter />
+          <Letter
+          // animationStyles={[coloring, coloringTiming]}
+          />
         </div>
         <div className="letter-lane">
-          <Letter />
+          <Letter
+          // animationStyles={[coloring, coloringTiming]}
+          />
         </div>
         <div className="letter-lane">
-          <Letter />
+          <Letter
+          // animationStyles={[coloring, coloringTiming]}
+          />
         </div>
         <div className="letter-lane">
-          <Letter />
+          <Letter
+          // animationStyles={[coloring, coloringTiming]}
+          />
         </div>
         <div className="letter-lane">
-          <Letter />
+          <Letter
+          // animationStyles={[coloring, coloringTiming]}
+          />
         </div>
       </div>
       <br></br>
