@@ -6,12 +6,13 @@ function Letter({ fieldWidth, animationStyles }) {
   const [randomLetter, setRandomLetter] = useState("");
   const [randomTime, setRandomTime] = useState("");
   const [randomStartPoint, setRandomStartPoint] = useState("");
+  const [randomEndPoint, setRandomEndPoint] = useState("");
 
   const letterRef = useRef();
 
-  const alphabetArray = "ασβμ";
+  const alphabetArray = "αβ";
   function generateRandomTime() {
-    let newTime = Math.random() * 3000 + 2000;
+    let newTime = Math.floor(Math.random() * 3000 + 2000);
     return newTime;
   }
 
@@ -70,54 +71,49 @@ function Letter({ fieldWidth, animationStyles }) {
     iterations: Infinity,
   };
 
-  if (fieldWidth && letterRef) {
-    let newEndPoint = makeRandomEndPoint(fieldWidth);
-    let newStartPoint = makeRandomStartPoint();
-    console.log("field width from Letter: " + newEndPoint);
-    moving[0].left = newStartPoint + "px";
-    moving[1].left = newEndPoint + "px";
-    letterRef.current.animate(moving, movingTiming);
-    letterRef.current.animate(coloring, coloringTiming);
-    console.log("start: " + newStartPoint, "stop: " + newEndPoint);
-  }
-
-  // const [coloring, coloringTiming] = animationStyles;
-
-  useEffect(() => {
-    let firstLetter = makeRandomLetter();
-    let firstTime = generateRandomTime();
-    // let startPoint = makeRandomStartPoint();
-    // let endPoint = makeRandomEndPoint(fieldWidth);
-    setRandomLetter(firstLetter);
-    setRandomTime(firstTime);
-    // setRandomStartPoint(startPoint);
-    // setRandomEndPoint(endPoint);
-  }, [fieldWidth]);
-
-  const handleClick = (e) => {
-    console.log(e.target.getAnimations());
-    e.preventDefault();
-    if (e.target.innerHTML === "α" || e.target.innerHTML === "β") {
-      // e.target.style.animationPlayState = "paused";
-      e.target.animate(moving, movingTiming).pause();
-      e.target.style.color = "greenyellow";
-      return;
-    } else {
-      console.log("wrong!");
-    }
-  };
-
   const handleAnimationIteration = (e) => {
-    e.target.style.animationName = "none";
     let newLetter = makeRandomLetter();
     let newTime = generateRandomTime();
     let newStartPoint = makeRandomStartPoint();
     setRandomLetter(newLetter);
     setRandomTime(newTime);
     setRandomStartPoint(newStartPoint);
-    setTimeout(() => {
-      e.target.style.animationName = "move";
-    }, 500);
+  };
+
+  let movingElement;
+  let coloringElement;
+
+  useEffect(() => {
+    let firstLetter = makeRandomLetter();
+    let firstTime = generateRandomTime();
+    let firstStartPoint = makeRandomStartPoint();
+    setRandomLetter(firstLetter);
+    setRandomTime(firstTime);
+    setRandomStartPoint(firstStartPoint);
+    let firstEndPoint = makeRandomEndPoint(fieldWidth);
+
+    setRandomEndPoint(firstEndPoint);
+  }, [fieldWidth]);
+
+  if (fieldWidth && letterRef) {
+    console.log("field width from Letter: " + randomStartPoint);
+    moving[0].left = randomStartPoint + "px";
+    moving[1].left = randomEndPoint + "px";
+
+    movingElement = letterRef.current.animate(moving, movingTiming);
+    coloringElement = letterRef.current.animate(coloring, coloringTiming);
+    console.log("start: " + randomStartPoint, "stop: " + randomEndPoint);
+  }
+
+  const handleClick = (e) => {
+    console.log(movingElement.playState);
+    if (e.target.innerHTML === "α" || e.target.innerHTML === "β") {
+      movingElement.pause();
+      coloringElement.pause();
+      return;
+    } else {
+      console.log("wrong!");
+    }
   };
 
   // const animationStyle = {
@@ -154,7 +150,6 @@ const Alphabet = () => {
   const fieldRef = useRef();
   const [fieldWidth, setFieldWidth] = useState("");
 
-  // let
   useEffect(() => {
     console.log(fieldRef);
     setFieldWidth(fieldRef.current.getBoundingClientRect().width);
@@ -190,6 +185,27 @@ const Alphabet = () => {
             key="third"
           />
         </div>
+        {/*<div className="letter-lane" onClick={checkWidth}>
+          <Letter
+            // animationStyles={[coloring, coloringTiming]}
+            fieldWidth={fieldWidth}
+            key="fist"
+          />
+        </div>
+        <div className="letter-lane" onClick={checkWidth}>
+          <Letter
+            // animationStyles={[coloring, coloringTiming]}
+            fieldWidth={fieldWidth}
+            key="second"
+          />
+        </div>
+        <div className="letter-lane" onClick={checkWidth}>
+          <Letter
+            // animationStyles={[coloring, coloringTiming]}
+            fieldWidth={fieldWidth}
+            key="third"
+          />
+        </div> */}
       </div>
       <br></br>
       {/* <div>{randomLetter}</div> */}
@@ -199,3 +215,19 @@ const Alphabet = () => {
 };
 
 export default Alphabet;
+
+// let exampleRef = useRef(null);
+
+// let Child = ({ example }) => {
+//   const [variable, setVariable] = useState("");
+
+//   function changeVariable(e) {
+//     return e;
+//   }
+
+//   useEffect(() => {
+//     let newTest = changeVariable(example);
+//     setVariable(newTest);
+//     console.log();
+//   });
+// };
