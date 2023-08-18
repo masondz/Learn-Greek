@@ -59,7 +59,7 @@ function Letter({ fieldWidth, animationStyles }) {
     iterations: Infinity,
   };
 
-  const coloring = [
+  let coloring = [
     { color: "lightblue" },
     { color: "cyan" },
     { color: "lightblue" },
@@ -106,10 +106,13 @@ function Letter({ fieldWidth, animationStyles }) {
   }
 
   const handleClick = (e) => {
-    console.log(movingElement.playState);
+    console.log(movingElement);
+    console.log(e);
     if (e.target.innerHTML === "α" || e.target.innerHTML === "β") {
       movingElement.pause();
       coloringElement.pause();
+      coloring = [{ color: "greenyellow" }, { color: "greenyellow" }];
+      e.target.animate(coloring, coloringTiming);
       return;
     } else {
       console.log("wrong!");
@@ -151,9 +154,9 @@ const Alphabet = () => {
   const [fieldWidth, setFieldWidth] = useState("");
 
   useEffect(() => {
-    console.log(fieldRef);
+    // console.log(fieldRef);
     setFieldWidth(fieldRef.current.getBoundingClientRect().width);
-    console.log(fieldWidth);
+    // console.log(fieldWidth);
   }, [fieldWidth]);
 
   const checkWidth = () => {
