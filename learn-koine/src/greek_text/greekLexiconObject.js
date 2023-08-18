@@ -1,5 +1,4 @@
 // const fs = require("fs");
-
 export const wordUsages = {
   Ἄλφα: {
     parse: "N-NSN-T｜Noun, nominative, singular, neuter, Title",
@@ -4020,8 +4019,7 @@ export const wordUsages = {
     gloss: "to hear",
   },
   ἀκούσεσθε: {
-    parse:
-      "V-FDI-2P｜Verb, future, Middle deponent, indicative, second, plural",
+    parse: "V-FDI-2P｜Verb, future, middle, indicative, second, plural",
     GN: "G191",
     gloss: "to hear",
   },
@@ -4031,8 +4029,7 @@ export const wordUsages = {
     gloss: "to hear",
   },
   ἀκούσῃ: {
-    parse:
-      "V-FDI-2S｜Verb, future, Middle deponent, indicative, second, singular",
+    parse: "V-FDI-2S｜Verb, future, middle, indicative, second, singular",
     GN: "G191",
     gloss: "to hear",
   },
@@ -4058,12 +4055,12 @@ export const wordUsages = {
     gloss: "to hear",
   },
   Ἀκουσόμεθά: {
-    parse: "V-FDI-1P｜Verb, future, Middle deponent, indicative, first, plural",
+    parse: "V-FDI-1P｜Verb, future, middle, indicative, first, plural",
     GN: "G191",
     gloss: "to hear",
   },
   ἀκούσονται: {
-    parse: "V-FDI-3P｜Verb, future, Middle deponent, indicative, third, plural",
+    parse: "V-FDI-3P｜Verb, future, middle, indicative, third, plural",
     GN: "G191",
     gloss: "to hear",
   },
@@ -5496,8 +5493,7 @@ export const wordUsages = {
     gloss: "Ampliatus",
   },
   ἠμύνατο: {
-    parse:
-      "V-ADI-3S｜Verb, aorist, Middle deponent, indicative, third, singular",
+    parse: "V-ADI-3S｜Verb, aorist, middle, indicative, third, singular",
     GN: "G292",
     gloss: "to defend",
   },
@@ -8622,7 +8618,7 @@ export const wordUsages = {
   },
   ἀντιλαμβανόμενοι: {
     parse:
-      "V-PNP-NPM｜Verb, present, Middle or Passive deponent, Participle, nominative, plural, masculine",
+      "V-PNP-NPM｜Verb, present, middle or passive, Participle, nominative, plural, masculine",
     GN: "G482",
     gloss: "to help",
   },
@@ -9291,8 +9287,7 @@ export const wordUsages = {
     gloss: "to deny",
   },
   ἀπαρνησάσθω: {
-    parse:
-      "V-ADM-3S｜Verb, aorist, Middle deponent, imperative, third, singular",
+    parse: "V-ADM-3S｜Verb, aorist, middle, imperative, third, singular",
     GN: "G533",
     gloss: "to deny",
   },
@@ -9656,18 +9651,17 @@ export const wordUsages = {
     gloss: "uncircumcised",
   },
   ἀπελεύσομαι: {
-    parse:
-      "V-FDI-1S｜Verb, future, Middle deponent, indicative, first, singular",
+    parse: "V-FDI-1S｜Verb, future, middle, indicative, first, singular",
     GN: "G565",
     gloss: "to go away",
   },
   ἀπελευσόμεθα: {
-    parse: "V-FDI-1P｜Verb, future, Middle deponent, indicative, first, plural",
+    parse: "V-FDI-1P｜Verb, future, middle, indicative, first, plural",
     GN: "G565",
     gloss: "to go away",
   },
   ἀπελεύσονται: {
-    parse: "V-FDI-3P｜Verb, future, Middle deponent, indicative, third, plural",
+    parse: "V-FDI-3P｜Verb, future, middle, indicative, third, plural",
     GN: "G565",
     gloss: "to go away",
   },
@@ -10364,8 +10358,7 @@ export const wordUsages = {
     gloss: "to die",
   },
   ἀποθανεῖσθε: {
-    parse:
-      "V-FDI-2P｜Verb, future, Middle deponent, indicative, second, plural",
+    parse: "V-FDI-2P｜Verb, future, middle, indicative, second, plural",
     GN: "G599",
     gloss: "to die",
   },
@@ -11305,23 +11298,23 @@ export const wordUsages = {
   },
   ἀπελογεῖτο: {
     parse:
-      "V-INI-3S｜Verb, imperfect, Middle or Passive deponent, indicative, third, singular",
+      "V-INI-3S｜Verb, imperfect, middle or passive, indicative, third, singular",
     GN: "G626",
     gloss: "to defend oneself",
   },
   ἀπολογεῖσθαι: {
-    parse: "V-PNN｜Verb, present, Middle or Passive deponent, Infinitive",
+    parse: "V-PNN｜Verb, present, middle or passive deponent, Infinitive",
     GN: "G626",
     gloss: "to defend oneself",
   },
   ἀπολογηθῆναι: {
-    parse: "V-AON｜Verb, aorist, Passive deponent, Infinitive",
+    parse: "V-AON｜Verb, aorist, passive deponent, Infinitive",
     GN: "G626",
     gloss: "to defend oneself",
   },
   ἀπολογήσησθε: {
     parse:
-      "V-ADS-2P｜Verb, aorist, Middle deponent, subjunctive, second, plural",
+      "V-ADS-2P｜Verb, aorist, middle deponent, subjunctive, second, plural",
     GN: "G626",
     gloss: "to defend oneself",
   },
@@ -11333,13 +11326,13 @@ export const wordUsages = {
   },
   ἀπολογούμεθα: {
     parse:
-      "V-PNI-1P｜Verb, present, Middle or Passive deponent, indicative, first, plural",
+      "V-PNI-1P｜Verb, present, middle or passive deponent, indicative, first, plural",
     GN: "G626",
     gloss: "to defend oneself",
   },
   ἀπολογουμένου: {
     parse:
-      "V-PNP-GSM｜Verb, present, Middle or Passive deponent, Participle, genitive, singular, masculine",
+      "V-PNP-GSM｜Verb, present, middle or passive, Participle, genitive, singular, masculine",
     GN: "G626",
     gloss: "to defend oneself",
   },
@@ -13583,24 +13576,22 @@ export const wordUsages = {
     gloss: "be first",
   },
   ἤρξαντο: {
-    parse: "V-ADI-3P｜Verb, aorist, Middle deponent, indicative, third, plural",
+    parse: "V-ADI-3P｜Verb, aorist, middle, indicative, third, plural",
     GN: "G757",
     gloss: "be first",
   },
   ἤρξαντό: {
-    parse: "V-ADI-3P｜Verb, aorist, Middle deponent, indicative, third, plural",
+    parse: "V-ADI-3P｜Verb, aorist, middle, indicative, third, plural",
     GN: "G757",
     gloss: "be first",
   },
   ἤρξατο: {
-    parse:
-      "V-ADI-3S｜Verb, aorist, Middle deponent, indicative, third, singular",
+    parse: "V-ADI-3S｜Verb, aorist, middle, indicative, third, singular",
     GN: "G757",
     gloss: "be first",
   },
   Ἤρξατο: {
-    parse:
-      "V-ADI-3S｜Verb, aorist, Middle deponent, indicative, third, singular",
+    parse: "V-ADI-3S｜Verb, aorist, middle, indicative, third, singular",
     GN: "G757",
     gloss: "be first",
   },
@@ -20994,61 +20985,61 @@ export const wordUsages = {
   },
   δαιμονίζεται: {
     parse:
-      "V-PNI-3S｜Verb, present, Middle or Passive deponent, indicative, third, singular",
+      "V-PNI-3S｜Verb, present, middle or passive, indicative, third, singular",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονιζόμενοι: {
     parse:
-      "V-PNP-NPM｜Verb, present, Middle or Passive deponent, Participle, nominative, plural, masculine",
+      "V-PNP-NPM｜Verb, present, middle or passive, Participle, nominative, plural, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονιζόμενον: {
     parse:
-      "V-PNP-ASM｜Verb, present, Middle or Passive deponent, Participle, accusative, singular, masculine",
+      "V-PNP-ASM｜Verb, present, middle or passive, Participle, accusative, singular, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονιζόμενος: {
     parse:
-      "V-PNP-NSM｜Verb, present, Middle or Passive deponent, Participle, nominative, singular, masculine",
+      "V-PNP-NSM｜Verb, present, middle or passive, Participle, nominative, singular, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονιζομένου: {
     parse:
-      "V-PNP-GSM｜Verb, present, Middle or Passive deponent, Participle, genitive, singular, masculine",
+      "V-PNP-GSM｜Verb, present, middle or passive, Participle, genitive, singular, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονιζομένους: {
     parse:
-      "V-PNP-APM｜Verb, present, Middle or Passive deponent, Participle, accusative, plural, masculine",
+      "V-PNP-APM｜Verb, present, middle or passive, Participle, accusative, plural, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονιζομένῳ: {
     parse:
-      "V-PNP-DSM｜Verb, present, Middle or Passive deponent, Participle, dative, singular, masculine",
+      "V-PNP-DSM｜Verb, present, middle or passive, Participle, dative, singular, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονιζομένων: {
     parse:
-      "V-PNP-GPM｜Verb, present, Middle or Passive deponent, Participle, genitive, plural, masculine",
+      "V-PNP-GPM｜Verb, present, middle or passive, Participle, genitive, plural, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονισθείς: {
     parse:
-      "V-AOP-NSM｜Verb, aorist, Passive deponent, Participle, nominative, singular, masculine",
+      "V-AOP-NSM｜Verb, aorist, passive, Participle, nominative, singular, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
   δαιμονισθεὶς: {
     parse:
-      "V-AOP-NSM｜Verb, aorist, Passive deponent, Participle, nominative, singular, masculine",
+      "V-AOP-NSM｜Verb, aorist, passive, Participle, nominative, singular, masculine",
     GN: "G1139",
     gloss: "be demonised",
   },
@@ -99949,12 +99940,10 @@ export const wordUsages = {
 
 // for (let word in wordUsages) {
 //   if (
-//     wordUsages[word].parse.includes(
-//       "2nd aorist, active, indicative, third, plural"
-//     ) &&
-//     parttern.test(word)
+//     wordUsages[word].parse.includes("deponent") &&
+//     !array.includes(wordUsages[word].GN)
 //   ) {
-//     array.push(word);
+//     array.push(wordUsages[word].GN);
 //   }
 // }
 
