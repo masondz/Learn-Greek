@@ -1,16 +1,69 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 
-function Letter({ fieldWidth, animationStyles }) {
-  const [randomLetter, setRandomLetter] = useState("");
-  const [randomTime, setRandomTime] = useState("");
-  const [randomStartPoint, setRandomStartPoint] = useState("");
-  const [randomEndPoint, setRandomEndPoint] = useState("");
+//Parent component. It passes its width to the child
+const Alphabet = () => {
+  const fieldRef = useRef();
+  console.log(fieldRef);
+  const [fieldWidth, setFieldWidth] = useState("");
 
+  useEffect(() => {
+    setFieldWidth(fieldRef.current.getBoundingClientRect().width);
+  }, [fieldWidth]);
+
+  const checkWidth = () => {
+    console.log(fieldRef.current.getBoundingClientRect().width);
+  };
+
+  return (
+    <>
+      <h1>Alphabet Practice</h1>
+      <div className="letter-container" ref={fieldRef}>
+        <div className="letter-lane" onClick={checkWidth}>
+          <Letter fieldWidth={fieldWidth} key="fist" />
+        </div>
+        <div className="letter-lane" onClick={checkWidth}>
+          <Letter fieldWidth={fieldWidth} key="fist" />
+        </div>
+        <div className="letter-lane" onClick={checkWidth}>
+          <Letter fieldWidth={fieldWidth} key="fist" />
+        </div>
+        <div className="letter-lane" onClick={checkWidth}>
+          <Letter fieldWidth={fieldWidth} key="fist" />
+        </div>
+        <div className="letter-lane" onClick={checkWidth}>
+          <Letter fieldWidth={fieldWidth} key="fist" />
+        </div>
+      </div>
+
+      <Link to={"/"}>home</Link>
+    </>
+  );
+};
+
+function Letter({ fieldWidth }) {
+  const alphabetArray = "αβ123xz89";
   const letterRef = useRef();
 
-  const alphabetArray = "αβ";
+  let coloring = useMemo(() => {
+    return [
+      { color: "lightblue" },
+      { color: "cyan" },
+      { color: "lightblue" },
+      { color: "cyan" },
+    ];
+  }, []);
+
+  const coloringTiming = {
+    duration: 3000,
+    iterations: Infinity,
+  };
+
+  const [randomLetter, setRandomLetter] = useState(makeRandomLetter());
+  const [movingAnimation, setMovingAnimation] = useState(null);
+  const [coloringAnimation, setColoringAnimation] = useState(null);
+
   function generateRandomTime() {
     let newTime = Math.floor(Math.random() * 3000 + 2000);
     return newTime;
@@ -36,201 +89,69 @@ function Letter({ fieldWidth, animationStyles }) {
       return "-" + randomPoint;
     }
   }
-  // const [randomEndPoint, setRandomEndPoint] = useState("");
-
-  /*
-  @keyframes move {
-  0% {
-    bottom: -55px;
-  }
-  100% {
-    left: var(--random-end);
-    bottom: 700px;
-  }
-  */
-
-  const moving = [
-    { bottom: "-55px", left: randomStartPoint + "px" },
-    { bottom: "700px", left: "0px" },
-  ];
-
-  const movingTiming = {
-    duration: randomTime,
-    iterations: Infinity,
-  };
-
-  let coloring = [
-    { color: "lightblue" },
-    { color: "cyan" },
-    { color: "lightblue" },
-    { color: "cyan" },
-  ];
-
-  const coloringTiming = {
-    duration: 3000,
-    iterations: Infinity,
-  };
-
-  const handleAnimationIteration = (e) => {
-    let newLetter = makeRandomLetter();
-    let newTime = generateRandomTime();
-    let newStartPoint = makeRandomStartPoint();
-    setRandomLetter(newLetter);
-    setRandomTime(newTime);
-    setRandomStartPoint(newStartPoint);
-  };
-
-  let movingElement;
-  let coloringElement;
-
   useEffect(() => {
-    let firstLetter = makeRandomLetter();
-    let firstTime = generateRandomTime();
-    let firstStartPoint = makeRandomStartPoint();
-    setRandomLetter(firstLetter);
-    setRandomTime(firstTime);
-    setRandomStartPoint(firstStartPoint);
-    let firstEndPoint = makeRandomEndPoint(fieldWidth);
+    const handleNextIteration = (width) => {
+      const nextStart = makeRandomStartPoint();
+      const nextEnd = makeRandomEndPoint(width);
+      const nextLetter = makeRandomLetter();
 
-    setRandomEndPoint(firstEndPoint);
-  }, [fieldWidth]);
+      setRandomLetter(nextLetter);
 
-  if (fieldWidth && letterRef) {
-    console.log("field width from Letter: " + randomStartPoint);
-    moving[0].left = randomStartPoint + "px";
-    moving[1].left = randomEndPoint + "px";
+      const moving = [
+        { bottom: "-55px", left: nextStart + "px" },
+        { bottom: "700px", left: nextEnd + "px" },
+      ];
 
-    movingElement = letterRef.current.animate(moving, movingTiming);
-    coloringElement = letterRef.current.animate(coloring, coloringTiming);
-    console.log("start: " + randomStartPoint, "stop: " + randomEndPoint);
-  }
+      const movingTiming = {
+        duration: generateRandomTime(),
+        iterations: 1,
+      };
+
+      const newMovingAnimation = letterRef.current.animate(
+        moving,
+        movingTiming
+      );
+      newMovingAnimation.onfinish = () => {
+        handleNextIteration(fieldWidth);
+      };
+      setMovingAnimation(newMovingAnimation);
+    };
+
+    const newColoringAnimation = letterRef.current.animate(
+      coloring,
+      coloringTiming
+    );
+    setColoringAnimation(newColoringAnimation);
+
+    if (fieldWidth && letterRef.current) {
+      handleNextIteration(fieldWidth);
+
+      return () => {
+        movingAnimation?.cancel();
+        coloringAnimation.cancel();
+      };
+    }
+    //eslint-disable-next-line
+  }, [fieldWidth, coloring]);
 
   const handleClick = (e) => {
-    console.log(movingElement);
-    console.log(e);
     if (e.target.innerHTML === "α" || e.target.innerHTML === "β") {
-      movingElement.pause();
-      coloringElement.pause();
-      coloring = [{ color: "greenyellow" }, { color: "greenyellow" }];
-      e.target.animate(coloring, coloringTiming);
-      return;
+      movingAnimation?.pause();
+      coloringAnimation.pause();
+      e.target.animate(
+        [{ color: "greenyellow" }, { color: "greenyellow" }],
+        coloringTiming
+      );
     } else {
       console.log("wrong!");
     }
   };
 
-  // const animationStyle = {
-  //   animationName: "move",
-  //   animationDuration: randomTime + "ms",
-  //   animationTimingFunction: "linear",
-  //   animationDelay: "0s",
-  //   animationIterationCount: "infinite",
-  //   animationFillMode: "forwards",
-  //   left: randomStartPoint + "%",
-  // };
-
-  // const flyingLetter = [{ bottom: "-55px" }, { bottom: "700px" }];
-
-  // const flyingLetterTiming = {
-  //   duration: randomTime,
-  //   iterations: Infinity,
-  // };
-
   return (
-    <h1
-      className="letter"
-      // style={animationStyle}
-      onClick={(e) => handleClick(e)}
-      onAnimationIteration={(e) => handleAnimationIteration(e)}
-      ref={letterRef}
-    >
+    <h1 className="letter" onClick={(e) => handleClick(e)} ref={letterRef}>
       {randomLetter}
     </h1>
   );
 }
 
-const Alphabet = () => {
-  const fieldRef = useRef();
-  const [fieldWidth, setFieldWidth] = useState("");
-
-  useEffect(() => {
-    // console.log(fieldRef);
-    setFieldWidth(fieldRef.current.getBoundingClientRect().width);
-    // console.log(fieldWidth);
-  }, [fieldWidth]);
-
-  const checkWidth = () => {
-    console.log(fieldRef.current.getBoundingClientRect().width);
-  };
-
-  return (
-    <>
-      <h1>Alphabet Practice</h1>
-      <div className="letter-container" ref={fieldRef}>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter
-            // animationStyles={[coloring, coloringTiming]}
-            fieldWidth={fieldWidth}
-            key="fist"
-          />
-        </div>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter
-            // animationStyles={[coloring, coloringTiming]}
-            fieldWidth={fieldWidth}
-            key="second"
-          />
-        </div>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter
-            // animationStyles={[coloring, coloringTiming]}
-            fieldWidth={fieldWidth}
-            key="third"
-          />
-        </div>
-        {/*<div className="letter-lane" onClick={checkWidth}>
-          <Letter
-            // animationStyles={[coloring, coloringTiming]}
-            fieldWidth={fieldWidth}
-            key="fist"
-          />
-        </div>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter
-            // animationStyles={[coloring, coloringTiming]}
-            fieldWidth={fieldWidth}
-            key="second"
-          />
-        </div>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter
-            // animationStyles={[coloring, coloringTiming]}
-            fieldWidth={fieldWidth}
-            key="third"
-          />
-        </div> */}
-      </div>
-      <br></br>
-      {/* <div>{randomLetter}</div> */}
-      <Link to={"/"}>home</Link>
-    </>
-  );
-};
-
 export default Alphabet;
-
-// let exampleRef = useRef(null);
-
-// let Child = ({ example }) => {
-//   const [variable, setVariable] = useState("");
-
-//   function changeVariable(e) {
-//     return e;
-//   }
-
-//   useEffect(() => {
-//     let newTest = changeVariable(example);
-//     setVariable(newTest);
-//     console.log();
-//   });
-// };
