@@ -59,6 +59,14 @@ function Letter({ fieldWidth }) {
     iterations: Infinity,
   };
 
+  const wrongPicking = [{ color: "red" }, { color: "lightred" }];
+
+  const wrongPickingTiming = {
+    duration: 2000,
+    direction: "normal",
+    iterations: 1,
+  };
+
   const [randomLetter, setRandomLetter] = useState(makeRandomLetter());
   const [movingAnimation, setMovingAnimation] = useState(null);
   const [coloringAnimation, setColoringAnimation] = useState(null);
@@ -88,6 +96,7 @@ function Letter({ fieldWidth }) {
       return "-" + randomPoint;
     }
   }
+
   useEffect(() => {
     const handleNextIteration = (width) => {
       const nextStart = makeRandomStartPoint();
@@ -142,7 +151,7 @@ function Letter({ fieldWidth }) {
         coloringTiming
       );
     } else {
-      console.log("wrong!");
+      e.target.animate(wrongPicking, wrongPickingTiming);
     }
   };
 
