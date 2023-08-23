@@ -12,29 +12,28 @@ const Alphabet = () => {
     setFieldWidth(fieldRef.current.getBoundingClientRect().width);
   }, [fieldWidth]);
 
-  const checkWidth = () => {
-    console.log(fieldRef.current.getBoundingClientRect().width);
-  };
+  const numberOfLetters = 15;
+
+  const theLetters = Array.from({ length: numberOfLetters }, (_, index) => {
+    return (
+      <div className="letter-lane">
+        <Letter fieldWidth={fieldWidth} key="fist" />
+      </div>
+    );
+  });
+
+  const numberOfParticles = 150;
+
+  const particles = Array.from({ length: numberOfParticles }, (_, index) => {
+    return <RandomParticle fieldWidth={fieldWidth} />;
+  });
 
   return (
     <>
       <h1>Alphabet Practice</h1>
       <div className="letter-container" ref={fieldRef}>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter fieldWidth={fieldWidth} key="fist" />
-        </div>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter fieldWidth={fieldWidth} key="fist" />
-        </div>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter fieldWidth={fieldWidth} key="fist" />
-        </div>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter fieldWidth={fieldWidth} key="fist" />
-        </div>
-        <div className="letter-lane" onClick={checkWidth}>
-          <Letter fieldWidth={fieldWidth} key="fist" />
-        </div>
+        {particles}
+        {theLetters}
       </div>
 
       <Link to={"/"}>home</Link>
@@ -153,5 +152,39 @@ function Letter({ fieldWidth }) {
     </h1>
   );
 }
+
+const RandomParticle = ({ fieldWidth }) => {
+  const starRef = useRef();
+
+  let randomX = Math.floor(Math.random() * fieldWidth - 2);
+  let randomY = Math.floor(Math.random() * 720);
+  let randomTransparency = Math.random();
+  let randomDuration = Math.floor(Math.random() * 2000 + 2000);
+
+  let randomWidthHeight = Math.floor(Math.random() * 4);
+
+  let style = {
+    position: "absolute",
+    left: randomX + "px",
+    top: randomY + "px",
+    opacity: randomTransparency,
+    width: randomWidthHeight,
+    height: randomWidthHeight,
+  };
+
+  const starShining = [{ opacity: randomTransparency }, { opacity: 0.2 }];
+
+  const starShiningTiming = {
+    duration: randomDuration,
+    iterations: Infinity,
+    direction: "alternate",
+  };
+
+  if (starRef.current) {
+    starRef.current.animate(starShining, starShiningTiming);
+  }
+
+  return <div className="particle" style={style} ref={starRef}></div>;
+};
 
 export default Alphabet;
