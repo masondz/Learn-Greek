@@ -1,12 +1,18 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
+import { selectScoreSlice, setScore } from "./features/scoreSlice";
+import { useSelector, useDispatch } from "react-redux";
 
 //Parent component. It passes its width to the child
+
+let theTargetLetter = "α";
+
 const Alphabet = () => {
   const fieldRef = useRef();
   console.log(fieldRef);
   const [fieldWidth, setFieldWidth] = useState("");
+  const [targetLetter, setTargetLetter] = useState("α");
 
   useEffect(() => {
     setFieldWidth(fieldRef.current.getBoundingClientRect().width);
@@ -16,17 +22,34 @@ const Alphabet = () => {
 
   const theLetters = Array.from({ length: numberOfLetters }, (_, index) => {
     return (
-      <div className="letter-lane">
-        <Letter fieldWidth={fieldWidth} key="fist" />
+      <div className="letter-lane" key={index}>
+        <Letter
+          fieldWidth={fieldWidth}
+          key={"letter" + index}
+          targetLetter={targetLetter}
+          setTargetLetter={setTargetLetter}
+        />
       </div>
     );
   });
 
-  const numberOfParticles = 150;
+  const numberOfParticles = 550;
 
   const particles = Array.from({ length: numberOfParticles }, (_, index) => {
-    return <RandomParticle fieldWidth={fieldWidth} />;
+    return <RandomParticle fieldWidth={fieldWidth} key={"particle" + index} />;
   });
+
+  // ////working on canvas
+  // const canvas = document.getElementById("canvas");
+  // const ctx = canvas.getContext("2d");
+
+  // ctx.beginPath();
+
+  // ctx.moveTo(0, 0);
+
+  // ctx.lineTo(100, 100);
+
+  // ctx.stroke();
 
   return (
     <>
@@ -34,9 +57,11 @@ const Alphabet = () => {
       <div className="letter-container" ref={fieldRef}>
         {particles}
         {theLetters}
+        <canvas id="canvas"></canvas>
       </div>
 
       <Link to={"/"}>home</Link>
+      <ScoreBoard />
     </>
   );
 };
@@ -44,6 +69,10 @@ const Alphabet = () => {
 function Letter({ fieldWidth }) {
   const alphabetArray = "αβ123xz89";
   const letterRef = useRef();
+
+  const stateScore = useSelector(selectScoreSlice);
+
+  const dispatch = useDispatch();
 
   let coloring = useMemo(() => {
     return [
@@ -143,13 +172,24 @@ function Letter({ fieldWidth }) {
   }, [fieldWidth, coloring]);
 
   const handleClick = (e) => {
-    if (e.target.innerHTML === "α" || e.target.innerHTML === "β") {
+    if (e.target.innerHTML === theTargetLetter) {
       movingAnimation?.pause();
       coloringAnimation.pause();
       e.target.animate(
         [{ color: "greenyellow" }, { color: "greenyellow" }],
         coloringTiming
       );
+
+      let currentScore = stateScore.currentScore + 1;
+
+      if (currentScore === 5) {
+        dispatch(setScore(0));
+        setTimeout(() => {
+          theTargetLetter = "β";
+        }, 500);
+      } else {
+        dispatch(setScore(currentScore));
+      }
     } else {
       e.target.animate(wrongPicking, wrongPickingTiming);
     }
@@ -194,6 +234,11 @@ const RandomParticle = ({ fieldWidth }) => {
   }
 
   return <div className="particle" style={style} ref={starRef}></div>;
+};
+
+const ScoreBoard = () => {
+  const stateScore = useSelector(selectScoreSlice);
+  return <div>{stateScore.currentScore}</div>;
 };
 
 export default Alphabet;
