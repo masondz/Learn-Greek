@@ -3,10 +3,37 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import { selectScoreSlice, setScore } from "./features/scoreSlice";
 import { useSelector, useDispatch } from "react-redux";
-
+// import { greekText } from "./greek_text/greekText";
+// import { wordUsages } from "./greek_text/greekLexiconObject";
 //Parent component. It passes its width to the child
 
 let theTargetLetter = "α";
+let letterIndex = 0;
+
+// let wordsNotInLexicon = [];
+
+// function removePunctuation(str) {
+//   const punctuationRegex =
+//     /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·\d\r\r|\n|\r]/g;
+//   const punctuationRemoved = str.replace(punctuationRegex, "");
+//   return punctuationRemoved;
+// }
+
+// let greekTextArray = greekText.split(" ");
+// for (let i = 0; i < greekTextArray.length; i++) {
+//   let word = removePunctuation(greekTextArray[i]);
+//   let wordLowerCase = word.toLowerCase();
+//   if (!(word in wordUsages || wordLowerCase in wordUsages)) {
+//     if (!wordsNotInLexicon.includes(word)) wordsNotInLexicon.push(word);
+//   }
+// }
+
+// let testWord = wordsNotInLexicon[3];
+// console.log("Ἀράμ" === testWord);
+// console.log(testWord);
+// console.log(wordsNotInLexicon[1]);
+// console.log(wordsNotInLexicon.length);
+// console.log(wordsNotInLexicon.slice(0, 100));
 
 const Alphabet = () => {
   const fieldRef = useRef();
@@ -67,7 +94,7 @@ const Alphabet = () => {
 };
 
 function Letter({ fieldWidth }) {
-  const alphabetArray = "αβ123xz89";
+  const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
   const letterRef = useRef();
 
   const stateScore = useSelector(selectScoreSlice);
@@ -185,7 +212,13 @@ function Letter({ fieldWidth }) {
       if (currentScore === 5) {
         dispatch(setScore(0));
         setTimeout(() => {
-          theTargetLetter = "β";
+          letterIndex += 1;
+          if (letterIndex === 25) {
+            letterIndex = 0;
+          }
+          theTargetLetter = alphabetArray[letterIndex];
+          movingAnimation.play();
+          e.target.animate(coloring, coloringTiming);
         }, 500);
       } else {
         dispatch(setScore(currentScore));

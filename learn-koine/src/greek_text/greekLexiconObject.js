@@ -1015,6 +1015,11 @@ export const wordUsages = {
     GN: "G40",
     gloss: "saint",
   },
+  Ἁγίου: {
+    parse: "A-GSN｜Adjective, genitive, singular, neuter",
+    GN: "G40",
+    gloss: "saint",
+  },
   ἁγίους: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G40",
@@ -9832,6 +9837,11 @@ export const wordUsages = {
     GN: "G568",
     gloss: "to have in full",
   },
+  ἀπέχουσι: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G568",
+    gloss: "to have in full",
+  },
   ἀπέχω: {
     parse: "V-PAI-1S｜Verb, present, active, indicative, first, singular",
     GN: "G568",
@@ -16233,6 +16243,11 @@ export const wordUsages = {
     GN: "G910",
     gloss: "one who baptizes",
   },
+  Βαπτιστὴς: {
+    parse: "N-NSM｜Noun, nominative, singular, masculine",
+    GN: "G910",
+    gloss: "one who baptizes",
+  },
   βαπτιστοῦ: {
     parse: "N-GSM｜Noun, genitive, singular, masculine",
     GN: "G910",
@@ -16507,6 +16522,11 @@ export const wordUsages = {
     gloss: "kingdom",
   },
   βασιλεία: {
+    parse: "N-NSF｜Noun, nominative, singular, feminine",
+    GN: "G932",
+    gloss: "kingdom",
+  },
+  Βασιλεία: {
     parse: "N-NSF｜Noun, nominative, singular, feminine",
     GN: "G932",
     gloss: "kingdom",
@@ -28881,6 +28901,11 @@ export const wordUsages = {
     GN: "G1510",
     gloss: "to be",
   },
+  ἐστὶ: {
+    parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
+    GN: "G1510",
+    gloss: "to be",
+  },
   ἔστιν: {
     parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
     GN: "G1510",
@@ -33059,6 +33084,11 @@ export const wordUsages = {
     gloss: "clothing",
   },
   ἐνδύμασιν: {
+    parse: "N-DPN｜Noun, dative, plural, neuter",
+    GN: "G1742",
+    gloss: "clothing",
+  },
+  ἐνδύμασι: {
     parse: "N-DPN｜Noun, dative, plural, neuter",
     GN: "G1742",
     gloss: "clothing",
@@ -43998,7 +44028,17 @@ export const wordUsages = {
     GN: "G2316",
     gloss: "God",
   },
+  Θεόν: {
+    parse: "N-ASM｜Noun, accusative, singular, masculine",
+    GN: "G2316",
+    gloss: "God",
+  },
   θεός: {
+    parse: "N-VSM｜Noun, nominative, singular, masculine",
+    GN: "G2316",
+    gloss: "God",
+  },
+  Θεός: {
     parse: "N-VSM｜Noun, nominative, singular, masculine",
     GN: "G2316",
     gloss: "God",
@@ -49201,6 +49241,7 @@ export const wordUsages = {
   Κατʼ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   κατά: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   κατὰ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
+  κατ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   Κατὰ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   καταβαίνει: {
     parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
@@ -53983,6 +54024,11 @@ export const wordUsages = {
     gloss: "to labor",
   },
   κοπιῶσιν: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G2872",
+    gloss: "to labor",
+  },
+  κοπιοῦσιν: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G2872",
     gloss: "to labor",
@@ -60955,6 +61001,7 @@ export const wordUsages = {
   μεθʼ: { parse: "PREP｜Preposition", GN: "G3326", gloss: "with/after" },
   "μεθ᾿": { parse: "PREP｜Preposition", GN: "G3326", gloss: "with/after" },
   Μεθʼ: { parse: "PREP｜Preposition", GN: "G3326", gloss: "with/after" },
+  Μεθ: { parse: "PREP｜Preposition", GN: "G3326", gloss: "with/after" },
   μετʼ: { parse: "PREP｜Preposition", GN: "G3326", gloss: "with/after" },
   μετὰ: { parse: "PREP｜Preposition", GN: "G3326", gloss: "with/after" },
   Μετὰ: { parse: "PREP｜Preposition", GN: "G3326", gloss: "with/after" },
@@ -63464,6 +63511,11 @@ export const wordUsages = {
     parse: "N-GPF｜Noun, genitive, plural, feminine",
     GN: "G3507",
     gloss: "cloud",
+  },
+  Νεφθαλείμ: {
+    parse: "N-GSM-PG｜Noun, genitive, singular, masculine, Person Gentilic",
+    GN: "G3508",
+    gloss: "Naphtali",
   },
   Νεφθαλίμ: {
     parse: "N-GSM-PG｜Noun, genitive, singular, masculine, Person Gentilic",
@@ -68940,6 +68992,7 @@ export const wordUsages = {
     gloss: "surely",
   },
   παρʼ: { parse: "PREP｜Preposition", GN: "G3844", gloss: "from/with/beside" },
+  παρ: { parse: "PREP｜Preposition", GN: "G3844", gloss: "from/with/beside" },
   παρά: { parse: "PREP｜Preposition", GN: "G3844", gloss: "from/with/beside" },
   παρὰ: { parse: "PREP｜Preposition", GN: "G3844", gloss: "from/with/beside" },
   Παρὰ: { parse: "PREP｜Preposition", GN: "G3844", gloss: "from/with/beside" },
@@ -70075,6 +70128,11 @@ export const wordUsages = {
     gloss: "to take",
   },
   παρέλαβεν: {
+    parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
+    GN: "G3880",
+    gloss: "to take",
+  },
+  παρέλαβε: {
     parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
     GN: "G3880",
     gloss: "to take",
@@ -75905,6 +75963,16 @@ export const wordUsages = {
     gloss: "spirit (or breath)",
   },
   πνεύματος: {
+    parse: "N-GSN｜Noun, genitive, singular, neuter",
+    GN: "G4151",
+    gloss: "spirit (or breath)",
+  },
+  Πνεύματος: {
+    parse: "N-GSN｜Noun, genitive, singular, neuter",
+    GN: "G4151",
+    gloss: "spirit (or breath)",
+  },
+  Πνεύματός: {
     parse: "N-GSN｜Noun, genitive, singular, neuter",
     GN: "G4151",
     gloss: "spirit (or breath)",
@@ -90820,6 +90888,12 @@ export const wordUsages = {
     GN: "G5088",
     gloss: "to give birth to",
   },
+  Τέξεται: {
+    parse:
+      "V-FDI-3S｜Verb, future, Middle deponent, indicative, third, singular",
+    GN: "G5088",
+    gloss: "to give birth to",
+  },
   τέξῃ: {
     parse:
       "V-FDI-2S｜Verb, future, Middle deponent, indicative, second, singular",
@@ -92670,6 +92744,11 @@ export const wordUsages = {
     gloss: "son",
   },
   υἱόν: {
+    parse: "N-ASM｜Noun, accusative, singular, masculine",
+    GN: "G5207",
+    gloss: "son",
+  },
+  Υἱόν: {
     parse: "N-ASM｜Noun, accusative, singular, masculine",
     GN: "G5207",
     gloss: "son",
