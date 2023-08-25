@@ -54880,6 +54880,11 @@ export const wordUsages = {
     GN: "G2919",
     gloss: "to judge",
   },
+  κριθῶσι: {
+    parse: "V-APS-3P｜Verb, aorist, passive, subjunctive, third, plural",
+    GN: "G2919",
+    gloss: "to judge",
+  },
   κριθῶσιν: {
     parse: "V-APS-3P｜Verb, aorist, passive, subjunctive, third, plural",
     GN: "G2919",
