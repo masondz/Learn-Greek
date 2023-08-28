@@ -28906,6 +28906,11 @@ export const wordUsages = {
     GN: "G1510",
     gloss: "to be",
   },
+  ἐστι: {
+    parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
+    GN: "G1510",
+    gloss: "to be",
+  },
   ἔστιν: {
     parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
     GN: "G1510",

@@ -3,41 +3,40 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import { selectScoreSlice, setScore } from "./features/scoreSlice";
 import { useSelector, useDispatch } from "react-redux";
-// import { greekText } from "./greek_text/greekText";
-// import { wordUsages } from "./greek_text/greekLexiconObject";
+import { greekText } from "./greek_text/greekText";
+import { wordUsages } from "./greek_text/greekLexiconObject";
 //Parent component. It passes its width to the child
 
 let theTargetLetter = "α";
 let letterIndex = 0;
 
-// let wordsNotInLexicon = [];
+let wordsNotInLexicon = [];
 
-// function removePunctuation(str) {
-//   const punctuationRegex =
-//     /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·\d\r\r|\n|\r]/g;
-//   const punctuationRemoved = str.replace(punctuationRegex, "");
-//   return punctuationRemoved;
-// }
+function removePunctuation(str) {
+  const punctuationRegex =
+    /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·\d\r\r|\n|\r]/g;
+  const punctuationRemoved = str.replace(punctuationRegex, "");
+  return punctuationRemoved;
+}
 
-// let greekTextArray = greekText.split(" ");
-// for (let i = 0; i < greekTextArray.length; i++) {
-//   let word = removePunctuation(greekTextArray[i]);
-//   let wordLowerCase = word.toLowerCase();
-//   if (!(word in wordUsages || wordLowerCase in wordUsages)) {
-//     if (!wordsNotInLexicon.includes(word)) wordsNotInLexicon.push(word);
-//   }
-// }
+let greekTextArray = greekText.split(" ");
+for (let i = 0; i < greekTextArray.length; i++) {
+  let word = removePunctuation(greekTextArray[i]);
+  let wordLowerCase = word.toLowerCase();
+  if (!(word in wordUsages || wordLowerCase in wordUsages)) {
+    if (!wordsNotInLexicon.includes(word)) wordsNotInLexicon.push(word);
+  }
+}
 
-// let testWord = wordsNotInLexicon[3];
-// console.log("Ἀράμ" === testWord);
-// console.log(testWord);
-// console.log(wordsNotInLexicon[1]);
-// console.log(wordsNotInLexicon.length);
-// console.log(wordsNotInLexicon.slice(0, 100));
+let testWord = wordsNotInLexicon[3];
+console.log("Ἀράμ" === testWord);
+console.log(testWord);
+console.log(wordsNotInLexicon[1]);
+console.log(wordsNotInLexicon.length);
+console.log(wordsNotInLexicon.slice(0, 100));
 
 const Alphabet = () => {
   const fieldRef = useRef();
-  console.log(fieldRef);
   const [fieldWidth, setFieldWidth] = useState("");
   const [targetLetter, setTargetLetter] = useState("α");
 
