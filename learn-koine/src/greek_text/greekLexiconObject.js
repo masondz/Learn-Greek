@@ -14932,6 +14932,11 @@ export const wordUsages = {
     GN: "G846",
     gloss: "it/she/he",
   },
+  αὑτόν: {
+    parse: "P-ASM｜Personal pronoun, accusative, singular, masculine",
+    GN: "G846",
+    gloss: "it/she/he",
+  },
   αὐτός: {
     parse: "P-NSM｜Personal pronoun, nominative, singular, masculine",
     GN: "G846",
@@ -16587,6 +16592,11 @@ export const wordUsages = {
     GN: "G935",
     gloss: "king",
   },
+  Βασιλεῦς: {
+    parse: "N-NSM｜Noun, nominative, singular, masculine",
+    GN: "G935",
+    gloss: "king",
+  },
   βασιλεῦσιν: {
     parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G935",
@@ -17492,6 +17502,11 @@ export const wordUsages = {
     gloss: "to see",
   },
   βλέπουσιν: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G991",
+    gloss: "to see",
+  },
+  βλέπουσι: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G991",
     gloss: "to see",
@@ -25393,6 +25408,11 @@ export const wordUsages = {
     GN: "G1358",
     gloss: "to break in",
   },
+  διορυγῆναι: {
+    parse: "V-APN｜Verb, aorist, passive, Infinitive",
+    GN: "G1358",
+    gloss: "to break in",
+  },
   διορυχθῆναι: {
     parse: "V-APN｜Verb, aorist, passive, Infinitive",
     GN: "G1358",
@@ -28393,6 +28413,12 @@ export const wordUsages = {
     gloss: "know",
   },
   ᾔδεις: {
+    parse:
+      "V-2LAI-2S｜Verb, 2nd pluperfect, active, indicative, second, singular",
+    GN: "G1492",
+    gloss: "know",
+  },
+  Ἤιδεις: {
     parse:
       "V-2LAI-2S｜Verb, 2nd pluperfect, active, indicative, second, singular",
     GN: "G1492",
@@ -59061,6 +59087,11 @@ export const wordUsages = {
     GN: "G3114",
     gloss: "to have patience",
   },
+  μακροθύμησον: {
+    parse: "V-AAM-2S｜Verb, aorist, active, imperative, second, singular",
+    GN: "G3114",
+    gloss: "to have patience",
+  },
   Μακροθύμησον: {
     parse: "V-AAM-2S｜Verb, aorist, active, imperative, second, singular",
     GN: "G3114",
@@ -59993,6 +60024,11 @@ export const wordUsages = {
   μεγαλυνόντων: {
     parse:
       "V-PAP-GPM｜Verb, present, active, Participle, genitive, plural, masculine",
+    GN: "G3170",
+    gloss: "to magnify",
+  },
+  μεγαλύνουσι: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G3170",
     gloss: "to magnify",
   },
@@ -75056,6 +75092,11 @@ export const wordUsages = {
     GN: "G4115",
     gloss: "to widen",
   },
+  πλατύνουσι: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G4115",
+    gloss: "to widen",
+  },
   πλατεῖα: {
     parse: "A-NSF｜Adjective, nominative, singular, feminine",
     GN: "G4116",
@@ -80556,6 +80597,11 @@ export const wordUsages = {
     gloss: "to bring to",
   },
   προσηνέχθη: {
+    parse: "V-API-3S｜Verb, aorist, passive, indicative, third, singular",
+    GN: "G4374",
+    gloss: "to bring to",
+  },
+  προσήχθη: {
     parse: "V-API-3S｜Verb, aorist, passive, indicative, third, singular",
     GN: "G4374",
     gloss: "to bring to",
@@ -91005,6 +91051,11 @@ export const wordUsages = {
     GN: "G5091",
     gloss: "to honor",
   },
+  τιμῶσι: {
+    parse: "V-PAS-3P｜Verb, present, active, subjunctive, third, plural",
+    GN: "G5091",
+    gloss: "to honor",
+  },
   τιμῶσιν: {
     parse: "V-PAS-3P｜Verb, present, active, subjunctive, third, plural",
     GN: "G5091",
@@ -95582,6 +95633,11 @@ export const wordUsages = {
   φιλούντων: {
     parse:
       "V-PAP-GPM｜Verb, present, active, Participle, genitive, plural, masculine",
+    GN: "G5368",
+    gloss: "to love",
+  },
+  φιλοῦσι: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G5368",
     gloss: "to love",
   },

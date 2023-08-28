@@ -12,9 +12,11 @@ let letterIndex = 0;
 
 let wordsNotInLexicon = [];
 
+let missingWords = {};
+
 function removePunctuation(str) {
   const punctuationRegex =
-    /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·\d\r\r|\n|\r]/g;
+    /[!"#$%&'()*+,-./:;<=>?@[\]^_`–{|}~˚“‘”’·\d\r\r|\n|\r]/g;
   const punctuationRemoved = str.replace(punctuationRegex, "");
   return punctuationRemoved;
 }
@@ -23,15 +25,22 @@ let greekTextArray = greekText.split(" ");
 for (let i = 0; i < greekTextArray.length; i++) {
   let word = removePunctuation(greekTextArray[i]);
   let wordLowerCase = word.toLowerCase();
-  if (!(word in wordUsages || wordLowerCase in wordUsages)) {
+  if (!(word in wordUsages || wordLowerCase in wordUsages) && word !== "") {
     if (!wordsNotInLexicon.includes(word)) wordsNotInLexicon.push(word);
   }
 }
 
-let testWord = wordsNotInLexicon[3];
-console.log("Ἀράμ" === testWord);
-console.log(testWord);
-console.log(wordsNotInLexicon[1]);
+for (let i = 0; i < wordsNotInLexicon.length; i++) {
+  let word = wordsNotInLexicon[i];
+  if (!missingWords[word]) {
+    missingWords[word] = 0;
+  } else {
+    missingWords[word] = missingWords[word] + 1;
+  }
+}
+
+// console.log(missingWords);
+// console.log(wordsNotInLexicon[1]);
 console.log(wordsNotInLexicon.length);
 console.log(wordsNotInLexicon.slice(0, 100));
 
