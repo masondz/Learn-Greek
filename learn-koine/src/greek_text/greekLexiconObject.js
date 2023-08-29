@@ -4978,6 +4978,11 @@ export const wordUsages = {
     GN: "G254",
     gloss: "chain",
   },
+  ἁλύσεσι: {
+    parse: "N-DPF｜Noun, dative, plural, feminine",
+    GN: "G254",
+    gloss: "chain",
+  },
   ἅλυσιν: {
     parse: "N-ASF｜Noun, accusative, singular, feminine",
     GN: "G254",
@@ -14899,6 +14904,11 @@ export const wordUsages = {
   },
   αὐτὸ: {
     parse: "P-NSN｜Personal pronoun, nominative, singular, neuter",
+    GN: "G846",
+    gloss: "it/she/he",
+  },
+  αὑτὸν: {
+    parse: "P-NSN｜Possessive pronoun, third, accusative, singular, masculine",
     GN: "G846",
     gloss: "it/she/he",
   },
@@ -27192,6 +27202,11 @@ export const wordUsages = {
   },
   αὑτὴν: {
     parse: "F-3ASF｜Reflexive pronoun, third, accusative, singular, feminine",
+    GN: "G1438",
+    gloss: "themself",
+  },
+  αὑτούς: {
+    parse: "F-3GSM｜Possessive pronoun, third, accusative, singular, masculine",
     GN: "G1438",
     gloss: "themself",
   },
@@ -41320,7 +41335,7 @@ export const wordUsages = {
     GN: "G2187",
     gloss: "Ephraim",
   },
-  Εφφαθα: {
+  Ἐφφαθά: {
     parse: "V-APM-2S｜Verb, aorist, passive, imperative, second, singular",
     GN: "G2188",
     gloss: "open!",
@@ -45386,7 +45401,7 @@ export const wordUsages = {
     GN: "G2382",
     gloss: "breastplate",
   },
-  Ἰάϊρος: {
+  Ἰάειρος: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
     GN: "G2383",
     gloss: "Jairus",
@@ -54316,7 +54331,7 @@ export const wordUsages = {
     GN: "G2890",
     gloss: "Quartus",
   },
-  κουμ: {
+  κούμ: {
     parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G2891",
     gloss: "stand up!",
@@ -63685,6 +63700,11 @@ export const wordUsages = {
   },
   νηστειῶν: {
     parse: "N-GPF｜Noun, genitive, plural, feminine",
+    GN: "G3521",
+    gloss: "fasting",
+  },
+  νηστείᾳ: {
+    parse: "N-GPF｜Noun, dative, singular, feminine",
     GN: "G3521",
     gloss: "fasting",
   },
@@ -81913,7 +81933,7 @@ export const wordUsages = {
   },
   ῥαββί: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
   Ῥαββί: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
-  Ραββουνι: {
+  Ῥαββουνί: {
     parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G4462",
     gloss: "Rabboni",
@@ -89416,7 +89436,7 @@ export const wordUsages = {
     GN: "G5007",
     gloss: "talent",
   },
-  Ταλιθα: {
+  Ταλιθά: {
     parse: "N-VSF｜Noun, Vocative or nominative, singular, feminine",
     GN: "G5008",
     gloss: "girl",
@@ -97016,6 +97036,11 @@ export const wordUsages = {
     gloss: "to call",
   },
   φωνοῦσιν: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G5455",
+    gloss: "to call",
+  },
+  φωνοῦσι: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G5455",
     gloss: "to call",
