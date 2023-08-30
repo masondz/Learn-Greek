@@ -25,7 +25,7 @@ export const wordUsages = {
     GN: "G4",
     gloss: "not burdensome",
   },
-  Αββα: {
+  Ἀββά: {
     parse: "N-VSM｜Noun, Vocative or nominative, singular, masculine",
     GN: "G5",
     gloss: "Abba",
@@ -14782,6 +14782,11 @@ export const wordUsages = {
     GN: "G837",
     gloss: "to grow",
   },
+  ηὔξανε: {
+    parse: "V-IAI-3S｜Verb, imperfect, active, indicative, third, singular",
+    GN: "G837",
+    gloss: "to grow",
+  },
   ηὔξανεν: {
     parse: "V-IAI-3S｜Verb, imperfect, active, indicative, third, singular",
     GN: "G837",
@@ -19771,6 +19776,11 @@ export const wordUsages = {
   γινώσκοντες: {
     parse:
       "V-PAP-NPM｜Verb, present, active, Participle, nominative, plural, masculine",
+    GN: "G1097",
+    gloss: "to know",
+  },
+  γινώσκουσί: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G1097",
     gloss: "to know",
   },
@@ -25934,6 +25944,11 @@ export const wordUsages = {
     GN: "G1380",
     gloss: "to think",
   },
+  ἔδοξε: {
+    parse: "V-AAI-3S｜Verb, aorist, active, indicative, third, singular",
+    GN: "G1380",
+    gloss: "to think",
+  },
   ἔδοξεν: {
     parse: "V-AAI-3S｜Verb, aorist, active, indicative, third, singular",
     GN: "G1380",
@@ -27206,6 +27221,11 @@ export const wordUsages = {
     gloss: "themself",
   },
   αὑτούς: {
+    parse: "F-3GSM｜Possessive pronoun, third, accusative, singular, masculine",
+    GN: "G1438",
+    gloss: "themself",
+  },
+  αὑτοὺς: {
     parse: "F-3GSM｜Possessive pronoun, third, accusative, singular, masculine",
     GN: "G1438",
     gloss: "themself",
@@ -28595,6 +28615,11 @@ export const wordUsages = {
   },
   Οἶδας: {
     parse: "V-RAI-2S｜Verb, perfect, active, indicative, second, singular",
+    GN: "G1492",
+    gloss: "to know",
+  },
+  οἴδασι: {
+    parse: "V-RAI-3P｜Verb, perfect, active, indicative, third, plural",
     GN: "G1492",
     gloss: "to know",
   },
@@ -35626,6 +35651,11 @@ export const wordUsages = {
     GN: "G1910",
     gloss: "to mount/board",
   },
+  ἐπέβαλαν: {
+    parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
+    GN: "G1911",
+    gloss: "to put on/seize",
+  },
   ἐπέβαλεν: {
     parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
     GN: "G1911",
@@ -41711,7 +41741,17 @@ export const wordUsages = {
     GN: "G2192",
     gloss: "to have/be",
   },
+  ἔχουσι: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G2192",
+    gloss: "to have/be",
+  },
   ἔχουσιν: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G2192",
+    gloss: "to have/be",
+  },
+  Ἔχουσι: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G2192",
     gloss: "to have/be",
@@ -52294,6 +52334,11 @@ export const wordUsages = {
     GN: "G2771",
     gloss: "gain",
   },
+  κέρματα: {
+    parse: "N-ASN｜Noun, accusative, plural, neuter",
+    GN: "G2772",
+    gloss: "coin",
+  },
   κέρμα: {
     parse: "N-ASN｜Noun, accusative, singular, neuter",
     GN: "G2772",
@@ -54442,6 +54487,12 @@ export const wordUsages = {
     GN: "G2896",
     gloss: "to cry",
   },
+  κράζοντα: {
+    parse:
+      "V-PAP-APM｜Verb, present, active, Participle, accusative, plural, masculine",
+    GN: "G2896",
+    gloss: "to cry",
+  },
   κράζοντας: {
     parse:
       "V-PAP-APM｜Verb, present, active, Participle, accusative, plural, masculine",
@@ -56044,6 +56095,11 @@ export const wordUsages = {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G2974",
     gloss: "deaf/mute",
+  },
+  ἔλαχε: {
+    parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
+    GN: "G2975",
+    gloss: "to choose by lot",
   },
   ἔλαχεν: {
     parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
@@ -81933,6 +81989,7 @@ export const wordUsages = {
   },
   ῥαββί: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
   Ῥαββί: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
+  Ῥαββὶ: { parse: "HEB-T｜Hebrew, Title", GN: "G4461", gloss: "Rabbi" },
   Ῥαββουνί: {
     parse: "ARAM｜Aramaic transliterated word (indeclinable)",
     GN: "G4462",
@@ -82832,7 +82889,7 @@ export const wordUsages = {
     GN: "G4541",
     gloss: "Samaritan",
   },
-  Σαμαρίτης: {
+  Σαμαρείτης: {
     parse: "N-NSM-LG｜Noun, nominative, singular, masculine, Location Gentilic",
     GN: "G4541",
     gloss: "Samaritan",

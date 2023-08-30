@@ -16,7 +16,7 @@ let missingWords = {};
 
 function removePunctuation(str) {
   const punctuationRegex =
-    /[!"#$%&'()*+,-./:;<=>?@[\]^_`–{|}~˚“‘”’·\d\r\r|\n|\r]/g;
+    /[!"#$%&'()*+,-./:;<=>?@[\]^_`–“”{|}~˚“‘”’·\d\r\r|\n|\r]/g;
   const punctuationRemoved = str.replace(punctuationRegex, "");
   return punctuationRemoved;
 }
