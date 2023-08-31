@@ -3,7 +3,9 @@ import { greekArticles } from "./greekArticles";
 
 function removePunctuation(str) {
   //this is from ChatpGPT
-  const punctuationRegex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~˚“‘”’·ʼ–]/g;
+  const punctuationRegex =
+    //eslint-disable-next-line
+    /[!"#$%&'()*+,-./:;<=>?@[\]^_`“”{|}~˚“‘”’·ʼ–\u2026\.\.\.]/g;
   const punctuationRemoved = str.replace(punctuationRegex, "");
   return punctuationRemoved;
 }

@@ -8337,6 +8337,11 @@ export const wordUsages = {
     GN: "G455",
     gloss: "to open",
   },
+  ἤνοιξε: {
+    parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
+    GN: "G455",
+    gloss: "to open",
+  },
   ἤνοιξεν: {
     parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
     GN: "G455",
@@ -9158,7 +9163,7 @@ export const wordUsages = {
     GN: "G519",
     gloss: "to strangle",
   },
-  ἀπάγαγε: {
+  ἄπαγε: {
     parse: "V-2AAM-2S｜Verb, 2nd aorist, active, imperative, second, singular",
     GN: "G520",
     gloss: "to lead away",
@@ -11419,6 +11424,11 @@ export const wordUsages = {
   },
   ἀπέλυσαν: {
     parse: "V-AAI-3P｜Verb, aorist, active, indicative, third, plural",
+    GN: "G630",
+    gloss: "divorce",
+  },
+  ἀπέλυσε: {
+    parse: "V-AAI-3S｜Verb, aorist, active, indicative, third, singular",
     GN: "G630",
     gloss: "divorce",
   },
@@ -20988,6 +20998,11 @@ export const wordUsages = {
     GN: "G1135",
     gloss: "wife",
   },
+  γυναιξὶ: {
+    parse: "N-DPF｜Noun, dative, plural, feminine",
+    GN: "G1135",
+    gloss: "wife",
+  },
   γυναιξὶν: {
     parse: "N-DPF｜Noun, dative, plural, feminine",
     GN: "G1135",
@@ -23793,6 +23808,11 @@ export const wordUsages = {
   },
   διασώσῃ: {
     parse: "V-AAS-3S｜Verb, aorist, active, subjunctive, third, singular",
+    GN: "G1295",
+    gloss: "to save",
+  },
+  διασώσωσι: {
+    parse: "V-AAS-3P｜Verb, aorist, active, subjunctive, third, plural",
     GN: "G1295",
     gloss: "to save",
   },
@@ -27026,6 +27046,11 @@ export const wordUsages = {
     GN: "G1417",
     gloss: "two",
   },
+  δυσί: {
+    parse: "A-DPF｜Adjective, dative, plural, feminine",
+    GN: "G1417",
+    gloss: "two",
+  },
   δυσίν: {
     parse: "A-DPF｜Adjective, dative, plural, feminine",
     GN: "G1417",
@@ -28958,6 +28983,11 @@ export const wordUsages = {
     gloss: "to be",
   },
   ἐστίν: {
+    parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
+    GN: "G1510",
+    gloss: "to be",
+  },
+  ἐστί: {
     parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
     GN: "G1510",
     gloss: "to be",
@@ -36718,6 +36748,11 @@ export const wordUsages = {
     GN: "G1968",
     gloss: "to fall/press upon",
   },
+  ἐπέπεσε: {
+    parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
+    GN: "G1968",
+    gloss: "to fall/press upon",
+  },
   ἐπέπεσεν: {
     parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
     GN: "G1968",
@@ -37019,6 +37054,12 @@ export const wordUsages = {
     gloss: "to strengthen",
   },
   ἐπιστηρίζων: {
+    parse:
+      "V-PAP-NSM｜Verb, present, active, Participle, nominative, singular, masculine",
+    GN: "G1991",
+    gloss: "to strengthen",
+  },
+  στηρίζων: {
     parse:
       "V-PAP-NSM｜Verb, present, active, Participle, nominative, singular, masculine",
     GN: "G1991",
@@ -39029,6 +39070,11 @@ export const wordUsages = {
     GN: "G2064",
     gloss: "to come/go",
   },
+  ἦλθε: {
+    parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
+    GN: "G2064",
+    gloss: "to come/go",
+  },
   ἦλθεν: {
     parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
     GN: "G2064",
@@ -39712,6 +39758,11 @@ export const wordUsages = {
   },
   ἔτει: {
     parse: "N-DSN｜Noun, dative, singular, neuter",
+    GN: "G2094",
+    gloss: "year",
+  },
+  ἔτεσι: {
+    parse: "N-DPN｜Noun, dative, plural, neuter",
     GN: "G2094",
     gloss: "year",
   },
@@ -50868,6 +50919,11 @@ export const wordUsages = {
     GN: "G2678",
     gloss: "to signal",
   },
+  κατέσεισε: {
+    parse: "V-AAI-3S｜Verb, aorist, active, indicative, third, singular",
+    GN: "G2678",
+    gloss: "to signal",
+  },
   κατέσεισεν: {
     parse: "V-AAI-3S｜Verb, aorist, active, indicative, third, singular",
     GN: "G2678",
@@ -52030,6 +52086,11 @@ export const wordUsages = {
   },
   ἐκέλευσα: {
     parse: "V-AAI-1S｜Verb, aorist, active, indicative, first, singular",
+    GN: "G2753",
+    gloss: "to order",
+  },
+  ἐκέλευσε: {
+    parse: "V-AAI-3S｜Verb, aorist, active, indicative, third, singular",
     GN: "G2753",
     gloss: "to order",
   },
@@ -59794,6 +59855,11 @@ export const wordUsages = {
   },
   μάρτυς: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
+    GN: "G3144",
+    gloss: "witness",
+  },
+  μάρτυσι: {
+    parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G3144",
     gloss: "witness",
   },
@@ -68231,6 +68297,11 @@ export const wordUsages = {
     GN: "G3778",
     gloss: "this/he/she/it",
   },
+  οὕτω: {
+    parse: "ADV｜Adverb or Adverb and particle combined",
+    GN: "G3779",
+    gloss: "thus(-ly)",
+  },
   οὕτως: {
     parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3779",
@@ -69523,6 +69594,12 @@ export const wordUsages = {
     GN: "G3860",
     gloss: "to deliver/handover/betray",
   },
+  παραδεδωκόσι: {
+    parse:
+      "V-RAP-DPM｜Verb, perfect, active, Participle, dative, plural, masculine",
+    GN: "G3860",
+    gloss: "to deliver/handover/betray",
+  },
   παραδεδωκόσιν: {
     parse:
       "V-RAP-DPM｜Verb, perfect, active, Participle, dative, plural, masculine",
@@ -70725,6 +70802,11 @@ export const wordUsages = {
     gloss: "wintering",
   },
   παραχρῆμα: {
+    parse: "ADV｜Adverb or Adverb and particle combined",
+    GN: "G3916",
+    gloss: "instantly",
+  },
+  Παραχρῆμά: {
     parse: "ADV｜Adverb or Adverb and particle combined",
     GN: "G3916",
     gloss: "instantly",
@@ -88016,6 +88098,11 @@ export const wordUsages = {
     GN: "G4905",
     gloss: "to assemble",
   },
+  συνῆλθε: {
+    parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
+    GN: "G4905",
+    gloss: "to assemble",
+  },
   συνῆλθεν: {
     parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
     GN: "G4905",
@@ -90279,6 +90366,11 @@ export const wordUsages = {
     parse: "N-ASN｜Noun, accusative, singular, neuter",
     GN: "G5058",
     gloss: "tax booth",
+  },
+  τέρασι: {
+    parse: "N-DPN｜Noun, dative, plural, neuter",
+    GN: "G5059",
+    gloss: "wonders",
   },
   τέρασιν: {
     parse: "N-DPN｜Noun, dative, plural, neuter",
@@ -94977,6 +95069,11 @@ export const wordUsages = {
     GN: "G5330",
     gloss: "Pharisee",
   },
+  Φαρισαῖός: {
+    parse: "N-GPM-T｜Noun, genitive, plural, masculine, Title",
+    GN: "G5330",
+    gloss: "Pharisee",
+  },
   φαρμακείᾳ: {
     parse: "N-DSF｜Noun, dative, singular, feminine",
     GN: "G5331",
@@ -98931,6 +99028,11 @@ export const wordUsages = {
   },
   χωρεῖ: {
     parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
+    GN: "G5562",
+    gloss: "to make room for",
+  },
+  χωρήσειν: {
+    parse: "V-PAN｜Verb, future, active, Infinitive",
     GN: "G5562",
     gloss: "to make room for",
   },
