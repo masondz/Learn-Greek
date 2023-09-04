@@ -22,12 +22,20 @@ function removePunctuation(str) {
   return punctuationRemoved;
 }
 
+let commaSeperated = "";
+let endsWithIota = [];
+
 let greekTextArray = greekText.split(" ");
 for (let i = 0; i < greekTextArray.length; i++) {
   let word = removePunctuation(greekTextArray[i]);
   let wordLowerCase = word.toLowerCase();
   if (!(word in wordUsages || wordLowerCase in wordUsages) && word !== "") {
-    if (!wordsNotInLexicon.includes(word)) wordsNotInLexicon.push(word);
+    if (!wordsNotInLexicon.includes(word)) {
+      wordsNotInLexicon.push(word);
+      commaSeperated = commaSeperated + ", " + word;
+      if (word.charAt(word.length - 1) === "ι")
+        endsWithIota = endsWithIota + ", " + word;
+    }
   }
 }
 
@@ -43,7 +51,8 @@ for (let i = 0; i < wordsNotInLexicon.length; i++) {
 // console.log(missingWords);
 // console.log(wordsNotInLexicon[1]);
 console.log(wordsNotInLexicon.length);
-console.log(wordsNotInLexicon.slice(0, 100));
+console.log(commaSeperated);
+console.log(endsWithIota);
 
 const Alphabet = () => {
   const fieldRef = useRef();

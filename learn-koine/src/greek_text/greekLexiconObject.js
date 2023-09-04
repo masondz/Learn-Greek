@@ -519,6 +519,12 @@ export const wordUsages = {
     GN: "G25",
     gloss: "to love",
   },
+  ἠγαπηκόσι: {
+    parse:
+      "V-RAP-DPM｜Verb, perfect, active, Participle, dative, plural, masculine",
+    GN: "G25",
+    gloss: "to love",
+  },
   ἠγαπηκόσιν: {
     parse:
       "V-RAP-DPM｜Verb, perfect, active, Participle, dative, plural, masculine",
@@ -1184,6 +1190,12 @@ export const wordUsages = {
   ἀγνοοῦντες: {
     parse:
       "V-PAP-NPM｜Verb, present, active, Participle, nominative, plural, masculine",
+    GN: "G50",
+    gloss: "be ignorant",
+  },
+  ἀγνοοῦσι: {
+    parse:
+      "V-PAP-DPM｜Verb, present, active, Participle, dative, plural, masculine",
     GN: "G50",
     gloss: "be ignorant",
   },
@@ -9470,6 +9482,12 @@ export const wordUsages = {
     GN: "G544",
     gloss: "to disobey",
   },
+  ἀπειθοῦσι: {
+    parse:
+      "V-PAP-DPM｜Verb, present, active, Participle, dative, plural, masculine",
+    GN: "G544",
+    gloss: "to disobey",
+  },
   ἀπειθοῦσιν: {
     parse:
       "V-PAP-DPM｜Verb, present, active, Participle, dative, plural, masculine",
@@ -13737,6 +13755,11 @@ export const wordUsages = {
   },
   ἀσεβεῖς: {
     parse: "A-NPM｜Adjective, nominative, plural, masculine",
+    GN: "G765",
+    gloss: "ungodly",
+  },
+  ἀσεβέσι: {
+    parse: "A-DPM｜Adjective, dative, plural, masculine",
     GN: "G765",
     gloss: "ungodly",
   },
@@ -18226,6 +18249,11 @@ export const wordUsages = {
     GN: "G1036",
     gloss: "to sink",
   },
+  βυθίζουσι: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G1036",
+    gloss: "to sink",
+  },
   βυθίζουσιν: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G1036",
@@ -18937,6 +18965,11 @@ export const wordUsages = {
     GN: "G1080",
     gloss: "to beget",
   },
+  γεννῶσι: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G1080",
+    gloss: "to beget",
+  },
   γεννῶσιν: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G1080",
@@ -19231,6 +19264,11 @@ export const wordUsages = {
   },
   γέγονας: {
     parse: "V-2RAI-2S｜Verb, 2nd perfect, active, indicative, second, singular",
+    GN: "G1096",
+    gloss: "to be",
+  },
+  γεγόνασι: {
+    parse: "V-2RAI-3P｜Verb, 2nd perfect, active, indicative, third, plural",
     GN: "G1096",
     gloss: "to be",
   },
@@ -23567,7 +23605,7 @@ export const wordUsages = {
     GN: "G1280",
     gloss: "be perplexed",
   },
-  διηπόρουν: {
+  διηποροῦντο: {
     parse: "V-IAI-3P｜Verb, imperfect, active, indicative, third, plural",
     GN: "G1280",
     gloss: "be perplexed",
@@ -25791,6 +25829,11 @@ export const wordUsages = {
     GN: "G1377",
     gloss: "to pursue",
   },
+  ἐδίωκε: {
+    parse: "V-IAI-3S｜Verb, imperfect, active, indicative, third, singular",
+    GN: "G1377",
+    gloss: "to pursue",
+  },
   ἐδίωκεν: {
     parse: "V-IAI-3S｜Verb, imperfect, active, indicative, third, singular",
     GN: "G1377",
@@ -26296,6 +26339,11 @@ export const wordUsages = {
   },
   δοξάσω: {
     parse: "V-FAI-1S｜Verb, future, active, indicative, first, singular",
+    GN: "G1392",
+    gloss: "to glorify",
+  },
+  δοξάσωσι: {
+    parse: "V-AAS-3P｜Verb, aorist, active, subjunctive, third, plural",
     GN: "G1392",
     gloss: "to glorify",
   },
@@ -26921,6 +26969,11 @@ export const wordUsages = {
   },
   Δυνάμεις: {
     parse: "N-APF｜Noun, accusative, plural, feminine",
+    GN: "G1411",
+    gloss: "power",
+  },
+  δυνάμεσι: {
+    parse: "N-DPF｜Noun, dative, plural, feminine",
     GN: "G1411",
     gloss: "power",
   },
@@ -28396,6 +28449,12 @@ export const wordUsages = {
     GN: "G1492",
     gloss: "see",
   },
+  εἰδόσι: {
+    parse:
+      "V-RAP-DPM｜Verb, perfect, active, Participle, dative, plural, masculine",
+    GN: "G1492",
+    gloss: "know",
+  },
   εἰδόσιν: {
     parse:
       "V-RAP-DPM｜Verb, perfect, active, Participle, dative, plural, masculine",
@@ -29177,6 +29236,12 @@ export const wordUsages = {
   Οὔσης: {
     parse:
       "V-PAP-GSF｜Verb, present, active, Participle, genitive, singular, feminine",
+    GN: "G1510",
+    gloss: "to be",
+  },
+  οὖσι: {
+    parse:
+      "V-PAP-DPM｜Verb, present, active, Participle, dative, plural, masculine",
     GN: "G1510",
     gloss: "to be",
   },
@@ -42064,6 +42129,11 @@ export const wordUsages = {
     GN: "G2198",
     gloss: "to live",
   },
+  ζῶσι: {
+    parse: "V-PAS-3P｜Verb, present, active, subjunctive, third, plural",
+    GN: "G2198",
+    gloss: "to live",
+  },
   ζῶσιν: {
     parse: "V-PAS-3P｜Verb, present, active, subjunctive, third, plural",
     GN: "G2198",
@@ -46488,7 +46558,7 @@ export const wordUsages = {
     GN: "G2457",
     gloss: "Julius",
   },
-  Ἰουνιᾶν: {
+  Ἰουνίαν: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G2458",
     gloss: "Junia",
@@ -47432,7 +47502,7 @@ export const wordUsages = {
     GN: "G2509",
     gloss: "just as",
   },
-  καθῆψεν: {
+  καθῆψε: {
     parse: "V-AAI-3S｜Verb, aorist, active, indicative, third, singular",
     GN: "G2510",
     gloss: "to attach",
@@ -53407,6 +53477,11 @@ export const wordUsages = {
     GN: "G2823",
     gloss: "oven",
   },
+  κλίμασι: {
+    parse: "N-DPN｜Noun, dative, plural, neuter",
+    GN: "G2824",
+    gloss: "region",
+  },
   κλίμασιν: {
     parse: "N-DPN｜Noun, dative, plural, neuter",
     GN: "G2824",
@@ -54881,6 +54956,11 @@ export const wordUsages = {
   },
   κρείττονός: {
     parse: "A-GSF-C｜Adjective, genitive, singular, feminine, Comparative",
+    GN: "G2908",
+    gloss: "greater",
+  },
+  κρείττοσι: {
+    parse: "A-DPF-C｜Adjective, dative, plural, feminine, Comparative",
     GN: "G2908",
     gloss: "greater",
   },
@@ -57378,23 +57458,28 @@ export const wordUsages = {
   λέγω: {
     parse: "V-PAS-1S｜Verb, present, active, subjunctive, first, singular",
     GN: "G3004",
-    gloss: "call",
+    gloss: "call/say",
   },
   Λέγω: {
     parse: "V-PAI-1S｜Verb, present, active, indicative, first, singular",
     GN: "G3004",
-    gloss: "call",
+    gloss: "call/say",
   },
   λέγων: {
     parse:
       "V-PAP-VSM｜Verb, present, active, Participle, Vocative or nominative, singular, masculine",
     GN: "G3004",
-    gloss: "call",
+    gloss: "call/say",
   },
   λέγωσιν: {
     parse: "V-PAS-3P｜Verb, present, active, subjunctive, third, plural",
     GN: "G3004",
-    gloss: "call",
+    gloss: "call/say",
+  },
+  λέγωμεν: {
+    parse: "V-PAS-1P｜Verb, present, active, subjunctive, first, plural",
+    GN: "G3004",
+    gloss: "call/say",
   },
   λεῖμμα: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
@@ -60986,6 +61071,11 @@ export const wordUsages = {
   },
   μεριμνήσητε: {
     parse: "V-AAS-2P｜Verb, aorist, active, subjunctive, second, plural",
+    GN: "G3309",
+    gloss: "to worry",
+  },
+  μεριμνῶσι: {
+    parse: "V-PAS-3P｜Verb, present, active, subjunctive, third, plural",
     GN: "G3309",
     gloss: "to worry",
   },
@@ -68791,6 +68881,11 @@ export const wordUsages = {
     GN: "G3811",
     gloss: "to instruct",
   },
+  παιδευθῶσι: {
+    parse: "V-APS-3P｜Verb, aorist, passive, subjunctive, third, plural",
+    GN: "G3811",
+    gloss: "to instruct",
+  },
   παιδευθῶσιν: {
     parse: "V-APS-3P｜Verb, aorist, passive, subjunctive, third, plural",
     GN: "G3811",
@@ -71128,6 +71223,11 @@ export const wordUsages = {
     GN: "G3930",
     gloss: "to furnish occasion",
   },
+  παρέχουσι: {
+    parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
+    GN: "G3930",
+    gloss: "to furnish occasion",
+  },
   παρέχουσιν: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G3930",
@@ -71962,7 +72062,7 @@ export const wordUsages = {
     GN: "G3968",
     gloss: "fatherland",
   },
-  Πατροβᾶν: {
+  Πατρόβαν: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G3969",
     gloss: "Patrobas",
@@ -76146,6 +76246,11 @@ export const wordUsages = {
     GN: "G4151",
     gloss: "spirit (or breath)",
   },
+  πνεύμασι: {
+    parse: "N-DPN｜Noun, dative, plural, neuter",
+    GN: "G4151",
+    gloss: "spirit (or breath)",
+  },
   πνεύμασιν: {
     parse: "N-DPN｜Noun, dative, plural, neuter",
     GN: "G4151",
@@ -78514,6 +78619,12 @@ export const wordUsages = {
   πράσσοντι: {
     parse:
       "V-PAP-DSM｜Verb, present, active, Participle, dative, singular, masculine",
+    GN: "G4238",
+    gloss: "to do/require",
+  },
+  πράσσουσι: {
+    parse:
+      "V-PAP-DPM｜Verb, present, active, Participle, dative, plural, masculine",
     GN: "G4238",
     gloss: "to do/require",
   },
@@ -82077,7 +82188,7 @@ export const wordUsages = {
     GN: "G4462",
     gloss: "Rabboni",
   },
-  ἐρραβδίσθην: {
+  ἐραβδίσθην: {
     parse: "V-API-1S｜Verb, aorist, passive, indicative, first, singular",
     GN: "G4463",
     gloss: "to beat with a rod",
@@ -92804,6 +92915,12 @@ export const wordUsages = {
     GN: "G5198",
     gloss: "be healthy",
   },
+  ὑγιαίνουσι: {
+    parse:
+      "V-PAP-DPM｜Verb, present, active, Participle, dative, plural, masculine",
+    GN: "G5198",
+    gloss: "be healthy",
+  },
   ὑγιαίνουσιν: {
     parse:
       "V-PAP-DPM｜Verb, present, active, Participle, dative, plural, masculine",
@@ -96367,6 +96484,11 @@ export const wordUsages = {
   },
   φονεὺς: {
     parse: "N-NSM｜Noun, nominative, singular, masculine",
+    GN: "G5406",
+    gloss: "murderer",
+  },
+  φονεῦσι: {
+    parse: "N-DPM｜Noun, dative, plural, masculine",
     GN: "G5406",
     gloss: "murderer",
   },
