@@ -3,52 +3,11 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import { selectScoreSlice, setScore } from "./features/scoreSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { greekText } from "./greek_text/greekText";
-import { wordUsages } from "./greek_text/greekLexiconObject";
+
 //Parent component. It passes its width to the child
 
 let theTargetLetter = "α";
 let letterIndex = 0;
-
-let wordsNotInLexicon = [];
-
-let missingWords = {};
-
-function removePunctuation(str) {
-  const punctuationRegex =
-    //eslint-disable-next-line
-    /[!"#$%&'()*+,-./:;<=>?@[\]^_`–“”{|}~˚“‘”’·\d\r\r|\n|\r\u2026\.\.\.]/g;
-  const punctuationRemoved = str.replace(punctuationRegex, "");
-  return punctuationRemoved;
-}
-
-let commaSeperated = "";
-
-let greekTextArray = greekText.split(" ");
-for (let i = 0; i < greekTextArray.length; i++) {
-  let word = removePunctuation(greekTextArray[i]);
-  let wordLowerCase = word.toLowerCase();
-  if (!(word in wordUsages || wordLowerCase in wordUsages) && word !== "") {
-    if (!wordsNotInLexicon.includes(word)) {
-      wordsNotInLexicon.push(word);
-      commaSeperated = commaSeperated + ", " + word;
-    }
-  }
-}
-
-for (let i = 0; i < wordsNotInLexicon.length; i++) {
-  let word = wordsNotInLexicon[i];
-  if (!missingWords[word]) {
-    missingWords[word] = 0;
-  } else {
-    missingWords[word] = missingWords[word] + 1;
-  }
-}
-
-// console.log(missingWords);
-// console.log(wordsNotInLexicon[1]);
-console.log(wordsNotInLexicon.length);
-console.log(commaSeperated);
 
 const Alphabet = () => {
   const fieldRef = useRef();
@@ -79,18 +38,6 @@ const Alphabet = () => {
   const particles = Array.from({ length: numberOfParticles }, (_, index) => {
     return <RandomParticle fieldWidth={fieldWidth} key={"particle" + index} />;
   });
-
-  // ////working on canvas
-  // const canvas = document.getElementById("canvas");
-  // const ctx = canvas.getContext("2d");
-
-  // ctx.beginPath();
-
-  // ctx.moveTo(0, 0);
-
-  // ctx.lineTo(100, 100);
-
-  // ctx.stroke();
 
   return (
     <>
