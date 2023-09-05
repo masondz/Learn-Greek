@@ -23,7 +23,6 @@ function removePunctuation(str) {
 }
 
 let commaSeperated = "";
-let endsWithIota = [];
 
 let greekTextArray = greekText.split(" ");
 for (let i = 0; i < greekTextArray.length; i++) {
@@ -33,8 +32,6 @@ for (let i = 0; i < greekTextArray.length; i++) {
     if (!wordsNotInLexicon.includes(word)) {
       wordsNotInLexicon.push(word);
       commaSeperated = commaSeperated + ", " + word;
-      if (word.charAt(word.length - 1) === "ι")
-        endsWithIota = endsWithIota + ", " + word;
     }
   }
 }
@@ -52,7 +49,6 @@ for (let i = 0; i < wordsNotInLexicon.length; i++) {
 // console.log(wordsNotInLexicon[1]);
 console.log(wordsNotInLexicon.length);
 console.log(commaSeperated);
-console.log(endsWithIota);
 
 const Alphabet = () => {
   const fieldRef = useRef();
