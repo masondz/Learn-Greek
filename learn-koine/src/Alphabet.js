@@ -4,18 +4,60 @@ import "./App.css";
 import { selectScoreSlice, setScore } from "./features/scoreSlice";
 import { useSelector, useDispatch } from "react-redux";
 
+const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
+
+const alphabetNameArray = [
+  "Alpha",
+  "Beta",
+  "Gamma",
+  "Delta",
+  "Epsilon",
+  "Zeta",
+  "Eta",
+  "Theta",
+  "Iota",
+  "Kappa",
+  "Lambda",
+  "Mu",
+  "Nu",
+  "Xi",
+  "Omicron",
+  "Pi",
+  "Rho",
+  "Sigma",
+  "Tau",
+  "Upsilon",
+  "Phi",
+  "Chi",
+  "Psi",
+  "Omega",
+];
 //Parent component. It passes its width to the child
-
-let theTargetLetter = "α";
-let letterIndex = 0;
-
 const Alphabet = () => {
   const fieldRef = useRef();
+
+  const [letterIndex, setLetterIndex] = useState(0);
+  const [randomAlphabetArray, setRandomAlphabetArray] = useState([]);
   const [fieldWidth, setFieldWidth] = useState("");
   const [targetLetter, setTargetLetter] = useState("α");
 
   useEffect(() => {
     setFieldWidth(fieldRef.current.getBoundingClientRect().width);
+    console.log(targetLetter);
+    let firstRandomArray = [targetLetter];
+
+    for (let i = 0; i < 7; i++) {
+      let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+      while (firstRandomArray.includes[alphabetArray[randomIndex]]) {
+        randomIndex = Math.floor(Math.random() * alphabetArray.length);
+      }
+
+      firstRandomArray.push(alphabetArray[randomIndex]);
+    }
+
+    console.log(firstRandomArray);
+
+    setRandomAlphabetArray(firstRandomArray);
   }, [fieldWidth]);
 
   const numberOfLetters = 15;
@@ -28,6 +70,9 @@ const Alphabet = () => {
           key={"letter" + index}
           targetLetter={targetLetter}
           setTargetLetter={setTargetLetter}
+          letterIndex={letterIndex}
+          setLetterIndex={setLetterIndex}
+          randomAlphabetArray={randomAlphabetArray}
         />
       </div>
     );
@@ -54,8 +99,15 @@ const Alphabet = () => {
   );
 };
 
-function Letter({ fieldWidth }) {
-  const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
+function Letter({
+  fieldWidth,
+  targetLetter,
+  setTargetLetter,
+  randomAlphabetArray,
+  letterIndex,
+  setLetterIndex,
+  setRandomAlphabetArray,
+}) {
   const letterRef = useRef();
 
   const stateScore = useSelector(selectScoreSlice);
@@ -94,9 +146,26 @@ function Letter({ fieldWidth }) {
   }
 
   function makeRandomLetter() {
-    let randomNumber = Math.floor(Math.random() * alphabetArray.length);
-    let randomLetter = alphabetArray[randomNumber];
+    let randomNumber = Math.floor(Math.random() * randomAlphabetArray.length);
+    let randomLetter = randomAlphabetArray[randomNumber];
     return randomLetter;
+  }
+
+  function makeRandomArray() {
+    let nextRandomArray = [targetLetter];
+
+    for (let i = 0; i < 7; i++) {
+      let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+      while (nextRandomArray.includes[alphabetArray[randomIndex]]) {
+        randomIndex = Math.floor(Math.random() * alphabetArray.length);
+      }
+
+      nextRandomArray.push(alphabetArray[randomIndex]);
+    }
+
+    console.log(nextRandomArray);
+
+    return nextRandomArray;
   }
 
   function makeRandomStartPoint() {
@@ -160,7 +229,7 @@ function Letter({ fieldWidth }) {
   }, [fieldWidth, coloring]);
 
   const handleClick = (e) => {
-    if (e.target.innerHTML === theTargetLetter) {
+    if (e.target.innerHTML === targetLetter) {
       movingAnimation?.pause();
       coloringAnimation.pause();
       e.target.animate(
@@ -173,13 +242,16 @@ function Letter({ fieldWidth }) {
       if (currentScore === 5) {
         dispatch(setScore(0));
         setTimeout(() => {
-          letterIndex += 1;
-          if (letterIndex === 25) {
-            letterIndex = 0;
+          let nextIndex = letterIndex + 1;
+          if (nextIndex === 25) {
+            nextIndex = 0;
           }
-          theTargetLetter = alphabetArray[letterIndex];
+          let nextLetter = alphabetArray[nextIndex];
           movingAnimation.play();
           e.target.animate(coloring, coloringTiming);
+          setLetterIndex(nextIndex);
+          setTargetLetter(nextLetter);
+          setRandomAlphabetArray(makeRandomArray());
         }, 500);
       } else {
         dispatch(setScore(currentScore));
