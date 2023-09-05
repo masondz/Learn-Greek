@@ -10364,6 +10364,11 @@ export const wordUsages = {
     GN: "G598",
     gloss: "to crowd up to",
   },
+  ἀπέθανε: {
+    parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
+    GN: "G599",
+    gloss: "to die",
+  },
   ἀπέθανεν: {
     parse: "V-2AAI-3S｜Verb, 2nd aorist, active, indicative, third, singular",
     GN: "G599",
@@ -13370,6 +13375,11 @@ export const wordUsages = {
   },
   ἀρχαίων: {
     parse: "A-GPM｜Adjective, genitive, plural, masculine",
+    GN: "G744",
+    gloss: "ancient",
+  },
+  ἀρχαῖον: {
+    parse: "A-GPM｜Adjective, accusative, singular, masculine",
     GN: "G744",
     gloss: "ancient",
   },
@@ -23605,6 +23615,11 @@ export const wordUsages = {
     GN: "G1280",
     gloss: "be perplexed",
   },
+  διηπόρουν: {
+    parse: "V-IAI-3P｜Verb, imperfect, active, indicative, third, plural",
+    GN: "G1280",
+    gloss: "be perplexed",
+  },
   διηποροῦντο: {
     parse: "V-IAI-3P｜Verb, imperfect, active, indicative, third, plural",
     GN: "G1280",
@@ -30949,6 +30964,11 @@ export const wordUsages = {
   },
   ἐκπειράσεις: {
     parse: "V-FAI-2S｜Verb, future, active, indicative, second, singular",
+    GN: "G1598",
+    gloss: "to test/tempt",
+  },
+  ἐπειράσθησαν: {
+    parse: "V-FAI-2S｜Verb, aorist, passive, indicative, third, plural",
     GN: "G1598",
     gloss: "to test/tempt",
   },
@@ -41895,6 +41915,11 @@ export const wordUsages = {
   },
   ἔχωσιν: {
     parse: "V-PAS-3P｜Verb, present, active, subjunctive, third, plural",
+    GN: "G2192",
+    gloss: "to have/be",
+  },
+  Εἶχε: {
+    parse: "V-PAS-3P｜Verb, imperfect, active, imperative, third, singular",
     GN: "G2192",
     gloss: "to have/be",
   },
@@ -58654,6 +58679,12 @@ export const wordUsages = {
   },
   λύπης: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
+    GN: "G3077",
+    gloss: "grief",
+  },
+  λυπηθέντες: {
+    parse:
+      "N-GSF｜Noun, aorist, participle, passive, nominative, masculine, singular",
     GN: "G3077",
     gloss: "grief",
   },
@@ -86113,7 +86144,7 @@ export const wordUsages = {
     GN: "G4760",
     gloss: "army camp",
   },
-  στρεβλώσουσιν: {
+  στρεβλοῦσιν: {
     parse: "V-FAI-3P｜Verb, future, active, indicative, third, plural",
     GN: "G4761",
     gloss: "to distort",
