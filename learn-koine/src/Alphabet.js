@@ -82,11 +82,15 @@ const Alphabet = () => {
     );
   });
 
-  // const numberOfParticles = 550;
+  const numberOfParticles = 550;
 
-  // const particles = Array.from({ length: numberOfParticles }, (_, index) => {
-  //   return <RandomParticle fieldWidth={fieldWidth} key={"particle" + index} />;
-  // });
+  const particles = useMemo(() => {
+    return Array.from({ length: numberOfParticles }, (_, index) => {
+      return (
+        <RandomParticle fieldWidth={fieldWidth} key={"particle" + index} />
+      );
+    });
+  }, [fieldWidth]);
 
   return (
     <>
@@ -94,6 +98,7 @@ const Alphabet = () => {
       <h2>{arrayString}</h2>
       <div className="letter-container" ref={fieldRef}>
         {theLetters}
+        {particles}
         <canvas id="canvas"></canvas>
       </div>
       <Link to={"/"}>home</Link>
@@ -283,39 +288,39 @@ function Letter({
 ////////
 //////
 
-// const RandomParticle = ({ fieldWidth }) => {
-//   const starRef = useRef();
+const RandomParticle = ({ fieldWidth }) => {
+  const starRef = useRef();
 
-//   let randomX = Math.floor(Math.random() * fieldWidth - 2);
-//   let randomY = Math.floor(Math.random() * 720);
-//   let randomTransparency = Math.random();
-//   let randomDuration = Math.floor(Math.random() * 2000 + 2000);
+  let randomX = Math.floor(Math.random() * fieldWidth - 2);
+  let randomY = Math.floor(Math.random() * 720);
+  let randomTransparency = Math.random();
+  let randomDuration = Math.floor(Math.random() * 2000 + 2000);
 
-//   let randomWidthHeight = Math.floor(Math.random() * 4);
+  let randomWidthHeight = Math.floor(Math.random() * 4);
 
-//   let style = {
-//     position: "absolute",
-//     left: randomX + "px",
-//     top: randomY + "px",
-//     opacity: randomTransparency,
-//     width: randomWidthHeight,
-//     height: randomWidthHeight,
-//   };
+  let style = {
+    position: "absolute",
+    left: randomX + "px",
+    top: randomY + "px",
+    opacity: randomTransparency,
+    width: randomWidthHeight,
+    height: randomWidthHeight,
+  };
 
-//   const starShining = [{ opacity: randomTransparency }, { opacity: 0.2 }];
+  const starShining = [{ opacity: randomTransparency }, { opacity: 0.2 }];
 
-//   const starShiningTiming = {
-//     duration: randomDuration,
-//     iterations: Infinity,
-//     direction: "alternate",
-//   };
+  const starShiningTiming = {
+    duration: randomDuration,
+    iterations: Infinity,
+    direction: "alternate",
+  };
 
-//   if (starRef.current) {
-//     starRef.current.animate(starShining, starShiningTiming);
-//   }
+  if (starRef.current) {
+    starRef.current.animate(starShining, starShiningTiming);
+  }
 
-//   return <div className="particle" style={style} ref={starRef}></div>;
-// };
+  return <div className="particle" style={style} ref={starRef}></div>;
+};
 
 //////
 /////
