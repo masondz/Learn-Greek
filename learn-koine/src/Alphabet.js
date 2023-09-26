@@ -1,12 +1,7 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
-import {
-  selectScoreSlice,
-  setScore,
-  selectRandomLetters,
-  setRandomLetters,
-} from "./features/alphabetSlice";
+import { selectScoreSlice, setScore } from "./features/alphabetSlice";
 import { useSelector, useDispatch } from "react-redux";
 
 const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
@@ -48,17 +43,18 @@ const Alphabet = () => {
 
   const [letterIndex, setLetterIndex] = useState(0);
   const [fieldWidth, setFieldWidth] = useState("");
-  const [targetLetter, setTargetLetter] = useState("α");
+  const [targetLetter, setTargetLetter] = useState(alphabetArray[letterIndex]);
+  const [masterRandomLetters, setMasterRandomLetters] = useState([]);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     setFieldWidth(fieldRef.current.getBoundingClientRect().width);
 
-    console.log(targetLetter);
+    console.log("alphabet parent rendered.");
     let firstRandomArray = [targetLetter];
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 1; i++) {
       let randomIndex = Math.floor(Math.random() * alphabetArray.length);
       while (firstRandomArray.includes[alphabetArray[randomIndex]]) {
         randomIndex = Math.floor(Math.random() * alphabetArray.length);
@@ -66,13 +62,10 @@ const Alphabet = () => {
 
       firstRandomArray.push(alphabetArray[randomIndex]);
     }
-
-    dispatch(setRandomLetters(firstRandomArray));
+    setMasterRandomLetters(firstRandomArray);
   }, [fieldWidth, targetLetter, dispatch]);
 
-  console.log(useSelector(selectRandomLetters));
-
-  const numberOfLetters = 15;
+  const numberOfLetters = 3;
 
   const theLetters = Array.from({ length: numberOfLetters }, (_, index) => {
     return (
@@ -84,6 +77,8 @@ const Alphabet = () => {
           setTargetLetter={setTargetLetter}
           letterIndex={letterIndex}
           setLetterIndex={setLetterIndex}
+          masterRandomLetters={masterRandomLetters}
+          setMasterRandomLetters={setMasterRandomLetters}
         />
       </div>
     );
@@ -108,7 +103,7 @@ const Alphabet = () => {
         <canvas id="canvas"></canvas>
       </div>
       <Link to={"/"}>home</Link>
-      <ScoreBoard />{" "}
+      <ScoreBoard masterRandomLetters={masterRandomLetters} />{" "}
     </>
   );
 };
@@ -126,6 +121,8 @@ function Letter({
   setTargetLetter,
   letterIndex,
   setLetterIndex,
+  masterRandomLetters,
+  setMasterRandomLetters,
 }) {
   const letterRef = useRef();
 
@@ -160,33 +157,8 @@ function Letter({
     let newTime = Math.floor(Math.random() * 3000 + 2000);
     return newTime;
   }
-  const randomAlphabetArray = useSelector(selectRandomLetters);
 
-  function makeRandomLetter() {
-    let initialArray = randomAlphabetArray;
-    let randomNumber = Math.floor(Math.random() * initialArray.length);
-    let randomLetter = initialArray[randomNumber];
-    return randomLetter;
-  }
-
-  const [randomLetter, setRandomLetter] = useState(makeRandomLetter());
-
-  function makeRandomArray() {
-    let nextRandomArray = [targetLetter];
-    console.log(targetLetter);
-
-    for (let i = 0; i < 7; i++) {
-      let randomIndex = Math.floor(Math.random() * alphabetArray.length);
-      while (nextRandomArray.includes[alphabetArray[randomIndex]]) {
-        randomIndex = Math.floor(Math.random() * alphabetArray.length);
-      }
-
-      nextRandomArray.push(alphabetArray[randomIndex]);
-    }
-    console.log(nextRandomArray);
-
-    return nextRandomArray;
-  }
+  const [shownLetter, setShownLetter] = useState("j");
 
   function makeRandomStartPoint() {
     let randomPoint = Math.floor(Math.random() * 75);
@@ -203,34 +175,54 @@ function Letter({
     }
   }
 
-  useEffect(() => {
-    const handleNextIteration = (width) => {
-      const nextStart = makeRandomStartPoint();
-      const nextEnd = makeRandomEndPoint(width);
-      const nextLetter = makeRandomLetter();
+  function makeRandomArray(theTarget = targetLetter) {
+    console.log(targetLetter);
+    let nextRandomArray = [theTarget];
 
-      setRandomLetter(nextLetter);
+    for (let i = 0; i < 1; i++) {
+      let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+      while (nextRandomArray.includes[alphabetArray[randomIndex]]) {
+        randomIndex = Math.floor(Math.random() * alphabetArray.length);
+      }
 
-      const moving = [
-        { bottom: "-55px", left: nextStart + "px" },
-        { bottom: "700px", left: nextEnd + "px" },
-      ];
+      nextRandomArray.push(alphabetArray[randomIndex]);
+    }
 
-      const movingTiming = {
-        duration: generateRandomTime(),
-        iterations: 1,
-      };
+    return nextRandomArray;
+  }
 
-      const newMovingAnimation = letterRef.current.animate(
-        moving,
-        movingTiming
-      );
-      newMovingAnimation.onfinish = () => {
-        handleNextIteration(fieldWidth);
-      };
-      setMovingAnimation(newMovingAnimation);
+  function makeRandomLetter(sourceArray) {
+    let randomNumber = Math.floor(Math.random() * sourceArray.length);
+    let randomLetter = sourceArray[randomNumber];
+    return randomLetter;
+  }
+
+  const handleNextIteration = (width, passedLetter) => {
+    const nextIterationArray = makeRandomArray(passedLetter);
+    const nextStart = makeRandomStartPoint();
+    const nextEnd = makeRandomEndPoint(width);
+    const nextLetter = makeRandomLetter(nextIterationArray);
+
+    setShownLetter(nextLetter);
+
+    const moving = [
+      { bottom: "-55px", left: nextStart + "px" },
+      { bottom: "700px", left: nextEnd + "px" },
+    ];
+
+    const movingTiming = {
+      duration: generateRandomTime(),
+      iterations: 1,
     };
 
+    const newMovingAnimation = letterRef.current.animate(moving, movingTiming);
+    newMovingAnimation.onfinish = () => {
+      handleNextIteration(fieldWidth);
+    };
+    setMovingAnimation(newMovingAnimation);
+  };
+
+  useEffect(() => {
     const newColoringAnimation = letterRef.current.animate(
       coloring,
       coloringTiming
@@ -238,7 +230,7 @@ function Letter({
     setColoringAnimation(newColoringAnimation);
 
     if (fieldWidth && letterRef.current) {
-      handleNextIteration(fieldWidth);
+      handleNextIteration(fieldWidth, targetLetter);
 
       return () => {
         movingAnimation?.cancel();
@@ -251,7 +243,7 @@ function Letter({
   let score = useSelector(selectScoreSlice);
 
   const handleClick = (e) => {
-    if (e.target.innerHTML === targetLetter) {
+    if (e.target.innerHTML === targetLetter || e.target.innerHTML === "α") {
       movingAnimation?.pause();
       coloringAnimation.pause();
       e.target.animate(
@@ -272,7 +264,8 @@ function Letter({
           e.target.animate(coloring, coloringTiming);
           setLetterIndex(nextIndex);
           setTargetLetter(nextLetter);
-          setRandomLetters(makeRandomArray());
+          setMasterRandomLetters(makeRandomArray(nextLetter));
+          // dispatch(setRandomLetters(makeRandomArray()));
         }, 500);
       } else {
         dispatch(setScore(currentScore));
@@ -284,7 +277,7 @@ function Letter({
 
   return (
     <h1 className="letter" onClick={(e) => handleClick(e)} ref={letterRef}>
-      {randomLetter}
+      {shownLetter}
     </h1>
   );
 }
@@ -335,12 +328,13 @@ const RandomParticle = ({ fieldWidth }) => {
 ///
 //
 
-const ScoreBoard = () => {
+const ScoreBoard = ({ masterRandomLetters }) => {
   const stateScore = useSelector(selectScoreSlice);
   return (
     <div>
       {stateScore.currentScore}
       {alphabetArray[0]}
+      {masterRandomLetters[0]}
     </div>
   );
 };
