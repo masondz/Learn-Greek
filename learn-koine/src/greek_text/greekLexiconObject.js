@@ -49469,11 +49469,11 @@ export const wordUsages = {
     gloss: "speck",
   },
   καθʼ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
+  κατ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   κατʼ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   Κατʼ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   κατά: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   κατὰ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
-  κατ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   Κατὰ: { parse: "PREP｜Preposition", GN: "G2596", gloss: "according to" },
   καταβαίνει: {
     parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",

@@ -123,6 +123,7 @@ export const randomVerb = (obj, attribute, arr, exclusions) => {
 };
 
 export const randomChoicesSelection = (obj, conjunctionGloss) => {
+  console.log(conjunctionGloss);
   try {
     let initialArray = [conjunctionGloss];
     let initialGlossArray = conjunctionGloss.split("/");

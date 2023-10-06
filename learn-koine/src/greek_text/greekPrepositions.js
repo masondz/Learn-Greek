@@ -17,6 +17,7 @@ export const greekPrepositions = {
   εἴς: "unto/toward",
   εἵνεκεν: "because of",
   καθʼ: "according to",
+  κατ: "according to",
   κατʼ: "according to",
   κατά: "according to",
   κατέναντι: "before",

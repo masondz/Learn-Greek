@@ -147,16 +147,16 @@
 }
 
 .vocative {
-  position: relative;
+  position: absolute;
   rotate: -30deg;
-  margin-top: 175px;
-  margin-left: 0.55em;
+  top: 135px;
   bottom: 80px;
   background-color: goldenrod;
+  height: 43px;
 }
 
 .vocative-container {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-content: center;

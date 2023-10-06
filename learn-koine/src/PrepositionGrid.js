@@ -10,6 +10,8 @@ const PrepositionGrid = ({ reset }) => {
   let guessArray = [];
 
   if (word.parse.includes("Preposition")) {
+    console.log("checking PrepositionGrid...");
+    console.log("looking for: " + word.word);
     guessArray = randomChoicesSelection(
       greekPrepositions,
       greekPrepositions[word.word]

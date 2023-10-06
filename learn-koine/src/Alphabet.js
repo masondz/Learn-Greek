@@ -11,6 +11,37 @@ import { useSelector, useDispatch } from "react-redux";
 
 const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
 
+let shorterArray = [];
+
+for (let i = 0; i < 1; i++) {
+  let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+  while (shorterArray.includes[alphabetArray[randomIndex]]) {
+    randomIndex = Math.floor(Math.random() * alphabetArray.length);
+  }
+
+  shorterArray.push(alphabetArray[randomIndex]);
+}
+
+const Alphabet = () => {
+  const fieldRef = useRef();
+
+  return (
+    <>
+      <h1>Alphabet Practice: {shorterArray}</h1>
+      <div className="letter-container" ref={fieldRef}>
+        <Letter />
+        <canvas id="canvas"></canvas>
+      </div>
+    </>
+  );
+};
+
+const Letter = () => {
+  return <h1>letter</h1>;
+};
+
+export default Alphabet;
+
 // const alphabetNameArray = [
 //   "Alpha",
 //   "Beta",
@@ -43,306 +74,299 @@ const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
 ///
 //
 //Parent component. It passes its width to the child
-const Alphabet = () => {
-  const fieldRef = useRef();
+// const Alphabet = () => {
+//   const fieldRef = useRef();
 
-  const [letterIndex, setLetterIndex] = useState(0);
-  const [fieldWidth, setFieldWidth] = useState("");
-  const [targetLetter, setTargetLetter] = useState("α");
+//   const [letterIndex, setLetterIndex] = useState(0);
+//   const [fieldWidth, setFieldWidth] = useState("");
+//   const [targetLetter, setTargetLetter] = useState("α");
 
-  const dispatch = useDispatch();
+//   const dispatch = useDispatch();
 
-  useEffect(() => {
-    setFieldWidth(fieldRef.current.getBoundingClientRect().width);
+//   useEffect(() => {
+//     setFieldWidth(fieldRef.current.getBoundingClientRect().width);
 
-    console.log(targetLetter);
-    let firstRandomArray = [targetLetter];
+//     console.log(targetLetter);
+//     let firstRandomArray = shorterArray;
+//     firstRandomArray = [...firstRandomArray, targetLetter];
+//     dispatch(setRandomLetters(firstRandomArray));
+//   }, [fieldWidth, targetLetter, dispatch]);
 
-    for (let i = 0; i < 7; i++) {
-      let randomIndex = Math.floor(Math.random() * alphabetArray.length);
-      while (firstRandomArray.includes[alphabetArray[randomIndex]]) {
-        randomIndex = Math.floor(Math.random() * alphabetArray.length);
-      }
+//   // console.log(useSelector(selectRandomLetters));
 
-      firstRandomArray.push(alphabetArray[randomIndex]);
-    }
+//   const numberOfLetters = 3;
 
-    dispatch(setRandomLetters(firstRandomArray));
-  }, [fieldWidth, targetLetter, dispatch]);
+//   const theLetters = Array.from({ length: numberOfLetters }, (_, index) => {
+//     return (
+//       <div className="letter-lane" key={index}>
+//         <Letter
+//           fieldWidth={fieldWidth}
+//           key={"letter" + index}
+//           targetLetter={targetLetter}
+//           setTargetLetter={setTargetLetter}
+//           letterIndex={letterIndex}
+//           setLetterIndex={setLetterIndex}
+//         />
+//       </div>
+//     );
+//   });
 
-  console.log(useSelector(selectRandomLetters));
+//   const numberOfParticles = 550;
 
-  const numberOfLetters = 15;
+//   const particles = useMemo(() => {
+//     return Array.from({ length: numberOfParticles }, (_, index) => {
+//       return (
+//         <RandomParticle fieldWidth={fieldWidth} key={"particle" + index} />
+//       );
+//     });
+//   }, [fieldWidth]);
 
-  const theLetters = Array.from({ length: numberOfLetters }, (_, index) => {
-    return (
-      <div className="letter-lane" key={index}>
-        <Letter
-          fieldWidth={fieldWidth}
-          key={"letter" + index}
-          targetLetter={targetLetter}
-          setTargetLetter={setTargetLetter}
-          letterIndex={letterIndex}
-          setLetterIndex={setLetterIndex}
-        />
-      </div>
-    );
-  });
+//   return (
+//     <>
+//       <h1>Alphabet Practice: {shorterArray}</h1>
+//       <div className="letter-container" ref={fieldRef}>
+//         {theLetters}
+//         {particles}
+//         <canvas id="canvas"></canvas>
+//       </div>
+//       <Link to={"/"}>home</Link>
+//       <ScoreBoard />{" "}
+//     </>
+//   );
+// };
 
-  const numberOfParticles = 550;
+// /////////////
+// //////////
+// /////
+// /////
+// ////
+// //
 
-  const particles = useMemo(() => {
-    return Array.from({ length: numberOfParticles }, (_, index) => {
-      return (
-        <RandomParticle fieldWidth={fieldWidth} key={"particle" + index} />
-      );
-    });
-  }, [fieldWidth]);
+// function Letter({
+//   fieldWidth,
+//   targetLetter,
+//   setTargetLetter,
+//   letterIndex,
+//   setLetterIndex,
+// }) {
+//   const letterRef = useRef();
 
-  return (
-    <>
-      <h1>Alphabet Practice</h1>
-      <div className="letter-container" ref={fieldRef}>
-        {theLetters}
-        {particles}
-        <canvas id="canvas"></canvas>
-      </div>
-      <Link to={"/"}>home</Link>
-      <ScoreBoard />{" "}
-    </>
-  );
-};
+//   const dispatch = useDispatch();
 
-/////////////
-//////////
-/////
-/////
-////
-//
+//   let coloring = useMemo(() => {
+//     return [
+//       { color: "lightblue" },
+//       { color: "cyan" },
+//       { color: "lightblue" },
+//       { color: "cyan" },
+//     ];
+//   }, []);
 
-function Letter({
-  fieldWidth,
-  targetLetter,
-  setTargetLetter,
-  letterIndex,
-  setLetterIndex,
-}) {
-  const letterRef = useRef();
+//   const coloringTiming = {
+//     duration: 3000,
+//     iterations: Infinity,
+//   };
 
-  const dispatch = useDispatch();
+//   const wrongPicking = [{ color: "red" }, { color: "lightred" }];
 
-  let coloring = useMemo(() => {
-    return [
-      { color: "lightblue" },
-      { color: "cyan" },
-      { color: "lightblue" },
-      { color: "cyan" },
-    ];
-  }, []);
+//   const wrongPickingTiming = {
+//     duration: 2000,
+//     direction: "normal",
+//     iterations: 1,
+//   };
 
-  const coloringTiming = {
-    duration: 3000,
-    iterations: Infinity,
-  };
+//   const [movingAnimation, setMovingAnimation] = useState(null);
+//   const [coloringAnimation, setColoringAnimation] = useState(null);
 
-  const wrongPicking = [{ color: "red" }, { color: "lightred" }];
+//   function generateRandomTime() {
+//     let newTime = Math.floor(Math.random() * 3000 + 2000);
+//     return newTime;
+//   }
+//   const randomAlphabetArray = useSelector(selectRandomLetters);
 
-  const wrongPickingTiming = {
-    duration: 2000,
-    direction: "normal",
-    iterations: 1,
-  };
+//   function makeRandomLetter() {
+//     console.log(randomAlphabetArray);
+//     let initialArray = randomAlphabetArray;
+//     let randomNumber = Math.floor(Math.random() * initialArray.length);
+//     let randomLetter = initialArray[randomNumber];
+//     return randomLetter;
+//   }
 
-  const [movingAnimation, setMovingAnimation] = useState(null);
-  const [coloringAnimation, setColoringAnimation] = useState(null);
+//   const [randomLetter, setRandomLetter] = useState(makeRandomLetter());
 
-  function generateRandomTime() {
-    let newTime = Math.floor(Math.random() * 3000 + 2000);
-    return newTime;
-  }
-  const randomAlphabetArray = useSelector(selectRandomLetters);
+//   function makeRandomArray() {
+//     let nextRandomArray = [alphabetArray[letterIndex + 1]];
+//     console.log(targetLetter);
 
-  function makeRandomLetter() {
-    let initialArray = randomAlphabetArray;
-    let randomNumber = Math.floor(Math.random() * initialArray.length);
-    let randomLetter = initialArray[randomNumber];
-    return randomLetter;
-  }
+//     for (let i = 0; i < 1; i++) {
+//       shorterArray = [];
+//       let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+//       while (shorterArray.includes[alphabetArray[randomIndex]]) {
+//         randomIndex = Math.floor(Math.random() * alphabetArray.length);
+//       }
 
-  const [randomLetter, setRandomLetter] = useState(makeRandomLetter());
+//       shorterArray.push(alphabetArray[randomIndex]);
+//     }
+//     console.log("shorterArray after makeRandomArray(): " + shorterArray);
 
-  function makeRandomArray() {
-    let nextRandomArray = [targetLetter];
-    console.log(targetLetter);
+//     nextRandomArray = [...nextRandomArray, shorterArray];
+//     console.log("nextRandomArray: " + nextRandomArray);
+//     dispatch(setRandomLetters(nextRandomArray));
+//     return nextRandomArray;
+//   }
 
-    for (let i = 0; i < 7; i++) {
-      let randomIndex = Math.floor(Math.random() * alphabetArray.length);
-      while (nextRandomArray.includes[alphabetArray[randomIndex]]) {
-        randomIndex = Math.floor(Math.random() * alphabetArray.length);
-      }
+//   function makeRandomStartPoint() {
+//     let randomPoint = Math.floor(Math.random() * 75);
+//     return randomPoint;
+//   }
 
-      nextRandomArray.push(alphabetArray[randomIndex]);
-    }
-    console.log(nextRandomArray);
+//   function makeRandomEndPoint(width) {
+//     let randomPoint = width - Math.floor(Math.random() * width);
+//     let coinToss = Math.random() < 0.5;
+//     if (coinToss) {
+//       return randomPoint;
+//     } else {
+//       return "-" + randomPoint;
+//     }
+//   }
 
-    return nextRandomArray;
-  }
+//   const handleNextIteration = (width) => {
+//     const nextStart = makeRandomStartPoint();
+//     const nextEnd = makeRandomEndPoint(width);
+//     const nextLetter = makeRandomLetter();
+//     console.log(nextLetter);
+//     setRandomLetter(nextLetter);
+//     return { nextStart, nextEnd, nextLetter };
+//   };
 
-  function makeRandomStartPoint() {
-    let randomPoint = Math.floor(Math.random() * 75);
-    return randomPoint;
-  }
+//   const moving = [
+//     { bottom: "-55px", left: handleNextIteration(fieldWidth).nextStart + "px" },
+//     { bottom: "700px", left: handleNextIteration(fieldWidth).nextEnd + "px" },
+//   ];
 
-  function makeRandomEndPoint(width) {
-    let randomPoint = width - Math.floor(Math.random() * width);
-    let coinToss = Math.random() < 0.5;
-    if (coinToss) {
-      return randomPoint;
-    } else {
-      return "-" + randomPoint;
-    }
-  }
+//   const movingTiming = {
+//     duration: generateRandomTime(),
+//     iterations: 1,
+//   };
 
-  useEffect(() => {
-    const handleNextIteration = (width) => {
-      const nextStart = makeRandomStartPoint();
-      const nextEnd = makeRandomEndPoint(width);
-      const nextLetter = makeRandomLetter();
+//   useEffect(() => {
+//     const newMovingAnimation = letterRef.current.animate(moving, movingTiming);
+//     setMovingAnimation(newMovingAnimation);
+//     const newColoringAnimation = letterRef.current.animate(
+//       coloring,
+//       coloringTiming
+//     );
+//     setColoringAnimation(newColoringAnimation);
 
-      setRandomLetter(nextLetter);
+//     // if (fieldWidth && letterRef.current) {
+//     //   handleNextIteration(fieldWidth);
 
-      const moving = [
-        { bottom: "-55px", left: nextStart + "px" },
-        { bottom: "700px", left: nextEnd + "px" },
-      ];
+//     //   return () => {
+//     //     movingAnimation?.cancel();
+//     //     coloringAnimation?.cancel();
+//     //   };
+//     // }
+//     //eslint-disable-next-line
+//   }, [fieldWidth, coloring]);
 
-      const movingTiming = {
-        duration: generateRandomTime(),
-        iterations: 1,
-      };
+//   // newMovingAnimation.onfinish = () => {
+//   //   handleNextIteration(fieldWidth);
 
-      const newMovingAnimation = letterRef.current.animate(
-        moving,
-        movingTiming
-      );
-      newMovingAnimation.onfinish = () => {
-        handleNextIteration(fieldWidth);
-      };
-      setMovingAnimation(newMovingAnimation);
-    };
+//   let score = useSelector(selectScoreSlice);
 
-    const newColoringAnimation = letterRef.current.animate(
-      coloring,
-      coloringTiming
-    );
-    setColoringAnimation(newColoringAnimation);
+//   const handleClick = (e) => {
+//     if (e.target.innerHTML === targetLetter) {
+//       movingAnimation?.pause();
+//       coloringAnimation.pause();
+//       e.target.animate(
+//         [{ color: "greenyellow" }, { color: "greenyellow" }],
+//         coloringTiming
+//       );
 
-    if (fieldWidth && letterRef.current) {
-      handleNextIteration(fieldWidth);
+//       let currentScore = score.currentScore + 1;
+//       if (currentScore === 5) {
+//         dispatch(setScore(0));
+//         setTimeout(() => {
+//           let nextIndex = letterIndex + 1;
+//           if (nextIndex === 25) {
+//             nextIndex = 0;
+//           }
+//           let nextLetter = alphabetArray[nextIndex];
+//           movingAnimation.play();
+//           e.target.animate(coloring, coloringTiming);
+//           setLetterIndex(nextIndex);
+//           setTargetLetter(nextLetter);
+//           setRandomLetters(makeRandomArray());
+//         }, 500);
+//       } else {
+//         dispatch(setScore(currentScore));
+//       }
+//     } else {
+//       e.target.animate(wrongPicking, wrongPickingTiming);
+//     }
+//   };
 
-      return () => {
-        movingAnimation?.cancel();
-        coloringAnimation?.cancel();
-      };
-    }
-    //eslint-disable-next-line
-  }, [fieldWidth, coloring]);
+//   return (
+//     <h1 className="letter" onClick={(e) => handleClick(e)} ref={letterRef}>
+//       {randomLetter}
+//     </h1>
+//   );
+// }
 
-  let score = useSelector(selectScoreSlice);
+// ///////////
+// //////////
+// /////////
+// ////////
+// //////
 
-  const handleClick = (e) => {
-    if (e.target.innerHTML === targetLetter) {
-      movingAnimation?.pause();
-      coloringAnimation.pause();
-      e.target.animate(
-        [{ color: "greenyellow" }, { color: "greenyellow" }],
-        coloringTiming
-      );
+// const RandomParticle = ({ fieldWidth }) => {
+//   const starRef = useRef();
 
-      let currentScore = score.currentScore + 1;
-      if (currentScore === 5) {
-        dispatch(setScore(0));
-        setTimeout(() => {
-          let nextIndex = letterIndex + 1;
-          if (nextIndex === 25) {
-            nextIndex = 0;
-          }
-          let nextLetter = alphabetArray[nextIndex];
-          movingAnimation.play();
-          e.target.animate(coloring, coloringTiming);
-          setLetterIndex(nextIndex);
-          setTargetLetter(nextLetter);
-          setRandomLetters(makeRandomArray());
-        }, 500);
-      } else {
-        dispatch(setScore(currentScore));
-      }
-    } else {
-      e.target.animate(wrongPicking, wrongPickingTiming);
-    }
-  };
+//   let randomX = Math.floor(Math.random() * fieldWidth - 2);
+//   let randomY = Math.floor(Math.random() * 720);
+//   let randomTransparency = Math.random();
+//   let randomDuration = Math.floor(Math.random() * 2000 + 2000);
 
-  return (
-    <h1 className="letter" onClick={(e) => handleClick(e)} ref={letterRef}>
-      {randomLetter}
-    </h1>
-  );
-}
+//   let randomWidthHeight = Math.floor(Math.random() * 4);
 
-///////////
-//////////
-/////////
-////////
-//////
+//   let style = {
+//     position: "absolute",
+//     left: randomX + "px",
+//     top: randomY + "px",
+//     opacity: randomTransparency,
+//     width: randomWidthHeight,
+//     height: randomWidthHeight,
+//   };
 
-const RandomParticle = ({ fieldWidth }) => {
-  const starRef = useRef();
+//   const starShining = [{ opacity: randomTransparency }, { opacity: 0.2 }];
 
-  let randomX = Math.floor(Math.random() * fieldWidth - 2);
-  let randomY = Math.floor(Math.random() * 720);
-  let randomTransparency = Math.random();
-  let randomDuration = Math.floor(Math.random() * 2000 + 2000);
+//   const starShiningTiming = {
+//     duration: randomDuration,
+//     iterations: Infinity,
+//     direction: "alternate",
+//   };
 
-  let randomWidthHeight = Math.floor(Math.random() * 4);
+//   if (starRef.current) {
+//     starRef.current.animate(starShining, starShiningTiming);
+//   }
 
-  let style = {
-    position: "absolute",
-    left: randomX + "px",
-    top: randomY + "px",
-    opacity: randomTransparency,
-    width: randomWidthHeight,
-    height: randomWidthHeight,
-  };
+//   return <div className="particle" style={style} ref={starRef}></div>;
+// };
 
-  const starShining = [{ opacity: randomTransparency }, { opacity: 0.2 }];
+// //////
+// /////
+// ///
+// ///
+// //
 
-  const starShiningTiming = {
-    duration: randomDuration,
-    iterations: Infinity,
-    direction: "alternate",
-  };
+// const ScoreBoard = () => {
+//   const stateScore = useSelector(selectScoreSlice);
+//   return (
+//     <div>
+//       {stateScore.currentScore}
+//       {alphabetArray[0]}
+//     </div>
+//   );
+// };
 
-  if (starRef.current) {
-    starRef.current.animate(starShining, starShiningTiming);
-  }
-
-  return <div className="particle" style={style} ref={starRef}></div>;
-};
-
-//////
-/////
-///
-///
-//
-
-const ScoreBoard = () => {
-  const stateScore = useSelector(selectScoreSlice);
-  return (
-    <div>
-      {stateScore.currentScore}
-      {alphabetArray[0]}
-    </div>
-  );
-};
-
-export default Alphabet;
+// export default Alphabet;
