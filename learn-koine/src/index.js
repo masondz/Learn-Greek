@@ -17,7 +17,7 @@ const Verse = lazy(() => import("./Verse"));
 const Vocabulary = lazy(() => import("./Vocabulary"));
 const Verb = lazy(() => import("./Verb"));
 const About = lazy(() => import("./About"));
-const Alphabet = lazy(() => import("./Alphabet"));
+// const Alphabet = lazy(() => import("./Alphabet"));
 
 const router = createBrowserRouter([
   {
@@ -43,11 +43,6 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <About />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "alphabet",
-    element: <Alphabet />,
     errorElement: <ErrorPage />,
   },
 ]);

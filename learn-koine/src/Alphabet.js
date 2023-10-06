@@ -1,87 +1,86 @@
-import { useEffect, useState, useRef, useMemo } from "react";
-import { Link } from "react-router-dom";
-import "./App.css";
-import {
-  selectScoreSlice,
-  setScore,
-  selectRandomLetters,
-  setRandomLetters,
-} from "./features/alphabetSlice";
-import { useSelector, useDispatch } from "react-redux";
+// import { useEffect, useState, useRef, useMemo } from "react";
+// import { Link } from "react-router-dom";
+// import "./App.css";
+// import { selectScoreSlice, setScore } from "./features/alphabetSlice";
+// import { useSelector, useDispatch } from "react-redux";
 
-const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
+// const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
 
-let shorterArray = [];
+// let shorterArray = [];
 
-for (let i = 0; i < 1; i++) {
-  let randomIndex = Math.floor(Math.random() * alphabetArray.length);
-  while (shorterArray.includes[alphabetArray[randomIndex]]) {
-    randomIndex = Math.floor(Math.random() * alphabetArray.length);
-  }
+// for (let i = 0; i < 1; i++) {
+//   let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+//   while (shorterArray.includes[alphabetArray[randomIndex]]) {
+//     randomIndex = Math.floor(Math.random() * alphabetArray.length);
+//   }
 
-  shorterArray.push(alphabetArray[randomIndex]);
-}
+//   shorterArray.push(alphabetArray[randomIndex]);
+// }
 
-const Alphabet = () => {
-  const fieldRef = useRef();
-
-  return (
-    <>
-      <h1>Alphabet Practice: {shorterArray}</h1>
-      <div className="letter-container" ref={fieldRef}>
-        <Letter />
-        <canvas id="canvas"></canvas>
-      </div>
-    </>
-  );
-};
-
-const Letter = () => {
-  return <h1>letter</h1>;
-};
-
-export default Alphabet;
-
-// const alphabetNameArray = [
-//   "Alpha",
-//   "Beta",
-//   "Gamma",
-//   "Delta",
-//   "Epsilon",
-//   "Zeta",
-//   "Eta",
-//   "Theta",
-//   "Iota",
-//   "Kappa",
-//   "Lambda",
-//   "Mu",
-//   "Nu",
-//   "Xi",
-//   "Omicron",
-//   "Pi",
-//   "Rho",
-//   "Sigma",
-//   "Tau",
-//   "Upsilon",
-//   "Phi",
-//   "Chi",
-//   "Psi",
-//   "Omega",
-// ];
-////////
-//////
-/////
-///
-//
-//Parent component. It passes its width to the child
 // const Alphabet = () => {
 //   const fieldRef = useRef();
 
+//   return (
+//     <>
+//       <h1>Alphabet Practice: {shorterArray}</h1>
+//       <div className="letter-container" ref={fieldRef}>
+//         <Letter />
+//         <canvas id="canvas"></canvas>
+//       </div>
+//     </>
+//   );
+// };
+
+// const Letter = () => {
+//   return <h1>letter</h1>;
+// };
+
+// export default Alphabet;
+
+// // const alphabetNameArray = [
+// //   "Alpha",
+// //   "Beta",
+// //   "Gamma",
+// //   "Delta",
+// //   "Epsilon",
+// //   "Zeta",
+// //   "Eta",
+// //   "Theta",
+// //   "Iota",
+// //   "Kappa",
+// //   "Lambda",
+// //   "Mu",
+// //   "Nu",
+// //   "Xi",
+// //   "Omicron",
+// //   "Pi",
+// //   "Rho",
+// //   "Sigma",
+// //   "Tau",
+// //   "Upsilon",
+// //   "Phi",
+// //   "Chi",
+// //   "Psi",
+// //   "Omega",
+// // ];
+// ////////
+// //////
+// /////
+// ///
+// //
+// //Parent component. It passes its width to the child
+// const Alphabet = () => {
+//   const fieldRef = useRef();
+
+// //   const [letterIndex, setLetterIndex] = useState(0);
+// //   const [fieldWidth, setFieldWidth] = useState("");
+// //   const [targetLetter, setTargetLetter] = useState("α");
 //   const [letterIndex, setLetterIndex] = useState(0);
 //   const [fieldWidth, setFieldWidth] = useState("");
-//   const [targetLetter, setTargetLetter] = useState("α");
+//   const [targetLetter, setTargetLetter] = useState(alphabetArray[letterIndex]);
+//   const [masterRandomLetters, setMasterRandomLetters] = useState([]);
 
-//   const dispatch = useDispatch();
+// //   const dispatch = useDispatch();
 
 //   useEffect(() => {
 //     setFieldWidth(fieldRef.current.getBoundingClientRect().width);
@@ -92,7 +91,61 @@ export default Alphabet;
 //     dispatch(setRandomLetters(firstRandomArray));
 //   }, [fieldWidth, targetLetter, dispatch]);
 
-//   // console.log(useSelector(selectRandomLetters));
+// //   // console.log(useSelector(selectRandomLetters));
+
+// //   const numberOfLetters = 3;
+
+// //   const theLetters = Array.from({ length: numberOfLetters }, (_, index) => {
+// //     return (
+// //       <div className="letter-lane" key={index}>
+// //         <Letter
+// //           fieldWidth={fieldWidth}
+// //           key={"letter" + index}
+// //           targetLetter={targetLetter}
+// //           setTargetLetter={setTargetLetter}
+// //           letterIndex={letterIndex}
+// //           setLetterIndex={setLetterIndex}
+// //         />
+// //       </div>
+// //     );
+// //   });
+
+// //   const numberOfParticles = 550;
+
+// //   const particles = useMemo(() => {
+// //     return Array.from({ length: numberOfParticles }, (_, index) => {
+// //       return (
+// //         <RandomParticle fieldWidth={fieldWidth} key={"particle" + index} />
+// //       );
+// //     });
+// //   }, [fieldWidth]);
+
+// //   return (
+// //     <>
+// //       <h1>Alphabet Practice: {shorterArray}</h1>
+// //       <div className="letter-container" ref={fieldRef}>
+// //         {theLetters}
+// //         {particles}
+// //         <canvas id="canvas"></canvas>
+// //       </div>
+// //       <Link to={"/"}>home</Link>
+// //       <ScoreBoard />{" "}
+// //     </>
+// //   );
+// // };
+//     console.log("alphabet parent rendered.");
+//     let firstRandomArray = [targetLetter];
+
+//   //   for (let i = 0; i < 1; i++) {
+//   //     let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+//   //     while (firstRandomArray.includes[alphabetArray[randomIndex]]) {
+//   //       randomIndex = Math.floor(Math.random() * alphabetArray.length);
+//   //     }
+
+//   //     firstRandomArray.push(alphabetArray[randomIndex]);
+//   //   }
+//   //   setMasterRandomLetters(firstRandomArray);
+//   // }, [fieldWidth, targetLetter, dispatch]);
 
 //   const numberOfLetters = 3;
 
@@ -106,176 +159,293 @@ export default Alphabet;
 //           setTargetLetter={setTargetLetter}
 //           letterIndex={letterIndex}
 //           setLetterIndex={setLetterIndex}
+//           masterRandomLetters={masterRandomLetters}
+//           setMasterRandomLetters={setMasterRandomLetters}
 //         />
 //       </div>
 //     );
 //   });
 
-//   const numberOfParticles = 550;
+// // /////////////
+// // //////////
+// // /////
+// // /////
+// // ////
+// // //
 
-//   const particles = useMemo(() => {
-//     return Array.from({ length: numberOfParticles }, (_, index) => {
-//       return (
-//         <RandomParticle fieldWidth={fieldWidth} key={"particle" + index} />
-//       );
-//     });
-//   }, [fieldWidth]);
+// // function Letter({
+// //   fieldWidth,
+// //   targetLetter,
+// //   setTargetLetter,
+// //   letterIndex,
+// //   setLetterIndex,
+// // }) {
+// //   const letterRef = useRef();
 
+// //   const dispatch = useDispatch();
 //   return (
 //     <>
-//       <h1>Alphabet Practice: {shorterArray}</h1>
+//       <h1>Alphabet Practice</h1>
 //       <div className="letter-container" ref={fieldRef}>
 //         {theLetters}
 //         {particles}
 //         <canvas id="canvas"></canvas>
 //       </div>
 //       <Link to={"/"}>home</Link>
-//       <ScoreBoard />{" "}
+//       <ScoreBoard masterRandomLetters={masterRandomLetters} />{" "}
 //     </>
 //   );
 // };
 
-// /////////////
-// //////////
-// /////
-// /////
-// ////
-// //
+// //   let coloring = useMemo(() => {
+// //     return [
+// //       { color: "lightblue" },
+// //       { color: "cyan" },
+// //       { color: "lightblue" },
+// //       { color: "cyan" },
+// //     ];
+// //   }, []);
 
+// //   const coloringTiming = {
+// //     duration: 3000,
+// //     iterations: Infinity,
+// //   };
 // function Letter({
 //   fieldWidth,
 //   targetLetter,
 //   setTargetLetter,
 //   letterIndex,
 //   setLetterIndex,
+//   masterRandomLetters,
+//   setMasterRandomLetters,
 // }) {
 //   const letterRef = useRef();
 
-//   const dispatch = useDispatch();
+// //   const wrongPicking = [{ color: "red" }, { color: "lightred" }];
 
-//   let coloring = useMemo(() => {
-//     return [
-//       { color: "lightblue" },
-//       { color: "cyan" },
-//       { color: "lightblue" },
-//       { color: "cyan" },
-//     ];
-//   }, []);
+// //   const wrongPickingTiming = {
+// //     duration: 2000,
+// //     direction: "normal",
+// //     iterations: 1,
+// //   };
 
-//   const coloringTiming = {
-//     duration: 3000,
-//     iterations: Infinity,
-//   };
+// //   const [movingAnimation, setMovingAnimation] = useState(null);
+// //   const [coloringAnimation, setColoringAnimation] = useState(null);
 
-//   const wrongPicking = [{ color: "red" }, { color: "lightred" }];
+// //   function generateRandomTime() {
+// //     let newTime = Math.floor(Math.random() * 3000 + 2000);
+// //     return newTime;
+// //   }
+// //   const randomAlphabetArray = useSelector(selectRandomLetters);
 
-//   const wrongPickingTiming = {
-//     duration: 2000,
-//     direction: "normal",
-//     iterations: 1,
-//   };
+// //   function makeRandomLetter() {
+// //     console.log(randomAlphabetArray);
+// //     let initialArray = randomAlphabetArray;
+// //     let randomNumber = Math.floor(Math.random() * initialArray.length);
+// //     let randomLetter = initialArray[randomNumber];
+// //     return randomLetter;
+// //   }
 
-//   const [movingAnimation, setMovingAnimation] = useState(null);
-//   const [coloringAnimation, setColoringAnimation] = useState(null);
+// //   const [randomLetter, setRandomLetter] = useState(makeRandomLetter());
 
+// //   function makeRandomArray() {
+// //     let nextRandomArray = [alphabetArray[letterIndex + 1]];
+// //     console.log(targetLetter);
+
+// //     for (let i = 0; i < 1; i++) {
+// //       shorterArray = [];
+// //       let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+// //       while (shorterArray.includes[alphabetArray[randomIndex]]) {
+// //         randomIndex = Math.floor(Math.random() * alphabetArray.length);
+// //       }
+
+// //       shorterArray.push(alphabetArray[randomIndex]);
+// //     }
+// //     console.log("shorterArray after makeRandomArray(): " + shorterArray);
+
+// //     nextRandomArray = [...nextRandomArray, shorterArray];
+// //     console.log("nextRandomArray: " + nextRandomArray);
+// //     dispatch(setRandomLetters(nextRandomArray));
+// //     return nextRandomArray;
+// //   }
+
+// //   function makeRandomStartPoint() {
+// //     let randomPoint = Math.floor(Math.random() * 75);
+// //     return randomPoint;
+// //   }
+
+// //   function makeRandomEndPoint(width) {
+// //     let randomPoint = width - Math.floor(Math.random() * width);
+// //     let coinToss = Math.random() < 0.5;
+// //     if (coinToss) {
+// //       return randomPoint;
+// //     } else {
+// //       return "-" + randomPoint;
+// //     }
+// //   }
+
+// //   const handleNextIteration = (width) => {
+// //     const nextStart = makeRandomStartPoint();
+// //     const nextEnd = makeRandomEndPoint(width);
+// //     const nextLetter = makeRandomLetter();
+// //     console.log(nextLetter);
+// //     setRandomLetter(nextLetter);
+// //     return { nextStart, nextEnd, nextLetter };
+// //   };
 //   function generateRandomTime() {
 //     let newTime = Math.floor(Math.random() * 3000 + 2000);
 //     return newTime;
 //   }
-//   const randomAlphabetArray = useSelector(selectRandomLetters);
 
-//   function makeRandomLetter() {
-//     console.log(randomAlphabetArray);
-//     let initialArray = randomAlphabetArray;
-//     let randomNumber = Math.floor(Math.random() * initialArray.length);
-//     let randomLetter = initialArray[randomNumber];
-//     return randomLetter;
-//   }
+//   const [shownLetter, setShownLetter] = useState("j");
 
-//   const [randomLetter, setRandomLetter] = useState(makeRandomLetter());
+// //   const moving = [
+// //     { bottom: "-55px", left: handleNextIteration(fieldWidth).nextStart + "px" },
+// //     { bottom: "700px", left: handleNextIteration(fieldWidth).nextEnd + "px" },
+// //   ];
 
-//   function makeRandomArray() {
-//     let nextRandomArray = [alphabetArray[letterIndex + 1]];
+// //   const movingTiming = {
+// //     duration: generateRandomTime(),
+// //     iterations: 1,
+// //   };
+
+// //   useEffect(() => {
+// //     const newMovingAnimation = letterRef.current.animate(moving, movingTiming);
+// //     setMovingAnimation(newMovingAnimation);
+// //     const newColoringAnimation = letterRef.current.animate(
+// //       coloring,
+// //       coloringTiming
+// //     );
+// //     setColoringAnimation(newColoringAnimation);
+
+// //     // if (fieldWidth && letterRef.current) {
+// //     //   handleNextIteration(fieldWidth);
+
+// //     //   return () => {
+// //     //     movingAnimation?.cancel();
+// //     //     coloringAnimation?.cancel();
+// //     //   };
+// //     // }
+// //     //eslint-disable-next-line
+// //   }, [fieldWidth, coloring]);
+
+// //   // newMovingAnimation.onfinish = () => {
+// //   //   handleNextIteration(fieldWidth);
+
+// //   let score = useSelector(selectScoreSlice);
+
+// //   const handleClick = (e) => {
+// //     if (e.target.innerHTML === targetLetter) {
+// //       movingAnimation?.pause();
+// //       coloringAnimation.pause();
+// //       e.target.animate(
+// //         [{ color: "greenyellow" }, { color: "greenyellow" }],
+// //         coloringTiming
+// //       );
+
+// //       let currentScore = score.currentScore + 1;
+// //       if (currentScore === 5) {
+// //         dispatch(setScore(0));
+// //         setTimeout(() => {
+// //           let nextIndex = letterIndex + 1;
+// //           if (nextIndex === 25) {
+// //             nextIndex = 0;
+// //           }
+// //           let nextLetter = alphabetArray[nextIndex];
+// //           movingAnimation.play();
+// //           e.target.animate(coloring, coloringTiming);
+// //           setLetterIndex(nextIndex);
+// //           setTargetLetter(nextLetter);
+// //           setRandomLetters(makeRandomArray());
+// //         }, 500);
+// //       } else {
+// //         dispatch(setScore(currentScore));
+// //       }
+// //     } else {
+// //       e.target.animate(wrongPicking, wrongPickingTiming);
+// //     }
+// //   };
+//   function makeRandomArray(theTarget = targetLetter) {
 //     console.log(targetLetter);
+//     let nextRandomArray = [theTarget];
 
 //     for (let i = 0; i < 1; i++) {
-//       shorterArray = [];
 //       let randomIndex = Math.floor(Math.random() * alphabetArray.length);
-//       while (shorterArray.includes[alphabetArray[randomIndex]]) {
+//       while (nextRandomArray.includes[alphabetArray[randomIndex]]) {
 //         randomIndex = Math.floor(Math.random() * alphabetArray.length);
 //       }
 
-//       shorterArray.push(alphabetArray[randomIndex]);
+//       nextRandomArray.push(alphabetArray[randomIndex]);
 //     }
-//     console.log("shorterArray after makeRandomArray(): " + shorterArray);
 
-//     nextRandomArray = [...nextRandomArray, shorterArray];
-//     console.log("nextRandomArray: " + nextRandomArray);
-//     dispatch(setRandomLetters(nextRandomArray));
 //     return nextRandomArray;
 //   }
 
-//   function makeRandomStartPoint() {
-//     let randomPoint = Math.floor(Math.random() * 75);
-//     return randomPoint;
+//   function makeRandomLetter(sourceArray) {
+//     let randomNumber = Math.floor(Math.random() * sourceArray.length);
+//     let randomLetter = sourceArray[randomNumber];
+//     return randomLetter;
 //   }
 
-//   function makeRandomEndPoint(width) {
-//     let randomPoint = width - Math.floor(Math.random() * width);
-//     let coinToss = Math.random() < 0.5;
-//     if (coinToss) {
-//       return randomPoint;
-//     } else {
-//       return "-" + randomPoint;
-//     }
-//   }
-
-//   const handleNextIteration = (width) => {
+//   const handleNextIteration = (width, passedLetter) => {
+//     const nextIterationArray = makeRandomArray(passedLetter);
 //     const nextStart = makeRandomStartPoint();
 //     const nextEnd = makeRandomEndPoint(width);
-//     const nextLetter = makeRandomLetter();
-//     console.log(nextLetter);
-//     setRandomLetter(nextLetter);
-//     return { nextStart, nextEnd, nextLetter };
-//   };
+//     const nextLetter = makeRandomLetter(nextIterationArray);
 
-//   const moving = [
-//     { bottom: "-55px", left: handleNextIteration(fieldWidth).nextStart + "px" },
-//     { bottom: "700px", left: handleNextIteration(fieldWidth).nextEnd + "px" },
-//   ];
+//     setShownLetter(nextLetter);
 
-//   const movingTiming = {
-//     duration: generateRandomTime(),
-//     iterations: 1,
+//     const moving = [
+//       { bottom: "-55px", left: nextStart + "px" },
+//       { bottom: "700px", left: nextEnd + "px" },
+//     ];
+
+//     const movingTiming = {
+//       duration: generateRandomTime(),
+//       iterations: 1,
+//     };
+
+//     const newMovingAnimation = letterRef.current.animate(moving, movingTiming);
+//     newMovingAnimation.onfinish = () => {
+//       handleNextIteration(fieldWidth);
+//     };
+//     setMovingAnimation(newMovingAnimation);
 //   };
 
 //   useEffect(() => {
-//     const newMovingAnimation = letterRef.current.animate(moving, movingTiming);
-//     setMovingAnimation(newMovingAnimation);
 //     const newColoringAnimation = letterRef.current.animate(
 //       coloring,
 //       coloringTiming
 //     );
 //     setColoringAnimation(newColoringAnimation);
 
-//     // if (fieldWidth && letterRef.current) {
-//     //   handleNextIteration(fieldWidth);
+//     if (fieldWidth && letterRef.current) {
+//       handleNextIteration(fieldWidth, targetLetter);
 
-//     //   return () => {
-//     //     movingAnimation?.cancel();
-//     //     coloringAnimation?.cancel();
-//     //   };
-//     // }
-//     //eslint-disable-next-line
-//   }, [fieldWidth, coloring]);
+// //   return (
+// //     <h1 className="letter" onClick={(e) => handleClick(e)} ref={letterRef}>
+// //       {randomLetter}
+// //     </h1>
+// //   );
+// // }
 
-//   // newMovingAnimation.onfinish = () => {
-//   //   handleNextIteration(fieldWidth);
+// // ///////////
+// // //////////
+// // /////////
+// // ////////
+// // //////
 
-//   let score = useSelector(selectScoreSlice);
+// // const RandomParticle = ({ fieldWidth }) => {
+// //   const starRef = useRef();
 
+// //   let randomX = Math.floor(Math.random() * fieldWidth - 2);
+// //   let randomY = Math.floor(Math.random() * 720);
+// //   let randomTransparency = Math.random();
+// //   let randomDuration = Math.floor(Math.random() * 2000 + 2000);
+
+// //   let randomWidthHeight = Math.floor(Math.random() * 4);
 //   const handleClick = (e) => {
-//     if (e.target.innerHTML === targetLetter) {
+//     if (e.target.innerHTML === targetLetter || e.target.innerHTML === "α") {
 //       movingAnimation?.pause();
 //       coloringAnimation.pause();
 //       e.target.animate(
@@ -296,7 +466,8 @@ export default Alphabet;
 //           e.target.animate(coloring, coloringTiming);
 //           setLetterIndex(nextIndex);
 //           setTargetLetter(nextLetter);
-//           setRandomLetters(makeRandomArray());
+//           setMasterRandomLetters(makeRandomArray(nextLetter));
+//           // dispatch(setRandomLetters(makeRandomArray()));
 //         }, 500);
 //       } else {
 //         dispatch(setScore(currentScore));
@@ -308,43 +479,50 @@ export default Alphabet;
 
 //   return (
 //     <h1 className="letter" onClick={(e) => handleClick(e)} ref={letterRef}>
-//       {randomLetter}
+//       {shownLetter}
 //     </h1>
 //   );
 // }
 
-// ///////////
-// //////////
-// /////////
-// ////////
-// //////
+// //   let style = {
+// //     position: "absolute",
+// //     left: randomX + "px",
+// //     top: randomY + "px",
+// //     opacity: randomTransparency,
+// //     width: randomWidthHeight,
+// //     height: randomWidthHeight,
+// //   };
 
-// const RandomParticle = ({ fieldWidth }) => {
-//   const starRef = useRef();
+// //   const starShining = [{ opacity: randomTransparency }, { opacity: 0.2 }];
 
-//   let randomX = Math.floor(Math.random() * fieldWidth - 2);
-//   let randomY = Math.floor(Math.random() * 720);
-//   let randomTransparency = Math.random();
-//   let randomDuration = Math.floor(Math.random() * 2000 + 2000);
+// //   const starShiningTiming = {
+// //     duration: randomDuration,
+// //     iterations: Infinity,
+// //     direction: "alternate",
+// //   };
 
-//   let randomWidthHeight = Math.floor(Math.random() * 4);
+// //   if (starRef.current) {
+// //     starRef.current.animate(starShining, starShiningTiming);
+// //   }
 
-//   let style = {
-//     position: "absolute",
-//     left: randomX + "px",
-//     top: randomY + "px",
-//     opacity: randomTransparency,
-//     width: randomWidthHeight,
-//     height: randomWidthHeight,
-//   };
+// //   return <div className="particle" style={style} ref={starRef}></div>;
+// // };
 
-//   const starShining = [{ opacity: randomTransparency }, { opacity: 0.2 }];
+// // //////
+// // /////
+// // ///
+// // ///
+// // //
 
-//   const starShiningTiming = {
-//     duration: randomDuration,
-//     iterations: Infinity,
-//     direction: "alternate",
-//   };
+// // const ScoreBoard = () => {
+// //   const stateScore = useSelector(selectScoreSlice);
+// //   return (
+// //     <div>
+// //       {stateScore.currentScore}
+// //       {alphabetArray[0]}
+// //     </div>
+// //   );
+// // };
 
 //   if (starRef.current) {
 //     starRef.current.animate(starShining, starShiningTiming);
@@ -359,12 +537,13 @@ export default Alphabet;
 // ///
 // //
 
-// const ScoreBoard = () => {
+// const ScoreBoard = ({ masterRandomLetters }) => {
 //   const stateScore = useSelector(selectScoreSlice);
 //   return (
 //     <div>
 //       {stateScore.currentScore}
 //       {alphabetArray[0]}
+//       {masterRandomLetters[0]}
 //     </div>
 //   );
 // };
