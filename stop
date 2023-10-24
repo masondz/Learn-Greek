@@ -1,0 +1,495 @@
+[33mcommit c08dfcfbfdcf619c922b7c3055c81a4917f38340[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Oct 6 01:28:25 2023 -0500
+
+    fix 'kat' and vocative positioning
+
+[33mcommit e150c64ace359789d26f22bf84f95058298c0e27[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Sep 15 01:41:22 2023 -0500
+
+    added back random letter array
+
+[33mcommit 3cd9224899932d7cdfa33eb9638324c518c7afa1[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Sep 15 00:47:45 2023 -0500
+
+    add useMemo to alphabet particles
+
+[33mcommit 5b00b8e96c25ebb32b0e15042a2d73ce843b291d[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Sep 14 04:12:00 2023 -0500
+
+    go back to simpler state
+
+[33mcommit e1e6089c7fc4d51a67e29d95649c41e66f09f32b[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Sep 5 01:55:07 2023 -0500
+
+    begin randomizing smaller array
+
+[33mcommit 33562ff67b81d19b684374d00f9497fddda5f6bb[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Sep 5 01:05:12 2023 -0500
+
+    remove functions and comments
+
+[33mcommit d56aefa19133409006a038fee27bd8df14b34743[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Sep 5 01:03:41 2023 -0500
+
+    saving unsaved files
+
+[33mcommit e67c56f4880c516164c1036bab7bf6c68a1a9897[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Sep 5 01:02:04 2023 -0500
+
+    finished fixing unsearchable words
+
+[33mcommit 8ad0fb5e3f4c3fda1009e5e563426cb5566afe7f[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Sep 4 01:28:30 2023 -0500
+
+    fixed more unsearchabel words. 58 remaining
+
+[33mcommit eac688957a2087bde2a220342038ce35f6795360[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 31 01:05:52 2023 -0500
+
+    fix more unsearchable words. 122 remain
+
+[33mcommit 19a8cd49e4a8e32ff85c61b8b4609f3b7a9bddcc[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Wed Aug 30 01:27:33 2023 -0500
+
+    added more missing words. 175 left
+
+[33mcommit 3ccf858f48f84929c128c7eaac22035360cf7fad[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 29 03:19:06 2023 -0500
+
+    update more missing words. 235 left
+
+[33mcommit ee638582f1a7ac904a2b1773e74058a6a8d48f00[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Aug 28 02:18:56 2023 -0500
+
+    fixed additional missing words
+
+[33mcommit cda03d8d0ef1f85b7c44c764ac16cf80d8c43905[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Aug 28 00:46:07 2023 -0500
+
+    update some unsearchable words
+
+[33mcommit 39fd75367d2b641fd3150767e192a9f0e175b6d8[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 25 06:19:43 2023 -0500
+
+    update lexicon and add more letters to alphabet game
+
+[33mcommit c90c57e4125987d3ba0ca81b70b64b3a744ad70f[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 25 00:34:50 2023 -0500
+
+    added κριθῶσι to lexicon
+
+[33mcommit 525af6fb22334ea9b2597efb76af415cc52eba5b[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 24 03:07:39 2023 -0500
+
+    made state for scoring
+
+[33mcommit 56f04dcb7d8b849f670f1b2bddee3ecf60b84193[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Wed Aug 23 01:47:11 2023 -0500
+
+    handle wrong letter pick
+
+[33mcommit dc84768b58da93f7abc8a5af7d3703cf85d52d1d[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Wed Aug 23 01:21:28 2023 -0500
+
+    add shining stars
+
+[33mcommit 693a09199ecb33460db30af0217a81c3bf4822dd[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 22 06:16:35 2023 -0500
+
+    update animation'
+
+[33mcommit fd0ab9349c02b66694c49d40b911998c60a71e7a[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 18 01:30:31 2023 -0500
+
+    turn the letters green
+
+[33mcommit f9cb56783560a927b1240df1064b0665125afc6f[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 18 00:38:53 2023 -0500
+
+    fix some deponent verbs
+
+[33mcommit 537b70863f98b7151e8dd4adbcd4d1f434c81e04[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 17 06:05:24 2023 -0500
+
+    mess with animations some more
+
+[33mcommit 5f04afc09c3f8e15e56784209d3adba3c1891904[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Wed Aug 16 03:26:06 2023 -0500
+
+    use js animation api for moving letters
+
+[33mcommit 90e0665ba10f645a80aba4d1545f482a61cecff0[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 15 01:39:35 2023 -0500
+
+    mess with animation some more
+
+[33mcommit 99eb20e9a37fa98fbc7404407d51296cd9ac9eea[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Aug 14 04:09:04 2023 -0500
+
+    assign random start point
+
+[33mcommit 6a5a74250a380a0ae48433e1a467c9fd8b64f872[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Sat Aug 12 17:09:30 2023 -0500
+
+    pause on certain clicked letter
+
+[33mcommit 4973838c3b5136463353611b9de9f518afe11ed2[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Sat Aug 12 01:05:15 2023 -0500
+
+    experiment with reseting animation
+
+[33mcommit 4581b7c244cf05c8ba72f356b52e1e8901bdb666[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 11 06:08:38 2023 -0500
+
+    remove element on click
+
+[33mcommit ad23df2b23f90fba20c4bdb4df1edeeef7cd4751[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 11 04:06:52 2023 -0500
+
+    center random letters in lane'
+
+[33mcommit 183261304fc02e8c3bb57c38f631fb02f539b29c[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 11 02:37:23 2023 -0500
+
+    begin alphabet catch game
+
+[33mcommit ec930343f1068b7623a95494b9d6bc47bd5593ad[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 10 09:20:01 2023 -0500
+
+    fix verb menu width
+
+[33mcommit 89d09a12f1569e2b4ca63d4d191fed7c53a338cb[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 10 09:16:00 2023 -0500
+
+    fix perfect verb choice getting imperfect verbs
+
+[33mcommit 330e5ebd63b9c74ea409b6ad3d2f74c0359f2f06[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 10 00:17:05 2023 -0500
+
+    not sure
+
+[33mcommit 6183d291ae3083c07cbd5de5e4a49d9077cbc1bb[m
+Merge: 3135a00 83e316d
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 10 00:12:55 2023 -0500
+
+    Merge branch 'master' of https://github.com/masondz/Learn-Greek
+
+[33mcommit 3135a00ed1382a958d27a38c792ad6655ae99327[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 10 00:12:42 2023 -0500
+
+    adjust more menu font sizes'
+
+[33mcommit ec48841c8fb4887cc60c5c9dbc59214f88e30f4f[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 10 00:05:43 2023 -0500
+
+    adjust verse menu
+
+[33mcommit 83e316d7aefab65022abe23e70e7de7df2c159ec[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 8 07:16:29 2023 -0500
+
+    add remaining active indicative forms
+
+[33mcommit e7008e5986d9c06954c58a6ddd754251631d733a[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 8 06:09:23 2023 -0500
+
+    add tips to help menu
+
+[33mcommit 8830e63afa11834156ebc397dfb5443d0148c656[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Aug 7 01:38:09 2023 -0500
+
+    add false state to correctCount in Verb
+
+[33mcommit 37d677ba4cfdf8ee47a65db756372210ab6a2a8d[m
+Merge: e34be25 1a9645a
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Aug 7 01:25:47 2023 -0500
+
+    Merge branch 'master' of https://github.com/masondz/Learn-Greek
+
+[33mcommit e34be25e750a4bdb96a94d0a909e0ac2fe5a4936[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Aug 7 01:25:28 2023 -0500
+
+    update 2nd aorist active indicative definitions
+
+[33mcommit 1a9645a0e53e2ddcd0e4d701eab7c39c363889e1[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Sun Aug 6 15:53:19 2023 -0500
+
+    lifted correctCount setCorrectCoutn
+
+[33mcommit e8de4bfaa4177660a3c976581d4941df41416c7c[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Sun Aug 6 15:13:03 2023 -0500
+
+    add aorist to second ending check
+
+[33mcommit ac259144ad61ff7abc1382c4642244690d8f98d6[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 4 00:43:07 2023 -0500
+
+    additional checks to random verb
+
+[33mcommit c9dc75583ab3bb5847725d9942b088373db8c95e[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 4 00:22:21 2023 -0500
+
+    added spacing in description
+
+[33mcommit 96c4d21051adc5896e12d32263f5b457d9629456[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Fri Aug 4 00:03:03 2023 -0500
+
+    change some stuff
+
+[33mcommit d4eebdfda15a5fe72b818a9a0450183aa90fe959[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 23:48:30 2023 -0500
+
+    try sending more images
+
+[33mcommit 366dad3b6a39bc4a07dfea168fcbd5c1c5258334[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 23:45:49 2023 -0500
+
+    add some meta tags
+
+[33mcommit 4afb7a8fdc0267f02b539eb14870272168627673[m
+Merge: a11046f 5410484
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 23:21:04 2023 -0500
+
+    Merge branch 'master' of https://github.com/masondz/Learn-Greek
+
+[33mcommit a11046f547f08a5632cbf83cbf65cd2c1afbe704[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 23:19:30 2023 -0500
+
+    try new favicons
+
+[33mcommit 5410484d4ef2610754e458d21564ad64129ee190[m
+Author: David Zachary Mason <dzacharymason@gmail.com>
+Date:   Thu Aug 3 23:11:39 2023 -0500
+
+    Delete didakeyLogo.png
+
+[33mcommit d09a0ed9045ea10eb31802672abd16107ca00328[m
+Author: David Zachary Mason <dzacharymason@gmail.com>
+Date:   Thu Aug 3 06:29:12 2023 -0500
+
+    drag over logo
+
+[33mcommit 99b6ccadce93d312d3dc55977e892b99cb01bf7f[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 06:27:49 2023 -0500
+
+    handle random verb bug
+
+[33mcommit 8d59bfd4a5831214a6e1ff0c4421617c25940a6e[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 01:44:29 2023 -0500
+
+    fix some spelling errors
+
+[33mcommit 35cbfca2e25c5e778d208a35e8f7cb3f3401137d[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 01:29:37 2023 -0500
+
+    change verb styling
+
+[33mcommit c24c31278112abbce43a888d72c82c2b51899ef8[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 01:14:38 2023 -0500
+
+    fix random verb bug
+
+[33mcommit b3a8912d98b8ffd3af83c6ccb7f2b7bccff2be88[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 00:36:23 2023 -0500
+
+    remove border for link
+
+[33mcommit 48bbc62f1b020a0f2a3917e4f67fe8ab3e2a3dc2[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Thu Aug 3 00:32:50 2023 -0500
+
+    a little styling and add github link
+
+[33mcommit d4197be19cad56c67e16cf8988ff38b086b877b7[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Wed Aug 2 23:46:43 2023 -0500
+
+    change favicon logo
+
+[33mcommit 0ac9e143cd213f4e06e234a0b51b2a4c7cae0966[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Wed Aug 2 00:56:33 2023 -0500
+
+    optimized random verb function
+
+[33mcommit 40ba83a8fe8fbf6a9abc484cb4c3bf42d4631ad2[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Wed Aug 2 00:05:28 2023 -0500
+
+    check favicon
+
+[33mcommit 785d739167c3dd5ab9f10ab1939acbfd9af3cac9[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 1 23:59:43 2023 -0500
+
+    begin SEO improvement
+
+[33mcommit aa0778038b9c546177e22b74a3be796dbbce6fdc[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 1 06:14:05 2023 -0500
+
+    change favicon and title
+
+[33mcommit 3926df5e7f7eca8dd461f7414b62463a5148c858[m
+Merge: 36e51f9 228d86b
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 1 06:13:11 2023 -0500
+
+    Merge branch 'master' of https://github.com/masondz/Learn-Greek
+
+[33mcommit 36e51f9b046c9734e55645530ba2620e121c8887[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Tue Aug 1 06:12:44 2023 -0500
+
+    change favicon and title
+
+[33mcommit 228d86bda7817c792dcd4a1dec405332f05013ed[m
+Author: David Zachary Mason <dzacharymason@gmail.com>
+Date:   Mon Jul 31 07:30:30 2023 -0500
+
+    try to make Loading screen dynamic
+
+[33mcommit 3638020e89b879ab42657afff32455dcb69d8953[m
+Author: David Zachary Mason <dzacharymason@gmail.com>
+Date:   Mon Jul 31 07:19:06 2023 -0500
+
+    attempt fixing pluperfect
+
+[33mcommit 7b1e53261a06fd952a4cb3d0a2ca4d9d494c97b3[m
+Author: David Zachary Mason <dzacharymason@gmail.com>
+Date:   Mon Jul 31 07:09:41 2023 -0500
+
+    fix pluperfect check
+
+[33mcommit 046cba15209b3dd600021220f5407a11094f6383[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 06:22:46 2023 -0500
+
+    update pluperfect check
+
+[33mcommit 734becfe2adc6192a016cf17bd469300828c0216[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 06:16:20 2023 -0500
+
+    add pluperfect
+
+[33mcommit f1cb9b179432e1182dd7495484b513069bcbb594[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 03:14:54 2023 -0500
+
+    widen keybar by one pixel
+
+[33mcommit 6da0cc6b231aacd7b05efef7cff8d36d7b424f69[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 02:56:34 2023 -0500
+
+    try different font
+
+[33mcommit 55b7f5b519809a1248c9033bbc68da3169140860[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 02:22:32 2023 -0500
+
+    test delta height
+
+[33mcommit 836b52499f6bbeecdbbe44b9d6b99c052e1f159d[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 02:14:07 2023 -0500
+
+    shift keybar upwards
+
+[33mcommit 3da19bfca36daff4e16835b972a390835dad7399[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 02:06:36 2023 -0500
+
+    try background color for delta
+
+[33mcommit 6fd2e206f15301ad7f7809945193685152968e6e[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 01:56:46 2023 -0500
+
+    declare logo container hight
+
+[33mcommit 25ebc14fd332511eb0a82821dab8c2b23075fa39[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 01:46:17 2023 -0500
+
+    remove top
+
+[33mcommit 1c61509b9670574b320806a4aeb6e9d683e8e81a[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 01:26:47 2023 -0500
+
+    green box position 308
+
+[33mcommit fbcf790db9d5344769ff517a5a3879381240d87c[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 01:21:49 2023 -0500
+
+    test another div
+
+[33mcommit 4dc4e4a560e30eeb2b3e836cb47f35f1f2ca7605[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 00:35:11 2023 -0500
+
+    try line-height
+
+[33mcommit 0d6430590334ca8276186b7c75653310f0018afb[m
+Author: Zach <dzacharymason@gmail.com>
+Date:   Mon Jul 31 00:28:06 2023 -0500
+
+    try position top left for logo
