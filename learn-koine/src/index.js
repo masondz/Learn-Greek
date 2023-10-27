@@ -17,7 +17,7 @@ const Verse = lazy(() => import("./Verse"));
 const Vocabulary = lazy(() => import("./Vocabulary"));
 const Verb = lazy(() => import("./Verb"));
 const About = lazy(() => import("./About"));
-const Alphabet = lazy(() => import("./Alphabet2"));
+const Alphabet = lazy(() => import("./Alphabet3"));
 
 const router = createBrowserRouter([
   {
