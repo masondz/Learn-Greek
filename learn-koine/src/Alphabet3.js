@@ -8,7 +8,7 @@ const Alphabet = () => {
 
   const fieldRef = useRef();
 
-  // const [fieldWidth, setFieldWidth] = useState(1000);
+  // const [shortArray, setShortArray] = useState([]);
 
   useEffect(() => {
     let fieldWidth = fieldRef.current.getBoundingClientRect().width;
@@ -36,7 +36,7 @@ const Alphabet = () => {
     //   }
     // }
 
-    let initialArray = [];
+    let initialArray = [targetLetter];
 
     for (let i = 0; i < 3; i++) {
       let randomIndex = Math.floor(Math.random() * alphabetArray.length);
@@ -53,9 +53,11 @@ const Alphabet = () => {
 
     const config = {
       type: Phaser.AUTO,
-      width: fieldRef.current.getBoundingClientRect().width,
+
+      width: fieldWidth * 0.75,
       height: "75vh",
       parent: "game-field",
+
       scene: {
         preload: preload,
         create: create,
@@ -64,8 +66,9 @@ const Alphabet = () => {
     };
 
     const game = new Phaser.Game(config);
-
+    //749 - 996.61:  470 - 625.38
     const gameState = {
+      shortArray: initialArray,
       letterIndex: 0,
       targetLetter: 0,
       speed: generateRandomSpeed(),
