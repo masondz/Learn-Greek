@@ -12,7 +12,6 @@ const Alphabet = () => {
 
   useEffect(() => {
     let fieldWidth = fieldRef.current.getBoundingClientRect().width;
-    console.log(fieldWidth);
     let letterIndex = 0;
 
     let targetLetter = alphabetArray[letterIndex];
@@ -80,10 +79,12 @@ const Alphabet = () => {
     }
 
     function create() {
-      console.log(config.width);
+      const letters = this.add.group();
+      function generateLetters() {}
+
       this.add.sprite(20, 20, "logo");
       gameState.letter = this.add.text(
-        gameState.startPoint,
+        Phaser.Math.Between(10, config.width - 10),
         600,
         targetLetter,
         {
@@ -122,7 +123,7 @@ const Alphabet = () => {
             fill: "#fff",
           }
         );
-        gameState.letter.y = 500;
+        gameState.letter.y = 600;
       }
     }
 
