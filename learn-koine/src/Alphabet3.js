@@ -31,16 +31,20 @@ const Alphabet = () => {
       this.scene.pause();
     }
 
-    let initialArray = [targetLetter];
+    function makeRandomArray(targetLetter) {
+      let initialArray = [targetLetter];
+      for (let i = 0; i < 5; i++) {
+        let randomIndex = Math.floor(Math.random() * alphabetArray.length);
+        while (initialArray.includes[alphabetArray[randomIndex]]) {
+          randomIndex = Math.floor(Math.random() * alphabetArray.length);
+        }
 
-    for (let i = 0; i < 5; i++) {
-      let randomIndex = Math.floor(Math.random() * alphabetArray.length);
-      while (initialArray.includes[alphabetArray[randomIndex]]) {
-        randomIndex = Math.floor(Math.random() * alphabetArray.length);
+        initialArray.push(alphabetArray[randomIndex]);
       }
-
-      initialArray.push(alphabetArray[randomIndex]);
+      return initialArray;
     }
+
+    const firstArray = makeRandomArray(targetLetter);
 
     ///////////////////////////////////////////
     ////////--PHASER SETUP--///////////////////
@@ -62,11 +66,9 @@ const Alphabet = () => {
 
     const game = new Phaser.Game(config);
     const gameState = {
-      shortArray: initialArray,
+      shortArray: firstArray,
       letterIndex: 0,
-      targetLetter: 0,
-      speed: generateRandomSpeed(),
-      direction: Math.random() < 0.5,
+      targetLetter: "α",
       score: 0,
     };
 
@@ -82,7 +84,7 @@ const Alphabet = () => {
         gameState["letter" + i] = this.add.text(
           Phaser.Math.Between(0, config.width),
           Phaser.Math.Between(600, 1000),
-          pickRandomLetter(initialArray),
+          pickRandomLetter(gameState.shortArray),
           {
             fontSize: "32px",
             fill: "#fff",
@@ -93,7 +95,7 @@ const Alphabet = () => {
         gameState["letter" + i].direction = Math.random() < 0.5;
         gameState["letter" + i].setInteractive().on("pointerdown", () => {
           console.log(gameState["letter" + i]);
-          if (gameState["letter" + i].text === targetLetter) {
+          if (gameState["letter" + i].text === gameState.targetLetter) {
             gameState["letter" + i].speed = 0;
             gameState.score++;
           }
@@ -102,18 +104,16 @@ const Alphabet = () => {
         letters.push(gameState["letter" + i]);
       }
 
-      gameState.letter = this.add.text(
-        Phaser.Math.Between(10, config.width - 10),
-        600,
-        targetLetter,
-        {
-          fontSize: "32px",
-          fill: "#fff",
-        }
+      gameState.description = this.add.text(
+        40,
+        75,
+        `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`,
+        { fontSize: "15px", fill: "#fff" }
       );
     }
 
     function update() {
+      gameState.description.text = `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`;
       for (const letter of letters) {
         if (letter.y > -50) {
           letter.y -= letter.speed;
@@ -126,13 +126,19 @@ const Alphabet = () => {
           } else {
             if (gameState.score === 5) {
               setTimeout(() => {
+                gameState.letterIndex++;
+                if (gameState.letterIndex === 24) {
+                  gameState.letterIndex = 0;
+                }
+                gameState.targetLetter = alphabetArray[letterIndex];
+                gameState.shortArray = makeRandomArray(gameState.targetLetter);
                 letter.speed = 7;
                 gameState.score = 0;
               }, 1000);
             }
           }
         } else {
-          letter.text = pickRandomLetter(initialArray);
+          letter.text = pickRandomLetter(gameState.shortArray);
           letter.speed = generateRandomSpeed();
           letter.x = Phaser.Math.Between(0, config.width);
           letter.y = 600;
