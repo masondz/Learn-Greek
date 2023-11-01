@@ -102,6 +102,7 @@ const Alphabet = () => {
     }
 
     function create() {
+      this.cameras.main.setBackgroundColor("#191c24");
       this.add.sprite(20, 20, "logo");
 
       for (let i = 0; i < numLetters; i++) {
