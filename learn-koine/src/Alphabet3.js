@@ -18,13 +18,17 @@ const Alphabet = () => {
     const letters = [];
 
     function generateRandomSpeed() {
-      let newTime = Math.floor(Math.random() * 4 + 2);
+      let newTime = Math.floor(Math.random() * 5 + 1);
       return newTime;
     }
 
     function pickRandomLetter(array) {
       const letterIndex = Math.floor(Math.random() * array.length);
       return array[letterIndex];
+    }
+
+    function handleClick() {
+      this.scene.pause();
     }
 
     let initialArray = [targetLetter];
@@ -86,6 +90,12 @@ const Alphabet = () => {
 
         gameState["letter" + i].speed = generateRandomSpeed();
         gameState["letter" + i].direction = Math.random() < 0.5;
+        gameState["letter" + i].setInteractive().on("pointerdown", () => {
+          console.log(gameState["letter" + i]);
+          if (gameState["letter" + i].text === targetLetter) {
+            gameState["letter" + i].speed = 0;
+          }
+        });
 
         letters.push(gameState["letter" + i]);
       }
@@ -105,10 +115,12 @@ const Alphabet = () => {
       for (const letter of letters) {
         if (letter.y > -50) {
           letter.y -= letter.speed;
-          if (letter.direction) {
-            letter.x++;
-          } else {
-            letter.x--;
+          if (letter.speed > 0) {
+            if (letter.direction) {
+              letter.x++;
+            } else {
+              letter.x--;
+            }
           }
         } else {
           letter.text = pickRandomLetter(initialArray);
