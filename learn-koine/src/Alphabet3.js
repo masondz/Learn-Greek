@@ -8,8 +8,6 @@ const Alphabet = () => {
 
   const fieldRef = useRef();
 
-  // const [shortArray, setShortArray] = useState([]);
-
   useEffect(() => {
     let fieldWidth = fieldRef.current.getBoundingClientRect().width;
     let letterIndex = 0;
@@ -28,36 +26,6 @@ const Alphabet = () => {
       const letterIndex = Math.floor(Math.random() * array.length);
       return array[letterIndex];
     }
-
-    // function createLetter() {
-    //   const letterIndex = Math.floor(Math.random() * alphabetArray.length);
-    //   const letter = alphabetArray[letterIndex];
-
-    //   const letterSprite = game.scene.scenes[0].add.text(
-    //     Phaser.Math.Between(10, config.width - 10),
-    //     game.config.height,
-    //     letter,
-    //     {
-    //       fontSize: "32px",
-    //       fill: "#fff",
-    //     }
-    //   );
-
-    //   game.scene.physics.world.enable(letterSprite);
-    //   letterSprite.body.setVelocity(0, -generateRandomSpeed());
-    //   letters.push(letterSprite);
-    // }
-
-    // function updateLetters() {
-    //   for (const letter of letters) {
-    //     if (letter.y > -100) {
-    //       letter.y -= letter.speed;
-    //     } else {
-    //       letter.destroy();
-    //       createLetter();
-    //     }
-    //   }
-    // }
 
     let initialArray = [targetLetter];
 
@@ -107,8 +75,8 @@ const Alphabet = () => {
 
       for (let i = 0; i < numLetters; i++) {
         gameState["letter" + i] = this.add.text(
-          Phaser.Math.Between(10, config.width - 10),
-          600,
+          Phaser.Math.Between(0, config.width),
+          Phaser.Math.Between(600, 1000),
           pickRandomLetter(initialArray),
           {
             fontSize: "32px",
