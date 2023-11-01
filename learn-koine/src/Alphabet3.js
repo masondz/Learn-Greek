@@ -67,6 +67,7 @@ const Alphabet = () => {
       targetLetter: 0,
       speed: generateRandomSpeed(),
       direction: Math.random() < 0.5,
+      score: 0,
     };
 
     function preload() {
@@ -94,6 +95,7 @@ const Alphabet = () => {
           console.log(gameState["letter" + i]);
           if (gameState["letter" + i].text === targetLetter) {
             gameState["letter" + i].speed = 0;
+            gameState.score++;
           }
         });
 
@@ -120,6 +122,13 @@ const Alphabet = () => {
               letter.x++;
             } else {
               letter.x--;
+            }
+          } else {
+            if (gameState.score === 5) {
+              setTimeout(() => {
+                letter.speed = 7;
+                gameState.score = 0;
+              }, 1000);
             }
           }
         } else {
