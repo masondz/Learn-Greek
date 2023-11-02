@@ -18,7 +18,11 @@ const Alphabet = () => {
     const letters = [];
 
     function generateRandomSpeed() {
-      let newTime = Math.floor(Math.random() * 5 + 1);
+      let maxSpeed = 5;
+      if (config.width < 530) {
+        maxSpeed = 3;
+      }
+      let newTime = Math.floor(Math.random() * maxSpeed + 1);
       return newTime;
     }
 
@@ -67,6 +71,7 @@ const Alphabet = () => {
       letterIndex: 0,
       targetLetter: "α",
       score: 0,
+      xIncline: config.width < 530 ? 0.2 : 1,
     };
 
     function preload() {
@@ -78,12 +83,17 @@ const Alphabet = () => {
       this.add.sprite(20, 20, "logo");
 
       for (let i = 0; i < numLetters; i++) {
+        let fontSize = "32px";
+        if (config.width < 530) {
+          fontSize = "24px";
+        }
+
         gameState["letter" + i] = this.add.text(
           Phaser.Math.Between(0, config.width),
           Phaser.Math.Between(600, 1000),
           pickRandomLetter(gameState.shortArray),
           {
-            fontSize: "32px",
+            fontSize: fontSize,
             fill: "#fff",
           }
         );
@@ -118,7 +128,7 @@ const Alphabet = () => {
     }
 
     function update() {
-      gameState.description.text = `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`;
+      gameState.description.text = `width: ${config.width}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`;
 
       //updateing the individual letters
       for (const letter of letters) {
@@ -126,14 +136,14 @@ const Alphabet = () => {
           letter.y -= letter.speed;
           if (letter.speed > 0) {
             if (letter.direction) {
-              letter.x++;
+              letter.x = letter.x + gameState.xIncline;
             } else {
-              letter.x--;
+              letter.x = letter.x - gameState.xIncline;
             }
           } else {
             if (gameState.score >= 5) {
               setTimeout(() => {
-                letter.speed = 7;
+                letter.speed = config.width < 530 ? 5 : 7;
               }, 1000);
             }
           }
