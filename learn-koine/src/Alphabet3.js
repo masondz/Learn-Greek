@@ -93,7 +93,7 @@ const Alphabet = () => {
           Phaser.Math.Between(600, 1000),
           pickRandomLetter(gameState.shortArray),
           {
-            fontFamily: "Helvettica Neue",
+            fontFamily: "Helvettica Neue, Times, Courier New, serif",
             fontSize: fontSize,
             fill: "#fff",
           }
