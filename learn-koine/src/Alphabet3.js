@@ -27,15 +27,12 @@ const Alphabet = () => {
       return array[letterIndex];
     }
 
-    function handleClick() {
-      this.scene.pause();
-    }
-
     function makeRandomArray(targetLetter) {
       let initialArray = [targetLetter];
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 4; i++) {
         let randomIndex = Math.floor(Math.random() * alphabetArray.length);
         while (initialArray.includes[alphabetArray[randomIndex]]) {
+          console.log(initialArray);
           randomIndex = Math.floor(Math.random() * alphabetArray.length);
         }
 
@@ -98,6 +95,14 @@ const Alphabet = () => {
           if (gameState["letter" + i].text === gameState.targetLetter) {
             gameState["letter" + i].speed = 0;
             gameState.score++;
+            if (gameState.score >= 5) {
+              gameState.letterIndex++;
+              if (gameState.letterIndex >= 25) {
+                gameState.letterIndex = 0;
+              }
+              gameState.targetLetter = alphabetArray[gameState.letterIndex];
+              gameState.shortArray = makeRandomArray(gameState.targetLetter);
+            }
           }
         });
 
@@ -114,6 +119,8 @@ const Alphabet = () => {
 
     function update() {
       gameState.description.text = `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`;
+
+      //updateing the individual letters
       for (const letter of letters) {
         if (letter.y > -50) {
           letter.y -= letter.speed;
@@ -124,16 +131,9 @@ const Alphabet = () => {
               letter.x--;
             }
           } else {
-            if (gameState.score === 5) {
+            if (gameState.score >= 5) {
               setTimeout(() => {
-                gameState.letterIndex++;
-                if (gameState.letterIndex === 24) {
-                  gameState.letterIndex = 0;
-                }
-                gameState.targetLetter = alphabetArray[letterIndex];
-                gameState.shortArray = makeRandomArray(gameState.targetLetter);
                 letter.speed = 7;
-                gameState.score = 0;
               }, 1000);
             }
           }
@@ -142,11 +142,13 @@ const Alphabet = () => {
           letter.speed = generateRandomSpeed();
           letter.x = Phaser.Math.Between(0, config.width);
           letter.y = 600;
+        }
 
-          // gameState.letterIndex++;
-          // if (gameState.letterIndex === 25) {
-          //       gameState.letterIndex = 0;
-          //     }
+        //updating the game state
+        if (gameState.score >= 5) {
+          setTimeout(() => {
+            gameState.score = 0;
+          }, 1000);
         }
       }
 
