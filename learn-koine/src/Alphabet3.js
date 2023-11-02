@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Phaser from "phaser";
 import { Link } from "react-router-dom";
 import "./App.css";
@@ -8,6 +8,8 @@ const Alphabet = () => {
 
   const fieldRef = useRef();
 
+  const [score, setScore] = useState(0);
+
   useEffect(() => {
     let fieldWidth = fieldRef.current.getBoundingClientRect().width;
     let letterIndex = 0;
@@ -16,6 +18,7 @@ const Alphabet = () => {
 
     const numLetters = 15;
     const letters = [];
+    const backgrounds = [];
 
     function generateRandomSpeed() {
       let maxSpeed = 5;
@@ -88,9 +91,22 @@ const Alphabet = () => {
           fontSize = "24px";
         }
 
+        let startX = Phaser.Math.Between(0, config.width);
+        let startY = Phaser.Math.Between(600, 1000);
+
+        gameState["background" + i] = this.add.rectangle(
+          startX,
+          startY,
+          25,
+          25,
+          0xff0000
+        );
+
+        backgrounds.push(gameState["background" + i]);
+
         gameState["letter" + i] = this.add.text(
-          Phaser.Math.Between(0, config.width),
-          Phaser.Math.Between(600, 1000),
+          startX,
+          startY,
           pickRandomLetter(gameState.shortArray),
           {
             fontFamily: "Helvettica Neue, Times, Courier New, serif",
@@ -106,6 +122,7 @@ const Alphabet = () => {
           if (gameState["letter" + i].text === gameState.targetLetter) {
             gameState["letter" + i].speed = 0;
             gameState.score++;
+            setScore(gameState.score);
             if (gameState.score >= 5) {
               gameState.letterIndex++;
               if (gameState.letterIndex >= 25) {
@@ -129,7 +146,7 @@ const Alphabet = () => {
     }
 
     function update() {
-      gameState.description.text = `width: ${config.width}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`;
+      gameState.description.text = `width: ${config.width}\nshortArray: ${gameState.shortArray}\nletterIndex: ${gameState.letterIndex}\ntargetLetter: ${gameState.targetLetter}`;
 
       //updateing the individual letters
       for (const letter of letters) {
@@ -159,40 +176,10 @@ const Alphabet = () => {
         if (gameState.score >= 5) {
           setTimeout(() => {
             gameState.score = 0;
+            setScore(gameState.score);
           }, 1000);
         }
       }
-
-      // if (gameState.letter.y > -100) {
-      //   gameState.letter.y -= gameState.speed;
-      //   if (gameState.direction) {
-      //     gameState.letter.x++;
-      //   } else {
-      //     gameState.letter.x--;
-      //   }
-      // } else {
-      //   console.log(gameState.startPoint, gameState.endPoint);
-      //   gameState.letter.destroy();
-
-      //   gameState.letterIndex++;
-      //   if (gameState.letterIndex === 25) {
-      //     gameState.letterIndex = 0;
-      //   }
-
-      //   gameState.targetLetter = alphabetArray[gameState.letterIndex];
-      //   gameState.speed = generateRandomSpeed();
-      //   gameState.direction = Math.random() < 0.5;
-      //   gameState.letter = this.add.text(
-      //     Phaser.Math.Between(10, config.width - 10),
-      //     600,
-      //     gameState.targetLetter,
-      //     {
-      //       fontSize: "32px",
-      //       fill: "#fff",
-      //     }
-      //   );
-      //   gameState.letter.y = 600;
-      // }
     }
 
     return () => {
@@ -202,7 +189,7 @@ const Alphabet = () => {
 
   return (
     <>
-      <h1>Alphabet Practice:</h1>
+      <h1>Alphabet Practice: {score}</h1>
       <div className="letter-container" id="game-field" ref={fieldRef}></div>
       <Link to={"/"}>home</Link>
     </>
