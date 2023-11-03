@@ -16,7 +16,7 @@ const Alphabet = () => {
 
     let targetLetter = alphabetArray[letterIndex];
 
-    const numLetters = 3;
+    const numLetters = 15;
     const letters = [];
     const backgrounds = [];
 
@@ -36,7 +36,7 @@ const Alphabet = () => {
 
     function makeRandomArray(targetLetter) {
       let initialArray = [targetLetter];
-      for (let i = 0; i < 2; i++) {
+      for (let i = 0; i < 4; i++) {
         let randomIndex = Math.floor(Math.random() * alphabetArray.length);
         while (initialArray.includes[alphabetArray[randomIndex]]) {
           console.log(initialArray);
@@ -79,6 +79,25 @@ const Alphabet = () => {
       yOffset: config.width < 530 ? 15 : 18,
     };
 
+    function handleClick(target) {
+      if (target.speed === 0) {
+        return;
+      }
+      if (target.text === gameState.targetLetter) {
+        target.speed = 0;
+        gameState.score++;
+        setScore(gameState.score);
+        if (gameState.score >= 5) {
+          gameState.letterIndex++;
+          if (gameState.letterIndex >= 25) {
+            gameState.letterIndex = 0;
+          }
+          gameState.targetLetter = alphabetArray[gameState.letterIndex];
+          gameState.shortArray = makeRandomArray(gameState.targetLetter);
+        }
+      }
+    }
+
     function preload() {
       this.load.image("logo", "./favicon-32x32.png");
     }
@@ -101,8 +120,14 @@ const Alphabet = () => {
           startY + gameState.yOffset,
           40,
           40,
-          0xfff
+          "#191c24"
         );
+
+        gameState["background" + i].setAlpha(0.01);
+        gameState["background" + i].name = "background" + i;
+        gameState["background" + i]
+          .setInteractive()
+          .on("pointerdown", () => handleClick(gameState["letter" + i]));
 
         backgrounds.push(gameState["background" + i]);
 
@@ -119,22 +144,10 @@ const Alphabet = () => {
 
         gameState["letter" + i].speed = generateRandomSpeed();
         gameState["letter" + i].direction = Math.random() < 0.5;
-        gameState["letter" + i].setInteractive().on("pointerdown", () => {
-          console.log(gameState["letter" + i]);
-          if (gameState["letter" + i].text === gameState.targetLetter) {
-            gameState["letter" + i].speed = 0;
-            gameState.score++;
-            setScore(gameState.score);
-            if (gameState.score >= 5) {
-              gameState.letterIndex++;
-              if (gameState.letterIndex >= 25) {
-                gameState.letterIndex = 0;
-              }
-              gameState.targetLetter = alphabetArray[gameState.letterIndex];
-              gameState.shortArray = makeRandomArray(gameState.targetLetter);
-            }
-          }
-        });
+        gameState["letter" + i].name = "letter" + i;
+        gameState["letter" + i]
+          .setInteractive()
+          .on("pointerdown", () => handleClick(gameState["letter" + i]));
 
         letters.push(gameState["letter" + i]);
       }
