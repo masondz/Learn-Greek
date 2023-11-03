@@ -16,7 +16,7 @@ const Alphabet = () => {
 
     let targetLetter = alphabetArray[letterIndex];
 
-    const numLetters = 15;
+    const numLetters = 3;
     const letters = [];
     const backgrounds = [];
 
@@ -36,7 +36,7 @@ const Alphabet = () => {
 
     function makeRandomArray(targetLetter) {
       let initialArray = [targetLetter];
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 2; i++) {
         let randomIndex = Math.floor(Math.random() * alphabetArray.length);
         while (initialArray.includes[alphabetArray[randomIndex]]) {
           console.log(initialArray);
@@ -49,6 +49,9 @@ const Alphabet = () => {
     }
 
     const firstArray = makeRandomArray(targetLetter);
+
+    let xOffset = 8;
+    let yOffset = 18;
 
     ///////////////////////////////////////////
     ////////--PHASER SETUP--///////////////////
@@ -95,11 +98,11 @@ const Alphabet = () => {
         let startY = Phaser.Math.Between(600, 1000);
 
         gameState["background" + i] = this.add.rectangle(
-          startX,
-          startY,
-          25,
-          25,
-          0xff0000
+          startX + xOffset,
+          startY + yOffset,
+          40,
+          40,
+          0xfff
         );
 
         backgrounds.push(gameState["background" + i]);
@@ -149,14 +152,19 @@ const Alphabet = () => {
       gameState.description.text = `width: ${config.width}\nshortArray: ${gameState.shortArray}\nletterIndex: ${gameState.letterIndex}\ntargetLetter: ${gameState.targetLetter}`;
 
       //updateing the individual letters
-      for (const letter of letters) {
+      for (let i = 0; i < letters.length; i++) {
+        let letter = letters[i];
+        let background = backgrounds[i];
         if (letter.y > -50) {
           letter.y -= letter.speed;
+          background.y -= letter.speed;
           if (letter.speed > 0) {
             if (letter.direction) {
               letter.x = letter.x + gameState.xIncline;
+              background.x = background.x + gameState.xIncline;
             } else {
               letter.x = letter.x - gameState.xIncline;
+              background.x = background.x - gameState.xIncline;
             }
           } else {
             if (gameState.score >= 5) {
@@ -168,8 +176,9 @@ const Alphabet = () => {
         } else {
           letter.text = pickRandomLetter(gameState.shortArray);
           letter.speed = generateRandomSpeed();
-          letter.x = Phaser.Math.Between(0, config.width);
-          letter.y = 600;
+          background.x =
+            (letter.x = Phaser.Math.Between(0, config.width)) + xOffset;
+          background.y = (letter.y = 600) + yOffset;
         }
 
         //updating the game state
