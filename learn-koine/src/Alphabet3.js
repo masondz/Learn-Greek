@@ -50,9 +50,6 @@ const Alphabet = () => {
 
     const firstArray = makeRandomArray(targetLetter);
 
-    let xOffset = 8;
-    let yOffset = 18;
-
     ///////////////////////////////////////////
     ////////--PHASER SETUP--///////////////////
     ///////////////////////////////////////////
@@ -78,6 +75,8 @@ const Alphabet = () => {
       targetLetter: "α",
       score: 0,
       xIncline: config.width < 530 ? 0.2 : 1,
+      xOffset: 7,
+      yOffset: config.width < 530 ? 15 : 18,
     };
 
     function preload() {
@@ -98,8 +97,8 @@ const Alphabet = () => {
         let startY = Phaser.Math.Between(600, 1000);
 
         gameState["background" + i] = this.add.rectangle(
-          startX + xOffset,
-          startY + yOffset,
+          startX + gameState.xOffset,
+          startY + gameState.yOffset,
           40,
           40,
           0xfff
@@ -177,8 +176,9 @@ const Alphabet = () => {
           letter.text = pickRandomLetter(gameState.shortArray);
           letter.speed = generateRandomSpeed();
           background.x =
-            (letter.x = Phaser.Math.Between(0, config.width)) + xOffset;
-          background.y = (letter.y = 600) + yOffset;
+            (letter.x = Phaser.Math.Between(0, config.width)) +
+            gameState.xOffset;
+          background.y = (letter.y = 600) + gameState.yOffset;
         }
 
         //updating the game state
