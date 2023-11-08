@@ -79,22 +79,54 @@ const Alphabet = () => {
       yOffset: config.width < 530 ? 15 : 18,
     };
 
-    function handleClick(target) {
+    function handleClick(target, tween) {
       if (target.speed === 0) {
         return;
       }
+
       if (target.text === gameState.targetLetter) {
         target.speed = 0;
         gameState.score++;
         setScore(gameState.score);
+        if (tween) {
+          console.log(tween);
+          tween.pause();
+          target.setTint(0x00ff55);
+        }
         if (gameState.score >= 5) {
           gameState.letterIndex++;
+          // setTimeout(() => {
+          //   tween.restart();
+          //   console.log("hello delay");
+          // }, 1000);
           if (gameState.letterIndex >= 25) {
             gameState.letterIndex = 0;
           }
           gameState.targetLetter = alphabetArray[gameState.letterIndex];
           gameState.shortArray = makeRandomArray(gameState.targetLetter);
         }
+      } else {
+        tween.pause();
+        const errorColor = Phaser.Display.Color.ValueToColor(0xff0000);
+        const normalColor = Phaser.Display.Color.ValueToColor(0x00ffff);
+        let value = tween.getValue();
+        const colorObject = Phaser.Display.Color.Interpolate.ColorWithColor(
+          errorColor,
+          normalColor,
+          1000,
+          value
+        );
+
+        const tempColor = Phaser.Display.Color.GetColor(
+          colorObject.r,
+          colorObject.g,
+          colorObject.b
+        );
+
+        target.setTint(tempColor);
+        setTimeout(() => {
+          tween.restart();
+        }, 1000);
       }
     }
 
@@ -125,9 +157,6 @@ const Alphabet = () => {
 
         gameState["background" + i].setAlpha(0.01);
         gameState["background" + i].name = "background" + i;
-        gameState["background" + i]
-          .setInteractive()
-          .on("pointerdown", () => handleClick(gameState["letter" + i]));
 
         backgrounds.push(gameState["background" + i]);
 
@@ -145,23 +174,72 @@ const Alphabet = () => {
         gameState["letter" + i].speed = generateRandomSpeed();
         gameState["letter" + i].direction = Math.random() < 0.5;
         gameState["letter" + i].name = "letter" + i;
+
+        const primaryColor = Phaser.Display.Color.ValueToColor(0xffffff);
+        const secondaryColor = Phaser.Display.Color.ValueToColor(0x00ffff);
+
+        const randomDuration = Phaser.Math.Between(300, 2000);
+
+        const letterTween = this.tweens.addCounter({
+          from: 0,
+          to: 100,
+          duration: randomDuration,
+          easing: "Linear",
+          yoyo: true,
+          repeat: -1,
+          onUpdate: (tween) => {
+            const value = tween.getValue();
+            const colorObject = Phaser.Display.Color.Interpolate.ColorWithColor(
+              primaryColor,
+              secondaryColor,
+              100,
+              value
+            );
+
+            const color = Phaser.Display.Color.GetColor(
+              colorObject.r,
+              colorObject.b,
+              colorObject.g
+            );
+
+            gameState["letter" + i].setTint(color);
+          },
+        });
+
         gameState["letter" + i]
           .setInteractive()
-          .on("pointerdown", () => handleClick(gameState["letter" + i]));
+          .on("pointerdown", () =>
+            handleClick(gameState["letter" + i], letterTween)
+          );
+
+        gameState["background" + i]
+          .setInteractive()
+          .on("pointerdown", () =>
+            handleClick(gameState["letter" + i], letterTween)
+          );
+
+        // this.tweens.add({
+        //   targets: gameState["letter" + i],
+        //   tint: 0xff0000,
+        //   duration: 1000,
+        //   yoyo: true,
+        //   ease: 'Linea',
+        //   repeat: 5,
+        // });
 
         letters.push(gameState["letter" + i]);
       }
 
-      gameState.description = this.add.text(
-        40,
-        75,
-        `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`,
-        { fontSize: "15px", fill: "#fff" }
-      );
+      //   gameState.description = this.add.text(
+      //     40,
+      //     75,
+      //     `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`,
+      //     { fontSize: "15px", fill: "#fff" }
+      //   );
     }
 
     function update() {
-      gameState.description.text = `width: ${config.width}\nshortArray: ${gameState.shortArray}\nletterIndex: ${gameState.letterIndex}\ntargetLetter: ${gameState.targetLetter}`;
+      // gameState.description.text = `width: ${config.width}\nshortArray: ${gameState.shortArray}\nletterIndex: ${gameState.letterIndex}\ntargetLetter: ${gameState.targetLetter}`;
 
       //updateing the individual letters
       for (let i = 0; i < letters.length; i++) {
@@ -198,6 +276,11 @@ const Alphabet = () => {
         if (gameState.score >= 5) {
           setTimeout(() => {
             gameState.score = 0;
+            this.tweens.each((tween) => {
+              if (tween.paused) {
+                tween.restart();
+              }
+            });
             setScore(gameState.score);
           }, 1000);
         }
