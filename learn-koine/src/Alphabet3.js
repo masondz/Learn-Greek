@@ -177,16 +177,20 @@ const Alphabet = () => {
       dataBox.strokeColor = 0x00ffff;
 
       let scoreFontSize = "24px";
-      if (config.width < 530) {
-        scoreFontSize = config.width / 15 + "px";
+      gameState.scoreDescription = `Find: ${
+        letterNames[gameState.letterIndex]
+      } - Found: ${gameState.score}`;
+      if (config.width < 415) {
+        scoreFontSize = config.width / 18 + "px";
+        gameState.scoreDescription = `Find: ${
+          letterNames[gameState.letterIndex]
+        }\nFound: ${gameState.score}`;
       }
 
       gameState.currentScore = this.add.text(
         config.width / 25,
-        config.height / 1.075,
-        `Find: ${letterNames[gameState.letterIndex]} - Found: ${
-          gameState.score
-        }`,
+        config.height / 1.085,
+        gameState.scoreDescription,
         {
           fontSize: scoreFontSize,
         }
@@ -343,9 +347,7 @@ const Alphabet = () => {
 
     function update() {
       // gameState.description.text = `width: ${config.width}\nshortArray: ${gameState.shortArray}\nletterIndex: ${gameState.letterIndex}\ntargetLetter: ${gameState.targetLetter}`;
-      gameState.currentScore.text = `Find: ${
-        letterNames[gameState.letterIndex]
-      } - Found: ${gameState.score}`;
+      gameState.currentScore.text = gameState.scoreDescription;
       //updateing the individual letters
       for (let i = 0; i < letters.length; i++) {
         let letter = letters[i];
