@@ -48,6 +48,8 @@ const Alphabet = () => {
     const letters = [];
     const backgrounds = [];
 
+    const numStars = 150;
+
     function generateRandomSpeed() {
       let maxSpeed = 5;
       if (config.width < 530) {
@@ -267,6 +269,62 @@ const Alphabet = () => {
           );
 
         letters.push(gameState["letter" + i]);
+      }
+
+      function randPos() {
+        let x = Phaser.Math.Between(5, config.width);
+        let y = Phaser.Math.Between(5, 550);
+        return { x, y };
+      }
+
+      function randSize() {
+        let x = Phaser.Math.Between(1, 2);
+        let y = Phaser.Math.Between(1, 2);
+        return { x, y };
+      }
+
+      for (let i = 0; i < numStars; i++) {
+        let pos = randPos();
+        let size = randSize();
+
+        const paleColor = Phaser.Display.Color.ValueToColor(0xffffff);
+        const blueColor = Phaser.Display.Color.ValueToColor(0x00ffff);
+
+        const randDuration = Phaser.Math.Between(300, 1000);
+
+        gameState["star" + i] = this.add.rectangle(
+          pos.x,
+          pos.y,
+          size.x,
+          size.y,
+          0xffffff
+        );
+
+        this.tweens.addCounter({
+          from: 0,
+          to: 100,
+          duration: randDuration,
+          easing: "Linear",
+          yoyo: true,
+          repeat: -1,
+          onUpdate: (tween) => {
+            const value = tween.getValue();
+            const colorObject = Phaser.Display.Color.Interpolate.ColorWithColor(
+              paleColor,
+              blueColor,
+              100,
+              value
+            );
+
+            const color = Phaser.Display.Color.GetColor(
+              colorObject.r,
+              colorObject.b,
+              colorObject.g
+            );
+
+            gameState["star" + i].setFillStyle(color, 50);
+          },
+        });
       }
 
       // gameState.description = this.add.text(
