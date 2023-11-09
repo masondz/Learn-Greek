@@ -11,12 +11,40 @@ const Alphabet = () => {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
+    const letterNames = [
+      "Alpha",
+      "Beta",
+      "Gamma",
+      "Delta",
+      "Epsilon",
+      "Zeta",
+      "Eta",
+      "Theta",
+      "Iota",
+      "Kappa",
+      "Lambda",
+      "Mu",
+      "Nu",
+      "Xi",
+      "Omicron",
+      "Pi",
+      "Rho",
+      "Sigma",
+      "Sigma (final)",
+      "Tau",
+      "Upsilon",
+      "Phi",
+      "Chi",
+      "Psi",
+      "Omega",
+    ];
+
     let fieldWidth = fieldRef.current.getBoundingClientRect().width;
     let letterIndex = 0;
 
     let targetLetter = alphabetArray[letterIndex];
 
-    const numLetters = 15;
+    const numLetters = 17;
     const letters = [];
     const backgrounds = [];
 
@@ -95,10 +123,6 @@ const Alphabet = () => {
         }
         if (gameState.score >= 5) {
           gameState.letterIndex++;
-          // setTimeout(() => {
-          //   tween.restart();
-          //   console.log("hello delay");
-          // }, 1000);
           if (gameState.letterIndex >= 25) {
             gameState.letterIndex = 0;
           }
@@ -136,7 +160,31 @@ const Alphabet = () => {
 
     function create() {
       this.cameras.main.setBackgroundColor("#191c24");
-      this.add.sprite(20, 20, "logo");
+      // this.add.sprite(20, 20, "logo");
+      let dataBox = this.add.rectangle(
+        config.width / 2,
+        500,
+        config.width,
+        55,
+        0x121222
+      );
+
+      dataBox.depth = 1;
+      dataBox.isStroked = true;
+      dataBox.strokeColor = 0x00ffff;
+
+      gameState.currentScore = this.add.text(
+        20,
+        485,
+        `Find: ${letterNames[gameState.letterIndex]} - Found: ${
+          gameState.score
+        }`,
+        {
+          fontSize: "25px",
+        }
+      );
+
+      gameState.currentScore.depth = 2;
 
       for (let i = 0; i < numLetters; i++) {
         let fontSize = "32px";
@@ -218,29 +266,22 @@ const Alphabet = () => {
             handleClick(gameState["letter" + i], letterTween)
           );
 
-        // this.tweens.add({
-        //   targets: gameState["letter" + i],
-        //   tint: 0xff0000,
-        //   duration: 1000,
-        //   yoyo: true,
-        //   ease: 'Linea',
-        //   repeat: 5,
-        // });
-
         letters.push(gameState["letter" + i]);
       }
 
-      //   gameState.description = this.add.text(
-      //     40,
-      //     75,
-      //     `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`,
-      //     { fontSize: "15px", fill: "#fff" }
-      //   );
+      // gameState.description = this.add.text(
+      //   40,
+      //   75,
+      //   `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`,
+      //   { fontSize: "15px", fill: "#fff" }
+      // );
     }
 
     function update() {
       // gameState.description.text = `width: ${config.width}\nshortArray: ${gameState.shortArray}\nletterIndex: ${gameState.letterIndex}\ntargetLetter: ${gameState.targetLetter}`;
-
+      gameState.currentScore.text = `Find: ${
+        letterNames[gameState.letterIndex]
+      } - Found: ${gameState.score}`;
       //updateing the individual letters
       for (let i = 0; i < letters.length; i++) {
         let letter = letters[i];
@@ -294,7 +335,7 @@ const Alphabet = () => {
 
   return (
     <>
-      <h1>Alphabet Practice: {score}</h1>
+      <h1>Star Finder: {score}</h1>
       <div className="letter-container" id="game-field" ref={fieldRef}></div>
       <Link to={"/"}>home</Link>
     </>
