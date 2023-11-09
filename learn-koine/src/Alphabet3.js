@@ -168,7 +168,7 @@ const Alphabet = () => {
         config.width / 2,
         config.height / 1.045,
         config.width + 18,
-        45,
+        config.height / 11,
         0x121222
       );
 
@@ -176,14 +176,19 @@ const Alphabet = () => {
       dataBox.isStroked = true;
       dataBox.strokeColor = 0x00ffff;
 
+      let scoreFontSize = "24px";
+      if (config.width < 530) {
+        scoreFontSize = config.width / 15 + "px";
+      }
+
       gameState.currentScore = this.add.text(
-        20,
-        485,
+        config.width / 25,
+        config.height / 1.075,
         `Find: ${letterNames[gameState.letterIndex]} - Found: ${
           gameState.score
         }`,
         {
-          fontSize: "25px",
+          fontSize: scoreFontSize,
         }
       );
 
