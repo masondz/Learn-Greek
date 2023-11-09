@@ -40,6 +40,7 @@ const Alphabet = () => {
     ];
 
     let fieldWidth = fieldRef.current.getBoundingClientRect().width;
+    let fieldHeight = fieldRef.current.getBoundingClientRect().height;
     let letterIndex = 0;
 
     let targetLetter = alphabetArray[letterIndex];
@@ -88,7 +89,7 @@ const Alphabet = () => {
       type: Phaser.AUTO,
 
       width: fieldWidth * 0.75,
-      height: "75vh",
+      height: fieldHeight * 0.75,
       parent: "game-field",
 
       scene: {
@@ -165,9 +166,9 @@ const Alphabet = () => {
       // this.add.sprite(20, 20, "logo");
       let dataBox = this.add.rectangle(
         config.width / 2,
-        500,
-        config.width,
-        55,
+        config.height / 1.045,
+        config.width + 18,
+        45,
         0x121222
       );
 
