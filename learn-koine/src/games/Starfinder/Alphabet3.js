@@ -1,14 +1,17 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Phaser from "phaser";
 import { Link } from "react-router-dom";
-import "./App.css";
+import {
+  generateRandomSpeed,
+  makeRandomArray,
+  pickRandomLetter,
+} from "./starfinder_utils";
+import "../../App.css";
 
 const Alphabet = () => {
   const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
 
   const fieldRef = useRef();
-
-  const [score, setScore] = useState(0);
 
   useEffect(() => {
     const letterNames = [
@@ -51,35 +54,7 @@ const Alphabet = () => {
 
     const numStars = 150;
 
-    function generateRandomSpeed() {
-      let maxSpeed = 5;
-      if (config.width < 530) {
-        maxSpeed = 3;
-      }
-      let newTime = Math.floor(Math.random() * maxSpeed + 1);
-      return newTime;
-    }
-
-    function pickRandomLetter(array) {
-      const letterIndex = Math.floor(Math.random() * array.length);
-      return array[letterIndex];
-    }
-
-    function makeRandomArray(targetLetter) {
-      let initialArray = [targetLetter];
-      for (let i = 0; i < 4; i++) {
-        let randomIndex = Math.floor(Math.random() * alphabetArray.length);
-        while (initialArray.includes[alphabetArray[randomIndex]]) {
-          console.log(initialArray);
-          randomIndex = Math.floor(Math.random() * alphabetArray.length);
-        }
-
-        initialArray.push(alphabetArray[randomIndex]);
-      }
-      return initialArray;
-    }
-
-    const firstArray = makeRandomArray(targetLetter);
+    const firstArray = makeRandomArray(targetLetter, alphabetArray);
 
     ///////////////////////////////////////////
     ////////--PHASER SETUP--///////////////////
@@ -111,26 +86,30 @@ const Alphabet = () => {
     };
 
     function handleClick(target, tween) {
-      if (target.speed === 0) {
+      if (target.speed === 0 || gameState.score >= 5) {
         return;
       }
 
       if (target.text === gameState.targetLetter) {
         target.speed = 0;
         gameState.score++;
-        setScore(gameState.score);
         if (tween) {
           console.log(tween);
           tween.pause();
           target.setTint(0x00ff55);
         }
         if (gameState.score >= 5) {
-          gameState.letterIndex++;
-          if (gameState.letterIndex >= 25) {
-            gameState.letterIndex = 0;
-          }
-          gameState.targetLetter = alphabetArray[gameState.letterIndex];
-          gameState.shortArray = makeRandomArray(gameState.targetLetter);
+          setTimeout(() => {
+            gameState.letterIndex++;
+            if (gameState.letterIndex >= 25) {
+              gameState.letterIndex = 0;
+            }
+            gameState.targetLetter = alphabetArray[gameState.letterIndex];
+            gameState.shortArray = makeRandomArray(
+              gameState.targetLetter,
+              alphabetArray
+            );
+          }, 1000);
         }
       } else {
         tween.pause();
@@ -231,7 +210,7 @@ const Alphabet = () => {
           }
         );
 
-        gameState["letter" + i].speed = generateRandomSpeed();
+        gameState["letter" + i].speed = generateRandomSpeed(config);
         gameState["letter" + i].direction = Math.random() < 0.5;
         gameState["letter" + i].name = "letter" + i;
 
@@ -336,19 +315,21 @@ const Alphabet = () => {
           },
         });
       }
-
-      // gameState.description = this.add.text(
-      //   40,
-      //   75,
-      //   `ShortArray: ${gameState.shortArray}, letterIndex: ${gameState.letterIndex}, targetLetter: ${gameState.targetLetter}, score: ${gameState.score}`,
-      //   { fontSize: "15px", fill: "#fff" }
-      // );
     }
 
     function update() {
-      // gameState.description.text = `width: ${config.width}\nshortArray: ${gameState.shortArray}\nletterIndex: ${gameState.letterIndex}\ntargetLetter: ${gameState.targetLetter}`;
+      gameState.scoreDescription = `Find: ${
+        letterNames[gameState.letterIndex]
+      } - Found: ${gameState.score}`;
+
+      if (config.width < 415) {
+        gameState.scoreDescription = `Find: ${
+          letterNames[gameState.letterIndex]
+        }\nFound: ${gameState.score}`;
+      }
+
       gameState.currentScore.text = gameState.scoreDescription;
-      //updateing the individual letters
+
       for (let i = 0; i < letters.length; i++) {
         let letter = letters[i];
         let background = backgrounds[i];
@@ -372,7 +353,7 @@ const Alphabet = () => {
           }
         } else {
           letter.text = pickRandomLetter(gameState.shortArray);
-          letter.speed = generateRandomSpeed();
+          letter.speed = generateRandomSpeed(config);
           background.x =
             (letter.x = Phaser.Math.Between(0, config.width)) +
             gameState.xOffset;
@@ -388,7 +369,6 @@ const Alphabet = () => {
                 tween.restart();
               }
             });
-            setScore(gameState.score);
           }, 1000);
         }
       }
@@ -401,7 +381,9 @@ const Alphabet = () => {
 
   return (
     <>
-      <h1>Star Finder: {score}</h1>
+      <div className="game-title">
+        <h1>Star Finder</h1>
+      </div>
       <div className="letter-container" id="game-field" ref={fieldRef}></div>
       <Link to={"/"}>home</Link>
     </>
