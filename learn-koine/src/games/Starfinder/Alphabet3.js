@@ -160,7 +160,7 @@ const Alphabet = () => {
         letterNames[gameState.letterIndex]
       } - Found: ${gameState.score}`;
       if (config.width < 415) {
-        scoreFontSize = config.width / 18 + "px";
+        scoreFontSize = Math.round(config.width / 18) + "px";
         gameState.scoreDescription = `Find: ${
           letterNames[gameState.letterIndex]
         }\nFound: ${gameState.score}`;
