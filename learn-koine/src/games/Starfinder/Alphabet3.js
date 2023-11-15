@@ -7,6 +7,7 @@ import {
   pickRandomLetter,
 } from "./starfinder_utils";
 import "../../App.css";
+import StartStarfinder from "./starFinderStart";
 
 const Alphabet = () => {
   const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
@@ -364,7 +365,7 @@ const Alphabet = () => {
       height: fieldHeight * 0.75,
       parent: "game-field",
 
-      scene: [Starfinder],
+      scene: [StartStarfinder, Starfinder],
     };
 
     const gameState = {
