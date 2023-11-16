@@ -8,6 +8,7 @@ import {
 } from "./starfinder_utils";
 import "../../App.css";
 import StartStarfinder from "./starFinderStart";
+import EndStarfinder from "./starFinderEnd";
 
 const Alphabet = () => {
   const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
@@ -61,7 +62,7 @@ const Alphabet = () => {
     ////////--PHASER SETUP--///////////////////
     ///////////////////////////////////////////
 
-    function handleClick(target, tween) {
+    function handleClick(target, tween, time) {
       if (target.speed === 0 || gameState.score >= 5) {
         return;
       }
@@ -75,17 +76,34 @@ const Alphabet = () => {
           target.setTint(0x00ff55);
         }
         if (gameState.score >= 5) {
-          setTimeout(() => {
-            gameState.letterIndex++;
-            if (gameState.letterIndex >= 25) {
-              gameState.letterIndex = 0;
-            }
-            gameState.targetLetter = alphabetArray[gameState.letterIndex];
-            gameState.shortArray = makeRandomArray(
-              gameState.targetLetter,
-              alphabetArray
-            );
-          }, 1000);
+          time.delayedCall(
+            1000,
+            () => {
+              console.log("hello???");
+              gameState.letterIndex++;
+              if (gameState.letterIndex >= 25) {
+                gameState.letterIndex = 0;
+              }
+              gameState.targetLetter = alphabetArray[gameState.letterIndex];
+              gameState.shortArray = makeRandomArray(
+                gameState.targetLetter,
+                alphabetArray
+              );
+            },
+            [],
+            this
+          );
+          // setTimeout(() => {
+          //   gameState.letterIndex++;
+          //   if (gameState.letterIndex >= 25) {
+          //     gameState.letterIndex = 0;
+          //   }
+          //   gameState.targetLetter = alphabetArray[gameState.letterIndex];
+          //   gameState.shortArray = makeRandomArray(
+          //     gameState.targetLetter,
+          //     alphabetArray
+          //   );
+          // }, 1000);
         }
       } else {
         tween.pause();
@@ -106,19 +124,23 @@ const Alphabet = () => {
         );
 
         target.setTint(tempColor);
-        setTimeout(() => {
-          tween.restart();
-        }, 1000);
+        this.time.delayedCall(
+          1000,
+          function () {
+            tween.restart();
+          },
+          [],
+          this
+        );
+        // setTimeout(() => {
+        //   tween.restart();
+        // }, 1000);
       }
     }
 
     class Starfinder extends Phaser.Scene {
       constructor() {
         super({ key: "Starfinder" });
-      }
-
-      preload() {
-        this.load.image("logo", "./favicon-32x32.png");
       }
 
       create() {
@@ -131,6 +153,12 @@ const Alphabet = () => {
           gameState.height / 11,
           0x121222
         );
+
+        let bugBox = this.add.rectangle(20, 20, 20, 20, 0xff0000);
+
+        bugBox.setInteractive().on("pointerdown", () => {
+          console.log(this.data.cut);
+        });
 
         dataBox.depth = 1;
         dataBox.isStroked = true;
@@ -185,7 +213,7 @@ const Alphabet = () => {
             startY,
             pickRandomLetter(gameState.shortArray),
             {
-              fontFamily: "Helvettica Neue, Times, Courier New, serif",
+              fontFamily: "serif",
               fontSize: fontSize,
               fill: "#fff",
             }
@@ -230,13 +258,13 @@ const Alphabet = () => {
           gameState["letter" + i]
             .setInteractive()
             .on("pointerdown", () =>
-              handleClick(gameState["letter" + i], letterTween)
+              handleClick(gameState["letter" + i], letterTween, this.time)
             );
 
           gameState["background" + i]
             .setInteractive()
             .on("pointerdown", () =>
-              handleClick(gameState["letter" + i], letterTween)
+              handleClick(gameState["letter" + i], letterTween, this.time)
             );
 
           letters.push(gameState["letter" + i]);
@@ -329,9 +357,17 @@ const Alphabet = () => {
               }
             } else {
               if (gameState.score >= 5) {
-                setTimeout(() => {
-                  letter.speed = config.width < 530 ? 5 : 7;
-                }, 1000);
+                this.time.delayedCall(
+                  1000,
+                  function () {
+                    letter.speed = config.width < 530 ? 5 : 7;
+                  },
+                  [],
+                  this
+                );
+                // setTimeout(() => {
+                //   letter.speed = config.width < 530 ? 5 : 7;
+                // }, 1000);
               }
             }
           } else {
@@ -345,14 +381,34 @@ const Alphabet = () => {
 
           //updating the game state
           if (gameState.score >= 5) {
-            setTimeout(() => {
+            this.time.delayedCall(1000, () => {
               gameState.score = 0;
+              if (gameState.letterIndex >= 2) {
+                this.scene.stop("Starfinder");
+                this.cameras.resetAll();
+                this.scene.start("EndStarfinder");
+                return;
+              }
               this.tweens.each((tween) => {
                 if (tween.paused) {
                   tween.restart();
                 }
               });
-            }, 1000);
+            });
+            // setTimeout(() => {
+            //   gameState.score = 0;
+            //   if (gameState.letterIndex >= 2) {
+            //     this.scene.stop("Starfinder");
+            //     this.cameras.resetAll();
+            //     this.scene.start("EndStarfinder");
+            //     return;
+            //   }
+            //   this.tweens.each((tween) => {
+            //     if (tween.paused) {
+            //       tween.restart();
+            //     }
+            //   });
+            // }, 1000);
           }
         }
       }
@@ -365,7 +421,7 @@ const Alphabet = () => {
       height: fieldHeight * 0.75,
       parent: "game-field",
 
-      scene: [StartStarfinder, Starfinder],
+      scene: [StartStarfinder, Starfinder, EndStarfinder],
     };
 
     const gameState = {
@@ -391,8 +447,12 @@ const Alphabet = () => {
     <>
       <div className="game-title">
         <h1>Star Finder</h1>
+        <div className="letter-container" id="game-field" ref={fieldRef}></div>
+        <p>
+          Search the stars for <b>5</b> of the target letter. After tagging 5
+          letters, find 5 of the next target letter in alphabetical order.
+        </p>
       </div>
-      <div className="letter-container" id="game-field" ref={fieldRef}></div>
       <Link to={"/"}>home</Link>
     </>
   );
