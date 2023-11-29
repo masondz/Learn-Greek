@@ -32,6 +32,7 @@ export const greekPrepositions = {
   μετὰ: "with/after",
   πέραν: "other side",
   παρʼ: "from/with/beside",
+  παρ: "from/with/beside",
   παρά: "from/with/beside",
   παρεκτὸς: "except",
   παρὰ: "from/with/beside",
