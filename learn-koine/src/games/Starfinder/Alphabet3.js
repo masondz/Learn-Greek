@@ -1,11 +1,7 @@
 import { useEffect, useRef } from "react";
 import Phaser from "phaser";
 import { Link } from "react-router-dom";
-import {
-  generateRandomSpeed,
-  makeRandomArray,
-  pickRandomLetter,
-} from "./starfinder_utils";
+import { makeRandomArray, pickRandomLetter } from "./starfinder_utils";
 import "../../App.css";
 import StartStarfinder from "./starFinderStart";
 import EndStarfinder from "./starFinderEnd";
@@ -51,8 +47,6 @@ const Alphabet = () => {
     let targetLetter = alphabetArray[letterIndex];
 
     const numLetters = 17;
-    const letters = [];
-    const backgrounds = [];
 
     const numStars = 150;
 
@@ -62,59 +56,136 @@ const Alphabet = () => {
     ////////--PHASER SETUP--///////////////////
     ///////////////////////////////////////////
 
-    function handleClick(target, tween, time) {
-      if (target.speed === 0 || gameState.score >= 5) {
-        return;
-      }
+    // function handleClick(target, tween, time) {
+    //   if (target.speed === 0 || gameState.score >= 5) {
+    //     return;
+    //   }
 
-      if (target.text === gameState.targetLetter) {
-        target.speed = 0;
-        gameState.score++;
-        if (tween) {
-          console.log(tween);
-          tween.pause();
-          target.setTint(0x00ff55);
-        }
-        if (gameState.score >= 5) {
-          time.delayedCall(
-            1000,
-            () => {
-              console.log("hello???");
-              gameState.letterIndex++;
-              if (gameState.letterIndex >= 25) {
-                gameState.letterIndex = 0;
-              }
-              gameState.targetLetter = alphabetArray[gameState.letterIndex];
-              gameState.shortArray = makeRandomArray(
-                gameState.targetLetter,
-                alphabetArray
-              );
-            },
-            [],
-            this
-          );
-        }
-      } else {
-        tween.pause();
+    //   if (target.text === gameState.targetLetter) {
+    //     target.speed = 0;
+    //     gameState.score++;
+    //     if (tween) {
+    //       console.log(tween);
+    //       tween.pause();
+    //       target.setTint(0x00ff55);
+    //     }
+    //     if (gameState.score >= 5) {
+    //       time.delayedCall(
+    //         1000,
+    //         () => {
+    //           console.log("hello???");
+    //           gameState.letterIndex++;
+    //           if (gameState.letterIndex >= 25) {
+    //             gameState.letterIndex = 0;
+    //           }
+    //           gameState.targetLetter = alphabetArray[gameState.letterIndex];
+    //           gameState.shortArray = makeRandomArray(
+    //             gameState.targetLetter,
+    //             alphabetArray
+    //           );
+    //         },
+    //         [],
+    //         this
+    //       );
+    //     }
+    //   } else {
+    //     tween.pause();
 
-        const errorColor = Phaser.Display.Color.ValueToColor(0xff0000);
-        // const normalColor = Phaser.Display.Color.ValueToColor(0x00ffff);
+    //     const errorColor = Phaser.Display.Color.ValueToColor(0xff0000);
+    //     // const normalColor = Phaser.Display.Color.ValueToColor(0x00ffff);
 
-        target.setTint(errorColor);
-        time.delayedCall(
-          1000,
-          () => {
-            tween.restart();
-          },
-          [],
-          this
-        );
-      }
-    }
+    //     target.setTint(errorColor);
+    //     time.delayedCall(
+    //       1000,
+    //       () => {
+    //         tween.restart();
+    //       },
+    //       [],
+    //       this
+    //     );
+    //   }
+    // }
 
     class Starfinder extends Phaser.Scene {
       constructor() {
         super({ key: "Starfinder" });
+      }
+
+      createLetter() {
+        let fontSize = "32px";
+        if (config.width < 530) {
+          fontSize = "24px";
+        }
+        let startX = Phaser.Math.Between(0, config.width);
+        let startY = Phaser.Math.Between(600, 1000);
+        let endX = Phaser.Math.Between(0, config.width);
+
+        let randDuration = Phaser.Math.Between(3500, 7500);
+        let newLetter = this.add.text(
+          startX,
+          startY,
+          pickRandomLetter(gameState.shortArray),
+          {
+            fontFamily: "serif",
+            fontSize: fontSize,
+            fill: "#fff",
+          }
+        );
+
+        let newBackground = this.add.rectangle(
+          startX + gameState.xOffset,
+          startY + gameState.yOffset,
+          40,
+          40,
+          "#191c24"
+        );
+
+        newBackground.setAlpha(0.01);
+
+        this.tweens.add({
+          targets: [newLetter, newBackground],
+          x: endX,
+          y: -150,
+          duration: randDuration,
+          onComplete: () => {
+            newLetter.destroy();
+            newBackground.destroy();
+            this.createLetter();
+          },
+        });
+
+        const primaryColor = Phaser.Display.Color.ValueToColor(0xffffff);
+        const secondaryColor = Phaser.Display.Color.ValueToColor(0x00ffff);
+
+        const randomDuration = Phaser.Math.Between(300, 2000);
+
+        this.tweens.addCounter({
+          from: 0,
+          to: 100,
+          duration: randomDuration,
+          easing: "Linear",
+          yoyo: true,
+          repeat: -1,
+          onUpdate: (tween) => {
+            const value = tween.getValue();
+            const colorObject = Phaser.Display.Color.Interpolate.ColorWithColor(
+              primaryColor,
+              secondaryColor,
+              100,
+              value
+            );
+
+            const color = Phaser.Display.Color.GetColor(
+              colorObject.r,
+              colorObject.b,
+              colorObject.g
+            );
+
+            newLetter.setTint(color);
+          },
+        });
+
+        return newLetter;
       }
 
       //Create method
@@ -131,6 +202,7 @@ const Alphabet = () => {
           0x121222
         );
 
+        //scoreboard and display
         dataBox.depth = 1;
         dataBox.isStroked = true;
         dataBox.strokeColor = 0x00ffff;
@@ -163,142 +235,76 @@ const Alphabet = () => {
         gameState.stars = this.add.group();
 
         ////generate the letters. Main Game Loop
+
         for (let i = 0; i < numLetters; i++) {
-          let fontSize = "32px";
-          if (config.width < 530) {
-            fontSize = "24px";
-          }
+          this.createLetter();
 
-          let startX = Phaser.Math.Between(0, config.width);
-          let startY = Phaser.Math.Between(600, 1000);
+          // function handleClick(target, tween, context) {
+          //   console.log(target.text);
+          //   if (target.speed === 0 || gameState.score >= 5) {
+          //     return;
+          //   }
 
-          let currentBackground = this.add.rectangle(
-            startX + gameState.xOffset,
-            startY + gameState.yOffset,
-            40,
-            40,
-            "#191c24"
-          );
+          //   if (target.text === gameState.targetLetter) {
+          //     target.speed = 0;
+          //     gameState.score++;
+          //     if (tween) {
+          //       console.log(tween);
+          //       tween.pause();
+          //       target.setTint(0x00ff55);
+          //     }
+          //     if (gameState.score >= 5) {
+          //       context.time.delayedCall(
+          //         1000,
+          //         () => {
+          //           console.log("hello???");
+          //           gameState.letterIndex++;
+          //           if (gameState.letterIndex >= 25) {
+          //             gameState.letterIndex = 0;
+          //           }
+          //           gameState.targetLetter =
+          //             alphabetArray[gameState.letterIndex];
+          //           gameState.shortArray = makeRandomArray(
+          //             gameState.targetLetter,
+          //             alphabetArray
+          //           );
+          //         },
+          //         [],
+          //         this
+          //       );
+          //     }
+          //   }
+          // }
 
-          currentBackground.setAlpha(0.01);
-          currentBackground.name = "background" + i;
-
-          gameState.backgrounds.add(currentBackground);
-
-          let currentLetter = this.add.text(
-            startX,
-            100,
-            pickRandomLetter(gameState.shortArray),
-            {
-              fontFamily: "serif",
-              fontSize: fontSize,
-              fill: "#fff",
-            }
-          );
-
-          currentLetter.speed = generateRandomSpeed(config);
-          currentLetter.direction = Math.random() < 0.5;
-          currentLetter.name = "letter" + i;
-
-          gameState.letters.add(currentLetter);
-
-          //Add shimering colors
-          const primaryColor = Phaser.Display.Color.ValueToColor(0xffffff);
-          const secondaryColor = Phaser.Display.Color.ValueToColor(0x00ffff);
-
-          const randomDuration = Phaser.Math.Between(300, 2000);
-
-          const letterTween = this.tweens.addCounter({
-            from: 0,
-            to: 100,
-            duration: randomDuration,
-            easing: "Linear",
-            yoyo: true,
-            repeat: -1,
-            onUpdate: (tween) => {
-              const value = tween.getValue();
-              const colorObject =
-                Phaser.Display.Color.Interpolate.ColorWithColor(
-                  primaryColor,
-                  secondaryColor,
-                  100,
-                  value
-                );
-
-              const color = Phaser.Display.Color.GetColor(
-                colorObject.r,
-                colorObject.b,
-                colorObject.g
-              );
-
-              currentLetter.setTint(color);
-            },
-          });
-
-          function fnInCreate(target, tween, context) {
-            console.log(target.text);
-            if (target.speed === 0 || gameState.score >= 5) {
-              return;
-            }
-
-            if (target.text === gameState.targetLetter) {
-              target.speed = 0;
-              gameState.score++;
-              if (tween) {
-                console.log(tween);
-                tween.pause();
-                target.setTint(0x00ff55);
-              }
-              if (gameState.score >= 5) {
-                context.time.delayedCall(
-                  1000,
-                  () => {
-                    console.log("hello???");
-                    gameState.letterIndex++;
-                    if (gameState.letterIndex >= 25) {
-                      gameState.letterIndex = 0;
-                    }
-                    gameState.targetLetter =
-                      alphabetArray[gameState.letterIndex];
-                    gameState.shortArray = makeRandomArray(
-                      gameState.targetLetter,
-                      alphabetArray
-                    );
-                  },
-                  [],
-                  this
-                );
-              }
-            }
-          }
-
-          this.tweens.add({
-            targets: [currentBackground, currentLetter],
-            paused: false,
-            onUpdate: function () {
-              currentLetter.y += 100;
-              console.log("hi");
-              console.log(handleClick, fnInCreate); // clear the ES-lINt errors
-            },
-          });
+          // this.tweens.add({
+          //   targets: [currentBackground, currentLetter],
+          //   paused: false,
+          //   onUpdate: function () {
+          //     currentLetter.y += 100;
+          //     console.log("hi");
+          //     console.log(handleClick); // clear the ES-lINt errors
+          //   },
+          // });
 
           //make letters interactive
-          currentLetter.setInteractive().on("pointerdown", function () {
-            // handleClick(gameState["letter" + i], letterTween, this.time)
-            // fnInCreate(gameState["letter" + i], letterTween, this)
-            letterTween.pause();
-            console.log(this);
-            currentLetter.destroy();
-            currentBackground.destroy();
-          });
+          //   currentLetter.setInteractive().on("pointerdown", function () {
+          //     // handleClick(gameState["letter" + i], letterTween, this.time)
+          //     // fnInCreate(gameState["letter" + i], letterTween, this)
+          //     gameState.score++;
+          //     letterTween.pause();
+          //     console.log(this);
+          //     currentLetter.destroy();
+          //     currentBackground.destroy();
+          //   });
 
-          currentBackground.setInteractive().on("pointerdown", (t) =>
-            // handleClick(gameState["letter" + i], letterTween, this.time)
-            // fnInCreate(gameState["letter" + i], letterTween, this)
-            letterTween.pause()
-          );
+          //   currentBackground.setInteractive().on("pointerdown", (t) => {
+          //     // handleClick(gameState["letter" + i], letterTween, this.time)
+          //     // fnInCreate(gameState["letter" + i], letterTween, this)
+          //     gameState.score++;
+          //     letterTween.pause();
+          //   });
+          // }
         }
-
         let bugBox = this.add.rectangle(20, 20, 20, 20, 0xff0000);
         bugBox.setInteractive();
         bugBox.on("pointerdown", () => {
@@ -313,8 +319,8 @@ const Alphabet = () => {
         }
 
         function randSize() {
-          let x = Phaser.Math.Between(1, 2);
-          let y = Phaser.Math.Between(1, 2);
+          let x = Phaser.Math.Between(1.5, 2);
+          let y = Phaser.Math.Between(1.5, 2);
           return { x, y };
         }
 
@@ -379,58 +385,63 @@ const Alphabet = () => {
 
         gameState.currentScore.text = gameState.scoreDescription;
 
-        for (let i = 0; i < letters.length; i++) {
-          let letter = letters[i];
-          let background = backgrounds[i];
-          if (letter.y > -50) {
-            letter.y -= letter.speed;
-            background.y -= letter.speed;
-            if (letter.speed > 0) {
-              if (letter.direction) {
-                letter.x = letter.x + gameState.xIncline;
-                background.x = background.x + gameState.xIncline;
-              } else {
-                letter.x = letter.x - gameState.xIncline;
-                background.x = background.x - gameState.xIncline;
-              }
-            } else {
-              if (gameState.score >= 5) {
-                this.time.delayedCall(
-                  1000,
-                  function () {
-                    letter.speed = config.width < 530 ? 5 : 7;
-                  },
-                  [],
-                  this
-                );
-              }
-            }
-          } else {
-            letter.text = pickRandomLetter(gameState.shortArray);
-            letter.speed = generateRandomSpeed(config);
-            background.x =
-              (letter.x = Phaser.Math.Between(0, config.width)) +
-              gameState.xOffset;
-            background.y = (letter.y = 600) + gameState.yOffset;
-          }
+        // console.log(gameState.letters);
 
-          //updating the game state
-          if (gameState.score >= 5) {
-            this.time.delayedCall(1000, () => {
-              gameState.score = 0;
-              if (gameState.letterIndex >= 2) {
-                gameState.letterIndex = 0;
-                this.scene.stop("Starfinder");
-                this.scene.start("EndStarfinder");
-                return;
-              }
-              this.tweens.each((tween) => {
-                if (tween.paused) {
-                  tween.restart();
-                }
-              });
-            });
-          }
+        // for (let i = 0; i < gameState.letters.length; i++) {
+        //   let letter = gameState.letters[i];
+        //   let background = gameState.backgrounds[i];
+        //   if (letter.y > -50) {
+        //     letter.y -= letter.speed;
+        //     background.y -= letter.speed;
+        //     if (letter.speed > 0) {
+        //       if (letter.direction) {
+        //         letter.x = letter.x + gameState.xIncline;
+        //         background.x = background.x + gameState.xIncline;
+        //       } else {
+        //         letter.x = letter.x - gameState.xIncline;
+        //         background.x = background.x - gameState.xIncline;
+        //       }
+        //     } else {
+        //       if (gameState.score >= 5) {
+        //         this.time.delayedCall(
+        //           1000,
+        //           function () {
+        //             letter.speed = config.width < 530 ? 5 : 7;
+        //           },
+        //           [],
+        //           this
+        //         );
+        //       }
+        //     }
+        //   } else {
+        //     letter.text = pickRandomLetter(gameState.shortArray);
+        //     letter.speed = generateRandomSpeed(config);
+        //     background.x =
+        //       (letter.x = Phaser.Math.Between(0, config.width)) +
+        //       gameState.xOffset;
+        //     background.y = (letter.y = 600) + gameState.yOffset;
+        //   }
+        // }
+
+        //Checking if game score is 5, and if all alphabet cyceled through
+        if (gameState.score >= 5) {
+          console.log("hello");
+          gameState.score = 0;
+          this.time.delayedCall(1000, () => {
+            console.log("goodbye");
+            gameState.letterIndex++;
+            if (gameState.letterIndex >= 24) {
+              gameState.letterIndex = 0;
+              this.scene.stop("Starfinder");
+              this.scene.start("EndStarfinder");
+              return;
+            }
+            // this.tweens.each((tween) => {
+            //   if (tween.paused) {
+            //     tween.restart();
+            //   }
+            // });
+          });
         }
       }
     }
