@@ -153,7 +153,7 @@ const Alphabet = () => {
               const colorObject =
                 Phaser.Display.Color.Interpolate.ColorWithColor(
                   Phaser.Display.Color.ValueToColor(0x00ffff),
-                  Phaser.Display.Color.ValueToColor(0xffffff),
+                  Phaser.Display.Color.ValueToColor(0x0000ff),
                   100,
                   value
                 );
@@ -164,7 +164,7 @@ const Alphabet = () => {
                 colorObject.g
               );
 
-              gameState.letters.getChildren().forEach((letter) => {
+              gameState.correctLetters.getChildren().forEach((letter) => {
                 letter.setTint(color);
               });
             },
@@ -200,20 +200,22 @@ const Alphabet = () => {
 
         newLetter.setInteractive();
         newLetter.on("pointerdown", () => {
-          console.log(this.tweens);
+          console.log(newLetter.tintBottomLeft);
           if (
             clickLetter(gameState.targetLetter, newLetter, [tween, tinting])
           ) {
+            gameState.correctLetters.add(newLetter);
             gameState.score++;
             advanceLetter(this);
           }
         });
 
         newBackground.setInteractive().on("pointerdown", () => {
-          console.log();
+          console.log(newLetter.tintBottomLeft);
           if (
             clickLetter(gameState.targetLetter, newLetter, [tween, tinting])
           ) {
+            gameState.correctLetters.add(newLetter);
             gameState.score++;
             advanceLetter(this);
           }
@@ -267,6 +269,7 @@ const Alphabet = () => {
 
         //make letters group
         gameState.letters = this.add.group();
+        gameState.correctLetters = this.add.group();
         gameState.movingTweens = this.add.group();
         gameState.backgrounds = this.add.group();
         gameState.stars = this.add.group();
