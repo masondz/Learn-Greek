@@ -1,7 +1,11 @@
 import { useEffect, useRef } from "react";
 import Phaser from "phaser";
 import { Link } from "react-router-dom";
-import { makeRandomArray, pickRandomLetter } from "./starfinder_utils";
+import {
+  makeRandomArray,
+  pickRandomLetter,
+  clickLetter,
+} from "./starfinder_utils";
 import "../../App.css";
 import StartStarfinder from "./starFinderStart";
 import EndStarfinder from "./starFinderEnd";
@@ -142,7 +146,7 @@ const Alphabet = () => {
 
         newBackground.setAlpha(0.01);
 
-        this.tweens.add({
+        let tween = this.tweens.add({
           targets: [newLetter, newBackground],
           x: endX,
           y: -150,
@@ -159,7 +163,7 @@ const Alphabet = () => {
 
         const randomDuration = Phaser.Math.Between(300, 2000);
 
-        this.tweens.addCounter({
+        let tinting = this.tweens.addCounter({
           from: 0,
           to: 100,
           duration: randomDuration,
@@ -183,6 +187,29 @@ const Alphabet = () => {
 
             newLetter.setTint(color);
           },
+        });
+
+        newLetter.setInteractive();
+        newLetter.on("pointerdown", () => {
+          if (
+            clickLetter(gameState.targetLetter, newLetter, [tween, tinting])
+          ) {
+            gameState.score++;
+            if (gameState.score === 5) {
+              tween.resume();
+            }
+          }
+        });
+
+        newBackground.setInteractive().on("pointerdown", () => {
+          if (
+            clickLetter(gameState.targetLetter, newLetter, [tween, tinting])
+          ) {
+            gameState.score++;
+            if (gameState.score === 5) {
+              tween.resume();
+            }
+          }
         });
 
         return newLetter;
@@ -237,7 +264,7 @@ const Alphabet = () => {
         ////generate the letters. Main Game Loop
 
         for (let i = 0; i < numLetters; i++) {
-          this.createLetter();
+          gameState.letters.add(this.createLetter());
 
           // function handleClick(target, tween, context) {
           //   console.log(target.text);

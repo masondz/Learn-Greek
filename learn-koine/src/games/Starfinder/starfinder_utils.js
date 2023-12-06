@@ -14,7 +14,7 @@ export function pickRandomLetter(array) {
 
 export function makeRandomArray(targetLetter, alphabetArray) {
   let initialArray = [targetLetter];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     let randomIndex = Math.floor(Math.random() * alphabetArray.length);
     while (initialArray.includes[alphabetArray[randomIndex]]) {
       console.log(initialArray);
@@ -24,4 +24,18 @@ export function makeRandomArray(targetLetter, alphabetArray) {
     initialArray.push(alphabetArray[randomIndex]);
   }
   return initialArray;
+}
+
+export function clickLetter(targetLetter = "!", letter, tweenArray) {
+  if (targetLetter !== letter.text) {
+    letter.setTint("0xff3344");
+    tweenArray[1].pause();
+    return false;
+  } else {
+    letter.setTint("0x00ff00");
+    tweenArray.forEach((tween) => {
+      tween.pause();
+    });
+    return true;
+  }
 }
