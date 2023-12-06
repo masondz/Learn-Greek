@@ -139,7 +139,7 @@ const Alphabet = () => {
           },
         });
 
-        //if the correct letter is clicke, check if moving onto next target
+        //tween that makes letters flash
         function dazzleLetter(context) {
           context.tweens.addCounter({
             from: 0,
@@ -171,11 +171,12 @@ const Alphabet = () => {
           });
         }
 
+        //if the correct letter is clicke, check if moving onto next target
         function advanceLetter(context) {
           if (gameState.score === 5) {
             gameState.letterIndex++;
             if (gameState.letterIndex >= 25) {
-              gameState.letterIndex = 0;
+              gameState.targetLetter = alphabetArray[0];
             }
             gameState.targetLetter = alphabetArray[gameState.letterIndex];
             gameState.shortArray = makeRandomArray(
@@ -200,7 +201,6 @@ const Alphabet = () => {
 
         newLetter.setInteractive();
         newLetter.on("pointerdown", () => {
-          console.log(newLetter.tintBottomLeft);
           if (
             clickLetter(gameState.targetLetter, newLetter, [tween, tinting])
           ) {
@@ -211,7 +211,6 @@ const Alphabet = () => {
         });
 
         newBackground.setInteractive().on("pointerdown", () => {
-          console.log(newLetter.tintBottomLeft);
           if (
             clickLetter(gameState.targetLetter, newLetter, [tween, tinting])
           ) {
@@ -355,10 +354,8 @@ const Alphabet = () => {
 
         //Checking if game score is 5, and if all alphabet cyceled through
         if (gameState.score >= 5) {
-          console.log("hello");
           gameState.score = 0;
           this.time.delayedCall(1000, () => {
-            console.log("goodbye");
             if (gameState.letterIndex >= 25) {
               gameState.letterIndex = 0;
               this.scene.stop("Starfinder");
