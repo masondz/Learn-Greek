@@ -12,6 +12,7 @@ import EndStarfinder from "./starFinderEnd";
 
 const Alphabet = () => {
   const alphabetArray = "αβγδεζηθικλμνξοπρσςτυφχψω";
+  // const alphabetArray = "αβγ";
 
   const fieldRef = useRef();
 
@@ -174,9 +175,20 @@ const Alphabet = () => {
         //if the correct letter is clicke, check if moving onto next target
         function advanceLetter(context) {
           if (gameState.score === 5) {
-            gameState.letterIndex++;
-            if (gameState.letterIndex >= 25) {
+            console.log("advanceLetter triggered", gameState.letterIndex);
+            if (gameState.letterIndex + 1 >= 25) {
+              console.log("in first for loop");
+              gameState.letterIndex = 0;
               gameState.targetLetter = alphabetArray[0];
+              gameState.shortArray = makeRandomArray(
+                gameState.targetLetter,
+                alphabetArray
+              );
+              gameState.win = true;
+              return;
+            } else {
+              gameState.letterIndex++;
+              console.log("else: ", gameState.letterIndex);
             }
             gameState.targetLetter = alphabetArray[gameState.letterIndex];
             gameState.shortArray = makeRandomArray(
@@ -354,15 +366,18 @@ const Alphabet = () => {
 
         //Checking if game score is 5, and if all alphabet cyceled through
         if (gameState.score >= 5) {
-          gameState.score = 0;
-          this.time.delayedCall(1000, () => {
-            if (gameState.letterIndex >= 25) {
-              gameState.letterIndex = 0;
+          console.log("update: ", gameState.win);
+          if (gameState.win === true) {
+            this.time.delayedCall(1000, () => {
+              console.log("delayed call: ", gameState.win);
               this.scene.stop("Starfinder");
               this.scene.start("EndStarfinder");
+              gameState.win = false;
               return;
-            }
-          });
+            });
+          } else {
+            gameState.score = 0;
+          }
         }
       }
     }
@@ -387,6 +402,7 @@ const Alphabet = () => {
       xIncline: config.width < 530 ? 0.2 : 1,
       xOffset: 7,
       yOffset: config.width < 530 ? 15 : 18,
+      win: false,
     };
 
     const game = new Phaser.Game(config);
