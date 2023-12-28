@@ -43,7 +43,7 @@ class EndStarfinder extends Phaser.Scene {
 
     box.setInteractive().on("pointerdown", () => {
       this.scene.stop("EndStarfinder");
-      this.scene.start("Starfinder");
+      this.scene.start("StartStarfinder");
     });
   }
 }

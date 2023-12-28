@@ -156,8 +156,9 @@ const Alphabet = () => {
 
         let bugBox = this.add.rectangle(20, 20, 20, 20, 0xff0000);
 
-        bugBox.setInteractive().on("pointerdown", () => {
-          console.log(this.data.cut);
+        bugBox.setInteractive().on("pointerup", () => {
+          this.scene.restart("Starfinder");
+          // this.scene.start("EndStarfinder");
         });
 
         dataBox.depth = 1;
