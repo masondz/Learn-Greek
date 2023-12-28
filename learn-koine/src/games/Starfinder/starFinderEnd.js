@@ -14,9 +14,16 @@ class EndStarfinder extends Phaser.Scene {
     const screenHeight = this.cameras.main.height;
 
     let fontSize = Math.ceil(screenWidth * 0.04) + "px";
+    let fontScale = 0.7;
 
     if (screenWidth < 550) {
       fontSize = Math.ceil(screenWidth * 0.06) + "px";
+      fontScale = 0.35;
+    }
+
+    if (screenWidth < 550) {
+      fontSize = Math.ceil(screenWidth * 0.18) + "px";
+      fontScale = 0.35;
     }
 
     this.cameras.main.setBackgroundColor("#191c24");
@@ -39,7 +46,8 @@ class EndStarfinder extends Phaser.Scene {
         fill: "rgb(255, 255, 255)",
         align: "center",
       })
-      .setOrigin(0.5, 0.5);
+      .setOrigin(0.5, 0.5)
+      .setScale(fontScale);
 
     box.setInteractive().on("pointerdown", () => {
       this.scene.stop("EndStarfinder");

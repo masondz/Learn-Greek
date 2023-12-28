@@ -20,7 +20,7 @@ class StartStarfinder extends Phaser.Scene {
 
     if (screenWidth < 550) {
       fontSize = Math.ceil(screenWidth * 0.18) + "px";
-      fontScale = 0.4;
+      fontScale = 0.35;
     }
 
     this.cameras.main.setBackgroundColor("#191c24");
