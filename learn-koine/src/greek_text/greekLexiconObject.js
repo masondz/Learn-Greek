@@ -49356,7 +49356,7 @@ export const wordUsages = {
     gloss: "heart",
   },
   καρδίας: {
-    parse: "N-GSF｜Noun, genitive, singular, feminine",
+    parse: "N-GSF｜Noun, genitive or accusative, singular, feminine",
     GN: "G2588",
     gloss: "heart",
   },
@@ -96824,7 +96824,7 @@ export const wordUsages = {
   φρόνημα: {
     parse: "N-NSN｜Noun, nominative, singular, neuter",
     GN: "G5427",
-    gloss: "purpose",
+    gloss: "mind set, purpose",
   },
   φρονήσει: {
     parse: "N-DSF｜Noun, dative, singular, feminine",

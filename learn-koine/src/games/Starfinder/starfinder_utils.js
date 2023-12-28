@@ -25,3 +25,19 @@ export function makeRandomArray(targetLetter, alphabetArray) {
   }
   return initialArray;
 }
+
+export function clickLetter(targetLetter = "!", letter, tweenArray) {
+  if (tweenArray[0].isPaused()) {
+    return false;
+  } else if (targetLetter !== letter.text) {
+    letter.setTint("0xff3344");
+    tweenArray[1].pause();
+    return false;
+  } else {
+    letter.setTint("0x00ff00");
+    tweenArray.forEach((tween) => {
+      tween.pause();
+    });
+    return true;
+  }
+}

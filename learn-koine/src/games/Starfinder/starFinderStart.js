@@ -15,10 +15,12 @@ class StartStarfinder extends Phaser.Scene {
 
     console.log(screenWidth);
 
-    let fontSize = Math.ceil(screenWidth * 0.04) + "px";
+    let fontSize = Math.ceil(screenWidth * 0.08) + "px";
+    let fontScale = 0.7;
 
     if (screenWidth < 550) {
-      fontSize = Math.ceil(screenWidth * 0.06) + "px";
+      fontSize = Math.ceil(screenWidth * 0.18) + "px";
+      fontScale = 0.4;
     }
 
     this.cameras.main.setBackgroundColor("#191c24");
@@ -41,7 +43,7 @@ class StartStarfinder extends Phaser.Scene {
       .text(
         screenCenterX,
         screenCenterY,
-        "Find 5 of the target Letter.\nClick to Start",
+        "Find 5 of the Target Letter.\nClick to Start",
         {
           fontFamily: "Times New Roman, Courier New, serif",
           fontSize: fontSize,
@@ -49,7 +51,8 @@ class StartStarfinder extends Phaser.Scene {
           align: "center",
         }
       )
-      .setOrigin(0.5, 0.5);
+      .setOrigin(0.5, 0.5)
+      .setScale(fontScale);
 
     box.setInteractive().on("pointerdown", () => {
       this.scene.stop("StartStarfinder");
