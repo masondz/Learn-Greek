@@ -20,22 +20,22 @@ const parseHelp = (
   <div>
     <h2>Verse Parsing Practice</h2>
     <p>
-      This page allows the user to practice parsing an entire verse. First, a
+      This page allows the you to practice parsing an entire verse. First, a
       random verse is displayed. Users can use the search menu to pick a
       particular verse, as well as click through the New Testamen one verse at a
       time.
     </p>
     <p>
       At the bottom is a toolbar that has different parts of speech. Click on
-      the part of speech you wish to practice or identify. Then select a word in
-      the verse that matches the part of speech you chose. If you are wrong, the
-      word will turn red, but you can still try to guess the correct part of
+      the part of speech you wish to practice or identify. Then, select a word
+      in the verse that matches the part of speech you chose. If you are wrong,
+      the word will turn red, but you can still try to guess the correct part of
       speech.
     </p>
     <p>
       Once you identify the word’s correct part of speech, the word will be
       highlighted the corresponding color from the toolbar. You can then
-      practice parsing the word. For examle: if the word is a definite article,
+      practice parsing the word. For example: if the word is a definite article,
       you would choose the case, number and gender. If it is a verb, you will
       first choose what kind of verb it is (regular, participle, or infinitive),
       then select the correct options that describe the verb.
@@ -67,7 +67,7 @@ const verbHelp = (
       This section randomly picks verbs that match the criteria you choose. If
       you wish to practice present tense verbs, click “present” in the Tense
       section of the sidebar menu and then click “submit”. Dida Key will then
-      randomly select a verb that is in the present tense. Then use the grid to
+      randomly select a verb that is in the present tense. Then, use the grid to
       pick the correct parsing definition of the verb. Once all of the correct
       options have been selected, a new verb will automatically be displayed.
     </p>
