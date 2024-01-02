@@ -102,9 +102,47 @@ const Verse = () => {
   const [correctCount, setCorrectCount] = useState(false);
 
   useEffect(() => {
-    const randomVerse = getRandomVerse(organizeText(greekText));
-    console.log(randomVerse);
-    dispatch(setVerse(randomVerse));
+    function getVerseFromUrl(pathRaw) {
+      //check if numbered book
+      let path = pathRaw.slice(15);
+
+      // let selection = path.split("-").join(" "); //removes hyphen
+      // console.log(selection);
+
+      if (["1", "2", "3"].includes(path[0])) {
+        console.log("its a numbered book");
+        let selection = path.split("-");
+        console.log(`selection array: ${selection}`);
+        let book = selection[0] + " " + selection[1];
+
+        let chapter = selection[2];
+        if (chapter.length < 2) {
+          chapter = "0" + chapter;
+        }
+
+        let verse = selection[3];
+        if (verse.length < 2) {
+          verse = "0" + verse;
+        }
+
+        let referenceCode =
+          newTestament[book].code + "0" + chapter + "0" + verse;
+        //need this to get the text of the verse
+        //organizeText(greekText)
+        console.log(referenceCode);
+      }
+    }
+
+    const currentPath = window.location.pathname;
+    console.log(currentPath.slice(15));
+    getVerseFromUrl(currentPath);
+    if (currentPath === "/parsing-verse/") {
+      const randomVerse = getRandomVerse(organizeText(greekText));
+      console.log(randomVerse);
+      dispatch(setVerse(randomVerse));
+    } else {
+      console.log("else!");
+    }
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
   }, [dispatch]);
