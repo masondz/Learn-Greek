@@ -108,29 +108,44 @@ const Verse = () => {
 
       // let selection = path.split("-").join(" "); //removes hyphen
       // console.log(selection);
-
-      if (["1", "2", "3"].includes(path[0])) {
+      let selection = path.split("-");
+      let referenceCode = "";
+      let book = "";
+      let chapter = "";
+      let verse = "";
+      if (["1", "2", "3"].includes(selection[0])) {
         console.log("its a numbered book");
-        let selection = path.split("-");
         console.log(`selection array: ${selection}`);
-        let book = selection[0] + " " + selection[1];
+        book = selection[0] + " " + selection[1];
 
-        let chapter = selection[2];
+        chapter = selection[2];
         if (chapter.length < 2) {
           chapter = "0" + chapter;
         }
 
-        let verse = selection[3];
+        verse = selection[3];
         if (verse.length < 2) {
           verse = "0" + verse;
         }
+      } else {
+        book = selection[0];
 
-        let referenceCode =
-          newTestament[book].code + "0" + chapter + "0" + verse;
-        //need this to get the text of the verse
-        //organizeText(greekText)
-        console.log(referenceCode);
+        chapter = selection[1];
+        if (chapter.length < 2) {
+          chapter = "0" + chapter;
+        }
+
+        verse = selection[2];
+        if (verse.length < 2) {
+          verse = "0" + verse;
+        }
       }
+
+      referenceCode = newTestament[book].code + "0" + chapter + "0" + verse;
+
+      //need this to get the text of the verse
+      //organizeText(greekText)
+      console.log(referenceCode);
     }
 
     const currentPath = window.location.pathname;
