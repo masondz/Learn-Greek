@@ -148,8 +148,10 @@ const Verse = () => {
       referenceCode = newTestament[book].code + "0" + chapter + "0" + verse;
 
       //need this to get the text of the verse
-      //organizeText(greekText)
+      let chosenVerseText = organizeText(greekText)[referenceCode];
       console.log(referenceCode);
+      console.log(chosenVerse);
+      return [referenceCode, chosenVerseText];
     }
 
     const currentPath = window.location.pathname;
@@ -159,7 +161,8 @@ const Verse = () => {
       console.log(randomVerse);
       dispatch(setVerse(randomVerse));
     } else {
-      getVerseFromUrl(currentPath);
+      let pickedVerse = getVerseFromUrl(currentPath);
+      dispatch(setVerse(pickedVerse));
     }
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
