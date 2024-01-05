@@ -116,8 +116,12 @@ const Verse = () => {
       if (["1", "2", "3"].includes(selection[0])) {
         console.log("its a numbered book");
         console.log(`selection array: ${selection}`);
-        book = selection[0] + " " + selection[1];
-
+        book =
+          selection[0] +
+          " " +
+          selection[1].charAt(0).toUpperCase() +
+          selection[1].slice(1);
+        console.log(book);
         chapter = selection[2];
         if (chapter.length < 2) {
           chapter = "0" + chapter;
@@ -128,8 +132,8 @@ const Verse = () => {
           verse = "0" + verse;
         }
       } else {
-        book = selection[0];
-
+        book = selection[0].charAt(0).toUpperCase() + selection[0].slice(1);
+        console.log(book);
         chapter = selection[1];
         if (chapter.length < 2) {
           chapter = "0" + chapter;
@@ -149,14 +153,13 @@ const Verse = () => {
     }
 
     const currentPath = window.location.pathname;
-    console.log(currentPath.slice(15));
-    getVerseFromUrl(currentPath);
-    if (currentPath === "/parsing-verse/") {
+    console.log(currentPath);
+    if (currentPath === "/parsing-verse/" || currentPath === "/parsing-verse") {
       const randomVerse = getRandomVerse(organizeText(greekText));
       console.log(randomVerse);
       dispatch(setVerse(randomVerse));
     } else {
-      console.log("else!");
+      getVerseFromUrl(currentPath);
     }
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
