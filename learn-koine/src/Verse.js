@@ -160,6 +160,13 @@ const Verse = () => {
       const randomVerse = getRandomVerse(organizeText(greekText));
       console.log(randomVerse);
       dispatch(setVerse(randomVerse));
+      if (currentPath === "/parsing-verse") {
+        window.history.replaceState(
+          { set: "setting url" },
+          "",
+          "/parsing-verse/"
+        );
+      }
     } else {
       let pickedVerse = getVerseFromUrl(currentPath);
       dispatch(setVerse(pickedVerse));
