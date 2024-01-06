@@ -6,11 +6,11 @@ export default function ErrorPage() {
   console.log(error);
 
   return (
-    <div id="error-page">
+    <div id="error-page" style={{ margin: "16px" }}>
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
-        <i>{error.statusText || error.message}</i>
+        <i>You may have tried to go to a page that doesn't exist.</i>
       </p>
       <u>
         <Link to="/">Back to Home</Link>

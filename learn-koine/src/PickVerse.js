@@ -56,6 +56,27 @@ const PickVerse = ({
     return;
   };
 
+  //add reference to url
+  function addVerseToUrl(reference) {
+    console.log(reference);
+    let book = reference.slice(0, 2);
+    console.log(book);
+    let chapter = reference.slice(3, 5);
+    let verse = reference.slice(6);
+    let chosenVerse = "";
+
+    for (let entry in newTestament) {
+      if (newTestament[entry].code === Number(book)) {
+        chosenVerse += entry;
+        console.log(entry);
+      }
+    }
+    chosenVerse += " " + chapter + " " + verse;
+    const hyphenedVerse = chosenVerse.split(" ").join("-");
+    console.log(hyphenedVerse);
+    window.history.replaceState({ new: "new" }, "", hyphenedVerse);
+  }
+
   const handlePickBook = (e) => {
     e.preventDefault();
     const pickedBook = e.target.innerHTML;
@@ -137,6 +158,7 @@ const PickVerse = ({
     }
     const verse = allVerses[ref];
     const payload = [ref, verse];
+    addVerseToUrl(ref);
     dispatch(clearVerse());
     setTimeout(() => {
       setArticleGrid(blankGrid);
@@ -163,6 +185,7 @@ const PickVerse = ({
       newTestament[currentBook].code + "0" + currentChapter + "0" + tempVerse;
 
     if (lookUpVerse(nextReference)) {
+      // addVerseToUrl(nextReference);
       setChosenVerse(tempVerse);
       setChosenChapter(currentChapter);
       if (!chosenBook) {
@@ -179,6 +202,7 @@ const PickVerse = ({
       nextReference =
         newTestament[currentBook].code + "0" + tempChapter + "0" + tempVerse;
       if (lookUpVerse(nextReference)) {
+        // addVerseToUrl(nextReference);
         //update chapter and vere list
         setVerseList(updateVerseList(Number(tempChapter)));
         setChosenChapter(tempChapter);
@@ -191,6 +215,7 @@ const PickVerse = ({
 
         for (let book in newTestament) {
           if (newTestament[book].code === Number(tempBookCode)) {
+            // addVerseToUrl(`${book}001001`);
             tempChapter = "01";
             setChosenBook(book);
             setChapterList(updateChapterList(book));
@@ -236,6 +261,7 @@ const PickVerse = ({
               }
 
               reference = tempBookCode + "0" + tempChapter + "0" + tempVerse;
+              // addVerseToUrl(reference);
               setChosenBook(tempBook);
               setChosenChapter(tempChapter);
               setChosenVerse(tempVerse);
@@ -260,7 +286,7 @@ const PickVerse = ({
     }
 
     reference = tempBookCode + "0" + tempChapter + "0" + tempVerse;
-
+    // addVerseToUrl(reference);
     lookUpVerse(reference);
     setChosenBook(currentBook);
     setChapterList(updateChapterList(currentBook));

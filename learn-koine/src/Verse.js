@@ -166,7 +166,7 @@ const Verse = () => {
     }
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
-  }, [dispatch]);
+  }, [dispatch, chosenVerse]);
 
   const [articleGrid, setArticleGrid] = useState({
     nominative: "-clear",
