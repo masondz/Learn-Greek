@@ -4761,17 +4761,17 @@ export const wordUsages = {
     gloss: "hallelujah",
   },
   ἀλλήλοις: {
-    parse: "C-DPN｜reCiprocal pronoun, dative, plural, neuter",
+    parse: "C-DPN｜Reciprocal pronoun, dative, plural, neuter",
     GN: "G240",
     gloss: "one another",
   },
   ἀλλήλους: {
-    parse: "C-APM｜reCiprocal pronoun, accusative, plural, masculine",
+    parse: "C-APM｜Reciprocal pronoun, accusative, plural, masculine",
     GN: "G240",
     gloss: "one another",
   },
   ἀλλήλων: {
-    parse: "C-GPM｜reCiprocal pronoun, genitive, plural, masculine",
+    parse: "C-GPM｜Reciprocal pronoun, genitive, plural, masculine",
     GN: "G240",
     gloss: "one another",
   },

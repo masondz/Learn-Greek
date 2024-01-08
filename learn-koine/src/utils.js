@@ -9,11 +9,11 @@
     Adverb = 1
     particle = 1
     definite article = 3
-    conjunction = 
-    verb = 
-    participle = 
-    infinitive = 
-    preposition =
+    conjunction = guess definition out of 4
+    verb = 5
+    participle = 5
+    infinitive = 2
+    preposition = guess definition out of 4
 */
 
 //input is an array of strings
