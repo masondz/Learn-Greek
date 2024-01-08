@@ -1,4 +1,6 @@
 /*
+  Takes an object of words ie:  object = {word: "word"}
+
     Nouns = 3
     Ajectives = 3
     Relative Pronoun = 3
@@ -20,7 +22,7 @@
 //input is an array of strings
 export function scoreVerse(arrayStrings, lexicon) {
   let score = 0;
-  const scoreKey = {
+  const scoreDirectory = {
     Adjective: 3,
     Noun: 3,
     "Relative pronoun": 3,
@@ -38,5 +40,16 @@ export function scoreVerse(arrayStrings, lexicon) {
     Preposition: 4,
   };
 
-  for (let i = 0; i < arrayStrings.length; i++) {}
+  const scoreKeys = Object.keys(scoreDirectory);
+
+  for (let i = 0; i < arrayStrings.length; i++) {
+    for (let j = 0; j < scoreKeys.length; j++) {
+      // if (lexicon[arrayStrings[i]].parse.includes(scoreKeys[j])) {
+      //   score += scoreDirectory[scoreKeys[j]];
+      // }
+      console.log(scoreKeys[j]);
+    }
+  }
+
+  return score;
 }

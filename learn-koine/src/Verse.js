@@ -27,6 +27,8 @@ import AdverbGrid from "./AdverbGrid";
 import ParticleGrid from "./ParticleGrid";
 import { setVerbType } from "./features/verbSlice";
 import HelpTool from "./HelpTool";
+// import { scoreVerse } from "./utils";
+// import { wordUsages } from "./greek_text/greekLexiconObject";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -245,6 +247,9 @@ const Verse = () => {
   }
 
   let verseArray = arrayIffy(verse);
+
+  // let scoreMax = scoreVerse(verseArray, wordUsages);
+  // console.log(scoreMax);
 
   const menuOptions = [
     "definite article",
