@@ -65912,42 +65912,42 @@ export const wordUsages = {
     gloss: "to suppose",
   },
   οἷα: {
-    parse: "K-APN｜correlative pronoun, accusative, plural, neuter",
+    parse: "K-APN｜Correlative pronoun, accusative, plural, neuter",
     GN: "G3634",
     gloss: "such as",
   },
   οἷά: {
-    parse: "K-NPN｜correlative pronoun, nominative, plural, neuter",
+    parse: "K-NPN｜Correlative pronoun, nominative, plural, neuter",
     GN: "G3634",
     gloss: "such as",
   },
   οἵα: {
-    parse: "K-NSF｜correlative pronoun, nominative, singular, feminine",
+    parse: "K-NSF｜Correlative pronoun, nominative, singular, feminine",
     GN: "G3634",
     gloss: "such as",
   },
   οἷοι: {
-    parse: "K-NPM｜correlative pronoun, nominative, plural, masculine",
+    parse: "K-NPM｜Correlative pronoun, nominative, plural, masculine",
     GN: "G3634",
     gloss: "such as",
   },
   οἷοί: {
-    parse: "K-NPM｜correlative pronoun, nominative, plural, masculine",
+    parse: "K-NPM｜Correlative pronoun, nominative, plural, masculine",
     GN: "G3634",
     gloss: "such as",
   },
   οἷον: {
-    parse: "K-NSN｜correlative pronoun, nominative, singular, neuter",
+    parse: "K-NSN｜Correlative pronoun, nominative, singular, neuter",
     GN: "G3634",
     gloss: "such as",
   },
   οἷος: {
-    parse: "K-NSM｜correlative pronoun, nominative, singular, masculine",
+    parse: "K-NSM｜Correlative pronoun, nominative, singular, masculine",
     GN: "G3634",
     gloss: "such as",
   },
   οἵους: {
-    parse: "K-APM｜correlative pronoun, accusative, plural, masculine",
+    parse: "K-APM｜Correlative pronoun, accusative, plural, masculine",
     GN: "G3634",
     gloss: "such as",
   },
@@ -67730,42 +67730,42 @@ export const wordUsages = {
     gloss: "aroma",
   },
   ὅσα: {
-    parse: "K-NPN｜correlative pronoun, nominative, plural, neuter",
+    parse: "K-NPN｜Correlative pronoun, nominative, plural, neuter",
     GN: "G3745",
     gloss: "just as/how much",
   },
   ὅσαι: {
-    parse: "K-NPF｜correlative pronoun, nominative, plural, feminine",
+    parse: "K-NPF｜Correlative pronoun, nominative, plural, feminine",
     GN: "G3745",
     gloss: "just as/how much",
   },
   ὅσοι: {
-    parse: "K-NPM｜correlative pronoun, nominative, plural, masculine",
+    parse: "K-NPM｜Correlative pronoun, nominative, plural, masculine",
     GN: "G3745",
     gloss: "just as/how much",
   },
   Ὅσοι: {
-    parse: "K-NPM｜correlative pronoun, nominative, plural, masculine",
+    parse: "K-NPM｜Correlative pronoun, nominative, plural, masculine",
     GN: "G3745",
     gloss: "just as/how much",
   },
   ὅσον: {
-    parse: "K-NSN｜correlative pronoun, nominative, singular, neuter",
+    parse: "K-NSN｜Correlative pronoun, nominative, singular, neuter",
     GN: "G3745",
     gloss: "just as/how much",
   },
   ὅσους: {
-    parse: "K-APM｜correlative pronoun, accusative, plural, masculine",
+    parse: "K-APM｜Correlative pronoun, accusative, plural, masculine",
     GN: "G3745",
     gloss: "just as/how much",
   },
   ὅσῳ: {
-    parse: "K-DSN｜correlative pronoun, dative, singular, neuter",
+    parse: "K-DSN｜Correlative pronoun, dative, singular, neuter",
     GN: "G3745",
     gloss: "just as/how much",
   },
   ὅσων: {
-    parse: "K-GPM｜correlative pronoun, genitive, plural, masculine",
+    parse: "K-GPM｜Correlative pronoun, genitive, plural, masculine",
     GN: "G3745",
     gloss: "just as/how much",
   },
@@ -78132,73 +78132,73 @@ export const wordUsages = {
   },
   πόσα: {
     parse:
-      "Q-APN｜correlative or interrogative pronoun, accusative, plural, neuter",
+      "Q-APN｜Correlative or interrogative pronoun, accusative, plural, neuter",
     GN: "G4214",
     gloss: "how much/many",
   },
   πόσαι: {
     parse:
-      "Q-NPF｜correlative or interrogative pronoun, nominative, plural, feminine",
+      "Q-NPF｜Correlative or interrogative pronoun, nominative, plural, feminine",
     GN: "G4214",
     gloss: "how much/many",
   },
   πόσας: {
     parse:
-      "Q-APF｜correlative or interrogative pronoun, accusative, plural, feminine",
+      "Q-APF｜Correlative or interrogative pronoun, accusative, plural, feminine",
     GN: "G4214",
     gloss: "how much/many",
   },
   πόσην: {
     parse:
-      "Q-ASF｜correlative or interrogative pronoun, accusative, singular, feminine",
+      "Q-ASF｜Correlative or interrogative pronoun, accusative, singular, feminine",
     GN: "G4214",
     gloss: "how much/many",
   },
   Πόσοι: {
     parse:
-      "Q-NPM｜correlative or interrogative pronoun, nominative, plural, masculine",
+      "Q-NPM｜Correlative or interrogative pronoun, nominative, plural, masculine",
     GN: "G4214",
     gloss: "how much/many",
   },
   πόσον: {
     parse:
-      "Q-NSN｜correlative or interrogative pronoun, nominative, singular, neuter",
+      "Q-NSN｜Correlative or interrogative pronoun, nominative, singular, neuter",
     GN: "G4214",
     gloss: "how much/many",
   },
   Πόσον: {
     parse:
-      "Q-ASN｜correlative or interrogative pronoun, accusative, singular, neuter",
+      "Q-ASN｜Correlative or interrogative pronoun, accusative, singular, neuter",
     GN: "G4214",
     gloss: "how much/many",
   },
   Πόσος: {
     parse:
-      "Q-NSM｜correlative or interrogative pronoun, nominative, singular, masculine",
+      "Q-NSM｜Correlative or interrogative pronoun, nominative, singular, masculine",
     GN: "G4214",
     gloss: "how much/many",
   },
   πόσους: {
     parse:
-      "Q-APM｜correlative or interrogative pronoun, accusative, plural, masculine",
+      "Q-APM｜Correlative or interrogative pronoun, accusative, plural, masculine",
     GN: "G4214",
     gloss: "how much/many",
   },
   Πόσους: {
     parse:
-      "Q-APM｜correlative or interrogative pronoun, accusative, plural, masculine",
+      "Q-APM｜Correlative or interrogative pronoun, accusative, plural, masculine",
     GN: "G4214",
     gloss: "how much/many",
   },
   πόσῳ: {
     parse:
-      "Q-DSN｜correlative or interrogative pronoun, dative, singular, neuter",
+      "Q-DSN｜Correlative or interrogative pronoun, dative, singular, neuter",
     GN: "G4214",
     gloss: "how much/many",
   },
   πόσων: {
     parse:
-      "Q-GPF｜correlative or interrogative pronoun, genitive, plural, feminine",
+      "Q-GPF｜Correlative or interrogative pronoun, genitive, plural, feminine",
     GN: "G4214",
     gloss: "how much/many",
   },
