@@ -7,6 +7,7 @@
     Personal pronoun = 3
     correlative pronoun = 3
     Adverb = 1
+    Noun = 3
     particle = 1
     definite article = 3
     conjunction = guess definition out of 4
@@ -18,5 +19,24 @@
 
 //input is an array of strings
 export function scoreVerse(arrayStrings, lexicon) {
+  let score = 0;
+  const scoreKey = {
+    Adjective: 3,
+    Noun: 3,
+    "Relative pronoun": 3,
+    "Demonstrative pronoun": 3,
+    "Reciprocal pronoun": 3,
+    "Personal pronoun": 3,
+    "Correlative pronoun": 3,
+    Adverb: 1,
+    Particle: 1,
+    "definite article": 3,
+    Conjuction: 4,
+    Verb: 5,
+    Participle: 5,
+    Infinitive: 2,
+    Preposition: 4,
+  };
+
   for (let i = 0; i < arrayStrings.length; i++) {}
 }
