@@ -1,7 +1,7 @@
 import { wordUsages } from "./greekLexiconObject";
 import { greekArticles } from "./greekArticles";
 
-function removePunctuation(str) {
+export function removePunctuation(str) {
   //this is from ChatpGPT
   const punctuationRegex =
     //eslint-disable-next-line
@@ -152,4 +152,33 @@ export const randomChoicesSelection = (obj, conjunctionGloss) => {
   } catch (error) {
     console.log(`Problem with randomChoicesSelection: ${error}`);
   }
+};
+
+export const getRandomVerse = (theText, source) => {
+  let bookArr = Object.keys(source);
+  let index = bookArr[Math.floor(Math.random() * bookArr.length)];
+
+  let randomBook = source[index];
+
+  let chapters = randomBook.chapterVerseIndex;
+  let randomChapter = Math.floor(Math.random() * chapters.length);
+
+  let verse = Math.floor(
+    Math.random() * randomBook.chapterVerseIndex[randomChapter]
+  );
+
+  randomChapter++;
+  verse++;
+
+  if (randomChapter < 10) {
+    randomChapter = "0" + randomChapter;
+  }
+
+  if (verse < 10) {
+    verse = "0" + verse;
+  }
+
+  let reference = randomBook.code + "0" + randomChapter + "0" + verse;
+
+  return [reference, theText[reference]];
 };

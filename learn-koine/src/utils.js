@@ -19,8 +19,14 @@
     preposition = guess definition out of 4
 */
 
+import { parseWord } from "./greek_text/parseLexicon";
+
 //input is an array of strings
-export function scoreVerse(arrayStrings, lexicon) {
+export function scoreVerse(arrayStrings) {
+  const parsedWordObjects = arrayStrings.map((word) => {
+    return parseWord(word.word);
+  });
+
   let score = 0;
   const scoreDirectory = {
     Adjective: 3,
@@ -41,13 +47,12 @@ export function scoreVerse(arrayStrings, lexicon) {
   };
 
   const scoreKeys = Object.keys(scoreDirectory);
-
-  for (let i = 0; i < arrayStrings.length; i++) {
+  for (let i = 0; i < parsedWordObjects.length; i++) {
+    let wordParse = parsedWordObjects[i].parse;
     for (let j = 0; j < scoreKeys.length; j++) {
-      // if (lexicon[arrayStrings[i]].parse.includes(scoreKeys[j])) {
-      //   score += scoreDirectory[scoreKeys[j]];
-      // }
-      console.log(scoreKeys[j]);
+      if (wordParse.includes(scoreKeys[j])) {
+        score += scoreDirectory[scoreKeys[j]];
+      }
     }
   }
 
