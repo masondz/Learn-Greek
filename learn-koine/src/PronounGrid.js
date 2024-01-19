@@ -1,19 +1,43 @@
 import "./Word.css";
 import "./Verb.css";
 import { selectWordSlice } from "./features/wordSlice";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
+import {
+  increaseCorrect,
+  increaseWrong,
+  selectScoreSlice,
+  setCorrectWorth,
+  setCurrentScore,
+  setWrongWorth,
+} from "./features/scoreSlice";
+import { scoringFunction } from "./utils";
 
 const PronounGrid = ({ reset }) => {
   const word = useSelector(selectWordSlice);
+  const dispatch = useDispatch();
+  const scoreObject = useSelector(selectScoreSlice);
 
   const checkCase = (e) => {
     let choice = e.target.innerHTML;
+    let isReflexiveOrPossessive =
+      word.parse.includes("Reflexive") || word.parse.includes("Possessive");
+    if (
+      (isReflexiveOrPossessive && scoreObject.correctFound >= 4) ||
+      (!isReflexiveOrPossessive && scoreObject.correctFound >= 3)
+    ) {
+      console.log("found enough correct");
+      return;
+    }
     if (word.parse.includes(choice)) {
       console.log("correct!");
+      dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+      dispatch(increaseCorrect());
       e.target.className = e.target.className + " correct";
     } else {
       console.log("wrong");
+      dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
+      dispatch(increaseWrong());
       e.target.className = e.target.className + " wrong";
     }
   };
@@ -199,7 +223,9 @@ const PronounGrid = ({ reset }) => {
         caseOptions[i].className = "case-option";
       }
     }
-  }, [word, reset]);
+    dispatch(setCorrectWorth(30));
+    dispatch(setWrongWorth(10));
+  }, [word, reset, dispatch]);
 
   let gridOption;
   if (word.parse.includes("Reflexive")) {

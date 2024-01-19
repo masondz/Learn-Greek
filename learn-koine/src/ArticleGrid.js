@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Word.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { selectWordSlice } from "./features/wordSlice";
+import {
+  selectScoreSlice,
+  setCorrectWorth,
+  increaseCorrect,
+  setWrongWorth,
+  increaseWrong,
+  setCurrentScore,
+} from "./features/scoreSlice";
+import { scoringFunction } from "./utils";
 
 export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
   const { parse } = useSelector(selectWordSlice);
+  const scoreObject = useSelector(selectScoreSlice);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setCorrectWorth(30)); //correct choices in this grid are worth 30 points.
+    dispatch(setWrongWorth(10));
+  }, [dispatch]);
 
   let isVocative;
 
@@ -34,12 +50,19 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
     const wordCase = parse;
 
     let target = e.target.innerHTML;
-
+    if (scoreObject.correctFound >= 3) {
+      console.log("you've found enough correct answers.");
+      return;
+    }
     if (wordCase.includes(target)) {
       console.log("there's a match");
+      dispatch(increaseCorrect());
+      dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
       setArticleGrid({ ...articleGrid, [target]: "-correct" });
     } else {
       console.log("there's NOT a match");
+      dispatch(increaseWrong());
+      dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
       setArticleGrid({ ...articleGrid, [target]: "-wrong" });
     }
   };

@@ -1,21 +1,29 @@
+/*
+set worth of correct and wrong in useEffect
+increase/decrease in checWord function
+*/
+
 import "./Word.css";
 import { randomChoicesSelection } from "./greek_text/parseLexicon";
 import { selectWordSlice } from "./features/wordSlice";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useMemo } from "react";
 import { greekConjunctions } from "./greek_text/greekConjunctions";
+import {
+  selectScoreSlice,
+  setCorrectWorth,
+  setWrongWorth,
+  setCurrentScore,
+  increaseCorrect,
+  increaseWrong,
+} from "./features/scoreSlice";
+
+import { scoringFunction } from "./utils";
 
 const ConjuctionGrid = ({ reset }) => {
   const word = useSelector(selectWordSlice);
-  // let guessArray = [];
-
-  // if (word.parse.includes("Conjunction")) {
-  //   guessArray = randomChoicesSelection(
-  //     greekConjunctions,
-  //     greekConjunctions[word.word]
-  //   );
-  //   console.log(guessArray);
-  // }
+  const dispatch = useDispatch();
+  const scoreObject = useSelector(selectScoreSlice);
 
   const guessArray = useMemo(() => {
     let array = [];
@@ -36,15 +44,26 @@ const ConjuctionGrid = ({ reset }) => {
         caseOptions[i].className = "case-option";
       }
     }
-  }, [word, reset]);
+
+    dispatch(setCorrectWorth(25));
+    dispatch(setWrongWorth(5));
+  }, [word, reset, dispatch]);
 
   const checkCase = (e) => {
     let choice = e.target.innerHTML;
+    if (scoreObject.correctFound >= 1) {
+      console.log("found enough correct");
+      return;
+    }
     if (choice === greekConjunctions[word.word]) {
       console.log("correct!");
       e.target.className = e.target.className + " correct";
+      dispatch(increaseCorrect());
+      dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
     } else {
       console.log("wrong");
+      dispatch(increaseWrong());
+      dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
       e.target.className = e.target.className + " wrong";
     }
   };

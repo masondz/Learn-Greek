@@ -20,6 +20,12 @@
 */
 
 import { parseWord } from "./greek_text/parseLexicon";
+// import {
+//   increaseCorrect,
+//   increaseWrong,
+//   selectScoreSlice,
+// } from "./features/scoreSlice";
+// import { useDispatch, useSelector } from "react-redux";
 
 //input is an array of strings
 export function scoreVerse(arrayStrings) {
@@ -57,4 +63,16 @@ export function scoreVerse(arrayStrings) {
   }
 
   return score;
+}
+
+export function scoringFunction(scoreObject, choice) {
+  const { currentScore, correctWorth, wrongWorth } = scoreObject;
+  let total = currentScore;
+  if (choice === "correct") {
+    total += correctWorth;
+  } else {
+    total -= wrongWorth;
+  }
+  console.log(total);
+  return total;
 }

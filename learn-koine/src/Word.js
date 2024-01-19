@@ -5,6 +5,7 @@ import { incrementFoundArticles } from "./features/countSlice";
 import { setParsingArticle } from "./features/parsingSlice";
 import { selectVerseMode } from "./features/verseSlice";
 import { parseWord } from "./greek_text/parseLexicon";
+import { resetFoundWords } from "./features/scoreSlice";
 
 const wrongPick = "\u2716";
 const correctPick = "\u2713";
@@ -37,6 +38,7 @@ const Word = (props) => {
 
   const handleClick = () => {
     let wordData = parseWord(word.word);
+    dispatch(resetFoundWords());
     if (!wordData) {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");

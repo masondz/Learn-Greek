@@ -28,6 +28,7 @@ import ParticleGrid from "./ParticleGrid";
 import { setVerbType } from "./features/verbSlice";
 import HelpTool from "./HelpTool";
 import { scoreVerse } from "./utils";
+import ScoreBoard from "./ScoreBoard";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -227,6 +228,7 @@ const Verse = () => {
           correctCount={correctCount}
           setCorrectCount={setCorrectCount}
           reset={reset}
+          dispatch={dispatch}
         />
       );
       break;
@@ -331,6 +333,7 @@ const Verse = () => {
           <PassageNumber />
           <br></br>
           <div>
+            <ScoreBoard />
             <CheckWord
               word={word}
               setArticleGrid={setArticleGrid}
