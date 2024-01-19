@@ -5,7 +5,11 @@ import { incrementFoundArticles } from "./features/countSlice";
 import { setParsingArticle } from "./features/parsingSlice";
 import { selectVerseMode } from "./features/verseSlice";
 import { parseWord } from "./greek_text/parseLexicon";
-import { resetFoundWords } from "./features/scoreSlice";
+import {
+  resetFoundWords,
+  selectScoreSlice,
+  setCurrentScore,
+} from "./features/scoreSlice";
 
 const wrongPick = "\u2716";
 const correctPick = "\u2713";
@@ -22,6 +26,7 @@ const Word = (props) => {
   const [highlight, setHighlight] = useState("");
   const dispatch = useDispatch();
   const verseMode = useSelector(selectVerseMode);
+  const scoreOjbect = useSelector(selectScoreSlice);
 
   const { blankGrid, setArticleGrid, word, reset, setReset } = props;
 
@@ -43,6 +48,7 @@ const Word = (props) => {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");
       dispatch(setWord(removePunctuation(word.word)));
+      dispatch(setCurrentScore(scoreOjbect.currentScore - 2));
       return;
     }
     if (highlight.includes("-highlight-correct")) {
@@ -62,29 +68,35 @@ const Word = (props) => {
         setIndicator(correctPick);
         setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
         dispatch(incrementFoundArticles());
+        dispatch(setCurrentScore(scoreOjbect.currentScore + 10));
         dispatch(setParsingArticle(true));
       } else {
         setIndicator(wrongPick);
         setHighlight("-highlight-wrong");
+        dispatch(setCurrentScore(scoreOjbect.currentScore - 2));
       }
     } else if (verseMode === "Pronoun") {
       if (wordData.parse.includes("pronoun")) {
         setIndicator(correctPick);
+        dispatch(setCurrentScore(scoreOjbect.currentScore + 10));
 
         setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
       } else {
         setIndicator(wrongPick);
         setHighlight("-highlight-wrong");
+        dispatch(setCurrentScore(scoreOjbect.currentScore - 2));
       }
     } else if (wordData.parse.includes(verseMode)) {
       setIndicator(correctPick);
       setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
+      dispatch(setCurrentScore(scoreOjbect.currentScore + 10));
 
       dispatch(incrementFoundArticles());
       dispatch(setParsingArticle(true));
     } else if (!wordData.parse.includes(verseMode)) {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");
+      dispatch(setCurrentScore(scoreOjbect.currentScore - 2));
     }
     setArticleGrid(blankGrid);
     if (reset) {
