@@ -20,6 +20,7 @@
 */
 
 import { parseWord } from "./greek_text/parseLexicon";
+// import { selectVerseReference } from "./features/verseSlice";
 // import {
 //   increaseCorrect,
 //   increaseWrong,
@@ -65,6 +66,8 @@ export function scoreVerse(arrayStrings) {
 }
 
 export function getOrSetHighScore(reference) {
+  // let sliceReference = selectVerseReference();
+  // console.log(typeof sliceReference);
   let verseScore = JSON.parse(localStorage.getItem(reference));
   console.log(verseScore);
   try {
@@ -92,7 +95,7 @@ export function removeHighscore(reference) {
   return localStorage.removeItem(reference);
 }
 
-export function scoringFunction(scoreObject, choice, reference) {
+export function scoringFunction(scoreObject, choice) {
   const { currentScore, correctWorth, wrongWorth } = scoreObject;
   let total = currentScore;
   if (choice === "correct") {
