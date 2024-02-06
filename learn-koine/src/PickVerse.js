@@ -7,6 +7,7 @@ import { setVerse, clearVerse } from "./features/verseSlice";
 import { clearWord } from "./features/wordSlice";
 import { selectVerseReference } from "./features/verseSlice";
 import { decodeReference } from "./PassageNumber";
+import { resetFoundWords, setCurrentScore } from "./features/scoreSlice";
 
 const PickVerse = ({
   setArticleGrid,
@@ -228,6 +229,8 @@ const PickVerse = ({
         lookUpVerse(`${tempBookCode}001001`);
       }
     }
+    dispatch(setCurrentScore(0));
+    dispatch(resetFoundWords());
   }
 
   function prevVerse() {
@@ -294,6 +297,8 @@ const PickVerse = ({
     setChosenVerse(tempVerse);
     setChosenChapter(tempChapter);
     dispatch(clearWord());
+    dispatch(setCurrentScore(0));
+    dispatch(resetFoundWords());
     return;
   }
 
@@ -305,6 +310,8 @@ const PickVerse = ({
     if (!lookUpVerse(reference)) {
       return alert("Check verse reference");
     }
+    dispatch(setCurrentScore(0));
+    dispatch(resetFoundWords());
   };
 
   const handleOpenBookList = () => {

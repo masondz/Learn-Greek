@@ -5,6 +5,15 @@ import { selectVerbSlice } from "./features/verbSlice";
 import { selectVerseMode } from "./features/verseSlice";
 import "./Verb.css";
 import { useSelector } from "react-redux";
+import {
+  increaseCorrect,
+  increaseWrong,
+  selectScoreSlice,
+  setCorrectWorth,
+  setCurrentScore,
+  setWrongWorth,
+} from "./features/scoreSlice";
+import { scoringFunction } from "./utils";
 
 const VerbGrid = ({
   dispatch,
@@ -29,6 +38,8 @@ const VerbGrid = ({
 
   const verbType = useSelector(selectVerbSlice);
   const word = useSelector(selectWordSlice);
+
+  const scoreObject = useSelector(selectScoreSlice);
 
   useEffect(() => {
     let caseOptions = document.getElementsByClassName("case-option");
@@ -69,7 +80,10 @@ const VerbGrid = ({
       setIsRegularVerb(true);
       setCheckParse("Parse the word");
     }
-  }, [word, reset, verbType.Type]);
+
+    dispatch(setCorrectWorth(36));
+    dispatch(setWrongWorth(12));
+  }, [word, reset, verbType.Type, dispatch]);
 
   const handleNext = () => {
     let caseOptions = document.getElementsByClassName("case-option");
@@ -222,70 +236,6 @@ const VerbGrid = ({
       }
     }
 
-    // if (
-    //   word.parse.includes("imperfect, active, indicative, first, singular") ||
-    //   word.parse.includes("imperfect, active, indicative, third, plural")
-    // ) {
-    //   console.log("either first singular or third plural");
-    //   switch (e.target.innerHTML) {
-    //     case "first":
-    //       if (imperfectPerson === "third" || imperfectNumber === "plural") {
-    //         e.target.className = e.target.className + " wrong";
-    //         break;
-    //       } else {
-    //         isParsed();
-    //         setImperfectPerson("first");
-    //         console.log("made it to first person statement");
-    //         e.target.className = e.target.className + " correct";
-    //       }
-    //       break;
-    //     case "third":
-    //       if (imperfectPerson === "first" || imperfectNumber === "singular") {
-    //         e.target.className = e.target.className + " wrong";
-    //         break;
-    //       } else {
-    //         isParsed();
-    //         setImperfectPerson("third");
-    //         console.log("made it to third person statement");
-    //         e.target.className = e.target.className + " correct";
-    //       }
-    //       break;
-    //     case "singular":
-    //       if (imperfectNumber === "plural" || imperfectPerson === "third") {
-    //         e.target.className = e.target.className + " wrong";
-    //         break;
-    //       } else {
-    //         isParsed();
-    //         setImperfectNumber("singular");
-    //         console.log("made it to singular number statement");
-    //         e.target.className = e.target.className + " correct";
-    //       }
-    //       break;
-    //     case "plural":
-    //       if (imperfectNumber === "singular" || imperfectPerson === "first") {
-    //         e.target.className = e.target.className + " wrong";
-    //         break;
-    //       } else {
-    //         isParsed();
-    //         setImperfectNumber("plural");
-    //         console.log("made it to plural number statement");
-    //         e.target.className = e.target.className + " correct";
-    //       }
-    //       break;
-    //     default:
-    //       if (word.parse.includes(e.target.innerHTML)) {
-    //         isParsed();
-    //         e.target.className = e.target.className + " correct";
-    //         return;
-    //       } else {
-    //         e.target.className = e.target.className + " wrong";
-    //       }
-    //       break;
-    //   }
-    //   console.log(imperfectNumber, imperfectPerson);
-    //   return;
-    // }
-    // }
     if (e.target.innerHTML === "middle/passive") {
       if (
         word.parse.includes("middle") ||
@@ -296,18 +246,30 @@ const VerbGrid = ({
         e.target.className = e.target.className + " correct";
         if (verbMode !== "parsing") {
           isParsed();
+        } else {
+          dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+          dispatch(increaseCorrect());
         }
       } else {
         console.log("not middle/passive");
         e.target.className = e.target.className + " wrong";
+        if (verbMode === "parsing") {
+          dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
+          dispatch(increaseWrong());
+        }
       }
     } else if (word.parse.includes(e.target.innerHTML)) {
       e.target.className = e.target.className + " correct";
       if (verbMode !== "parsing") {
         isParsed();
+      } else {
+        dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+        dispatch(increaseCorrect());
       }
     } else {
       e.target.className = e.target.className + " wrong";
+      dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
+      dispatch(increaseWrong());
     }
   };
 
