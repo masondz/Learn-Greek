@@ -99,6 +99,8 @@ const Verse = () => {
   const [chosenChapter, setChosenChapter] = useState("");
   const [chosenVerse, setChosenVerse] = useState(0);
 
+  const [score, setScore] = useState(0);
+
   //this is for VerbGrid. Must be set to false to stop random verb after correct guesses.
   const [correctCount, setCorrectCount] = useState(false);
 
@@ -150,8 +152,6 @@ const Verse = () => {
 
       //need this to get the text of the verse
       let chosenVerseText = organizeText(greekText)[referenceCode];
-      console.log(referenceCode);
-      console.log(chosenVerse);
       return [referenceCode, chosenVerseText];
     }
 
@@ -172,6 +172,7 @@ const Verse = () => {
       let pickedVerse = getVerseFromUrl(currentPath);
       dispatch(setVerse(pickedVerse));
     }
+
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
   }, [dispatch, chosenVerse]);
@@ -252,8 +253,7 @@ const Verse = () => {
   //   [todos, tab]
   // );
 
-  let scoreMax = scoreVerse(verseArray);
-  console.log(scoreMax);
+  const scoreMax = scoreVerse(verseArray);
 
   const menuOptions = [
     "definite article",
