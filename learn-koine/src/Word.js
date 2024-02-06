@@ -10,6 +10,7 @@ import {
   selectScoreSlice,
   setCurrentScore,
 } from "./features/scoreSlice";
+import { scoringFunction } from "./utils";
 
 const wrongPick = "\u2716";
 const correctPick = "\u2713";
@@ -28,7 +29,10 @@ const Word = (props) => {
   const verseMode = useSelector(selectVerseMode);
   const scoreOjbect = useSelector(selectScoreSlice);
 
-  const { blankGrid, setArticleGrid, word, reset, setReset } = props;
+  console.log(scoreOjbect);
+
+  const { blankGrid, setArticleGrid, word, reset, setReset, verseReference } =
+    props;
 
   const styleMap = {
     "definite article": "da",
@@ -40,6 +44,12 @@ const Word = (props) => {
     Particle: "prt",
     Adverb: "adv",
   };
+
+  function correctGuess() {
+    console.log(scoringFunction);
+  }
+
+  console.log(correctGuess, verseReference);
 
   const handleClick = () => {
     let wordData = parseWord(word.word);

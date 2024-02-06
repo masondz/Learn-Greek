@@ -12,7 +12,11 @@ import {
 } from "./features/scoreSlice";
 import { scoringFunction } from "./utils";
 
-export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
+export const ArticleGrid = ({
+  articleGrid,
+  setArticleGrid,
+  verseReference,
+}) => {
   const { parse } = useSelector(selectWordSlice);
   const scoreObject = useSelector(selectScoreSlice);
   const dispatch = useDispatch();
@@ -57,7 +61,9 @@ export const ArticleGrid = ({ articleGrid, setArticleGrid }) => {
     if (wordCase.includes(target)) {
       console.log("there's a match");
       dispatch(increaseCorrect());
-      dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+      dispatch(
+        setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
+      );
       setArticleGrid({ ...articleGrid, [target]: "-correct" });
     } else {
       console.log("there's NOT a match");

@@ -5,6 +5,7 @@ import Word from "./Word";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectVerseSlice,
+  selectVerseReference,
   setMode,
   selectVerseMode,
   setVerse,
@@ -100,8 +101,6 @@ const Verse = () => {
   const [chosenChapter, setChosenChapter] = useState("");
   const [chosenVerse, setChosenVerse] = useState(0);
 
-  const [score, setScore] = useState(0);
-
   //this is for VerbGrid. Must be set to false to stop random verb after correct guesses.
   const [correctCount, setCorrectCount] = useState(false);
 
@@ -153,6 +152,8 @@ const Verse = () => {
 
       //need this to get the text of the verse
       let chosenVerseText = organizeText(greekText)[referenceCode];
+      console.log(referenceCode);
+      console.log(chosenVerse);
       return [referenceCode, chosenVerseText];
     }
 
@@ -173,7 +174,6 @@ const Verse = () => {
       let pickedVerse = getVerseFromUrl(currentPath);
       dispatch(setVerse(pickedVerse));
     }
-
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
   }, [dispatch, chosenVerse]);
@@ -210,17 +210,24 @@ const Verse = () => {
 
   const verse = useSelector(selectVerseSlice);
   const verseMode = useSelector(selectVerseMode);
+  const verseReference = useSelector(selectVerseReference);
 
   let practiceGrid;
   switch (verseMode) {
     case "Conjunction":
-      practiceGrid = <ConjuctionGrid reset={reset} />;
+      practiceGrid = (
+        <ConjuctionGrid reset={reset} verseReference={verseReference} />
+      );
       break;
     case "Preposition":
-      practiceGrid = <PrepositionGrid reset={reset} />;
+      practiceGrid = (
+        <PrepositionGrid reset={reset} verseReference={verseReference} />
+      );
       break;
     case "Pronoun":
-      practiceGrid = <PronounGrid reset={reset} />;
+      practiceGrid = (
+        <PronounGrid reset={reset} verseReference={verseReference} />
+      );
       break;
     case "Verb":
       practiceGrid = (
@@ -230,20 +237,26 @@ const Verse = () => {
           setCorrectCount={setCorrectCount}
           reset={reset}
           dispatch={dispatch}
+          verseReference={verseReference}
         />
       );
       break;
     case "Adverb":
-      practiceGrid = <AdverbGrid reset={reset} />;
+      practiceGrid = (
+        <AdverbGrid reset={reset} verseReference={verseReference} />
+      );
       break;
     case "Particle":
-      practiceGrid = <ParticleGrid rese={reset} />;
+      practiceGrid = (
+        <ParticleGrid rese={reset} verseReference={verseReference} />
+      );
       break;
     default:
       practiceGrid = (
         <ArticleGrid
           articleGrid={articleGrid}
           setArticleGrid={setArticleGrid}
+          verseReference={verseReference}
         />
       );
   }
@@ -255,7 +268,8 @@ const Verse = () => {
   //   [todos, tab]
   // );
 
-  const scoreMax = scoreVerse(verseArray);
+  let scoreMax = scoreVerse(verseArray);
+  console.log(scoreMax);
 
   const menuOptions = [
     "definite article",
@@ -325,6 +339,7 @@ const Verse = () => {
                 setReset={setReset}
                 reset={reset}
                 blankGrid={blankGrid}
+                verseReference={verseReference}
               />
             );
           })}

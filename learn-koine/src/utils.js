@@ -95,12 +95,14 @@ export function removeHighscore(reference) {
   return localStorage.removeItem(reference);
 }
 
-export function scoringFunction(scoreObject, choice) {
+export function scoringFunction(scoreObject, choice, reference = null) {
   const { currentScore, correctWorth, wrongWorth } = scoreObject;
   let total = currentScore;
   if (choice === "correct") {
     total += correctWorth;
-    // setNewHighScore(reference, total);
+    if (reference !== null) {
+      setNewHighScore(reference, total);
+    }
   } else {
     total -= wrongWorth;
   }

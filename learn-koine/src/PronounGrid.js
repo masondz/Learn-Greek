@@ -13,7 +13,7 @@ import {
 } from "./features/scoreSlice";
 import { scoringFunction } from "./utils";
 
-const PronounGrid = ({ reset }) => {
+const PronounGrid = ({ reset, verseReference }) => {
   const word = useSelector(selectWordSlice);
   const dispatch = useDispatch();
   const scoreObject = useSelector(selectScoreSlice);
@@ -31,7 +31,9 @@ const PronounGrid = ({ reset }) => {
     }
     if (word.parse.includes(choice)) {
       console.log("correct!");
-      dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+      dispatch(
+        setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
+      );
       dispatch(increaseCorrect());
       e.target.className = e.target.className + " correct";
     } else {

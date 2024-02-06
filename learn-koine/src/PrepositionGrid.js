@@ -14,7 +14,7 @@ import {
 } from "./features/scoreSlice";
 import { scoringFunction } from "./utils";
 
-const PrepositionGrid = ({ reset }) => {
+const PrepositionGrid = ({ reset, verseReference }) => {
   const word = useSelector(selectWordSlice);
   const dispatch = useDispatch();
   const scoreObject = useSelector(selectScoreSlice);
@@ -51,7 +51,9 @@ const PrepositionGrid = ({ reset }) => {
     if (choice === greekPrepositions[word.word]) {
       console.log("correct!");
       dispatch(increaseCorrect());
-      dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+      dispatch(
+        setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
+      );
       e.target.className = e.target.className + " correct";
     } else {
       console.log("wrong");

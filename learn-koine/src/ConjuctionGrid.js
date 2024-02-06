@@ -20,7 +20,7 @@ import {
 
 import { scoringFunction } from "./utils";
 
-const ConjuctionGrid = ({ reset }) => {
+const ConjuctionGrid = ({ reset, verseReference }) => {
   const word = useSelector(selectWordSlice);
   const dispatch = useDispatch();
   const scoreObject = useSelector(selectScoreSlice);
@@ -59,7 +59,9 @@ const ConjuctionGrid = ({ reset }) => {
       console.log("correct!");
       e.target.className = e.target.className + " correct";
       dispatch(increaseCorrect());
-      dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+      dispatch(
+        setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
+      );
     } else {
       console.log("wrong");
       dispatch(increaseWrong());

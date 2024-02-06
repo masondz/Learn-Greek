@@ -24,6 +24,7 @@ const VerbGrid = ({
   verbCharacteristics,
   correctCount,
   setCorrectCount,
+  verseReference,
 }) => {
   const [checkParse, setCheckParse] = useState(
     "Pick Verb, Participle, or Infintive"
@@ -247,7 +248,11 @@ const VerbGrid = ({
         if (verbMode !== "parsing") {
           isParsed();
         } else {
-          dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+          dispatch(
+            setCurrentScore(
+              scoringFunction(scoreObject, "correct", verseReference)
+            )
+          );
           dispatch(increaseCorrect());
         }
       } else {
@@ -263,7 +268,11 @@ const VerbGrid = ({
       if (verbMode !== "parsing") {
         isParsed();
       } else {
-        dispatch(setCurrentScore(scoringFunction(scoreObject, "correct")));
+        dispatch(
+          setCurrentScore(
+            scoringFunction(scoreObject, "correct", verseReference)
+          )
+        );
         dispatch(increaseCorrect());
       }
     } else {
