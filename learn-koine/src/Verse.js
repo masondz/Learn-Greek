@@ -152,8 +152,6 @@ const Verse = () => {
 
       //need this to get the text of the verse
       let chosenVerseText = organizeText(greekText)[referenceCode];
-      console.log(referenceCode);
-      console.log(chosenVerse);
       return [referenceCode, chosenVerseText];
     }
 
@@ -270,7 +268,6 @@ const Verse = () => {
 
   let scoreMax = scoreVerse(verseArray);
   console.log(scoreMax);
-
   const menuOptions = [
     "definite article",
     "Conjunction",
