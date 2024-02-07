@@ -29,8 +29,6 @@ const Word = (props) => {
   const verseMode = useSelector(selectVerseMode);
   const scoreOjbect = useSelector(selectScoreSlice);
 
-  console.log(scoreOjbect);
-
   const { blankGrid, setArticleGrid, word, reset, setReset, verseReference } =
     props;
 
@@ -45,11 +43,13 @@ const Word = (props) => {
     Adverb: "adv",
   };
 
-  function correctGuess() {
-    console.log(scoringFunction);
+  function correctGuess(prevScoreObject, reference) {
+    let { currentScore } = prevScoreObject;
+    let newScoreObject = { currentScore, correctWorth: 10 };
+    return dispatch(
+      setCurrentScore(scoringFunction(newScoreObject, "correct", reference))
+    );
   }
-
-  console.log(correctGuess, verseReference);
 
   const handleClick = () => {
     let wordData = parseWord(word.word);
@@ -67,6 +67,7 @@ const Word = (props) => {
     if (wordData.parse.includes("Interjection")) {
       setHighlight("-highlight-odd");
       setIndicator(correctPick);
+      correctGuess(scoreOjbect, verseReference);
       dispatch(setWord(wordData));
       return;
     }
@@ -78,7 +79,7 @@ const Word = (props) => {
         setIndicator(correctPick);
         setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
         dispatch(incrementFoundArticles());
-        dispatch(setCurrentScore(scoreOjbect.currentScore + 10));
+        correctGuess(scoreOjbect, verseReference);
         dispatch(setParsingArticle(true));
       } else {
         setIndicator(wrongPick);
@@ -88,8 +89,7 @@ const Word = (props) => {
     } else if (verseMode === "Pronoun") {
       if (wordData.parse.includes("pronoun")) {
         setIndicator(correctPick);
-        dispatch(setCurrentScore(scoreOjbect.currentScore + 10));
-
+        correctGuess(scoreOjbect, verseReference);
         setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
       } else {
         setIndicator(wrongPick);
@@ -99,8 +99,7 @@ const Word = (props) => {
     } else if (wordData.parse.includes(verseMode)) {
       setIndicator(correctPick);
       setHighlight(`-highlight-correct ${styleMap[verseMode]}`);
-      dispatch(setCurrentScore(scoreOjbect.currentScore + 10));
-
+      correctGuess(scoreOjbect, verseReference);
       dispatch(incrementFoundArticles());
       dispatch(setParsingArticle(true));
     } else if (!wordData.parse.includes(verseMode)) {
