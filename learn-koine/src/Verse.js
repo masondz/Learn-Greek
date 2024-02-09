@@ -309,6 +309,7 @@ const Verse = () => {
             menuLinks={menuLinks}
           />
         </div>
+        <ScoreBoard />
         <br></br>
         <PickVerse
           setArticleGrid={setArticleGrid}
@@ -345,7 +346,6 @@ const Verse = () => {
           <PassageNumber />
           <br></br>
           <div>
-            <ScoreBoard />
             <CheckWord
               word={word}
               setArticleGrid={setArticleGrid}

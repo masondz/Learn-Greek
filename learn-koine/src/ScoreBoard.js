@@ -3,6 +3,7 @@ import { selectScoreSlice } from "./features/scoreSlice";
 import { useSelector } from "react-redux";
 import { getOrSetHighScore } from "./utils";
 import { selectVerseReference } from "./features/verseSlice";
+import "./scoreboard.css";
 
 const ScoreBoard = () => {
   const scoreObject = useSelector(selectScoreSlice);
@@ -10,9 +11,9 @@ const ScoreBoard = () => {
   const highScore = getOrSetHighScore(useSelector(selectVerseReference));
 
   return (
-    <p>
-      High Score: {highScore} - Current Score: {currentScore}
-    </p>
+    <div className="score-board">
+      <h3>Best: {highScore}</h3> <h2> score: {currentScore}</h2>
+    </div>
   );
 };
 
