@@ -92,6 +92,7 @@ export function setNewHighScore(reference, newScore) {
 
 //if user didn't score while viewing the verse.
 export function removeHighscore(reference) {
+  console.log(reference);
   return localStorage.removeItem(reference);
 }
 

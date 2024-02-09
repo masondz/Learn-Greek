@@ -8,6 +8,7 @@ import { clearWord } from "./features/wordSlice";
 import { selectVerseReference } from "./features/verseSlice";
 import { decodeReference } from "./PassageNumber";
 import { resetFoundWords, setCurrentScore } from "./features/scoreSlice";
+import { removeHighscore } from "./utils";
 
 const PickVerse = ({
   setArticleGrid,
@@ -26,6 +27,7 @@ const PickVerse = ({
   setChosenVerse,
 }) => {
   const verseReferenceFromStore = useSelector(selectVerseReference);
+  console.log(verseReferenceFromStore);
 
   const bookNames = Object.keys(newTestament);
   const referenceRaw = decodeReference(verseReferenceFromStore);
@@ -177,6 +179,9 @@ const PickVerse = ({
 
   function nextVerse() {
     let tempVerse = Number(currentVerse) + 1;
+    if (localStorage.getItem(verseReferenceFromStore) === "0") {
+      removeHighscore(Number(verseReferenceFromStore));
+    }
 
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
@@ -235,6 +240,9 @@ const PickVerse = ({
 
   function prevVerse() {
     let tempVerse = Number(currentVerse) - 1;
+    if (localStorage.getItem(verseReferenceFromStore) === "0") {
+      removeHighscore(verseReferenceFromStore);
+    }
 
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
@@ -305,6 +313,9 @@ const PickVerse = ({
   //this will turn the selected book chapter and verse into its reference code in the grktext
   const encodeReference = () => {
     let bookCode = newTestament[currentBook].code;
+    if (localStorage.getItem(verseReferenceFromStore) === "0") {
+      removeHighscore(verseReferenceFromStore);
+    }
 
     let reference = bookCode + "0" + currentChapter + "0" + currentVerse;
     if (!lookUpVerse(reference)) {
