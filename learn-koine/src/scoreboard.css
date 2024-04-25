@@ -1,24 +1,18 @@
 .score-board {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
+  float: right;
   flex-direction: row;
   line-height: 0px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: stretch;
-  background-color: darkorange;
+  /* background-color: darkorange; */
   padding-left: 5px;
   padding-right: 5px;
   z-index: 2;
-  align-self: end;
-}
-
-h3 {
-  font-size: max(1vw, 16px);
-  padding: 0px;
+  /* align-items: end; */
+  border-bottom: 1px solid white;
 }
 
 h2 {
-  font-size: max(2vw, 20px);
-  padding: 0px;
+  font-size: max(1.5vw, 16px);
+  padding-right: 15px;
 }

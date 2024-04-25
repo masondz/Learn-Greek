@@ -12,7 +12,8 @@ const ScoreBoard = () => {
 
   return (
     <div className="score-board">
-      <h3>Best: {highScore}</h3> <h2> score: {currentScore}</h2>
+      <h2> Score: {currentScore}</h2> <h2>|</h2>
+      <h2>Best: {highScore}</h2>
     </div>
   );
 };
