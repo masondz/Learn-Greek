@@ -64,7 +64,10 @@ const Word = (props) => {
     if (highlight.includes("-highlight-correct")) {
       return;
     }
-    if (wordData.parse.includes("Interjection")) {
+    if (
+      wordData.parse.includes("Interjection") ||
+      wordData.parse.includes("Hebrew transliterated word (indeclinable)")
+    ) {
       setHighlight("-highlight-odd");
       setIndicator(correctPick);
       correctGuess(scoreOjbect, verseReference);
