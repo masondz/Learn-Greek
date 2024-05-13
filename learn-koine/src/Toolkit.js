@@ -61,17 +61,32 @@ const Tool = ({ title, id }) => {
 
   const dispatch = useDispatch();
 
-  const handleClick = () => {
+  function unselectAllTools() {
+    let toolArray = document.getElementsByClassName("selected-tool");
+    if (toolArray.length !== 0) {
+      console.log(toolArray);
+      for (let i = 0; i < toolArray.length; i++) {
+        toolArray[i].className = "tool";
+      }
+    }
+    return;
+  }
+
+  const handleClick = (e) => {
     let nextMode = id;
     if (id === "Definite Article") {
       nextMode = "definite article";
+    }
+    unselectAllTools();
+    if (e.target.className === "tool") {
+      e.target.className = "selected-tool " + idCheck + "-picked";
     }
     dispatch(setMode(nextMode));
   };
 
   return (
-    <div className="tool" id={idCheck} onClick={handleClick}>
-      <p>{title}</p>
+    <div className={"tool"} id={idCheck} onClick={(e) => handleClick(e)}>
+      {title}
     </div>
   );
 };

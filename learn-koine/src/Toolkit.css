@@ -43,7 +43,7 @@
 }
 
 .tool {
-  padding: 0px 5px 5px 5px;
+  padding: 15px 5px;
   background-color: #282c34;
   width: 100%;
   border-right: solid 0.5px rgba(128, 128, 128, 0.568);
@@ -54,44 +54,90 @@
   user-select: none;
 }
 
+.selected-tool-Conjuction {
+  background-color: rgb(218, 99, 3);
+}
+
 .selected-tool {
-  background-color: gainsboro;
+  padding: 15px 5px;
+  background-color: #29af27;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  border-right: solid 0.5px rgba(86, 214, 36, 0.568);
+  border-left: solid 0.5px rgba(86, 214, 36, 0.568);
+  justify-self: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #definite-article {
-  border-top: rgb(3, 224, 3) 4px solid;
-  font-size: 0.85em;
-  padding-top: 6px;
+  border-top: rgb(20, 245, 20) 4px solid;
+  font-size: 0.92em;
+  padding-top: 14px;
+}
+
+.definite-article-picked {
+  background-color: rgb(3, 224, 3);
 }
 
 #Conjunction {
-  border-top: rgb(218, 99, 3) 4px solid;
+  border-top: rgb(250, 129, 31) 4px solid;
+}
+
+.Conjunction-picked {
+  background-color: rgb(218, 99, 3);
 }
 
 #Preposition {
-  border-top: rgb(138, 135, 0) 4px solid;
+  border-top: rgb(199, 196, 8) 4px solid;
+}
+
+.Preposition-picked {
+  background-color: rgb(138, 135, 0);
 }
 
 #Noun-and-Adjective {
-  border-top: rgb(113, 232, 241) 4px solid;
-  font-size: 0.85em;
-  padding-top: 6px;
+  border-top: rgb(155, 231, 236) 4px solid;
+  font-size: 0.92em;
+  padding-top: 14px;
+}
+
+.Noun-and-Adjective-picked {
+  background-color: rgb(113, 232, 241);
 }
 
 #Pronoun {
-  border-top: rgb(200, 113, 241) 4px solid;
+  border-top: rgb(214, 124, 255) 4px solid;
+}
+
+.Pronoun-picked {
+  background-color: rgb(200, 113, 241);
 }
 
 #Verb {
-  border-top: rgb(111, 161, 255) 4px solid;
+  border-top: rgb(143, 179, 247) 4px solid;
+}
+
+.Verb-picked {
+  background-color: rgb(59, 112, 209);
 }
 
 #Particle {
-  border-top: rgb(204, 63, 117) 4px solid;
+  border-top: rgb(241, 77, 140) 4px solid;
+}
+
+.Particle-picked {
+  background-color: rgb(204, 63, 117);
 }
 
 #Adverb {
-  border-top: rgb(113, 241, 188) 4px solid;
+  border-top: rgb(143, 255, 208) 4px solid;
+}
+
+.Adverb-picked {
+  background-color: rgb(113, 241, 188);
 }
 
 @media only screen and (max-width: 1114px) {
