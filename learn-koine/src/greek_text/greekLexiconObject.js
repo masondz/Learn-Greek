@@ -9821,59 +9821,59 @@ export const wordUsages = {
   ἀπεῖχεν: {
     parse: "V-IAI-3S｜Verb, imperfect, active, indicative, third, singular",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχει: {
     parse: "V-PAI-3S｜Verb, present, active, indicative, third, singular",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχεσθαι: {
     parse: "V-PMN｜Verb, present, middle, Infinitive",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχεσθε: {
     parse: "V-PMM-2P｜Verb, present, middle, imperative, second, plural",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχετε: {
     parse: "V-PAI-2P｜Verb, present, active, indicative, second, plural",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχῃς: {
     parse: "V-PAS-2S｜Verb, present, active, subjunctive, second, singular",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχοντος: {
     parse:
       "V-PAP-GSM｜Verb, present, active, Participle, genitive, singular, masculine",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχουσαν: {
     parse:
       "V-PAP-ASF｜Verb, present, active, Participle, accusative, singular, feminine",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχουσιν: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχουσι: {
     parse: "V-PAI-3P｜Verb, present, active, indicative, third, plural",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπέχω: {
     parse: "V-PAI-1S｜Verb, present, active, indicative, first, singular",
     GN: "G568",
-    gloss: "to have in full",
+    gloss: "to have in full, was/is, abstain",
   },
   ἀπιστήσας: {
     parse:
