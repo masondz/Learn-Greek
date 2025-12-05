@@ -3,20 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.2",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "framer-motion": "^9.1.7",
-    "phaser": "^3.70.0",
+    "@reduxjs/toolkit": "^2.11.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "framer-motion": "^12.23.25",
+    "phaser": "^3.90.0",
     "react": "^18.2.0",
-    "react-card-flip": "^1.2.0",
+    "react-card-flip": "^1.2.3",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.0.5",
-    "react-router-dom": "^6.8.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.10.1",
     "react-scripts": "5.0.1",
-    "redux": "^4.2.1",
-    "web-vitals": "^2.1.4"
+    "redux": "^5.0.1",
+    "web-vitals": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,6 +43,6 @@
     ]
   },
   "devDependencies": {
-    "prettier": "2.8.4"
+    "prettier": "3.7.4"
   }
 }
