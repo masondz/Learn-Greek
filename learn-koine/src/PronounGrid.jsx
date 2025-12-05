@@ -26,18 +26,18 @@ const PronounGrid = ({ reset, verseReference }) => {
       (isReflexiveOrPossessive && scoreObject.correctFound >= 4) ||
       (!isReflexiveOrPossessive && scoreObject.correctFound >= 3)
     ) {
-      console.log("found enough correct");
+      
       return;
     }
     if (word.parse.includes(choice)) {
-      console.log("correct!");
+      
       dispatch(
         setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
       );
       dispatch(increaseCorrect());
       e.target.className = e.target.className + " correct";
     } else {
-      console.log("wrong");
+      
       dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
       dispatch(increaseWrong());
       e.target.className = e.target.className + " wrong";

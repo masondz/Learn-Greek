@@ -30,7 +30,7 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
     } else if (option === "Adverb") {
       dispatch(setMode("Adverb"));
     } else {
-      return console.log("missed styling");
+      return;
     }
     setArticleGrid(blankGrid);
     setTimeout(() => {

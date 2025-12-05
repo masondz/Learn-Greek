@@ -116,7 +116,7 @@ const VerbGrid = ({
       options = verbMode;
     }
 
-    console.log(options);
+    
 
     let nextVerb = randomVerb(
       wordUsages,
@@ -137,7 +137,7 @@ const VerbGrid = ({
       return;
     }
     numCorrect++;
-    console.log(numCorrect);
+    
     if (
       numCorrect === 5 ||
       (word.parse.includes("Infinitive") && numCorrect === 2)
@@ -158,7 +158,7 @@ const VerbGrid = ({
       word.parse.includes(`${tense}, active, indicative, first, singular`) ||
       word.parse.includes(`${tense}, active, indicative, third, plural`)
     ) {
-      console.log("either first singular or third plural");
+      
       switch (e.target.innerHTML) {
         case "first":
           if (imperfectPerson === "third" || imperfectNumber === "plural") {
@@ -167,7 +167,7 @@ const VerbGrid = ({
           } else {
             isParsed();
             setImperfectPerson("first");
-            console.log("made it to first person statement");
+            
             e.target.className = e.target.className + " correct";
           }
           break;
@@ -178,7 +178,7 @@ const VerbGrid = ({
           } else {
             isParsed();
             setImperfectPerson("third");
-            console.log("made it to third person statement");
+            
             e.target.className = e.target.className + " correct";
           }
           break;
@@ -189,7 +189,7 @@ const VerbGrid = ({
           } else {
             isParsed();
             setImperfectNumber("singular");
-            console.log("made it to singular number statement");
+            
             e.target.className = e.target.className + " correct";
           }
           break;
@@ -200,7 +200,7 @@ const VerbGrid = ({
           } else {
             isParsed();
             setImperfectNumber("plural");
-            console.log("made it to plural number statement");
+            
             e.target.className = e.target.className + " correct";
           }
           break;
@@ -214,7 +214,7 @@ const VerbGrid = ({
           }
           break;
       }
-      console.log(imperfectNumber, imperfectPerson);
+      
       return true;
     } else {
       return false;
@@ -256,7 +256,7 @@ const VerbGrid = ({
           dispatch(increaseCorrect());
         }
       } else {
-        console.log("not middle/passive");
+        
         e.target.className = e.target.className + " wrong";
         if (verbMode === "parsing") {
           dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
