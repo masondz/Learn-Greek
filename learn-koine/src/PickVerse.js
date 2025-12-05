@@ -343,77 +343,8 @@ const PickVerse = ({
     setVerseListIsOpen(!verseListIsOpen);
   };
 
-  //attempt to close menues if off-clicked
-
   return (
     <div className="pick-component">
-      <div className="pick-verse-menu">
-        <div className="drop-lists">
-          <button onClick={handleOpenBookList} className="booklist-button">
-            {chosenBook ? chosenBook : bookNames[referenceRaw.bookIndex]}
-          </button>
-        </div>
-        <div className="drop-lists">
-          <button
-            onClick={handleOpenChapterList}
-            className="chapterlist-button"
-          >
-            {chosenChapter ? chosenChapter : referenceRaw.chapterNumber}
-          </button>
-        </div>
-        <div className="drop-lists">
-          <button onClick={handleOpenVerseList} className="verselist-button">
-            {chosenVerse ? chosenVerse : referenceRaw.verseNumber}
-          </button>
-        </div>
-        <button className="go-button" onClick={encodeReference}>
-          Go
-        </button>
-      </div>{" "}
-      <div className="lists-container">
-        <div className={`lists ${bookListIsOpen}`} id="book-list">
-          {bookNames.map((book) => {
-            return (
-              <div
-                className="list-option book-option"
-                value={book}
-                onClick={handlePickBook}
-                key={book}
-              >
-                {book}
-              </div>
-            );
-          })}
-        </div>
-        <div className={`lists ${chapterListIsOpen}`} id="chapter-list">
-          {chapterList.map((chapter) => {
-            return (
-              <div
-                className="list-option chapter-option"
-                value={chapter}
-                onClick={handlePickChapter}
-                key={chapter}
-              >
-                {chapter}
-              </div>
-            );
-          })}
-        </div>
-        <div className={`lists ${verseListIsOpen}`} id="verse-list">
-          {verseList.map((verse) => {
-            return (
-              <div
-                className="list-option verse-option"
-                value={verse}
-                onClick={handlePickVerse}
-                key={verse}
-              >
-                {verse}
-              </div>
-            );
-          })}
-        </div>
-      </div>
       <div className="nav-buttons">
         <button className="button" onClick={prevVerse}>
           prev
@@ -421,6 +352,72 @@ const PickVerse = ({
         <button className="button" onClick={nextVerse}>
           next
         </button>
+      </div>
+      <div className="pick-verse-grid">
+       
+          <div style={{color: "red"}} className="drop-lists">
+            <button onClick={handleOpenBookList} className="booklist-button">
+              {chosenBook ? chosenBook : bookNames[referenceRaw.bookIndex]}
+            </button>
+          </div>
+          <div className="drop-lists">
+            <button
+              onClick={handleOpenChapterList}
+              className="chapterlist-button"
+            >
+              {chosenChapter ? chosenChapter : referenceRaw.chapterNumber}
+            </button>
+          </div>
+          <div className="drop-lists">
+            <button onClick={handleOpenVerseList} className="verselist-button">
+              {chosenVerse ? chosenVerse : referenceRaw.verseNumber}
+            </button>
+          </div>
+          <button className="go-button" onClick={encodeReference}>
+            Go
+          </button>
+          <div className={`lists ${bookListIsOpen}`} id="book-list">
+            {bookNames.map((book) => {
+              return (
+                <div
+                  className="list-option book-option"
+                  value={book}
+                  onClick={handlePickBook}
+                  key={book}
+                >
+                  {book}
+                </div>
+              );
+            })}
+          </div>
+          <div className={`lists ${chapterListIsOpen}`} id="chapter-list">
+            {chapterList.map((chapter) => {
+              return (
+                <div
+                  className="list-option chapter-option"
+                  value={chapter}
+                  onClick={handlePickChapter}
+                  key={chapter}
+                >
+                  {chapter}
+                </div>
+              );
+            })}
+          </div>
+          <div className={`lists ${verseListIsOpen}`} id="verse-list">
+            {verseList.map((verse) => {
+              return (
+                <div
+                  className="list-option verse-option"
+                  value={verse}
+                  onClick={handlePickVerse}
+                  key={verse}
+                >
+                  {verse}
+                </div>
+              );
+            })}
+          </div>
       </div>
     </div>
   );

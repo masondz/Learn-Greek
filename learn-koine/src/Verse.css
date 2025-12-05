@@ -1,8 +1,7 @@
 .verse-sentence {
   width: 90%;
   text-align: center;
-
-  margin-left: 1em;
+  margin: auto;
 }
 
 .verse-component {
