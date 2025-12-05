@@ -32,7 +32,7 @@
   border: none;
   cursor: pointer;
   width: 100%;
-  font-size: .55em;
+  font-size: .70em;
   font-family: apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif ;
 }
 .lists-container {
@@ -56,7 +56,7 @@
 .lists {
   background-color: rgb(241, 237, 230);
   color: black;
-  font-size: 14px;
+  font-size: .73em;
   text-align: center;
   height: 200px;
   overflow: scroll;
@@ -68,7 +68,7 @@
   justify-content: center;
   cursor: pointer;
   padding-bottom: 7px;
-  padding-top: 7%;
+  padding-top: 7px;
 }
 
 .selected {
