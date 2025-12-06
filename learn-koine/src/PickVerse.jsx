@@ -27,7 +27,6 @@ const PickVerse = ({
   setChosenVerse,
 }) => {
   const verseReferenceFromStore = useSelector(selectVerseReference);
-  console.log(verseReferenceFromStore);
 
   const bookNames = Object.keys(newTestament);
   const referenceRaw = decodeReference(verseReferenceFromStore);
@@ -61,9 +60,8 @@ const PickVerse = ({
 
   //add reference to url
   function addVerseToUrl(reference) {
-    console.log(reference);
     let book = reference.slice(0, 2);
-    console.log(book);
+    
     let chapter = reference.slice(3, 5);
     let verse = reference.slice(6);
     let chosenVerse = "";
@@ -71,12 +69,12 @@ const PickVerse = ({
     for (let entry in newTestament) {
       if (newTestament[entry].code === Number(book)) {
         chosenVerse += entry;
-        console.log(entry);
+        
       }
     }
     chosenVerse += " " + chapter + " " + verse;
     const hyphenedVerse = chosenVerse.split(" ").join("-");
-    console.log(hyphenedVerse);
+    
     window.history.replaceState({ new: "new" }, "", hyphenedVerse);
   }
 

@@ -48,8 +48,7 @@ const Verb = () => {
     if (verbCharacteristics.Tense === "perfect") {
       exclusions = ["imperfect", "pluperfect"];
     }
-
-    console.log(option);
+    
 
     if (
       verbCharacteristics.Type === "Participle" &&
@@ -91,12 +90,9 @@ const Verb = () => {
 
     dispatch(clearWord());
     let splitOption = option.split(" ");
-    console.log("handleClick: " + splitOption);
+    
     let nextVerb = randomVerb(wordUsages, "parse", splitOption, exclusions);
 
-    if (!verbType.Type) {
-      console.log("if verb type not declared, don't render any grid.");
-    }
 
     dispatch(setWord(nextVerb));
     setCorrectCount(0);
@@ -173,7 +169,7 @@ const VerbMenu = ({
     const newVerbType = verbChars.Type;
     const optionsArr = Object.keys(verbChars);
 
-    console.log(verbChars);
+    
     let options = "";
 
     if (optionsArr.length === 1 && verbChars.Type === undefined) {
@@ -191,7 +187,7 @@ const VerbMenu = ({
       alert("Verb with given characteristics does not exist.");
       return;
     }
-    console.log("handleSelect() options: " + options);
+    
     dispatch(setVerbType(newVerbType));
     setVerbMode(options);
     setTimeout(() => {

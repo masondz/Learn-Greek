@@ -48,7 +48,6 @@ export default function Vocabulary() {
     }
     setTimeout(() => {
       setDeck(deck.filter((word) => word !== deck[deckIndex]));
-      console.log(deck);
     }, 150);
   };
 

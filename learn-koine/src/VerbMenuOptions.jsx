@@ -25,9 +25,7 @@ const VerbMenuOptions = ({
         ) {
           charChoices[i].className += " chosen-option";
           anOptionIsPicked = true;
-          console.log(
-            `${charChoices[i].innerHTML}: ${charChoices[i].className}`
-          );
+        
         }
       } else if (
         verbCharacteristics[characteristic] ===
@@ -36,18 +34,17 @@ const VerbMenuOptions = ({
       ) {
         charChoices[i].className += " chosen-option";
         anOptionIsPicked = true;
-        console.log(`${charChoices[i].innerHTML}: ${charChoices[i].className}`);
+        
       }
     }
 
     if (anOptionIsPicked) {
-      console.log("option picked");
       if (
         charChoices[allOptionIndex].className.includes(
           "verb-menu-all-selection"
         )
       ) {
-        console.log(charChoices[allOptionIndex]);
+        
         charChoices[
           allOptionIndex
         ].className = `${characteristic} verb-menu-all-selection`;

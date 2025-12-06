@@ -12,12 +12,17 @@
 
 .pick-verse-grid {
   display: grid;
+  width: 530px;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
 .pick-component {
-  max-width: 45rem;
-  margin: 50px auto 0.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto auto 0px;
+  width: 100%;
   position: relative;
 }
 
@@ -94,7 +99,6 @@
   display: flex;
   gap: 10px;
   justify-content: space-between;
-  margin: auto;
   top: 7rem;
   padding-top: 10px;
   width: 200px;
@@ -118,4 +122,9 @@
   .pick-component {
     justify-content: center;
   }
+
+  .pick-verse-grid {
+    width: 100%;
+  }
 }
+
