@@ -66,7 +66,6 @@ export function scoreVerse(arrayStrings) {
 }
 
 export function getOrSetHighScore(reference) {
-  // let sliceReference = selectVerseReference();
   let verseScore = JSON.parse(localStorage.getItem(reference));
   try {
     if (verseScore === null) {
