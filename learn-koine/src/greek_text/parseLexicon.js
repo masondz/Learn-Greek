@@ -111,7 +111,6 @@ export const randomVerb = (obj, attribute, arr, exclusions) => {
     }
   }
     "random verb: " + { word: checkKey, parse: obj[checkKey][attribute] }
-  );
   return { word: checkKey, parse: obj[checkKey][attribute] };
 };
 
