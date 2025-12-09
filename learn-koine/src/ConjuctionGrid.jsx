@@ -32,7 +32,6 @@ const ConjuctionGrid = ({ reset, verseReference }) => {
         greekConjunctions,
         greekConjunctions[word.word]
       );
-      console.log(array);
       return array;
     }
   }, [word]);
@@ -52,18 +51,15 @@ const ConjuctionGrid = ({ reset, verseReference }) => {
   const checkCase = (e) => {
     let choice = e.target.innerHTML;
     if (scoreObject.correctFound >= 1) {
-      console.log("found enough correct");
       return;
     }
     if (choice === greekConjunctions[word.word]) {
-      console.log("correct!");
       e.target.className = e.target.className + " correct";
       dispatch(increaseCorrect());
       dispatch(
         setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
       );
     } else {
-      console.log("wrong");
       dispatch(increaseWrong());
       dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
       e.target.className = e.target.className + " wrong";

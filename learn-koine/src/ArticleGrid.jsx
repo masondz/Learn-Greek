@@ -42,7 +42,6 @@ export const ArticleGrid = ({
     parse.includes("second") ||
     parse.includes("third")
   ) {
-    console.log("has first second or thrid");
     masculineOrFirst = articleGrid.first;
     feminineOrSecond = articleGrid.second;
     neutereOrThird = articleGrid.third;
@@ -55,18 +54,15 @@ export const ArticleGrid = ({
 
     let target = e.target.innerHTML;
     if (scoreObject.correctFound >= 3) {
-      console.log("you've found enough correct answers.");
       return;
     }
     if (wordCase.includes(target)) {
-      console.log("there's a match");
       dispatch(increaseCorrect());
       dispatch(
         setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
       );
       setArticleGrid({ ...articleGrid, [target]: "-correct" });
     } else {
-      console.log("there's NOT a match");
       dispatch(increaseWrong());
       dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
       setArticleGrid({ ...articleGrid, [target]: "-wrong" });

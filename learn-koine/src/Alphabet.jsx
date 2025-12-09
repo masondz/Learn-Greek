@@ -85,14 +85,12 @@ const Letter = ({ fieldWidth, shorterArray }) => {
   function makeRandomStartPoint() {
     let randomXPoint = Math.floor(Math.random() * 75);
     let randomYPoint = Math.random() + 700;
-    console.log(randomYPoint);
     return { randX: randomXPoint, randY: randomYPoint };
   }
 
   function makeRandomEndPoint(width) {
     let randomPoint = width - Math.floor(Math.random() * width);
     let randomYpoint = Math.random() - 150;
-    console.log(randomYpoint);
     let coinToss = Math.random() < 0.5;
     if (coinToss) {
       return { randX: randomPoint, randY: randomYpoint };

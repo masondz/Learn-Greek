@@ -17,7 +17,6 @@ export function makeRandomArray(targetLetter, alphabetArray) {
   for (let i = 0; i < 4; i++) {
     let randomIndex = Math.floor(Math.random() * alphabetArray.length);
     while (initialArray.includes[alphabetArray[randomIndex]]) {
-      console.log(initialArray);
       randomIndex = Math.floor(Math.random() * alphabetArray.length);
     }
 

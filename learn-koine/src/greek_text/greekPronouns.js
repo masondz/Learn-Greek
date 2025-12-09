@@ -1560,4 +1560,3 @@ for (let pronoun in greekPronouns) {
 }
 */
 
-console.log(checkPronouns);
