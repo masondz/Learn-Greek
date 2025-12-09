@@ -68,7 +68,6 @@ export const randomWord = (obj, attribute, arr, exclusions = []) => {
   }
 
   if (isEveryCharInAttribute && !isThereExclusion) {
-    console.log(checkKey + " " + obj[checkKey][attribute]);
     return { word: checkKey, parse: obj[checkKey][attribute] };
   } else {
     return randomWord(obj, attribute, arr, exclusions);
@@ -76,10 +75,8 @@ export const randomWord = (obj, attribute, arr, exclusions = []) => {
 };
 
 export const randomVerb = (obj, attribute, arr, exclusions) => {
-  console.log("trying randomVerb function");
   const arrayOfPossibles = [];
   const keys = Object.keys(obj);
-  // console.log(obj[keys[0]]);
   for (let i = 0; i < keys.length; i++) {
     if (
       arr.every((characteristic) =>
@@ -94,7 +91,6 @@ export const randomVerb = (obj, attribute, arr, exclusions) => {
     return alert("Verb with given characteristics does not exist.");
   }
 
-  console.log("possible verbs: " + arrayOfPossibles.length);
 
   let checkKey = "";
 
@@ -104,7 +100,6 @@ export const randomVerb = (obj, attribute, arr, exclusions) => {
     let isThereExclusion = false;
     checkKey =
       arrayOfPossibles[Math.floor(Math.random() * arrayOfPossibles.length)];
-    console.log("checking verb: " + obj[checkKey]);
     for (let i = 0; i < exclusions.length; i++) {
       if (obj[checkKey][attribute].includes(exclusions[i])) {
         isThereExclusion = true;
@@ -112,18 +107,14 @@ export const randomVerb = (obj, attribute, arr, exclusions) => {
     }
 
     if (!isThereExclusion) {
-      console.log(checkKey + " " + obj[checkKey][attribute]);
       testingExclusions = false;
     }
   }
-  console.log(
     "random verb: " + { word: checkKey, parse: obj[checkKey][attribute] }
-  );
   return { word: checkKey, parse: obj[checkKey][attribute] };
 };
 
 export const randomChoicesSelection = (obj, conjunctionGloss) => {
-  console.log(conjunctionGloss);
   try {
     let initialArray = [conjunctionGloss];
     let initialGlossArray = conjunctionGloss.split("/");
@@ -132,7 +123,6 @@ export const randomChoicesSelection = (obj, conjunctionGloss) => {
       let randomGloss = obj[keys[Math.floor(Math.random() * keys.length)]];
 
       let glossArray = randomGloss.split("/");
-      console.log(glossArray);
       if (
         !glossArray.some((e) => initialArray.includes(e)) &&
         !initialGlossArray.some((e) => glossArray.includes(e)) &&
@@ -150,7 +140,6 @@ export const randomChoicesSelection = (obj, conjunctionGloss) => {
     }
     return randomArray;
   } catch (error) {
-    console.log(`Problem with randomChoicesSelection: ${error}`);
   }
 };
 

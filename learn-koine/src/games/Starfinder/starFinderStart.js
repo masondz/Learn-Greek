@@ -13,7 +13,6 @@ class StartStarfinder extends Phaser.Scene {
     const screenWidth = this.cameras.main.width;
     const screenHeight = this.cameras.main.height;
 
-    console.log(screenWidth);
 
     let fontSize = Math.ceil(screenWidth * 0.08) + "px";
     let fontScale = 0.7;
@@ -24,7 +23,6 @@ class StartStarfinder extends Phaser.Scene {
     }
 
     this.cameras.main.setBackgroundColor("#191c24");
-    console.log(fontSize);
 
     const box = this.add.rectangle(
       screenCenterX,

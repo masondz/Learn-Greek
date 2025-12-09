@@ -26,7 +26,6 @@ const PrepositionGrid = ({ reset, verseReference }) => {
         greekPrepositions,
         greekPrepositions[word.word]
       );
-      console.log(array);
       return array;
     }
   }, [word]);
@@ -45,18 +44,15 @@ const PrepositionGrid = ({ reset, verseReference }) => {
   const checkCase = (e) => {
     let choice = e.target.innerHTML;
     if (scoreObject.correctFound >= 1) {
-      console.log("found enough correct");
       return;
     }
     if (choice === greekPrepositions[word.word]) {
-      console.log("correct!");
       dispatch(increaseCorrect());
       dispatch(
         setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
       );
       e.target.className = e.target.className + " correct";
     } else {
-      console.log("wrong");
       dispatch(increaseWrong());
       dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
       e.target.className = e.target.className + " wrong";

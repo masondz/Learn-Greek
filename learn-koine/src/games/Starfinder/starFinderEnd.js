@@ -27,7 +27,6 @@ class EndStarfinder extends Phaser.Scene {
     }
 
     this.cameras.main.setBackgroundColor("#191c24");
-    console.log(fontSize);
 
     const box = this.add.rectangle(
       screenCenterX,

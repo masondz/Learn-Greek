@@ -67,16 +67,12 @@ export function scoreVerse(arrayStrings) {
 
 export function getOrSetHighScore(reference) {
   // let sliceReference = selectVerseReference();
-  // console.log(typeof sliceReference);
   let verseScore = JSON.parse(localStorage.getItem(reference));
-  console.log(verseScore);
   try {
     if (verseScore === null) {
       verseScore = localStorage.setItem(reference, "0");
-      console.log("start new score for verse");
     }
   } catch (error) {
-    console.log(error);
     return "Unable to save score";
   }
   return verseScore;
@@ -92,7 +88,6 @@ export function setNewHighScore(reference, newScore) {
 
 //if user didn't score while viewing the verse.
 export function removeHighscore(reference) {
-  console.log(reference);
   return localStorage.removeItem(reference);
 }
 
@@ -107,6 +102,5 @@ export function scoringFunction(scoreObject, choice, reference = null) {
   } else {
     total -= wrongWorth;
   }
-  console.log(total);
   return total;
 }

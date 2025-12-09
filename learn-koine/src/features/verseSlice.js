@@ -47,11 +47,6 @@ const getRandomVerse = (theText) => {
   }
 
   let randomReference = randomBook + 40 + "0" + tempChapter + "0" + tempVerse;
-  console.log(randomReference);
-  console.log(theText[randomReference]);
-  // let randomIndex = Math.floor(Math.random() * theText.length + 1);
-
-  // return [theText[randomIndex].reference, theText[randomIndex].verse];
   return [randomReference, theText[randomReference]];
 };
 

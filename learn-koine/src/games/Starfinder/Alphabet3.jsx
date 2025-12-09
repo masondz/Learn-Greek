@@ -175,9 +175,7 @@ const Alphabet = () => {
         //if the correct letter is clicke, check if moving onto next target
         function advanceLetter(context) {
           if (gameState.score === 5) {
-            console.log("advanceLetter triggered", gameState.letterIndex);
             if (gameState.letterIndex + 1 >= 25) {
-              console.log("in first for loop");
               gameState.letterIndex = 0;
               gameState.targetLetter = alphabetArray[0];
               gameState.shortArray = makeRandomArray(
@@ -188,7 +186,6 @@ const Alphabet = () => {
               return;
             } else {
               gameState.letterIndex++;
-              console.log("else: ", gameState.letterIndex);
             }
             gameState.targetLetter = alphabetArray[gameState.letterIndex];
             gameState.shortArray = makeRandomArray(
@@ -366,10 +363,8 @@ const Alphabet = () => {
 
         //Checking if game score is 5, and if all alphabet cyceled through
         if (gameState.score >= 5) {
-          console.log("update: ", gameState.win);
           if (gameState.win === true) {
             this.time.delayedCall(1000, () => {
-              console.log("delayed call: ", gameState.win);
               this.scene.stop("Starfinder");
               this.scene.start("EndStarfinder");
               gameState.win = false;

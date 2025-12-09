@@ -5417,22 +5417,11 @@ let vocabListObj = {};
 vocabListRaw = vocabListRaw.split("\n");
 
 let vocabListSplitAgain = vocabListRaw.map((line) => line.split("\t"));
-// let limitCount = 0
 for (let i = 0; i < vocabListSplitAgain.length; i++) {
-  //    let vocabWord = vocabListSplitAgain[i][0];
   vocabListObj[vocabListSplitAgain[i][0]] = {
     english: vocabListSplitAgain[i][1],
     frequency: vocabListSplitAgain[i][2],
   };
-  //    if (limitCount < 5) {
-  //     if(wordUsages[vocabWord] === undefined) {
-  //         console.log(vocabWord)
-  //         continue;
-  //     }
-  //     if (wordUsages[vocabWord].parse.includes("Verb") && vocabListObj[vocabWord].frequency > 499){
-  //     console.log(vocabWord);
-  //     limitCount++;}
-  //    }
 }
 
 export { vocabListObj };

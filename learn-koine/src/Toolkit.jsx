@@ -64,7 +64,6 @@ const Tool = ({ title, id }) => {
   function unselectAllTools() {
     let toolArray = document.getElementsByClassName("selected-tool");
     if (toolArray.length !== 0) {
-      console.log(toolArray);
       for (let i = 0; i < toolArray.length; i++) {
         toolArray[i].className = "tool";
       }
