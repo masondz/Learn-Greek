@@ -1,8 +1,11 @@
 import "./App.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "./AuthContext";
 
 function App() {
+  const { user, logout } = useAuth();
+
   return (
     <div className="App">
       <div className="logo-container">
@@ -15,6 +18,18 @@ function App() {
         <h2>
           <i>Practicing Koine Greek</i>
         </h2>
+        {user ? (
+          <>
+            <p>Welcome, {user.username}!</p>
+            <button onClick={logout} style={{ margin: '1rem', padding: '0.5rem 1rem', cursor: 'pointer' }}>
+              Logout
+            </button>
+          </>
+        ) : (
+          <Link className="home-links" to="/login" style={{ marginBottom: '1rem' }}>
+            Login / Register
+          </Link>
+        )}
         <h3>Choose a Subject:</h3>
         <div className="links">
           <Link className="home-links" to={"vocabulary"}>

@@ -7,6 +7,9 @@ import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page";
 import Loading from "./Loading";
+import { AuthProvider } from "./AuthContext";
+import ProtectedRoute from "./ProtectedRoute";
+import Login from "./Login";
 
 const Verse = lazy(() => import("./Verse"));
 const Vocabulary = lazy(() => import("./Vocabulary"));
@@ -21,39 +24,66 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: "/login",
+    element: <Login />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "parsing-verse/*",
-    element: <Verse />,
+    element: (
+      <ProtectedRoute>
+        <Verse />
+      </ProtectedRoute>
+    ),
     errorElement: <ErrorPage />,
   },
   {
     path: "vocabulary",
-    element: <Vocabulary />,
+    element: (
+      <ProtectedRoute>
+        <Vocabulary />
+      </ProtectedRoute>
+    ),
     errorElement: <ErrorPage />,
   },
   {
     path: "verb",
-    element: <Verb />,
+    element: (
+      <ProtectedRoute>
+        <Verb />
+      </ProtectedRoute>
+    ),
     errorElement: <ErrorPage />,
   },
   {
     path: "about",
-    element: <About />,
+    element: (
+      <ProtectedRoute>
+        <About />
+      </ProtectedRoute>
+    ),
     errorElement: <ErrorPage />,
   },
   {
     path: "alphabet",
-    element: <Alphabet />,
+    element: (
+      <ProtectedRoute>
+        <Alphabet />
+      </ProtectedRoute>
+    ),
     errorElement: <ErrorPage />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <Suspense fallback={<Loading />}>
-        <RouterProvider router={router} />
-      </Suspense>
-    </Provider>
+    <AuthProvider>
+      <Provider store={store}>
+        <Suspense fallback={<Loading />}>
+          <RouterProvider router={router} />
+        </Suspense>
+      </Provider>
+    </AuthProvider>
   </React.StrictMode>
 );
 
