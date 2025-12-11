@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using LearnGreekAPI.Models;
+using LearnGreekAPI.Models.Data;
 
 namespace LearnGreekAPI.Models
 {
