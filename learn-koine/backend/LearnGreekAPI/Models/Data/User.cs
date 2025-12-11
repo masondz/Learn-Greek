@@ -1,4 +1,4 @@
-namespace LearnGreekAPI.Models;
+namespace LearnGreekAPI.Models.Data;
 
 public class User
 {

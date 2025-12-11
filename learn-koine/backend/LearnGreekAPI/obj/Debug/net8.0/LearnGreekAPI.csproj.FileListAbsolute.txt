@@ -40,14 +40,11 @@
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/obj/Debug/net8.0/LearnGreekAPI.pdb
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/obj/Debug/net8.0/LearnGreekAPI.genruntimeconfig.cache
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/obj/Debug/net8.0/ref/LearnGreekAPI.dll
-/home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/LearnGreekAPI.staticwebassets.endpoints.json
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/Npgsql.dll
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
-/home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/obj/Debug/net8.0/staticwebassets.build.endpoints.json
-/home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/obj/Debug/net8.0/staticwebassets/msbuild.LearnGreekAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/Humanizer.dll
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /home/zach/Projects/Didakey/Learn-Greek/learn-koine/backend/LearnGreekAPI/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll

@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using LearnGreekAPI.Models;
+using LearnGreekAPI.Models.Data;
 using Microsoft.IdentityModel.Tokens;
 
 namespace LearnGreekAPI.Services;
