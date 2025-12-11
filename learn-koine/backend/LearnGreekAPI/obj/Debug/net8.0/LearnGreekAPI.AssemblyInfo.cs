@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearnGreekAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ca8a65d3e1e1e645033d07a15c942f014fe9c56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8727d465625198198dc2085dcc461cf7f79de8a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearnGreekAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearnGreekAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
