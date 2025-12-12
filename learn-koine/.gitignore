@@ -17,6 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+appsettings.json
 
 # unneeded files
 /src/greek_text/gloss.js
