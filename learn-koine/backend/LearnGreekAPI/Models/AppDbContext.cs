@@ -9,7 +9,7 @@ namespace LearnGreekAPI.Models
         {
         }
 
-        public DbSet<User> Users { get; set; }
+        required public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

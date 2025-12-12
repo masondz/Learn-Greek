@@ -23,7 +23,7 @@ function Login() {
       return;
     }
 
-    const result = isRegistering 
+    const result = isRegistering
       ? await register(username, password)
       : await login(username, password);
 
@@ -41,9 +41,9 @@ function Login() {
       <div className="login-box">
         <h1>DidaKey</h1>
         <h2>{isRegistering ? 'Register' : 'Login'}</h2>
-        
+
         {error && <div className="error-message">{error}</div>}
-        
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
@@ -56,7 +56,7 @@ function Login() {
               disabled={loading}
             />
           </div>
-          
+
           <div className="form-group">
             <label htmlFor="password">Password</label>
             <input
@@ -68,19 +68,19 @@ function Login() {
               disabled={loading}
             />
           </div>
-          
+
           <button type="submit" disabled={loading}>
             {loading ? 'Please wait...' : (isRegistering ? 'Register' : 'Login')}
           </button>
         </form>
-        
+
         <p className="toggle-mode">
           {isRegistering ? 'Already have an account? ' : "Don't have an account? "}
           <span onClick={() => setIsRegistering(!isRegistering)}>
             {isRegistering ? 'Login' : 'Register'}
           </span>
         </p>
-        
+
         <Link to="/" className="back-home">Back to Home</Link>
       </div>
     </div>
