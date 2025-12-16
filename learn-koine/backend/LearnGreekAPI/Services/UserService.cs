@@ -4,28 +4,31 @@ using System.Security.Cryptography;
 using System.Text;
 using LearnGreekAPI.Models.Data;
 using Microsoft.IdentityModel.Tokens;
+using LearnGreekAPI.Models;
 
 namespace LearnGreekAPI.Services;
 
 public class UserService : IUserService
 {
-    private readonly List<User> _users = new();
     private readonly IConfiguration _configuration;
+    private readonly AppDbContext _context;
     private int _nextId = 1;
 
-    public UserService(IConfiguration configuration)
+    public UserService(IConfiguration configuration, AppDbContext context)
     {
         _configuration = configuration;
+        _context = context;
     }
 
     public Task<User?> GetUserByUsername(string username)
     {
-        var user = _users.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+        var user = _context.Users.FirstOrDefault(u => u.Username.ToLower() == username.ToLower());
         return Task.FromResult(user);
     }
 
-    public Task<User> CreateUser(string username, string password)
+    public async Task<User> CreateUser(string username, string password)
     {
+      Console.WriteLine("Creating user: " + username);
         var user = new User
         {
             Id = _nextId++,
@@ -33,8 +36,9 @@ public class UserService : IUserService
             PasswordHash = HashPassword(password),
             CreatedAt = DateTime.UtcNow
         };
-        _users.Add(user);
-        return Task.FromResult(user);
+        _context.Users.Add(user);
+        await _context.SaveChangesAsync();
+        return user;
     }
 
     public Task<bool> ValidatePassword(User user, string password)
