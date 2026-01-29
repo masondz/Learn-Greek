@@ -12,8 +12,6 @@ public class UserService : IUserService
 {
     private readonly IConfiguration _configuration;
     private readonly AppDbContext _context;
-    //TODO: This is dumb. delete it.
-    private int _nextId = 1;
 
     public UserService(IConfiguration configuration, AppDbContext context)
     {
@@ -32,7 +30,7 @@ public class UserService : IUserService
       Console.WriteLine("Creating user: " + username);
         var user = new User
         {
-            Id = 42,
+            Id = Guid.NewGuid(),
             Username = username,
             PasswordHash = HashPassword(password),
             CreatedAt = DateTime.UtcNow
