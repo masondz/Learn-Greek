@@ -12,6 +12,7 @@ public class UserService : IUserService
 {
     private readonly IConfiguration _configuration;
     private readonly AppDbContext _context;
+    //TODO: This is dumb. delete it.
     private int _nextId = 1;
 
     public UserService(IConfiguration configuration, AppDbContext context)
@@ -25,13 +26,13 @@ public class UserService : IUserService
         var user = _context.Users.FirstOrDefault(u => u.Username.ToLower() == username.ToLower());
         return Task.FromResult(user);
     }
-
+    //TODO: User Id should just be a guid.
     public async Task<User> CreateUser(string username, string password)
     {
       Console.WriteLine("Creating user: " + username);
         var user = new User
         {
-            Id = _nextId++,
+            Id = 42,
             Username = username,
             PasswordHash = HashPassword(password),
             CreatedAt = DateTime.UtcNow

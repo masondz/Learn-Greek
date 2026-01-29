@@ -18,18 +18,12 @@ Quick reference for debugging the full stack in LazyVim with nvim-dap.
 
 In LazyVim:
 
-1. Open any `.cs` file in `backend/LearnGreekAPI/`
-2. Set breakpoints where needed (default: `<leader>db`)
-3. Start DAP:
-   ```
-   :lua require('dap').continue()
-   ```
-4. Select: **"Launch - LearnGreekAPI"**
+<leader>dc (or :lua require('dap').continue()) and select "Launch - LearnGreekAPI" 
 
-The backend will start and listen on `http://localhost:5092`
-
-✅ Backend is now running and debuggable!
-
+If that doesn't work:
+ - manually start by running dotnet run debug in a terminal.
+ - find the PID with ss --listening --numeric -process sport :5092 
+ 
 > **💡 Tip:** You can verify it's working by visiting `http://localhost:5092/swagger/index.html`
 
 ---
@@ -90,5 +84,5 @@ Now interact with your app at `http://localhost:5173`:
 ---
 
 ## 📋 Quick Start Checklist
-
+Connect to the database with psql or pgAdmin
 ```
