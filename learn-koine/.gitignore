@@ -21,6 +21,47 @@
 /backend/LearnGreekAPI/appsettings.Development.json
 appsettings.json
 
+# .NET build artifacts
+**/bin/
+**/obj/
+*.dll
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+
+# Visual Studio
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+
+# Rider
+.idea/
+
 # unneeded files
 /src/greek_text/gloss.js
 /src/greek_text/greekDefinitions.js
