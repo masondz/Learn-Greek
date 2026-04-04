@@ -42167,12 +42167,12 @@ export const wordUsages = {
   Ζεβεδαῖον: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G2199",
-    gloss: "[wife of Zebedee]",
+    gloss: "Zebedee",
   },
   Ζεβεδαίου: {
     parse: "N-GSM-P｜Noun, genitive, singular, masculine, Person",
     GN: "G2199",
-    gloss: "[wife of Zebedee]",
+    gloss: "Zebedee",
   },
   ζεστός: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
@@ -48174,17 +48174,17 @@ export const wordUsages = {
   Καϊάφα: {
     parse: "N-GSM-P｜Noun, genitive, singular, masculine, Person",
     GN: "G2533",
-    gloss: "[wife of Ciaphas]",
+    gloss: "Ciaphas",
   },
   Καϊάφαν: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G2533",
-    gloss: "[wife of Ciaphas]",
+    gloss: "Ciaphas",
   },
   Καϊάφας: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
     GN: "G2533",
-    gloss: "[wife of Ciaphas]",
+    gloss: "Ciaphas",
   },
   Κάϊν: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
@@ -74119,27 +74119,27 @@ export const wordUsages = {
   Πέτρε: {
     parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   Πέτρον: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   Πέτρος: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   Πέτρου: {
     parse: "N-GSM-P｜Noun, genitive, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   Πέτρῳ: {
     parse: "N-DSM-P｜Noun, dative, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   πετρῶδες: {
     parse: "A-ASN｜Adjective, accusative, singular, neuter",
