@@ -39,11 +39,7 @@ const Toolkit = () => {
       </div>
       <div className="toolkit-container-abv">
         {tools.map((tool) => {
-          return (
-            <>
-              <Tool title={toolsAbbreviationMap[tool]} id={tool} key={tool} />
-            </>
-          );
+          return <Tool title={toolsAbbreviationMap[tool]} id={tool} key={tool} />;
         })}
       </div>
     </div>
