@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Verse.css";
 import CheckWord from "./CheckWord";
 import Word from "./Word";
@@ -116,13 +116,13 @@ const Verse = () => {
       let chapter = "";
       let verse = "";
       if (["1", "2", "3"].includes(selection[0])) {
-        
+
         book =
           selection[0] +
           " " +
           selection[1].charAt(0).toUpperCase() +
           selection[1].slice(1);
-        
+
         chapter = selection[2];
         if (chapter.length < 2) {
           chapter = "0" + chapter;
@@ -134,7 +134,7 @@ const Verse = () => {
         }
       } else {
         book = selection[0].charAt(0).toUpperCase() + selection[0].slice(1);
-        
+
         chapter = selection[1];
         if (chapter.length < 2) {
           chapter = "0" + chapter;
@@ -263,18 +263,8 @@ const Verse = () => {
   // );
 
   let scoreMax = scoreVerse(verseArray);
-  const menuOptions = [
-    "definite article",
-    "Conjunction",
-    "Preposition",
-    "Noun and Adjective",
-    "Pronoun",
-    "Verb",
-    "Particle",
-    "Adverb",
-  ];
 
-  const menuLinks = ["vocabulary", "verb"];
+  const menuLinks = ["Vocabulary", "Verb Practice"];
 
   //close drop down menues on off-click
   const offClickCloseMenu = (e) => {
@@ -300,7 +290,6 @@ const Verse = () => {
           <Menu
             setArticleGrid={setArticleGrid}
             blankGrid={blankGrid}
-            menuOptions={menuOptions}
             menuLinks={menuLinks}
           />
         </div>
