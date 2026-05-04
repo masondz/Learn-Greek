@@ -14,9 +14,11 @@
   display: grid;
   width: 530px;
   grid-template-columns: 25% 25% 25% 25%;
+  margin-top: -3.5rem;
 }
 
 .pick-component {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +39,6 @@
   border: none;
   cursor: pointer;
   width: 100%;
-  font-size: .70em;
   font-family: apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif ;
 }
 .lists-container {

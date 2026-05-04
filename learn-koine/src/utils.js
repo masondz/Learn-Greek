@@ -20,6 +20,7 @@
 */
 
 import { parseWord } from "./greek_text/parseLexicon";
+import { verseScoreApi } from "./api/verseScoreApi";
 // import { selectVerseReference } from "./features/verseSlice";
 // import {
 //   increaseCorrect,
@@ -65,38 +66,46 @@ export function scoreVerse(arrayStrings) {
   return score;
 }
 
-export function getOrSetHighScore(reference) {
-  let verseScore = JSON.parse(localStorage.getItem(reference));
+export async function getOrSetHighScore(reference) {
   try {
-    if (verseScore === null) {
-      verseScore = localStorage.setItem(reference, "0");
+    const scoreData = await verseScoreApi.getScore(reference);
+    if (scoreData === null) {
+      return 0;
     }
+    return scoreData.score;
   } catch (error) {
-    return "Unable to save score";
+    console.error("Unable to fetch score:", error);
+    return 0;
   }
-  return verseScore;
 }
 
-export function setNewHighScore(reference, newScore) {
-  let oldScore = getOrSetHighScore(reference);
-  if (oldScore < newScore) {
-    localStorage.setItem(reference, newScore);
+export async function setNewHighScore(reference, newScore) {
+  try {
+    const oldScore = await getOrSetHighScore(reference);
+    if (oldScore < newScore) {
+      await verseScoreApi.saveScore(reference, newScore);
+    }
+  } catch (error) {
+    console.error("Unable to save score:", error);
   }
-  return;
 }
 
 //if user didn't score while viewing the verse.
-export function removeHighscore(reference) {
-  return localStorage.removeItem(reference);
+export async function removeHighscore(reference) {
+  try {
+    await verseScoreApi.deleteScore(reference);
+  } catch (error) {
+    console.error("Unable to delete score:", error);
+  }
 }
 
-export function scoringFunction(scoreObject, choice, reference = null) {
+export async function scoringFunction(scoreObject, choice, reference = null) {
   const { currentScore, correctWorth, wrongWorth } = scoreObject;
   let total = currentScore;
   if (choice === "correct") {
     total += correctWorth;
     if (reference !== null) {
-      setNewHighScore(reference, total);
+      await setNewHighScore(reference, total);
     }
   } else {
     total -= wrongWorth;

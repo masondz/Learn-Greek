@@ -221,7 +221,7 @@ const VerbGrid = ({
     }
   };
 
-  const onClick = (e) => {
+  const onClick = async (e) => {
     if (word.parse.includes("imperfect")) {
       if (e.target.innerHTML === "perfect") {
         e.target.className = e.target.className + " wrong";
@@ -248,18 +248,16 @@ const VerbGrid = ({
         if (verbMode !== "parsing") {
           isParsed();
         } else {
-          dispatch(
-            setCurrentScore(
-              scoringFunction(scoreObject, "correct", verseReference)
-            )
-          );
+          const newScore = await scoringFunction(scoreObject, "correct", verseReference);
+          dispatch(setCurrentScore(newScore));
           dispatch(increaseCorrect());
         }
       } else {
         
         e.target.className = e.target.className + " wrong";
         if (verbMode === "parsing") {
-          dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
+          const newScore = await scoringFunction(scoreObject, "wrong");
+          dispatch(setCurrentScore(newScore));
           dispatch(increaseWrong());
         }
       }
@@ -268,16 +266,14 @@ const VerbGrid = ({
       if (verbMode !== "parsing") {
         isParsed();
       } else {
-        dispatch(
-          setCurrentScore(
-            scoringFunction(scoreObject, "correct", verseReference)
-          )
-        );
+        const newScore = await scoringFunction(scoreObject, "correct", verseReference);
+        dispatch(setCurrentScore(newScore));
         dispatch(increaseCorrect());
       }
     } else {
       e.target.className = e.target.className + " wrong";
-      dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
+      const newScore = await scoringFunction(scoreObject, "wrong");
+      dispatch(setCurrentScore(newScore));
       dispatch(increaseWrong());
     }
   };

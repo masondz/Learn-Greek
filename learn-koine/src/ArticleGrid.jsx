@@ -48,7 +48,7 @@ export const ArticleGrid = ({
     hasPersonAttribute = true;
   }
 
-  const checkCase = (e) => {
+  const checkCase = async (e) => {
     e.preventDefault();
     const wordCase = parse;
 
@@ -58,13 +58,13 @@ export const ArticleGrid = ({
     }
     if (wordCase.includes(target)) {
       dispatch(increaseCorrect());
-      dispatch(
-        setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
-      );
+      const newScore = await scoringFunction(scoreObject, "correct", verseReference);
+      dispatch(setCurrentScore(newScore));
       setArticleGrid({ ...articleGrid, [target]: "-correct" });
     } else {
       dispatch(increaseWrong());
-      dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
+      const newScore = await scoringFunction(scoreObject, "wrong");
+      dispatch(setCurrentScore(newScore));
       setArticleGrid({ ...articleGrid, [target]: "-wrong" });
     }
   };

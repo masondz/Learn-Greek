@@ -1,44 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { selectVerseMode, setMode } from "./features/verseSlice";
+import { useDispatch } from "react-redux";
 import { clearWord } from "./features/wordSlice";
 import "./Menu.css";
 
-const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
-  const verseMode = useSelector(selectVerseMode);
+const Menu = ({ menuLinks }) => {
   const [openOrClosed, setIsOpenOrClosed] = useState("closed");
 
   const dispatch = useDispatch();
 
-  const handleClick = ({ option }) => {
-    dispatch(clearWord());
-    if (option === "definite article") {
-      dispatch(setMode("definite article"));
-    } else if (option === "Noun and Adjective") {
-      dispatch(setMode("Noun and Adjective"));
-    } else if (option === "Conjunction") {
-      dispatch(setMode("Conjunction"));
-    } else if (option === "Preposition") {
-      dispatch(setMode("Preposition"));
-    } else if (option === "Pronoun") {
-      dispatch(setMode("Pronoun"));
-    } else if (option === "Verb") {
-      dispatch(setMode("Verb"));
-    } else if (option === "Particle") {
-      dispatch(setMode("Particle"));
-    } else if (option === "Adverb") {
-      dispatch(setMode("Adverb"));
-    } else {
-      return;
-    }
-    setArticleGrid(blankGrid);
-    setTimeout(() => {
-      setIsOpenOrClosed("closed");
-    }, 10);
-  };
-
   return (
+
     <div className={`menu-container-${openOrClosed}`}>
       <div
         className={`menu-button-container-${openOrClosed}`}
@@ -57,26 +29,6 @@ const Menu = ({ setArticleGrid, blankGrid, menuOptions, menuLinks }) => {
       </div>
 
       <div>
-        <div></div>
-        <div className={`menu-options-${openOrClosed}`}>
-          <h3 style={{ whiteSpace: "nowrap" }}>
-            {verseMode === "definite article" ? "Definite Article" : verseMode}
-          </h3>
-          {menuOptions.map((option) => {
-            return (
-              <div key={option}>
-                <button
-                  className="menu-button"
-                  onClick={() => handleClick({ option })}
-                >
-                  {option}
-                </button>
-                <br></br>
-              </div>
-            );
-          })}
-        </div>
-        <br></br>
         <div key="menu-links" className="menu-links">
           <h3>Links</h3>
           {menuLinks.map((link) => {

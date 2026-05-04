@@ -18,7 +18,7 @@ const PronounGrid = ({ reset, verseReference }) => {
   const dispatch = useDispatch();
   const scoreObject = useSelector(selectScoreSlice);
 
-  const checkCase = (e) => {
+  const checkCase = async (e) => {
     let choice = e.target.innerHTML;
     let isReflexiveOrPossessive =
       word.parse.includes("Reflexive") || word.parse.includes("Possessive");
@@ -31,14 +31,14 @@ const PronounGrid = ({ reset, verseReference }) => {
     }
     if (word.parse.includes(choice)) {
       
-      dispatch(
-        setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
-      );
+      const newScore = await scoringFunction(scoreObject, "correct", verseReference);
+      dispatch(setCurrentScore(newScore));
       dispatch(increaseCorrect());
       e.target.className = e.target.className + " correct";
     } else {
       
-      dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
+      const newScore = await scoringFunction(scoreObject, "wrong");
+      dispatch(setCurrentScore(newScore));
       dispatch(increaseWrong());
       e.target.className = e.target.className + " wrong";
     }
@@ -246,7 +246,7 @@ const PronounGrid = ({ reset, verseReference }) => {
 
   return (
     <div>
-      <p>{word.parse.includes("pronoun") ? gridOption : "Pick a Pronoun"}</p>
+      {word.parse.includes("pronoun") ? gridOption : <p>Pick a Pronoun</p>}
     </div>
   );
 };

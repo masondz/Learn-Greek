@@ -43,12 +43,11 @@ const Word = (props) => {
     Adverb: "adv",
   };
 
-  function correctGuess(prevScoreObject, reference) {
+  async function correctGuess(prevScoreObject, reference) {
     let { currentScore } = prevScoreObject;
     let newScoreObject = { currentScore, correctWorth: 10 };
-    return dispatch(
-      setCurrentScore(scoringFunction(newScoreObject, "correct", reference))
-    );
+    const newScore = await scoringFunction(newScoreObject, "correct", reference);
+    return dispatch(setCurrentScore(newScore));
   }
 
   const handleClick = () => {

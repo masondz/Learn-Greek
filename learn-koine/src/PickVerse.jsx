@@ -8,7 +8,7 @@ import { clearWord } from "./features/wordSlice";
 import { selectVerseReference } from "./features/verseSlice";
 import { decodeReference } from "./PassageNumber";
 import { resetFoundWords, setCurrentScore } from "./features/scoreSlice";
-import { removeHighscore } from "./utils";
+import { removeHighscore, getOrSetHighScore } from "./utils";
 
 const PickVerse = ({
   setArticleGrid,
@@ -61,7 +61,7 @@ const PickVerse = ({
   //add reference to url
   function addVerseToUrl(reference) {
     let book = reference.slice(0, 2);
-    
+
     let chapter = reference.slice(3, 5);
     let verse = reference.slice(6);
     let chosenVerse = "";
@@ -69,12 +69,12 @@ const PickVerse = ({
     for (let entry in newTestament) {
       if (newTestament[entry].code === Number(book)) {
         chosenVerse += entry;
-        
+
       }
     }
     chosenVerse += " " + chapter + " " + verse;
     const hyphenedVerse = chosenVerse.split(" ").join("-");
-    
+
     window.history.replaceState({ new: "new" }, "", hyphenedVerse);
   }
 
@@ -177,9 +177,13 @@ const PickVerse = ({
 
   function nextVerse() {
     let tempVerse = Number(currentVerse) + 1;
-    if (localStorage.getItem(verseReferenceFromStore) === "0") {
-      removeHighscore(Number(verseReferenceFromStore));
-    }
+    
+    // Remove score if it's 0 (no points earned)
+    getOrSetHighScore(verseReferenceFromStore).then(score => {
+      if (score === 0) {
+        removeHighscore(verseReferenceFromStore);
+      }
+    });
 
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
@@ -238,9 +242,13 @@ const PickVerse = ({
 
   function prevVerse() {
     let tempVerse = Number(currentVerse) - 1;
-    if (localStorage.getItem(verseReferenceFromStore) === "0") {
-      removeHighscore(verseReferenceFromStore);
-    }
+    
+    // Remove score if it's 0 (no points earned)
+    getOrSetHighScore(verseReferenceFromStore).then(score => {
+      if (score === 0) {
+        removeHighscore(verseReferenceFromStore);
+      }
+    });
 
     if (tempVerse < 10) {
       tempVerse = "0" + tempVerse;
@@ -311,9 +319,13 @@ const PickVerse = ({
   //this will turn the selected book chapter and verse into its reference code in the grktext
   const encodeReference = () => {
     let bookCode = newTestament[currentBook].code;
-    if (localStorage.getItem(verseReferenceFromStore) === "0") {
-      removeHighscore(verseReferenceFromStore);
-    }
+    
+    // Remove score if it's 0 (no points earned)
+    getOrSetHighScore(verseReferenceFromStore).then(score => {
+      if (score === 0) {
+        removeHighscore(verseReferenceFromStore);
+      }
+    });
 
     let reference = bookCode + "0" + currentChapter + "0" + currentVerse;
     if (!lookUpVerse(reference)) {
@@ -352,70 +364,70 @@ const PickVerse = ({
         </button>
       </div>
       <div className="pick-verse-grid">
-       
-          <div style={{color: "red"}} className="drop-lists">
-            <button onClick={handleOpenBookList} className="booklist-button">
-              {chosenBook ? chosenBook : bookNames[referenceRaw.bookIndex]}
-            </button>
-          </div>
-          <div className="drop-lists">
-            <button
-              onClick={handleOpenChapterList}
-              className="chapterlist-button"
-            >
-              {chosenChapter ? chosenChapter : referenceRaw.chapterNumber}
-            </button>
-          </div>
-          <div className="drop-lists">
-            <button onClick={handleOpenVerseList} className="verselist-button">
-              {chosenVerse ? chosenVerse : referenceRaw.verseNumber}
-            </button>
-          </div>
-          <button className="go-button" onClick={encodeReference}>
-            Go
+
+        <div style={{ color: "red" }} className="drop-lists">
+          <button onClick={handleOpenBookList} className="booklist-button">
+            {chosenBook ? chosenBook : bookNames[referenceRaw.bookIndex]}
           </button>
-          <div className={`lists ${bookListIsOpen}`} id="book-list">
-            {bookNames.map((book) => {
-              return (
-                <div
-                  className="list-option book-option"
-                  value={book}
-                  onClick={handlePickBook}
-                  key={book}
-                >
-                  {book}
-                </div>
-              );
-            })}
-          </div>
-          <div className={`lists ${chapterListIsOpen}`} id="chapter-list">
-            {chapterList.map((chapter) => {
-              return (
-                <div
-                  className="list-option chapter-option"
-                  value={chapter}
-                  onClick={handlePickChapter}
-                  key={chapter}
-                >
-                  {chapter}
-                </div>
-              );
-            })}
-          </div>
-          <div className={`lists ${verseListIsOpen}`} id="verse-list">
-            {verseList.map((verse) => {
-              return (
-                <div
-                  className="list-option verse-option"
-                  value={verse}
-                  onClick={handlePickVerse}
-                  key={verse}
-                >
-                  {verse}
-                </div>
-              );
-            })}
-          </div>
+        </div>
+        <div className="drop-lists">
+          <button
+            onClick={handleOpenChapterList}
+            className="chapterlist-button"
+          >
+            {chosenChapter ? chosenChapter : referenceRaw.chapterNumber}
+          </button>
+        </div>
+        <div className="drop-lists">
+          <button onClick={handleOpenVerseList} className="verselist-button">
+            {chosenVerse ? chosenVerse : referenceRaw.verseNumber}
+          </button>
+        </div>
+        <button className="go-button" onClick={encodeReference}>
+          Go
+        </button>
+        <div className={`lists ${bookListIsOpen}`} id="book-list">
+          {bookNames.map((book) => {
+            return (
+              <div
+                className="list-option book-option"
+                value={book}
+                onClick={handlePickBook}
+                key={book}
+              >
+                {book}
+              </div>
+            );
+          })}
+        </div>
+        <div className={`lists ${chapterListIsOpen}`} id="chapter-list">
+          {chapterList.map((chapter) => {
+            return (
+              <div
+                className="list-option chapter-option"
+                value={chapter}
+                onClick={handlePickChapter}
+                key={chapter}
+              >
+                {chapter}
+              </div>
+            );
+          })}
+        </div>
+        <div className={`lists ${verseListIsOpen}`} id="verse-list">
+          {verseList.map((verse) => {
+            return (
+              <div
+                className="list-option verse-option"
+                value={verse}
+                onClick={handlePickVerse}
+                key={verse}
+              >
+                {verse}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

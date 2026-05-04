@@ -10,12 +10,21 @@ namespace LearnGreekAPI.Models
         }
 
         required public DbSet<User> Users { get; set; }
+        required public DbSet<VerseScore> VerseScores { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure entity relationships and constraints here if needed
+            modelBuilder.Entity<VerseScore>()
+                .HasOne(vs => vs.User)
+                .WithMany()
+                .HasForeignKey(vs => vs.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<VerseScore>()
+                .HasIndex(vs => new { vs.UserId, vs.VerseReference })
+                .IsUnique();
         }
     }
 }

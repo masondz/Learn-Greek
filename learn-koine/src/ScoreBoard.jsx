@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState, useEffect } from "react";
 import { selectScoreSlice } from "./features/scoreSlice";
 import { useSelector } from "react-redux";
 import { getOrSetHighScore } from "./utils";
@@ -8,7 +8,19 @@ import "./scoreboard.css";
 const ScoreBoard = () => {
   const scoreObject = useSelector(selectScoreSlice);
   const { currentScore } = scoreObject;
-  const highScore = getOrSetHighScore(useSelector(selectVerseReference));
+  const verseReference = useSelector(selectVerseReference);
+  const [highScore, setHighScore] = useState(0);
+
+  useEffect(() => {
+    const fetchHighScore = async () => {
+      const score = await getOrSetHighScore(verseReference);
+      setHighScore(score);
+    };
+    
+    if (verseReference) {
+      fetchHighScore();
+    }
+  }, [verseReference, currentScore]);
 
   return (
     <div className="score-board">

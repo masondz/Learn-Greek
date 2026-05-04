@@ -41,20 +41,20 @@ const PrepositionGrid = ({ reset, verseReference }) => {
     dispatch(setWrongWorth(5));
   }, [word, reset, dispatch]);
 
-  const checkCase = (e) => {
+  const checkCase = async (e) => {
     let choice = e.target.innerHTML;
     if (scoreObject.correctFound >= 1) {
       return;
     }
     if (choice === greekPrepositions[word.word]) {
       dispatch(increaseCorrect());
-      dispatch(
-        setCurrentScore(scoringFunction(scoreObject, "correct", verseReference))
-      );
+      const newScore = await scoringFunction(scoreObject, "correct", verseReference);
+      dispatch(setCurrentScore(newScore));
       e.target.className = e.target.className + " correct";
     } else {
       dispatch(increaseWrong());
-      dispatch(setCurrentScore(scoringFunction(scoreObject, "wrong")));
+      const newScore = await scoringFunction(scoreObject, "wrong");
+      dispatch(setCurrentScore(newScore));
       e.target.className = e.target.className + " wrong";
     }
   };
