@@ -39,7 +39,7 @@ const Menu = ({ menuLinks }) => {
                   className="menu-link"
                   onClick={() => dispatch(clearWord())}
                 >
-                  {link === "parsing-verse" ? "parsing practice" : link}
+                  {link === "parsing-verse" ? "Parsing Practice" : link}
                 </Link>
                 <br></br>
               </div>

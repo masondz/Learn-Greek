@@ -13,7 +13,7 @@ const MenuVocabulary = ({
   const [openOrClosed, setIsOpenOrClosed] = useState("open");
   const [category, setCategory] = useState("Pick a Category");
 
-  const menuLinks = ["parsing-verse", "verb"];
+  const menuLinks = ["parsing-verse", "Verb"];
 
   const handleSetList = (option) => {
     let list = {};
@@ -85,34 +85,34 @@ const MenuVocabulary = ({
           {openOrClosed === "open" ? "X" : "="}
         </button>
       </div>
-      <h4 style={{ whiteSpace: "nowrap" }}>
-        {category === "Pick a Category" ? category : `Studying: ${category}`}
-      </h4>
-      <button
-        className="menu-button"
-        onClick={() => handleSetList("Most Common")}
-      >
-        Most Common
-      </button>
-      <br></br>
-      <button
-        className="menu-button"
-        onClick={() => handleSetList("More Common")}
-      >
-        More Common
-      </button>
-      <br></br>
-      <button className="menu-button" onClick={() => handleSetList("Common")}>
-        Common
-      </button>
-      <br></br>
       <div className="menu-links" key="menu-lins">
+        <h4 style={{ whiteSpace: "nowrap" }}>
+          {category === "Pick a Category" ? category : `Studying: ${category}`}
+        </h4>
+        <button
+          className="menu-button"
+          onClick={() => handleSetList("Most Common")}
+        >
+          Most Common
+        </button>
+        <br></br>
+        <button
+          className="menu-button"
+          onClick={() => handleSetList("More Common")}
+        >
+          More Common
+        </button>
+        <br></br>
+        <button className="menu-button" onClick={() => handleSetList("Common")}>
+          Common
+        </button>
+        <br></br>
         <h3 key="links-title">Links</h3>
         {menuLinks.map((link) => {
           return (
             <div key={link + "-div"}>
               <Link to={"/" + link} className="menu-link" key={link}>
-                {link === "parsing-verse" ? "parsing practice" : link}
+                {link === "parsing-verse" ? "Parsing Practice" : link}
               </Link>
               <br></br>
             </div>
