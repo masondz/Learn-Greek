@@ -18,6 +18,7 @@ const wordSlice = createSlice({
     parse: "",
     gNum: "",
     gloss: "",
+    currentWordIndex: null,
   },
   reducers: {
     setWord: (state, action) => {
@@ -47,13 +48,18 @@ const wordSlice = createSlice({
       state.parse = "";
       state.gNum = "";
       state.gloss = "";
+      state.currentWordIndex = null;
+    },
+    setCurrentWordIndex: (state, action) => {
+      state.currentWordIndex = action.payload;
     },
   },
 });
 
-export const { isArticle, checkWordSlice, clearWord, setWord } =
+export const { isArticle, checkWordSlice, clearWord, setWord, setCurrentWordIndex } =
   wordSlice.actions;
 
 export const selectWordSlice = (state) => state.word; //returns an object {word: της, partOfSpeech: "article", gloss: "the"}
+export const selectCurrentWordIndex = (state) => state.word.currentWordIndex;
 
 export default wordSlice.reducer;

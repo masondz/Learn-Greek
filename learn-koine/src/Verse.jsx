@@ -30,6 +30,7 @@ import { setVerbType } from "./features/verbSlice";
 import HelpTool from "./HelpTool";
 import { scoreVerse } from "./utils";
 import ScoreBoard from "./ScoreBoard";
+import ToolkitPopup from "./ToolkitPopup";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -103,6 +104,19 @@ const Verse = () => {
 
   //this is for VerbGrid. Must be set to false to stop random verb after correct guesses.
   const [correctCount, setCorrectCount] = useState(false);
+  
+  // Popup state management
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
+  const [popupCallback, setPopupCallback] = useState(null);
+  
+  // Word parsing state for the current session
+  const [wordParsingState, setWordParsingState] = useState({});
+
+  // Get verse data from Redux - must be before useEffect that uses verseReference
+  const verse = useSelector(selectVerseSlice);
+  const verseMode = useSelector(selectVerseMode);
+  const verseReference = useSelector(selectVerseReference);
 
   useEffect(() => {
     function getVerseFromUrl(pathRaw) {
@@ -171,6 +185,11 @@ const Verse = () => {
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
   }, [dispatch]);
+  
+  // Reset word parsing state whenever verse reference changes
+  useEffect(() => {
+    setWordParsingState({});
+  }, [verseReference]);
 
   const [articleGrid, setArticleGrid] = useState({
     nominative: "-clear",
@@ -202,25 +221,21 @@ const Verse = () => {
     third: "-clear",
   };
 
-  const verse = useSelector(selectVerseSlice);
-  const verseMode = useSelector(selectVerseMode);
-  const verseReference = useSelector(selectVerseReference);
-
   let practiceGrid;
   switch (verseMode) {
     case "Conjunction":
       practiceGrid = (
-        <ConjuctionGrid reset={reset} verseReference={verseReference} />
+        <ConjuctionGrid reset={reset} verseReference={verseReference} wordParsingState={wordParsingState} setWordParsingState={setWordParsingState} />
       );
       break;
     case "Preposition":
       practiceGrid = (
-        <PrepositionGrid reset={reset} verseReference={verseReference} />
+        <PrepositionGrid reset={reset} verseReference={verseReference} wordParsingState={wordParsingState} setWordParsingState={setWordParsingState} />
       );
       break;
     case "Pronoun":
       practiceGrid = (
-        <PronounGrid reset={reset} verseReference={verseReference} />
+        <PronounGrid reset={reset} verseReference={verseReference} wordParsingState={wordParsingState} setWordParsingState={setWordParsingState} />
       );
       break;
     case "Verb":
@@ -232,17 +247,19 @@ const Verse = () => {
           reset={reset}
           dispatch={dispatch}
           verseReference={verseReference}
+          wordParsingState={wordParsingState}
+          setWordParsingState={setWordParsingState}
         />
       );
       break;
     case "Adverb":
       practiceGrid = (
-        <AdverbGrid reset={reset} verseReference={verseReference} />
+        <AdverbGrid reset={reset} verseReference={verseReference} wordParsingState={wordParsingState} setWordParsingState={setWordParsingState} />
       );
       break;
     case "Particle":
       practiceGrid = (
-        <ParticleGrid rese={reset} verseReference={verseReference} />
+        <ParticleGrid rese={reset} verseReference={verseReference} wordParsingState={wordParsingState} setWordParsingState={setWordParsingState} />
       );
       break;
     default:
@@ -251,6 +268,8 @@ const Verse = () => {
           articleGrid={articleGrid}
           setArticleGrid={setArticleGrid}
           verseReference={verseReference}
+          wordParsingState={wordParsingState}
+          setWordParsingState={setWordParsingState}
         />
       );
   }
@@ -272,11 +291,14 @@ const Verse = () => {
       !["booklist-button", "chapterlist-button", "verselist-button"].includes(
         e.target.className
       ) &&
-      !e.target.className.includes("list-option")
+      !e.target.className.includes("list-option") &&
+      !e.target.className.includes("toolkit-popup") &&
+      !e.target.className.includes("popup-tool")
     ) {
       setBookListIsOpen(false);
       setChapterListIsOpen(false);
       setVerseListIsOpen(false);
+      setShowPopup(false);
     }
     document.removeEventListener("click", offClickCloseMenu);
   };
@@ -317,11 +339,17 @@ const Verse = () => {
               <Word
                 key={word.word + i}
                 word={word}
+                wordIndex={i}
                 setArticleGrid={setArticleGrid}
                 setReset={setReset}
                 reset={reset}
                 blankGrid={blankGrid}
                 verseReference={verseReference}
+                setShowPopup={setShowPopup}
+                setPopupPosition={setPopupPosition}
+                setPopupCallback={setPopupCallback}
+                wordParsingState={wordParsingState}
+                setWordParsingState={setWordParsingState}
               />
             );
           })}
@@ -342,10 +370,18 @@ const Verse = () => {
             </CheckWord>
           </div>
 
-          <Toolkit />
+          {
+            /*<Toolkit />*/
+          }
         </div>
         <HelpTool pageName={"parse-help"} />
       </div>
+      {showPopup && popupCallback && (
+        <ToolkitPopup 
+          position={popupPosition} 
+          onSelectMode={popupCallback}
+        />
+      )}
     </>
   );
 };

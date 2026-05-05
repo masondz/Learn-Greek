@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Word.css";
 import { useSelector, useDispatch } from "react-redux";
-import { selectWordSlice } from "./features/wordSlice";
+import { selectWordSlice, selectCurrentWordIndex } from "./features/wordSlice";
 import {
   selectScoreSlice,
   setCorrectWorth,
@@ -16,15 +16,23 @@ export const ArticleGrid = ({
   articleGrid,
   setArticleGrid,
   verseReference,
+  wordParsingState,
+  setWordParsingState,
 }) => {
   const { parse } = useSelector(selectWordSlice);
+  const currentWordIndex = useSelector(selectCurrentWordIndex);
   const scoreObject = useSelector(selectScoreSlice);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(setCorrectWorth(30)); //correct choices in this grid are worth 30 points.
     dispatch(setWrongWorth(10));
-  }, [dispatch]);
+    
+    // Restore grid state from wordParsingState
+    if (currentWordIndex !== null && wordParsingState[currentWordIndex]?.gridSelections) {
+      setArticleGrid(wordParsingState[currentWordIndex].gridSelections);
+    }
+  }, [dispatch, currentWordIndex, wordParsingState, setArticleGrid]);
 
   let isVocative;
 
@@ -56,16 +64,36 @@ export const ArticleGrid = ({
     if (scoreObject.correctFound >= 3) {
       return;
     }
+    
+    if (articleGrid[target] === "-correct" || articleGrid[target] === "-wrong") {
+      return;
+    }
+    
+    let newArticleGrid;
+    
     if (wordCase.includes(target)) {
       dispatch(increaseCorrect());
       const newScore = await scoringFunction(scoreObject, "correct", verseReference);
       dispatch(setCurrentScore(newScore));
-      setArticleGrid({ ...articleGrid, [target]: "-correct" });
+      newArticleGrid = { ...articleGrid, [target]: "-correct" };
+      setArticleGrid(newArticleGrid);
     } else {
       dispatch(increaseWrong());
       const newScore = await scoringFunction(scoreObject, "wrong");
       dispatch(setCurrentScore(newScore));
-      setArticleGrid({ ...articleGrid, [target]: "-wrong" });
+      newArticleGrid = { ...articleGrid, [target]: "-wrong" };
+      setArticleGrid(newArticleGrid);
+    }
+    
+    // Save grid state to wordParsingState
+    if (currentWordIndex !== null) {
+      setWordParsingState(prev => ({
+        ...prev,
+        [currentWordIndex]: {
+          ...prev[currentWordIndex],
+          gridSelections: newArticleGrid
+        }
+      }));
     }
   };
 
