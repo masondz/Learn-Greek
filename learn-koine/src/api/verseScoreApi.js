@@ -22,27 +22,19 @@ export const verseScoreApi = {
   },
 
   async getScore(verseReference) {
-    try {
-      const response = await fetch(`${API_BASE_URL}/VerseScores/${verseReference}`, {
-        headers: getAuthHeaders(),
-      });
-      
-      if (response.status === 404) {
-        return null;
-      }
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch score');
-      }
-      
-      return response.json();
-    } catch (error) {
-      // Only log non-404 errors
-      if (error.message !== 'Failed to fetch') {
-        console.error('Error fetching score:', error);
-      }
+    const response = await fetch(`${API_BASE_URL}/VerseScores/${verseReference}`, {
+      headers: getAuthHeaders(),
+    });
+    
+    if (response.status === 404) {
       return null;
     }
+    
+    if (!response.ok) {
+      throw new Error('Failed to fetch score');
+    }
+    
+    return response.json();
   },
 
   async saveScore(verseReference, score) {
@@ -63,19 +55,23 @@ export const verseScoreApi = {
   },
 
   async deleteScore(verseReference) {
-    const response = await fetch(`${API_BASE_URL}/VerseScores/${verseReference}`, {
-      method: 'DELETE',
-      headers: getAuthHeaders(),
-    });
-    
-    if (response.status === 404) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/VerseScores/${verseReference}`, {
+        method: 'DELETE',
+        headers: getAuthHeaders(),
+      });
+      
+      if (response.status === 404) {
+        return true;
+      }
+      
+      if (!response.ok) {
+        throw new Error('Failed to delete score');
+      }
+      
+      return true;
+    } catch (error) {
       return true;
     }
-    
-    if (!response.ok) {
-      throw new Error('Failed to delete score');
-    }
-    
-    return true;
   },
 };

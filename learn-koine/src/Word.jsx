@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { setWord, setCurrentWordIndex } from "./features/wordSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { incrementFoundArticles } from "./features/countSlice";
@@ -13,7 +13,7 @@ import {
 import { scoringFunction } from "./utils";
 import ToolkitPopup from "./ToolkitPopup";
 
-const wrongPick = "\u2716";
+const wrongPick = "\u2718";
 const correctPick = "\u2713";
 
 function removePunctuation(str) {
@@ -22,6 +22,17 @@ function removePunctuation(str) {
   const punctuationRemoved = str.replace(punctuationRegex, "");
   return punctuationRemoved;
 }
+
+const styleMap = {
+  "definite article": "da",
+  Conjunction: "conj",
+  Preposition: "prep",
+  "Noun and Adjective": "na",
+  Pronoun: "pron",
+  Verb: "vrb",
+  Particle: "prt",
+  Adverb: "adv",
+};
 
 const Word = (props) => {
   const [indicator, setIndicator] = useState("o");
@@ -48,17 +59,6 @@ const Word = (props) => {
     }
   }, [wordParsingState, wordIndex]);
 
-  const styleMap = {
-    "definite article": "da",
-    Conjunction: "conj",
-    Preposition: "prep",
-    "Noun and Adjective": "na",
-    Pronoun: "pron",
-    Verb: "vrb",
-    Particle: "prt",
-    Adverb: "adv",
-  };
-
   async function correctGuess(prevScoreObject, reference) {
     let { currentScore } = prevScoreObject;
     let newScoreObject = { currentScore, correctWorth: 10 };
@@ -66,12 +66,12 @@ const Word = (props) => {
     return dispatch(setCurrentScore(newScore));
   }
 
-  const handleClick = (e) => {
+  const handleClick = useCallback((e) => {
     e.stopPropagation();
-    
+
     // Check if this word has already been parsed successfully
     const alreadyParsed = wordParsingState[wordIndex];
-    
+
     // If word was already parsed correctly, just load the word data without showing popup
     if (alreadyParsed && alreadyParsed.isCorrect) {
       let wordData = parseWord(word.word);
@@ -85,39 +85,39 @@ const Word = (props) => {
 
     // Close any existing popup first, then open new one
     setShowPopup(false);
-    
+
     // Use setTimeout to ensure state updates properly
     setTimeout(() => {
       const rect = e.target.getBoundingClientRect();
-      
+
       // Use viewport coordinates (no scroll offset needed for fixed positioning)
       setPopupPosition({
         x: rect.left,
         y: rect.bottom + 5
       });
-      
+
       setPopupCallback(() => handleModeSelect);
       setShowPopup(true);
     }, 0);
-  };
+  }, [wordIndex, wordParsingState, dispatch, setShowPopup, setPopupPosition, setPopupCallback, word.word]);
 
-  const handleModeSelect = (selectedMode, modeId) => {
+  const handleModeSelect = useCallback((selectedMode, modeId) => {
     setShowPopup(false);
-    
+
     // Don't allow changing mode if already parsed correctly
     if (wordParsingState[wordIndex] && wordParsingState[wordIndex].isCorrect) {
       return;
     }
-    
+
     let wordData = parseWord(word.word);
     dispatch(resetFoundWords());
-    
+
     if (!wordData) {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");
       dispatch(setWord(removePunctuation(word.word)));
       dispatch(setCurrentScore(scoreOjbect.currentScore - 2));
-      
+
       // Save to session state
       setWordParsingState(prev => ({
         ...prev,
@@ -128,7 +128,7 @@ const Word = (props) => {
       }));
       return;
     }
-    
+
     if (
       wordData.parse.includes("Interjection") ||
       wordData.parse.includes("Hebrew transliterated word (indeclinable)")
@@ -139,9 +139,9 @@ const Word = (props) => {
       dispatch(setWord(wordData));
       return;
     }
-    
+
     let isCorrect = false;
-    
+
     if (selectedMode === "Noun and Adjective") {
       if (
         wordData.parse.includes("Noun") ||
@@ -156,7 +156,7 @@ const Word = (props) => {
     } else if (wordData.parse.includes(selectedMode)) {
       isCorrect = true;
     }
-    
+
     if (isCorrect) {
       setIndicator(correctPick);
       setHighlight(`-highlight-correct ${styleMap[selectedMode]}`);
@@ -164,7 +164,7 @@ const Word = (props) => {
       dispatch(incrementFoundArticles());
       dispatch(setParsingArticle(true));
       dispatch(setMode(selectedMode));
-      
+
       // Save to session state
       setWordParsingState(prev => ({
         ...prev,
@@ -177,7 +177,7 @@ const Word = (props) => {
       setIndicator(wrongPick);
       setHighlight("-highlight-wrong");
       dispatch(setCurrentScore(scoreOjbect.currentScore - 2));
-      
+
       // Save to session state
       setWordParsingState(prev => ({
         ...prev,
@@ -187,7 +187,7 @@ const Word = (props) => {
         }
       }));
     }
-    
+
     setArticleGrid(blankGrid);
     if (reset) {
       setReset(false);
@@ -196,7 +196,7 @@ const Word = (props) => {
     }
     dispatch(setWord(wordData));
     dispatch(setCurrentWordIndex(wordIndex));
-  };
+  }, [wordIndex, wordParsingState, dispatch, setShowPopup, word.word, scoreOjbect, verseReference, blankGrid, reset, setReset, setWordParsingState]);
 
   return (
     <div className={"verse-word" + highlight}>

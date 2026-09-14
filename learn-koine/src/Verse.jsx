@@ -286,28 +286,33 @@ const Verse = () => {
   const menuLinks = ["Vocabulary", "Verb"];
 
   //close drop down menues on off-click
-  const offClickCloseMenu = (e) => {
-    if (
-      !["booklist-button", "chapterlist-button", "verselist-button"].includes(
-        e.target.className
-      ) &&
-      !e.target.className.includes("list-option") &&
-      !e.target.className.includes("toolkit-popup") &&
-      !e.target.className.includes("popup-tool")
-    ) {
-      setBookListIsOpen(false);
-      setChapterListIsOpen(false);
-      setVerseListIsOpen(false);
-      setShowPopup(false);
-    }
-    document.removeEventListener("click", offClickCloseMenu);
-  };
+  useEffect(() => {
+    const offClickCloseMenu = (e) => {
+      if (
+        !["booklist-button", "chapterlist-button", "verselist-button"].includes(
+          e.target.className
+        ) &&
+        !e.target.className.includes("list-option") &&
+        !e.target.className.includes("toolkit-popup") &&
+        !e.target.className.includes("popup-tool")
+      ) {
+        setBookListIsOpen(false);
+        setChapterListIsOpen(false);
+        setVerseListIsOpen(false);
+        setShowPopup(false);
+      }
+    };
 
-  document.addEventListener("click", offClickCloseMenu);
+    document.addEventListener("click", offClickCloseMenu);
+    
+    return () => {
+      document.removeEventListener("click", offClickCloseMenu);
+    };
+  }, []);
 
   return (
     <>
-      <div className="verse-component" onClick={offClickCloseMenu}>
+      <div className="verse-component">
         <div>
           <Menu
             setArticleGrid={setArticleGrid}
