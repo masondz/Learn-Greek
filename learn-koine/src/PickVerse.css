@@ -62,7 +62,7 @@
 .lists {
   background-color: rgb(241, 237, 230);
   color: black;
-  font-size: .73em;
+  font-size: .9rem;
   text-align: center;
   height: 200px;
   overflow: scroll;
