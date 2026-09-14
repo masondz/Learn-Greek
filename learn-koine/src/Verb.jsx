@@ -48,7 +48,7 @@ const Verb = () => {
     if (verbCharacteristics.Tense === "perfect") {
       exclusions = ["imperfect", "pluperfect"];
     }
-    
+
 
     if (
       verbCharacteristics.Type === "Participle" &&
@@ -90,7 +90,7 @@ const Verb = () => {
 
     dispatch(clearWord());
     let splitOption = option.split(" ");
-    
+
     let nextVerb = randomVerb(wordUsages, "parse", splitOption, exclusions);
 
 
@@ -169,7 +169,7 @@ const VerbMenu = ({
     const newVerbType = verbChars.Type;
     const optionsArr = Object.keys(verbChars);
 
-    
+
     let options = "";
 
     if (optionsArr.length === 1 && verbChars.Type === undefined) {
@@ -187,7 +187,7 @@ const VerbMenu = ({
       alert("Verb with given characteristics does not exist.");
       return;
     }
-    
+
     dispatch(setVerbType(newVerbType));
     setVerbMode(options);
     setTimeout(() => {
@@ -196,7 +196,7 @@ const VerbMenu = ({
     }, 10);
   };
 
-  const menuLinks = ["vocabulary", "parsing-verse"];
+  const menuLinks = ["vocabulary", "parsing-verse/"];
 
   return (
     <div className={`menu-container-${openOrClosed}`} key="verb-menu-container">
@@ -297,7 +297,7 @@ const VerbMenu = ({
                   onClick={() => dispatch(clearWord())}
                   key={link}
                 >
-                  {link === "parsing-verse" ? "parsing practice" : link}
+                  {link === "parsing-verse/" ? "Parsing Practice" : link}
                 </Link>
                 <br></br>
               </div>

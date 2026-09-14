@@ -346,7 +346,8 @@ const VerbGrid = ({
     }
   };
 
-  const onClick = async (e) => {
+  const evaluateVerbAnswer = async (e) => {
+    console.log("Evaluating answer: " + e.target.innerHTML);
     if (e.target.className.includes("correct") || e.target.className.includes("wrong")) {
       return;
     }
@@ -361,12 +362,14 @@ const VerbGrid = ({
         saveGridState(choice, newClass);
         return;
       } else {
-        if (checkSecondaryEndings(e, "imperfect")) {
+        let hasSecondaryEnding = await checkSecondaryEndings(e, "imperfect");
+        if (hasSecondaryEnding) {
           return;
         }
       }
     } else if (word.parse.includes("2nd aorist")) {
-      if (checkSecondaryEndings(e, "2nd aorist")) {
+        let hasSecondaryEnding = await checkSecondaryEndings(e, "2nd aorist");
+      if (hasSecondaryEnding) {
         return;
       }
     }
@@ -450,7 +453,7 @@ const VerbGrid = ({
         setIsInfinitive={setIsInfinitive}
         verbCharacteristics={verbCharacteristics}
         word={word}
-        onClick={onClick}
+        onClick={evaluateVerbAnswer}
         setCheckParse={setCheckParse}
         setVerbTypeChosen={setVerbTypeChosen}
         gridState={gridState}
@@ -464,11 +467,11 @@ const VerbGrid = ({
         verseReference={verseReference}
         scoreObject={scoreObject}
       />
-      {isRegularVerb && <RegularVerbGrid onClick={onClick} gridState={gridState} />}
+      {isRegularVerb && <RegularVerbGrid onClick={evaluateVerbAnswer} gridState={gridState} />}
       {isParticiple && (
-        <ParticipleGrid onClick={onClick} isVocative={isVocative} gridState={gridState} />
+        <ParticipleGrid onClick={evaluateVerbAnswer} isVocative={isVocative} gridState={gridState} />
       )}
-      {isInfinitive && <InfinitiveGrid onClick={onClick} gridState={gridState} />}
+      {isInfinitive && <InfinitiveGrid onClick={evaluateVerbAnswer} gridState={gridState} />}
       <p>{checkParse}</p>
     </div>
   );

@@ -104,12 +104,12 @@ const Verse = () => {
 
   //this is for VerbGrid. Must be set to false to stop random verb after correct guesses.
   const [correctCount, setCorrectCount] = useState(false);
-  
+
   // Popup state management
   const [showPopup, setShowPopup] = useState(false);
   const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
   const [popupCallback, setPopupCallback] = useState(null);
-  
+
   // Word parsing state for the current session
   const [wordParsingState, setWordParsingState] = useState({});
 
@@ -185,7 +185,7 @@ const Verse = () => {
     dispatch(setMode("definite article"));
     dispatch(setVerbType(""));
   }, [dispatch]);
-  
+
   // Reset word parsing state whenever verse reference changes
   useEffect(() => {
     setWordParsingState({});
@@ -283,7 +283,7 @@ const Verse = () => {
 
   let scoreMax = scoreVerse(verseArray);
 
-  const menuLinks = ["Vocabulary", "Verb Practice"];
+  const menuLinks = ["Vocabulary", "Verb"];
 
   //close drop down menues on off-click
   const offClickCloseMenu = (e) => {
@@ -377,8 +377,8 @@ const Verse = () => {
         <HelpTool pageName={"parse-help"} />
       </div>
       {showPopup && popupCallback && (
-        <ToolkitPopup 
-          position={popupPosition} 
+        <ToolkitPopup
+          position={popupPosition}
           onSelectMode={popupCallback}
         />
       )}
