@@ -1,20 +1,21 @@
 import "./Word.css";
-import { randomChoicesSelection } from "./greek_text/parseLexicon";
-import { selectWordSlice, selectCurrentWordIndex } from "./features/wordSlice";
+import { randomChoicesSelection } from "../greek_text/parseLexicon";
+import { selectWordSlice, selectCurrentWordIndex } from "../features/wordSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useMemo, useState } from "react";
-import { greekPrepositions } from "./greek_text/greekPrepositions";
+import { greekConjunctions } from "../greek_text/greekConjunctions";
 import {
-  increaseCorrect,
-  increaseWrong,
   selectScoreSlice,
   setCorrectWorth,
-  setCurrentScore,
   setWrongWorth,
-} from "./features/scoreSlice";
-import { scoringFunction } from "./utils";
+  setCurrentScore,
+  increaseCorrect,
+  increaseWrong,
+} from "../features/scoreSlice";
 
-const PrepositionGrid = ({ reset, verseReference, wordParsingState, setWordParsingState }) => {
+import { scoringFunction } from "../utils";
+
+const ConjuctionGrid = ({ reset, verseReference, wordParsingState, setWordParsingState }) => {
   const word = useSelector(selectWordSlice);
   const currentWordIndex = useSelector(selectCurrentWordIndex);
   const dispatch = useDispatch();
@@ -23,10 +24,10 @@ const PrepositionGrid = ({ reset, verseReference, wordParsingState, setWordParsi
 
   const guessArray = useMemo(() => {
     let array = [];
-    if (word.parse.includes("Preposition")) {
+    if (word.parse.includes("Conjunction")) {
       array = randomChoicesSelection(
-        greekPrepositions,
-        greekPrepositions[word.word]
+        greekConjunctions,
+        greekConjunctions[word.word]
       );
       return array;
     }
@@ -56,12 +57,12 @@ const PrepositionGrid = ({ reset, verseReference, wordParsingState, setWordParsi
     
     let newClass = "";
     
-    if (choice === greekPrepositions[word.word]) {
+    if (choice === greekConjunctions[word.word]) {
+      newClass = " correct";
+      e.target.className = e.target.className + newClass;
       dispatch(increaseCorrect());
       const newScore = await scoringFunction(scoreObject, "correct", verseReference);
       dispatch(setCurrentScore(newScore));
-      newClass = " correct";
-      e.target.className = e.target.className + newClass;
     } else {
       dispatch(increaseWrong());
       const newScore = await scoringFunction(scoreObject, "wrong");
@@ -88,10 +89,14 @@ const PrepositionGrid = ({ reset, verseReference, wordParsingState, setWordParsi
   return (
     <div className="categories">
       <div className="cases-grid">
-        {word.parse.includes("Preposition") ? (
+        {word.parse.includes("Conjunction") ? (
           guessArray.map((guess) => {
             return (
-              <div className={"case-option" + (gridState[guess] || "")} onClick={(e) => checkCase(e)} key={guess}>
+              <div
+                className={"case-option" + (gridState[guess] || "")}
+                onClick={(e) => checkCase(e)}
+                key={guess}
+              >
                 {guess}
               </div>
             );
@@ -100,7 +105,7 @@ const PrepositionGrid = ({ reset, verseReference, wordParsingState, setWordParsi
           <>
             <div className={"case-option"}>Pick</div>
             <div className={"case-option"}>A</div>
-            <div className={"case-option"}>Preposition</div>
+            <div className={"case-option"}>Conjunction</div>
             <div className={"case-option"}>☺</div>
           </>
         )}
@@ -109,4 +114,4 @@ const PrepositionGrid = ({ reset, verseReference, wordParsingState, setWordParsi
   );
 };
 
-export default PrepositionGrid;
+export default ConjuctionGrid;

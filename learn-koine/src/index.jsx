@@ -11,10 +11,10 @@ import { AuthProvider } from "./AuthContext";
 import ProtectedRoute from "./ProtectedRoute";
 import Login from "./Login";
 
-const Verse = lazy(() => import("./Verse"));
-const Vocabulary = lazy(() => import("./Vocabulary"));
-const Verb = lazy(() => import("./Verb"));
-const About = lazy(() => import("./About"));
+const Verse = lazy(() => import("./ParsingPractice/Verse.jsx"));
+const Vocabulary = lazy(() => import("./Vocabulary/Vocabulary.jsx"));
+const Verb = lazy(() => import("./Verbs/Verb.jsx"));
+const About = lazy(() => import("./About/About.jsx"));
 const Alphabet = lazy(() => import("./games/Starfinder/Alphabet3"));
 
 const router = createBrowserRouter([

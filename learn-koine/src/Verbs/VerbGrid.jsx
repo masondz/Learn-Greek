@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { wordUsages } from "./greek_text/greekLexiconObject";
-import { selectWordSlice, selectCurrentWordIndex } from "./features/wordSlice";
-import { selectVerbSlice } from "./features/verbSlice";
-import { selectVerseMode } from "./features/verseSlice";
+import { wordUsages } from "../greek_text/greekLexiconObject";
+import { selectWordSlice, selectCurrentWordIndex } from "../features/wordSlice";
+import { selectVerbSlice } from "../features/verbSlice";
+import { selectVerseMode } from "../features/verseSlice";
 import "./Verb.css";
 import { useSelector } from "react-redux";
 import {
@@ -12,8 +12,8 @@ import {
   setCorrectWorth,
   setCurrentScore,
   setWrongWorth,
-} from "./features/scoreSlice";
-import { scoringFunction } from "./utils";
+} from "../features/scoreSlice";
+import { scoringFunction } from "../utils";
 
 const VerbGrid = ({
   dispatch,

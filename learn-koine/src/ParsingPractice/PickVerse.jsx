@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./PickVerse.css";
-import { organizeText } from "./features/verseSlice";
-import { greekText } from "./greek_text/greekText";
+import { organizeText } from "../features/verseSlice";
+import { greekText } from "../greek_text/greekText";
 import { useDispatch, useSelector } from "react-redux";
-import { setVerse, clearVerse } from "./features/verseSlice";
-import { clearWord } from "./features/wordSlice";
-import { selectVerseReference } from "./features/verseSlice";
-import { decodeReference } from "./PassageNumber";
-import { resetFoundWords, setCurrentScore } from "./features/scoreSlice";
-import { removeHighscore, getOrSetHighScore } from "./utils";
+import { setVerse, clearVerse } from "../features/verseSlice";
+import { clearWord } from "../features/wordSlice";
+import { selectVerseReference } from "../features/verseSlice";
+import { decodeReference } from "./PassageNumber.jsx";
+import { resetFoundWords, setCurrentScore } from "../features/scoreSlice";
+import { removeHighscore, getOrSetHighScore } from "../utils";
 
 const PickVerse = ({
   setArticleGrid,

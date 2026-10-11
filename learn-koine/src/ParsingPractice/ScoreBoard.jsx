@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { selectScoreSlice } from "./features/scoreSlice";
+import { selectScoreSlice } from "../features/scoreSlice";
 import { useSelector } from "react-redux";
-import { getOrSetHighScore } from "./utils";
-import { selectVerseReference } from "./features/verseSlice";
+import { getOrSetHighScore } from "../utils";
+import { selectVerseReference } from "../features/verseSlice";
 import "./scoreboard.css";
 
 const ScoreBoard = () => {

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Vocabulary.css";
-import { vocabListObj } from "./greek_text/vocabularyWords";
+import { vocabListObj } from "../greek_text/vocabularyWords";
 import ReactCardFlip from "react-card-flip";
 import MenuVocabulary from "./MenuVocabulary";
-import HelpTool from "./HelpTool";
+import HelpTool from "../ParsingPractice/HelpTool.jsx";
 
 export default function Vocabulary() {
   const [vocabList, setVocabList] = useState({});

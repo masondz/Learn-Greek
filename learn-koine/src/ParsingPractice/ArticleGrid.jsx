@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Word.css";
 import { useSelector, useDispatch } from "react-redux";
-import { selectWordSlice, selectCurrentWordIndex } from "./features/wordSlice";
+import { selectWordSlice, selectCurrentWordIndex } from "../features/wordSlice";
 import {
   selectScoreSlice,
   setCorrectWorth,
@@ -9,8 +9,8 @@ import {
   setWrongWorth,
   increaseWrong,
   setCurrentScore,
-} from "./features/scoreSlice";
-import { scoringFunction } from "./utils";
+} from "../features/scoreSlice";
+import { scoringFunction } from "../utils";
 
 export const ArticleGrid = ({
   articleGrid,

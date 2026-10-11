@@ -1,6 +1,6 @@
 import "./Word.css";
-import "./Verb.css";
-import { selectWordSlice, selectCurrentWordIndex } from "./features/wordSlice";
+import "../Verbs/Verb.css";
+import { selectWordSlice, selectCurrentWordIndex } from "../features/wordSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import {
@@ -10,8 +10,8 @@ import {
   setCorrectWorth,
   setCurrentScore,
   setWrongWorth,
-} from "./features/scoreSlice";
-import { scoringFunction } from "./utils";
+} from "../features/scoreSlice";
+import { scoringFunction } from "../utils";
 
 const PronounGrid = ({ reset, verseReference, wordParsingState, setWordParsingState }) => {
   const word = useSelector(selectWordSlice);

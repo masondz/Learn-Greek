@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { greekText } from "../greek_text/greekText";
-import { newTestament } from "../PickVerse";
+import { newTestament } from "../ParsingPractice/PickVerse.jsx";
 
 export const organizeText = (text) => {
   // let verses = [];

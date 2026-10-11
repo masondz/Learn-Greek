@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { setWord, setCurrentWordIndex } from "./features/wordSlice";
+import { setWord, setCurrentWordIndex } from "../features/wordSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { incrementFoundArticles } from "./features/countSlice";
-import { setParsingArticle } from "./features/parsingSlice";
-import { selectVerseMode, setMode } from "./features/verseSlice";
-import { parseWord } from "./greek_text/parseLexicon";
+import { incrementFoundArticles } from "../features/countSlice";
+import { setParsingArticle } from "../features/parsingSlice";
+import { selectVerseMode, setMode } from "../features/verseSlice";
+import { parseWord } from "../greek_text/parseLexicon";
 import {
   resetFoundWords,
   selectScoreSlice,
   setCurrentScore,
-} from "./features/scoreSlice";
-import { scoringFunction } from "./utils";
-import ToolkitPopup from "./ToolkitPopup";
+} from "../features/scoreSlice";
+import { scoringFunction } from "../utils";
+import ToolkitPopup from "./ToolkitPopup.jsx";
 
 const wrongPick = "\u2718";
 const correctPick = "\u2713";

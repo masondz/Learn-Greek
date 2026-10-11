@@ -1,4 +1,4 @@
-import "./Menu.css";
+import "../Menu.css";
 import { useEffect } from "react";
 
 const VerbMenuOptions = ({

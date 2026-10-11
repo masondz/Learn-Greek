@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
-// import { randomWord } from "./greek_text/parseLexicon";
-import { randomVerb } from "./greek_text/parseLexicon";
-import { wordUsages } from "./greek_text/greekLexiconObject";
-import VerbGrid from "./VerbGrid";
+// import { randomWord } from "../greek_text/parseLexicon";
+import { randomVerb } from "../greek_text/parseLexicon";
+import { wordUsages } from "../greek_text/greekLexiconObject";
+import VerbGrid from "./VerbGrid.jsx";
 import "./Verb.css";
-import { setWord, selectWordSlice } from "./features/wordSlice";
-import { setMode } from "./features/verseSlice";
-import { clearWord } from "./features/wordSlice";
+import { setWord, selectWordSlice } from "../features/wordSlice";
+import { setMode } from "../features/verseSlice";
+import { clearWord } from "../features/wordSlice";
 import { Link } from "react-router-dom";
 // import { useCycle } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
-import "./Menu.css";
-import VerbMenuOptions from "./VerbMenuOptions";
-import { setVerbType, selectVerbSlice } from "./features/verbSlice";
-import HelpTool from "./HelpTool";
+import "../Menu.css";
+import VerbMenuOptions from "./VerbMenuOptions.jsx";
+import { setVerbType, selectVerbSlice } from "../features/verbSlice";
+import HelpTool from "../ParsingPractice/HelpTool.jsx";
 
 const Verb = () => {
   const verb = useSelector(selectWordSlice);

@@ -1,13 +1,13 @@
 import React from "react";
 // import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectVerseMode, setVerse } from "./features/verseSlice";
-import { clearWord, selectWordSlice } from "./features/wordSlice";
+import { selectVerseMode, setVerse } from "../features/verseSlice";
+import { clearWord, selectWordSlice } from "../features/wordSlice";
 import "./Word.css";
-import { getRandomVerse, organizeText } from "./Verse";
-import { greekText } from "./greek_text/greekText";
-import { decodeReference } from "./PassageNumber";
-import { newTestament } from "./PickVerse";
+import { getRandomVerse, organizeText } from "./Verse.jsx";
+import { greekText } from "../greek_text/greekText";
+import { decodeReference } from "./PassageNumber.jsx";
+import { newTestament } from "./PickVerse.jsx";
 
 const CheckWord = ({
   children,

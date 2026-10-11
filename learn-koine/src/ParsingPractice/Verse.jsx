@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Verse.css";
-import CheckWord from "./CheckWord";
-import Word from "./Word";
+import CheckWord from "./CheckWord.jsx";
+import Word from "./Word.jsx";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectVerseSlice,
@@ -9,28 +9,28 @@ import {
   setMode,
   selectVerseMode,
   setVerse,
-} from "./features/verseSlice";
-// import { setArticleCount } from "./features/countSlice";
-import { ArticleGrid } from "./ArticleGrid";
-import { PassageNumber } from "./PassageNumber";
-import Menu from "./Menu";
-// import { parseWord } from "./greek_text/parseLexicon";
-import "./Menu.css";
-import ConjuctionGrid from "./ConjuctionGrid";
-import PrepositionGrid from "./PrepositionGrid";
-import PronounGrid from "./PronounGrid";
-import VerbGrid from "./VerbGrid";
-import PickVerse from "./PickVerse";
-import { newTestament } from "./PickVerse";
-import { greekText } from "./greek_text/greekText";
-import Toolkit from "./Toolkit";
-import AdverbGrid from "./AdverbGrid";
-import ParticleGrid from "./ParticleGrid";
-import { setVerbType } from "./features/verbSlice";
-import HelpTool from "./HelpTool";
-import { scoreVerse } from "./utils";
-import ScoreBoard from "./ScoreBoard";
-import ToolkitPopup from "./ToolkitPopup";
+} from "../features/verseSlice";
+// import { setArticleCount } from "../features/countSlice";
+import { ArticleGrid } from "./ArticleGrid.jsx";
+import { PassageNumber } from "./PassageNumber.jsx";
+import Menu from "../Menu";
+// import { parseWord } from "../greek_text/parseLexicon";
+import "../Menu.css";
+import ConjuctionGrid from "./ConjuctionGrid.jsx";
+import PrepositionGrid from "./PrepositionGrid.jsx";
+import PronounGrid from "./PronounGrid.jsx";
+import VerbGrid from "../Verbs/VerbGrid.jsx";
+import PickVerse from "./PickVerse.jsx";
+import { newTestament } from "./PickVerse.jsx";
+import { greekText } from "../greek_text/greekText";
+// import Toolkit from "./Toolkit.jsx";
+import AdverbGrid from "./AdverbGrid.jsx";
+import ParticleGrid from "./ParticleGrid.jsx";
+import { setVerbType } from "../features/verbSlice";
+import HelpTool from "./HelpTool.jsx";
+import { scoreVerse } from "../utils";
+import ScoreBoard from "./ScoreBoard.jsx";
+import ToolkitPopup from "./ToolkitPopup.jsx";
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -304,7 +304,7 @@ const Verse = () => {
     };
 
     document.addEventListener("click", offClickCloseMenu);
-    
+
     return () => {
       document.removeEventListener("click", offClickCloseMenu);
     };

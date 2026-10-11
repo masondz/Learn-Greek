@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectVerseMode, setMode } from "./features/verseSlice";
+import { selectVerseMode, setMode } from "../features/verseSlice";
 
 import "./Toolkit.css";
 

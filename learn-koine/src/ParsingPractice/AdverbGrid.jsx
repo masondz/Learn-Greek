@@ -1,5 +1,5 @@
 import "./Word.css";
-import { selectWordSlice } from "./features/wordSlice";
+import { selectWordSlice } from "../features/wordSlice";
 import { useSelector } from "react-redux";
 
 const AdverbGrid = () => {

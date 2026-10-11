@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectVerseReference } from "./features/verseSlice";
+import { selectVerseReference } from "../features/verseSlice";
 import "./Verse.css";
 
 export const books = [
