@@ -29,6 +29,41 @@ import { verseScoreApi } from "./api/verseScoreApi";
 // } from "./features/scoreSlice";
 
 //input is an array of strings
+const GUEST_HIGH_SCORES_KEY = "didakey.guestHighScores";
+
+function isAuthenticated() {
+  try {
+    return Boolean(localStorage.getItem("token"));
+  } catch (error) {
+    return false;
+  }
+}
+
+function readGuestHighScores() {
+  try {
+    const storedScores = localStorage.getItem(GUEST_HIGH_SCORES_KEY);
+    if (!storedScores) return {};
+
+    const scores = JSON.parse(storedScores);
+    return scores && typeof scores === "object" && !Array.isArray(scores)
+      ? scores
+      : {};
+  } catch (error) {
+    console.error("Unable to read guest high scores:", error);
+    return {};
+  }
+}
+
+function writeGuestHighScores(scores) {
+  try {
+    localStorage.setItem(GUEST_HIGH_SCORES_KEY, JSON.stringify(scores));
+    return true;
+  } catch (error) {
+    console.error("Unable to save guest high scores:", error);
+    return false;
+  }
+}
+
 export function scoreVerse(arrayStrings) {
   const parsedWordObjects = arrayStrings.map((word) => {
     return parseWord(word.word);
@@ -67,6 +102,11 @@ export function scoreVerse(arrayStrings) {
 }
 
 export async function getOrSetHighScore(reference) {
+  if (!isAuthenticated()) {
+    const score = readGuestHighScores()[reference];
+    return Number.isFinite(score) ? score : 0;
+  }
+
   try {
     const scoreData = await verseScoreApi.getScore(reference);
     if (scoreData === null) {
@@ -80,6 +120,16 @@ export async function getOrSetHighScore(reference) {
 }
 
 export async function setNewHighScore(reference, newScore) {
+  if (!isAuthenticated()) {
+    const scores = readGuestHighScores();
+    const oldScore = Number.isFinite(scores[reference]) ? scores[reference] : 0;
+    if (oldScore < newScore) {
+      scores[reference] = newScore;
+      writeGuestHighScores(scores);
+    }
+    return;
+  }
+
   try {
     const oldScore = await getOrSetHighScore(reference);
     if (oldScore < newScore) {
@@ -92,6 +142,13 @@ export async function setNewHighScore(reference, newScore) {
 
 //if user didn't score while viewing the verse.
 export async function removeHighscore(reference) {
+  if (!isAuthenticated()) {
+    const scores = readGuestHighScores();
+    delete scores[reference];
+    writeGuestHighScores(scores);
+    return;
+  }
+
   try {
     await verseScoreApi.deleteScore(reference);
   } catch (error) {

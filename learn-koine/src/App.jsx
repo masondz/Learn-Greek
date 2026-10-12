@@ -18,18 +18,6 @@ function App() {
         <h2>
           <i>Practicing Koine Greek</i>
         </h2>
-        {user ? (
-          <>
-            <p>Welcome, {user.username}!</p>
-            <button className="home-links" onClick={logout} style={{ margin: '1rem' }}>
-              Logout
-            </button>
-          </>
-        ) : (
-          <Link className="home-links" to="/login" style={{ marginBottom: '1rem' }}>
-            Login / Register
-          </Link>
-        )}
         <h3>Choose a Subject:</h3>
         <div className="links">
           <Link className="home-links" to={"vocabulary"}>
@@ -45,6 +33,18 @@ function App() {
             About
           </Link>
         </div>
+        {user ? (
+          <div className="home-auth-options">
+            <p>Welcome, {user.username}!</p>
+            <button className="home-links" onClick={logout}>
+              Sign out
+            </button>
+          </div>
+        ) : (
+          <Link className="home-links" to="/login">
+            Sign in / Register
+          </Link>
+        )}
       </div>
       <a id="github-link" href="https://github.com/masondz">
         Created by
