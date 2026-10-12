@@ -1,0 +1,88 @@
+# Debugging Didakey (React Vite Frontend + .NET Backend)
+
+Quick reference for debugging the full stack in LazyVim with nvim-dap. 
+
+---
+
+## Prerequisites
+
+- ✅ DAP configs already set up (coreclr + pwa-chrome)
+- ✅ Mason packages installed:  `netcoredbg`, `js-debug-adapter`
+- ✅ Backend built at least once: `dotnet build backend/LearnGreekAPI/LearnGreekAPI.csproj`
+
+---
+
+## 🎯 Full Debugging Workflow
+
+### **Step 1: Launch the . NET Backend Debugger**
+
+In LazyVim:
+
+<leader>dc (or :lua require('dap').continue()) and select "Launch - LearnGreekAPI" 
+
+If that doesn't work:
+ - manually start by running dotnet run debug in a terminal.
+ - find the PID with ss --listening --numeric -process sport :5092 
+ 
+> **💡 Tip:** You can verify it's working by visiting `http://localhost:5092/swagger/index.html`
+
+---
+
+### **Step 2: Start the Vite Dev Server**
+
+In a terminal:
+
+```bash
+cd frontend  # or wherever your package.json is
+npm run dev
+```
+
+**Wait for:** `Local: http://localhost:5173/` (or your Vite port)
+
+---
+
+### **Step 3: Launch Chromium with Remote Debugging**
+
+In another terminal:
+
+```bash
+chromium --remote-debugging-port=9222 --user-data-dir=/tmp/chromium-debug-profile
+```
+
+**Then navigate to:** `http://localhost:5173` in that Chromium window
+
+> **💡 Tip:** Add this alias to your shell config:
+> ```bash
+> alias chromium-debug='chromium --remote-debugging-port=9222 --user-data-dir=/tmp/chromium-debug-profile'
+> ```
+
+---
+
+### **Step 4: Attach Debugger to Frontend**
+
+In LazyVim:
+
+1. Open any `.tsx` or `.jsx` file in `frontend/src/`
+2. Set breakpoints in your React code (default: `<leader>db`)
+3. Start DAP:
+   ```
+   :lua require('dap').continue()
+   ```
+4. Select: **"Attach to Chrome (Vite)"**
+
+✅ Frontend is now debuggable!
+
+---
+
+### **Step 5: Use Your App**
+
+Now interact with your app at `http://localhost:5173`:
+
+- **Frontend breakpoints** hit when UI code executes
+- **Backend breakpoints** hit when API calls are made to `http://localhost:5092`
+
+---
+
+## 📋 Quick Start Checklist
+Connect to the database with psql or pgAdmin
+```

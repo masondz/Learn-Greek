@@ -933,123 +933,123 @@ export const wordUsages = {
   ἅγια: {
     parse: "A-APN｜Adjective, accusative, plural, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίᾳ: {
     parse: "A-DSF｜Adjective, dative, singular, feminine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   Ἅγια: {
     parse: "A-NPN｜Adjective, nominative, plural, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἅγιά: {
     parse: "A-NPN｜Adjective, nominative, plural, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγία: {
     parse: "A-NSF｜Adjective, nominative, singular, feminine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἅγιαι: {
     parse: "A-NPF｜Adjective, nominative, plural, feminine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίαις: {
     parse: "A-DPF｜Adjective, dative, plural, feminine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίαν: {
     parse: "A-ASF｜Adjective, accusative, singular, feminine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίας: {
     parse: "A-GSF｜Adjective, genitive, singular, feminine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἅγιε: {
     //or nominative
     parse: "A-VSM｜Adjective, Vocative, singular, masculine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἅγιοι: {
     parse: "A-VPM｜Adjective, Vocative or nominative, plural, masculine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   Ἅγιοι: {
     parse: "A-NPM｜Adjective, nominative, plural, masculine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίοις: {
     parse: "A-DPM｜Adjective, dative, plural, masculine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἅγιον: {
     parse: "A-NSN｜Adjective, nominative, singular, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἅγιος: {
     parse: "A-VSM｜Adjective, Vocative or nominative, singular, masculine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   Ἅγιος: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἅγιός: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίου: {
     parse: "A-GSN｜Adjective, genitive, singular, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   Ἁγίου: {
     parse: "A-GSN｜Adjective, genitive, singular, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίους: {
     parse: "A-APM｜Adjective, accusative, plural, masculine",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίῳ: {
     parse: "A-DSN｜Adjective, dative, singular, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγίων: {
     parse: "A-GPN｜Adjective, genitive, plural, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   Ἁγίων: {
     parse: "A-GPN｜Adjective, genitive, plural, neuter",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγιωτάτῃ: {
     parse: "A-DSF-S｜Adjective, dative, singular, feminine, Superlative",
     GN: "G40",
-    gloss: "saint",
+    gloss: "holy, saint",
   },
   ἁγιότητος: {
     parse: "N-GSF｜Noun, genitive, singular, feminine",
@@ -42167,12 +42167,12 @@ export const wordUsages = {
   Ζεβεδαῖον: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G2199",
-    gloss: "[wife of Zebedee]",
+    gloss: "Zebedee",
   },
   Ζεβεδαίου: {
     parse: "N-GSM-P｜Noun, genitive, singular, masculine, Person",
     GN: "G2199",
-    gloss: "[wife of Zebedee]",
+    gloss: "Zebedee",
   },
   ζεστός: {
     parse: "A-NSM｜Adjective, nominative, singular, masculine",
@@ -48174,17 +48174,17 @@ export const wordUsages = {
   Καϊάφα: {
     parse: "N-GSM-P｜Noun, genitive, singular, masculine, Person",
     GN: "G2533",
-    gloss: "[wife of Ciaphas]",
+    gloss: "Ciaphas",
   },
   Καϊάφαν: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G2533",
-    gloss: "[wife of Ciaphas]",
+    gloss: "Ciaphas",
   },
   Καϊάφας: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
     GN: "G2533",
-    gloss: "[wife of Ciaphas]",
+    gloss: "Ciaphas",
   },
   Κάϊν: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
@@ -74119,27 +74119,27 @@ export const wordUsages = {
   Πέτρε: {
     parse: "N-VSM-P｜Noun, Vocative or nominative, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   Πέτρον: {
     parse: "N-ASM-P｜Noun, accusative, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   Πέτρος: {
     parse: "N-NSM-P｜Noun, nominative, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   Πέτρου: {
     parse: "N-GSM-P｜Noun, genitive, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   Πέτρῳ: {
     parse: "N-DSM-P｜Noun, dative, singular, masculine, Person",
     GN: "G4074",
-    gloss: "[wife of Peter]",
+    gloss: "Peter",
   },
   πετρῶδες: {
     parse: "A-ASN｜Adjective, accusative, singular, neuter",

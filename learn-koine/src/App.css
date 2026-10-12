@@ -14,11 +14,32 @@
   color: white;
 }
 
+.App-header--auth {
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
 .links {
   display: grid;
   grid-template-areas: "a a" "a a";
   gap: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.home-auth-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-auth-button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-top: 0;
+  border-left: 0;
+  cursor: pointer;
 }
 
 a {
@@ -50,6 +71,10 @@ a {
   background-color: rgb(245, 148, 103);
   padding: 0.5em;
   min-width: 195px;
+}
+ button.home-links {
+  font-size : 1em;
+  font-family: "Geologica";
 }
 
 #return-home {

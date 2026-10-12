@@ -1,0 +1,76 @@
+.toolkit-popup {
+  position: fixed;
+  z-index: 1000;
+  background-color: #282c34;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.popup-tool {
+  padding: 8px 10px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.1s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.popup-tool:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.popup-tool:active {
+  transform: scale(0.98);
+}
+
+.popup-tool.definite-article-picked {
+  background-color: rgb(3, 224, 3);
+}
+
+.popup-tool.Conjunction-picked {
+  background-color: rgb(218, 99, 3);
+}
+
+.popup-tool.Preposition-picked {
+  background-color: rgb(138, 135, 0);
+}
+
+.popup-tool.Noun-and-Adjective-picked {
+  background-color: rgb(113, 232, 241);
+}
+
+.popup-tool.Pronoun-picked {
+  background-color: rgb(200, 113, 241);
+}
+
+.popup-tool.Verb-picked {
+  background-color: rgb(59, 112, 209);
+}
+
+.popup-tool.Particle-picked {
+  background-color: rgb(204, 63, 117);
+}
+
+.popup-tool.Adverb-picked {
+  background-color: rgb(113, 241, 188);
+}
+
+@media only screen and (max-width: 540px) {
+  .popup-tool {
+    font-size: 0.75em;
+    padding: 6px 8px;
+  }
+}

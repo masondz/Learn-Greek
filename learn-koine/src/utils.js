@@ -20,6 +20,8 @@
 */
 
 import { parseWord } from "./greek_text/parseLexicon";
+import { verseScoreApi } from "./api/verseScoreApi";
+import { AUTH_ENABLED } from "./authConfig";
 // import { selectVerseReference } from "./features/verseSlice";
 // import {
 //   increaseCorrect,
@@ -28,6 +30,43 @@ import { parseWord } from "./greek_text/parseLexicon";
 // } from "./features/scoreSlice";
 
 //input is an array of strings
+const GUEST_HIGH_SCORES_KEY = "didakey.guestHighScores";
+
+function isAuthenticated() {
+  if (!AUTH_ENABLED) return false;
+
+  try {
+    return Boolean(localStorage.getItem("token"));
+  } catch (error) {
+    return false;
+  }
+}
+
+function readGuestHighScores() {
+  try {
+    const storedScores = localStorage.getItem(GUEST_HIGH_SCORES_KEY);
+    if (!storedScores) return {};
+
+    const scores = JSON.parse(storedScores);
+    return scores && typeof scores === "object" && !Array.isArray(scores)
+      ? scores
+      : {};
+  } catch (error) {
+    console.error("Unable to read guest high scores:", error);
+    return {};
+  }
+}
+
+function writeGuestHighScores(scores) {
+  try {
+    localStorage.setItem(GUEST_HIGH_SCORES_KEY, JSON.stringify(scores));
+    return true;
+  } catch (error) {
+    console.error("Unable to save guest high scores:", error);
+    return false;
+  }
+}
+
 export function scoreVerse(arrayStrings) {
   const parsedWordObjects = arrayStrings.map((word) => {
     return parseWord(word.word);
@@ -65,39 +104,68 @@ export function scoreVerse(arrayStrings) {
   return score;
 }
 
-export function getOrSetHighScore(reference) {
-  // let sliceReference = selectVerseReference();
-  let verseScore = JSON.parse(localStorage.getItem(reference));
-  try {
-    if (verseScore === null) {
-      verseScore = localStorage.setItem(reference, "0");
-    }
-  } catch (error) {
-    return "Unable to save score";
+export async function getOrSetHighScore(reference) {
+  if (!isAuthenticated()) {
+    const score = readGuestHighScores()[reference];
+    return Number.isFinite(score) ? score : 0;
   }
-  return verseScore;
+
+  try {
+    const scoreData = await verseScoreApi.getScore(reference);
+    if (scoreData === null) {
+      return 0;
+    }
+    return scoreData.score;
+  } catch (error) {
+    console.error("Unable to fetch score:", error);
+    return 0;
+  }
 }
 
-export function setNewHighScore(reference, newScore) {
-  let oldScore = getOrSetHighScore(reference);
-  if (oldScore < newScore) {
-    localStorage.setItem(reference, newScore);
+export async function setNewHighScore(reference, newScore) {
+  if (!isAuthenticated()) {
+    const scores = readGuestHighScores();
+    const oldScore = Number.isFinite(scores[reference]) ? scores[reference] : 0;
+    if (oldScore < newScore) {
+      scores[reference] = newScore;
+      writeGuestHighScores(scores);
+    }
+    return;
   }
-  return;
+
+  try {
+    const oldScore = await getOrSetHighScore(reference);
+    if (oldScore < newScore) {
+      await verseScoreApi.saveScore(reference, newScore);
+    }
+  } catch (error) {
+    console.error("Unable to save score:", error);
+  }
 }
 
 //if user didn't score while viewing the verse.
-export function removeHighscore(reference) {
-  return localStorage.removeItem(reference);
+export async function removeHighscore(reference) {
+  if (!isAuthenticated()) {
+    const scores = readGuestHighScores();
+    delete scores[reference];
+    writeGuestHighScores(scores);
+    return;
+  }
+
+  try {
+    await verseScoreApi.deleteScore(reference);
+  } catch (error) {
+    console.error("Unable to delete score:", error);
+  }
 }
 
-export function scoringFunction(scoreObject, choice, reference = null) {
+export async function scoringFunction(scoreObject, choice, reference = null) {
   const { currentScore, correctWorth, wrongWorth } = scoreObject;
   let total = currentScore;
   if (choice === "correct") {
     total += correctWorth;
     if (reference !== null) {
-      setNewHighScore(reference, total);
+      await setNewHighScore(reference, total);
     }
   } else {
     total -= wrongWorth;

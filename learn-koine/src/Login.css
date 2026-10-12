@@ -1,0 +1,165 @@
+.login-card {
+  box-sizing: border-box;
+  width: min(100% - 2rem, 27rem);
+  margin: 0 auto;
+  padding: clamp(1.25rem, 5vw, 2rem);
+  color: #fff;
+  text-align: left;
+  background: #20242d;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3);
+}
+
+.login-card-heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-eyebrow {
+  margin: 0 0 0.4rem;
+  color: greenyellow;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.login-card-heading h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 5vw, 1.7rem);
+}
+
+.login-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.login-field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.login-field label {
+  color: #f4f5f7;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.login-field input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.8rem;
+  padding: 0.65rem 0.75rem;
+  color: #20242d;
+  background: #fff;
+  border: 1px solid #aeb4c0;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 1rem;
+}
+
+.login-field input:focus-visible,
+.show-password-control input:focus-visible,
+.login-card button:focus-visible {
+  outline: 3px solid greenyellow;
+  outline-offset: 2px;
+}
+
+.show-password-control {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  color: #e2e5eb;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.show-password-control input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  accent-color: #f59467;
+}
+
+.login-submit {
+  width: 100%;
+  min-height: 2.9rem;
+  margin-top: 0.25rem;
+  padding: 0.65rem 1rem;
+  color: #fff;
+  background: #e97848;
+  border: 1px solid #f59467;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-submit:hover:not(:disabled) {
+  background: #d96738;
+}
+
+.login-card button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.login-error {
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.8rem;
+  color: #fff;
+  background: #7d2d2d;
+  border: 1px solid #d77a7a;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.login-mode-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.45rem;
+  margin: 1.25rem 0 0.75rem;
+  color: #e2e5eb;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-mode-toggle button,
+.login-cancel {
+  padding: 0;
+  color: greenyellow;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.login-cancel {
+  margin-top: 1.5rem;
+}
+
+.login-mode-toggle button:hover,
+.login-cancel:hover {
+  text-decoration: underline;
+}
+
+.login-cancel {
+  display: block;
+  min-height: 2.5rem;
+  margin: 0 auto;
+  padding: 0.45rem 0.7rem;
+  color: #e2e5eb;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 360px) {
+  .login-card {
+    width: calc(100% - 1.25rem);
+    padding: 1.1rem;
+  }
+}
