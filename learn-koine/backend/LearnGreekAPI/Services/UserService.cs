@@ -48,7 +48,8 @@ public class UserService : IUserService
 
     public string GenerateJwtToken(User user)
     {
-        var jwtKey = _configuration["Jwt:Key"] ?? "YourSuperSecretKeyThatShouldBeAtLeast32CharactersLong!";
+        var jwtKey = _configuration["Jwt:Key"]
+            ?? throw new InvalidOperationException("JWT signing key is not configured.");
         var jwtIssuer = _configuration["Jwt:Issuer"] ?? "LearnGreekAPI";
         var jwtAudience = _configuration["Jwt:Audience"] ?? "LearnGreekApp";
 

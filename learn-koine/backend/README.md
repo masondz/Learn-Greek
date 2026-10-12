@@ -5,7 +5,7 @@ This is the .NET 8 Web API backend for the Learn Greek application. It provides 
 ## Features
 
 - JWT-based authentication
-- In-memory user storage (no database required for now)
+- PostgreSQL storage through Entity Framework Core
 - CORS enabled for frontend integration
 - Register and Login endpoints
 
@@ -70,19 +70,25 @@ Login an existing user.
 
 ## Configuration
 
-JWT settings can be configured in `appsettings.json`:
-```json
-{
-  "Jwt": {
-    "Key": "your-secret-key-at-least-32-characters",
-    "Issuer": "LearnGreekAPI",
-    "Audience": "LearnGreekApp"
-  }
-}
+Keep database credentials and JWT signing keys out of tracked files. For local development, initialize .NET user-secrets once from `backend/LearnGreekAPI`:
+
+```bash
+dotnet user-secrets init
+dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Host=localhost;Port=5432;Database=YOUR_DATABASE;Username=YOUR_USERNAME;Password=YOUR_PASSWORD"
+dotnet user-secrets set "Jwt:Key" "REPLACE_WITH_A_RANDOM_SECRET_AT_LEAST_32_BYTES_LONG"
 ```
+
+ASP.NET Core loads these values automatically in Development. In a production environment, provide them as environment variables instead:
+
+```text
+ConnectionStrings__DefaultConnection
+Jwt__Key
+```
+
+The repository ignores `appsettings.json` for local overrides. Do not commit real credentials in it. The API exits at startup when the database connection string or a sufficiently long JWT key is missing.
 
 ## Notes
 
-- Currently uses in-memory storage for users (data is lost when the server restarts)
+- User and verse-score data are stored in PostgreSQL
 - Password hashing uses SHA256 (consider using BCrypt or similar for production)
 - JWT tokens expire after 24 hours

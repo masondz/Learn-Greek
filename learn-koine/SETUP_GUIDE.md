@@ -22,7 +22,7 @@
 
 4. **Configuration**
    - `Program.cs` - Updated with JWT authentication, CORS, and service registration
-   - `appsettings.json` - Added JWT configuration
+   - Database credentials and the JWT signing key should be configured with .NET user-secrets locally or environment variables in deployment. `appsettings.json` is ignored for local overrides and must not contain committed credentials.
 
 ### Frontend (React + Vite)
 

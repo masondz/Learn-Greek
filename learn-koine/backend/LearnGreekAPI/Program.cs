@@ -11,8 +11,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+if (string.IsNullOrWhiteSpace(connectionString))
+{
+    throw new InvalidOperationException(
+        "Database connection is not configured. Set ConnectionStrings:DefaultConnection using .NET user-secrets or the ConnectionStrings__DefaultConnection environment variable.");
+}
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
 
 // Add CORS
 builder.Services.AddCors(options =>
@@ -27,7 +34,13 @@ builder.Services.AddCors(options =>
 });
 
 // Add JWT Authentication
-var jwtKey = builder.Configuration["Jwt:Key"] ?? "YourSuperSecretKeyThatShouldBeAtLeast32CharactersLong!";
+var jwtKey = builder.Configuration["Jwt:Key"];
+if (string.IsNullOrWhiteSpace(jwtKey) || Encoding.UTF8.GetByteCount(jwtKey) < 32)
+{
+    throw new InvalidOperationException(
+        "JWT signing key is not configured or is shorter than 32 bytes. Set Jwt:Key using .NET user-secrets or the Jwt__Key environment variable.");
+}
+
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "LearnGreekAPI";
 var jwtAudience = builder.Configuration["Jwt:Audience"] ?? "LearnGreekApp";
 
