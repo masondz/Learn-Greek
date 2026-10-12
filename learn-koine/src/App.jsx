@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 import Login from "./Login";
+import { AUTH_ENABLED } from "./authConfig";
 
 function App() {
   const { user, logout } = useAuth();
@@ -16,11 +17,13 @@ function App() {
         <h3 id="kappa">κ</h3>
         <h1 id="didakey">DidaKey</h1>
       </div>
-      <div className={`App-header${showLogin ? " App-header--auth" : ""}`}>
+      <div
+        className={`App-header${AUTH_ENABLED && showLogin ? " App-header--auth" : ""}`}
+      >
         <h2>
           <i>Practicing Koine Greek</i>
         </h2>
-        {showLogin ? (
+        {AUTH_ENABLED && showLogin ? (
           <Login onCancel={() => setShowLogin(false)} />
         ) : (
           <>
@@ -39,21 +42,22 @@ function App() {
                 About
               </Link>
             </div>
-            {user ? (
-              <div className="home-auth-options">
-                <p>Welcome, {user.username}!</p>
-                <button className="home-links" onClick={logout}>
-                  Sign out
+            {AUTH_ENABLED &&
+              (user ? (
+                <div className="home-auth-options">
+                  <p>Welcome, {user.username}!</p>
+                  <button className="home-links" onClick={logout}>
+                    Sign out
+                  </button>
+                </div>
+              ) : (
+                <button
+                  className="home-links home-auth-button"
+                  onClick={() => setShowLogin(true)}
+                >
+                  Sign in / Register
                 </button>
-              </div>
-            ) : (
-              <button
-                className="home-links home-auth-button"
-                onClick={() => setShowLogin(true)}
-              >
-                Sign in / Register
-              </button>
-            )}
+              ))}
           </>
         )}
       </div>

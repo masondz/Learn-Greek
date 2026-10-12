@@ -21,6 +21,7 @@
 
 import { parseWord } from "./greek_text/parseLexicon";
 import { verseScoreApi } from "./api/verseScoreApi";
+import { AUTH_ENABLED } from "./authConfig";
 // import { selectVerseReference } from "./features/verseSlice";
 // import {
 //   increaseCorrect,
@@ -32,6 +33,8 @@ import { verseScoreApi } from "./api/verseScoreApi";
 const GUEST_HIGH_SCORES_KEY = "didakey.guestHighScores";
 
 function isAuthenticated() {
+  if (!AUTH_ENABLED) return false;
+
   try {
     return Boolean(localStorage.getItem("token"));
   } catch (error) {

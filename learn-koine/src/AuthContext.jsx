@@ -1,14 +1,27 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
+import { AUTH_ENABLED } from './authConfig';
 
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [token, setToken] = useState(localStorage.getItem('token'));
+  const [token, setToken] = useState(
+    AUTH_ENABLED ? localStorage.getItem('token') : null
+  );
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!AUTH_ENABLED) {
+      localStorage.removeItem('token');
+      localStorage.removeItem('username');
+      delete axios.defaults.headers.common['Authorization'];
+      setToken(null);
+      setUser(null);
+      setLoading(false);
+      return;
+    }
+
     const storedToken = localStorage.getItem('token');
     const storedUsername = localStorage.getItem('username');
     
@@ -21,6 +34,10 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (username, password) => {
+    if (!AUTH_ENABLED) {
+      return { success: false, message: 'Sign-in is unavailable.' };
+    }
+
     try {
       const response = await axios.post('http://localhost:5092/api/auth/login', {
         username,
@@ -43,6 +60,10 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (username, password) => {
+    if (!AUTH_ENABLED) {
+      return { success: false, message: 'Registration is unavailable.' };
+    }
+
     try {
       const response = await axios.post('http://localhost:5092/api/auth/register', {
         username,

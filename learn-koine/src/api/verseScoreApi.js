@@ -1,4 +1,12 @@
+import { AUTH_ENABLED } from '../authConfig';
+
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5092/api';
+
+const ensureApiEnabled = () => {
+  if (!AUTH_ENABLED) {
+    throw new Error('The score API is disabled while guest-only mode is active.');
+  }
+};
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem('token');
@@ -10,6 +18,7 @@ const getAuthHeaders = () => {
 
 export const verseScoreApi = {
   async getAllScores() {
+    ensureApiEnabled();
     const response = await fetch(`${API_BASE_URL}/VerseScores`, {
       headers: getAuthHeaders(),
     });
@@ -22,6 +31,7 @@ export const verseScoreApi = {
   },
 
   async getScore(verseReference) {
+    ensureApiEnabled();
     const response = await fetch(`${API_BASE_URL}/VerseScores/${verseReference}`, {
       headers: getAuthHeaders(),
     });
@@ -38,6 +48,7 @@ export const verseScoreApi = {
   },
 
   async saveScore(verseReference, score) {
+    ensureApiEnabled();
     const response = await fetch(`${API_BASE_URL}/VerseScores`, {
       method: 'POST',
       headers: getAuthHeaders(),
@@ -55,6 +66,8 @@ export const verseScoreApi = {
   },
 
   async deleteScore(verseReference) {
+    if (!AUTH_ENABLED) return true;
+
     try {
       const response = await fetch(`${API_BASE_URL}/VerseScores/${verseReference}`, {
         method: 'DELETE',
