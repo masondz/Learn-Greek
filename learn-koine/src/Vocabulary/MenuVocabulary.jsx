@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { vocabListObj } from "../greek_text/vocabularyWords";
 
-import "./Menu.css";
+import "../Menu.css";
 
 const MenuVocabulary = ({
   setDeck,

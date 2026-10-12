@@ -51,6 +51,10 @@ a {
   padding: 0.5em;
   min-width: 195px;
 }
+ button.home-links {
+  font-size : 1em;
+  font-family: "Geologica";
+}
 
 #return-home {
   padding: 0.5em;

@@ -21,7 +21,7 @@ function App() {
         {user ? (
           <>
             <p>Welcome, {user.username}!</p>
-            <button onClick={logout} style={{ margin: '1rem', padding: '0.5rem 1rem', cursor: 'pointer' }}>
+            <button className="home-links" onClick={logout} style={{ margin: '1rem' }}>
               Logout
             </button>
           </>
