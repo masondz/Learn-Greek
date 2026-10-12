@@ -14,6 +14,12 @@
   color: white;
 }
 
+.App-header--auth {
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
 .links {
   display: grid;
   grid-template-areas: "a a" "a a";
@@ -31,6 +37,8 @@
 .home-auth-button {
   margin: 0.5rem;
   padding: 0.5rem 1rem;
+  border-top: 0;
+  border-left: 0;
   cursor: pointer;
 }
 

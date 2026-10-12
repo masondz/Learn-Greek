@@ -23,6 +23,11 @@ public class AuthController : ControllerBase
             return BadRequest("Username and password are required");
         }
 
+        if (request.Password.Length < 8)
+        {
+            return BadRequest("Password must be at least 8 characters long");
+        }
+
         var existingUser = await _userService.GetUserByUsername(request.Username);
         if (existingUser != null)
         {

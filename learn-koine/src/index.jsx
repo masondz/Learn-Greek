@@ -9,7 +9,6 @@ import ErrorPage from "./error-page";
 import Loading from "./Loading";
 import { AuthProvider } from "./AuthContext";
 import ProtectedRoute from "./ProtectedRoute";
-import Login from "./Login";
 
 const Verse = lazy(() => import("./ParsingPractice/Verse.jsx"));
 const Vocabulary = lazy(() => import("./Vocabulary/Vocabulary.jsx"));
@@ -21,11 +20,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
     errorElement: <ErrorPage />,
   },
   {
@@ -86,4 +80,3 @@ root.render(
     </AuthProvider>
   </React.StrictMode>
 );
-
