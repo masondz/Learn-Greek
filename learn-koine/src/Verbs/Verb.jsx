@@ -26,6 +26,7 @@ const Verb = () => {
   });
 
   const [correctCount, setCorrectCount] = useState(0);
+  const [autoAdvance, setAutoAdvance] = useState(true);
 
   const verbType = useSelector(selectVerbSlice);
 
@@ -106,6 +107,8 @@ const Verb = () => {
         verbCharacteristics={verbCharacteristics}
         setVerbCharacteristics={setVerbCharacteristics}
         verbType={verbType}
+        autoAdvance={autoAdvance}
+        setAutoAdvance={setAutoAdvance}
       />
       <br></br>
       <div className="verb-component">
@@ -123,6 +126,8 @@ const Verb = () => {
           verbCharacteristics={verbCharacteristics}
           correctCount={correctCount}
           setCorrectCount={setCorrectCount}
+          autoAdvance={autoAdvance}
+          setAutoAdvance={setAutoAdvance}
         />
         <br></br>
         <button className="button-random" onClick={() => handleClick()}>
@@ -141,6 +146,8 @@ const VerbMenu = ({
   verbCharacteristics,
   setVerbCharacteristics,
   verbType,
+  autoAdvance,
+  setAutoAdvance,
 }) => {
   const [openOrClosed, setIsOpenOrClosed] = useState("open");
   const dispatch = useDispatch();
@@ -217,6 +224,15 @@ const VerbMenu = ({
       </div>
 
       <div className={`verb-menu-options-${openOrClosed}`}>
+        <label className="auto-toggle">
+          <input
+            type="checkbox"
+            checked={autoAdvance}
+            onChange={(event) => setAutoAdvance(event.target.checked)}
+          />
+          {" "}Automatically advance to next verb
+        </label>
+        <hr />
         <p style={{ whiteSpace: "nowrap" }}>Select verb options</p>
         <h3 key="type-title">Type</h3>
         <VerbMenuOptions

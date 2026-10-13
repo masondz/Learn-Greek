@@ -27,6 +27,8 @@ const VerbGrid = ({
   verseReference,
   wordParsingState,
   setWordParsingState,
+  autoAdvance: autoAdvanceProp,
+  setAutoAdvance: setAutoAdvanceProp,
 }) => {
   const [checkParse, setCheckParse] = useState(
     "Pick Verb, Participle, or Infintive"
@@ -35,13 +37,16 @@ const VerbGrid = ({
   const [isRegularVerb, setIsRegularVerb] = useState(false);
   const [isParticiple, setIsParticiple] = useState(false);
   const [isInfinitive, setIsInfinitive] = useState(false);
-  
+
   const [verbTypeChosen, setVerbTypeChosen] = useState(false);
 
   const [imperfectPerson, setImperfectPerson] = useState("");
   const [imperfectNumber, setImperfectNumber] = useState("");
-  
+
   const [gridState, setGridState] = useState({});
+  const [localAutoAdvance, setLocalAutoAdvance] = useState(true);
+  const autoAdvance = autoAdvanceProp ?? localAutoAdvance;
+  const setAutoAdvance = setAutoAdvanceProp ?? setLocalAutoAdvance;
 
   const verbType = useSelector(selectVerbSlice);
   const word = useSelector(selectWordSlice);
@@ -52,23 +57,23 @@ const VerbGrid = ({
   useEffect(() => {
     dispatch(setCorrectWorth(36));
     dispatch(setWrongWorth(12));
-    
+
     // Restore state from wordParsingState
     if (currentWordIndex !== null && wordParsingState[currentWordIndex]) {
       const savedState = wordParsingState[currentWordIndex];
-      
+
       // Restore grid selections
       if (savedState.gridSelections) {
         setGridState(savedState.gridSelections);
       } else {
         setGridState({});
       }
-      
+
       // Restore verb type choice
       if (savedState.verbTypeChoice) {
         const choice = savedState.verbTypeChoice;
         setVerbTypeChosen(true);
-        
+
         if (choice === "Verb") {
           setIsRegularVerb(true);
           setIsInfinitive(false);
@@ -135,7 +140,7 @@ const VerbGrid = ({
       }
     }
   }, [word, reset, verbType.Type, dispatch, currentWordIndex, wordParsingState]);
-  
+
   // Don't need separate useEffect for resetting verbTypeChosen anymore
 
   const handleNext = () => {
@@ -168,7 +173,7 @@ const VerbGrid = ({
       options = verbMode;
     }
 
-    
+
 
     let nextVerb = randomVerb(
       wordUsages,
@@ -189,16 +194,18 @@ const VerbGrid = ({
       return;
     }
     numCorrect++;
-    
+
     if (
       numCorrect === 5 ||
       (word.parse.includes("Infinitive") && numCorrect === 2)
     ) {
       setCheckParse("Good Job!");
-      setTimeout(() => {
-        handleNext();
-        setCheckParse("Parse the word");
-      }, 850);
+      if (autoAdvance) {
+        setTimeout(() => {
+          handleNext();
+          setCheckParse("Parse the word");
+        }, 850);
+      }
     } else {
       setCorrectCount(numCorrect);
       return;
@@ -212,7 +219,7 @@ const VerbGrid = ({
     ) {
       const choice = e.target.innerHTML;
       let newClass = "";
-      
+
       switch (e.target.innerHTML) {
         case "first":
           if (imperfectPerson === "third" || imperfectNumber === "plural") {
@@ -339,7 +346,7 @@ const VerbGrid = ({
           }
           break;
       }
-      
+
       return true;
     } else {
       return false;
@@ -351,10 +358,10 @@ const VerbGrid = ({
     if (e.target.className.includes("correct") || e.target.className.includes("wrong")) {
       return;
     }
-    
+
     const choice = e.target.innerHTML;
     let newClass = "";
-    
+
     if (word.parse.includes("imperfect")) {
       if (e.target.innerHTML === "perfect") {
         e.target.className = e.target.className + " wrong";
@@ -368,7 +375,7 @@ const VerbGrid = ({
         }
       }
     } else if (word.parse.includes("2nd aorist")) {
-        let hasSecondaryEnding = await checkSecondaryEndings(e, "2nd aorist");
+      let hasSecondaryEnding = await checkSecondaryEndings(e, "2nd aorist");
       if (hasSecondaryEnding) {
         return;
       }
@@ -391,7 +398,7 @@ const VerbGrid = ({
           dispatch(increaseCorrect());
         }
       } else {
-        
+
         e.target.className = e.target.className + " wrong";
         newClass = " wrong";
         if (verbMode === "parsing") {
@@ -423,11 +430,11 @@ const VerbGrid = ({
       saveGridState(choice, newClass);
     }
   };
-  
+
   const saveGridState = (choice, className) => {
     const newGridState = { ...gridState, [choice]: className };
     setGridState(newGridState);
-    
+
     if (currentWordIndex !== null && verbMode === "parsing") {
       setWordParsingState(prev => ({
         ...prev,
@@ -473,6 +480,14 @@ const VerbGrid = ({
       )}
       {isInfinitive && <InfinitiveGrid onClick={evaluateVerbAnswer} gridState={gridState} />}
       <p>{checkParse}</p>
+      {!autoAdvance && checkParse === "Good Job!" && (
+        <button type="button" className="button-random" onClick={() => {
+          handleNext();
+          setCheckParse("Parse the word");
+        }}>
+          Next word
+        </button>
+      )}
     </div>
   );
 };
@@ -497,7 +512,7 @@ const VerbStepOne = ({
 }) => {
   // Local state for verb practice mode (when currentWordIndex is null)
   const [localVerbTypeChoice, setLocalVerbTypeChoice] = useState(null);
-  
+
   // Reset local state when word changes or reset is triggered
   useEffect(() => {
     if (currentWordIndex === null || currentWordIndex === undefined) {
@@ -505,7 +520,7 @@ const VerbStepOne = ({
       setLocalVerbTypeChoice(null);
     }
   }, [word, reset, verbType, currentWordIndex]);
-  
+
   const saveVerbTypeChoice = (choice) => {
     if (currentWordIndex !== null && currentWordIndex !== undefined) {
       // Parsing mode: save to wordParsingState
@@ -524,7 +539,7 @@ const VerbStepOne = ({
 
   const handleCheckVerb = async (e) => {
     e.preventDefault();
-    
+
     // Check if correct answer already selected (not wrong answers)
     let alreadySelected = false;
     if (wordParsingState && currentWordIndex !== null && currentWordIndex !== undefined) {
@@ -536,11 +551,11 @@ const VerbStepOne = ({
       const choice = localVerbTypeChoice;
       alreadySelected = choice === "Verb" || choice === "Participle" || choice === "Infinitive";
     }
-    
+
     if (alreadySelected) {
       return;
     }
-    
+
     if (
       !word.parse.includes("Participle") &&
       !word.parse.includes("Infinitive") &&
@@ -552,7 +567,7 @@ const VerbStepOne = ({
       setCheckParse("Parse the verb");
       setVerbTypeChosen(true);
       saveVerbTypeChoice("Verb");
-      
+
       // Apply scoring in parsing mode
       if (verbMode === "parsing") {
         const newScore = await scoringFunction(scoreObject, "correct", verseReference);
@@ -562,7 +577,7 @@ const VerbStepOne = ({
       return;
     } else {
       saveVerbTypeChoice("wrong-Verb");
-      
+
       // Apply scoring in parsing mode
       if (verbMode === "parsing") {
         const newScore = await scoringFunction(scoreObject, "wrong");
@@ -574,7 +589,7 @@ const VerbStepOne = ({
 
   const handleCheckParticiple = async (e) => {
     e.preventDefault();
-    
+
     // Check if correct answer already selected (not wrong answers)
     let alreadySelected = false;
     if (wordParsingState && currentWordIndex !== null && currentWordIndex !== undefined) {
@@ -586,11 +601,11 @@ const VerbStepOne = ({
       const choice = localVerbTypeChoice;
       alreadySelected = choice === "Verb" || choice === "Participle" || choice === "Infinitive";
     }
-    
+
     if (alreadySelected) {
       return;
     }
-    
+
     if (word.parse.includes("Participle")) {
       setIsParticiple(true);
       setIsInfinitive(false);
@@ -598,7 +613,7 @@ const VerbStepOne = ({
       setCheckParse("Parse the participle");
       setVerbTypeChosen(true);
       saveVerbTypeChoice("Participle");
-      
+
       // Apply scoring in parsing mode
       if (verbMode === "parsing") {
         const newScore = await scoringFunction(scoreObject, "correct", verseReference);
@@ -608,7 +623,7 @@ const VerbStepOne = ({
       return;
     } else {
       saveVerbTypeChoice("wrong-Participle");
-      
+
       // Apply scoring in parsing mode
       if (verbMode === "parsing") {
         const newScore = await scoringFunction(scoreObject, "wrong");
@@ -620,7 +635,7 @@ const VerbStepOne = ({
 
   const handleCheckInfinitive = async (e) => {
     e.preventDefault();
-    
+
     // Check if correct answer already selected (not wrong answers)
     let alreadySelected = false;
     if (wordParsingState && currentWordIndex !== null && currentWordIndex !== undefined) {
@@ -632,11 +647,11 @@ const VerbStepOne = ({
       const choice = localVerbTypeChoice;
       alreadySelected = choice === "Verb" || choice === "Participle" || choice === "Infinitive";
     }
-    
+
     if (alreadySelected) {
       return;
     }
-    
+
     if (word.parse.includes("Infinitive")) {
       setIsInfinitive(true);
       setIsParticiple(false);
@@ -644,7 +659,7 @@ const VerbStepOne = ({
       setCheckParse("Parse the infinitive");
       setVerbTypeChosen(true);
       saveVerbTypeChoice("Infinitive");
-      
+
       // Apply scoring in parsing mode
       if (verbMode === "parsing") {
         const newScore = await scoringFunction(scoreObject, "correct", verseReference);
@@ -654,7 +669,7 @@ const VerbStepOne = ({
       return;
     } else {
       saveVerbTypeChoice("wrong-Infinitive");
-      
+
       // Apply scoring in parsing mode
       if (verbMode === "parsing") {
         const newScore = await scoringFunction(scoreObject, "wrong");
@@ -663,7 +678,7 @@ const VerbStepOne = ({
       }
     }
   };
-  
+
   const getVerbClassName = () => {
     let choice;
     if (currentWordIndex !== null && currentWordIndex !== undefined && wordParsingState) {
@@ -673,12 +688,12 @@ const VerbStepOne = ({
       // Verb practice mode: get from local state
       choice = localVerbTypeChoice;
     }
-    
+
     if (choice === "Verb") return "verb-options correct";
     if (choice === "wrong-Verb") return "verb-options wrong";
     return "verb-options";
   };
-  
+
   const getParticipleClassName = () => {
     let choice;
     if (currentWordIndex !== null && currentWordIndex !== undefined && wordParsingState) {
@@ -688,12 +703,12 @@ const VerbStepOne = ({
       // Verb practice mode: get from local state
       choice = localVerbTypeChoice;
     }
-    
+
     if (choice === "Participle") return "verb-options correct";
     if (choice === "wrong-Participle") return "verb-options wrong";
     return "verb-options";
   };
-  
+
   const getInfinitiveClassName = () => {
     let choice;
     if (currentWordIndex !== null && currentWordIndex !== undefined && wordParsingState) {
@@ -703,7 +718,7 @@ const VerbStepOne = ({
       // Verb practice mode: get from local state
       choice = localVerbTypeChoice;
     }
-    
+
     if (choice === "Infinitive") return "verb-options correct";
     if (choice === "wrong-Infinitive") return "verb-options wrong";
     return "verb-options";
