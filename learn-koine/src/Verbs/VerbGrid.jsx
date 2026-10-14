@@ -46,7 +46,6 @@ const VerbGrid = ({
   const [gridState, setGridState] = useState({});
   const [localAutoAdvance, setLocalAutoAdvance] = useState(true);
   const autoAdvance = autoAdvanceProp ?? localAutoAdvance;
-  const setAutoAdvance = setAutoAdvanceProp ?? setLocalAutoAdvance;
 
   const verbType = useSelector(selectVerbSlice);
   const word = useSelector(selectWordSlice);
@@ -139,17 +138,67 @@ const VerbGrid = ({
         setCheckParse("Parse the word");
       }
     }
-  }, [word, reset, verbType.Type, dispatch, currentWordIndex, wordParsingState]);
+
+    // Verb practice menu choices are already constraints on the selected word.
+    // Mark matching grid choices as correct so learners only need to answer
+    // the characteristics they left set to All. Parsing Practice restores its
+    // own saved answers above and must not inherit these selections.
+    if (verbMode !== "parsing" && verbCharacteristics) {
+      const preferences = ["Tense", "Voice", "Mood", "Person", "Number"];
+      const preselected = {};
+      let preselectedCount = 0;
+
+      preferences.forEach((characteristic) => {
+        const value = verbCharacteristics[characteristic];
+        if (!value || !word.parse.toLowerCase().includes(value.toLowerCase())) return;
+
+        const gridChoice = characteristic === "Voice" &&
+          ["middle", "passive"].includes(value.toLowerCase())
+          ? "middle/passive"
+          : value.toLowerCase();
+        preselected[gridChoice] = " correct";
+        preselectedCount += 1;
+      });
+
+      setGridState(preselected);
+      setCorrectCount?.(preselectedCount);
+    }
+  }, [
+    word,
+    reset,
+    verbType.Type,
+    dispatch,
+    currentWordIndex,
+    wordParsingState,
+    verbMode,
+    verbCharacteristics,
+    setCorrectCount,
+  ]);
 
   // Don't need separate useEffect for resetting verbTypeChosen anymore
 
-  const handleNext = () => {
-    let caseOptions = document.getElementsByClassName("case-option");
-
-    for (let i = 0; i < caseOptions.length; i++) {
-      caseOptions[i].className = "case-option";
+  const getMenuPreselections = (targetWord) => {
+    if (verbMode === "parsing" || !verbCharacteristics) {
+      return { selections: {}, count: 0 };
     }
 
+    const selections = {};
+    let count = 0;
+    ["Tense", "Voice", "Mood", "Person", "Number"].forEach((characteristic) => {
+      const value = verbCharacteristics[characteristic];
+      if (!value || !targetWord.parse.toLowerCase().includes(value.toLowerCase())) return;
+
+      const choice = characteristic === "Voice" &&
+        ["middle", "passive"].includes(value.toLowerCase())
+        ? "middle/passive"
+        : value.toLowerCase();
+      selections[choice] = " correct";
+      count += 1;
+    });
+    return { selections, count };
+  };
+
+  const handleNext = () => {
     if (!verbType.Type) {
       setIsInfinitive(false);
       setIsParticiple(false);
@@ -181,10 +230,12 @@ const VerbGrid = ({
       options.split(" "),
       exclusions
     );
+    const { selections, count } = getMenuPreselections(nextVerb);
+    setGridState(selections);
     dispatch(setWord(nextVerb));
     setImperfectNumber("");
     setImperfectPerson("");
-    setCorrectCount(0);
+    setCorrectCount?.(count);
   };
 
   let numCorrect = correctCount;
@@ -354,7 +405,7 @@ const VerbGrid = ({
   };
 
   const evaluateVerbAnswer = async (e) => {
-    console.log("Evaluating answer: " + e.target.innerHTML);
+    //check if button was already clicked
     if (e.target.className.includes("correct") || e.target.className.includes("wrong")) {
       return;
     }
@@ -473,6 +524,7 @@ const VerbGrid = ({
         dispatch={dispatch}
         verseReference={verseReference}
         scoreObject={scoreObject}
+        preselectedType={verbMode !== "parsing" ? verbCharacteristics?.Type : null}
       />
       {isRegularVerb && <RegularVerbGrid onClick={evaluateVerbAnswer} gridState={gridState} />}
       {isParticiple && (
@@ -499,7 +551,6 @@ const VerbStepOne = ({
   setIsParticiple,
   setCheckParse,
   setVerbTypeChosen,
-  gridState,
   setWordParsingState,
   wordParsingState,
   currentWordIndex,
@@ -509,6 +560,7 @@ const VerbStepOne = ({
   dispatch,
   verseReference,
   scoreObject,
+  preselectedType,
 }) => {
   // Local state for verb practice mode (when currentWordIndex is null)
   const [localVerbTypeChoice, setLocalVerbTypeChoice] = useState(null);
@@ -539,6 +591,7 @@ const VerbStepOne = ({
 
   const handleCheckVerb = async (e) => {
     e.preventDefault();
+    if (preselectedType) return;
 
     // Check if correct answer already selected (not wrong answers)
     let alreadySelected = false;
@@ -589,6 +642,7 @@ const VerbStepOne = ({
 
   const handleCheckParticiple = async (e) => {
     e.preventDefault();
+    if (preselectedType) return;
 
     // Check if correct answer already selected (not wrong answers)
     let alreadySelected = false;
@@ -635,6 +689,7 @@ const VerbStepOne = ({
 
   const handleCheckInfinitive = async (e) => {
     e.preventDefault();
+    if (preselectedType) return;
 
     // Check if correct answer already selected (not wrong answers)
     let alreadySelected = false;
@@ -680,6 +735,7 @@ const VerbStepOne = ({
   };
 
   const getVerbClassName = () => {
+    if (preselectedType === "Verb") return "verb-options correct";
     let choice;
     if (currentWordIndex !== null && currentWordIndex !== undefined && wordParsingState) {
       // Parsing mode: get from wordParsingState
@@ -695,6 +751,7 @@ const VerbStepOne = ({
   };
 
   const getParticipleClassName = () => {
+    if (preselectedType === "Participle") return "verb-options correct";
     let choice;
     if (currentWordIndex !== null && currentWordIndex !== undefined && wordParsingState) {
       // Parsing mode: get from wordParsingState
@@ -710,6 +767,7 @@ const VerbStepOne = ({
   };
 
   const getInfinitiveClassName = () => {
+    if (preselectedType === "Infinitive") return "verb-options correct";
     let choice;
     if (currentWordIndex !== null && currentWordIndex !== undefined && wordParsingState) {
       // Parsing mode: get from wordParsingState
