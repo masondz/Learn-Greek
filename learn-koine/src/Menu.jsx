@@ -4,8 +4,9 @@ import { useDispatch } from "react-redux";
 import { clearWord } from "./features/wordSlice";
 import "./Menu.css";
 
-const Menu = ({ menuLinks }) => {
+const Menu = ({ menuLinks, enableDeponentVerbs, setEnableDeponentVerbs }) => {
   const [openOrClosed, setIsOpenOrClosed] = useState("closed");
+  const [advancedSettingsOpen, setAdvancedSettingsOpen] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -48,6 +49,32 @@ const Menu = ({ menuLinks }) => {
           <Link to={"/"} className="menu-link" key="home-link">
             Home
           </Link>
+          <section className="advanced-settings">
+            <button
+              type="button"
+              className="advanced-settings-toggle"
+              aria-expanded={advancedSettingsOpen}
+              onClick={() => setAdvancedSettingsOpen(!advancedSettingsOpen)}
+            >
+              Advanced Settings
+              <span aria-hidden="true">{advancedSettingsOpen ? "−" : "+"}</span>
+            </button>
+            {advancedSettingsOpen && (
+              <div className="advanced-settings-panel">
+                <label className="deponent-toggle">
+                  <input
+                    type="checkbox"
+                    checked={enableDeponentVerbs}
+                    onChange={(event) => setEnableDeponentVerbs(event.target.checked)}
+                  />
+                  <span>Enable Deponent Verbs</span>
+                </label>
+                <p>
+                  When disabled, middle and passive forms are accepted for deponent verbs.
+                </p>
+              </div>
+            )}
+          </section>
         </div>
       </div>
     </div>

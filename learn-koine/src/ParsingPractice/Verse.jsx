@@ -93,6 +93,7 @@ const Verse = () => {
   let [word] = useState("");
   const dispatch = useDispatch();
   const [reset, setReset] = useState(true);
+  const [enableDeponentVerbs, setEnableDeponentVerbs] = useState(false);
 
   const [bookListIsOpen, setBookListIsOpen] = useState(false);
   const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
@@ -249,6 +250,7 @@ const Verse = () => {
           verseReference={verseReference}
           wordParsingState={wordParsingState}
           setWordParsingState={setWordParsingState}
+          enableDeponentVerbs={enableDeponentVerbs}
         />
       );
       break;
@@ -318,6 +320,8 @@ const Verse = () => {
             setArticleGrid={setArticleGrid}
             blankGrid={blankGrid}
             menuLinks={menuLinks}
+            enableDeponentVerbs={enableDeponentVerbs}
+            setEnableDeponentVerbs={setEnableDeponentVerbs}
           />
         </div>
         <ScoreBoard />

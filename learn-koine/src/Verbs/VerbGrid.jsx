@@ -29,6 +29,7 @@ const VerbGrid = ({
   setWordParsingState,
   autoAdvance: autoAdvanceProp,
   setAutoAdvance: setAutoAdvanceProp,
+  enableDeponentVerbs = true,
 }) => {
   const [checkParse, setCheckParse] = useState(
     "Pick Verb, Participle, or Infintive"
@@ -404,6 +405,25 @@ const VerbGrid = ({
     }
   };
 
+  const isCorrectVoiceChoice = (choice) => {
+    const normalizedChoice = choice.toLowerCase();
+    const normalizedParse = word.parse.toLowerCase();
+    const isVoiceChoice = ["active", "middle", "passive", "deponent", "middle/passive"].includes(normalizedChoice);
+    if (!isVoiceChoice) return null;
+
+    if (verbMode === "parsing" && normalizedParse.includes("deponent")) {
+      return enableDeponentVerbs
+        ? normalizedChoice === "deponent"
+        : ["middle", "passive", "middle/passive"].includes(normalizedChoice);
+    }
+
+    if (normalizedChoice === "deponent") return normalizedParse.includes("deponent");
+    if (normalizedChoice === "middle/passive") {
+      return normalizedParse.includes("middle") || normalizedParse.includes("passive");
+    }
+    return normalizedParse.includes(normalizedChoice);
+  };
+
   const evaluateVerbAnswer = async (e) => {
     //check if button was already clicked
     if (e.target.className.includes("correct") || e.target.className.includes("wrong")) {
@@ -432,34 +452,9 @@ const VerbGrid = ({
       }
     }
 
-    if (e.target.innerHTML === "middle/passive") {
-      if (
-        word.parse.includes("middle") ||
-        word.parse.includes("passive") ||
-        word.parse.includes("Passive") ||
-        word.parse.includes("Middle")
-      ) {
-        e.target.className = e.target.className + " correct";
-        newClass = " correct";
-        if (verbMode !== "parsing") {
-          isParsed();
-        } else {
-          const newScore = await scoringFunction(scoreObject, "correct", verseReference);
-          dispatch(setCurrentScore(newScore));
-          dispatch(increaseCorrect());
-        }
-      } else {
-
-        e.target.className = e.target.className + " wrong";
-        newClass = " wrong";
-        if (verbMode === "parsing") {
-          const newScore = await scoringFunction(scoreObject, "wrong");
-          dispatch(setCurrentScore(newScore));
-          dispatch(increaseWrong());
-        }
-      }
-      saveGridState(choice, newClass);
-    } else if (word.parse.includes(e.target.innerHTML)) {
+    const voiceAnswer = isCorrectVoiceChoice(choice);
+    const isCorrect = voiceAnswer === null ? word.parse.includes(choice) : voiceAnswer;
+    if (isCorrect) {
       e.target.className = e.target.className + " correct";
       newClass = " correct";
       if (verbMode !== "parsing") {
@@ -526,11 +521,11 @@ const VerbGrid = ({
         scoreObject={scoreObject}
         preselectedType={verbMode !== "parsing" ? verbCharacteristics?.Type : null}
       />
-      {isRegularVerb && <RegularVerbGrid onClick={evaluateVerbAnswer} gridState={gridState} />}
+      {isRegularVerb && <RegularVerbGrid onClick={evaluateVerbAnswer} gridState={gridState} enableDeponentVerbs={enableDeponentVerbs} />}
       {isParticiple && (
-        <ParticipleGrid onClick={evaluateVerbAnswer} isVocative={isVocative} gridState={gridState} />
+        <ParticipleGrid onClick={evaluateVerbAnswer} isVocative={isVocative} gridState={gridState} enableDeponentVerbs={enableDeponentVerbs} />
       )}
-      {isInfinitive && <InfinitiveGrid onClick={evaluateVerbAnswer} gridState={gridState} />}
+      {isInfinitive && <InfinitiveGrid onClick={evaluateVerbAnswer} gridState={gridState} enableDeponentVerbs={enableDeponentVerbs} />}
       <p>{checkParse}</p>
       {!autoAdvance && checkParse === "Good Job!" && (
         <button type="button" className="button-random" onClick={() => {
@@ -834,7 +829,7 @@ const Tense = ({ onClick, gridState = {} }) => {
   );
 };
 
-const Voice = ({ onClick, gridState = {} }) => {
+const Voice = ({ onClick, gridState = {}, enableDeponentVerbs = true }) => {
   const verseMode = useSelector(selectVerseMode);
 
   return (
@@ -850,9 +845,11 @@ const Voice = ({ onClick, gridState = {} }) => {
           <div className={"case-option" + (gridState["passive"] || "")} onClick={(e) => onClick(e)}>
             passive
           </div>
-          <div className={"case-option" + (gridState["deponent"] || "")} onClick={(e) => onClick(e)}>
-            deponent
-          </div>
+          {enableDeponentVerbs && (
+            <div className={"case-option" + (gridState["deponent"] || "")} onClick={(e) => onClick(e)}>
+              deponent
+            </div>
+          )}
         </>
       ) : (
         <div className={"case-option" + (gridState["middle/passive"] || "")} onClick={(e) => onClick(e)}>
@@ -955,11 +952,11 @@ const Gender = ({ onClick, gridState = {} }) => {
   );
 };
 
-const RegularVerbGrid = ({ onClick, gridState }) => {
+const RegularVerbGrid = ({ onClick, gridState, enableDeponentVerbs }) => {
   return (
     <>
       <Tense onClick={onClick} gridState={gridState} />
-      <Voice onClick={onClick} gridState={gridState} />
+      <Voice onClick={onClick} gridState={gridState} enableDeponentVerbs={enableDeponentVerbs} />
       <Mood onClick={onClick} gridState={gridState} />
       <Person onClick={onClick} gridState={gridState} />
       <NumberComponent onClick={onClick} gridState={gridState} />
@@ -967,11 +964,11 @@ const RegularVerbGrid = ({ onClick, gridState }) => {
   );
 };
 
-const ParticipleGrid = ({ onClick, isVocative, gridState }) => {
+const ParticipleGrid = ({ onClick, isVocative, gridState, enableDeponentVerbs }) => {
   return (
     <>
       <Tense onClick={onClick} gridState={gridState} />
-      <Voice onClick={onClick} gridState={gridState} />
+      <Voice onClick={onClick} gridState={gridState} enableDeponentVerbs={enableDeponentVerbs} />
       <CaseComponent onClick={onClick} isVocative={isVocative} gridState={gridState} />
       <NumberComponent onClick={onClick} gridState={gridState} />
       <Gender onClick={onClick} gridState={gridState} />
@@ -979,11 +976,11 @@ const ParticipleGrid = ({ onClick, isVocative, gridState }) => {
   );
 };
 
-const InfinitiveGrid = ({ onClick, gridState }) => {
+const InfinitiveGrid = ({ onClick, gridState, enableDeponentVerbs }) => {
   return (
     <>
       <Tense onClick={onClick} gridState={gridState} />
-      <Voice onClick={onClick} gridState={gridState} />
+      <Voice onClick={onClick} gridState={gridState} enableDeponentVerbs={enableDeponentVerbs} />
     </>
   );
 };

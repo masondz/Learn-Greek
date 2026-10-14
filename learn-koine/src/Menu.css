@@ -42,6 +42,47 @@
   white-space: nowrap;
 }
 
+.advanced-settings {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(32, 36, 45, 0.2);
+}
+
+.advanced-settings-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0;
+  color: #20242d;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.advanced-settings-panel {
+  padding: 0.5rem;
+  color: #20242d;
+  background: #f0f1f3;
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+.advanced-settings-panel p {
+  margin: 0.5rem 0 0;
+  line-height: 1.4;
+}
+
+.deponent-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+
 .menu-container-open {
   /* height: 50px; */
   position: absolute;
