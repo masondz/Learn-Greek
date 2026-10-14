@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 import Login from "./Login";
 import { AUTH_ENABLED } from "./authConfig";
+import { getGuestResumeLocation } from "./guestProgress";
 
 function App() {
   const { user, logout } = useAuth();
   const [showLogin, setShowLogin] = useState(false);
+  const resumeLocation = getGuestResumeLocation();
 
   return (
     <div className="App">
@@ -28,6 +30,11 @@ function App() {
         ) : (
           <>
             <h3>Choose a Subject:</h3>
+            {resumeLocation && (
+              <Link className="home-links continue-link" to={resumeLocation}>
+                Continue where you left off
+              </Link>
+            )}
             <div className="links">
               <Link className="home-links" to="vocabulary">
                 Vocabulary

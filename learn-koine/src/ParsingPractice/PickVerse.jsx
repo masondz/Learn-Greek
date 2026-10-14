@@ -9,6 +9,7 @@ import { selectVerseReference } from "../features/verseSlice";
 import { decodeReference } from "./PassageNumber.jsx";
 import { resetFoundWords, setCurrentScore } from "../features/scoreSlice";
 import { removeHighscore, getOrSetHighScore } from "../utils";
+import { saveGuestResumeLocation } from "../guestProgress";
 
 const PickVerse = ({
   setArticleGrid,
@@ -76,6 +77,7 @@ const PickVerse = ({
     const hyphenedVerse = chosenVerse.split(" ").join("-");
 
     window.history.replaceState({ new: "new" }, "", hyphenedVerse);
+    saveGuestResumeLocation(window.location.pathname);
   }
 
   const handlePickBook = (e) => {

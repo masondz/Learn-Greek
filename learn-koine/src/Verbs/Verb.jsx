@@ -14,6 +14,15 @@ import "../Menu.css";
 import VerbMenuOptions from "./VerbMenuOptions.jsx";
 import { setVerbType, selectVerbSlice } from "../features/verbSlice";
 import HelpTool from "../ParsingPractice/HelpTool.jsx";
+import {
+  getGuestVerbOptions,
+  getGuestVerbAutoAdvance,
+  saveGuestResumeLocation,
+  saveGuestVerbAutoAdvance,
+  saveGuestVerbOptions,
+} from "../guestProgress";
+
+const savedGuestVerbOptions = getGuestVerbOptions();
 
 const Verb = () => {
   const verb = useSelector(selectWordSlice);
@@ -21,21 +30,22 @@ const Verb = () => {
   const [verbMode, setVerbMode] = useState(
     "Use the menu to select verb forms to practice."
   );
-  const [verbCharacteristics, setVerbCharacteristics] = useState({
-    partOfSpeech: "Verb",
-  });
-  const [activeVerbCharacteristics, setActiveVerbCharacteristics] = useState({
-    partOfSpeech: "Verb",
-  });
+  const [verbCharacteristics, setVerbCharacteristics] = useState(
+    () => savedGuestVerbOptions || { partOfSpeech: "Verb" }
+  );
+  const [activeVerbCharacteristics, setActiveVerbCharacteristics] = useState(
+    () => savedGuestVerbOptions || { partOfSpeech: "Verb" }
+  );
 
   const [correctCount, setCorrectCount] = useState(0);
-  const [autoAdvance, setAutoAdvance] = useState(true);
+  const [autoAdvance, setAutoAdvance] = useState(getGuestVerbAutoAdvance);
   const [optionsOpen, setOptionsOpen] = useState(true);
 
   const verbType = useSelector(selectVerbSlice);
 
   useEffect(() => {
     dispatch(setMode("Parse Verbs"));
+    saveGuestResumeLocation("/verb");
   }, [dispatch]);
 
   const handleClick = (
@@ -236,6 +246,7 @@ const VerbMenu = ({
       return;
     }
 
+    saveGuestVerbOptions(verbChars);
     dispatch(setVerbType(newVerbType));
     setActiveVerbCharacteristics(verbChars);
     setVerbMode(options);
@@ -255,7 +266,15 @@ const VerbMenu = ({
         </button>
         {sidebarOpen && <div className="verb-sidebar-content">
           <label className="auto-toggle">
-            <input type="checkbox" checked={autoAdvance} onChange={(event) => setAutoAdvance(event.target.checked)} />
+            <input
+              type="checkbox"
+              checked={autoAdvance}
+              onChange={(event) => {
+                const enabled = event.target.checked;
+                setAutoAdvance(enabled);
+                saveGuestVerbAutoAdvance(enabled);
+              }}
+            />
             {" "}Automatically advance to next verb
           </label>
           <hr />

@@ -31,6 +31,21 @@ import HelpTool from "./HelpTool.jsx";
 import { scoreVerse } from "../utils";
 import ScoreBoard from "./ScoreBoard.jsx";
 import ToolkitPopup from "./ToolkitPopup.jsx";
+import { useAuth } from "../AuthContext.jsx";
+import { AUTH_ENABLED } from "../authConfig.js";
+import { saveGuestResumeLocation } from "../guestProgress.js";
+
+const GUEST_DEPONENT_SETTING_KEY = "didakey.guest.enableDeponentVerbs";
+
+const readGuestDeponentSetting = () => {
+  try {
+    if (AUTH_ENABLED && localStorage.getItem("token")) return false;
+    return localStorage.getItem(GUEST_DEPONENT_SETTING_KEY) === "true";
+  } catch (error) {
+    console.error("Unable to read guest deponent setting:", error);
+    return false;
+  }
+};
 
 //make the verse an array:
 const arrayIffy = (verse) => {
@@ -93,7 +108,8 @@ const Verse = () => {
   let [word] = useState("");
   const dispatch = useDispatch();
   const [reset, setReset] = useState(true);
-  const [enableDeponentVerbs, setEnableDeponentVerbs] = useState(false);
+  const { user, loading: authLoading } = useAuth();
+  const [enableDeponentVerbs, setEnableDeponentVerbs] = useState(readGuestDeponentSetting);
 
   const [bookListIsOpen, setBookListIsOpen] = useState(false);
   const [chapterListIsOpen, setChapterListIsOpen] = useState(false);
@@ -118,6 +134,16 @@ const Verse = () => {
   const verse = useSelector(selectVerseSlice);
   const verseMode = useSelector(selectVerseMode);
   const verseReference = useSelector(selectVerseReference);
+
+  useEffect(() => {
+    if (authLoading || user) return;
+
+    try {
+      localStorage.setItem(GUEST_DEPONENT_SETTING_KEY, String(enableDeponentVerbs));
+    } catch (error) {
+      console.error("Unable to save guest deponent setting:", error);
+    }
+  }, [enableDeponentVerbs, authLoading, user]);
 
   useEffect(() => {
     function getVerseFromUrl(pathRaw) {
@@ -169,6 +195,8 @@ const Verse = () => {
     }
 
     const currentPath = window.location.pathname;
+    const resumePath = currentPath === "/parsing-verse" ? "/parsing-verse/" : currentPath;
+    saveGuestResumeLocation(resumePath);
     if (currentPath === "/parsing-verse/" || currentPath === "/parsing-verse") {
       const randomVerse = getRandomVerse(organizeText(greekText));
       dispatch(setVerse(randomVerse));

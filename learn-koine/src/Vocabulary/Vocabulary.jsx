@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Vocabulary.css";
 import { vocabListObj } from "../greek_text/vocabularyWords";
 import ReactCardFlip from "react-card-flip";
 import MenuVocabulary from "./MenuVocabulary";
 import HelpTool from "../ParsingPractice/HelpTool.jsx";
+import { saveGuestResumeLocation } from "../guestProgress";
 
 export default function Vocabulary() {
+  useEffect(() => {
+    saveGuestResumeLocation("/vocabulary");
+  }, []);
   const [vocabList, setVocabList] = useState({});
   const [deck, setDeck] = useState(["Pick Vocab List"]);
   const [isFlipped, setIsFlipped] = useState(false);

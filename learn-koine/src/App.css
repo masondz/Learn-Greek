@@ -42,6 +42,10 @@
   cursor: pointer;
 }
 
+.continue-link {
+  margin-bottom: 1rem;
+}
+
 a {
   text-decoration: none;
   color: white;
