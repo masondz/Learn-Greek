@@ -368,7 +368,7 @@ const Paradigms = ({ tense }) => {
   );
 };
 
-const HelpTool = ({ pageName }) => {
+const HelpTool = ({ pageName, className = "" }) => {
   const [helpShown, setHelpShown] = useState(false);
   const [tipShown, setTipShown] = useState(false);
 
@@ -389,7 +389,7 @@ const HelpTool = ({ pageName }) => {
   }
 
   return (
-    <div className="help-container">
+    <div className={`help-container ${className}`}>
       <div style={{ position: "fixed" }}></div>
       {helpShown && (
         <div className="help-paragraph">
@@ -397,7 +397,7 @@ const HelpTool = ({ pageName }) => {
           <HelpTabs tipShown={tipShown} setTipShown={setTipShown} />
         </div>
       )}
-      <button className="help-tool-button" onClick={handleOnClick}>
+      <button className={`help-tool-button ${className}-button`} onClick={handleOnClick}>
         ?
       </button>
     </div>

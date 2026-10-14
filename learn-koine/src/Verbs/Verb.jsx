@@ -30,6 +30,7 @@ const Verb = () => {
 
   const [correctCount, setCorrectCount] = useState(0);
   const [autoAdvance, setAutoAdvance] = useState(true);
+  const [optionsOpen, setOptionsOpen] = useState(true);
 
   const verbType = useSelector(selectVerbSlice);
 
@@ -112,11 +113,13 @@ const Verb = () => {
         setVerbMode={setVerbMode}
         handleClick={handleClick}
         verbCharacteristics={verbCharacteristics}
-          setVerbCharacteristics={setVerbCharacteristics}
-          setActiveVerbCharacteristics={setActiveVerbCharacteristics}
-          verbType={verbType}
+        setVerbCharacteristics={setVerbCharacteristics}
+        setActiveVerbCharacteristics={setActiveVerbCharacteristics}
+        verbType={verbType}
         autoAdvance={autoAdvance}
         setAutoAdvance={setAutoAdvance}
+        optionsOpen={optionsOpen}
+        setOptionsOpen={setOptionsOpen}
       />
       <br></br>
       <div className="verb-component">
@@ -138,11 +141,24 @@ const Verb = () => {
           setAutoAdvance={setAutoAdvance}
         />
         <br></br>
-        <button className="button-random" onClick={() => handleClick()}>
-          Random Verb
-        </button>
+        <div className="verb-actions-row">
+          <button className="button-random" onClick={() => handleClick()}>
+            Random Verb
+          </button>
+          <div className="verb-bottom-tools">
+            <button
+              type="button"
+              className="verb-options-toggle"
+              aria-label={optionsOpen ? "Close verb options" : "Open verb options"}
+              aria-expanded={optionsOpen}
+              onClick={() => setOptionsOpen(!optionsOpen)}
+            >
+              <span className="material-symbols-outlined" aria-hidden="true">settings</span>
+            </button>
+            <HelpTool pageName="verb-help" className="verb-bottom-help" />
+          </div>
+        </div>
       </div>
-      <HelpTool pageName={"verb-help"} />
     </div>
   );
 };
@@ -157,9 +173,10 @@ const VerbMenu = ({
   verbType,
   autoAdvance,
   setAutoAdvance,
+  optionsOpen,
+  setOptionsOpen,
 }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [optionsOpen, setOptionsOpen] = useState(true);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -253,16 +270,6 @@ const VerbMenu = ({
           </div>
         </div>}
       </div>
-      <button
-        type="button"
-        className="verb-options-toggle"
-        aria-label={optionsOpen ? "Close verb options" : "Open verb options"}
-        aria-expanded={optionsOpen}
-        onClick={() => setOptionsOpen(!optionsOpen)}
-      >
-        ⚙
-      </button>
-
       {optionsOpen && (
         <button
           type="button"
