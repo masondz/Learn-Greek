@@ -162,6 +162,20 @@ const VerbMenu = ({
   const [optionsOpen, setOptionsOpen] = useState(true);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    if (!optionsOpen) return undefined;
+
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousDocumentOverflow = document.documentElement.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousBodyOverflow;
+      document.documentElement.style.overflow = previousDocumentOverflow;
+    };
+  }, [optionsOpen]);
+
   const checkSelectionExists = (options) => {
     if (
       options.includes("future") &&
@@ -249,6 +263,14 @@ const VerbMenu = ({
         ⚙
       </button>
 
+      {optionsOpen && (
+        <button
+          type="button"
+          className="verb-options-backdrop"
+          aria-label="Close verb options"
+          onClick={() => setOptionsOpen(false)}
+        />
+      )}
       <div className={`verb-menu-options-${optionsOpen ? "open" : "closed"}`}>
         <p style={{ whiteSpace: "nowrap" }}>Select verb options</p>
         <div className="verb-options-grid">
@@ -307,13 +329,23 @@ const VerbMenu = ({
           /></section>
         </div>
         <section className="verb-menu-group verb-menu-submit-card">
-          <button
-            className="submit-button"
-            onClick={() => handleSelect(verbCharacteristics)}
-            key="Submit-Button"
-          >
-            Submit
-          </button>
+          <div className="verb-menu-actions">
+            <button
+              type="button"
+              className="submit-button"
+              onClick={() => handleSelect(verbCharacteristics)}
+              key="Submit-Button"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              className="submit-button verb-menu-cancel"
+              onClick={() => setOptionsOpen(false)}
+            >
+              Cancel
+            </button>
+          </div>
         </section>
       </div>
     </>
