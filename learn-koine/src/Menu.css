@@ -223,6 +223,86 @@
   background: #0caf35;
 }
 
+.vocab-options-panel.is-open {
+  position: fixed;
+  z-index: 21;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: min(760px, calc(100vw - 2rem));
+  max-height: min(84vh, 620px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: clamp(1rem, 3vw, 2rem);
+  color: #fff;
+  text-align: center;
+  background: #20242d;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.4);
+}
+
+.vocab-options-panel.is-closed {
+  position: fixed;
+  z-index: 21;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.vocab-options-panel > p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.vocab-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.vocab-option-card {
+  min-height: 6rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  color: #fff;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.vocab-option-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.vocab-option-description {
+  color: #d8dce4;
+  font-size: 0.8rem;
+}
+
+.vocab-option-card.chosen-option .vocab-option-description {
+  color: #fff;
+}
+
+.vocab-options-panel .verb-menu-submit-card {
+  padding: 0.7rem;
+}
+
+.vocab-options-panel .submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
 .button-random {
   background-color: #282c34;
   border-radius: 10px;
@@ -430,6 +510,14 @@
 @media (max-width: 620px) {
   .verb-options-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vocab-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vocab-option-card {
+    min-height: 4rem;
   }
 
   .verb-menu-options-open {
