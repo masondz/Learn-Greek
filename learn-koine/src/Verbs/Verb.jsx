@@ -24,6 +24,9 @@ const Verb = () => {
   const [verbCharacteristics, setVerbCharacteristics] = useState({
     partOfSpeech: "Verb",
   });
+  const [activeVerbCharacteristics, setActiveVerbCharacteristics] = useState({
+    partOfSpeech: "Verb",
+  });
 
   const [correctCount, setCorrectCount] = useState(0);
   const [autoAdvance, setAutoAdvance] = useState(true);
@@ -34,7 +37,11 @@ const Verb = () => {
     dispatch(setMode("Parse Verbs"));
   }, [dispatch]);
 
-  const handleClick = (option = verbMode, exclusions = []) => {
+  const handleClick = (
+    option = verbMode,
+    exclusions = [],
+    characteristics = activeVerbCharacteristics
+  ) => {
     if (
       option === "Use the menu to select verb forms to practice." ||
       option === "Any"
@@ -42,38 +49,38 @@ const Verb = () => {
       option = "Verb";
       setVerbMode("Any");
     }
-    if (verbCharacteristics["Type"] === "Verb") {
+    if (characteristics.Type === "Verb") {
       exclusions = ["Participle", "Infinitive"];
     }
 
-    if (verbCharacteristics.Tense === "perfect") {
+    if (characteristics.Tense === "perfect") {
       exclusions = ["imperfect", "pluperfect"];
     }
 
 
     if (
-      verbCharacteristics.Type === "Participle" &&
+      characteristics.Type === "Participle" &&
       !(
-        verbCharacteristics.Mood === undefined ||
-        verbCharacteristics.Mood === ""
+        characteristics.Mood === undefined ||
+        characteristics.Mood === ""
       )
     ) {
       return alert('check "All" in mood category to practice Participles.');
     }
 
     if (
-      verbCharacteristics.Type === "Infinitive" &&
+      characteristics.Type === "Infinitive" &&
       !(
-        verbCharacteristics.Mood === undefined ||
-        verbCharacteristics.Mood === ""
+        characteristics.Mood === undefined ||
+        characteristics.Mood === ""
       ) &&
       !(
-        verbCharacteristics.Person === undefined ||
-        verbCharacteristics.Person === ""
+        characteristics.Person === undefined ||
+        characteristics.Person === ""
       ) &&
       !(
-        verbCharacteristics.Number === undefined ||
-        verbCharacteristics.Number === ""
+        characteristics.Number === undefined ||
+        characteristics.Number === ""
       )
     ) {
       return alert(
@@ -82,9 +89,9 @@ const Verb = () => {
     }
 
     if (
-      verbCharacteristics.Type === "Infinitive" &&
-      (verbCharacteristics.Tense === "future" ||
-        verbCharacteristics.Tense === "imperfect")
+      characteristics.Type === "Infinitive" &&
+      (characteristics.Tense === "future" ||
+        characteristics.Tense === "imperfect")
     ) {
       return alert("Infinitives cannot be in the future or imperfect tense.");
     }
@@ -105,8 +112,9 @@ const Verb = () => {
         setVerbMode={setVerbMode}
         handleClick={handleClick}
         verbCharacteristics={verbCharacteristics}
-        setVerbCharacteristics={setVerbCharacteristics}
-        verbType={verbType}
+          setVerbCharacteristics={setVerbCharacteristics}
+          setActiveVerbCharacteristics={setActiveVerbCharacteristics}
+          verbType={verbType}
         autoAdvance={autoAdvance}
         setAutoAdvance={setAutoAdvance}
       />
@@ -123,7 +131,7 @@ const Verb = () => {
           setWord={setWord}
           randomVerb={randomVerb}
           verbMode={verbMode}
-          verbCharacteristics={verbCharacteristics}
+          verbCharacteristics={activeVerbCharacteristics}
           correctCount={correctCount}
           setCorrectCount={setCorrectCount}
           autoAdvance={autoAdvance}
@@ -145,11 +153,13 @@ const VerbMenu = ({
   handleClick,
   verbCharacteristics,
   setVerbCharacteristics,
+  setActiveVerbCharacteristics,
   verbType,
   autoAdvance,
   setAutoAdvance,
 }) => {
-  const [openOrClosed, setIsOpenOrClosed] = useState("open");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [optionsOpen, setOptionsOpen] = useState(true);
   const dispatch = useDispatch();
 
   const checkSelectionExists = (options) => {
@@ -196,135 +206,117 @@ const VerbMenu = ({
     }
 
     dispatch(setVerbType(newVerbType));
+    setActiveVerbCharacteristics(verbChars);
     setVerbMode(options);
     setTimeout(() => {
-      handleClick(options);
-      setIsOpenOrClosed("closed");
+      handleClick(options, [], verbChars);
+      setOptionsOpen(false);
     }, 10);
   };
 
   const menuLinks = ["vocabulary", "parsing-verse/"];
 
   return (
-    <div className={`menu-container-${openOrClosed}`} key="verb-menu-container">
-      <div
-        className={`menu-button-container-${openOrClosed}`}
-        key="verb-menu-button"
+    <>
+      <div className={`verb-sidebar-${sidebarOpen ? "open" : "closed"}`} key="verb-menu-container">
+        <button type="button" className="verb-sidebar-toggle" aria-label={sidebarOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={sidebarOpen} onClick={() => setSidebarOpen(!sidebarOpen)}>
+          {sidebarOpen ? "×" : "☰"}
+        </button>
+        {sidebarOpen && <div className="verb-sidebar-content">
+          <label className="auto-toggle">
+            <input type="checkbox" checked={autoAdvance} onChange={(event) => setAutoAdvance(event.target.checked)} />
+            {" "}Automatically advance to next verb
+          </label>
+          <hr />
+          <div className="menu-links">
+            <h3>Links</h3>
+            {menuLinks.map((link) => <div key={link + "-div"}>
+              <Link to={"/" + link} className="menu-link" onClick={() => dispatch(clearWord())}>
+                {link === "parsing-verse/" ? "Parsing Practice" : link}
+              </Link>
+            </div>)}
+            <Link to="/" className="menu-link">Home</Link>
+          </div>
+        </div>}
+      </div>
+      <button
+        type="button"
+        className="verb-options-toggle"
+        aria-label={optionsOpen ? "Close verb options" : "Open verb options"}
+        aria-expanded={optionsOpen}
+        onClick={() => setOptionsOpen(!optionsOpen)}
       >
-        <button
-          className="menu-toggle-button"
-          onClick={() =>
-            openOrClosed === "open"
-              ? setIsOpenOrClosed("closed")
-              : setIsOpenOrClosed("open")
-          }
-        >
-          {openOrClosed === "open" ? "X" : "="}
-        </button>
-      </div>
+        ⚙
+      </button>
 
-      <div className={`verb-menu-options-${openOrClosed}`}>
-        <label className="auto-toggle">
-          <input
-            type="checkbox"
-            checked={autoAdvance}
-            onChange={(event) => setAutoAdvance(event.target.checked)}
-          />
-          {" "}Automatically advance to next verb
-        </label>
-        <hr />
+      <div className={`verb-menu-options-${optionsOpen ? "open" : "closed"}`}>
         <p style={{ whiteSpace: "nowrap" }}>Select verb options</p>
-        <h3 key="type-title">Type</h3>
-        <VerbMenuOptions
-          menuOptions={["Verb", "Participle", "Infinitive"]}
-          verbCharacteristics={verbCharacteristics}
-          setVerbCharacteristics={setVerbCharacteristics}
-          characteristic={"Type"}
-          key="Type"
-        />
-        <h3 key="tense-title">Tense</h3>
-        <VerbMenuOptions
-          menuOptions={[
-            "Present",
-            "Aorist",
-            "Future",
-            "Perfect",
-            "Imperfect",
-            "Pluperfect",
-          ]}
-          verbCharacteristics={verbCharacteristics}
-          setVerbCharacteristics={setVerbCharacteristics}
-          characteristic={"Tense"}
-          key="Tense"
-        />
+        <div className="verb-options-grid">
+          <section className="verb-menu-group"><h3 key="type-title">Type</h3><VerbMenuOptions
+            menuOptions={["Verb", "Participle", "Infinitive"]}
+            verbCharacteristics={verbCharacteristics}
+            setVerbCharacteristics={setVerbCharacteristics}
+            characteristic={"Type"}
+            key="Type"
+          /></section>
+          <section className="verb-menu-group"><h3 key="tense-title">Tense</h3><VerbMenuOptions
+            menuOptions={[
+              "Present",
+              "Aorist",
+              "Future",
+              "Perfect",
+              "Imperfect",
+              "Pluperfect",
+            ]}
+            verbCharacteristics={verbCharacteristics}
+            setVerbCharacteristics={setVerbCharacteristics}
+            characteristic={"Tense"}
+            key="Tense"
+          /></section>
 
-        <h3 key="voice-title">Voice</h3>
-        <VerbMenuOptions
-          menuOptions={["Active", "Middle", "Passive", "Deponent"]}
-          verbCharacteristics={verbCharacteristics}
-          setVerbCharacteristics={setVerbCharacteristics}
-          characteristic={"Voice"}
-          key="Voice"
-        />
+          <section className="verb-menu-group"><h3 key="voice-title">Voice</h3><VerbMenuOptions
+            menuOptions={["Active", "Middle", "Passive", "Deponent"]}
+            verbCharacteristics={verbCharacteristics}
+            setVerbCharacteristics={setVerbCharacteristics}
+            characteristic={"Voice"}
+            key="Voice"
+          /></section>
 
-        <h3 key="mood-title">Mood</h3>
-        <VerbMenuOptions
-          menuOptions={["Indicative", "Subjunctive", "Imperative"]}
-          verbCharacteristics={verbCharacteristics}
-          setVerbCharacteristics={setVerbCharacteristics}
-          characteristic={"Mood"}
-          key="Mood"
-        />
+          <section className="verb-menu-group"><h3 key="mood-title">Mood</h3><VerbMenuOptions
+            menuOptions={["Indicative", "Subjunctive", "Imperative"]}
+            verbCharacteristics={verbCharacteristics}
+            setVerbCharacteristics={setVerbCharacteristics}
+            characteristic={"Mood"}
+            key="Mood"
+          /></section>
 
-        <h3 key="person-title">Person</h3>
-        <VerbMenuOptions
-          menuOptions={["First", "Second", "Third"]}
-          verbCharacteristics={verbCharacteristics}
-          setVerbCharacteristics={setVerbCharacteristics}
-          characteristic={"Person"}
-          key="Person"
-        />
+          <section className="verb-menu-group"><h3 key="person-title">Person</h3><VerbMenuOptions
+            menuOptions={["First", "Second", "Third"]}
+            verbCharacteristics={verbCharacteristics}
+            setVerbCharacteristics={setVerbCharacteristics}
+            characteristic={"Person"}
+            key="Person"
+          /></section>
 
-        <h3 key="number-title">Number</h3>
-        <VerbMenuOptions
-          menuOptions={["Singular", "Plural"]}
-          verbCharacteristics={verbCharacteristics}
-          setVerbCharacteristics={setVerbCharacteristics}
-          characteristic={"Number"}
-          key="Number"
-        />
-        <button
-          className="submit-button"
-          onClick={() => {
-            handleSelect(verbCharacteristics);
-          }}
-          key="Submit-Button"
-        >
-          Submit
-        </button>
-        <div className="menu-links" key="menu-lins">
-          <h3 key="links-title">Links</h3>
-          {menuLinks.map((link) => {
-            return (
-              <div key={link + "-div"}>
-                <Link
-                  to={"/" + link}
-                  className="menu-link"
-                  onClick={() => dispatch(clearWord())}
-                  key={link}
-                >
-                  {link === "parsing-verse/" ? "Parsing Practice" : link}
-                </Link>
-                <br></br>
-              </div>
-            );
-          })}
-          <Link to={"/"} className="menu-link" key="home-link">
-            Home
-          </Link>
+          <section className="verb-menu-group"><h3 key="number-title">Number</h3><VerbMenuOptions
+            menuOptions={["Singular", "Plural"]}
+            verbCharacteristics={verbCharacteristics}
+            setVerbCharacteristics={setVerbCharacteristics}
+            characteristic={"Number"}
+            key="Number"
+          /></section>
         </div>
+        <section className="verb-menu-group verb-menu-submit-card">
+          <button
+            className="submit-button"
+            onClick={() => handleSelect(verbCharacteristics)}
+            key="Submit-Button"
+          >
+            Submit
+          </button>
+        </section>
       </div>
-    </div>
+    </>
   );
 };
 
