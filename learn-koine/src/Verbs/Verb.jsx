@@ -7,13 +7,13 @@ import "./Verb.css";
 import { setWord, selectWordSlice } from "../features/wordSlice";
 import { setMode } from "../features/verseSlice";
 import { clearWord } from "../features/wordSlice";
-import { Link } from "react-router-dom";
 // import { useCycle } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import "../Menu.css";
 import VerbMenuOptions from "./VerbMenuOptions.jsx";
 import { setVerbType, selectVerbSlice } from "../features/verbSlice";
 import HelpTool from "../ParsingPractice/HelpTool.jsx";
+import StudySidebar from "../StudySidebar";
 import {
   getGuestVerbOptions,
   getGuestVerbAutoAdvance,
@@ -23,6 +23,16 @@ import {
 } from "../guestProgress";
 
 const savedGuestVerbOptions = getGuestVerbOptions();
+const initialPracticeCharacteristics = savedGuestVerbOptions || {
+  partOfSpeech: "Verb",
+};
+
+const getPracticeOptions = (characteristics) => {
+  const options = Object.entries(characteristics)
+    .filter(([key, value]) => key !== "partOfSpeech" && value)
+    .map(([key, value]) => (key === "Type" ? value : value.toLowerCase()));
+  return options.length ? options : ["Verb"];
+};
 
 const Verb = () => {
   const verb = useSelector(selectWordSlice);
@@ -31,10 +41,10 @@ const Verb = () => {
     "Use the menu to select verb forms to practice."
   );
   const [verbCharacteristics, setVerbCharacteristics] = useState(
-    () => savedGuestVerbOptions || { partOfSpeech: "Verb" }
+    () => initialPracticeCharacteristics
   );
   const [activeVerbCharacteristics, setActiveVerbCharacteristics] = useState(
-    () => savedGuestVerbOptions || { partOfSpeech: "Verb" }
+    () => initialPracticeCharacteristics
   );
 
   const [correctCount, setCorrectCount] = useState(0);
@@ -46,6 +56,13 @@ const Verb = () => {
   useEffect(() => {
     dispatch(setMode("Parse Verbs"));
     saveGuestResumeLocation("/verb");
+    const options = getPracticeOptions(initialPracticeCharacteristics);
+    const exclusions = initialPracticeCharacteristics.Type === "Verb"
+      ? ["Participle", "Infinitive"]
+      : [];
+    dispatch(setVerbType(initialPracticeCharacteristics.Type || ""));
+    dispatch(setWord(randomVerb(wordUsages, "parse", options, exclusions)));
+    setVerbMode(options.join(" "));
   }, [dispatch]);
 
   const handleClick = (
@@ -186,7 +203,6 @@ const VerbMenu = ({
   optionsOpen,
   setOptionsOpen,
 }) => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -225,21 +241,8 @@ const VerbMenu = ({
 
   const handleSelect = (verbChars) => {
     const newVerbType = verbChars.Type;
-    const optionsArr = Object.keys(verbChars);
-
-
-    let options = "";
-
-    if (optionsArr.length === 1 && verbChars.Type === undefined) {
-      options = "Any";
-    }
-
-    for (let i = 1; i < optionsArr.length; i++) {
-      options += ` ${verbChars[optionsArr[i]]}`;
-    }
-    if (!options) {
-      return alert("You must pick verb options from the menu!!");
-    }
+    const optionList = getPracticeOptions(verbChars);
+    const options = optionList.join(" ");
 
     if (!checkSelectionExists(options)) {
       alert("Verb with given characteristics does not exist.");
@@ -256,15 +259,9 @@ const VerbMenu = ({
     }, 10);
   };
 
-  const menuLinks = ["vocabulary", "parsing-verse/"];
-
   return (
     <>
-      <div className={`verb-sidebar-${sidebarOpen ? "open" : "closed"}`} key="verb-menu-container">
-        <button type="button" className="verb-sidebar-toggle" aria-label={sidebarOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={sidebarOpen} onClick={() => setSidebarOpen(!sidebarOpen)}>
-          {sidebarOpen ? "×" : "☰"}
-        </button>
-        {sidebarOpen && <div className="verb-sidebar-content">
+      <StudySidebar currentPage="verb">
           <label className="auto-toggle">
             <input
               type="checkbox"
@@ -277,18 +274,7 @@ const VerbMenu = ({
             />
             {" "}Automatically advance to next verb
           </label>
-          <hr />
-          <div className="menu-links">
-            <h3>Links</h3>
-            {menuLinks.map((link) => <div key={link + "-div"}>
-              <Link to={"/" + link} className="menu-link" onClick={() => dispatch(clearWord())}>
-                {link === "parsing-verse/" ? "Parsing Practice" : link}
-              </Link>
-            </div>)}
-            <Link to="/" className="menu-link">Home</Link>
-          </div>
-        </div>}
-      </div>
+      </StudySidebar>
       {optionsOpen && (
         <button
           type="button"
