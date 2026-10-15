@@ -313,8 +313,6 @@ const Verse = () => {
 
   let scoreMax = scoreVerse(verseArray);
 
-  const menuLinks = ["Vocabulary", "Verb"];
-
   //close drop down menues on off-click
   useEffect(() => {
     const offClickCloseMenu = (e) => {
@@ -345,9 +343,6 @@ const Verse = () => {
       <div className="verse-component">
         <div>
           <Menu
-            setArticleGrid={setArticleGrid}
-            blankGrid={blankGrid}
-            menuLinks={menuLinks}
             enableDeponentVerbs={enableDeponentVerbs}
             setEnableDeponentVerbs={setEnableDeponentVerbs}
           />

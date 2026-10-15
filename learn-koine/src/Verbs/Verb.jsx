@@ -204,6 +204,7 @@ const VerbMenu = ({
   setOptionsOpen,
 }) => {
   const dispatch = useDispatch();
+  const [advancedSettingsOpen, setAdvancedSettingsOpen] = useState(false);
 
   useEffect(() => {
     if (!optionsOpen) return undefined;
@@ -262,18 +263,33 @@ const VerbMenu = ({
   return (
     <>
       <StudySidebar currentPage="verb">
-          <label className="auto-toggle">
-            <input
-              type="checkbox"
-              checked={autoAdvance}
-              onChange={(event) => {
-                const enabled = event.target.checked;
-                setAutoAdvance(enabled);
-                saveGuestVerbAutoAdvance(enabled);
-              }}
-            />
-            {" "}Automatically advance to next verb
-          </label>
+        <section className="advanced-settings">
+          <button
+            type="button"
+            className="advanced-settings-toggle"
+            aria-expanded={advancedSettingsOpen}
+            onClick={() => setAdvancedSettingsOpen((open) => !open)}
+          >
+            Advanced Settings
+            <span aria-hidden="true">{advancedSettingsOpen ? "−" : "+"}</span>
+          </button>
+          {advancedSettingsOpen && (
+            <div className="advanced-settings-panel">
+              <label className="auto-toggle">
+                <input
+                  type="checkbox"
+                  checked={autoAdvance}
+                  onChange={(event) => {
+                    const enabled = event.target.checked;
+                    setAutoAdvance(enabled);
+                    saveGuestVerbAutoAdvance(enabled);
+                  }}
+                />
+                <span>Auto advance to next verb</span>
+              </label>
+            </div>
+          )}
+        </section>
       </StudySidebar>
       {optionsOpen && (
         <button
