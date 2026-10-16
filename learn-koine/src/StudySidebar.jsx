@@ -29,21 +29,25 @@ export default function StudySidebar({ currentPage, children }) {
   return (
     <aside
       ref={sidebarRef}
-      className={`study-sidebar${open ? " is-open" : ""}`}
+      className={`floating-sidebar${open ? " is-open" : ""}`}
       aria-label="Page navigation"
     >
       <button
         type="button"
-        className="study-sidebar-toggle"
+        className="floating-sidebar-trigger"
         aria-label={open ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={open}
         onClick={() => setOpen((wasOpen) => !wasOpen)}
       >
-        {open ? "×" : "☰"}
+        <span className="floating-sidebar-brand">DidaKey</span>
+        <span className="floating-sidebar-icon" aria-hidden="true">
+          {open ? "×" : "☰"}
+        </span>
       </button>
-      <div className="study-sidebar-content" aria-hidden={!open}>
+      <div className="floating-sidebar-content" aria-hidden={!open}>
         {children}
-        <nav className="study-sidebar-links" aria-label="Study pages">
+        <nav className="floating-sidebar-links" aria-label="Study pages">
+          <h3>Links</h3>
           {pages.filter((page) => page.id !== currentPage).map((page) => (
             <Link
               key={page.id}
