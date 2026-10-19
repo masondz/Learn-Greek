@@ -3,6 +3,27 @@ import { AUTH_ENABLED } from "./authConfig";
 export const GUEST_RESUME_KEY = "didakey.guest.resumeLocation";
 export const GUEST_VERB_OPTIONS_KEY = "didakey.guest.verbOptions";
 export const GUEST_VERB_AUTO_ADVANCE_KEY = "didakey.guest.verbAutoAdvance";
+export const getVocabularyProgressKey = (username) =>
+  `didakey.${username ? `user.${encodeURIComponent(username)}` : "guest"}.vocabulary`;
+
+export const readVocabularyProgress = (username) => {
+  try {
+    const raw = localStorage.getItem(getVocabularyProgressKey(username));
+    const value = raw ? JSON.parse(raw) : {};
+    return value && typeof value === "object" ? value : {};
+  } catch (error) {
+    console.error("Unable to read vocabulary progress:", error);
+    return {};
+  }
+};
+
+export const saveVocabularyProgress = (username, progress) => {
+  try {
+    localStorage.setItem(getVocabularyProgressKey(username), JSON.stringify(progress));
+  } catch (error) {
+    console.error("Unable to save vocabulary progress:", error);
+  }
+};
 
 const isGuest = () => {
   try {

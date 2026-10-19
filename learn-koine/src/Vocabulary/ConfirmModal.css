@@ -1,0 +1,6 @@
+.confirm-modal-backdrop { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 1rem; background: #0009; }
+.confirm-modal { width: min(28rem, 100%); padding: 1.5rem; border-radius: 12px; color: #20232a; background: white; text-align: left; box-shadow: 0 12px 40px #0006; }
+.confirm-modal h2 { margin-top: 0; }
+.confirm-modal-actions { display: flex; justify-content: flex-end; gap: .75rem; margin-top: 1.5rem; }
+.confirm-modal-actions button { padding: .55rem .9rem; border: 1px solid #555; border-radius: 6px; cursor: pointer; }
+.confirm-modal-actions .confirm-modal-danger { color: white; background: #a52828; border-color: #a52828; }
