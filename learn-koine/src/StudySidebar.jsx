@@ -47,7 +47,6 @@ export default function StudySidebar({ currentPage, children }) {
       <div className="floating-sidebar-content" aria-hidden={!open}>
         {children}
         <nav className="floating-sidebar-links" aria-label="Study pages">
-          <h3>Links</h3>
           {pages.filter((page) => page.id !== currentPage).map((page) => (
             <Link
               key={page.id}
