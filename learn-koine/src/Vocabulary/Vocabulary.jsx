@@ -45,6 +45,11 @@ export default function Vocabulary() {
   const suppressCardClick = useRef(false);
   const activeDeck = isLearnedDeckActive ? learnedDeck : deck;
   const currentWord = activeDeck[deckIndex];
+  const gestureCue = Math.abs(dragOffset.x) >= 75
+    ? (dragOffset.x < 0 ? "Next" : "Previous")
+    : dragOffset.y >= 75
+      ? (isLearnedDeckActive ? "↓ Unlearn" : "↓ Learned")
+      : "";
 
   useEffect(() => {
     const saved = readVocabularyProgress(username);
@@ -267,13 +272,13 @@ export default function Vocabulary() {
             <div key="front" onClick={onClick} {...cardGestureProps} className="card-front vocab-card">
               <div className="category-name">{category}</div>
               {currentWord || "Pick Vocabulary List"}
-              {isDragging && <span className="gesture-cue">{dragOffset.y > 35 ? (isLearnedDeckActive ? "↓ Unlearn" : "↓ Learned") : "← Previous · Next →"}</span>}
+              {isDragging && gestureCue && <span className="gesture-cue">{gestureCue}</span>}
             </div>
             <div onClick={onClick} key="back" {...cardGestureProps} className="card-back vocab-card">
               {vocabListObj[currentWord]
                 ? vocabListObj[currentWord].english
                 : "Pick Vocabulary List"}
-              {isDragging && <span className="gesture-cue">{dragOffset.y > 35 ? (isLearnedDeckActive ? "↓ Unlearn" : "↓ Learned") : "← Previous · Next →"}</span>}
+              {isDragging && gestureCue && <span className="gesture-cue">{gestureCue}</span>}
             </div>
           </ReactCardFlip>
         </div>
