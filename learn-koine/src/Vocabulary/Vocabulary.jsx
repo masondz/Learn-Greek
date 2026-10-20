@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Vocabulary.css";
 import { vocabListObj } from "../greek_text/vocabularyWords";
 import ReactCardFlip from "react-card-flip";
@@ -37,6 +37,12 @@ export default function Vocabulary() {
   const [category, setCategory] = useState("");
   const [deckProgress, setDeckProgress] = useState({});
   const [progressLoaded, setProgressLoaded] = useState(false);
+  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
+  const [gestureExit, setGestureExit] = useState("");
+  const gestureStart = useRef(null);
+  const gestureAxis = useRef(null);
+  const suppressCardClick = useRef(false);
   const activeDeck = isLearnedDeckActive ? learnedDeck : deck;
   const currentWord = activeDeck[deckIndex];
 
@@ -84,7 +90,82 @@ export default function Vocabulary() {
   };
 
   const onClick = () => {
+    if (suppressCardClick.current) {
+      suppressCardClick.current = false;
+      return;
+    }
     isFlipped ? setIsFlipped(false) : setIsFlipped(true);
+  };
+
+  const handlePointerDown = (event) => {
+    if (!currentWord || event.button > 0) return;
+    gestureStart.current = { x: event.clientX, y: event.clientY, pointerId: event.pointerId };
+    gestureAxis.current = null;
+    setIsDragging(true);
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  const handlePointerMove = (event) => {
+    if (!gestureStart.current || gestureStart.current.pointerId !== event.pointerId) return;
+    const x = event.clientX - gestureStart.current.x;
+    const y = event.clientY - gestureStart.current.y;
+    if (!gestureAxis.current && Math.max(Math.abs(x), Math.abs(y)) > 12) {
+      gestureAxis.current = Math.abs(x) > Math.abs(y) ? "horizontal" : "vertical";
+    }
+    const maxTravel = 140;
+    setDragOffset(gestureAxis.current === "horizontal"
+      ? { x: Math.max(-maxTravel, Math.min(maxTravel, x)), y: 0 }
+      : gestureAxis.current === "vertical"
+        ? { x: 0, y: Math.max(0, Math.min(maxTravel, y)) }
+        : { x: 0, y: 0 });
+  };
+
+  const cancelPointerGesture = (event) => {
+    if (!gestureStart.current || gestureStart.current.pointerId !== event.pointerId) return;
+    gestureStart.current = null;
+    gestureAxis.current = null;
+    setIsDragging(false);
+    setDragOffset({ x: 0, y: 0 });
+  };
+
+  const finishPointerGesture = (event) => {
+    if (!gestureStart.current || gestureStart.current.pointerId !== event.pointerId) return;
+    const { x, y } = dragOffset;
+    const isHorizontalSwipe = Math.abs(x) >= 75 && Math.abs(x) > Math.abs(y) * 1.2;
+    const isDownwardSwipe = y >= 75 && y > Math.abs(x) * 1.2;
+    gestureStart.current = null;
+    gestureAxis.current = null;
+    setIsDragging(false);
+    if (!isHorizontalSwipe && !isDownwardSwipe) {
+      setDragOffset({ x: 0, y: 0 });
+      return;
+    }
+    suppressCardClick.current = true;
+    window.setTimeout(() => { suppressCardClick.current = false; }, 300);
+    setIsFlipped(false);
+    if (isHorizontalSwipe) {
+      const direction = x < 0 ? "next" : "previous";
+      setGestureExit(direction);
+      window.setTimeout(() => {
+        setGestureExit("");
+        setDragOffset({ x: 0, y: 0 });
+        direction === "next" ? handleNext() : handlePrev();
+      }, 180);
+    } else {
+      setGestureExit("reclassify");
+      addToLearnt();
+      window.setTimeout(() => {
+        setGestureExit("");
+        setDragOffset({ x: 0, y: 0 });
+      }, 220);
+    }
+  };
+
+  const cardGestureProps = {
+    onPointerDown: handlePointerDown,
+    onPointerMove: handlePointerMove,
+    onPointerUp: finishPointerGesture,
+    onPointerCancel: cancelPointerGesture,
   };
 
   const handleNext = () => {
@@ -172,21 +253,30 @@ export default function Vocabulary() {
       />
 
       <div className="vocab-container">
-        <ReactCardFlip
-          isFlipped={isFlipped}
-          flipDirection="horizontal"
-          className="card-container"
+        <div
+          className={`vocab-card-drag-wrapper${isDragging ? " is-dragging" : ""}${gestureExit ? ` is-exiting-${gestureExit}` : ""}`}
+          style={{
+            transform: `translate(${dragOffset.x}px, ${dragOffset.y}px)`,
+            transition: isDragging ? "none" : undefined,
+          }}
         >
-          <div key="front" onClick={onClick} className="card-front">
-            <div className="category-name">{category}</div>
-            {currentWord || "Pick Vocabulary List"}
-          </div>
-          <div onClick={onClick} key="back" className="card-back">
-            {vocabListObj[currentWord]
-              ? vocabListObj[currentWord].english
-              : "Pick Vocabulary List"}
-          </div>
-        </ReactCardFlip>
+          <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+            <div key="front" onClick={onClick} {...cardGestureProps} className="card-front vocab-card">
+              <div className="category-name">{category}</div>
+              {currentWord || "Pick Vocabulary List"}
+              {isDragging && <span className="gesture-cue">{dragOffset.y > 35 ? (isLearnedDeckActive ? "↓ Unlearn" : "↓ Learned") : "← Previous · Next →"}</span>}
+            </div>
+            <div onClick={onClick} key="back" {...cardGestureProps} className="card-back vocab-card">
+              {vocabListObj[currentWord]
+                ? vocabListObj[currentWord].english
+                : "Pick Vocabulary List"}
+              {isDragging && <span className="gesture-cue">{dragOffset.y > 35 ? (isLearnedDeckActive ? "↓ Unlearn" : "↓ Learned") : "← Previous · Next →"}</span>}
+            </div>
+          </ReactCardFlip>
+        </div>
+        <p className="vocab-gesture-instructions">
+          Swipe right or left to change cards. Drag down to mark learned or unlearned.
+        </p>
 
         <div className="card-buttons">
           <button className="button-vocabulary" onClick={handlePrev}>
