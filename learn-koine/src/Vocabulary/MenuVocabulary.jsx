@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { vocabListObj } from "../greek_text/vocabularyWords";
 import StudySidebar from "../StudySidebar";
 
@@ -10,8 +10,12 @@ const descriptions = {
   Common: "50-250 occurrences",
 };
 
-const MenuVocabulary = ({ setDeck, setDeckIndex, setVocabList, setIsFlipped }) => {
+const MenuVocabulary = ({ selectedCategory = "", setDeck, setDeckIndex, setVocabList, setIsFlipped, onDeckSelected }) => {
   const [category, setCategory] = useState("");
+
+  useEffect(() => {
+    setCategory(selectedCategory);
+  }, [selectedCategory]);
 
   const handleSelect = (selectedCategory) => {
     setIsFlipped(false);
@@ -25,6 +29,7 @@ const MenuVocabulary = ({ setDeck, setDeckIndex, setVocabList, setIsFlipped }) =
     setDeckIndex(0);
     setDeck(list);
     setVocabList(list);
+    onDeckSelected?.(selectedCategory, list);
     setCategory(selectedCategory);
   };
 
