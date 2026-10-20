@@ -138,6 +138,9 @@ export default function Vocabulary() {
     setIsDragging(false);
     if (!isHorizontalSwipe && !isDownwardSwipe) {
       setDragOffset({ x: 0, y: 0 });
+      suppressCardClick.current = true;
+      window.setTimeout(() => { suppressCardClick.current = false; }, 300);
+      setIsFlipped((flipped) => !flipped);
       return;
     }
     suppressCardClick.current = true;
