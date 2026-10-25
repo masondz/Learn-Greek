@@ -11,15 +11,24 @@ import {
 } from "../guestProgress";
 import ConfirmModal from "./ConfirmModal";
 import { useAuth } from "../AuthContext";
+import { bookRareWords, newTestamentBookNames } from "../greek_text/bookRareWords";
 
-const deckCategories = ["Most Common", "More Common", "Common"];
+const frequencyDeckCategories = ["Most Common", "More Common", "Common"];
+const rareDeckCategories = newTestamentBookNames.map((book) => `Rare in ${book}`);
+const deckCategories = [...frequencyDeckCategories, ...rareDeckCategories];
 
-const getWordsForCategory = (category) => Object.keys(vocabListObj).filter((key) => {
-  const frequency = Number(vocabListObj[key].frequency);
-  if (category === "Most Common") return frequency > 500;
-  if (category === "More Common") return frequency <= 500 && frequency > 250;
-  return frequency < 250 && frequency > 49;
-});
+const getWordsForCategory = (category) => {
+  if (category.startsWith("Rare in ")) {
+    const bookName = category.slice("Rare in ".length);
+    return Object.keys(bookRareWords[bookName] || {});
+  }
+  return Object.keys(vocabListObj).filter((key) => {
+    const frequency = Number(vocabListObj[key].frequency);
+    if (category === "Most Common") return frequency > 500;
+    if (category === "More Common") return frequency <= 500 && frequency > 250;
+    return frequency < 250 && frequency > 49;
+  });
+};
 
 export default function Vocabulary() {
   const { user } = useAuth();
@@ -45,6 +54,13 @@ export default function Vocabulary() {
   const suppressCardClick = useRef(false);
   const activeDeck = isLearnedDeckActive ? learnedDeck : deck;
   const currentWord = activeDeck[deckIndex];
+  const currentRareBook = category.startsWith("Rare in ")
+    ? category.slice("Rare in ".length)
+    : "";
+  const currentBookFrequency = currentRareBook
+    ? bookRareWords[currentRareBook]?.[currentWord]
+    : null;
+  const currentNtFrequency = currentWord ? Number(vocabListObj[currentWord]?.frequency) : null;
   const gestureCue = Math.abs(dragOffset.x) >= 75
     ? (dragOffset.x < 0 ? "Next" : "Previous")
     : dragOffset.y >= 75
@@ -270,14 +286,20 @@ export default function Vocabulary() {
         >
           <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
             <div key="front" onClick={onClick} {...cardGestureProps} className="card-front vocab-card">
-              <div className="category-name">{category}</div>
+            <div className="category-name">{category}</div>
+            {currentBookFrequency !== undefined && currentBookFrequency !== null && (
+              <div className="book-word-frequency">
+                <div>{currentBookFrequency} {currentBookFrequency === 1 ? "occurrence" : "occurrences"} in {currentRareBook}</div>
+                {Number.isFinite(currentNtFrequency) && (
+                  <div>{currentNtFrequency} {currentNtFrequency === 1 ? "occurrence" : "occurrences"} in NT</div>
+                )}
+              </div>
+            )}
               {currentWord || "Pick Vocabulary List"}
               {isDragging && gestureCue && <span className="gesture-cue">{gestureCue}</span>}
             </div>
             <div onClick={onClick} key="back" {...cardGestureProps} className="card-back vocab-card">
-              {vocabListObj[currentWord]
-                ? vocabListObj[currentWord].english
-                : "Pick Vocabulary List"}
+              {currentWord ? vocabListObj[currentWord]?.english || "Definition unavailable" : "Pick Vocabulary List"}
               {isDragging && gestureCue && <span className="gesture-cue">{gestureCue}</span>}
             </div>
           </ReactCardFlip>

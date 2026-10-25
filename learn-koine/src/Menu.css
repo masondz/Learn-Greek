@@ -641,6 +641,25 @@
   font-size: 0.8rem;
 }
 
+.vocab-sidebar-decks .vocab-sidebar-subheading {
+  margin-top: 0.55rem;
+}
+
+.vocab-sidebar-book-label {
+  color: #424751;
+  font-size: 0.82rem;
+}
+
+.vocab-sidebar-book-select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  color: #20242d;
+  background: white;
+  border: 1px solid #b8bdc5;
+  border-radius: 7px;
+}
+
 /* Shared floating navigation drawer */
 .floating-sidebar {
   position: fixed;

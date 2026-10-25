@@ -552,7 +552,7 @@ let vocabListRaw = `ὁ, ἡ, τό	the 	19889
 γνωρίζω	to make known	25
 δέκα	ten	25
 δένδρον, -ου, τό	a tree	25
-{Ελλην, -ηνος, ὁ	a Greek	25
+Ελλην, -ηνος, ὁ	a Greek	25
 ἑορτή, -ῆς, ἡ	a feast	25
 κελεύω	to order	25
 λευκός, -ή, -όν	white	25
