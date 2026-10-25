@@ -46,6 +46,17 @@ const MenuVocabulary = ({ selectedCategory = "", setDeck, setDeckIndex, setVocab
     selectDeck(rareCategory, list);
   };
 
+  const handleRareBookChange = (event) => {
+    const book = event.target.value;
+    if (!book) return;
+    setSelectedBook(book);
+    if (category.startsWith("Rare in ")) {
+      const rareCategory = `Rare in ${book}`;
+      const list = Object.keys(bookRareWords[book] || {});
+      selectDeck(rareCategory, list);
+    }
+  };
+
   return (
     <StudySidebar currentPage="vocabulary">
       <section className="vocab-sidebar-decks" aria-label="Vocabulary decks">
@@ -68,7 +79,7 @@ const MenuVocabulary = ({ selectedCategory = "", setDeck, setDeckIndex, setVocab
           id="rare-word-book"
           className="vocab-sidebar-book-select"
           value={selectedBook}
-          onChange={(event) => setSelectedBook(event.target.value)}
+          onChange={handleRareBookChange}
         >
           <option value="">Choose a book</option>
           {newTestamentBookNames.map((book) => <option key={book} value={book}>{book}</option>)}
@@ -76,6 +87,7 @@ const MenuVocabulary = ({ selectedCategory = "", setDeck, setDeckIndex, setVocab
         <button
           type="button"
           className={`vocab-sidebar-deck${category.startsWith("Rare in ") ? " is-selected" : ""}`}
+          aria-pressed={category === `Rare in ${selectedBook}`}
           onClick={handleRareBookSelect}
           disabled={!selectedBook}
         >
