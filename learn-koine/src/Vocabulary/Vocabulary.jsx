@@ -286,15 +286,15 @@ export default function Vocabulary() {
         >
           <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
             <div key="front" onClick={onClick} {...cardGestureProps} className="card-front vocab-card">
-            <div className="category-name">{category}</div>
-            {currentBookFrequency !== undefined && currentBookFrequency !== null && (
-              <div className="book-word-frequency">
-                <div>{currentBookFrequency} {currentBookFrequency === 1 ? "occurrence" : "occurrences"} in {currentRareBook}</div>
-                {Number.isFinite(currentNtFrequency) && (
-                  <div>{currentNtFrequency} {currentNtFrequency === 1 ? "occurrence" : "occurrences"} in NT</div>
-                )}
-              </div>
-            )}
+              <div className="category-name">{category}</div>
+              {currentBookFrequency !== undefined && currentBookFrequency !== null && (
+                <div className="book-word-frequency">
+                  <div>{currentBookFrequency} {currentBookFrequency === 1 ? "occurrence" : "occurrences"} in {currentRareBook}</div>
+                  {Number.isFinite(currentNtFrequency) && (
+                    <div>{currentNtFrequency} {currentNtFrequency === 1 ? "occurrence" : "occurrences"} in NT</div>
+                  )}
+                </div>
+              )}
               {currentWord || "Pick Vocabulary List"}
               {isDragging && gestureCue && <span className="gesture-cue">{gestureCue}</span>}
             </div>
