@@ -1,50 +1,19 @@
 import { useEffect, useState } from "react";
 import { vocabListObj } from "../greek_text/vocabularyWords";
-import { bookRareWords, newTestamentBookNames } from "../greek_text/bookRareWords";
 import StudySidebar from "../StudySidebar";
+import { bookVocabulary, commonVocabulary, getWordsForCategory } from "./VocabularyCategory";
 
-//const categories = ["Most Common", "More Common", "Common"];
-
-function frequencyRange(frequency, min, max) {
-  if (min === undefined && max === undefined) return false;
-  if (min === undefined) return frequency <= max;
-  if (max === undefined) return frequency >= min;
-  return frequency >= min && frequency <= max;
-}
-
-class GeneralCategory {
-  constructor(name, rangeMin, rangeMax, description, rangeExpression) {
-    this.name = name;
-    this.rangeMin = rangeMin;
-    this.rangeMax = rangeMax;
-    this.description = description;
-    this.rangeExpression = rangeExpression
-  }
-}
-
-const blankCat = new GeneralCategory("", null, null, "", frequencyRange);
-const mostCommon = new GeneralCategory("Most Common", 500, undefined, "500+ occurrences", frequencyRange);
-const moreCommon = new GeneralCategory("More Common", 250, 499, "250-499 occurrences", frequencyRange);
-const common = new GeneralCategory("Common", 50, 249, "50-249 occurrences", frequencyRange);
-
-const categoriesList = [mostCommon, moreCommon, common];
-
-//const descriptions = {
-//  "Most Common": "500+ occurrences",
-//  "More Common": "250-500 occurrences",
-//  Common: "50-250 occurrences",
-//};
-
-const MenuVocabulary = ({ selectedCategory = "", setDeck, setDeckIndex, setVocabList, setIsFlipped, onDeckSelected }) => {
-  const [category, setCategory] = useState(blankCat);
-  const [selectedBook, setSelectedBook] = useState("");
+const MenuVocabulary = ({ selectedCategory = null, setDeck, setDeckIndex, setVocabList, setIsFlipped, onDeckSelected }) => {
+  const [category, setCategory] = useState(selectedCategory);
+  const [selectedBook, setSelectedBook] = useState(selectedCategory?.type === "book" ? selectedCategory.bookName : "");
 
   useEffect(() => {
-    setCategory(new GeneralCategory(name = selectedCategory));
-    setSelectedBook(selectedCategory.startsWith("Rare in ") ? selectedCategory.slice("Rare in ".length) : "");
+    setCategory(selectedCategory);
+    setSelectedBook(selectedCategory?.type === "book" ? selectedCategory.bookName : "");
   }, [selectedCategory]);
 
-  const selectDeck = (selectedCategory, list) => {
+  const selectDeck = (selectedCategory) => {
+    const list = getWordsForCategory(selectedCategory, vocabListObj);
     setIsFlipped(false);
     setDeckIndex(0);
     setDeck(list);
@@ -53,46 +22,28 @@ const MenuVocabulary = ({ selectedCategory = "", setDeck, setDeckIndex, setVocab
     setCategory(selectedCategory);
   };
 
-  const handleSelect = (selectedCategory) => {
-    const list = Object.keys(vocabListObj).filter((key) => {
-      const frequency = Number(vocabListObj[key].frequency);
-      return selectedCategory.rangeExpression(frequency, selectedCategory.rangeMin, selectedCategory.rangeMax);
-      //  if (selectedCategory.name === mostCommon.name) return frequency > mostCommon.frequency;
-      //  if (selectedCategory.name === moreCommon.name) return frequency <= mostCommon.frequency && frequency > moreCommon.frequency;
-      //  return frequency < moreCommon.frequency && frequency >= common.frequency;
-    });
-    selectDeck(selectedCategory, list);
-  };
-
-  const handleRareBookSelect = () => {
-    if (!selectedBook) return;
-    const rareCategory = `Rare in ${selectedBook}`;
-    const list = Object.keys(bookRareWords[selectedBook] || {});
-    selectDeck(rareCategory, list);
-  };
-
   const handleRareBookChange = (event) => {
     const book = event.target.value;
-    if (!book) return;
     setSelectedBook(book);
-    if (category.name.startsWith("Rare in ")) {
-      const rareCategory = `Rare in ${book}`;
-      const list = Object.keys(bookRareWords[book] || {});
-      selectDeck(rareCategory, list);
+    if (category?.type === "book") {
+      const nextCategory = bookVocabulary.find((item) => item.bookName === book);
+      if (nextCategory) selectDeck(nextCategory);
     }
   };
+
+  const selectedBookCategory = bookVocabulary.find((item) => item.bookName === selectedBook) || null;
 
   return (
     <StudySidebar currentPage="vocabulary">
       <section className="vocab-sidebar-decks" aria-label="Vocabulary decks">
         <h3>Vocabulary Decks</h3>
-        {categoriesList.map((categoryOption) => (
+        {commonVocabulary.map((categoryOption) => (
           <button
             type="button"
-            key={categoryOption.name}
-            className={`vocab-sidebar-deck${categoryOption.name === category.name ? " is-selected" : ""}`}
-            aria-pressed={categoryOption.name === category.name}
-            onClick={() => handleSelect(categoryOption)}
+            key={categoryOption.id}
+            className={`vocab-sidebar-deck${categoryOption.id === category?.id ? " is-selected" : ""}`}
+            aria-pressed={categoryOption.id === category?.id}
+            onClick={() => selectDeck(categoryOption)}
           >
             <span>{categoryOption.name}</span>
             <small>{categoryOption.description}</small>
@@ -107,17 +58,17 @@ const MenuVocabulary = ({ selectedCategory = "", setDeck, setDeckIndex, setVocab
           onChange={handleRareBookChange}
         >
           <option value="">Choose a book</option>
-          {newTestamentBookNames.map((book) => <option key={book} value={book}>{book}</option>)}
+          {bookVocabulary.map((bookCategory) => <option key={bookCategory.id} value={bookCategory.bookName}>{bookCategory.bookName}</option>)}
         </select>
         <button
           type="button"
-          className={`vocab-sidebar-deck${category.name.startsWith("Rare in ") ? " is-selected" : ""}`}
-          aria-pressed={category.name === `Rare in ${selectedBook}`}
-          onClick={handleRareBookSelect}
-          disabled={!selectedBook}
+          className={`vocab-sidebar-deck${category?.type === "book" ? " is-selected" : ""}`}
+          aria-pressed={category?.type === "book" && category.bookName === selectedBook}
+          onClick={() => selectedBookCategory && selectDeck(selectedBookCategory)}
+          disabled={!selectedBookCategory}
         >
-          <span>{selectedBook ? `Rare in ${selectedBook}` : "Choose a rare word deck"}</span>
-          {selectedBook && <small>{Object.keys(bookRareWords[selectedBook] || {}).length} headwords (25–49 NT occurrences)</small>}
+          <span>{selectedBook || "Choose a book deck"}</span>
+          {selectedBookCategory && <small>{selectedBookCategory.getWords().length} headwords ({selectedBookCategory.description})</small>}
         </button>
       </section>
     </StudySidebar>

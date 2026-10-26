@@ -11,24 +11,7 @@ import {
 } from "../guestProgress";
 import ConfirmModal from "./ConfirmModal";
 import { useAuth } from "../AuthContext";
-import { bookRareWords, newTestamentBookNames } from "../greek_text/bookRareWords";
-
-const frequencyDeckCategories = ["Most Common", "More Common", "Common"];
-const rareDeckCategories = newTestamentBookNames.map((book) => `Rare in ${book}`);
-const deckCategories = [...frequencyDeckCategories, ...rareDeckCategories];
-
-const getWordsForCategory = (category) => {
-  if (category.startsWith("Rare in ")) {
-    const bookName = category.slice("Rare in ".length);
-    return Object.keys(bookRareWords[bookName] || {});
-  }
-  return Object.keys(vocabListObj).filter((key) => {
-    const frequency = Number(vocabListObj[key].frequency);
-    if (category === "Most Common") return frequency > 500;
-    if (category === "More Common") return frequency <= 500 && frequency > 250;
-    return frequency < 250 && frequency > 49;
-  });
-};
+import { vocabularyCategories, getCategoryId, getVocabularyCategory, getWordsForCategory } from "./VocabularyCategory";
 
 export default function Vocabulary() {
   const { user } = useAuth();
@@ -43,7 +26,7 @@ export default function Vocabulary() {
   const [isLearnedDeckActive, setIsLearnedDeckActive] = useState(false);
   const [deckIndex, setDeckIndex] = useState(0);
   const [showRetryConfirmation, setShowRetryConfirmation] = useState(false);
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState(null);
   const [deckProgress, setDeckProgress] = useState({});
   const [progressLoaded, setProgressLoaded] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
@@ -54,12 +37,8 @@ export default function Vocabulary() {
   const suppressCardClick = useRef(false);
   const activeDeck = isLearnedDeckActive ? learnedDeck : deck;
   const currentWord = activeDeck[deckIndex];
-  const currentRareBook = category.startsWith("Rare in ")
-    ? category.slice("Rare in ".length)
-    : "";
-  const currentBookFrequency = currentRareBook
-    ? bookRareWords[currentRareBook]?.[currentWord]
-    : null;
+  const currentRareBook = category?.type === "book" ? category.bookName : "";
+  const currentBookFrequency = category?.type === "book" ? category.getBookFrequency(currentWord) : null;
   const currentNtFrequency = currentWord ? Number(vocabListObj[currentWord]?.frequency) : null;
   const gestureCue = Math.abs(dragOffset.x) >= 75
     ? (dragOffset.x < 0 ? "Next" : "Previous")
@@ -70,22 +49,24 @@ export default function Vocabulary() {
   useEffect(() => {
     const saved = readVocabularyProgress(username);
     const savedDecks = saved.decks || {};
-    const normalizedDecks = Object.fromEntries(deckCategories.map((deckCategory) => {
-      const words = getWordsForCategory(deckCategory);
-      const learnedSet = new Set((savedDecks[deckCategory]?.learned || []).filter((word) => words.includes(word)));
-      return [deckCategory, {
+    const normalizedDecks = Object.fromEntries(vocabularyCategories.map((deckCategory) => {
+      const words = getWordsForCategory(deckCategory, vocabListObj);
+      const oldKey = deckCategory.type === "book" ? `Rare in ${deckCategory.bookName}` : deckCategory.name;
+      const storedProgress = savedDecks[deckCategory.id] || savedDecks[oldKey];
+      const learnedSet = new Set((storedProgress?.learned || []).filter((word) => words.includes(word)));
+      return [deckCategory.id, {
         learned: words.filter((word) => learnedSet.has(word)),
         unlearned: words.filter((word) => !learnedSet.has(word)),
       }];
     }));
     setDeckProgress(normalizedDecks);
-    const savedCategory = deckCategories.includes(saved.category) ? saved.category : "";
+    const savedCategory = getVocabularyCategory(saved.category);
     setCategory(savedCategory);
     if (savedCategory) {
-      const words = getWordsForCategory(savedCategory);
-      const learned = normalizedDecks[savedCategory].learned;
+      const words = getWordsForCategory(savedCategory, vocabListObj);
+      const learned = normalizedDecks[savedCategory.id].learned;
       setVocabList(words);
-      setDeck(normalizedDecks[savedCategory].unlearned);
+      setDeck(normalizedDecks[savedCategory.id].unlearned);
       setLearnedDeck(learned);
       setIsLearnedDeckActive(false);
       setDeckIndex(0);
@@ -94,14 +75,15 @@ export default function Vocabulary() {
     setProgressLoaded(true);
   }, [username]);
   useEffect(() => {
-    if (progressLoaded) saveVocabularyProgress(username, { decks: deckProgress, category });
+    if (progressLoaded) saveVocabularyProgress(username, { decks: deckProgress, category: getCategoryId(category) });
   }, [username, deckProgress, category, progressLoaded]);
 
   const handleDeckSelected = (selectedCategory, words) => {
-    const savedLearned = new Set(deckProgress[selectedCategory]?.learned || []);
+    const categoryId = getCategoryId(selectedCategory);
+    const savedLearned = new Set(deckProgress[categoryId]?.learned || []);
     const learned = words.filter((word) => savedLearned.has(word));
     const unlearned = words.filter((word) => !savedLearned.has(word));
-    setDeckProgress((previous) => ({ ...previous, [selectedCategory]: { learned, unlearned } }));
+    setDeckProgress((previous) => ({ ...previous, [categoryId]: { learned, unlearned } }));
     setCategory(selectedCategory);
     setDeck(unlearned);
     setLearnedDeck(learned);
@@ -228,9 +210,10 @@ export default function Vocabulary() {
       if (!currentWord) return;
       const becomingLearned = !isLearnedDeckActive;
       setDeckProgress((previous) => {
-        const state = previous[category] || { learned: [], unlearned: vocabList };
+        const categoryId = getCategoryId(category);
+        const state = previous[categoryId] || { learned: [], unlearned: vocabList };
         return {
-          ...previous, [category]: {
+          ...previous, [categoryId]: {
             learned: becomingLearned ? [...new Set([...state.learned, currentWord])] : state.learned.filter((word) => word !== currentWord),
             unlearned: becomingLearned ? state.unlearned.filter((word) => word !== currentWord) : [...new Set([...state.unlearned, currentWord])],
           }
@@ -257,7 +240,8 @@ export default function Vocabulary() {
     setDeck(vocabList);
     setLearnedDeck([]);
     if (category) {
-      setDeckProgress((previous) => ({ ...previous, [category]: { learned: [], unlearned: vocabList } }));
+      const categoryId = getCategoryId(category);
+      setDeckProgress((previous) => ({ ...previous, [categoryId]: { learned: [], unlearned: vocabList } }));
     }
     setDeckIndex(0);
     setIsLearnedDeckActive(false);
@@ -286,7 +270,7 @@ export default function Vocabulary() {
         >
           <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
             <div key="front" onClick={onClick} {...cardGestureProps} className="card-front vocab-card">
-              <div className="category-name">{category}</div>
+              <div className="category-name">{category?.name || ""}</div>
               {currentBookFrequency !== undefined && currentBookFrequency !== null && (
                 <div className="book-word-frequency">
                   <div>{currentBookFrequency} {currentBookFrequency === 1 ? "occurrence" : "occurrences"} in {currentRareBook}</div>
