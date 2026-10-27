@@ -12,8 +12,42 @@ const pages = [
 
 export default function StudySidebar({ currentPage, children }) {
   const [open, setOpen] = useState(false);
+  const [triggerHidden, setTriggerHidden] = useState(false);
   const sidebarRef = useRef(null);
+  const scrollPosition = useRef(0);
+  const scrollDelta = useRef(0);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    const scrollTarget = sidebarRef.current?.closest(".verse-component") || window;
+    const getScrollPosition = () =>
+      scrollTarget === window ? window.scrollY : scrollTarget.scrollTop;
+
+    scrollPosition.current = getScrollPosition();
+    const onScroll = () => {
+      const nextPosition = getScrollPosition();
+      const delta = nextPosition - scrollPosition.current;
+      scrollPosition.current = nextPosition;
+
+      if (open || Math.abs(delta) < 1) return;
+      if (delta > 0) {
+        scrollDelta.current = Math.max(0, scrollDelta.current) + delta;
+        if (scrollDelta.current >= 24) {
+          setTriggerHidden(true);
+          scrollDelta.current = 0;
+        }
+      } else {
+        scrollDelta.current = Math.min(0, scrollDelta.current) + delta;
+        if (scrollDelta.current <= -120) {
+          setTriggerHidden(false);
+          scrollDelta.current = 0;
+        }
+      }
+    };
+
+    scrollTarget.addEventListener("scroll", onScroll, { passive: true });
+    return () => scrollTarget.removeEventListener("scroll", onScroll);
+  }, [open]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -29,7 +63,7 @@ export default function StudySidebar({ currentPage, children }) {
   return (
     <aside
       ref={sidebarRef}
-      className={`floating-sidebar${open ? " is-open" : ""}`}
+      className={`floating-sidebar${open ? " is-open" : ""}${triggerHidden && !open ? " trigger-hidden" : ""}`}
       aria-label="Page navigation"
     >
       <button
