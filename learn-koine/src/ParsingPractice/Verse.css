@@ -5,7 +5,7 @@
 }
 
 .verse-component {
-  background-color: #282c34;
+  background: linear-gradient(#282c34, #3d4150, #282c34);
   display: block;
   text-align: center;
   overflow-y: scroll;

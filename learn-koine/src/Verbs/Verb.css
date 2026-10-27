@@ -1,5 +1,5 @@
 .verb-component {
-  background-color: #282c34;
+  background: linear-gradient(#282c34, #3d4150, #282c34);
   min-height: 110vh;
   font-size: calc(10px + 2vmin);
   text-align: center;
