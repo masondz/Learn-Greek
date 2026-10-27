@@ -273,10 +273,7 @@ export default function Vocabulary() {
               <div className="category-name">{category?.name || ""}</div>
               {currentBookFrequency !== undefined && currentBookFrequency !== null && (
                 <div className="book-word-frequency">
-                  <div>{currentBookFrequency} {currentBookFrequency === 1 ? "occurrence" : "occurrences"} in {currentRareBook}</div>
-                  {Number.isFinite(currentNtFrequency) && (
-                    <div>{currentNtFrequency} {currentNtFrequency === 1 ? "occurrence" : "occurrences"} in NT</div>
-                  )}
+                  <div>{currentBookFrequency} / {currentNtFrequency} occurrences</div>
                 </div>
               )}
               {currentWord || "Pick Vocabulary List"}

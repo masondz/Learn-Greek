@@ -5,13 +5,16 @@ const vocabularyHelp = (
     <h2>Learning Vocabulary</h2>
     <p>
       First pick a category from the sidebar menu. <b>Most Common</b> are words
-      that occur 500 times or more, <b>More Common</b> is between 500 and 250
-      times, and <b>Common</b> are words that occur between 250 and 50 times.
+      that occur 500 times or more, <b>More Common</b> words are between 499 and 250
+      times, and <b>Common</b> words occur between 249 and 50 times.
     </p>
     <p>
-      Tap the word to flip the card over. Once you believe you have memorized
-      the word, hit the “learnt” button to remove it from the deck. Hit the
-      arrow keys to move forward and backward through the deck.
+      You can also practice <b>Rare</b> words that occur less than 50 times. These are organized by book.
+      The upprer right corner of the cards show how frequently the given word appears in a particular book as comapred to the rest of the New Testament.
+    </p>
+    <p>
+      Tap the word to flip the card over. You can drag the card to the left to go to the next word, or drag to left to go back. You can also drag the card downward to take it out of the deck and put it in your "learned" deck.
+      You can do the same with the arrow kes and "learnt" button. The <b>View learned</b> button switches to your "learned" deck. <b>Retry</b> puts all of your learned words back into the unlearned deck.
     </p>
   </div>
 );
