@@ -106,20 +106,53 @@ a {
   bottom: 85px;
 }
 
+.help-container.help-open {
+  z-index: 110;
+}
+
 .help-paragraph {
-  padding: 15px;
+  box-sizing: border-box;
   position: fixed;
-  max-height: 520px;
-  width: 80%;
-  background-color: aliceblue;
-  border: rgb(236, 150, 111) 3px solid;
-  color: black;
-  z-index: 6;
-  top: 15px;
-  left: 5%;
-  margin: auto;
-  overflow-y: scroll;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  width: min(760px, calc(100vw - 2rem));
+  max-height: min(84vh, 760px);
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  color: #fff;
+  background: #20242d;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  line-height: 1.55;
   text-align: start;
+  transform: translate(-50%, -50%);
+  animation: help-window-open 240ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.help-paragraph h2 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  line-height: 1.25;
+}
+
+.help-paragraph p {
+  margin: 0 0 1rem;
+  padding: 0 0.35rem;
+}
+
+.help-paragraph a {
+  color: #ff9f6b !important;
+}
+
+@keyframes help-window-open {
+  from { opacity: 0; transform: translate(-50%, -48%) scale(0.94); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 
 .help-tool-button {

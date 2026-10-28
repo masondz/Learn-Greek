@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const vocabularyHelp = (
   <div>
@@ -116,10 +116,11 @@ const tdStyle = {
   border: "1px black solid",
   padding: "3px",
   background: "white",
+  color: "#20242d",
 };
 
 const augmentStyle = {
-  color: "blue",
+  color: "#1769d2",
 };
 
 const reduplicationStyle = {
@@ -374,6 +375,18 @@ const Paradigms = ({ tense }) => {
 const HelpTool = ({ pageName, className = "" }) => {
   const [helpShown, setHelpShown] = useState(false);
   const [tipShown, setTipShown] = useState(false);
+  const helpContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (!helpShown) return undefined;
+
+    const closeOnOutsideClick = (event) => {
+      if (!helpContainerRef.current?.contains(event.target)) setHelpShown(false);
+    };
+
+    document.addEventListener("pointerdown", closeOnOutsideClick);
+    return () => document.removeEventListener("pointerdown", closeOnOutsideClick);
+  }, [helpShown]);
 
   let chosenPage = "";
 
@@ -392,15 +405,17 @@ const HelpTool = ({ pageName, className = "" }) => {
   }
 
   return (
-    <div className={`help-container ${className}`}>
+    <div ref={helpContainerRef} className={`help-container ${className}${helpShown ? " help-open" : ""}`}>
       <div style={{ position: "fixed" }}></div>
       {helpShown && (
-        <div className="help-paragraph">
+        <div className="help-paragraph" role="dialog" aria-modal="true" aria-label="Help">
           {chosenPage}
-          <HelpTabs tipShown={tipShown} setTipShown={setTipShown} />
+          {pageName === "verb-help" && (
+            <HelpTabs tipShown={tipShown} setTipShown={setTipShown} />
+          )}
         </div>
       )}
-      <button className={`help-tool-button ${className}-button`} onClick={handleOnClick}>
+      <button type="button" aria-expanded={helpShown} className={`help-tool-button ${className}-button`} onClick={handleOnClick}>
         ?
       </button>
     </div>
