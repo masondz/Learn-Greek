@@ -3,7 +3,7 @@ import "./Vocabulary.css";
 import { vocabListObj } from "../greek_text/vocabularyWords";
 import ReactCardFlip from "react-card-flip";
 import MenuVocabulary from "./MenuVocabulary";
-import HelpTool from "../ParsingPractice/HelpTool.jsx";
+import HelpTool from "../HelpTool.jsx";
 import {
   readVocabularyProgress,
   saveGuestResumeLocation,

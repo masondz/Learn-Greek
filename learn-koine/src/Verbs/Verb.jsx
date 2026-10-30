@@ -12,7 +12,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "../Menu.css";
 import VerbMenuOptions from "./VerbMenuOptions.jsx";
 import { setVerbType, selectVerbSlice } from "../features/verbSlice";
-import HelpTool from "../ParsingPractice/HelpTool.jsx";
+import HelpTool from "../HelpTool.jsx";
 import StudySidebar from "../StudySidebar";
 import {
   getGuestVerbOptions,

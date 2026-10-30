@@ -27,7 +27,7 @@ import { greekText } from "../greek_text/greekText";
 import AdverbGrid from "./AdverbGrid.jsx";
 import ParticleGrid from "./ParticleGrid.jsx";
 import { setVerbType } from "../features/verbSlice";
-import HelpTool from "./HelpTool.jsx";
+import HelpTool from "../HelpTool.jsx";
 import { scoreVerse } from "../utils";
 import ScoreBoard from "./ScoreBoard.jsx";
 import ToolkitPopup from "./ToolkitPopup.jsx";
