@@ -68,6 +68,15 @@ export const saveGuestVerbOptions = (options) => {
   }
 };
 
+export const clearGuestVerbOptions = () => {
+  if (!isGuest()) return;
+  try {
+    localStorage.removeItem(GUEST_VERB_OPTIONS_KEY);
+  } catch (error) {
+    console.error("Unable to clear guest verb options:", error);
+  }
+};
+
 export const getGuestVerbOptions = () => {
   if (!isGuest()) return null;
   try {

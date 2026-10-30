@@ -17,6 +17,7 @@ import StudySidebar from "../StudySidebar";
 import {
   getGuestVerbOptions,
   getGuestVerbAutoAdvance,
+  clearGuestVerbOptions,
   saveGuestResumeLocation,
   saveGuestVerbAutoAdvance,
   saveGuestVerbOptions,
@@ -33,6 +34,19 @@ const getPracticeOptions = (characteristics) => {
     .map(([key, value]) => (key === "Type" ? value : value.toLowerCase()));
   return options.length ? options : ["Verb"];
 };
+
+const getVerbExclusions = (characteristics) => {
+  if (characteristics.Tense === "perfect") {
+    return ["imperfect", "pluperfect"];
+  }
+  return characteristics.Type === "Verb" ? ["Participle", "Infinitive"] : [];
+};
+
+const hasMatchingVerb = (options, exclusions = []) =>
+  Object.values(wordUsages).some(({ parse }) =>
+    options.every((option) => parse.includes(option)) &&
+    exclusions.every((exclusion) => !parse.includes(exclusion))
+  );
 
 const getInvalidVerbSelectionMessage = (characteristics) => {
   const tense = characteristics.Tense;
@@ -104,11 +118,20 @@ const Verb = () => {
   useEffect(() => {
     dispatch(setMode("Parse Verbs"));
     saveGuestResumeLocation("/verb");
-    const options = getPracticeOptions(initialPracticeCharacteristics);
-    const exclusions = initialPracticeCharacteristics.Type === "Verb"
-      ? ["Participle", "Infinitive"]
-      : [];
-    dispatch(setVerbType(initialPracticeCharacteristics.Type || ""));
+    let startingCharacteristics = initialPracticeCharacteristics;
+    let options = getPracticeOptions(startingCharacteristics);
+    let exclusions = getVerbExclusions(startingCharacteristics);
+
+    if (!hasMatchingVerb(options, exclusions)) {
+      clearGuestVerbOptions();
+      startingCharacteristics = { Type: "Verb" };
+      options = ["Verb"];
+      exclusions = getVerbExclusions(startingCharacteristics);
+      setVerbCharacteristics(startingCharacteristics);
+      setActiveVerbCharacteristics(startingCharacteristics);
+    }
+
+    dispatch(setVerbType(startingCharacteristics.Type || ""));
     dispatch(setWord(randomVerb(wordUsages, "parse", options, exclusions)));
     setVerbMode(options.join(" "));
   }, [dispatch]);
@@ -140,12 +163,17 @@ const Verb = () => {
     }
 
 
-    dispatch(clearWord());
     let splitOption = option.split(" ");
 
+    if (!hasMatchingVerb(splitOption, exclusions)) {
+      alert("Verb with given characteristics does not exist.");
+      return false;
+    }
+
     let nextVerb = randomVerb(wordUsages, "parse", splitOption, exclusions);
+    if (!nextVerb) return false;
 
-
+    dispatch(clearWord());
     dispatch(setWord(nextVerb));
     setCorrectCount(0);
     return true;
@@ -248,14 +276,19 @@ const VerbMenu = ({
     const optionList = getPracticeOptions(verbChars);
     const options = optionList.join(" ");
 
+    const exclusions = getVerbExclusions(verbChars);
+    if (!hasMatchingVerb(optionList, exclusions)) {
+      alert("Verb with given characteristics does not exist.");
+      return;
+    }
+
+    if (!handleClick(options, exclusions, verbChars)) return;
+
     saveGuestVerbOptions(verbChars);
     dispatch(setVerbType(newVerbType));
     setActiveVerbCharacteristics(verbChars);
     setVerbMode(options);
-    setTimeout(() => {
-      handleClick(options, [], verbChars);
-      setOptionsOpen(false);
-    }, 10);
+    setOptionsOpen(false);
   };
 
   return (
