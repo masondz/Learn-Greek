@@ -34,6 +34,54 @@ const getPracticeOptions = (characteristics) => {
   return options.length ? options : ["Verb"];
 };
 
+const getInvalidVerbSelectionMessage = (characteristics) => {
+  const tense = characteristics.Tense;
+  const voice = characteristics.Voice;
+  const mood = characteristics.Mood;
+
+  if (
+    tense === "future" &&
+    (mood === "imperative" || mood === "subjunctive")
+  ) {
+    return "Verb with given characteristics does not exist.";
+  }
+
+  if (
+    tense === "perfect" &&
+    mood === "subjunctive" &&
+    (voice === "middle" || voice === "passive")
+  ) {
+    return "Verb with given characteristics does not exist.";
+  }
+
+  if (
+    tense === "imperfect" &&
+    (mood === "subjunctive" || mood === "imperative")
+  ) {
+    return "Verb with given characteristics does not exist.";
+  }
+
+  if (characteristics.Type === "Participle" && mood) {
+    return 'check "All" in mood category to practice Participles.';
+  }
+
+  if (
+    characteristics.Type === "Infinitive" &&
+    (mood || characteristics.Person || characteristics.Number)
+  ) {
+    return 'Mood, Person, and Number must be set to "All" to practice Infinitives.';
+  }
+
+  if (
+    characteristics.Type === "Infinitive" &&
+    (tense === "future" || tense === "imperfect")
+  ) {
+    return "Infinitives cannot be in the future or imperfect tense.";
+  }
+
+  return null;
+};
+
 const Verb = () => {
   const verb = useSelector(selectWordSlice);
   const dispatch = useDispatch();
@@ -70,6 +118,12 @@ const Verb = () => {
     exclusions = [],
     characteristics = activeVerbCharacteristics
   ) => {
+    const invalidMessage = getInvalidVerbSelectionMessage(characteristics);
+    if (invalidMessage) {
+      alert(invalidMessage);
+      return false;
+    }
+
     if (
       option === "Use the menu to select verb forms to practice." ||
       option === "Any"
@@ -86,44 +140,6 @@ const Verb = () => {
     }
 
 
-    if (
-      characteristics.Type === "Participle" &&
-      !(
-        characteristics.Mood === undefined ||
-        characteristics.Mood === ""
-      )
-    ) {
-      return alert('check "All" in mood category to practice Participles.');
-    }
-
-    if (
-      characteristics.Type === "Infinitive" &&
-      !(
-        characteristics.Mood === undefined ||
-        characteristics.Mood === ""
-      ) &&
-      !(
-        characteristics.Person === undefined ||
-        characteristics.Person === ""
-      ) &&
-      !(
-        characteristics.Number === undefined ||
-        characteristics.Number === ""
-      )
-    ) {
-      return alert(
-        'Mood, Person, and Number must be set to "All" to practice Infinitives.'
-      );
-    }
-
-    if (
-      characteristics.Type === "Infinitive" &&
-      (characteristics.Tense === "future" ||
-        characteristics.Tense === "imperfect")
-    ) {
-      return alert("Infinitives cannot be in the future or imperfect tense.");
-    }
-
     dispatch(clearWord());
     let splitOption = option.split(" ");
 
@@ -132,6 +148,7 @@ const Verb = () => {
 
     dispatch(setWord(nextVerb));
     setCorrectCount(0);
+    return true;
   };
 
   return (
@@ -220,35 +237,16 @@ const VerbMenu = ({
     };
   }, [optionsOpen]);
 
-  const checkSelectionExists = (options) => {
-    if (
-      options.includes("future") &&
-      (options.includes("imperative") || options.includes("subjunctive"))
-    ) {
-      return false;
-    } else if (options.includes("perfect") && options.includes("subjunctive")) {
-      if (options.includes("middle") || options.includes("passive")) {
-        return false;
-      }
-    } else if (
-      options.includes("imperfect") &&
-      (options.includes("subjunctive") || options.includes("imperative"))
-    ) {
-      return false;
-    } else {
-      return true;
-    }
-  };
-
   const handleSelect = (verbChars) => {
+    const invalidMessage = getInvalidVerbSelectionMessage(verbChars);
+    if (invalidMessage) {
+      alert(invalidMessage);
+      return;
+    }
+
     const newVerbType = verbChars.Type;
     const optionList = getPracticeOptions(verbChars);
     const options = optionList.join(" ");
-
-    if (!checkSelectionExists(options)) {
-      alert("Verb with given characteristics does not exist.");
-      return;
-    }
 
     saveGuestVerbOptions(verbChars);
     dispatch(setVerbType(newVerbType));
