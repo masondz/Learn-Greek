@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { wordUsages } from "./greek_text/greekLexiconObject";
 
 const vocabularyHelp = (
   <div>
@@ -131,8 +132,8 @@ const endingStyle = {
   color: "rgb(255, 20, 50)",
 };
 
-const aoristTense = {
-  name: <p>Aorist Active Indicative</p>,
+const aoristActiveIndicative = {
+  name: "Aorist Active Indicative",
   firstSingular: (
     <p>
       <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>σα</b>
@@ -165,7 +166,7 @@ const aoristTense = {
   ),
 };
 
-const imperfectTense = {
+const imperfectActiveIndicative = {
   name: "Imperfect Active Indicative",
   firstSingular: (
     <p>
@@ -199,7 +200,7 @@ const imperfectTense = {
   ),
 };
 
-const presentTense = {
+const presentActiveIndicative = {
   name: "Present Active Indicative",
   firstSingular: (
     <p>
@@ -233,7 +234,41 @@ const presentTense = {
   ),
 };
 
-const futureTense = {
+const presentMiddlePassiveIndicative = {
+  name: "Present Middle/Passive Indicative",
+  firstSingular: (
+    <p>
+      λυ<b style={endingStyle}>ομαι</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λυ<b style={endingStyle}>ῃ</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λυ<b style={endingStyle}>εται</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λυ<b style={endingStyle}>ομεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λυ<b style={endingStyle}>εσθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λυ<b style={endingStyle}>ονται</b>
+    </p>
+  ),
+};
+
+const futureActiveIndicative = {
   name: "Future Active Indicative",
   firstSingular: (
     <p>
@@ -267,7 +302,7 @@ const futureTense = {
   ),
 };
 //ύ
-const perfectTense = {
+const perfectActiveIndicative = {
   name: "Perfect Active Indicative",
   firstSingular: (
     <p>
@@ -300,7 +335,7 @@ const perfectTense = {
     </p>
   ),
 };
-const pluperfectTense = {
+const pluperfectActiveIndicative = {
   name: "Pluperfect Active Indicative",
   firstSingular: (
     <p>
@@ -372,6 +407,192 @@ const Paradigms = ({ tense }) => {
   );
 };
 
+const getVerbParadigmVoice = (voice, tense, mood) => {
+  const normalizedVoice = voice.toLowerCase();
+  const hasMiddle = normalizedVoice.includes("middle");
+  const hasPassive = normalizedVoice.includes("passive");
+
+  if (normalizedVoice.includes("deponent")) {
+    if (hasMiddle && hasPassive) return "Deponent (Middle/Passive)";
+    if (hasMiddle) return "Deponent (Middle)";
+    if (hasPassive) return "Deponent (Passive)";
+    return "Deponent";
+  }
+  const middleAndPassiveShareForms =
+    (tense === "present" && ["indicative", "subjunctive", "imperative"].includes(mood)) ||
+    (tense === "imperfect" && mood === "indicative") ||
+    (tense === "perfect" && ["indicative", "imperative"].includes(mood)) ||
+    (tense === "pluperfect" && mood === "indicative");
+  if (
+    middleAndPassiveShareForms &&
+    (normalizedVoice === "middle" || normalizedVoice === "passive")
+  ) {
+    return "Middle/Passive";
+  }
+  if (hasMiddle && hasPassive) return "Middle/Passive";
+  return voice.charAt(0).toUpperCase() + voice.slice(1);
+};
+
+const normalizeGreekCharacter = (character) =>
+  character.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+
+const renderGeneratedVerbForm = (word, paradigm, exampleForms) => {
+  if (!word) return <p>—</p>;
+
+  const characters = Array.from(word);
+  const otherForms = Array.from(exampleForms.values()).map((form) => Array.from(form));
+  let sharedStemLength = 0;
+  while (
+    otherForms.length &&
+    otherForms.every(
+      (form) =>
+        form.length > sharedStemLength &&
+        normalizeGreekCharacter(form[sharedStemLength]) ===
+        normalizeGreekCharacter(characters[sharedStemLength])
+    )
+  ) {
+    sharedStemLength += 1;
+  }
+
+  const suffixStart =
+    sharedStemLength > 0 && sharedStemLength < characters.length
+      ? sharedStemLength
+      : Math.max(characters.length - 1, 0);
+  const baseTense = paradigm.tense.replace(/^2nd /, "");
+  const hasAugment =
+    paradigm.mood === "indicative" &&
+    ["aorist", "imperfect", "pluperfect"].includes(baseTense) &&
+    ["ἐ", "ἔ", "ἠ", "ἤ", "ἦ"].includes(characters[0]);
+  const augmentLength = hasAugment ? 1 : 0;
+  const reduplicationStart = hasAugment ? 1 : 0;
+  const first = normalizeGreekCharacter(characters[reduplicationStart] || "");
+  const second = normalizeGreekCharacter(characters[reduplicationStart + 1] || "");
+  const repeated = normalizeGreekCharacter(characters[reduplicationStart + 2] || "");
+  const hasReduplication =
+    ["perfect", "pluperfect"].includes(baseTense) &&
+    /^[βγδζθκλμπρστφχ]$/.test(first) &&
+    /^[αεηιουω]$/.test(second) &&
+    first === repeated &&
+    reduplicationStart + 2 <= suffixStart;
+  const reduplicationEnd = hasReduplication ? reduplicationStart + 2 : 0;
+  const segments = [];
+
+  if (augmentLength) {
+    segments.push(<i key="augment" style={augmentStyle}>{characters.slice(0, augmentLength).join("")}</i>);
+  }
+  if (hasReduplication) {
+    segments.push(
+      <i key="reduplication" style={reduplicationStyle}>
+        {characters.slice(reduplicationStart, reduplicationEnd).join("")}
+      </i>
+    );
+  }
+
+  const rootStart = Math.max(augmentLength, reduplicationEnd);
+  if (suffixStart > rootStart) {
+    segments.push(<span key="root">{characters.slice(rootStart, suffixStart).join("")}</span>);
+  }
+  if (suffixStart < characters.length) {
+    segments.push(
+      <b key="ending" style={endingStyle}>
+        {characters.slice(suffixStart).join("")}
+      </b>
+    );
+  }
+
+  return <p>{segments}</p>;
+};
+
+const additionalVerbParadigms = (() => {
+  const groupedParadigms = new Map();
+  const personKeys = ["first", "second", "third"];
+  const numberKeys = ["singular", "plural"];
+
+  Object.entries(wordUsages).forEach(([word, entry]) => {
+    const descriptions = (entry.parse.split("｜")[1] || "").split(", ");
+    if (
+      descriptions[0] !== "Verb" ||
+      descriptions[2]?.toLowerCase().includes("deponent") ||
+      descriptions.some((description) =>
+        ["Infinitive", "Participle", "Optative"].includes(description)
+      )
+    ) {
+      return;
+    }
+
+    const [, tense, rawVoice, mood] = descriptions;
+    const person = descriptions.find((value) => personKeys.includes(value));
+    const number = descriptions.find((value) => numberKeys.includes(value));
+    if (!tense || !rawVoice || !mood || !person || !number) return;
+
+    const normalizedTense = tense.toLowerCase();
+    const normalizedMood = mood.toLowerCase();
+    const voice = getVerbParadigmVoice(rawVoice, normalizedTense, normalizedMood);
+    const baseTense = normalizedTense.replace(/^2nd /, "");
+
+    // These combinations are rejected by the Verb Practice selection rules.
+    if (
+      ((baseTense === "future" || baseTense === "imperfect") &&
+        ["imperative", "subjunctive"].includes(normalizedMood)) ||
+      (baseTense === "perfect" &&
+        normalizedMood === "subjunctive" &&
+        !rawVoice.toLowerCase().includes("deponent") &&
+        (rawVoice.toLowerCase().includes("middle") ||
+          rawVoice.toLowerCase().includes("passive")))
+    ) {
+      return;
+    }
+
+    // The six active indicative grids already have hand-colored stem and ending examples.
+    if (
+      voice === "Active" &&
+      !normalizedTense.startsWith("2nd ") &&
+      normalizedMood === "indicative" &&
+      ["present", "future", "aorist", "imperfect", "perfect", "pluperfect"].includes(baseTense)
+    ) {
+      return;
+    }
+
+    const key = `${voice}|${normalizedTense}|${normalizedMood}`;
+    if (!groupedParadigms.has(key)) {
+      groupedParadigms.set(key, {
+        voice,
+        tense: normalizedTense,
+        mood: normalizedMood,
+        examplesByLemma: new Map(),
+      });
+    }
+
+    const group = groupedParadigms.get(key);
+    const lemma = entry.GN || word;
+    if (!group.examplesByLemma.has(lemma)) group.examplesByLemma.set(lemma, new Map());
+    const forms = group.examplesByLemma.get(lemma);
+    const slot = `${person}${number.charAt(0).toUpperCase()}${number.slice(1)}`;
+    if (!forms.has(slot)) forms.set(slot, word);
+  });
+
+  return Array.from(groupedParadigms.values())
+    .map((group) => {
+      const examples = Array.from(group.examplesByLemma.values()).sort(
+        (left, right) => right.size - left.size
+      )[0];
+      const titleCase = (value) => value.charAt(0).toUpperCase() + value.slice(1);
+      const formCell = (slot) =>
+        renderGeneratedVerbForm(examples.get(slot), group, examples);
+
+      return {
+        name: `${titleCase(group.tense)} ${group.voice} ${titleCase(group.mood)}`,
+        firstSingular: formCell("firstSingular"),
+        firstPlural: formCell("firstPlural"),
+        secondSingular: formCell("secondSingular"),
+        secondPlural: formCell("secondPlural"),
+        thirdSingular: formCell("thirdSingular"),
+        thirdPlural: formCell("thirdPlural"),
+      };
+    })
+    .sort((left, right) => left.name.localeCompare(right.name));
+})();
+
 const HelpTool = ({ pageName, className = "" }) => {
   const [helpShown, setHelpShown] = useState(false);
   const [tipShown, setTipShown] = useState(false);
@@ -432,12 +653,16 @@ const HelpTabs = ({ tipShown, setTipShown }) => {
       <p onClick={handleClick}>Tips</p>
       {tipShown && (
         <div style={{ marginBottom: 11 }}>
-          <Paradigms tense={presentTense} />
-          <Paradigms tense={futureTense} />
-          <Paradigms tense={aoristTense} />
-          <Paradigms tense={imperfectTense} />
-          <Paradigms tense={perfectTense} />
-          <Paradigms tense={pluperfectTense} />
+          <Paradigms tense={presentActiveIndicative} />
+          <Paradigms tense={presentMiddlePassiveIndicative} />
+          <Paradigms tense={futureActiveIndicative} />
+          <Paradigms tense={aoristActiveIndicative} />
+          <Paradigms tense={imperfectActiveIndicative} />
+          <Paradigms tense={perfectActiveIndicative} />
+          <Paradigms tense={pluperfectActiveIndicative} />
+          {additionalVerbParadigms.map((paradigm) => (
+            <Paradigms key={paradigm.name} tense={paradigm} />
+          ))}
         </div>
       )}
     </div>
