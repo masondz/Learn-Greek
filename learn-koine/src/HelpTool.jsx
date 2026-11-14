@@ -302,6 +302,108 @@ const secondAoristMiddleIndicative = {
   ),
 };
 
+const aoristActiveSubjunctive = {
+  name: "Aorist Active Subjunctive",
+  firstSingular: (
+    <p>
+      λύ<b style={endingStyle}>σω</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λύ<b style={endingStyle}>σῃς</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λύ<b style={endingStyle}>σῃ</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λύ<b style={endingStyle}>σωμεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λύ<b style={endingStyle}>σητε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λύ<b style={endingStyle}>σωσι(ν)</b>
+    </p>
+  ),
+};
+
+const aoristMiddleSubjunctive = {
+  name: "Aorist Middle Subjunctive",
+  firstSingular: (
+    <p>
+      λύ<b style={endingStyle}>σωμαι</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λύ<b style={endingStyle}>σῃ</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λύ<b style={endingStyle}>σηται</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λυ<b style={endingStyle}>σώμεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λύ<b style={endingStyle}>σησθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λύ<b style={endingStyle}>σωνται</b>
+    </p>
+  ),
+};
+
+const aoristPassiveSubjunctive = {
+  name: "Aorist Passive Subjunctive",
+  firstSingular: (
+    <p>
+      λυ<b style={endingStyle}>θῶ</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λυ<b style={endingStyle}>θῃς</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λυ<b style={endingStyle}>θῃ</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λυ<b style={endingStyle}>θωμεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λυ<b style={endingStyle}>θητε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λυ<b style={endingStyle}>θωσι(ν)</b>
+    </p>
+  ),
+};
+
 const imperfectActiveIndicative = {
   name: "Imperfect Active Indicative",
   firstSingular: (
@@ -374,7 +476,7 @@ const presentActiveIndicative = {
   name: "Present Active Indicative",
   firstSingular: (
     <p>
-      λυ<b style={endingStyle}>ω</b>
+      λύ<b style={endingStyle}>ω</b>
     </p>
   ),
   secondSingular: (
@@ -403,6 +505,7 @@ const presentActiveIndicative = {
     </p>
   ),
 };
+
 
 const presentMiddlePassiveIndicative = {
   name: "Present Middle/Passive Indicative",
@@ -437,6 +540,153 @@ const presentMiddlePassiveIndicative = {
     </p>
   ),
 };
+
+const presentActiveSubjunctive = {
+  name: "Present Active Subjunctive",
+  firstSingular: (
+    <p>
+      λύ<b style={endingStyle}>ω</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λύ<b style={endingStyle}>ῃς</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λύ<b style={endingStyle}>ῃ</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λύ<b style={endingStyle}>ωμεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λύ<b style={endingStyle}>ητε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λύ<b style={endingStyle}>ωσι(ν)</b>
+    </p>
+  ),
+};
+
+const presentMiddlePassiveSubjunctive = {
+  name: "Present Middle/Passive Subjunctive",
+  firstSingular: (
+    <p>
+      λύ<b style={endingStyle}>ωμαι</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λύ<b style={endingStyle}>ῃ</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λύ<b style={endingStyle}>ηται</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λυ<b style={endingStyle}>ώμεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λύ<b style={endingStyle}>ησθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λύ<b style={endingStyle}>ωνται</b>
+    </p>
+  ),
+};
+
+const presentActiveImperative = {
+  name: "Present Active Imperative",
+  firstSingular: <p>—</p>,
+  secondSingular: (
+    <p>
+      λῦ<b style={endingStyle}>ε</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λυ<b style={endingStyle}>έτω</b>
+    </p>
+  ),
+  firstPlural: <p>—</p>,
+  secondPlural: (
+    <p>
+      λύ<b style={endingStyle}>ετε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λυ<b style={endingStyle}>έτωσαν</b>
+    </p>
+  ),
+};
+
+const presentMiddlePassiveImperative = {
+  name: "Present Middle/Passive Imperative",
+  firstSingular: <p>—</p>,
+  secondSingular: (
+    <p>
+      λύ<b style={endingStyle}>ου</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λυ<b style={endingStyle}>έσθω</b>
+    </p>
+  ),
+  firstPlural: <p>—</p>,
+  secondPlural: (
+    <p>
+      λύ<b style={endingStyle}>εσθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λυ<b style={endingStyle}>έσθωσαν</b>
+    </p>
+  ),
+};
+
+const aoristActiveImperative = {
+  name: "Aorist Active Imperative",
+  firstSingular: <p>—</p>,
+  secondSingular: (
+    <p>
+      λῦ<b style={endingStyle}>σον</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λυσ<b style={endingStyle}>άτω</b>
+    </p>
+  ),
+  firstPlural: <p>—</p>,
+  secondPlural: (
+    <p>
+      λύ<b style={endingStyle}>σατε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λυσ<b style={endingStyle}>άτωσαν</b>
+    </p>
+  ),
+};
+
 
 const futureActiveIndicative = {
   name: "Future Active Indicative",
@@ -934,13 +1184,21 @@ const HelpTabs = ({ tipShown, setTipShown }) => {
           <Paradigms tense={aoristActiveIndicative} />
           <Paradigms tense={aoristMiddleIndicative} />
           <Paradigms tense={aoristPassiveIndicative} />
-          <Paradigms tense={secondAoristActiveIndicative} />
-          <Paradigms tense={secondAoristMiddleIndicative} />
           <Paradigms tense={imperfectActiveIndicative} />
           <Paradigms tense={imperfectMiddlePassiveIndicative} />
           <Paradigms tense={perfectActiveIndicative} />
           <Paradigms tense={perfectMiddlePassiveIndicative} />
           <Paradigms tense={pluperfectActiveIndicative} />
+          <Paradigms tense={secondAoristActiveIndicative} />
+          <Paradigms tense={secondAoristMiddleIndicative} />
+          <Paradigms tense={presentActiveSubjunctive} />
+          <Paradigms tense={presentMiddlePassiveSubjunctive} />
+          <Paradigms tense={aoristActiveSubjunctive} />
+          <Paradigms tense={aoristMiddleSubjunctive} />
+          <Paradigms tense={aoristPassiveSubjunctive} />
+          <Paradigms tense={presentActiveImperative} />
+          <Paradigms tense={presentMiddlePassiveImperative} />
+          <Paradigms tense={aoristActiveImperative} />
           {additionalVerbParadigms.map((paradigm) => (
             <Paradigms key={paradigm.name} tense={paradigm} />
           ))}

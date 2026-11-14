@@ -18,3 +18,4 @@ Each generated grid uses forms from the same Strong's lemma where available. Cel
 - Optatives, which are not offered by the Verb Practice menu
 - Need contraction verb forms in Help Tooltips
 - Figure our Liquid Verbs
+- Need to add μι verbs for the help tooltips.
