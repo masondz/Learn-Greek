@@ -17,3 +17,4 @@ Each generated grid uses forms from the same Strong's lemma where available. Cel
 - Infinitives
 - Optatives, which are not offered by the Verb Practice menu
 - Need contraction verb forms in Help Tooltips
+- Figure our Liquid Verbs

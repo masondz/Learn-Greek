@@ -573,6 +573,41 @@ const perfectActiveIndicative = {
     </p>
   ),
 };
+
+const perfectMiddlePassiveIndicative = {
+  name: "Perfect Middle/Passive Indicative",
+  firstSingular: (
+    <p>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>μαι</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>σαι</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>ται</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={reduplicationStyle}>λε</i>λύ<b style={endingStyle}>μεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>σθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={reduplicationStyle}>λέ</i>λυ<b style={endingStyle}>νται</b>
+    </p>
+  ),
+};
+
 const pluperfectActiveIndicative = {
   name: "Pluperfect Active Indicative",
   firstSingular: (
@@ -904,6 +939,7 @@ const HelpTabs = ({ tipShown, setTipShown }) => {
           <Paradigms tense={imperfectActiveIndicative} />
           <Paradigms tense={imperfectMiddlePassiveIndicative} />
           <Paradigms tense={perfectActiveIndicative} />
+          <Paradigms tense={perfectMiddlePassiveIndicative} />
           <Paradigms tense={pluperfectActiveIndicative} />
           {additionalVerbParadigms.map((paradigm) => (
             <Paradigms key={paradigm.name} tense={paradigm} />
