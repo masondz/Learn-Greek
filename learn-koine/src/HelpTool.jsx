@@ -166,6 +166,142 @@ const aoristActiveIndicative = {
   ),
 };
 
+const aoristMiddleIndicative = {
+  name: "Aorist Middle Indicative",
+  firstSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>σάμην</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>σω</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>σατο</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>σάμεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>σασθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>σαντο</b>
+    </p>
+  ),
+};
+
+const aoristPassiveIndicative = {
+  name: "Aorist Passive Indicative",
+  firstSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>θην</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>θης</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>θη</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>θημεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>θητε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>θησαν</b>
+    </p>
+  ),
+};
+
+const secondAoristActiveIndicative = {
+  name: "Second Aorist Active Indicative",
+  firstSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λαβ<b style={endingStyle}>ον</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λαβ<b style={endingStyle}>ες</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λαβ<b style={endingStyle}>ε(ν)</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λάβ<b style={endingStyle}>ομεν</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λάβ<b style={endingStyle}>ετε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={augmentStyle}>ἔ</i>λαβ<b style={endingStyle}>ον</b>
+    </p>
+  ),
+};
+
+const secondAoristMiddleIndicative = {
+  name: "Second Aorist Middle Indicative",
+  firstSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λαβ<b style={endingStyle}>όμην</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λάβ<b style={endingStyle}>ου</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λάβ<b style={endingStyle}>ετο</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λαβ<b style={endingStyle}>όμεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λάβ<b style={endingStyle}>εσθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λάβ<b style={endingStyle}>οντο</b>
+    </p>
+  ),
+};
+
 const imperfectActiveIndicative = {
   name: "Imperfect Active Indicative",
   firstSingular: (
@@ -196,6 +332,40 @@ const imperfectActiveIndicative = {
   thirdPlural: (
     <p>
       <i style={augmentStyle}>ἔ</i>λυ<b style={endingStyle}>ον</b>
+    </p>
+  ),
+};
+
+const imperfectMiddlePassiveIndicative = {
+  name: "Imperfect Middle/Passive Indicative",
+  firstSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>όμην</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λύ<b style={endingStyle}>ου</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λύ<b style={endingStyle}>ετο</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λυ<b style={endingStyle}>όμεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λύ<b style={endingStyle}>εσθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      <i style={augmentStyle}>ἐ</i>λύ<b style={endingStyle}>οντο</b>
     </p>
   ),
 };
@@ -298,6 +468,74 @@ const futureActiveIndicative = {
   thirdPlural: (
     <p>
       λυ<b style={endingStyle}>σουσι(ν)</b>
+    </p>
+  ),
+};
+
+const futureMiddleIndicative = {
+  name: "Future Middle Indicative",
+  firstSingular: (
+    <p>
+      λυ<b style={endingStyle}>σομαι</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λύ<b style={endingStyle}>σῃ</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λύ<b style={endingStyle}>σεται</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λυ<b style={endingStyle}>σόμεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λύ<b style={endingStyle}>σεσθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λύ<b style={endingStyle}>σονται</b>
+    </p>
+  ),
+};
+
+const futurePassiveIndicative = {
+  name: "Future Passive Indicative",
+  firstSingular: (
+    <p>
+      λυ<b style={endingStyle}>θήσομαι</b>
+    </p>
+  ),
+  secondSingular: (
+    <p>
+      λυ<b style={endingStyle}>θήσῃ</b>
+    </p>
+  ),
+  thirdSingular: (
+    <p>
+      λυ<b style={endingStyle}>θήσεται</b>
+    </p>
+  ),
+  firstPlural: (
+    <p>
+      λυ<b style={endingStyle}>θησόμεθα</b>
+    </p>
+  ),
+  secondPlural: (
+    <p>
+      λυ<b style={endingStyle}>θήσεσθε</b>
+    </p>
+  ),
+  thirdPlural: (
+    <p>
+      λυ<b style={endingStyle}>θήσονται</b>
     </p>
   ),
 };
@@ -656,8 +894,15 @@ const HelpTabs = ({ tipShown, setTipShown }) => {
           <Paradigms tense={presentActiveIndicative} />
           <Paradigms tense={presentMiddlePassiveIndicative} />
           <Paradigms tense={futureActiveIndicative} />
+          <Paradigms tense={futureMiddleIndicative} />
+          <Paradigms tense={futurePassiveIndicative} />
           <Paradigms tense={aoristActiveIndicative} />
+          <Paradigms tense={aoristMiddleIndicative} />
+          <Paradigms tense={aoristPassiveIndicative} />
+          <Paradigms tense={secondAoristActiveIndicative} />
+          <Paradigms tense={secondAoristMiddleIndicative} />
           <Paradigms tense={imperfectActiveIndicative} />
+          <Paradigms tense={imperfectMiddlePassiveIndicative} />
           <Paradigms tense={perfectActiveIndicative} />
           <Paradigms tense={pluperfectActiveIndicative} />
           {additionalVerbParadigms.map((paradigm) => (

@@ -1,6 +1,6 @@
 # Verb Practice Tips coverage
 
-The Help Tool Tips section contains the seven hand-built active indicative paradigms and lexicon-derived grids for other attested finite verb combinations.
+The Help Tool Tips section contains the hand-built present, imperfect, aorist, future, perfect, and pluperfect indicative paradigms, including active and middle/passive forms where listed, plus lexicon-derived grids for other attested finite verb combinations.
 
 ## Included
 
@@ -16,3 +16,4 @@ Each generated grid uses forms from the same Strong's lemma where available. Cel
 - Participles
 - Infinitives
 - Optatives, which are not offered by the Verb Practice menu
+- Need contraction verb forms in Help Tooltips
