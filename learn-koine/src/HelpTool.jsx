@@ -1026,96 +1026,6 @@ const renderGeneratedVerbForm = (word, paradigm, exampleForms) => {
   return <p>{segments}</p>;
 };
 
-const additionalVerbParadigms = (() => {
-  const groupedParadigms = new Map();
-  const personKeys = ["first", "second", "third"];
-  const numberKeys = ["singular", "plural"];
-
-  Object.entries(wordUsages).forEach(([word, entry]) => {
-    const descriptions = (entry.parse.split("｜")[1] || "").split(", ");
-    if (
-      descriptions[0] !== "Verb" ||
-      descriptions[2]?.toLowerCase().includes("deponent") ||
-      descriptions.some((description) =>
-        ["Infinitive", "Participle", "Optative"].includes(description)
-      )
-    ) {
-      return;
-    }
-
-    const [, tense, rawVoice, mood] = descriptions;
-    const person = descriptions.find((value) => personKeys.includes(value));
-    const number = descriptions.find((value) => numberKeys.includes(value));
-    if (!tense || !rawVoice || !mood || !person || !number) return;
-
-    const normalizedTense = tense.toLowerCase();
-    const normalizedMood = mood.toLowerCase();
-    const voice = getVerbParadigmVoice(rawVoice, normalizedTense, normalizedMood);
-    const baseTense = normalizedTense.replace(/^2nd /, "");
-
-    // These combinations are rejected by the Verb Practice selection rules.
-    if (
-      ((baseTense === "future" || baseTense === "imperfect") &&
-        ["imperative", "subjunctive"].includes(normalizedMood)) ||
-      (baseTense === "perfect" &&
-        normalizedMood === "subjunctive" &&
-        !rawVoice.toLowerCase().includes("deponent") &&
-        (rawVoice.toLowerCase().includes("middle") ||
-          rawVoice.toLowerCase().includes("passive")))
-    ) {
-      return;
-    }
-
-    // The six active indicative grids already have hand-colored stem and ending examples.
-    if (
-      voice === "Active" &&
-      !normalizedTense.startsWith("2nd ") &&
-      normalizedMood === "indicative" &&
-      ["present", "future", "aorist", "imperfect", "perfect", "pluperfect"].includes(baseTense)
-    ) {
-      return;
-    }
-
-    const key = `${voice}|${normalizedTense}|${normalizedMood}`;
-    if (!groupedParadigms.has(key)) {
-      groupedParadigms.set(key, {
-        voice,
-        tense: normalizedTense,
-        mood: normalizedMood,
-        examplesByLemma: new Map(),
-      });
-    }
-
-    const group = groupedParadigms.get(key);
-    const lemma = entry.GN || word;
-    if (!group.examplesByLemma.has(lemma)) group.examplesByLemma.set(lemma, new Map());
-    const forms = group.examplesByLemma.get(lemma);
-    const slot = `${person}${number.charAt(0).toUpperCase()}${number.slice(1)}`;
-    if (!forms.has(slot)) forms.set(slot, word);
-  });
-
-  return Array.from(groupedParadigms.values())
-    .map((group) => {
-      const examples = Array.from(group.examplesByLemma.values()).sort(
-        (left, right) => right.size - left.size
-      )[0];
-      const titleCase = (value) => value.charAt(0).toUpperCase() + value.slice(1);
-      const formCell = (slot) =>
-        renderGeneratedVerbForm(examples.get(slot), group, examples);
-
-      return {
-        name: `${titleCase(group.tense)} ${group.voice} ${titleCase(group.mood)}`,
-        firstSingular: formCell("firstSingular"),
-        firstPlural: formCell("firstPlural"),
-        secondSingular: formCell("secondSingular"),
-        secondPlural: formCell("secondPlural"),
-        thirdSingular: formCell("thirdSingular"),
-        thirdPlural: formCell("thirdPlural"),
-      };
-    })
-    .sort((left, right) => left.name.localeCompare(right.name));
-})();
-
 const HelpTool = ({ pageName, className = "" }) => {
   const [helpShown, setHelpShown] = useState(false);
   const [tipShown, setTipShown] = useState(false);
@@ -1170,7 +1080,6 @@ const HelpTabs = ({ tipShown, setTipShown }) => {
   function handleClick() {
     setTipShown(!tipShown);
   }
-
   return (
     <div>
       <p onClick={handleClick}>Tips</p>
@@ -1184,13 +1093,13 @@ const HelpTabs = ({ tipShown, setTipShown }) => {
           <Paradigms tense={aoristActiveIndicative} />
           <Paradigms tense={aoristMiddleIndicative} />
           <Paradigms tense={aoristPassiveIndicative} />
+          <Paradigms tense={secondAoristActiveIndicative} />
+          <Paradigms tense={secondAoristMiddleIndicative} />
           <Paradigms tense={imperfectActiveIndicative} />
           <Paradigms tense={imperfectMiddlePassiveIndicative} />
           <Paradigms tense={perfectActiveIndicative} />
           <Paradigms tense={perfectMiddlePassiveIndicative} />
           <Paradigms tense={pluperfectActiveIndicative} />
-          <Paradigms tense={secondAoristActiveIndicative} />
-          <Paradigms tense={secondAoristMiddleIndicative} />
           <Paradigms tense={presentActiveSubjunctive} />
           <Paradigms tense={presentMiddlePassiveSubjunctive} />
           <Paradigms tense={aoristActiveSubjunctive} />
@@ -1199,9 +1108,6 @@ const HelpTabs = ({ tipShown, setTipShown }) => {
           <Paradigms tense={presentActiveImperative} />
           <Paradigms tense={presentMiddlePassiveImperative} />
           <Paradigms tense={aoristActiveImperative} />
-          {additionalVerbParadigms.map((paradigm) => (
-            <Paradigms key={paradigm.name} tense={paradigm} />
-          ))}
         </div>
       )}
     </div>
